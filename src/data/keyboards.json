@@ -1,0 +1,273 @@
+[
+  {
+    "layoutKey": "mac",
+    "layout": "QWERTY (mac)",
+    "keys": [
+      [
+        {
+          "key": "§",
+          "supKey": "±",
+          "finger": 1
+        },
+        {
+          "key": "1",
+          "supKey": "!",
+          "finger": 1
+        },
+        {
+          "key": "2",
+          "supKey": "@",
+          "finger": 2
+        },
+        {
+          "key": "3",
+          "supKey": "#",
+          "finger": 3
+        },
+        {
+          "key": "4",
+          "supKey": "$",
+          "finger": 4
+        },
+        {
+          "key": "5",
+          "supKey": "%",
+          "finger": 4
+        },
+        {
+          "key": "6",
+          "supKey": "^",
+          "finger": 7
+        },
+        {
+          "key": "7",
+          "supKey": "&",
+          "finger": 7
+        },
+        {
+          "key": "8",
+          "supKey": "*",
+          "finger": 8
+        },
+        {
+          "key": "9",
+          "supKey": "(",
+          "finger": 9
+        },
+        {
+          "key": "0",
+          "supKey": ")",
+          "finger": 10
+        },
+        {
+          "key": "-",
+          "supKey": "_",
+          "finger": 10
+        },
+        {
+          "key": "=",
+          "supKey": "+",
+          "finger": 10
+        },
+        {
+          "key": "Backspace",
+          "code": "Backspace",
+          "isSystemKey": true
+        }
+      ],
+      [
+        {
+          "key": "Tab",
+          "code": "Tab",
+          "isSystemKey": true
+        },
+        {
+          "key": "Q",
+          "finger": 1
+        },
+        {
+          "key": "W",
+          "finger": 2
+        },
+        {
+          "key": "E",
+          "finger": 3
+        },
+        {
+          "key": "R",
+          "finger": 4
+        },
+        {
+          "key": "T",
+          "finger": 4
+        },
+        {
+          "key": "Y",
+          "finger": 7
+        },
+        {
+          "key": "U",
+          "finger": 7
+        },
+        {
+          "key": "I",
+          "finger": 8
+        },
+        {
+          "key": "O",
+          "finger": 9
+        },
+        {
+          "key": "P",
+          "finger": 10
+        },
+        {
+          "key": "{",
+          "supKey": "[",
+          "finger": 10
+        },
+        {
+          "key": "}",
+          "supKey": "]",
+          "finger": 10
+        },
+        {
+          "key": "Enter",
+          "code": "Enter",
+          "isSystemKey": true
+        }
+      ],
+      [
+        {
+          "key": "Caps Lock",
+          "code": "CapsLock",
+          "isSystemKey": true
+        },
+        {
+          "key": "A",
+          "finger": 1
+        },
+        {
+          "key": "S",
+          "finger": 2
+        },
+        {
+          "key": "D",
+          "finger": 3
+        },
+        {
+          "key": "F",
+          "finger": 4
+        },
+        {
+          "key": "G",
+          "finger": 4
+        },
+        {
+          "key": "H",
+          "finger": 7
+        },
+        {
+          "key": "J",
+          "finger": 7
+        },
+        {
+          "key": "K",
+          "finger": 8
+        },
+        {
+          "key": "L",
+          "finger": 9
+        },
+        {
+          "key": ":",
+          "supKey": ";",
+          "finger": 10
+        },
+        {
+          "key": "'",
+          "supKey": "\"",
+          "finger": 11
+        },
+        {
+          "key": "\\",
+          "supKey": "|",
+          "finger": 12
+        },
+        {
+          "key": "",
+          "code": "Enter",
+          "isSystemKey": true,
+          "isSpace": true
+        }
+      ],
+      [
+        {
+          "key": "Shift",
+          "code": "ShiftLeft",
+          "isSystemKey": true
+        },
+        {
+          "key": "`",
+          "supKey": "~",
+          "finger": 1
+        },
+        {
+          "key": "Z",
+          "finger": 1
+        },
+        {
+          "key": "X",
+          "finger": 2
+        },
+        {
+          "key": "C",
+          "finger": 3
+        },
+        {
+          "key": "V",
+          "finger": 4
+        },
+        {
+          "key": "B",
+          "finger": 4
+        },
+        {
+          "key": "N",
+          "finger": 7
+        },
+        {
+          "key": "M",
+          "finger": 7
+        },
+        {
+          "key": ",",
+          "supKey": "<",
+          "finger": 8
+        },
+        {
+          "key": ".",
+          "supKey": ">",
+          "finger": 9
+        },
+        {
+          "key": "/",
+          "supKey": "?",
+          "finger": 10
+        },
+        {
+          "key": "Shift",
+          "code": "ShiftRight",
+          "isSystemKey": true
+        }
+      ],
+      [
+        {
+          "key": "Space",
+          "code": "Space",
+          "isSystemKey": true
+        }
+      ]
+    ]
+  }
+]

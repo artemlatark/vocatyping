@@ -1,0 +1,15 @@
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-top: auto;
+    max-width: 990px;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.keyLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

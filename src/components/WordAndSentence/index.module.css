@@ -1,0 +1,44 @@
+.wordAndSentence {
+  margin-top: 60px;
+  max-width: 990px;
+  text-align: center;
+  width: 100%;
+}
+
+.tensesOfWord {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.tensesOfWord .current {
+  color: var(--color-bluegrey-800);
+  font-weight: bold;
+}
+
+.wordAndSentenceContent {
+  margin-top: 30px;
+}
+
+.spreadOutWord,
+.sentence {
+  font-size: 34px;
+  text-align: left;
+}
+
+.spreadOutWord .checked,
+.sentence .checked {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-teal-500);
+}
+
+.spreadOutWord {
+  display: inline-block;
+  text-align: center;
+}
+
+.spreadOutWord > span {
+  display: inline-block;
+  margin: 0 5px;
+  transition: font-size 150ms ease-in-out, font-weight 150ms ease-in-out;
+}

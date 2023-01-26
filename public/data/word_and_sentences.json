@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "tenses": ["abandon"],
+    "sentence": "I would never abandon my child even if he's a bad boy."
+  },
+  {
+    "id": 2,
+    "tenses": ["abatement"],
+    "sentence": "Your abatement of taxes is due to your increased charity giving."
+  },
+  {
+    "id": 3,
+    "tenses": ["abbreviate", "abbreviates"],
+    "sentence": "She abbreviates so much that I can't understand what she's saying."
+  },
+  {
+    "id": 4,
+    "tenses": ["abbreviation"],
+    "sentence": "Is \"prog\" an abbreviation for \"program\" or \"progress\"?"
+  },
+  {
+    "id": 5,
+    "tenses": ["abdomen"],
+    "sentence": "When your abdomen hurts it could mean you need your appendix taken out."
+  },
+  {
+    "id": 6,
+    "tenses": ["babdominal"],
+    "sentence": "Don't ever touch me in my abdominal area; it's too painful."
+  },
+  {
+    "id": 7,
+    "tenses": ["ability"],
+    "sentence": "You have many different abilities, but not the ability to dance."
+  },
+  {
+    "id": 8,
+    "tenses": ["able"],
+    "sentence": "I'm able to eat up to five times a day. Are you able to keep listening to me?"
+  },
+  {
+    "id": 9,
+    "tenses": ["abnormal"],
+    "sentence": "It's abnormal, but I'll do it anyway.\nAre Sadie's mental abilities normal or abnormal?"
+  },
+  {
+    "id": 10,
+    "tenses": ["aboard"],
+    "sentence": "Dear passengers: welcome aboard!"
+  },
+  {
+    "id": 11,
+    "tenses": ["abolish", "abolishment"],
+    "sentence": "The monarchy in Russia got abolished, so we do things differently now."
+  },
+  {
+    "id": 12,
+    "tenses": ["above"],
+    "sentence": "The temperature is fifty-five degrees above zero.\nIs it hanging above my head or below?"
+  },
+  {
+    "id": 13,
+    "tenses": ["abridge", "abridged"],
+    "sentence": "I purchased an abridged version of the dictionary so it wouldn't be so heavy.\nDo you need the big report abridged?"
+  },
+  {
+    "id": 14,
+    "tenses": ["abroad"],
+    "sentence": "That guy is working abroad in Italy, I think.\nWhen are you going abroad?"
+  },
+  {
+    "id": 15,
+    "tenses": ["absence"],
+    "sentence": "I don't like it when people speak Russian in my physical absence.\nDid my absence at the party make the guests irritated?"
+  },
+  {
+    "id": 16,
+    "tenses": ["absent", "absentee"],
+    "sentence": "He is absent-minded, but always remembers when it's time to eat.\nIs he absent today or just in another room?"
+  },
+  {
+    "id": 17,
+    "tenses": ["absolutely"],
+    "sentence": "I'm absolutely sure that they will show up tonight.\nIt is absolutely a good manual."
+  }
+]
