@@ -1,4 +1,4 @@
-import React, {FC, useCallback, useEffect} from 'react';
+import React, {FC, useEffect} from 'react';
 
 import {useAppDispatch} from '../../hooks/redux';
 import {checkTextSlice} from '../../store/reducers/CheckTextSlice';
@@ -26,17 +26,17 @@ const TypeForm: FC<TypeFormProps & WordStatePick & CheckText> = ({
 }) => {
   const dispatch = useAppDispatch();
 
-  const onChangeInput: React.ChangeEventHandler<HTMLInputElement> = useCallback((event): void => {
+  const onChangeInput: React.ChangeEventHandler<HTMLInputElement> = (event): void => {
     const inputValue = event.currentTarget.value;
 
     dispatch(checkTextSlice.actions.onWriteText(inputValue));
-  }, []);
+  };
 
-  const onKeyDownInput: React.KeyboardEventHandler<HTMLInputElement> = useCallback((event): void => {
+  const onKeyDownInput: React.KeyboardEventHandler<HTMLInputElement> = (event): void => {
     if (/^[а-яА-ЯёЁ)]+$/.test(event.key) || /Enter|Backspace|Space/.test(event.code)) {
       event.preventDefault();
     }
-  }, []);
+  };
 
   const onKeyUpInput = (): void => {
     dispatch(checkTextSlice.actions.onCheckInputLetter(writtenText));
