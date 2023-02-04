@@ -1,0 +1,7 @@
+.sidebar {
+
+}
+
+.sidebarWrapper > div {
+    border-right: 1px solid var(--color-bluegrey-100);
+}

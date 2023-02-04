@@ -12,6 +12,7 @@ export interface CheckText {
 }
 
 export interface ChangeWordAction {
-  handlerType: string;
-  wordsNumbers: number;
+  handlerType?: string;
+  wordId?: number;
+  wordNumbers?: number;
 }

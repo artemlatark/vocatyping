@@ -1,5 +1,6 @@
 export interface IWord {
   readonly id: number;
+  letter: string;
   tenses: string[];
   sentence: string;
 }

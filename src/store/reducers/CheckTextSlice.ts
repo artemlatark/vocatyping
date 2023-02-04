@@ -54,10 +54,12 @@ export const checkTextSlice = createSlice({
           state.currentWordId--;
           break;
         case 'next':
-          if (state.currentWordId === action.payload.wordsNumbers) break;
+          if (state.currentWordId === action.payload.wordNumbers) break;
 
           state.currentWordId++;
           break;
+        default:
+          state.currentWordId = action.payload.wordId || 1;
       }
 
       saveToLocalStorage('currentWord', state.currentWordId);

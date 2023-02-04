@@ -1,8 +1,7 @@
 .keyboard {
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
-    margin-top: auto;
+    margin: 0 auto;
     max-width: 990px;
     padding-top: 40px;
     width: 100%;
