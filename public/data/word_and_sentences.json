@@ -1,87 +1,1748 @@
 [
   {
     "id": 1,
-    "tenses": ["abandon"],
+    "tenses": [
+      "abandon"
+    ],
     "sentence": "I would never abandon my child even if he's a bad boy."
   },
   {
     "id": 2,
-    "tenses": ["abatement"],
+    "tenses": [
+      "abatement"
+    ],
     "sentence": "Your abatement of taxes is due to your increased charity giving."
   },
   {
     "id": 3,
-    "tenses": ["abbreviate", "abbreviates"],
+    "tenses": [
+      "abbreviate",
+      "abbreviates"
+    ],
     "sentence": "She abbreviates so much that I can't understand what she's saying."
   },
   {
     "id": 4,
-    "tenses": ["abbreviation"],
-    "sentence": "Is \"prog\" an abbreviation for \"program\" or \"progress\"?"
+    "tenses": [
+      "abbreviation"
+    ],
+    "sentence": "Is `prog` an abbreviation for `program` or `progress`?"
   },
   {
     "id": 5,
-    "tenses": ["abdomen"],
+    "tenses": [
+      "abdomen"
+    ],
     "sentence": "When your abdomen hurts it could mean you need your appendix taken out."
   },
   {
     "id": 6,
-    "tenses": ["babdominal"],
+    "tenses": [
+      "abdominal"
+    ],
     "sentence": "Don't ever touch me in my abdominal area; it's too painful."
   },
   {
     "id": 7,
-    "tenses": ["ability"],
+    "tenses": [
+      "ability"
+    ],
     "sentence": "You have many different abilities, but not the ability to dance."
   },
   {
     "id": 8,
-    "tenses": ["able"],
-    "sentence": "I'm able to eat up to five times a day. Are you able to keep listening to me?"
+    "tenses": [
+      "able"
+    ],
+    "sentence": "I’m able to eat up to five times a day. Are you able to keep listening to me?"
   },
   {
     "id": 9,
-    "tenses": ["abnormal"],
-    "sentence": "It's abnormal, but I'll do it anyway.\nAre Sadie's mental abilities normal or abnormal?"
+    "tenses": [
+      "abnormal"
+    ],
+    "sentence": "It’s abnormal, but I'll do it anyway. Are Sadie's mental abilities normal or abnormal?"
   },
   {
     "id": 10,
-    "tenses": ["aboard"],
+    "tenses": [
+      "aboard"
+    ],
     "sentence": "Dear passengers: welcome aboard!"
   },
   {
     "id": 11,
-    "tenses": ["abolish", "abolishment"],
+    "tenses": [
+      "abolish",
+      "abolishment"
+    ],
     "sentence": "The monarchy in Russia got abolished, so we do things differently now."
   },
   {
     "id": 12,
-    "tenses": ["above"],
-    "sentence": "The temperature is fifty-five degrees above zero.\nIs it hanging above my head or below?"
+    "tenses": [
+      "above"
+    ],
+    "sentence": "The temperature is fifty-five degrees above zero. Is it hanging above my head or below?"
   },
   {
     "id": 13,
-    "tenses": ["abridge", "abridged"],
-    "sentence": "I purchased an abridged version of the dictionary so it wouldn't be so heavy.\nDo you need the big report abridged?"
+    "tenses": [
+      "abridge",
+      "abridged"
+    ],
+    "sentence": "I purchased an abridged version of the dictionary so it wouldn't be so heavy. Do you need the big report abridged?"
   },
   {
     "id": 14,
-    "tenses": ["abroad"],
-    "sentence": "That guy is working abroad in Italy, I think.\nWhen are you going abroad?"
+    "tenses": [
+      "abroad"
+    ],
+    "sentence": "That guy is working abroad in Italy, I think. When are you going abroad?"
   },
   {
     "id": 15,
-    "tenses": ["absence"],
-    "sentence": "I don't like it when people speak Russian in my physical absence.\nDid my absence at the party make the guests irritated?"
+    "tenses": [
+      "absence"
+    ],
+    "sentence": "I don’t like it when people speak Russian in my physical absence. Did my absence at the party make the guests irritated?"
   },
   {
     "id": 16,
-    "tenses": ["absent", "absentee"],
-    "sentence": "He is absent-minded, but always remembers when it's time to eat.\nIs he absent today or just in another room?"
+    "tenses": [
+      "absent",
+      "absentee"
+    ],
+    "sentence": "He is absent-minded, but always remembers when it's time to eat. Is he absent today or just in another room?"
   },
   {
     "id": 17,
-    "tenses": ["absolutely"],
-    "sentence": "I'm absolutely sure that they will show up tonight.\nIt is absolutely a good manual."
+    "tenses": [
+      "absolutely"
+    ],
+    "sentence": "I’m absolutely sure that they will show up tonight. It is absolutely a good manual."
+  },
+  {
+    "id": 18,
+    "tenses": [
+      "abundance"
+    ],
+    "sentence": "If there weren't an abundance of gifts, would you continue not to give?"
+  },
+  {
+    "id": 19,
+    "tenses": [
+      "accent"
+    ],
+    "sentence": "I want to accent your participation in today’s event. From where does your foreign accent come?"
+  },
+  {
+    "id": 20,
+    "tenses": [
+      "accept",
+      "accepted",
+      "acceptance"
+    ],
+    "sentence": "I accept your proposal because I like it. Are you going to accept me as I am or try to change me?"
+  },
+  {
+    "id": 21,
+    "tenses": [
+      "acceptable"
+    ],
+    "sentence": "It’s totally acceptable so let's start using it immediately."
+  },
+  {
+    "id": 22,
+    "tenses": [
+      "accident",
+      "accidental"
+    ],
+    "sentence": "My car was in an accident and the back bumper is smashed."
+  },
+  {
+    "id": 23,
+    "tenses": [
+      "accidentally"
+    ],
+    "sentence": "I seem to meet him accidentally almost every day. How many friends did you make while walking throughout the city yesterday?"
+  },
+  {
+    "id": 24,
+    "tenses": [
+      "accommodate"
+    ],
+    "sentence": "Everything was done to accommodate you in the best possible way."
+  },
+  {
+    "id": 25,
+    "tenses": [
+      "accompany",
+      "accompanied"
+    ],
+    "sentence": "He accompanied me to the movies. May I accompany you to the store?"
+  },
+  {
+    "id": 26,
+    "tenses": [
+      "accomplish",
+      "accomplished"
+    ],
+    "sentence": "That task has been successfully accomplished. Is he an accomplished musician?"
+  },
+  {
+    "id": 27,
+    "tenses": [
+      "accordance"
+    ],
+    "sentence": "In accordance with the laws you should quit smoking at the office."
+  },
+  {
+    "id": 28,
+    "tenses": [
+      "according"
+    ],
+    "sentence": "According to my information it should be sent to them tomorrow."
+  },
+  {
+    "id": 29,
+    "tenses": [
+      "accordingly"
+    ],
+    "sentence": "With regard to the instructions, I’ll be acting accordingly."
+  },
+  {
+    "id": 30,
+    "tenses": [
+      "accountant"
+    ],
+    "sentence": "My accountant does taxes on her computer. Do you think that your accountant can help me too?"
+  },
+  {
+    "id": 31,
+    "tenses": [
+      "accustom",
+      "accustomed"
+    ],
+    "sentence": "I got accustomed to the New York weather."
+  },
+  {
+    "id": 32,
+    "tenses": [
+      "ache"
+    ],
+    "sentence": "I have a horrible ache in one tooth; I may need to have it pulled. Has your leg ached lately or is it feeling better?"
+  },
+  {
+    "id": 33,
+    "tenses": [
+      "achieve",
+      "achievement",
+      "achieved"
+    ],
+    "sentence": "I’ll do everything possible to achieve my goals. Have you already achieved the tax reduction measure?"
+  },
+  {
+    "id": 34,
+    "tenses": [
+      "acknowledge",
+      "acknowledged"
+    ],
+    "sentence": "I acknowledge what you said but I just don't agree. Would you please acknowledge that you understood my last statement?"
+  },
+  {
+    "id": 35,
+    "tenses": [
+      "acknowledgment"
+    ],
+    "sentence": "Have you read the acknowledgments in that dissertation?"
+  },
+  {
+    "id": 36,
+    "tenses": [
+      "acquaintance"
+    ],
+    "sentence": "How many close acquaintances do you actually have?"
+  },
+  {
+    "id": 37,
+    "tenses": [
+      "acquire",
+      "acquired"
+    ],
+    "sentence": "I’ve acquired a lot of knowledge by reading books."
+  },
+  {
+    "id": 38,
+    "tenses": [
+      "across"
+    ],
+    "sentence": "We will meet at that corner across the street. Should we go across this particular stadium?"
+  },
+  {
+    "id": 39,
+    "tenses": [
+      "actor"
+    ],
+    "sentence": "He was a good actor in all the Shakespeare plays. How many actors have you met at this theater?"
+  },
+  {
+    "id": 40,
+    "tenses": [
+      "actress"
+    ],
+    "sentence": "She is a wonderful actress, isn’t she? Will she be in the new movie?"
+  },
+  {
+    "id": 41,
+    "tenses": [
+      "actual"
+    ],
+    "sentence": "Would you please tell me the actual story? I don't want your opinions."
+  },
+  {
+    "id": 42,
+    "tenses": [
+      "actually"
+    ],
+    "sentence": "How many bottles of beer have you actually drunk in your life time?"
+  },
+  {
+    "id": 43,
+    "tenses": [
+      "addition",
+      "additional"
+    ],
+    "sentence": "In addition to firing you I will file an official complaint with your trade-union."
+  },
+  {
+    "id": 44,
+    "tenses": [
+      "address",
+      "addressed"
+    ],
+    "sentence": "To whom should this letter be addressed? To which address should I mail this letter?"
+  },
+  {
+    "id": 45,
+    "tenses": [
+      "adjective"
+    ],
+    "sentence": "How many adjectives are there in that sentence?"
+  },
+  {
+    "id": 46,
+    "tenses": [
+      "adjourn"
+    ],
+    "sentence": "Let's adjourn the meeting for today; we can continue another day."
+  },
+  {
+    "id": 47,
+    "tenses": [
+      "admiration"
+    ],
+    "sentence": "He showed a lot of admiration to me, personally."
+  },
+  {
+    "id": 48,
+    "tenses": [
+      "admire"
+    ],
+    "sentence": "I admire you for all you have done for me."
+  },
+  {
+    "id": 49,
+    "tenses": [
+      "admission"
+    ],
+    "sentence": "Excuse me; where is the Office of Admissions?"
+  },
+  {
+    "id": 50,
+    "tenses": [
+      "admittance"
+    ],
+    "sentence": "Is admittance dependent upon intelligence?"
+  },
+  {
+    "id": 51,
+    "tenses": [
+      "adopt",
+      "adopted"
+    ],
+    "sentence": "I do not want to adopt even one single child. If we adopt that suggestion, we may all be happier."
+  },
+  {
+    "id": 52,
+    "tenses": [
+      "advantage"
+    ],
+    "sentence": "That office location has a lot of advantages. Does he have an advantage over me?"
+  },
+  {
+    "id": 53,
+    "tenses": [
+      "adventure",
+      "adventurous"
+    ],
+    "sentence": "How many really fun adventures have you had in your business life?"
+  },
+  {
+    "id": 54,
+    "tenses": [
+      "advertise",
+      "advertisement"
+    ],
+    "sentence": "How often do you advertise in the local papers?"
+  },
+  {
+    "id": 55,
+    "tenses": [
+      "advertisement"
+    ],
+    "sentence": "Have you seen that funny advertisement with the three frogs?"
+  },
+  {
+    "id": 56,
+    "tenses": [
+      "advice"
+    ],
+    "sentence": "I need some advice on how to use this computer. How often should I give you advice?"
+  },
+  {
+    "id": 57,
+    "tenses": [
+      "affair"
+    ],
+    "sentence": "I don’t know for sure how many affairs he has had during the last four years. Am I interfering with a personal affair?"
+  },
+  {
+    "id": 58,
+    "tenses": [
+      "affect",
+      "affects"
+    ],
+    "sentence": "Do you want to know how it affects me? My business was seriously affected by his dishonest actions."
+  },
+  {
+    "id": 59,
+    "tenses": [
+      "affectionately"
+    ],
+    "sentence": "He looked at her very affectionately and smiled."
+  },
+  {
+    "id": 60,
+    "tenses": [
+      "affidavit"
+    ],
+    "sentence": "An affidavit is needed to receive a visa at the consulate. Do you need an affidavit from that witness or not?"
+  },
+  {
+    "id": 61,
+    "tenses": [
+      "afternoon"
+    ],
+    "sentence": "We expect this afternoon to be quite warm. Do you like drinking coffee in the afternoon?"
+  },
+  {
+    "id": 62,
+    "tenses": [
+      "afterward"
+    ],
+    "sentence": "He told me, afterward, that he didn’t like my proposal in the first place."
+  },
+  {
+    "id": 63,
+    "tenses": [
+      "afterwards"
+    ],
+    "sentence": "Afterwards, it appeared to be a good idea."
+  },
+  {
+    "id": 64,
+    "tenses": [
+      "again"
+    ],
+    "sentence": "I keep seeing him again and again. Didn’t I tell him, “Come again, please?”"
+  },
+  {
+    "id": 65,
+    "tenses": [
+      "against"
+    ],
+    "sentence": "He came and stood against the wall."
+  },
+  {
+    "id": 66,
+    "tenses": [
+      "age"
+    ],
+    "sentence": "What age is she? She is 127 years of age and was given a spot in the Guinness Book of Records."
+  },
+  {
+    "id": 67,
+    "tenses": [
+      "agency",
+      "agencies"
+    ],
+    "sentence": "ITAR-TASS was, sometime ago, a governmental agency. How many secretarial agencies have you visited lately?"
+  },
+  {
+    "id": 68,
+    "tenses": [
+      "agenda"
+    ],
+    "sentence": "What do you think about my proposed agenda? I’ve never written any agendas even though I know what should be done."
+  },
+  {
+    "id": 69,
+    "tenses": [
+      "ago"
+    ],
+    "sentence": "It took place many years ago. How many days ago did you receive my letter?"
+  },
+  {
+    "id": 70,
+    "tenses": [
+      "agony"
+    ],
+    "sentence": "The agony of defeat is what we're trying to avoid."
+  },
+  {
+    "id": 71,
+    "tenses": [
+      "agreeable",
+      "agree"
+    ],
+    "sentence": "They’re very agreeable kind of folk."
+  },
+  {
+    "id": 72,
+    "tenses": [
+      "agreement"
+    ],
+    "sentence": "I thought about it overnight and now I can tell you that we are in agreement with each other."
+  },
+  {
+    "id": 73,
+    "tenses": [
+      "agriculture"
+    ],
+    "sentence": "In Russia we have a Minister of Agriculture but we don’t have any agricultural products."
+  },
+  {
+    "id": 74,
+    "tenses": [
+      "air"
+    ],
+    "sentence": "“Shut up!” said the producer of the show, “We are on the air.” How did the air smell?"
+  },
+  {
+    "id": 75,
+    "tenses": [
+      "airplane"
+    ],
+    "sentence": "I, hate airplanes; they fly too high. So many airplanes have crashed in the recent past!"
+  },
+  {
+    "id": 76,
+    "tenses": [
+      "aisle"
+    ],
+    "sentence": "What aisle should I go down to get the kind of crackers I like? Don’t go to any aisle; go home instead."
+  },
+  {
+    "id": 77,
+    "tenses": [
+      "alcohol",
+      "alcoholic"
+    ],
+    "sentence": "What percentage of alcohol does that beer have? I like drinking non-alcoholic beverages."
+  },
+  {
+    "id": 78,
+    "tenses": [
+      "alien"
+    ],
+    "sentence": "INS doesn’t like aliens and nobody knows why. When the unidentified flying object (UFO) landed, two hundred aliens stepped out."
+  },
+  {
+    "id": 79,
+    "tenses": [
+      "all"
+    ],
+    "sentence": "All of us are trying to gain as much knowledge as possible, at least so far."
+  },
+  {
+    "id": 80,
+    "tenses": [
+      "allegiance"
+    ],
+    "sentence": "I have changed allegiances; now I follow the other regime."
+  },
+  {
+    "id": 81,
+    "tenses": [
+      "alloy"
+    ],
+    "sentence": "The other metal alloy would be less costly."
+  },
+  {
+    "id": 82,
+    "tenses": [
+      "almighty"
+    ],
+    "sentence": "The Almighty Wizard of Oz has spoken."
+  },
+  {
+    "id": 83,
+    "tenses": [
+      "almost"
+    ],
+    "sentence": "He came when it was almost 9:00. Which book has almost everybody read for sure?"
+  },
+  {
+    "id": 84,
+    "tenses": [
+      "aloof"
+    ],
+    "sentence": "He was very aloof after I told him the news; I couldn't get him to talk."
+  },
+  {
+    "id": 85,
+    "tenses": [
+      "alphabet"
+    ],
+    "sentence": "I don’t like the Latin alphabet, but I adore the Cyrillic one."
+  },
+  {
+    "id": 86,
+    "tenses": [
+      "already"
+    ],
+    "sentence": "When I arrived at the party there were already 40 people there. When did you first realize that you weren't that smart? When I came home the dinner was already served."
+  },
+  {
+    "id": 87,
+    "tenses": [
+      "also"
+    ],
+    "sentence": "And you, Brutus, also sold yourself to the Bolsheviks?"
+  },
+  {
+    "id": 88,
+    "tenses": [
+      "altar"
+    ],
+    "sentence": "We’ll meet by the altar tomorrow night."
+  },
+  {
+    "id": 89,
+    "tenses": [
+      "alter",
+      "altered"
+    ],
+    "sentence": "That dress got altered by the best tailor in town."
+  },
+  {
+    "id": 90,
+    "tenses": [
+      "although"
+    ],
+    "sentence": "Although I know a lot of words I still cannot communicate properly."
+  },
+  {
+    "id": 91,
+    "tenses": [
+      "altogether"
+    ],
+    "sentence": "We gathered altogether and then we shared stories."
+  },
+  {
+    "id": 92,
+    "tenses": [
+      "altos"
+    ],
+    "sentence": "Some of the altos can sing higher than the sopranos."
+  },
+  {
+    "id": 93,
+    "tenses": [
+      "always"
+    ],
+    "sentence": "Didn't you always hear, “Listen to your mother”?"
+  },
+  {
+    "id": 94,
+    "tenses": [
+      "ambassador"
+    ],
+    "sentence": "I met the Ambassador to Italy at the party."
+  },
+  {
+    "id": 95,
+    "tenses": [
+      "ambition"
+    ],
+    "sentence": "She has more ambitions than the average twelve year old."
+  },
+  {
+    "id": 96,
+    "tenses": [
+      "ambitious"
+    ],
+    "sentence": "He is an ambitious young man with many different ambitions."
+  },
+  {
+    "id": 97,
+    "tenses": [
+      "amendment"
+    ],
+    "sentence": "We need to add another amendment to the constitution."
+  },
+  {
+    "id": 98,
+    "tenses": [
+      "american"
+    ],
+    "sentence": "Americans have a lot of idiosyncrasies."
+  },
+  {
+    "id": 99,
+    "tenses": [
+      "among"
+    ],
+    "sentence": "There is a traitor among us!"
+  },
+  {
+    "id": 100,
+    "tenses": [
+      "amount",
+      "amounted"
+    ],
+    "sentence": "What was the actual amount? It all has amounted to only 100 dollars."
+  },
+  {
+    "id": 101,
+    "tenses": [
+      "amusement",
+      "amuse",
+      "amused"
+    ],
+    "sentence": "I liked visiting that amusement park. I’m amused!"
+  },
+  {
+    "id": 102,
+    "tenses": [
+      "ancestors"
+    ],
+    "sentence": "Did your ancestors live in Africa?"
+  },
+  {
+    "id": 103,
+    "tenses": [
+      "ancient"
+    ],
+    "sentence": "Moscow scientists have unearthed some ancient manuscripts."
+  },
+  {
+    "id": 104,
+    "tenses": [
+      "angels"
+    ],
+    "sentence": "I have not seen any real angels yet."
+  },
+  {
+    "id": 105,
+    "tenses": [
+      "angle"
+    ],
+    "sentence": "From what angle should we look into that problem?"
+  },
+  {
+    "id": 106,
+    "tenses": [
+      "angry"
+    ],
+    "sentence": "The day before yesterday I saw a couple of angry people who were fighting."
+  },
+  {
+    "id": 107,
+    "tenses": [
+      "animal"
+    ],
+    "sentence": "What kinds of animals do you prefer most? Fewer and fewer people go to the movies, nowadays."
+  },
+  {
+    "id": 108,
+    "tenses": [
+      "ankle"
+    ],
+    "sentence": "A couple of weeks ago I fell and broke my ankle."
+  },
+  {
+    "id": 109,
+    "tenses": [
+      "announce",
+      "announcement"
+    ],
+    "sentence": "He came in and made an announcement."
+  },
+  {
+    "id": 110,
+    "tenses": [
+      "annual"
+    ],
+    "sentence": "I met plenty of people at the annual meeting of our bank’s shareholders."
+  },
+  {
+    "id": 111,
+    "tenses": [
+      "answer"
+    ],
+    "sentence": "What will the answer be? Hey, you didn’t answer my question."
+  },
+  {
+    "id": 112,
+    "tenses": [
+      "antiseptic"
+    ],
+    "sentence": "That medicine has a lot of antiseptic qualities."
+  },
+  {
+    "id": 113,
+    "tenses": [
+      "anxious",
+      "anxiously"
+    ],
+    "sentence": "How anxious are you to get in touch with him? He looked at me anxiously."
+  },
+  {
+    "id": 114,
+    "tenses": [
+      "any"
+    ],
+    "sentence": "May any of us go along with you? Yes, I can go along with your proposal."
+  },
+  {
+    "id": 115,
+    "tenses": [
+      "anybody"
+    ],
+    "sentence": "Does anybody know where the nearest deli is located?"
+  },
+  {
+    "id": 116,
+    "tenses": [
+      "anymore"
+    ],
+    "sentence": "I don’t like you anymore. We don’t have any more beetle juice."
+  },
+  {
+    "id": 117,
+    "tenses": [
+      "anyone"
+    ],
+    "sentence": "Has anyone ever seen a UFO?"
+  },
+  {
+    "id": 118,
+    "tenses": [
+      "anywhere"
+    ],
+    "sentence": "You will not find that kind of service anywhere else! It’s not his book; it’s somebody else’s."
+  },
+  {
+    "id": 119,
+    "tenses": [
+      "apartment"
+    ],
+    "sentence": "I’ve seen many good apartments, but this one is the best."
+  },
+  {
+    "id": 120,
+    "tenses": [
+      "apparatus"
+    ],
+    "sentence": "That mad scientist constructed that apparatus."
+  },
+  {
+    "id": 121,
+    "tenses": [
+      "apparently"
+    ],
+    "sentence": "Apparently, I’ve seen you before somewhere."
+  },
+  {
+    "id": 122,
+    "tenses": [
+      "appeal"
+    ],
+    "sentence": "The criminal’s lawyer appealed to the Supreme Court."
+  },
+  {
+    "id": 123,
+    "tenses": [
+      "appear"
+    ],
+    "sentence": "You will need to appear before the judge on September 17th."
+  },
+  {
+    "id": 124,
+    "tenses": [
+      "appearance"
+    ],
+    "sentence": "Appearances can be deceiving."
+  },
+  {
+    "id": 125,
+    "tenses": [
+      "appendicitis"
+    ],
+    "sentence": "I had appendicitis so had my appendix removed."
+  },
+  {
+    "id": 126,
+    "tenses": [
+      "appetite"
+    ],
+    "sentence": "Recently, I have had a bad appetite."
+  },
+  {
+    "id": 127,
+    "tenses": [
+      "applicant"
+    ],
+    "sentence": "I don’t like that applicant; he is very irritating. If they weren’t present tonight, I wouldn’t be able to submit my application on time."
+  },
+  {
+    "id": 128,
+    "tenses": [
+      "apply",
+      "application"
+    ],
+    "sentence": "Let's apply what we've already learned so far."
+  },
+  {
+    "id": 129,
+    "tenses": [
+      "appoint",
+      "appointed"
+    ],
+    "sentence": "He was appointed to a higher position."
+  },
+  {
+    "id": 130,
+    "tenses": [
+      "appreciate",
+      "appreciated"
+    ],
+    "sentence": "Your assistance will be greatly appreciated."
+  },
+  {
+    "id": 131,
+    "tenses": [
+      "appreciation"
+    ],
+    "sentence": "I cannot describe my appreciation for your effort."
+  },
+  {
+    "id": 132,
+    "tenses": [
+      "approach"
+    ],
+    "sentence": "What kind of approach should we use in this particular case?"
+  },
+  {
+    "id": 133,
+    "tenses": [
+      "appropriation"
+    ],
+    "sentence": "The appropriation of funds is not enough."
+  },
+  {
+    "id": 134,
+    "tenses": [
+      "approve",
+      "approval"
+    ],
+    "sentence": "I want you to approve what I’m doing now."
+  },
+  {
+    "id": 135,
+    "tenses": [
+      "approximately"
+    ],
+    "sentence": "Can you tell me, approximately, what time it is now?"
+  },
+  {
+    "id": 136,
+    "tenses": [
+      "april"
+    ],
+    "sentence": "I like the month of April because it rarely rains."
+  },
+  {
+    "id": 137,
+    "tenses": [
+      "architect"
+    ],
+    "sentence": "One of Ayn Rand's novels described an architect achieving greatness."
+  },
+  {
+    "id": 138,
+    "tenses": [
+      "arctic"
+    ],
+    "sentence": "I hate all of the arctic birds."
+  },
+  {
+    "id": 139,
+    "tenses": [
+      "are",
+      "to be",
+      "is"
+    ],
+    "sentence": "Aren’t you a beer lover?"
+  },
+  {
+    "id": 140,
+    "tenses": [
+      "area"
+    ],
+    "sentence": "Would you please clear this area? Did I make myself clear?"
+  },
+  {
+    "id": 141,
+    "tenses": [
+      "argument"
+    ],
+    "sentence": "Yesterday we had a big argument with my mom."
+  },
+  {
+    "id": 142,
+    "tenses": [
+      "arithmetic"
+    ],
+    "sentence": "I understand nothing in arithmetics."
+  },
+  {
+    "id": 143,
+    "tenses": [
+      "arm"
+    ],
+    "sentence": "Have you ever hurt your arm? No, I haven’t."
+  },
+  {
+    "id": 144,
+    "tenses": [
+      "armory"
+    ],
+    "sentence": "The armory doesn't store personal rifles."
+  },
+  {
+    "id": 145,
+    "tenses": [
+      "army"
+    ],
+    "sentence": "In which platoon of the U.S. Army were you?"
+  },
+  {
+    "id": 146,
+    "tenses": [
+      "around"
+    ],
+    "sentence": "Stop going around with that angry scowl on your face. Be more direct! Stop rambling!"
+  },
+  {
+    "id": 147,
+    "tenses": [
+      "arrange"
+    ],
+    "sentence": "Do you want to arrange your schedule so that you can go to your doctor’s appointment?"
+  },
+  {
+    "id": 148,
+    "tenses": [
+      "arrangement"
+    ],
+    "sentence": "I made all the necessary arrangements. Everybody will die unnecessarily. It doesn’t necessarily mean that I cannot come tonight."
+  },
+  {
+    "id": 149,
+    "tenses": [
+      "arrival"
+    ],
+    "sentence": "I unfortunately missed the plane’s arrival."
+  },
+  {
+    "id": 150,
+    "tenses": [
+      "arrive",
+      "arrived"
+    ],
+    "sentence": "Will your plane arrive on time?"
+  },
+  {
+    "id": 151,
+    "tenses": [
+      "art"
+    ],
+    "sentence": "Modern art is sometimes difficult to interpret."
+  },
+  {
+    "id": 152,
+    "tenses": [
+      "article"
+    ],
+    "sentence": "Please finish writing that newspaper article."
+  },
+  {
+    "id": 153,
+    "tenses": [
+      "ascend",
+      "ascension",
+      "ascended"
+    ],
+    "sentence": "Then the angel ascended into heaven."
+  },
+  {
+    "id": 154,
+    "tenses": [
+      "ascertain"
+    ],
+    "sentence": "We might want to ascertain the answer before continuing our discussion."
+  },
+  {
+    "id": 155,
+    "tenses": [
+      "ask",
+      "asking",
+      "asked"
+    ],
+    "sentence": "Don't ask me that!"
+  },
+  {
+    "id": 156,
+    "tenses": [
+      "assemble"
+    ],
+    "sentence": "Before I assemble the model airplane, I want to read the instructions."
+  },
+  {
+    "id": 157,
+    "tenses": [
+      "assembly"
+    ],
+    "sentence": "The assembly of ambassadors had lots of wisdom to share on human rights."
+  },
+  {
+    "id": 158,
+    "tenses": [
+      "assign",
+      "assignment",
+      "assigned"
+    ],
+    "sentence": "The teacher assigned the homework just before the schoolbell rang."
+  },
+  {
+    "id": 159,
+    "tenses": [
+      "assist"
+    ],
+    "sentence": "If I asist you in doing the dishes, will you then take a nap?"
+  },
+  {
+    "id": 160,
+    "tenses": [
+      "assistance"
+    ],
+    "sentence": "Thank you, but your assistance in doing the dishes is not needed."
+  },
+  {
+    "id": 161,
+    "tenses": [
+      "association"
+    ],
+    "sentence": "There are many associations of writers, but you want one that has interesting people."
+  },
+  {
+    "id": 162,
+    "tenses": [
+      "assume",
+      "assumption",
+      "assumed"
+    ],
+    "sentence": "She assumed that the computer would work after the technician spent four hours with it."
+  },
+  {
+    "id": 163,
+    "tenses": [
+      "assure",
+      "assurance"
+    ],
+    "sentence": "I assure you: I locked the door before leaving."
+  },
+  {
+    "id": 164,
+    "tenses": [
+      "assuring"
+    ],
+    "sentence": "Assuring that everyone would have an equal chance to participate, the leader began explaining the rules of the game."
+  },
+  {
+    "id": 165,
+    "tenses": [
+      "astonish",
+      "astonishment",
+      "astonished"
+    ],
+    "sentence": "Santa Claus was astonished to come down the chimney and find little Sally awake."
+  },
+  {
+    "id": 166,
+    "tenses": [
+      "ate",
+      "eat",
+      "eaten"
+    ],
+    "sentence": "John ate the biggest hamburger I have ever seen!"
+  },
+  {
+    "id": 167,
+    "tenses": [
+      "athlete",
+      "athletic"
+    ],
+    "sentence": "Athletes are very fussy about the kind of athletic shoes they wear."
+  },
+  {
+    "id": 168,
+    "tenses": [
+      "attaching"
+    ],
+    "sentence": "The space shuttle is attaching itself to the space station port."
+  },
+  {
+    "id": 169,
+    "tenses": [
+      "attacked",
+      "attack"
+    ],
+    "sentence": "If you go out at night, you may be attacked by a bear."
+  },
+  {
+    "id": 170,
+    "tenses": [
+      "attempt",
+      "attempted"
+    ],
+    "sentence": "I am attempting to explain my reasons for spanking you but you won't stop crying."
+  },
+  {
+    "id": 171,
+    "tenses": [
+      "attendant"
+    ],
+    "sentence": "The flight attendant brought me a magazine with all the pages ripped out!"
+  },
+  {
+    "id": 172,
+    "tenses": [
+      "attention"
+    ],
+    "sentence": "Attention students: Do not leave before the bell has rung."
+  },
+  {
+    "id": 173,
+    "tenses": [
+      "attorney",
+      "attorneys"
+    ],
+    "sentence": "The judge said that all attorneys had to stand when presenting their cases."
+  },
+  {
+    "id": 174,
+    "tenses": [
+      "attract",
+      "attractive",
+      "attracted"
+    ],
+    "sentence": "Lots of bugs are attracted to light."
+  },
+  {
+    "id": 175,
+    "tenses": [
+      "audience"
+    ],
+    "sentence": "Don't audience members have an equal right to ask questions?"
+  },
+  {
+    "id": 176,
+    "tenses": [
+      "august"
+    ],
+    "sentence": "It was a hot day in the month of August, when I suddenly realized I was too old to ride a bike."
+  },
+  {
+    "id": 177,
+    "tenses": [
+      "aunt"
+    ],
+    "sentence": "Aunt Mary is my father's sister."
+  },
+  {
+    "id": 178,
+    "tenses": [
+      "author"
+    ],
+    "sentence": "This book's authors are both professional economists."
+  },
+  {
+    "id": 179,
+    "tenses": [
+      "authority",
+      "authorities"
+    ],
+    "sentence": "If you always listen to authority, you will never be a leader, yourself."
+  },
+  {
+    "id": 180,
+    "tenses": [
+      "automobile"
+    ],
+    "sentence": "That automobile factory has the most efficient assembly line."
+  },
+  {
+    "id": 181,
+    "tenses": [
+      "autumn"
+    ],
+    "sentence": "It's autumn, when the leaves are changing, that is my favorite time of year."
+  },
+  {
+    "id": 182,
+    "tenses": [
+      "available"
+    ],
+    "sentence": "No other time slots are available; you'll have to take the one at 4:00."
+  },
+  {
+    "id": 183,
+    "tenses": [
+      "avenue"
+    ],
+    "sentence": "The avenues in New York City run north and south."
+  },
+  {
+    "id": 184,
+    "tenses": [
+      "average"
+    ],
+    "sentence": "If I would have been an average student, you might be right, but I always made A's."
+  },
+  {
+    "id": 185,
+    "tenses": [
+      "awful"
+    ],
+    "sentence": "That state is awfully far to be going to just for the weekend."
+  },
+  {
+    "id": 186,
+    "tenses": [
+      "awhile"
+    ],
+    "sentence": "Awhile back I thought those people were Martians; now I realize they're just short."
+  },
+  {
+    "id": 187,
+    "tenses": [
+      "babies"
+    ],
+    "sentence": "Fourteen babies were born in that hospital yesterday."
+  },
+  {
+    "id": 188,
+    "tenses": [
+      "baby"
+    ],
+    "sentence": "A baby might cry during the ceremony so let's not let them in."
+  },
+  {
+    "id": 189,
+    "tenses": [
+      "back"
+    ],
+    "sentence": "To get in back of the refrigerator, we'll need two strong men."
+  },
+  {
+    "id": 190,
+    "tenses": [
+      "backward"
+    ],
+    "sentence": "I turned backward just in time to see Mrs. Jones fall."
+  },
+  {
+    "id": 191,
+    "tenses": [
+      "backwards"
+    ],
+    "sentence": "He can skate backwards just as well as he can skate forwards."
+  },
+  {
+    "id": 192,
+    "tenses": [
+      "bag"
+    ],
+    "sentence": "I'd like to buy a big bag of potato chips."
+  },
+  {
+    "id": 193,
+    "tenses": [
+      "baggage"
+    ],
+    "sentence": "Baggage often looks alike on the conveyor belt at the airport, so pay attention."
+  },
+  {
+    "id": 194,
+    "tenses": [
+      "balance",
+      "balancing"
+    ],
+    "sentence": "The circus artist performed a nice balancing act on the highwire."
+  },
+  {
+    "id": 195,
+    "tenses": [
+      "balcony"
+    ],
+    "sentence": "I met my husband in the second balcony of the theater."
+  },
+  {
+    "id": 196,
+    "tenses": [
+      "ball"
+    ],
+    "sentence": "The cat should not play with my ball of yarn."
+  },
+  {
+    "id": 197,
+    "tenses": [
+      "ballot"
+    ],
+    "sentence": "Before marking your ballots, think carefully about for whom you want to vote."
+  },
+  {
+    "id": 198,
+    "tenses": [
+      "banana"
+    ],
+    "sentence": "Monkeys eat bananas but they don't like banana peelings."
+  },
+  {
+    "id": 199,
+    "tenses": [
+      "bandage"
+    ],
+    "sentence": "The nurse bandaged the wound with a new kind of gauze."
+  },
+  {
+    "id": 200,
+    "tenses": [
+      "bank"
+    ],
+    "sentence": "Robbers tried to hold up the bank because it had lots of safety deposit boxes."
+  },
+  {
+    "id": 201,
+    "tenses": [
+      "bankrupt",
+      "bankruptcy"
+    ],
+    "sentence": "Before going bankrupt the company sold off all its assets to pay debts."
+  },
+  {
+    "id": 202,
+    "tenses": [
+      "banquet"
+    ],
+    "sentence": "The country club offered a lovely banquet to all its existing members."
+  },
+  {
+    "id": 203,
+    "tenses": [
+      "barbarous"
+    ],
+    "sentence": "If that man doesn't quit acting in a barbarous manner, he will be banned from the club."
+  },
+  {
+    "id": 204,
+    "tenses": [
+      "bargain"
+    ],
+    "sentence": "We always go to the basement of these stores to see if we can find any cheap bargains."
+  },
+  {
+    "id": 205,
+    "tenses": [
+      "barley"
+    ],
+    "sentence": "Barley is not grown in my country so we have to import it."
+  },
+  {
+    "id": 206,
+    "tenses": [
+      "barrel"
+    ],
+    "sentence": "Barrels of oil sell for more on the market in our country."
+  },
+  {
+    "id": 207,
+    "tenses": [
+      "basement"
+    ],
+    "sentence": "Her basement is so cold that they store wine down there."
+  },
+  {
+    "id": 208,
+    "tenses": [
+      "basis",
+      "bases"
+    ],
+    "sentence": "If you would explain the basis of your argument, I might understand why you said that."
+  },
+  {
+    "id": 209,
+    "tenses": [
+      "basketball"
+    ],
+    "sentence": "I started playing basketball on the streets with only one net."
+  },
+  {
+    "id": 210,
+    "tenses": [
+      "battle"
+    ],
+    "sentence": "You may have won the battle, but you haven't won the war."
+  },
+  {
+    "id": 211,
+    "tenses": [
+      "be"
+    ],
+    "sentence": "To be or not to be; that is the question."
+  },
+  {
+    "id": 212,
+    "tenses": [
+      "beach"
+    ],
+    "sentence": "There is not enough sand on that beach to accommodate pedestrians and cars."
+  },
+  {
+    "id": 213,
+    "tenses": [
+      "beard"
+    ],
+    "sentence": "His beard was red but his curly mustache was brown."
+  },
+  {
+    "id": 214,
+    "tenses": [
+      "bearing"
+    ],
+    "sentence": "Bearing a resemblance to me, my sister went to class in my place."
+  },
+  {
+    "id": 215,
+    "tenses": [
+      "beast"
+    ],
+    "sentence": "Burrows may be the beasts of burden, but pigs are the butt of too many jokes."
+  },
+  {
+    "id": 216,
+    "tenses": [
+      "beautiful"
+    ],
+    "sentence": "The valley is beautiful in the spring when the flowers are blooming."
+  },
+  {
+    "id": 217,
+    "tenses": [
+      "beauty"
+    ],
+    "sentence": "Beauty is in the eye of the beholder."
+  },
+  {
+    "id": 218,
+    "tenses": [
+      "became"
+    ],
+    "sentence": "If he became a mathematician, why can he not add these numbers now?"
+  },
+  {
+    "id": 219,
+    "tenses": [
+      "because"
+    ],
+    "sentence": "It is because you are young that you are not allowed to go to the adult movie."
+  },
+  {
+    "id": 220,
+    "tenses": [
+      "become",
+      "became"
+    ],
+    "sentence": "Don't become a rock singer; dance instead."
+  },
+  {
+    "id": 221,
+    "tenses": [
+      "bed"
+    ],
+    "sentence": "You, young man, better go to bed right now!"
+  },
+  {
+    "id": 222,
+    "tenses": [
+      "beefsteak"
+    ],
+    "sentence": "I ordered my beefsteak medium rare."
+  },
+  {
+    "id": 223,
+    "tenses": [
+      "been",
+      "to be"
+    ],
+    "sentence": "I have been to that restaurant before and I know their food is the best."
+  },
+  {
+    "id": 224,
+    "tenses": [
+      "began"
+    ],
+    "sentence": "When I began my journeys, I had plenty of food."
+  },
+  {
+    "id": 225,
+    "tenses": [
+      "beggar"
+    ],
+    "sentence": "Don't act like a beggar; volunteer your efforts in return for their participation."
+  },
+  {
+    "id": 226,
+    "tenses": [
+      "begin",
+      "began",
+      "begun"
+    ],
+    "sentence": "If you would finally begin reading the book, you would know what I'm talking about."
+  },
+  {
+    "id": 227,
+    "tenses": [
+      "beginning"
+    ],
+    "sentence": "At the beginning of time, no humans existed."
+  },
+  {
+    "id": 228,
+    "tenses": [
+      "begun"
+    ],
+    "sentence": "Just after the play had begun, I had a terrible urge to cough."
+  },
+  {
+    "id": 229,
+    "tenses": [
+      "belief"
+    ],
+    "sentence": "It is Samantha's firm belief that philosophy is the basis for all human productivity."
+  },
+  {
+    "id": 230,
+    "tenses": [
+      "believe",
+      "believes",
+      "believed",
+      "believing"
+    ],
+    "sentence": "If you believe in that doctrine, then you'll have no trouble believing in free will."
+  },
+  {
+    "id": 231,
+    "tenses": [
+      "beneath"
+    ],
+    "sentence": "Beneath the surface of the earth is a layer of granite."
+  },
+  {
+    "id": 232,
+    "tenses": [
+      "benefit"
+    ],
+    "sentence": "We would all benefit from your explaining what happened at the meeting."
+  },
+  {
+    "id": 233,
+    "tenses": [
+      "besides"
+    ],
+    "sentence": "There is nothing besides economics, that I can't do without."
+  },
+  {
+    "id": 234,
+    "tenses": [
+      "bestial"
+    ],
+    "sentence": "When Tom explained his reasons for hitting her, he was almost bestial in nature."
+  },
+  {
+    "id": 235,
+    "tenses": [
+      "between"
+    ],
+    "sentence": "I want to sit between Mrs. Smith and Mr. Richards."
+  },
+  {
+    "id": 236,
+    "tenses": [
+      "beverage"
+    ],
+    "sentence": "After the plane has taken off, we will be serving beverages for your convenience."
+  },
+  {
+    "id": 237,
+    "tenses": [
+      "beware"
+    ],
+    "sentence": "Beware of the big dog!"
+  },
+  {
+    "id": 238,
+    "tenses": [
+      "beyond"
+    ],
+    "sentence": "The motorcycle is beyond repair; we might as well take it to the junk yard."
+  },
+  {
+    "id": 239,
+    "tenses": [
+      "bible"
+    ],
+    "sentence": "The books of the Bible were written by many different people."
+  },
+  {
+    "id": 240,
+    "tenses": [
+      "bicycle"
+    ],
+    "sentence": "Three of us rode bicycles while Bernie ran alongside of us."
   }
 ]

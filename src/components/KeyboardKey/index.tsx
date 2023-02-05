@@ -18,9 +18,10 @@ interface KeyboardKeyProps {
   keyboardKey: IKey;
   nextKey: string | undefined;
   onChangeNextTypeKey: Function;
+  sidebarOpen: boolean;
 }
 
-const KeyboardKey: FC<KeyboardKeyProps> = memo(({keyboardKey, nextKey, onChangeNextTypeKey}) => {
+const KeyboardKey: FC<KeyboardKeyProps> = memo(({keyboardKey, nextKey, onChangeNextTypeKey, sidebarOpen}) => {
   const windowSizes = useWindowSize();
   const isNextKey = keyboardKey.key?.toLowerCase() === nextKey;
   const keyRef = useRef<HTMLDivElement>(null);
@@ -46,10 +47,10 @@ const KeyboardKey: FC<KeyboardKeyProps> = memo(({keyboardKey, nextKey, onChangeN
     }
 
     if (nextKey === undefined) {
-      onChangeNextTypeKey(undefined);
+      onChangeNextTypeKey(null);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isNextKey, windowSizes.width]);
+  }, [isNextKey, windowSizes.width, sidebarOpen]);
 
   return (
     <div className={keyClassNames} ref={keyRef}>

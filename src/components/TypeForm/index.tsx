@@ -10,13 +10,14 @@ import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 
 interface TypeFormProps {
   currentWord: IWord | undefined;
+  wordNumbers: number;
 }
 
-type WordStatePick = Pick<WordState, 'words' | 'isLoading'>;
+type WordStatePick = Pick<WordState, 'isLoading'>;
 
 const TypeForm: FC<TypeFormProps & WordStatePick & CheckText> = ({
   currentWord,
-  words,
+  wordNumbers,
   isLoading,
   currentWordId,
   writtenText,
@@ -51,7 +52,7 @@ const TypeForm: FC<TypeFormProps & WordStatePick & CheckText> = ({
         if (currentWordTense !== currentWord.tenses.length - 1) {
           dispatch(checkTextSlice.actions.onNextTense());
         } else {
-          dispatch(checkTextSlice.actions.onChangeWord({handlerType: 'next', wordsNumbers: words.length}));
+          dispatch(checkTextSlice.actions.onChangeWord({handlerType: 'next', wordNumbers}));
         }
       }
     }

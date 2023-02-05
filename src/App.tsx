@@ -1,13 +1,15 @@
-import {useEffect, useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 
 import TypeForm from './components/TypeForm';
 import {useAppDispatch, useAppSelector} from './hooks/redux';
 import {fetchWords} from './store/reducers/ActionCreators';
+import Layout from './components/Layout';
 import WordAndSentence from './components/WordAndSentence';
 import Keyboard from './components/Keyboard';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
-import './App.css';
+const sidebarWidth = 360;
 
 function App() {
   const dispatch = useAppDispatch();
@@ -16,6 +18,10 @@ function App() {
     (state) => state.writtenTextCheckReducer
   );
   const currentWord = useMemo(() => words.find((item) => item.id === currentWordId), [words, currentWordId]);
+  const wordNumbers = words.length;
+  const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
+
+  const onOpenSidebar = () => setSidebarOpen((prevState) => !prevState);
 
   useEffect(() => {
     dispatch(fetchWords());
@@ -23,8 +29,12 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Navigation words={words} currentWordId={currentWordId} />
+    <Layout
+      sidebar={
+        <Sidebar words={words} onOpenSidebar={onOpenSidebar} sidebarWidth={sidebarWidth} sidebarOpen={sidebarOpen} />
+      }
+    >
+      <Header onOpenSidebar={onOpenSidebar} wordNumbers={wordNumbers} currentWordId={currentWordId} />
       <WordAndSentence
         currentWordTense={currentWordTense}
         wordVariants={wordVariants}
@@ -32,17 +42,22 @@ function App() {
         currentWord={currentWord}
       />
       <TypeForm
-        currentWord={currentWord}
-        words={words}
+        wordNumbers={wordNumbers}
         isLoading={isLoading}
+        currentWord={currentWord}
         currentWordTense={currentWordTense}
         currentWordId={currentWordId}
         wordVariants={wordVariants}
         currentVariantIndex={currentVariantIndex}
         writtenText={writtenText}
       />
-      <Keyboard currentVariantIndex={currentVariantIndex} wordVariants={wordVariants} writtenText={writtenText} />
-    </div>
+      <Keyboard
+        currentVariantIndex={currentVariantIndex}
+        wordVariants={wordVariants}
+        writtenText={writtenText}
+        sidebarOpen={sidebarOpen}
+      />
+    </Layout>
   );
 }
 

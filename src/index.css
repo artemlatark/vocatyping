@@ -9,6 +9,13 @@ body {
   min-width: 990px;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   --color-bluegrey-50: #eceff1;
   --color-bluegrey-100: #cfd8dc;
