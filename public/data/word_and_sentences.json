@@ -1744,5 +1744,298 @@
       "bicycle"
     ],
     "sentence": "Three of us rode bicycles while Bernie ran alongside of us."
+  },
+  {
+    "tenses": [
+      "beware"
+    ],
+    "id": 241,
+    "sentence": "Beware of the big dog!"
+  },
+  {
+    "tenses": [
+      "beyond"
+    ],
+    "id": 242,
+    "sentence": "The motorcycle is beyond repair; we might as well take it to the junk yard."
+  },
+  {
+    "tenses": [
+      "Bible"
+    ],
+    "id": 243,
+    "sentence": "The books of the Bible were written by many different people."
+  },
+  {
+    "tenses": [
+      "bicycle"
+    ],
+    "id": 244,
+    "sentence": "Three of us rode bicycles while Bernie ran alongside of us."
+  },
+  {
+    "tenses": [
+      "bill"
+    ],
+    "id": 245,
+    "sentence": "I got my phone bill yesterday and had placed over a hundred long distance calls."
+  },
+  {
+    "tenses": [
+      "bird"
+    ],
+    "id": 246,
+    "sentence": "I want to draw a picture of a bird with a long wing span."
+  },
+  {
+    "tenses": [
+      "birthday"
+    ],
+    "id": 247,
+    "sentence": "If I'm a good girl, will you give me a tricycle for my birthday?"
+  },
+  {
+    "tenses": [
+      "biscuit"
+    ],
+    "id": 248,
+    "sentence": "Georgians can't eat breakfast without good old traditional biscuits."
+  },
+  {
+    "tenses": [
+      "blackboard"
+    ],
+    "id": 249,
+    "sentence": "I hate the dust created by using those blackboards."
+  },
+  {
+    "tenses": [
+      "blacksmith"
+    ],
+    "id": 250,
+    "sentence": "When the blacksmith finished making the horseshoes, he packed up and went home."
+  },
+  {
+    "tenses": [
+      "blood"
+    ],
+    "id": 251,
+    "sentence": "Vampires and mosquitoes both want to suck your blood."
+  },
+  {
+    "tenses": [
+      "blossom",
+      "blossomed"
+    ],
+    "id": 252,
+    "sentence": "The blossoms on that tree have been beautiful for days."
+  },
+  {
+    "tenses": [
+      "blouse"
+    ],
+    "id": 253,
+    "sentence": "You wouldn't believe the huge spot of coffee spilt on her blouse."
+  },
+  {
+    "tenses": [
+      "blue"
+    ],
+    "id": 254,
+    "sentence": "The sky is blue and there's not a cloud in the sky."
+  },
+  {
+    "tenses": [
+      "board"
+    ],
+    "id": 255,
+    "sentence": "How many boards can you make out of a tree that size?"
+  },
+  {
+    "tenses": [
+      "boarder"
+    ],
+    "id": 256,
+    "sentence": "That nice lady gives the boarders of her house good meals too."
+  },
+  {
+    "tenses": [
+      "boast",
+      "boastful",
+      "boasting"
+    ],
+    "id": 257,
+    "sentence": "Richard has been boasting about his racing skills all day."
+  },
+  {
+    "tenses": [
+      "boat"
+    ],
+    "id": 258,
+    "sentence": "It'll take four hours by boat but only one by car."
+  },
+  {
+    "tenses": [
+      "body"
+    ],
+    "id": 259,
+    "sentence": "My body aches all over after walking all day."
+  },
+  {
+    "tenses": [
+      "book"
+    ],
+    "id": 260,
+    "sentence": "Read any good books lately?"
+  },
+  {
+    "tenses": [
+      "bootblack"
+    ],
+    "id": 261,
+    "sentence": "Take your boots to the bootblack on 85th; he charges the least for a shine."
+  },
+  {
+    "tenses": [
+      "borrow",
+      "borrowed"
+    ],
+    "id": 262,
+    "sentence": "If I let you borrow my computer, will you write my paper for me?"
+  },
+  {
+    "tenses": [
+      "bottle",
+      "bottled"
+    ],
+    "id": 263,
+    "sentence": "In that country you have to drink bottled water or you'll get sick."
+  },
+  {
+    "tenses": [
+      "bottom"
+    ],
+    "id": 264,
+    "sentence": "From the bottom of my heart, I give you this necklace."
+  },
+  {
+    "tenses": [
+      "bough"
+    ],
+    "id": 265,
+    "sentence": "This bough is the largest branch of any tree in this area."
+  },
+  {
+    "tenses": [
+      "bought",
+      "buy"
+    ],
+    "id": 266,
+    "sentence": "I bought so much food, I couldn't carry it all to the car."
+  },
+  {
+    "tenses": [
+      "boundary"
+    ],
+    "id": 267,
+    "sentence": "Don't go over the boundaries of your land or you might get shot."
+  },
+  {
+    "tenses": [
+      "box"
+    ],
+    "id": 268,
+    "sentence": "You can make a nice playhouse out of one of those big refrigerator boxes."
+  },
+  {
+    "tenses": [
+      "boy"
+    ],
+    "id": 269,
+    "sentence": "A boy turns into a man when he's old enough to know better."
+  },
+  {
+    "tenses": [
+      "boycott"
+    ],
+    "id": 270,
+    "sentence": "If that company doesn't stop hiring young kids, we're going to boycott their products."
+  },
+  {
+    "tenses": [
+      "brake"
+    ],
+    "id": 271,
+    "sentence": "The brakes in my car better be fixed or I won't be able to stop."
+  },
+  {
+    "tenses": [
+      "bread"
+    ],
+    "id": 272,
+    "sentence": "The kind of bread I like for my sandwiches is rye."
+  },
+  {
+    "tenses": [
+      "breadth"
+    ],
+    "id": 273,
+    "sentence": "Did you know that the breadth of that piece of furniture is more than the height and depth put together?"
+  },
+  {
+    "tenses": [
+      "break"
+    ],
+    "id": 274,
+    "sentence": "If you break one more window with your baseballs, I'll spank you."
+  },
+  {
+    "tenses": [
+      "breakfast"
+    ],
+    "id": 275,
+    "sentence": "Having a good breakfast in the morning starts your day out right."
+  },
+  {
+    "tenses": [
+      "breast"
+    ],
+    "id": 276,
+    "sentence": "I only like to eat the breasts of chickens because they have more meat."
+  },
+  {
+    "tenses": [
+      "breath"
+    ],
+    "id": 277,
+    "sentence": "You could see her breath on the cold winter day."
+  },
+  {
+    "tenses": [
+      "breathe"
+    ],
+    "id": 278,
+    "sentence": "The police officer made Tony breathe into some contraption to see if he had been drinking."
+  },
+  {
+    "tenses": [
+      "bricklayer"
+    ],
+    "id": 279,
+    "sentence": "What would a bricklayer do if not laying bricks for my new house?"
+  },
+  {
+    "tenses": [
+      "bridge"
+    ],
+    "id": 280,
+    "sentence": "We went over the longest bridge but couldn't see the river down below."
+  },
+  {
+    "tenses": [
+      "bridle"
+    ],
+    "id": 281,
+    "sentence": "The horse's bridle was cut by someone."
   }
 ]
