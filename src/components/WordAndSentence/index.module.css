@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+.tensesOfWord,
+.sentenceOfWord {
+  color: var(--color-bluegrey-700);
+}
+
 .tensesOfWord {
   font-size: 28px;
   letter-spacing: 2px;
@@ -13,6 +18,12 @@
 .tensesOfWord .current {
   color: var(--color-bluegrey-800);
   font-weight: bold;
+}
+
+.sentenceOfWord {
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .wordAndSentenceContent {

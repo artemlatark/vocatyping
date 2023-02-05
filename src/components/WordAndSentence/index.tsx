@@ -59,6 +59,7 @@ const WordAndSentence: FC<WordAndSentenceProps & CheckTextPick> = memo(
             />
           ))}
         </div>
+        <div className={styles.sentenceOfWord}>{currentWord?.sentence}</div>
         <div className={styles.wordAndSentenceContent}>
           <div className={styles.spreadOutWord}>
             {wordVariants.map((item: WordVariant, index) =>
