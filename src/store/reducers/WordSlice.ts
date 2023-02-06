@@ -2,7 +2,7 @@ import {IWord, WordState} from '../../models/IWord';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {fetchWords} from './ActionCreators';
 
-//continue from page 22
+//continue from page 23
 const initialState: WordState = {
   words: [],
   isLoading: false,
