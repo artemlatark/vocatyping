@@ -21,7 +21,10 @@ function App() {
   const wordNumbers = words.length;
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
 
-  const onOpenSidebar = useCallback(() => setSidebarOpen((prevState) => !prevState), []);
+  const onOpenSidebar = useCallback(
+    (value?: boolean) => setSidebarOpen((prevState) => (value !== undefined ? value : !prevState)),
+    []
+  );
 
   useEffect(() => {
     dispatch(fetchWords());
@@ -50,18 +53,18 @@ function App() {
       <TypeForm
         wordNumbers={wordNumbers}
         isLoading={isLoading}
-        currentWord={currentWord}
-        currentWordTense={currentWordTense}
         currentWordId={currentWordId}
-        wordVariants={wordVariants}
-        currentVariantIndex={currentVariantIndex}
         writtenText={writtenText}
+        currentWordTense={currentWordTense}
+        wordVariants={wordVariants}
+        currentWord={currentWord}
+        currentVariantIndex={currentVariantIndex}
       />
       <Keyboard
-        currentVariantIndex={currentVariantIndex}
-        wordVariants={wordVariants}
+        currentWordId={currentWordId}
         writtenText={writtenText}
-        sidebarOpen={sidebarOpen}
+        wordVariants={wordVariants}
+        currentVariantIndex={currentVariantIndex}
       />
     </Layout>
   );

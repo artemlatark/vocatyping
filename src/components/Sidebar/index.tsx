@@ -16,7 +16,7 @@ const itemKey = (index: number, data: any) => data[index].id;
 
 interface WordItemProps {
   currentWordId: number;
-  onOpenSidebar: () => void;
+  onOpenSidebar: (value?: boolean) => void;
 }
 
 const WordItem = memo(({currentWordId, onOpenSidebar, data, index, style}: WordItemProps & ListChildComponentProps) => {
@@ -44,7 +44,7 @@ const WordItem = memo(({currentWordId, onOpenSidebar, data, index, style}: WordI
 
 interface SidebarProps {
   currentWordId: number;
-  onOpenSidebar: () => void;
+  onOpenSidebar: (value?: boolean) => void;
   sidebarWidth: number;
   sidebarOpen: boolean;
 }
@@ -65,8 +65,6 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({
   //   return words;
   // }, [words]);
 
-  console.log(1);
-
   return (
     <AutoSizer className={styles.sidebar}>
       {({height}) => (
@@ -75,12 +73,12 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({
           variant="temporary"
           anchor="left"
           open={sidebarOpen}
-          onClose={onOpenSidebar}
+          onClose={() => onOpenSidebar()}
           SlideProps={{
             addEndListener: () => {
-              if (listRef.current) {
+              if (listRef.current && sidebarOpen) {
                 // @ts-ignore
-                listRef.current.scrollToItem(currentWordId - 1, 'center');
+                listRef.current.scrollToItem(currentWordId - 1, 'smart');
               }
             },
           }}
