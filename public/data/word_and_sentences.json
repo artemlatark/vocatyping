@@ -1744,5 +1744,5461 @@
       "bicycle"
     ],
     "sentence": "Three of us rode bicycles while Bernie ran alongside of us."
+  },
+  {
+    "tenses": [
+      "beware"
+    ],
+    "id": 241,
+    "sentence": "Beware of the big dog!"
+  },
+  {
+    "tenses": [
+      "beyond"
+    ],
+    "id": 242,
+    "sentence": "The motorcycle is beyond repair; we might as well take it to the junk yard."
+  },
+  {
+    "tenses": [
+      "Bible"
+    ],
+    "id": 243,
+    "sentence": "The books of the Bible were written by many different people."
+  },
+  {
+    "tenses": [
+      "bicycle"
+    ],
+    "id": 244,
+    "sentence": "Three of us rode bicycles while Bernie ran alongside of us."
+  },
+  {
+    "tenses": [
+      "bill"
+    ],
+    "id": 245,
+    "sentence": "I got my phone bill yesterday and had placed over a hundred long distance calls."
+  },
+  {
+    "tenses": [
+      "bird"
+    ],
+    "id": 246,
+    "sentence": "I want to draw a picture of a bird with a long wing span."
+  },
+  {
+    "tenses": [
+      "birthday"
+    ],
+    "id": 247,
+    "sentence": "If I'm a good girl, will you give me a tricycle for my birthday?"
+  },
+  {
+    "tenses": [
+      "biscuit"
+    ],
+    "id": 248,
+    "sentence": "Georgians can't eat breakfast without good old traditional biscuits."
+  },
+  {
+    "tenses": [
+      "blackboard"
+    ],
+    "id": 249,
+    "sentence": "I hate the dust created by using those blackboards."
+  },
+  {
+    "tenses": [
+      "blacksmith"
+    ],
+    "id": 250,
+    "sentence": "When the blacksmith finished making the horseshoes, he packed up and went home."
+  },
+  {
+    "tenses": [
+      "blood"
+    ],
+    "id": 251,
+    "sentence": "Vampires and mosquitoes both want to suck your blood."
+  },
+  {
+    "tenses": [
+      "blossom",
+      "blossomed"
+    ],
+    "id": 252,
+    "sentence": "The blossoms on that tree have been beautiful for days."
+  },
+  {
+    "tenses": [
+      "blouse"
+    ],
+    "id": 253,
+    "sentence": "You wouldn't believe the huge spot of coffee spilt on her blouse."
+  },
+  {
+    "tenses": [
+      "blue"
+    ],
+    "id": 254,
+    "sentence": "The sky is blue and there's not a cloud in the sky."
+  },
+  {
+    "tenses": [
+      "board"
+    ],
+    "id": 255,
+    "sentence": "How many boards can you make out of a tree that size?"
+  },
+  {
+    "tenses": [
+      "boarder"
+    ],
+    "id": 256,
+    "sentence": "That nice lady gives the boarders of her house good meals too."
+  },
+  {
+    "tenses": [
+      "boast",
+      "boastful",
+      "boasting"
+    ],
+    "id": 257,
+    "sentence": "Richard has been boasting about his racing skills all day."
+  },
+  {
+    "tenses": [
+      "boat"
+    ],
+    "id": 258,
+    "sentence": "It'll take four hours by boat but only one by car."
+  },
+  {
+    "tenses": [
+      "body"
+    ],
+    "id": 259,
+    "sentence": "My body aches all over after walking all day."
+  },
+  {
+    "tenses": [
+      "book"
+    ],
+    "id": 260,
+    "sentence": "Read any good books lately?"
+  },
+  {
+    "tenses": [
+      "bootblack"
+    ],
+    "id": 261,
+    "sentence": "Take your boots to the bootblack on 85th; he charges the least for a shine."
+  },
+  {
+    "tenses": [
+      "borrow",
+      "borrowed"
+    ],
+    "id": 262,
+    "sentence": "If I let you borrow my computer, will you write my paper for me?"
+  },
+  {
+    "tenses": [
+      "bottle",
+      "bottled"
+    ],
+    "id": 263,
+    "sentence": "In that country you have to drink bottled water or you'll get sick."
+  },
+  {
+    "tenses": [
+      "bottom"
+    ],
+    "id": 264,
+    "sentence": "From the bottom of my heart, I give you this necklace."
+  },
+  {
+    "tenses": [
+      "bough"
+    ],
+    "id": 265,
+    "sentence": "This bough is the largest branch of any tree in this area."
+  },
+  {
+    "tenses": [
+      "bought",
+      "buy"
+    ],
+    "id": 266,
+    "sentence": "I bought so much food, I couldn't carry it all to the car."
+  },
+  {
+    "tenses": [
+      "boundary"
+    ],
+    "id": 267,
+    "sentence": "Don't go over the boundaries of your land or you might get shot."
+  },
+  {
+    "tenses": [
+      "box"
+    ],
+    "id": 268,
+    "sentence": "You can make a nice playhouse out of one of those big refrigerator boxes."
+  },
+  {
+    "tenses": [
+      "boy"
+    ],
+    "id": 269,
+    "sentence": "A boy turns into a man when he's old enough to know better."
+  },
+  {
+    "tenses": [
+      "boycott"
+    ],
+    "id": 270,
+    "sentence": "If that company doesn't stop hiring young kids, we're going to boycott their products."
+  },
+  {
+    "tenses": [
+      "brake"
+    ],
+    "id": 271,
+    "sentence": "The brakes in my car better be fixed or I won't be able to stop."
+  },
+  {
+    "tenses": [
+      "bread"
+    ],
+    "id": 272,
+    "sentence": "The kind of bread I like for my sandwiches is rye."
+  },
+  {
+    "tenses": [
+      "breadth"
+    ],
+    "id": 273,
+    "sentence": "Did you know that the breadth of that piece of furniture is more than the height and depth put together?"
+  },
+  {
+    "tenses": [
+      "break"
+    ],
+    "id": 274,
+    "sentence": "If you break one more window with your baseballs, I'll spank you."
+  },
+  {
+    "tenses": [
+      "breakfast"
+    ],
+    "id": 275,
+    "sentence": "Having a good breakfast in the morning starts your day out right."
+  },
+  {
+    "tenses": [
+      "breast"
+    ],
+    "id": 276,
+    "sentence": "I only like to eat the breasts of chickens because they have more meat."
+  },
+  {
+    "tenses": [
+      "breath"
+    ],
+    "id": 277,
+    "sentence": "You could see her breath on the cold winter day."
+  },
+  {
+    "tenses": [
+      "breathe"
+    ],
+    "id": 278,
+    "sentence": "The police officer made Tony breathe into some contraption to see if he had been drinking."
+  },
+  {
+    "tenses": [
+      "bricklayer"
+    ],
+    "id": 279,
+    "sentence": "What would a bricklayer do if not laying bricks for my new house?"
+  },
+  {
+    "tenses": [
+      "bridge"
+    ],
+    "id": 280,
+    "sentence": "We went over the longest bridge but couldn't see the river down below."
+  },
+  {
+    "tenses": [
+      "bridle"
+    ],
+    "id": 281,
+    "sentence": "The horse's bridle was cut by someone."
+  },
+  {
+    "tenses": [
+      "brilliant"
+    ],
+    "sentence": "The chess master made some brilliant moves just before having her knight castled.",
+    "id": 282
+  },
+  {
+    "tenses": [
+      "bring",
+      "brought"
+    ],
+    "sentence": "Bring those cookies to me; I'm hungry.",
+    "id": 283
+  },
+  {
+    "tenses": [
+      "broke",
+      "break",
+      "broken"
+    ],
+    "sentence": "My bike broke so now I have to walk.",
+    "id": 284
+  },
+  {
+    "tenses": [
+      "broken"
+    ],
+    "sentence": "I am sick of broken promises; don't do it if you don't mean it.",
+    "id": 285
+  },
+  {
+    "tenses": [
+      "bronze",
+      "bronzed"
+    ],
+    "sentence": "Her mother had the baby's shoes bronzed so they would keep forever.",
+    "id": 286
+  },
+  {
+    "tenses": [
+      "brother"
+    ],
+    "sentence": "My brother looks like my dad, while I look like my mom.",
+    "id": 287
+  },
+  {
+    "tenses": [
+      "brought"
+    ],
+    "sentence": "Mary brought her little lamb to school one day for `Show and Tell.`",
+    "id": 288
+  },
+  {
+    "tenses": [
+      "bruise"
+    ],
+    "sentence": "After falling on the sidewalk I have a gigantic bruise on my left elbow.",
+    "id": 289
+  },
+  {
+    "tenses": [
+      "bubbling"
+    ],
+    "sentence": "The hot tub is bubbling so much because the jet sprays are too strong.",
+    "id": 290
+  },
+  {
+    "tenses": [
+      "bucket"
+    ],
+    "sentence": "Jack wanted to carry the bucket of water to Jill but he fell down and broke his head.",
+    "id": 291
+  },
+  {
+    "tenses": [
+      "budget"
+    ],
+    "sentence": "If we stay within our monthly budget, we'll have extra money for a trip at the end of the year.",
+    "id": 292
+  },
+  {
+    "tenses": [
+      "bugle"
+    ],
+    "sentence": "Every day starts with the sound of a bugle but I'd rather hear a rooster crow.",
+    "id": 293
+  },
+  {
+    "tenses": [
+      "build"
+    ],
+    "sentence": "If you build a rocket, you could fly to the moon.",
+    "id": 294
+  },
+  {
+    "tenses": [
+      "building"
+    ],
+    "sentence": "That building is so tall that the top is covered by clouds some days.",
+    "id": 295
+  },
+  {
+    "tenses": [
+      "built"
+    ],
+    "sentence": "She lives in the house that I built, myself, although she changed the outer color.",
+    "id": 296
+  },
+  {
+    "tenses": [
+      "bulletin"
+    ],
+    "sentence": "Do not pass out those bulletins at the start of the meeting; wait till the end.",
+    "id": 297
+  },
+  {
+    "tenses": [
+      "bundle"
+    ],
+    "sentence": "My mom packaged all the food items into a cute bundle and then gave it to the homeless person.",
+    "id": 298
+  },
+  {
+    "tenses": [
+      "burden"
+    ],
+    "sentence": "It's not a burden for me to carry your books; I like it.",
+    "id": 299
+  },
+  {
+    "tenses": [
+      "bureau"
+    ],
+    "sentence": "The bureau of investigation has discovered that someone entered that room just before it was blown up.",
+    "id": 300
+  },
+  {
+    "tenses": [
+      "burglar"
+    ],
+    "sentence": "Burglars have broken into neighborhood houses every day for the past week.",
+    "id": 301
+  },
+  {
+    "tenses": [
+      "burial",
+      "bury"
+    ],
+    "sentence": "We want to have a nice burial service for my grandmother who died yesterday.",
+    "id": 302
+  },
+  {
+    "tenses": [
+      "burst"
+    ],
+    "sentence": "The balloon burst with a loud boom.",
+    "id": 303
+  },
+  {
+    "tenses": [
+      "bury",
+      "buried"
+    ],
+    "sentence": "The dog buried the bone in my backyard.",
+    "id": 304
+  },
+  {
+    "tenses": [
+      "bus",
+      "bussed"
+    ],
+    "sentence": "She rides one of the big yellow buses to school every day.",
+    "id": 305
+  },
+  {
+    "tenses": [
+      "business"
+    ],
+    "sentence": "I try to keep business separate from pleasure, but it's harder, now that I enjoy my work.",
+    "id": 306
+  },
+  {
+    "tenses": [
+      "busy"
+    ],
+    "sentence": "If everyone is so busy, how will we ever get anything accomplished?",
+    "id": 307
+  },
+  {
+    "tenses": [
+      "butcher"
+    ],
+    "sentence": "Doesn't the butcher create thick steaks? I like them that way.",
+    "id": 308
+  },
+  {
+    "tenses": [
+      "butterfly"
+    ],
+    "sentence": "I have a hard time telling butterflies from moths, but I know butterflies are usually prettier.",
+    "id": 309
+  },
+  {
+    "tenses": [
+      "button"
+    ],
+    "sentence": "Button your shirt and let's go.",
+    "id": 310
+  },
+  {
+    "tenses": [
+      "buy",
+      "bought"
+    ],
+    "sentence": "I went to the store to only buy some bread but came back with ten things.",
+    "id": 311
+  },
+  {
+    "tenses": [
+      "cabbage"
+    ],
+    "sentence": "Cabbage soup is inexpensive but can be really tasty.",
+    "id": 312
+  },
+  {
+    "tenses": [
+      "cabinet"
+    ],
+    "sentence": "I want to replace all the cabinets in my kitchen; they don't match each other.",
+    "id": 313
+  },
+  {
+    "tenses": [
+      "cablegram"
+    ],
+    "sentence": "Send him a cablegram saying we arrived safely.",
+    "id": 314
+  },
+  {
+    "tenses": [
+      "cafeteria"
+    ],
+    "sentence": "The good thing about a cafeteria is that you can see the food before ordering it.",
+    "id": 315
+  },
+  {
+    "tenses": [
+      "calendar"
+    ],
+    "sentence": "My calendar is so full next month that I won't be able to make an appointment for you.",
+    "id": 316
+  },
+  {
+    "tenses": [
+      "call",
+      "called",
+      "calling"
+    ],
+    "sentence": "If you call him `Anthony` he will answer, but if you call him `Tony` he won't.",
+    "id": 317
+  },
+  {
+    "tenses": [
+      "came",
+      "come",
+      "coming"
+    ],
+    "sentence": "Immediately after they came to my house, I served dinner.",
+    "id": 318
+  },
+  {
+    "tenses": [
+      "cameos",
+      "cameo"
+    ],
+    "sentence": "Sally had a cameo appearance in that television show, but she didn't act very well.",
+    "id": 319
+  },
+  {
+    "tenses": [
+      "camera"
+    ],
+    "sentence": "I have a 35 millimeter camera but I rarely take pictures.",
+    "id": 320
+  },
+  {
+    "tenses": [
+      "campaign"
+    ],
+    "sentence": "The campaign contributions for that politician were over a million dollars.",
+    "id": 321
+  },
+  {
+    "tenses": [
+      "can't",
+      "cannot"
+    ],
+    "sentence": "If we can't get him to go work out, he'll be fat forever.",
+    "id": 322
+  },
+  {
+    "tenses": [
+      "candidate"
+    ],
+    "sentence": "The candidates for the office have all shown up; we can start the debate.",
+    "id": 323
+  },
+  {
+    "tenses": [
+      "candle"
+    ],
+    "sentence": "I will keep a candle lit on my windowsill until my husband returns from war.",
+    "id": 324
+  },
+  {
+    "tenses": [
+      "cannery"
+    ],
+    "sentence": "The third grades got a tour of the cannery, and watched soups being canned.",
+    "id": 325
+  },
+  {
+    "tenses": [
+      "cannon"
+    ],
+    "sentence": "In that war the best weaponry they had were cannons.",
+    "id": 326
+  },
+  {
+    "tenses": [
+      "canoeing"
+    ],
+    "sentence": "We went canoeing down white water rapids and nearly tipped over.",
+    "id": 327
+  },
+  {
+    "tenses": [
+      "cantaloupe"
+    ],
+    "sentence": "If the cantaloupe is too hard, it's not ripe enough to eat.",
+    "id": 328
+  },
+  {
+    "tenses": [
+      "canvas"
+    ],
+    "sentence": "At first I thought all tents were made of heavy canvas but now I see that some are of a light nylon material.",
+    "id": 329
+  },
+  {
+    "tenses": [
+      "canvass",
+      "canvassed",
+      "canvassing"
+    ],
+    "sentence": "That politician had lots of people canvassing for her so will probably win the election.",
+    "id": 330
+  },
+  {
+    "tenses": [
+      "capable"
+    ],
+    "sentence": "He is not capable of typing that fast so is now taking a class.",
+    "id": 331
+  },
+  {
+    "tenses": [
+      "capacity"
+    ],
+    "sentence": "This elevator has the official capacity of only 8 people, but we've fit 10 skinny people in there before.",
+    "id": 332
+  },
+  {
+    "tenses": [
+      "capital"
+    ],
+    "sentence": "I thought all sentences started with a capital letter.",
+    "id": 333
+  },
+  {
+    "tenses": [
+      "capitol"
+    ],
+    "sentence": "The governor has an office in the capitol but also works in his own private office.",
+    "id": 334
+  },
+  {
+    "tenses": [
+      "captain"
+    ],
+    "sentence": "The captain of the ship said I could come aboard.",
+    "id": 335
+  },
+  {
+    "tenses": [
+      "captive"
+    ],
+    "sentence": "After being held captive for 2 weeks, the prisoners were allowed to leave.",
+    "id": 336
+  },
+  {
+    "tenses": [
+      "capture"
+    ],
+    "sentence": "We will never capture a raccoon if you make those stupid noises.",
+    "id": 337
+  },
+  {
+    "tenses": [
+      "car"
+    ],
+    "sentence": "My car's hood ornament was stolen but it's still a unique looking car.",
+    "id": 338
+  },
+  {
+    "tenses": [
+      "career"
+    ],
+    "sentence": "He doesn't know if his career will be football or accounting yet.",
+    "id": 339
+  },
+  {
+    "tenses": [
+      "careful"
+    ],
+    "sentence": "If you are careful to not make a noise, you won't wake the baby.",
+    "id": 340
+  },
+  {
+    "tenses": [
+      "carefully"
+    ],
+    "sentence": "Choose your words carefully so as not to arouse suspicion.",
+    "id": 341
+  },
+  {
+    "tenses": [
+      "careless",
+      "carelessness"
+    ],
+    "sentence": "I am tired of her carelessness concerning taking care of the animals; I always have to come later to clean up.",
+    "id": 342
+  },
+  {
+    "tenses": [
+      "carfare"
+    ],
+    "sentence": "If I knew what the carfare was for that service I could decide whether or not to take the subway.",
+    "id": 343
+  },
+  {
+    "tenses": [
+      "cargoes"
+    ],
+    "sentence": "Those trucks must be carrying heavy cargoes because they accelerate very slowly.",
+    "id": 344
+  },
+  {
+    "tenses": [
+      "carpenter"
+    ],
+    "sentence": "If I were a carpenter, I would make a big beautiful bed with a matching dresser.",
+    "id": 345
+  },
+  {
+    "tenses": [
+      "carriage"
+    ],
+    "sentence": "The antique shop had a baby carriage that dated back to the 1800s.",
+    "id": 346
+  },
+  {
+    "tenses": [
+      "carry",
+      "carried",
+      "carrying"
+    ],
+    "sentence": "I have been carrying a heavy load but I can walk another mile or two.",
+    "id": 347
+  },
+  {
+    "tenses": [
+      "cashier"
+    ],
+    "sentence": "The store cashier rang up forty-seven dollars but I knew I hadn't bought that much stuff.",
+    "id": 348
+  },
+  {
+    "tenses": [
+      "castle"
+    ],
+    "sentence": "I would love to make enough money to buy an old castle in Scotland.",
+    "id": 349
+  },
+  {
+    "tenses": [
+      "cat"
+    ],
+    "sentence": "After the cat had kittens, she promptly fell asleep.",
+    "id": 350
+  },
+  {
+    "tenses": [
+      "catalog"
+    ],
+    "sentence": "I looked up the author in the card catalog at the library but they had no record.",
+    "id": 351
+  },
+  {
+    "tenses": [
+      "catch",
+      "caught"
+    ],
+    "sentence": "She couldn't swim so she wanted to jump in the pool and have me to catch her.",
+    "id": 352
+  },
+  {
+    "tenses": [
+      "cathedral"
+    ],
+    "sentence": "We visited the most ornate Catholic cathedral in England.",
+    "id": 353
+  },
+  {
+    "tenses": [
+      "cattle"
+    ],
+    "sentence": "I have raised cattle since I was a young man, but I only started raising pigs last year.",
+    "id": 354
+  },
+  {
+    "tenses": [
+      "caught",
+      "catch"
+    ],
+    "sentence": "She caught her first flyball.",
+    "id": 355
+  },
+  {
+    "tenses": [
+      "cauliflower"
+    ],
+    "sentence": "Cauliflower is great when it's been steamed but it's even better with cheese.",
+    "id": 356
+  },
+  {
+    "tenses": [
+      "cavalry"
+    ],
+    "sentence": "Call in the cavalry; their horses will be faster than tanks.",
+    "id": 357
+  },
+  {
+    "tenses": [
+      "cease",
+      "ceasing"
+    ],
+    "sentence": "The general called a cease fire only after hundreds had been killed.",
+    "id": 358
+  },
+  {
+    "tenses": [
+      "ceiling"
+    ],
+    "sentence": "You must always have a white ceiling, even if the walls are not.",
+    "id": 359
+  },
+  {
+    "tenses": [
+      "celebrate",
+      "celebrating"
+    ],
+    "sentence": "We will be celebrating his eightieth birthday next week.",
+    "id": 360
+  },
+  {
+    "tenses": [
+      "celebration"
+    ],
+    "sentence": "The celebration lasted for two hours longer than expected.",
+    "id": 361
+  },
+  {
+    "tenses": [
+      "celery"
+    ],
+    "sentence": "Celery can be used to thicken up a spaghetti sauce.",
+    "id": 362
+  },
+  {
+    "tenses": [
+      "cellar"
+    ],
+    "sentence": "The cellar was the best place to hide.",
+    "id": 363
+  },
+  {
+    "tenses": [
+      "cemetery"
+    ],
+    "sentence": "At the country cemetery we found graves from people who died in the Civil War.",
+    "id": 364
+  },
+  {
+    "tenses": [
+      "census"
+    ],
+    "sentence": "Every few years the government takes a census to see how many people we have.",
+    "id": 365
+  },
+  {
+    "tenses": [
+      "center"
+    ],
+    "sentence": "You must sit in the center of the circle so that everyone can hear you.",
+    "id": 366
+  },
+  {
+    "tenses": [
+      "century"
+    ],
+    "sentence": "A century is a hundred years, but what is millennium?",
+    "id": 367
+  },
+  {
+    "tenses": [
+      "cereal"
+    ],
+    "sentence": "I eat cereal with fruit and sugar every morning.",
+    "id": 368
+  },
+  {
+    "tenses": [
+      "ceremony"
+    ],
+    "sentence": "After the graduation ceremony we all threw our hats up in the air.",
+    "id": 369
+  },
+  {
+    "tenses": [
+      "certain"
+    ],
+    "sentence": "Do you know for certain that the white vehicle was parked askew that morning?",
+    "id": 370
+  },
+  {
+    "tenses": [
+      "certainly"
+    ],
+    "sentence": "Certainly I want you to take the class but I don't want you to get too busy.",
+    "id": 371
+  },
+  {
+    "tenses": [
+      "certificate"
+    ],
+    "sentence": "We receive certificates indicating that we have completed drivers' training.",
+    "id": 372
+  },
+  {
+    "tenses": [
+      "chair"
+    ],
+    "sentence": "I need a really comfortable chair at my desk or I get a backache when working.",
+    "id": 373
+  },
+  {
+    "tenses": [
+      "chalk"
+    ],
+    "sentence": "We have all different colors of chalk from which to choose for writing on the blackboard.",
+    "id": 374
+  },
+  {
+    "tenses": [
+      "chamber"
+    ],
+    "sentence": "In the machine, there is a small chamber, which can hold about a gallon of water.",
+    "id": 375
+  },
+  {
+    "tenses": [
+      "champion"
+    ],
+    "sentence": "Harry may be the champion of chess, but I'm the champion of making chess pieces.",
+    "id": 376
+  },
+  {
+    "tenses": [
+      "chance"
+    ],
+    "sentence": "What are the chances that you will win the lottery? Zilch!",
+    "id": 377
+  },
+  {
+    "tenses": [
+      "change",
+      "changeable"
+    ],
+    "sentence": "Change your clothes before going out to dinner.",
+    "id": 378
+  },
+  {
+    "tenses": [
+      "chapel"
+    ],
+    "sentence": "We got married in a very small chapel in the country.",
+    "id": 379
+  },
+  {
+    "tenses": [
+      "character"
+    ],
+    "sentence": "You call her a character actress because she is not a leading lady.",
+    "id": 380
+  },
+  {
+    "tenses": [
+      "chargeable"
+    ],
+    "sentence": "Since these items are chargeable, I'm not going to use up my cash on them.",
+    "id": 381
+  },
+  {
+    "tenses": [
+      "charity"
+    ],
+    "sentence": "I gave over $100 to that charity to help the homeless.",
+    "id": 382
+  },
+  {
+    "tenses": [
+      "chauffeur"
+    ],
+    "sentence": "The chauffeur knew the client before driving him to the business affair.",
+    "id": 383
+  },
+  {
+    "tenses": [
+      "chauvinism"
+    ],
+    "sentence": "If chauvinism weren't around, we wouldn't need to worry about equality of the sexes.",
+    "id": 384
+  },
+  {
+    "tenses": [
+      "cheap"
+    ],
+    "sentence": "Those items may be cheap, but the quality is bad too.",
+    "id": 385
+  },
+  {
+    "tenses": [
+      "cheat"
+    ],
+    "sentence": "I never cheated on my school exams even though it may have helped my grades.",
+    "id": 386
+  },
+  {
+    "tenses": [
+      "cheek"
+    ],
+    "sentence": "Your cheeks are so rosy today. What's up?",
+    "id": 387
+  },
+  {
+    "tenses": [
+      "cheerful"
+    ],
+    "sentence": "When Mary is cheerful, it makes the rest of us happy too.",
+    "id": 388
+  },
+  {
+    "tenses": [
+      "cheese"
+    ],
+    "sentence": "The mouse ate the cheese just before getting smacked.",
+    "id": 389
+  },
+  {
+    "tenses": [
+      "chemist"
+    ],
+    "sentence": "You will need a chemist not a biologist to determine the make-up of that liquid.",
+    "id": 390
+  },
+  {
+    "tenses": [
+      "chestnut"
+    ],
+    "sentence": "Every Saturday night we go to the corner and buy hot roasted chestnuts.",
+    "id": 391
+  },
+  {
+    "tenses": [
+      "chicken"
+    ],
+    "sentence": "Fried chicken is thought of as a southern dish, but we like it here too.",
+    "id": 392
+  },
+  {
+    "tenses": [
+      "chief"
+    ],
+    "sentence": "The chief of the Indian tribe was highly decorated but we didn't know why.",
+    "id": 393
+  },
+  {
+    "tenses": [
+      "child"
+    ],
+    "sentence": "My child will never set foot in that school because they can't teach!",
+    "id": 394
+  },
+  {
+    "tenses": [
+      "children"
+    ],
+    "sentence": "Laura's children are well-spoken but don't know when to be quiet.",
+    "id": 395
+  },
+  {
+    "tenses": [
+      "chimney"
+    ],
+    "sentence": "The chimney was black from so many fires.",
+    "id": 396
+  },
+  {
+    "tenses": [
+      "chocolate"
+    ],
+    "sentence": "If I make a chocolate cake for her birthday, will you bring the ice cream?",
+    "id": 397
+  },
+  {
+    "tenses": [
+      "choice"
+    ],
+    "sentence": "You have three choices of desserts but I highly recommend the chocolate cake.",
+    "id": 398
+  },
+  {
+    "tenses": [
+      "choir"
+    ],
+    "sentence": "I sing in the choir at church but I'm not involved otherwise.",
+    "id": 399
+  },
+  {
+    "tenses": [
+      "choose"
+    ],
+    "sentence": "I would never choose to support that candidate because he is unprincipled.",
+    "id": 400
+  },
+  {
+    "tenses": [
+      "Christian"
+    ],
+    "sentence": "Christians have some beliefs in common with Jews.",
+    "id": 401
+  },
+  {
+    "tenses": [
+      "Christmas"
+    ],
+    "sentence": "Christmas is the time of year when everyone wants to give presents.",
+    "id": 402
+  },
+  {
+    "tenses": [
+      "church"
+    ],
+    "sentence": "She never goes to church on Sundays but she does believe.",
+    "id": 403
+  },
+  {
+    "tenses": [
+      "cigarette"
+    ],
+    "sentence": "Cigarettes are bad for your health but people smoke them anyway.",
+    "id": 404
+  },
+  {
+    "tenses": [
+      "circle"
+    ],
+    "sentence": "I can draw a better circle than I can a square or triangle.",
+    "id": 405
+  },
+  {
+    "tenses": [
+      "circular"
+    ],
+    "sentence": "Your reasoning is circular because both premises are dependent on each other.",
+    "id": 406
+  },
+  {
+    "tenses": [
+      "circumstance"
+    ],
+    "sentence": "If the circumstances were different, I would go with you.",
+    "id": 407
+  },
+  {
+    "tenses": [
+      "circus"
+    ],
+    "sentence": "There were even elephants and hippopotamuses at the circus.",
+    "id": 408
+  },
+  {
+    "tenses": [
+      "cities",
+      "city"
+    ],
+    "sentence": "Never in my life have I seen two cities so rampant with poverty.",
+    "id": 409
+  },
+  {
+    "tenses": [
+      "citizen"
+    ],
+    "sentence": "If the citizens of the world realized how important land is to everyone, things would be different.",
+    "id": 410
+  },
+  {
+    "tenses": [
+      "citizenship"
+    ],
+    "sentence": "Is it possible that one's citizenship can expire?",
+    "id": 411
+  },
+  {
+    "tenses": [
+      "city"
+    ],
+    "sentence": "If you live in the city then you don't need a car, but living in the country is a different story.",
+    "id": 412
+  },
+  {
+    "tenses": [
+      "civilization"
+    ],
+    "sentence": "At the beginning of civilization there were only hunter-gatherers.",
+    "id": 413
+  },
+  {
+    "tenses": [
+      "claim",
+      "claimed"
+    ],
+    "sentence": "I have claimed this seat for myself but there are plenty over there for you.",
+    "id": 414
+  },
+  {
+    "tenses": [
+      "class"
+    ],
+    "sentence": "In my economics class I am learning about the three factors of production: land, labor, and capital.",
+    "id": 415
+  },
+  {
+    "tenses": [
+      "Claus"
+    ],
+    "sentence": "Santa Claus is the fictitious American character that gives presents to children at Christmas time.",
+    "id": 416
+  },
+  {
+    "tenses": [
+      "climate"
+    ],
+    "sentence": "The climate is very humid but not really that hot.",
+    "id": 417
+  },
+  {
+    "tenses": [
+      "clock"
+    ],
+    "sentence": "If we could turn the clocks backwards, we would have more time.",
+    "id": 418
+  },
+  {
+    "tenses": [
+      "close"
+    ],
+    "sentence": "I am so close to solving that problem but I can't seem to finish it.",
+    "id": 419
+  },
+  {
+    "tenses": [
+      "clothe"
+    ],
+    "sentence": "I want to clothe the homeless in the winter with these second-hand coats.",
+    "id": 420
+  },
+  {
+    "tenses": [
+      "clothes"
+    ],
+    "sentence": "They always wash their clothes on Tuesdays.",
+    "id": 421
+  },
+  {
+    "tenses": [
+      "clothier"
+    ],
+    "sentence": "I could make a living as a clothier but I wouldn't be very rich.",
+    "id": 422
+  },
+  {
+    "tenses": [
+      "cloud"
+    ],
+    "sentence": "If you stare at them long enough, you begin to see pictures in the clouds.",
+    "id": 423
+  },
+  {
+    "tenses": [
+      "coarse"
+    ],
+    "sentence": "The terrain was so coarse that even our roadbikes couldn't handle it.",
+    "id": 424
+  },
+  {
+    "tenses": [
+      "coast"
+    ],
+    "sentence": "On the west coast they seem to be more liberal-minded.",
+    "id": 425
+  },
+  {
+    "tenses": [
+      "coat"
+    ],
+    "sentence": "You'll need to put at least two coats of paint on that wall to cover the previous color.",
+    "id": 426
+  },
+  {
+    "tenses": [
+      "cobbler"
+    ],
+    "sentence": "That little village was able to support two cobblers and the town sure had nice shoes.",
+    "id": 427
+  },
+  {
+    "tenses": [
+      "cocoa"
+    ],
+    "sentence": "On cold winter nights I like to drink hot cocoa before going to bed.",
+    "id": 428
+  },
+  {
+    "tenses": [
+      "coffee"
+    ],
+    "sentence": "I like to drink a rich Colombian coffee in the mornings.",
+    "id": 429
+  },
+  {
+    "tenses": [
+      "collar"
+    ],
+    "sentence": "You have to use a special fluid to clean your shirt collars.",
+    "id": 430
+  },
+  {
+    "tenses": [
+      "collect"
+    ],
+    "sentence": "Don't collect the garbage in the mornings when people are trying to sleep.",
+    "id": 431
+  },
+  {
+    "tenses": [
+      "college"
+    ],
+    "sentence": "I have three degrees from different colleges, but they didn't make me smarter.",
+    "id": 432
+  },
+  {
+    "tenses": [
+      "colonist"
+    ],
+    "sentence": "In the early days, the colonists had no constitution to follow.",
+    "id": 433
+  },
+  {
+    "tenses": [
+      "colony",
+      "colonies"
+    ],
+    "sentence": "The history books show that the new colonies contained people originally from many different countries.",
+    "id": 434
+  },
+  {
+    "tenses": [
+      "color"
+    ],
+    "sentence": "My favorite color is green; that's why I like to visit forests.",
+    "id": 435
+  },
+  {
+    "tenses": [
+      "column"
+    ],
+    "sentence": "That journalist writes a daily column but she never mentions local politics.",
+    "id": 436
+  },
+  {
+    "tenses": [
+      "combination"
+    ],
+    "sentence": "The combination of hydrogen and oxygen makes water.",
+    "id": 437
+  },
+  {
+    "tenses": [
+      "come",
+      "came",
+      "coming"
+    ],
+    "sentence": "When will you be able to come visit me?",
+    "id": 438
+  },
+  {
+    "tenses": [
+      "comfort"
+    ],
+    "sentence": "I like to watch movies in the comfort of my own home, not in public.",
+    "id": 439
+  },
+  {
+    "tenses": [
+      "comfortable"
+    ],
+    "sentence": "Their home does not look comfortable at all; it's too formal.",
+    "id": 440
+  },
+  {
+    "tenses": [
+      "coming",
+      "come"
+    ],
+    "sentence": "Just at the point when I was coming around the corner, I heard a loud sound.",
+    "id": 441
+  },
+  {
+    "tenses": [
+      "commence"
+    ],
+    "sentence": "Let's commence this meeting now or we'll never get out of here.",
+    "id": 442
+  },
+  {
+    "tenses": [
+      "commendable"
+    ],
+    "sentence": "The things you are doing for the needy are very commendable.",
+    "id": 443
+  },
+  {
+    "tenses": [
+      "commerce"
+    ],
+    "sentence": "Commerce is what makes the world go around.",
+    "id": 444
+  },
+  {
+    "tenses": [
+      "commission"
+    ],
+    "sentence": "The commission was set up to study the effects of fewer trade restrictions.",
+    "id": 445
+  },
+  {
+    "tenses": [
+      "committed"
+    ],
+    "sentence": "I am so committed to that project that I stay up very late every night working on it.",
+    "id": 446
+  },
+  {
+    "tenses": [
+      "committee"
+    ],
+    "sentence": "Mr. Jones is on the building committee so knows more about the various rooms.",
+    "id": 447
+  },
+  {
+    "tenses": [
+      "common"
+    ],
+    "sentence": "We have very little in common but we can at least agree to disagree.",
+    "id": 448
+  },
+  {
+    "tenses": [
+      "communication"
+    ],
+    "sentence": "Her communication skills were lacking but she did successfully explain why we are here.",
+    "id": 449
+  },
+  {
+    "tenses": [
+      "community"
+    ],
+    "sentence": "The community creates land values so should reap the benefits.",
+    "id": 450
+  },
+  {
+    "tenses": [
+      "companion"
+    ],
+    "sentence": "The elderly gentleman had a companion with him to help guide him through the hallways.",
+    "id": 451
+  },
+  {
+    "tenses": [
+      "company",
+      "companies"
+    ],
+    "sentence": "Most companies want to be legal but those regulations are complicated to understand.",
+    "id": 452
+  },
+  {
+    "tenses": [
+      "compare"
+    ],
+    "sentence": "You can't compare apples with oranges; let's start with the similarities first.",
+    "id": 453
+  },
+  {
+    "tenses": [
+      "comparison"
+    ],
+    "sentence": "By comparison, are you saying that land values are a result of denser population?",
+    "id": 454
+  },
+  {
+    "tenses": [
+      "compass"
+    ],
+    "sentence": "I will simply use my trusty compass to determine which way is north.",
+    "id": 455
+  },
+  {
+    "tenses": [
+      "compel",
+      "compelling",
+      "compelled"
+    ],
+    "sentence": "I feel compelled to explain why I had to quit my job.",
+    "id": 456
+  },
+  {
+    "tenses": [
+      "compensation"
+    ],
+    "sentence": "If I don't receive satisfactory compensation for the job I did, I may have to quit.",
+    "id": 457
+  },
+  {
+    "tenses": [
+      "competition",
+      "compete"
+    ],
+    "sentence": "The competition between the runners lasted all afternoon but only two races were won.",
+    "id": 458
+  },
+  {
+    "tenses": [
+      "compilation",
+      "compile"
+    ],
+    "sentence": "Dan created a compilation of all known pertinent facts and now will analyze the data.",
+    "id": 459
+  },
+  {
+    "tenses": [
+      "complain"
+    ],
+    "sentence": "The nurse complained to the medical board that doctors treated her without respect.",
+    "id": 460
+  },
+  {
+    "tenses": [
+      "complaint"
+    ],
+    "sentence": "Don't complain to the waitress; submit an official complaint to the committee that oversees restaurants.",
+    "id": 461
+  },
+  {
+    "tenses": [
+      "complete",
+      "completed"
+    ],
+    "sentence": "I have completed my homework. Now may I go out and play?",
+    "id": 462
+  },
+  {
+    "tenses": [
+      "completely"
+    ],
+    "sentence": "The desk was completely covered by papers but none were organized.",
+    "id": 463
+  },
+  {
+    "tenses": [
+      "complexion"
+    ],
+    "sentence": "Her complexion is very pale so she needs a lighter shade of makeup.",
+    "id": 464
+  },
+  {
+    "tenses": [
+      "composition",
+      "compose"
+    ],
+    "sentence": "The musician's composition was joyous in parts and dramatic in other parts.",
+    "id": 465
+  },
+  {
+    "tenses": [
+      "comprehend"
+    ],
+    "sentence": "I cannot comprehend why you would demand that I attend the meeting since I don't even know those people.",
+    "id": 466
+  },
+  {
+    "tenses": [
+      "computer"
+    ],
+    "sentence": "I need to upgrade my computer with the latest hardware and software.",
+    "id": 467
+  },
+  {
+    "tenses": [
+      "comrade"
+    ],
+    "sentence": "We are all comrades here. Why fight?",
+    "id": 468
+  },
+  {
+    "tenses": [
+      "conceal",
+      "concealed"
+    ],
+    "sentence": "The detective carried a concealed weapon in his jacket.",
+    "id": 469
+  },
+  {
+    "tenses": [
+      "concede",
+      "conceded"
+    ],
+    "sentence": "I concede that you are correct on that point, but do you acknowledge my previous point?",
+    "id": 470
+  },
+  {
+    "tenses": [
+      "concern",
+      "concerned"
+    ],
+    "sentence": "We are all concerned with the education of children, but we disagree on how best to improve it.",
+    "id": 471
+  },
+  {
+    "tenses": [
+      "concert"
+    ],
+    "sentence": "We heard a new symphony at the concert last night.",
+    "id": 472
+  },
+  {
+    "tenses": [
+      "conclude",
+      "concluded"
+    ],
+    "sentence": "Professor Pines has concluded that no students understand the new concept.",
+    "id": 473
+  },
+  {
+    "tenses": [
+      "condemn",
+      "condemned"
+    ],
+    "sentence": "The building was condemned so it will be demolished next week.",
+    "id": 474
+  },
+  {
+    "tenses": [
+      "condition"
+    ],
+    "sentence": "The conditions of the ghetto were horrendous. Is there not something we can do to help the residents?",
+    "id": 475
+  },
+  {
+    "tenses": [
+      "conductor"
+    ],
+    "sentence": "The train conductor took up tickets from all cars, but missed the lounge area.",
+    "id": 476
+  },
+  {
+    "tenses": [
+      "conference"
+    ],
+    "sentence": "We all attended a conference on bettering the subway system.",
+    "id": 477
+  },
+  {
+    "tenses": [
+      "confess"
+    ],
+    "sentence": "I must confess that I did not hear the question; would you please repeat it?",
+    "id": 478
+  },
+  {
+    "tenses": [
+      "confidence"
+    ],
+    "sentence": "He acts like he has a lot of confidence, but deep down, he's scared to death.",
+    "id": 479
+  },
+  {
+    "tenses": [
+      "confusion"
+    ],
+    "sentence": "In all the confusion after the accident, I didn't remember to make that call.",
+    "id": 480
+  },
+  {
+    "tenses": [
+      "Congress"
+    ],
+    "sentence": "Congress is made up of the House of Representatives and the Senate.",
+    "id": 481
+  },
+  {
+    "tenses": [
+      "connect",
+      "connected"
+    ],
+    "sentence": "If we connect this wire over here, to that wire over there, we'll have electricity running throughout the whole building.",
+    "id": 482
+  },
+  {
+    "tenses": [
+      "connection"
+    ],
+    "sentence": "What is her connection with you? Did you ever work for her?",
+    "id": 483
+  },
+  {
+    "tenses": [
+      "conquer"
+    ],
+    "sentence": "After the land of what is Florida today was conquered by the Spanish, others wanted a piece also.",
+    "id": 484
+  },
+  {
+    "tenses": [
+      "conscience"
+    ],
+    "sentence": "My conscience tells me not to have that big dessert but I think I'll order it anyway.",
+    "id": 485
+  },
+  {
+    "tenses": [
+      "conscious"
+    ],
+    "sentence": "After the car accident was she conscious or in a coma?",
+    "id": 486
+  },
+  {
+    "tenses": [
+      "consequence"
+    ],
+    "sentence": "Many people think that certain things are consequences of other things, when in fact they are simply correlative.",
+    "id": 487
+  },
+  {
+    "tenses": [
+      "consequently"
+    ],
+    "sentence": "I don't like him. Consequently, I'm not going to allow him to come to my party.",
+    "id": 488
+  },
+  {
+    "tenses": [
+      "consider"
+    ],
+    "sentence": "If he considers the ambiguity of some term usage, he'll be more apt to be clear in concept explanation.",
+    "id": 489
+  },
+  {
+    "tenses": [
+      "considerable"
+    ],
+    "sentence": "After a considerable number of people left, we figured out that most didn't like the subject matter.",
+    "id": 490
+  },
+  {
+    "tenses": [
+      "consist",
+      "consisted"
+    ],
+    "sentence": "This pudding consists of only four ingredients.",
+    "id": 491
+  },
+  {
+    "tenses": [
+      "consolation"
+    ],
+    "sentence": "She didn't win the big prize, but she got a consolation prize of a roll warmer.",
+    "id": 492
+  },
+  {
+    "tenses": [
+      "constantly"
+    ],
+    "sentence": "The kids are constantly bickering; I don't know what I'm going to do about it.",
+    "id": 493
+  },
+  {
+    "tenses": [
+      "Constitution"
+    ],
+    "sentence": "If we simply followed the Constitution of the United States, we wouldn't need all these extra laws.",
+    "id": 494
+  },
+  {
+    "tenses": [
+      "construct"
+    ],
+    "sentence": "If we construct the house using bricks, it will last longer.",
+    "id": 495
+  },
+  {
+    "tenses": [
+      "consult"
+    ],
+    "sentence": "I must consult my wife before giving you a definitive answer.",
+    "id": 496
+  },
+  {
+    "tenses": [
+      "contagious"
+    ],
+    "sentence": "The virus is contagious so she better not go to school and infect the other kids.",
+    "id": 497
+  },
+  {
+    "tenses": [
+      "contain",
+      "container",
+      "contained"
+    ],
+    "sentence": "What does your bookbag contain besides books?",
+    "id": 498
+  },
+  {
+    "tenses": [
+      "contemptible"
+    ],
+    "sentence": "Jay's actions were contemptible, but Steve's were even worse.",
+    "id": 499
+  },
+  {
+    "tenses": [
+      "continent"
+    ],
+    "sentence": "The goal was to create a human chain from one continent to another.",
+    "id": 500
+  },
+  {
+    "tenses": [
+      "continual",
+      "continually"
+    ],
+    "sentence": "I am continually being asked the same questions over and over. When will they learn?",
+    "id": 501
+  },
+  {
+    "tenses": [
+      "continue"
+    ],
+    "sentence": "I do not want to continue because we have already covered that subject.",
+    "id": 502
+  },
+  {
+    "tenses": [
+      "continuous",
+      "continuously"
+    ],
+    "sentence": "The drawn line was continuous from this page to that page.",
+    "id": 503
+  },
+  {
+    "tenses": [
+      "contract"
+    ],
+    "sentence": "I have a contract with the wallpaper hanger and it stipulates that the job will be done by tomorrow.",
+    "id": 504
+  },
+  {
+    "tenses": [
+      "contractor"
+    ],
+    "sentence": "Don't hire that contractor to build your house; his reputation is not good.",
+    "id": 505
+  },
+  {
+    "tenses": [
+      "contrary"
+    ],
+    "sentence": "Contrary to what you may believe, I do have a social life.",
+    "id": 506
+  },
+  {
+    "tenses": [
+      "controlled",
+      "control"
+    ],
+    "sentence": "Who controlled the buttons in the elevator?",
+    "id": 507
+  },
+  {
+    "tenses": [
+      "controller"
+    ],
+    "sentence": "The city controller makes a very good salary.",
+    "id": 508
+  },
+  {
+    "tenses": [
+      "convenience"
+    ],
+    "sentence": "For your convenience, we will take the elevator instead of the stairs.",
+    "id": 509
+  },
+  {
+    "tenses": [
+      "convention"
+    ],
+    "sentence": "The standard convention to start meetings at 4:00 was changed to 3:00.",
+    "id": 510
+  },
+  {
+    "tenses": [
+      "conversation"
+    ],
+    "sentence": "I enjoy our conversations, but you sure talk a lot.",
+    "id": 511
+  },
+  {
+    "tenses": [
+      "convertible"
+    ],
+    "sentence": "My son owned a red convertible and rode around with the top down all the time.",
+    "id": 512
+  },
+  {
+    "tenses": [
+      "conveyance",
+      "convey"
+    ],
+    "sentence": "Conveyance of ideas using a precise method is expected.",
+    "id": 513
+  },
+  {
+    "tenses": [
+      "convince"
+    ],
+    "sentence": "Nobody will ever convince me that I should cut my hair.",
+    "id": 514
+  },
+  {
+    "tenses": [
+      "cooperation",
+      "cooperate"
+    ],
+    "sentence": "Societies make progress when the inhabitants cooperate with one another.",
+    "id": 515
+  },
+  {
+    "tenses": [
+      "copies"
+    ],
+    "sentence": "If I give you the master copy, will you make me ten extra copies?",
+    "id": 516
+  },
+  {
+    "tenses": [
+      "copper"
+    ],
+    "sentence": "I like collecting copper pitchers but then, I like all copper trinkets.",
+    "id": 517
+  },
+  {
+    "tenses": [
+      "cordial"
+    ],
+    "sentence": "Don't be so cordial; say what you really think!",
+    "id": 518
+  },
+  {
+    "tenses": [
+      "cordially"
+    ],
+    "sentence": "I would like to cordially extend to you an invitation to the ball.",
+    "id": 519
+  },
+  {
+    "tenses": [
+      "corner"
+    ],
+    "sentence": "There is one place where the corners of four states meet together.",
+    "id": 520
+  },
+  {
+    "tenses": [
+      "corporation"
+    ],
+    "sentence": "Do you want to turn your partnership into a corporation?",
+    "id": 521
+  },
+  {
+    "tenses": [
+      "correct"
+    ],
+    "sentence": "If I am correct, the stock market should rise high today.",
+    "id": 522
+  },
+  {
+    "tenses": [
+      "correspondence"
+    ],
+    "sentence": "I have never corresponded with her, but I've heard she speaks well.",
+    "id": 523
+  },
+  {
+    "tenses": [
+      "corrupt",
+      "corruption"
+    ],
+    "sentence": "There seems to be nothing we can do to stop corruption.",
+    "id": 524
+  },
+  {
+    "tenses": [
+      "cost"
+    ],
+    "sentence": "The cost of the princess's dress is higher than my entire monthly salary!",
+    "id": 525
+  },
+  {
+    "tenses": [
+      "cottage"
+    ],
+    "sentence": "The little old lady lived all alone in a cottage out in the middle of nowhere.",
+    "id": 526
+  },
+  {
+    "tenses": [
+      "cotton"
+    ],
+    "sentence": "Clothes made of cotton `breathe` much better than others.",
+    "id": 527
+  },
+  {
+    "tenses": [
+      "cough",
+      "coughing"
+    ],
+    "sentence": "I had a very bad cough, but no soar throat.",
+    "id": 528
+  },
+  {
+    "tenses": [
+      "could",
+      "can"
+    ],
+    "sentence": "We could have gone to the store for you but we didn't know you wanted us to.",
+    "id": 529
+  },
+  {
+    "tenses": [
+      "council"
+    ],
+    "sentence": "The council had members from each of the different states.",
+    "id": 530
+  },
+  {
+    "tenses": [
+      "counsel",
+      "counselor"
+    ],
+    "sentence": "Her teacher tried to counsel her but I think she really needs a therapist.",
+    "id": 531
+  },
+  {
+    "tenses": [
+      "count"
+    ],
+    "sentence": "Don't count on my attendance because I have other plans.",
+    "id": 532
+  },
+  {
+    "tenses": [
+      "counter"
+    ],
+    "sentence": "Susie saw all the candy on the store's counter and wouldn't leave until we bought some.",
+    "id": 533
+  },
+  {
+    "tenses": [
+      "countries"
+    ],
+    "sentence": "How many countries are there in Africa?",
+    "id": 534
+  },
+  {
+    "tenses": [
+      "country"
+    ],
+    "sentence": "I'd prefer living in the country but my job forces me to be in the city.",
+    "id": 535
+  },
+  {
+    "tenses": [
+      "courage"
+    ],
+    "sentence": "I don't think I have the courage to get up in front of all those people.",
+    "id": 536
+  },
+  {
+    "tenses": [
+      "course"
+    ],
+    "sentence": "Of course you may come to my party!",
+    "id": 537
+  },
+  {
+    "tenses": [
+      "court"
+    ],
+    "sentence": "The court session started about 9:00 a.m. so we were tied up all day.",
+    "id": 538
+  },
+  {
+    "tenses": [
+      "courtesy"
+    ],
+    "sentence": "Out of courtesy for newcomers why don't we go around and introduce ourselves?",
+    "id": 539
+  },
+  {
+    "tenses": [
+      "cousin"
+    ],
+    "sentence": "This is my cousin, my mother's sister's daughter.",
+    "id": 540
+  },
+  {
+    "tenses": [
+      "coward"
+    ],
+    "sentence": "If you don't show up, I will consider you to be a coward.",
+    "id": 541
+  },
+  {
+    "tenses": [
+      "cracker"
+    ],
+    "sentence": "The parrot keeps saying, `Polly wants a cracker.`",
+    "id": 542
+  },
+  {
+    "tenses": [
+      "cradle"
+    ],
+    "sentence": "After we put the baby in the cradle, she went to sleep immediately even without rocking her.",
+    "id": 543
+  },
+  {
+    "tenses": [
+      "crayon"
+    ],
+    "sentence": "I have three different colors of crayons but I really need six.",
+    "id": 544
+  },
+  {
+    "tenses": [
+      "cream"
+    ],
+    "sentence": "If you use heavy cream to make ice cream instead of regular cream, it will come out better.",
+    "id": 545
+  },
+  {
+    "tenses": [
+      "creation"
+    ],
+    "sentence": "Did creation of the world only happen in six days?",
+    "id": 546
+  },
+  {
+    "tenses": [
+      "creature"
+    ],
+    "sentence": "The character is a very scary creature looking like something from another planet.",
+    "id": 547
+  },
+  {
+    "tenses": [
+      "crew"
+    ],
+    "sentence": "If the crew working on the ship is changed, we'll be able to be out at sea longer.",
+    "id": 548
+  },
+  {
+    "tenses": [
+      "cricket"
+    ],
+    "sentence": "Are you talking about the game cricket or the crawly bug cricket?",
+    "id": 549
+  },
+  {
+    "tenses": [
+      "cried"
+    ],
+    "sentence": "He cried when he found out he owed $4000 in back taxes.",
+    "id": 550
+  },
+  {
+    "tenses": [
+      "criminal"
+    ],
+    "sentence": "If we lock up all the criminals our jails will be flooded.",
+    "id": 551
+  },
+  {
+    "tenses": [
+      "cripple"
+    ],
+    "sentence": "I hate to act like a cripple, but I just can't walk as far as you guys.",
+    "id": 552
+  },
+  {
+    "tenses": [
+      "criticism"
+    ],
+    "sentence": "I can take constructive criticism, but your comments are simply personal attacks.",
+    "id": 553
+  },
+  {
+    "tenses": [
+      "crowd"
+    ],
+    "sentence": "There was a huge crowd in front of the city hall picketing on some issue or other.",
+    "id": 554
+  },
+  {
+    "tenses": [
+      "cruel"
+    ],
+    "sentence": "Do you consider death by lethal injection to be cruel and unusual punishment?",
+    "id": 555
+  },
+  {
+    "tenses": [
+      "cruelty"
+    ],
+    "sentence": "There is a law against performing cruelty to animals.",
+    "id": 556
+  },
+  {
+    "tenses": [
+      "crumb"
+    ],
+    "sentence": "I was so hungry that I ate every last crumb on my plate.",
+    "id": 557
+  },
+  {
+    "tenses": [
+      "cry",
+      "cried",
+      "cries"
+    ],
+    "sentence": "I rarely cry, even at funerals.",
+    "id": 558
+  },
+  {
+    "tenses": [
+      "cucumber"
+    ],
+    "sentence": "If you store cucumbers in vinegar, they'll turn into pickles.",
+    "id": 559
+  },
+  {
+    "tenses": [
+      "cultivate"
+    ],
+    "sentence": "The farmer cultivated his land but never planted the seeds.",
+    "id": 560
+  },
+  {
+    "tenses": [
+      "cup"
+    ],
+    "sentence": "I like to drink my coffee in a cup rather than a mug.",
+    "id": 561
+  },
+  {
+    "tenses": [
+      "cupboard"
+    ],
+    "sentence": "Leslie put all the dishes into the cupboards but didn't wipe the counters.",
+    "id": 562
+  },
+  {
+    "tenses": [
+      "curious"
+    ],
+    "sentence": "I am really curious about your ability to do math in your head. How does one acquire that skill?",
+    "id": 563
+  },
+  {
+    "tenses": [
+      "current",
+      "currently"
+    ],
+    "sentence": "Is the information you're giving me current or is it from last week?",
+    "id": 564
+  },
+  {
+    "tenses": [
+      "curse",
+      "cursed",
+      "cursing"
+    ],
+    "sentence": "I could not believe the filthy curse words coming out of her mouth!",
+    "id": 565
+  },
+  {
+    "tenses": [
+      "cursory"
+    ],
+    "sentence": "Should I just take a cursory look over the reports or should I study them in-depth?",
+    "id": 566
+  },
+  {
+    "tenses": [
+      "curtain"
+    ],
+    "sentence": "I closed the curtain because the sun was shining in too brightly.",
+    "id": 567
+  },
+  {
+    "tenses": [
+      "curve"
+    ],
+    "sentence": "All of a sudden, there was a tight curve in the road and I almost lost control of the car.",
+    "id": 568
+  },
+  {
+    "tenses": [
+      "cushion"
+    ],
+    "sentence": "The cushions on this couch are not very comfortable; I'd like something softer.",
+    "id": 569
+  },
+  {
+    "tenses": [
+      "custom"
+    ],
+    "sentence": "We only do custom jobs, ma'am; that's why it's more expensive.",
+    "id": 570
+  },
+  {
+    "tenses": [
+      "customer"
+    ],
+    "sentence": "We need to enlarge our customer base so that sales can be increased.",
+    "id": 571
+  },
+  {
+    "tenses": [
+      "cut"
+    ],
+    "sentence": "I cut carrots all day long and now you want me to cut celery?",
+    "id": 572
+  },
+  {
+    "tenses": [
+      "cutter"
+    ],
+    "sentence": "I just bought a new paper cutter for my office downstairs.",
+    "id": 573
+  },
+  {
+    "tenses": [
+      "dahlia"
+    ],
+    "sentence": "Dahlia plants come from Mexico.",
+    "id": 574
+  },
+  {
+    "tenses": [
+      "daily"
+    ],
+    "sentence": "He has a daily ritual of reading the paper before doing anything else for the day.",
+    "id": 575
+  },
+  {
+    "tenses": [
+      "dairy"
+    ],
+    "sentence": "I'd prefer to go straight to the dairy to get milk rather than buy it from any store.",
+    "id": 576
+  },
+  {
+    "tenses": [
+      "damage"
+    ],
+    "sentence": "The damage on this car is so severe you could call it totaled.",
+    "id": 577
+  },
+  {
+    "tenses": [
+      "danger"
+    ],
+    "sentence": "Am I in any danger or do you think it's safe to go out?",
+    "id": 578
+  },
+  {
+    "tenses": [
+      "dangerous"
+    ],
+    "sentence": "That part of town is very dangerous; I wouldn't go there if I were you.",
+    "id": 579
+  },
+  {
+    "tenses": [
+      "date"
+    ],
+    "sentence": "What is today's date, the 16th or 17th?",
+    "id": 580
+  },
+  {
+    "tenses": [
+      "daughter"
+    ],
+    "sentence": "I have three daughters but only one son.",
+    "id": 581
+  },
+  {
+    "tenses": [
+      "day"
+    ],
+    "sentence": "At the end of the day I like to have a glass of brandy.",
+    "id": 582
+  },
+  {
+    "tenses": [
+      "deal"
+    ],
+    "sentence": "I can deal with most people but Ms. Maples is too impolite.",
+    "id": 583
+  },
+  {
+    "tenses": [
+      "dear"
+    ],
+    "sentence": "My dear, Mr. Plax, please do not consider the matter to be closed; we have only just begun.",
+    "id": 584
+  },
+  {
+    "tenses": [
+      "death"
+    ],
+    "sentence": "I married till death us do part, but now I wonder if that was such a good idea.",
+    "id": 585
+  },
+  {
+    "tenses": [
+      "debt"
+    ],
+    "sentence": "I had a large debt last year but I've paid back all my creditors now.",
+    "id": 586
+  },
+  {
+    "tenses": [
+      "deceive",
+      "deceived"
+    ],
+    "sentence": "Don't try to deceive me; I can tell when you're lying.",
+    "id": 587
+  },
+  {
+    "tenses": [
+      "December"
+    ],
+    "sentence": "December is not usually that cold here; it's January when the snows and cold temperatures begin.",
+    "id": 588
+  },
+  {
+    "tenses": [
+      "decide",
+      "decided"
+    ],
+    "sentence": "If I decide to come to the restaurant, will you pay for my dinner?",
+    "id": 589
+  },
+  {
+    "tenses": [
+      "decision"
+    ],
+    "sentence": "I'm so disorganized but I have so many decisions I need to make.",
+    "id": 590
+  },
+  {
+    "tenses": [
+      "declaration"
+    ],
+    "sentence": "I read the official declaration and it didn't seem to mention how the proceeds would be distributed.",
+    "id": 591
+  },
+  {
+    "tenses": [
+      "declare"
+    ],
+    "sentence": "I declare that from this day forth, no one may smoke in my car.",
+    "id": 592
+  },
+  {
+    "tenses": [
+      "decline",
+      "declined"
+    ],
+    "sentence": "She declined to answer the charges on the grounds that it might incriminate her.",
+    "id": 593
+  },
+  {
+    "tenses": [
+      "decorate",
+      "decorated",
+      "decoration"
+    ],
+    "sentence": "I could help you decorate your new office if you'd like.",
+    "id": 594
+  },
+  {
+    "tenses": [
+      "decrease",
+      "decreased"
+    ],
+    "sentence": "If we decreased the taxes on production here, we would gain revenues over there.",
+    "id": 595
+  },
+  {
+    "tenses": [
+      "decree",
+      "decreed"
+    ],
+    "sentence": "Then the king decreed that no one could own land henceforth.",
+    "id": 596
+  },
+  {
+    "tenses": [
+      "deed"
+    ],
+    "sentence": "But I have a deed stating that I own that land.",
+    "id": 597
+  },
+  {
+    "tenses": [
+      "defeat"
+    ],
+    "sentence": "I will bet you $10 that my team will defeat your team.",
+    "id": 598
+  },
+  {
+    "tenses": [
+      "defense"
+    ],
+    "sentence": "I have no defense except that my intentions were good.",
+    "id": 599
+  },
+  {
+    "tenses": [
+      "definite",
+      "definitely"
+    ],
+    "sentence": "Do you have definite plans for tomorrow or is there a possibility you could join us?",
+    "id": 600
+  },
+  {
+    "tenses": [
+      "definition",
+      "define"
+    ],
+    "sentence": "One must define every term before using it.",
+    "id": 601
+  },
+  {
+    "tenses": [
+      "defy"
+    ],
+    "sentence": "I defy you to find one place where I was mistaken.",
+    "id": 602
+  },
+  {
+    "tenses": [
+      "degree"
+    ],
+    "sentence": "I have a college degree but that didn't help me get the job.",
+    "id": 603
+  },
+  {
+    "tenses": [
+      "delegate"
+    ],
+    "sentence": "His problem was that he didn't know how to delegate tasks to his employees.",
+    "id": 604
+  },
+  {
+    "tenses": [
+      "delicate"
+    ],
+    "sentence": "She seemed so delicate that I just felt like helping her cross the street.",
+    "id": 605
+  },
+  {
+    "tenses": [
+      "delicious"
+    ],
+    "sentence": "These pastries are delicious; how did you make them?",
+    "id": 606
+  },
+  {
+    "tenses": [
+      "delight",
+      "delighted"
+    ],
+    "sentence": "Having you join our group tonight has been such a delight; I hope you'll return.",
+    "id": 607
+  },
+  {
+    "tenses": [
+      "delightful"
+    ],
+    "sentence": "The program was just delightful and the kids were really cute.",
+    "id": 608
+  },
+  {
+    "tenses": [
+      "deliver"
+    ],
+    "sentence": "I would have wanted to deliver the bread yesterday but I knew you weren't home.",
+    "id": 609
+  },
+  {
+    "tenses": [
+      "delivery"
+    ],
+    "sentence": "The delivery person brought the groceries but didn't come in.",
+    "id": 610
+  },
+  {
+    "tenses": [
+      "democracy"
+    ],
+    "sentence": "People think that a democracy only means majority rule.",
+    "id": 611
+  },
+  {
+    "tenses": [
+      "democrat",
+      "democratic"
+    ],
+    "sentence": "A democratic process these days implies that a vote of the participants is taken.",
+    "id": 612
+  },
+  {
+    "tenses": [
+      "denial"
+    ],
+    "sentence": "The patient was known to be in denial of having committed the crimes.",
+    "id": 613
+  },
+  {
+    "tenses": [
+      "dense"
+    ],
+    "sentence": "Is the underbrush dense or will we be able to walk through it?",
+    "id": 614
+  },
+  {
+    "tenses": [
+      "dentist"
+    ],
+    "sentence": "My dentist was supposed to clean my teeth but he only checked for cavities.",
+    "id": 615
+  },
+  {
+    "tenses": [
+      "dependable"
+    ],
+    "sentence": "She is very dependable; you can count on her to be on time.",
+    "id": 616
+  },
+  {
+    "tenses": [
+      "dependent"
+    ],
+    "sentence": "My grandmother is so old now that she is a dependent of my parents.",
+    "id": 617
+  },
+  {
+    "tenses": [
+      "deposit"
+    ],
+    "sentence": "He would like me to deposit the money in his bank account as soon as possible.",
+    "id": 618
+  },
+  {
+    "tenses": [
+      "deposition"
+    ],
+    "sentence": "The lawyer took a deposition of the witness to officially note her whereabouts.",
+    "id": 619
+  },
+  {
+    "tenses": [
+      "depot"
+    ],
+    "sentence": "We could meet at the bus depot since we're taking a bus from there.",
+    "id": 620
+  },
+  {
+    "tenses": [
+      "deprive"
+    ],
+    "sentence": "I would not want to deprive you of food, but aren't you putting on a little weight these days?",
+    "id": 621
+  },
+  {
+    "tenses": [
+      "depth"
+    ],
+    "sentence": "We couldn't tell the depth of the lake because the water was so murky.",
+    "id": 622
+  },
+  {
+    "tenses": [
+      "derive",
+      "derived"
+    ],
+    "sentence": "I am able to derive the correct results from the formula if I start with another premise.",
+    "id": 623
+  },
+  {
+    "tenses": [
+      "descend",
+      "descended"
+    ],
+    "sentence": "Later, we descended the stairs and never went up again.",
+    "id": 624
+  },
+  {
+    "tenses": [
+      "descendant"
+    ],
+    "sentence": "Are you a descendant of the late President Washington?",
+    "id": 625
+  },
+  {
+    "tenses": [
+      "describe"
+    ],
+    "sentence": "If you could describe your viewpoint on art, we could continue with our museum tour.",
+    "id": 626
+  },
+  {
+    "tenses": [
+      "description"
+    ],
+    "sentence": "Mark gave us a wonderful description of the inside of the church; I wish I could have seen it myself though.",
+    "id": 627
+  },
+  {
+    "tenses": [
+      "design"
+    ],
+    "sentence": "She can design a dress faster than I can make one.",
+    "id": 628
+  },
+  {
+    "tenses": [
+      "desk"
+    ],
+    "sentence": "We do not allow employees to keep personal pictures on their desks at work.",
+    "id": 629
+  },
+  {
+    "tenses": [
+      "desolate"
+    ],
+    "sentence": "The child was desolate; she had nowhere to go.",
+    "id": 630
+  },
+  {
+    "tenses": [
+      "despair"
+    ],
+    "sentence": "Don't despair; we will search for your lost papers tomorrow.",
+    "id": 631
+  },
+  {
+    "tenses": [
+      "desperate"
+    ],
+    "sentence": "I am desperate because I have never been this far behind in my work.",
+    "id": 632
+  },
+  {
+    "tenses": [
+      "despised",
+      "despise"
+    ],
+    "sentence": "Everyone despised her for telling about the personal feelings of our friend.",
+    "id": 633
+  },
+  {
+    "tenses": [
+      "dessert"
+    ],
+    "sentence": "Let's have coffee with our dessert.",
+    "id": 634
+  },
+  {
+    "tenses": [
+      "destination"
+    ],
+    "sentence": "What is your destination; where are you going to end up?",
+    "id": 635
+  },
+  {
+    "tenses": [
+      "destined",
+      "destiny"
+    ],
+    "sentence": "My mother always told me that I was destined to be great and important someday.",
+    "id": 636
+  },
+  {
+    "tenses": [
+      "destroy"
+    ],
+    "sentence": "The madman set out to destroy the world, but ran into some super heroes who stopped him.",
+    "id": 637
+  },
+  {
+    "tenses": [
+      "destruction"
+    ],
+    "sentence": "Destruction of the building is not necessary; we can reinforce the structure.",
+    "id": 638
+  },
+  {
+    "tenses": [
+      "detective"
+    ],
+    "sentence": "I love reading detective stories like Sherlock Holmes.",
+    "id": 639
+  },
+  {
+    "tenses": [
+      "determine",
+      "determined"
+    ],
+    "sentence": "The doctor must first determine the cause of the pain before administering some medicine.",
+    "id": 640
+  },
+  {
+    "tenses": [
+      "development"
+    ],
+    "sentence": "With software development it is very important to spend a lot of time designing before beginning the programming.",
+    "id": 641
+  },
+  {
+    "tenses": [
+      "device"
+    ],
+    "sentence": "How does one use that little device because it's not clear from the instructions?",
+    "id": 642
+  },
+  {
+    "tenses": [
+      "devote",
+      "devoted"
+    ],
+    "sentence": "The mother was always sure to devote plenty of time to her kids.",
+    "id": 643
+  },
+  {
+    "tenses": [
+      "devour",
+      "devoured"
+    ],
+    "sentence": "They devoured their lunch as if they hadn't eaten in days!",
+    "id": 644
+  },
+  {
+    "tenses": [
+      "diamond"
+    ],
+    "sentence": "Honey, give me a diamond necklace for our anniversary.",
+    "id": 645
+  },
+  {
+    "tenses": [
+      "dictionary"
+    ],
+    "sentence": "I always look up difficult words in the dictionary.",
+    "id": 646
+  },
+  {
+    "tenses": [
+      "did",
+      "do",
+      "done",
+      "does"
+    ],
+    "sentence": "They did not go to the play because they had other plans.",
+    "id": 647
+  },
+  {
+    "tenses": [
+      "die",
+      "died"
+    ],
+    "sentence": "The cat could die if we don't get him to a veterinary soon.",
+    "id": 648
+  },
+  {
+    "tenses": [
+      "died"
+    ],
+    "sentence": "All my angelfish have died but none of the catfish have.",
+    "id": 649
+  },
+  {
+    "tenses": [
+      "diet"
+    ],
+    "sentence": "We would like to put you on a special diet so that you can lose weight and get healthier.",
+    "id": 650
+  },
+  {
+    "tenses": [
+      "differ"
+    ],
+    "sentence": "If our opinions differ, I suggest that we each write descriptions of our points.",
+    "id": 651
+  },
+  {
+    "tenses": [
+      "difference"
+    ],
+    "sentence": "The difference between you and I is our approaches to finding happiness.",
+    "id": 652
+  },
+  {
+    "tenses": [
+      "different"
+    ],
+    "sentence": "The articles are very different; one is philosophical, while the other is not.",
+    "id": 653
+  },
+  {
+    "tenses": [
+      "difficult"
+    ],
+    "sentence": "It used to be very difficult for my grandfather to get up the stairs but now he has an electronic riding chair to use.",
+    "id": 654
+  },
+  {
+    "tenses": [
+      "difficulty"
+    ],
+    "sentence": "They would have had a difficulty in deciding who to choose; that's why I decided for them.",
+    "id": 655
+  },
+  {
+    "tenses": [
+      "digest"
+    ],
+    "sentence": "I need to let my food digest awhile before attempting to take a walk.",
+    "id": 656
+  },
+  {
+    "tenses": [
+      "dignity"
+    ],
+    "sentence": "One can act with dignity even while being casual.",
+    "id": 657
+  },
+  {
+    "tenses": [
+      "dilemma"
+    ],
+    "sentence": "My dilemma is that I will be too tired to play the game, but I know that I promised I would.",
+    "id": 658
+  },
+  {
+    "tenses": [
+      "dinner"
+    ],
+    "sentence": "After dinner we could take a stroll to the creek if you feel up to it.",
+    "id": 659
+  },
+  {
+    "tenses": [
+      "diphtheria"
+    ],
+    "sentence": "The diphtheria disease was a very serious matter back in those days.",
+    "id": 660
+  },
+  {
+    "tenses": [
+      "direct",
+      "directed"
+    ],
+    "sentence": "I would now like to direct your attention to this painting from the 1800s.",
+    "id": 661
+  },
+  {
+    "tenses": [
+      "direction"
+    ],
+    "sentence": "Which direction will you be traveling? Maybe I could catch a ride with you.",
+    "id": 662
+  },
+  {
+    "tenses": [
+      "director"
+    ],
+    "sentence": "The customer service director has about thirty people working for her.",
+    "id": 663
+  },
+  {
+    "tenses": [
+      "directory"
+    ],
+    "sentence": "Let's look in the telephone directory for all the people with his same last name.",
+    "id": 664
+  },
+  {
+    "tenses": [
+      "disagree"
+    ],
+    "sentence": "I completely disagree with you but I'll defend your right to speak.",
+    "id": 665
+  },
+  {
+    "tenses": [
+      "disagreeable"
+    ],
+    "sentence": "Why do you always have to be so disagreeable? Can't you go along with something I say every once in a while?",
+    "id": 666
+  },
+  {
+    "tenses": [
+      "disappear",
+      "disappeared"
+    ],
+    "sentence": "The book could not have disappeared on its own; someone took it.",
+    "id": 667
+  },
+  {
+    "tenses": [
+      "disappointed",
+      "disappoint"
+    ],
+    "sentence": "He acted very disappointed that you couldn't make it to the art showing.",
+    "id": 668
+  },
+  {
+    "tenses": [
+      "disapprove",
+      "disapproval"
+    ],
+    "sentence": "I'm sorry but I disapprove of your being here; please leave.",
+    "id": 669
+  },
+  {
+    "tenses": [
+      "disastrous",
+      "disaster"
+    ],
+    "sentence": "The project was disastrous for everyone who worked on it; no one could get another job after that.",
+    "id": 670
+  },
+  {
+    "tenses": [
+      "discharge",
+      "discharged"
+    ],
+    "sentence": "He would like to be discharged from the army due to health reasons.",
+    "id": 671
+  },
+  {
+    "tenses": [
+      "discontent",
+      "discontented"
+    ],
+    "sentence": "You certainly have been acting discontented lately; why are you so unhappy?",
+    "id": 672
+  },
+  {
+    "tenses": [
+      "discount"
+    ],
+    "sentence": "I would like to receive a discount on that hat since it has a small spot on it.",
+    "id": 673
+  },
+  {
+    "tenses": [
+      "discourage"
+    ],
+    "sentence": "I would not want to discourage you from working here, even though I personally hate it.",
+    "id": 674
+  },
+  {
+    "tenses": [
+      "discover"
+    ],
+    "sentence": "If you leave Dr. Einstein alone, he may discover something very useful for all humanity.",
+    "id": 675
+  },
+  {
+    "tenses": [
+      "discovery"
+    ],
+    "sentence": "Just after I made my discovery that the ground was wet, I found another clue to the case.",
+    "id": 676
+  },
+  {
+    "tenses": [
+      "discuss"
+    ],
+    "sentence": "We should discuss why our visitors are not getting along with each other.",
+    "id": 677
+  },
+  {
+    "tenses": [
+      "disease"
+    ],
+    "sentence": "She unfortunately had a terrible disease and died before finishing her masterpiece.",
+    "id": 678
+  },
+  {
+    "tenses": [
+      "disgrace"
+    ],
+    "sentence": "I would not want to die in disgrace; I need to make amends with everybody.",
+    "id": 679
+  },
+  {
+    "tenses": [
+      "disguise"
+    ],
+    "sentence": "The famous actor wore a disguise to the restaurant so no one would recognize him.",
+    "id": 680
+  },
+  {
+    "tenses": [
+      "dishonest"
+    ],
+    "sentence": "I am not being dishonest when I say that everybody thinks you're the smartest person here.",
+    "id": 681
+  },
+  {
+    "tenses": [
+      "dismiss"
+    ],
+    "sentence": "I could dismiss your work since it was turned in late, but I won't.",
+    "id": 682
+  },
+  {
+    "tenses": [
+      "disobey"
+    ],
+    "sentence": "If you disobey me again, I will have to tell your mother.",
+    "id": 683
+  },
+  {
+    "tenses": [
+      "disorder",
+      "disorderly"
+    ],
+    "sentence": "The room was in complete disorder when I entered but I've straightened everything up now.",
+    "id": 684
+  },
+  {
+    "tenses": [
+      "dispensary",
+      "dispense"
+    ],
+    "sentence": "Go to the camp dispensary and get some aspirin.",
+    "id": 685
+  },
+  {
+    "tenses": [
+      "display",
+      "displaying"
+    ],
+    "sentence": "I am planning on displaying your work in this corner if you approve.",
+    "id": 686
+  },
+  {
+    "tenses": [
+      "displeasure"
+    ],
+    "sentence": "She showed her displeasure with your being late to the board meeting.",
+    "id": 687
+  },
+  {
+    "tenses": [
+      "dispose"
+    ],
+    "sentence": "Let's dispose of the trash and then pack up all our stuff.",
+    "id": 688
+  },
+  {
+    "tenses": [
+      "dispute"
+    ],
+    "sentence": "I cannot dispute your logic, but I do not accept your premises.",
+    "id": 689
+  },
+  {
+    "tenses": [
+      "dissolve"
+    ],
+    "sentence": "The chemist could dissolve the compound in water but we wouldn't be able to see it.",
+    "id": 690
+  },
+  {
+    "tenses": [
+      "distance"
+    ],
+    "sentence": "What is the distance between your house and mine?",
+    "id": 691
+  },
+  {
+    "tenses": [
+      "distinct"
+    ],
+    "sentence": "Her features were very distinct. I could pick her out of any crowd.",
+    "id": 692
+  },
+  {
+    "tenses": [
+      "distinctive"
+    ],
+    "sentence": "There was a very distinctive odor in the air.",
+    "id": 693
+  },
+  {
+    "tenses": [
+      "distinguish",
+      "distinguished"
+    ],
+    "sentence": "The gentleman looks very distinguished with his gray sideburns.",
+    "id": 694
+  },
+  {
+    "tenses": [
+      "distress"
+    ],
+    "sentence": "Don't distress; we will be able to get you out of there.",
+    "id": 695
+  },
+  {
+    "tenses": [
+      "district"
+    ],
+    "sentence": "To which district of town were you assigned to patrol?",
+    "id": 696
+  },
+  {
+    "tenses": [
+      "disturb"
+    ],
+    "sentence": "I don't want to disturb his sleep but this is important.",
+    "id": 697
+  },
+  {
+    "tenses": [
+      "divine"
+    ],
+    "sentence": "You could tell the character was divine because she had a halo above her head.",
+    "id": 698
+  },
+  {
+    "tenses": [
+      "divisible"
+    ],
+    "sentence": "Is 10,257 divisible by 13?",
+    "id": 699
+  },
+  {
+    "tenses": [
+      "division"
+    ],
+    "sentence": "I hate doing long division on paper so I use my calculator.",
+    "id": 700
+  },
+  {
+    "tenses": [
+      "divorce",
+      "divorced"
+    ],
+    "sentence": "My parents are divorced but they're still friends.",
+    "id": 701
+  },
+  {
+    "tenses": [
+      "do"
+    ],
+    "sentence": "Do not ever go to that area of town; it's dangerous.",
+    "id": 702
+  },
+  {
+    "tenses": [
+      "doctor"
+    ],
+    "sentence": "Go tell the doctor that her patients are waiting.",
+    "id": 703
+  },
+  {
+    "tenses": [
+      "doctrine"
+    ],
+    "sentence": "The doctrine of the church mandates that no one may be left poor and hungry.",
+    "id": 704
+  },
+  {
+    "tenses": [
+      "does",
+      "do"
+    ],
+    "sentence": "I'm sorry but he does not know anything about economics.",
+    "id": 705
+  },
+  {
+    "tenses": [
+      "doesn't",
+      "does not"
+    ],
+    "sentence": "That doesn't mean that you will be accepted, simply that you will be evaluated.",
+    "id": 706
+  },
+  {
+    "tenses": [
+      "dog"
+    ],
+    "sentence": "How many breeds of dogs will be in that contest?",
+    "id": 707
+  },
+  {
+    "tenses": [
+      "dollar"
+    ],
+    "sentence": "Dollar for dollar, the value at that grocery is much better.",
+    "id": 708
+  },
+  {
+    "tenses": [
+      "domestic"
+    ],
+    "sentence": "I am more interested in domestic social issues than ones with foreign countries.",
+    "id": 709
+  },
+  {
+    "tenses": [
+      "don't",
+      "do not"
+    ],
+    "sentence": "Don't ever let me see you frowning again; we must look happy.",
+    "id": 710
+  },
+  {
+    "tenses": [
+      "done",
+      "do",
+      "did"
+    ],
+    "sentence": "The work has been done so we can finally go to a late lunch.",
+    "id": 711
+  },
+  {
+    "tenses": [
+      "donkeys"
+    ],
+    "sentence": "I like to ride donkeys at the fair because they are sweet animals.",
+    "id": 712
+  },
+  {
+    "tenses": [
+      "door"
+    ],
+    "sentence": "Please close the door after coming in.",
+    "id": 713
+  },
+  {
+    "tenses": [
+      "dormitory"
+    ],
+    "sentence": "My college dormitory had public kitchens on every floor.",
+    "id": 714
+  },
+  {
+    "tenses": [
+      "double"
+    ],
+    "sentence": "If you double my income I will triple my work output.",
+    "id": 715
+  },
+  {
+    "tenses": [
+      "doubt"
+    ],
+    "sentence": "Do you seriously doubt that I can talk her into coming with us?",
+    "id": 716
+  },
+  {
+    "tenses": [
+      "doubtful"
+    ],
+    "sentence": "It's extremely doubtful that it will rain today so I'm not taking an umbrella.",
+    "id": 717
+  },
+  {
+    "tenses": [
+      "downstairs"
+    ],
+    "sentence": "Let's go downstairs and see what kind of books they have.",
+    "id": 718
+  },
+  {
+    "tenses": [
+      "downtown"
+    ],
+    "sentence": "I'd like to go downtown by subway but I don't want to walk too far.",
+    "id": 719
+  },
+  {
+    "tenses": [
+      "dozen"
+    ],
+    "sentence": "On our anniversary my husband bought me a dozen red roses.",
+    "id": 720
+  },
+  {
+    "tenses": [
+      "draftsman"
+    ],
+    "sentence": "We will need a draftsman to work up a plan for the building.",
+    "id": 721
+  },
+  {
+    "tenses": [
+      "drank",
+      "drink",
+      "drunk"
+    ],
+    "sentence": "We drank margaritas out by the riverfront.",
+    "id": 722
+  },
+  {
+    "tenses": [
+      "dreadful"
+    ],
+    "sentence": "Your cough sounds dreadful; are you taking anything for it?",
+    "id": 723
+  },
+  {
+    "tenses": [
+      "dream"
+    ],
+    "sentence": "I had a dream about you last night; you were wearing pajamas at our business meeting!",
+    "id": 724
+  },
+  {
+    "tenses": [
+      "dress"
+    ],
+    "sentence": "If all the kids dress alike we will be able to keep them together better.",
+    "id": 725
+  },
+  {
+    "tenses": [
+      "drink"
+    ],
+    "sentence": "Maybe I should make you a stiff drink to calm your nerves.",
+    "id": 726
+  },
+  {
+    "tenses": [
+      "drowned"
+    ],
+    "sentence": "Sadly, the poor cat drowned because the water was too rapid.",
+    "id": 727
+  },
+  {
+    "tenses": [
+      "drowsy"
+    ],
+    "sentence": "This medicine makes me feel so drowsy that I think I'll have to take a nap.",
+    "id": 728
+  },
+  {
+    "tenses": [
+      "druggist"
+    ],
+    "sentence": "Druggists can often be quite knowledgeable but in this case I'd ask a doctor.",
+    "id": 729
+  },
+  {
+    "tenses": [
+      "drunk"
+    ],
+    "sentence": "After we'd drunk the rest of the gallon of milk, we went out to get more.",
+    "id": 730
+  },
+  {
+    "tenses": [
+      "due"
+    ],
+    "sentence": "Due to his unhealthy state, we thought we shouldn't make him upset.",
+    "id": 731
+  },
+  {
+    "tenses": [
+      "duffel"
+    ],
+    "sentence": "I have always wanted a duffel bag to carry my athletic clothes in.",
+    "id": 732
+  },
+  {
+    "tenses": [
+      "duke"
+    ],
+    "sentence": "He was a duke of some district in England but I forget which.",
+    "id": 733
+  },
+  {
+    "tenses": [
+      "duly"
+    ],
+    "sentence": "If you duly elect me, I will carry out all my campaign promises.",
+    "id": 734
+  },
+  {
+    "tenses": [
+      "duplicate"
+    ],
+    "sentence": "Is this sheet a duplicate or is it the original?",
+    "id": 735
+  },
+  {
+    "tenses": [
+      "dyeing",
+      "dye"
+    ],
+    "sentence": "I feel like doing something wild like dyeing my hair green.",
+    "id": 736
+  },
+  {
+    "tenses": [
+      "eager"
+    ],
+    "sentence": "I am very eager to help so just tell me where to start.",
+    "id": 737
+  },
+  {
+    "tenses": [
+      "eagle"
+    ],
+    "sentence": "Eagles fly higher than that other kind of bird.",
+    "id": 738
+  },
+  {
+    "tenses": [
+      "ear"
+    ],
+    "sentence": "Lend me your ear and I'll tell you a tale of happiness.",
+    "id": 739
+  },
+  {
+    "tenses": [
+      "early"
+    ],
+    "sentence": "I want to rise early in the morning because I like to hear the birds sing and the frogs rivet.",
+    "id": 740
+  },
+  {
+    "tenses": [
+      "earnest",
+      "earnestly"
+    ],
+    "sentence": "In earnest, I don't want to prevent you from stating your opinions.",
+    "id": 741
+  },
+  {
+    "tenses": [
+      "earth"
+    ],
+    "sentence": "The earth is the perfect distance from the sun to support life forms.",
+    "id": 742
+  },
+  {
+    "tenses": [
+      "earthquake"
+    ],
+    "sentence": "California seems to have lots of earthquakes but not that many tornadoes.",
+    "id": 743
+  },
+  {
+    "tenses": [
+      "ease"
+    ],
+    "sentence": "If it will ease your mental anguish, I'll explain why I had to prevent her from coming.",
+    "id": 744
+  },
+  {
+    "tenses": [
+      "easily",
+      "easy"
+    ],
+    "sentence": "We could easily not take him up on his offer, but why wouldn't we want to?",
+    "id": 745
+  },
+  {
+    "tenses": [
+      "eat",
+      "ate",
+      "eaten"
+    ],
+    "sentence": "Sam can't eat pork because it's against his religion.",
+    "id": 746
+  },
+  {
+    "tenses": [
+      "eaten",
+      "eat"
+    ],
+    "sentence": "Not having eaten all day, I think I would like a huge steak!",
+    "id": 747
+  },
+  {
+    "tenses": [
+      "echoes",
+      "echo"
+    ],
+    "sentence": "That mountain causes sounds to echo; it's pretty cool.",
+    "id": 748
+  },
+  {
+    "tenses": [
+      "economy"
+    ],
+    "sentence": "The economy is explained on television in terms of numbers but there are easier ways to understand it.",
+    "id": 749
+  },
+  {
+    "tenses": [
+      "edge"
+    ],
+    "sentence": "I'm on the edge of my seat waiting for you to answer!",
+    "id": 750
+  },
+  {
+    "tenses": [
+      "edited"
+    ],
+    "sentence": "I have edited that article but it needs another revision in light of the new information.",
+    "id": 751
+  },
+  {
+    "tenses": [
+      "edition"
+    ],
+    "sentence": "How many editions of that newspaper have been put out?",
+    "id": 752
+  },
+  {
+    "tenses": [
+      "editor"
+    ],
+    "sentence": "I spoke with the editor of the magazine about adding a new column on social issues.",
+    "id": 753
+  },
+  {
+    "tenses": [
+      "educate"
+    ],
+    "sentence": "Why don't we educate our children to realize smoking is bad for their health?",
+    "id": 754
+  },
+  {
+    "tenses": [
+      "education"
+    ],
+    "sentence": "The education system needs a complete overhaul.",
+    "id": 755
+  },
+  {
+    "tenses": [
+      "educator"
+    ],
+    "sentence": "He is an educator in the field of astronomy.",
+    "id": 756
+  },
+  {
+    "tenses": [
+      "effect",
+      "effects"
+    ],
+    "sentence": "What are the effects of governmental regulations of the marketplace?",
+    "id": 757
+  },
+  {
+    "tenses": [
+      "effort"
+    ],
+    "sentence": "You have put in a mighty effort for this project; we appreciate it.",
+    "id": 758
+  },
+  {
+    "tenses": [
+      "egg",
+      "eggs"
+    ],
+    "sentence": "I'd like eggs, bacon, and grits for breakfast.",
+    "id": 759
+  },
+  {
+    "tenses": [
+      "eight"
+    ],
+    "sentence": "Some people are lucky enough to work only an eight-hour day.",
+    "id": 760
+  },
+  {
+    "tenses": [
+      "eighteen"
+    ],
+    "sentence": "Eighteen is the age when most people believe they are adults.",
+    "id": 761
+  },
+  {
+    "tenses": [
+      "eighth"
+    ],
+    "sentence": "If we had an eighth day in the week, maybe we could accomplish more.",
+    "id": 762
+  },
+  {
+    "tenses": [
+      "eighty"
+    ],
+    "sentence": "He was eighty years old but didn't look a day over sixty.",
+    "id": 763
+  },
+  {
+    "tenses": [
+      "either"
+    ],
+    "sentence": "Either we allow Susan to participate or we don't, but we must decide now.",
+    "id": 764
+  },
+  {
+    "tenses": [
+      "elated"
+    ],
+    "sentence": "He was elated to hear that his wife had had the baby.",
+    "id": 765
+  },
+  {
+    "tenses": [
+      "election"
+    ],
+    "sentence": "When we get the election results, I don't want you to have a stroke.",
+    "id": 766
+  },
+  {
+    "tenses": [
+      "electric"
+    ],
+    "sentence": "I like using an electric blanket in the winter time.",
+    "id": 767
+  },
+  {
+    "tenses": [
+      "electrician"
+    ],
+    "sentence": "We will need to get an electrician to come in and figure out our wiring problems.",
+    "id": 768
+  },
+  {
+    "tenses": [
+      "electricity"
+    ],
+    "sentence": "Are you getting any electricity to that connection over there?",
+    "id": 769
+  },
+  {
+    "tenses": [
+      "electronic"
+    ],
+    "sentence": "The invention of electronic media has completely revamped the commercial industry.",
+    "id": 770
+  },
+  {
+    "tenses": [
+      "elegant"
+    ],
+    "sentence": "She looked very elegant in her new ballgown.",
+    "id": 771
+  },
+  {
+    "tenses": [
+      "elementary"
+    ],
+    "sentence": "Solving that problem is elementary my dear Watson.",
+    "id": 772
+  },
+  {
+    "tenses": [
+      "elephant"
+    ],
+    "sentence": "When I go to the circus, the elephants are my favorite animals to watch.",
+    "id": 773
+  },
+  {
+    "tenses": [
+      "eleventh"
+    ],
+    "sentence": "In the eleventh grade will you have learned how to use computers yet?",
+    "id": 774
+  },
+  {
+    "tenses": [
+      "elsewhere"
+    ],
+    "sentence": "We could go elsewhere, but this is my favorite restaurant.",
+    "id": 775
+  },
+  {
+    "tenses": [
+      "emblem"
+    ],
+    "sentence": "What does the emblem on your lapel signify?",
+    "id": 776
+  },
+  {
+    "tenses": [
+      "embrace",
+      "embraced"
+    ],
+    "sentence": "He gave me a warm embrace when I first entered the room.",
+    "id": 777
+  },
+  {
+    "tenses": [
+      "embroider"
+    ],
+    "sentence": "I could embroider your initials on all your shirts if you'd like.",
+    "id": 778
+  },
+  {
+    "tenses": [
+      "emergency"
+    ],
+    "sentence": "In an emergency, I am usually pretty calm, unlike Ms. Singletary.",
+    "id": 779
+  },
+  {
+    "tenses": [
+      "emigrate",
+      "emigrated"
+    ],
+    "sentence": "If you had your druthers, would you emigrate from this country?",
+    "id": 780
+  },
+  {
+    "tenses": [
+      "emperor"
+    ],
+    "sentence": "Would you say that an emperor or a king has more power in general?",
+    "id": 781
+  },
+  {
+    "tenses": [
+      "empire"
+    ],
+    "sentence": "Do you know that's one of the largest empires in the world?",
+    "id": 782
+  },
+  {
+    "tenses": [
+      "employee"
+    ],
+    "sentence": "I have been an employee at the company for almost 27 years.",
+    "id": 783
+  },
+  {
+    "tenses": [
+      "employer"
+    ],
+    "sentence": "Does your employer demand you to work all those long hours?",
+    "id": 784
+  },
+  {
+    "tenses": [
+      "employment"
+    ],
+    "sentence": "Are you seeking part-time or full-time employment with our company?",
+    "id": 785
+  },
+  {
+    "tenses": [
+      "empty"
+    ],
+    "sentence": "When I finally had a chance to look for and find the basket, it was empty.",
+    "id": 786
+  },
+  {
+    "tenses": [
+      "enclose",
+      "enclosed",
+      "enclosure"
+    ],
+    "sentence": "We would like to enclose this area here to make a nice sized backyard.",
+    "id": 787
+  },
+  {
+    "tenses": [
+      "encounter"
+    ],
+    "sentence": "Have you encountered any UFOs in your air travels?",
+    "id": 788
+  },
+  {
+    "tenses": [
+      "encourage"
+    ],
+    "sentence": "I would like to encourage everyone to pay attention to my memorandums.",
+    "id": 789
+  },
+  {
+    "tenses": [
+      "end"
+    ],
+    "sentence": "In the end, everything works out for the best.",
+    "id": 790
+  },
+  {
+    "tenses": [
+      "endeavor",
+      "endeavored",
+      "endeavors"
+    ],
+    "sentence": "I wish you the best of luck in all your future endeavors.",
+    "id": 791
+  },
+  {
+    "tenses": [
+      "enemy"
+    ],
+    "sentence": "He acts like an enemy in public but in private he's very sweet.",
+    "id": 792
+  },
+  {
+    "tenses": [
+      "energy"
+    ],
+    "sentence": "I'm sorry but I just don't have the energy to accompany you to the theater.",
+    "id": 793
+  },
+  {
+    "tenses": [
+      "engage"
+    ],
+    "sentence": "I don't want to engage in politics but I am interested in the campaign.",
+    "id": 794
+  },
+  {
+    "tenses": [
+      "engine"
+    ],
+    "sentence": "My car's engine is making a funny noise these days. I wonder what the problem is.",
+    "id": 795
+  },
+  {
+    "tenses": [
+      "engineer"
+    ],
+    "sentence": "Are you an electrical engineer, chemical engineer, software engineer, or what?",
+    "id": 796
+  },
+  {
+    "tenses": [
+      "English"
+    ],
+    "sentence": "The English language comes in many varieties including American and British.",
+    "id": 797
+  },
+  {
+    "tenses": [
+      "engraver",
+      "engrave"
+    ],
+    "sentence": "The engraver etched their names in the silver tray.",
+    "id": 798
+  },
+  {
+    "tenses": [
+      "enjoy",
+      "enjoyed",
+      "enjoyable"
+    ],
+    "sentence": "We could not enjoy the festivities unless you were there, of course.",
+    "id": 799
+  },
+  {
+    "tenses": [
+      "enlarging",
+      "enlarge",
+      "enlarged"
+    ],
+    "sentence": "Are you enlarging the picture to be published in that magazine?",
+    "id": 800
+  },
+  {
+    "tenses": [
+      "enormous"
+    ],
+    "sentence": "The bag was enormous; I couldn't have carried it on my own.",
+    "id": 801
+  },
+  {
+    "tenses": [
+      "enough"
+    ],
+    "sentence": "Enough is enough; don't talk to me any more about that subject.",
+    "id": 802
+  },
+  {
+    "tenses": [
+      "enter"
+    ],
+    "sentence": "He would like to enter your premises but he needs your permission, of course.",
+    "id": 803
+  },
+  {
+    "tenses": [
+      "entertain"
+    ],
+    "sentence": "How does one entertain themselves in this small village?",
+    "id": 804
+  },
+  {
+    "tenses": [
+      "entertainment"
+    ],
+    "sentence": "The entertainment tonight is something special, including a magician's act.",
+    "id": 805
+  },
+  {
+    "tenses": [
+      "entirely"
+    ],
+    "sentence": "It is entirely up to you, but I would prefer to go somewhere else.",
+    "id": 806
+  },
+  {
+    "tenses": [
+      "entitle",
+      "entitled"
+    ],
+    "sentence": "You are entitled to speak your opinion but you cannot monopolize the conversation.",
+    "id": 807
+  },
+  {
+    "tenses": [
+      "entrance"
+    ],
+    "sentence": "Where is the entrance to this place? There is too much shrubbery to find it.",
+    "id": 808
+  },
+  {
+    "tenses": [
+      "envelope"
+    ],
+    "sentence": "If we each took a stack of envelopes to address, the job would be done quickly.",
+    "id": 809
+  },
+  {
+    "tenses": [
+      "equipment"
+    ],
+    "sentence": "My athletic equipment is stored in this locker.",
+    "id": 810
+  },
+  {
+    "tenses": [
+      "equipped"
+    ],
+    "sentence": "She would have been equipped to speak on that subject but was not invited to the meeting.",
+    "id": 811
+  },
+  {
+    "tenses": [
+      "eraser"
+    ],
+    "sentence": "Don't use an eraser here as it will damage the paper.",
+    "id": 812
+  },
+  {
+    "tenses": [
+      "erasure"
+    ],
+    "sentence": "How much evidence of erasures was found?",
+    "id": 813
+  },
+  {
+    "tenses": [
+      "errand"
+    ],
+    "sentence": "I would like you to run a couple errands for me if you have the time.",
+    "id": 814
+  },
+  {
+    "tenses": [
+      "error"
+    ],
+    "sentence": "Am I in error or do you admit you were not there that day?",
+    "id": 815
+  },
+  {
+    "tenses": [
+      "escape"
+    ],
+    "sentence": "The convicts planned their escape from prison but never carried it off.",
+    "id": 816
+  },
+  {
+    "tenses": [
+      "especially"
+    ],
+    "sentence": "I am especially interested in hearing your views on the Middle East.",
+    "id": 817
+  },
+  {
+    "tenses": [
+      "establish"
+    ],
+    "sentence": "If we could just establish good relations with the ambassador, we could begin solving the country's problems.",
+    "id": 818
+  },
+  {
+    "tenses": [
+      "esteem"
+    ],
+    "sentence": "He holds you in high esteem so don't think that bad remark could have come from him.",
+    "id": 819
+  },
+  {
+    "tenses": [
+      "estimate"
+    ],
+    "sentence": "What is your estimate of arrival time?",
+    "id": 820
+  },
+  {
+    "tenses": [
+      "eternal"
+    ],
+    "sentence": "They say souls are eternal but what evidence is there?",
+    "id": 821
+  },
+  {
+    "tenses": [
+      "Europe"
+    ],
+    "sentence": "I'd love us to visit all of Europe, or at least Italy and France.",
+    "id": 822
+  },
+  {
+    "tenses": [
+      "evening"
+    ],
+    "sentence": "One evening, why don't you come over and we'll make plans for our book?",
+    "id": 823
+  },
+  {
+    "tenses": [
+      "every"
+    ],
+    "sentence": "Every once in a while I like to switch hands that I use with the computer mouse so I don't stress my right hand.",
+    "id": 824
+  },
+  {
+    "tenses": [
+      "everybody"
+    ],
+    "sentence": "Everybody has arrived; we can start the wedding ceremony.",
+    "id": 825
+  },
+  {
+    "tenses": [
+      "everyone"
+    ],
+    "sentence": "If everyone would donate $20, we'd have enough to cover the balance.",
+    "id": 826
+  },
+  {
+    "tenses": [
+      "everything"
+    ],
+    "sentence": "I leave everything up to you; it's your `show`.",
+    "id": 827
+  },
+  {
+    "tenses": [
+      "everywhere"
+    ],
+    "sentence": "Everywhere I go I see poverty-stricken homeless people.",
+    "id": 828
+  },
+  {
+    "tenses": [
+      "evidence"
+    ],
+    "sentence": "There is significant evidence indicating that humans are related to apes.",
+    "id": 829
+  },
+  {
+    "tenses": [
+      "exact"
+    ],
+    "sentence": "What is your exact name? I'd like to put it on this certificate correctly.",
+    "id": 830
+  },
+  {
+    "tenses": [
+      "examination"
+    ],
+    "sentence": "The teacher administered the examination to all students who had completed the lab hours.",
+    "id": 831
+  },
+  {
+    "tenses": [
+      "examine"
+    ],
+    "sentence": "If you examine your premises you will find that one is invalid.",
+    "id": 832
+  },
+  {
+    "tenses": [
+      "examiner"
+    ],
+    "sentence": "The examiner was careful not to show the answers to any of the people taking the exam.",
+    "id": 833
+  },
+  {
+    "tenses": [
+      "example"
+    ],
+    "sentence": "What is an example of a long-beaked bird with few feathers?",
+    "id": 834
+  },
+  {
+    "tenses": [
+      "exceed"
+    ],
+    "sentence": "Do not exceed the speed limit because the police monitor the highways.",
+    "id": 835
+  },
+  {
+    "tenses": [
+      "excel"
+    ],
+    "sentence": "I would like to think you would excel in physics but I'm not sure about your math skills.",
+    "id": 836
+  },
+  {
+    "tenses": [
+      "excellent"
+    ],
+    "sentence": "The movie was an excellent example of something that's funny but not intellectual.",
+    "id": 837
+  },
+  {
+    "tenses": [
+      "except"
+    ],
+    "sentence": "Except for John, everyone has finished their meals.",
+    "id": 838
+  },
+  {
+    "tenses": [
+      "exception"
+    ],
+    "sentence": "Are there any exceptions to the rules?",
+    "id": 839
+  },
+  {
+    "tenses": [
+      "excess"
+    ],
+    "sentence": "I've created an excess of frosting. Do you want to make another cake?",
+    "id": 840
+  },
+  {
+    "tenses": [
+      "exchange"
+    ],
+    "sentence": "I'd like to exchange this size 10 dress for a size 12 dress, please.",
+    "id": 841
+  },
+  {
+    "tenses": [
+      "excite",
+      "excitement",
+      "excited"
+    ],
+    "sentence": "It really excites me to think that you may move to our fair city.",
+    "id": 842
+  },
+  {
+    "tenses": [
+      "exclaim",
+      "exclaimed"
+    ],
+    "sentence": "All of a sudden, she exclaimed that she'd never seen him before in her life.",
+    "id": 843
+  },
+  {
+    "tenses": [
+      "exclusive"
+    ],
+    "sentence": "Is this an exclusive club or can anyone join?",
+    "id": 844
+  },
+  {
+    "tenses": [
+      "excuse"
+    ],
+    "sentence": "Excuse me, but you are standing on my foot.",
+    "id": 845
+  },
+  {
+    "tenses": [
+      "execute"
+    ],
+    "sentence": "After you execute those orders, I have plenty more for you.",
+    "id": 846
+  },
+  {
+    "tenses": [
+      "executive"
+    ],
+    "sentence": "This is a meeting only for executives of the company, so secretaries are not allowed.",
+    "id": 847
+  },
+  {
+    "tenses": [
+      "exercise"
+    ],
+    "sentence": "The professor gave each person a different exercise to carry out.",
+    "id": 848
+  },
+  {
+    "tenses": [
+      "exhausted"
+    ],
+    "sentence": "You look exhausted. Was the trip really that difficult?",
+    "id": 849
+  },
+  {
+    "tenses": [
+      "exhibit"
+    ],
+    "sentence": "If you can exhibit sufficient skills we will most likely hire you.",
+    "id": 850
+  },
+  {
+    "tenses": [
+      "exhilarate",
+      "exhilarated"
+    ],
+    "sentence": "I feel exhilarated after our evening walk. Now I'm able to continue working.",
+    "id": 851
+  },
+  {
+    "tenses": [
+      "exile"
+    ],
+    "sentence": "The dictator was exiled from their country, never to return again.",
+    "id": 852
+  },
+  {
+    "tenses": [
+      "existence"
+    ],
+    "sentence": "I would like to cure cancer right out of existence.",
+    "id": 853
+  },
+  {
+    "tenses": [
+      "exorbitant"
+    ],
+    "sentence": "They spent exorbitant sums of money in Paris.",
+    "id": 854
+  },
+  {
+    "tenses": [
+      "expatriated"
+    ],
+    "sentence": "The president was expatriated after the horrible human rights violations were acknowledged.",
+    "id": 855
+  },
+  {
+    "tenses": [
+      "expect"
+    ],
+    "sentence": "We would expect you to first give your speech before talking with the attendees.",
+    "id": 856
+  },
+  {
+    "tenses": [
+      "expedition"
+    ],
+    "sentence": "The expedition was a success because they discovered Florida.",
+    "id": 857
+  },
+  {
+    "tenses": [
+      "expelled",
+      "expel"
+    ],
+    "sentence": "The student was expelled from school for three weeks for bad behavior.",
+    "id": 858
+  },
+  {
+    "tenses": [
+      "expense"
+    ],
+    "sentence": "I have lots of business expenses so I keep a log handy at all times.",
+    "id": 859
+  },
+  {
+    "tenses": [
+      "experience"
+    ],
+    "sentence": "It has been my experience that nobody listens, yet everybody talks.",
+    "id": 860
+  },
+  {
+    "tenses": [
+      "explain"
+    ],
+    "sentence": "Can you explain why you said she was there, yet she says she was somewhere else?",
+    "id": 861
+  },
+  {
+    "tenses": [
+      "explanation"
+    ],
+    "sentence": "I want to give an explanation about why I never call you in the evenings.",
+    "id": 862
+  },
+  {
+    "tenses": [
+      "explore"
+    ],
+    "sentence": "We should explore the possible causes of housing shortages in this city.",
+    "id": 863
+  },
+  {
+    "tenses": [
+      "export"
+    ],
+    "sentence": "Does your country export agricultural products to the US?",
+    "id": 864
+  },
+  {
+    "tenses": [
+      "expose",
+      "exposed"
+    ],
+    "sentence": "I had never been exposed to the measles before today.",
+    "id": 865
+  },
+  {
+    "tenses": [
+      "expression"
+    ],
+    "sentence": "His expression could be interpreted as anger.",
+    "id": 866
+  },
+  {
+    "tenses": [
+      "extension"
+    ],
+    "sentence": "Please give me an extension on payment; I promise to pay as soon as possible.",
+    "id": 867
+  },
+  {
+    "tenses": [
+      "external"
+    ],
+    "sentence": "Because no one here is qualified for the job, we will have to search external to the company.",
+    "id": 868
+  },
+  {
+    "tenses": [
+      "extraordinary"
+    ],
+    "sentence": "He has extraordinary abilities but how did he acquire them?",
+    "id": 869
+  },
+  {
+    "tenses": [
+      "extreme"
+    ],
+    "sentence": "We must look at the two extreme cases and then we can figure out what's in-between.",
+    "id": 870
+  },
+  {
+    "tenses": [
+      "extremely"
+    ],
+    "sentence": "I am extremely hot. May we please turn on the air conditioner?",
+    "id": 871
+  },
+  {
+    "tenses": [
+      "exultation"
+    ],
+    "sentence": "You could sense a feeling of exultation from the kids as soon as Mrs. Rigsby showed up.",
+    "id": 872
+  },
+  {
+    "tenses": [
+      "eye"
+    ],
+    "sentence": "On the eves of April 30th, we used to make home-made baskets from paper and on May 1st we'd fill them with flowers and give them to neighbors.",
+    "id": 873
+  },
+  {
+    "tenses": [
+      "face"
+    ],
+    "sentence": "Her face was very pale after I asked her if she had ever seen the boy before.",
+    "id": 874
+  },
+  {
+    "tenses": [
+      "fact"
+    ],
+    "sentence": "In fact, the couple is never seen in public together.",
+    "id": 875
+  },
+  {
+    "tenses": [
+      "factory"
+    ],
+    "sentence": "Would you rather keep working at the shoe factory or get a job in the big city?",
+    "id": 876
+  },
+  {
+    "tenses": [
+      "failure"
+    ],
+    "sentence": "There was a failure with plumbing so I had to call a plumber.",
+    "id": 877
+  },
+  {
+    "tenses": [
+      "faith"
+    ],
+    "sentence": "I have faith in your ability to write a good speech.",
+    "id": 878
+  },
+  {
+    "tenses": [
+      "faithful"
+    ],
+    "sentence": "He is a faithful church-goer but I still wonder about his honesty.",
+    "id": 879
+  },
+  {
+    "tenses": [
+      "fall"
+    ],
+    "sentence": "If you fall, we may have trouble getting you down the ski slope to medical help.",
+    "id": 880
+  },
+  {
+    "tenses": [
+      "fallen"
+    ],
+    "sentence": "I've fallen and I can't get up!",
+    "id": 881
+  },
+  {
+    "tenses": [
+      "familiar"
+    ],
+    "sentence": "This group is not familiar with that philosophical concept; could you explain?",
+    "id": 882
+  },
+  {
+    "tenses": [
+      "family",
+      "families"
+    ],
+    "sentence": "Everyone in my family lives in a different state.",
+    "id": 883
+  },
+  {
+    "tenses": [
+      "famine"
+    ],
+    "sentence": "There was rampant famine; that's clear. But what was the ultimate cause?",
+    "id": 884
+  },
+  {
+    "tenses": [
+      "famous"
+    ],
+    "sentence": "His famous last words were, `Give me liberty or give me death.`",
+    "id": 885
+  },
+  {
+    "tenses": [
+      "farewell"
+    ],
+    "sentence": "Let's say our farewell's and then hop in the car to go.",
+    "id": 886
+  },
+  {
+    "tenses": [
+      "fashion"
+    ],
+    "sentence": "Her sister was in the fashion industry but she knew nothing about sewing, herself.",
+    "id": 887
+  },
+  {
+    "tenses": [
+      "fast",
+      "faster"
+    ],
+    "sentence": "He thinks he can run fast but we'll have to enter him in a contest to find out the truth.",
+    "id": 888
+  },
+  {
+    "tenses": [
+      "fasten"
+    ],
+    "sentence": "Fasten your seatbelts; it's going to be a bumpy ride.",
+    "id": 889
+  },
+  {
+    "tenses": [
+      "fatal"
+    ],
+    "sentence": "What was used to make the fatal blow to her head?",
+    "id": 890
+  },
+  {
+    "tenses": [
+      "father"
+    ],
+    "sentence": "My father first noticed my mother when they were in history class in high school.",
+    "id": 891
+  },
+  {
+    "tenses": [
+      "faucet"
+    ],
+    "sentence": "I have a leaky faucet but I don't know how to fix it.",
+    "id": 892
+  },
+  {
+    "tenses": [
+      "fault"
+    ],
+    "sentence": "It's not your fault that no one showed up.",
+    "id": 893
+  },
+  {
+    "tenses": [
+      "favorable",
+      "favor",
+      "favored"
+    ],
+    "sentence": "That candidate is favorable to us because he tends to vote similarly to our group's wishes.",
+    "id": 894
+  },
+  {
+    "tenses": [
+      "favorite"
+    ],
+    "sentence": "Who is your favorite rock musician?",
+    "id": 895
+  },
+  {
+    "tenses": [
+      "fear",
+      "feared"
+    ],
+    "sentence": "I fear that we will never see him again.",
+    "id": 896
+  },
+  {
+    "tenses": [
+      "feasible"
+    ],
+    "sentence": "Do you think it's feasible that we can get there in ten hours?",
+    "id": 897
+  },
+  {
+    "tenses": [
+      "feast"
+    ],
+    "sentence": "My grandmother proceeded to prepare a veritable feast before our eyes.",
+    "id": 898
+  },
+  {
+    "tenses": [
+      "feather"
+    ],
+    "sentence": "She felt as light as a feather but couldn't float like one.",
+    "id": 899
+  },
+  {
+    "tenses": [
+      "feature",
+      "featured"
+    ],
+    "sentence": "I would like your article to be the feature for this month's issue.",
+    "id": 900
+  },
+  {
+    "tenses": [
+      "February"
+    ],
+    "sentence": "It's the month of February that is so cold.",
+    "id": 901
+  },
+  {
+    "tenses": [
+      "federal"
+    ],
+    "sentence": "The federal government should be downsized.",
+    "id": 902
+  },
+  {
+    "tenses": [
+      "feeble"
+    ],
+    "sentence": "My great-grandfather was very feeble in his last years.",
+    "id": 903
+  },
+  {
+    "tenses": [
+      "feel",
+      "felt",
+      "feeling"
+    ],
+    "sentence": "I feel fine, now that I've had some soup.",
+    "id": 904
+  },
+  {
+    "tenses": [
+      "fell",
+      "fall",
+      "fallen"
+    ],
+    "sentence": "The tree branch fell on our roof in the storm.",
+    "id": 905
+  },
+  {
+    "tenses": [
+      "fellow"
+    ],
+    "sentence": "Is that fellow going to come with you or are you coming alone?",
+    "id": 906
+  },
+  {
+    "tenses": [
+      "felt"
+    ],
+    "sentence": "I have never felt better in my life.",
+    "id": 907
+  },
+  {
+    "tenses": [
+      "female"
+    ],
+    "sentence": "Is the child a female or a male?",
+    "id": 908
+  },
+  {
+    "tenses": [
+      "feminine"
+    ],
+    "sentence": "She always wears very feminine clothes and lots of makeup.",
+    "id": 909
+  },
+  {
+    "tenses": [
+      "fertile"
+    ],
+    "sentence": "The ground is fertile because of the nutrients left from last year's crop.",
+    "id": 910
+  },
+  {
+    "tenses": [
+      "fertilizer"
+    ],
+    "sentence": "After we started using the fertilizer, our crops started growing faster and higher.",
+    "id": 911
+  },
+  {
+    "tenses": [
+      "festival"
+    ],
+    "sentence": "We plan to attend the outdoor jazz festival but I just hope it doesn't rain.",
+    "id": 912
+  },
+  {
+    "tenses": [
+      "fidelity"
+    ],
+    "sentence": "Marital fidelity is an issue often discussed in church.",
+    "id": 913
+  },
+  {
+    "tenses": [
+      "field"
+    ],
+    "sentence": "We visited the field of lilies and the aroma was breathtaking.",
+    "id": 914
+  },
+  {
+    "tenses": [
+      "fierce"
+    ],
+    "sentence": "I wouldn't want to stand opposite a fierce rival but I could handle a friend.",
+    "id": 915
+  },
+  {
+    "tenses": [
+      "fiery"
+    ],
+    "sentence": "Her eyes were fiery after she found out about being left out of the plans.",
+    "id": 916
+  },
+  {
+    "tenses": [
+      "fifteen"
+    ],
+    "sentence": "Some states allow teenagers of fifteen to drive; others don't allow them to drive until sixteen.",
+    "id": 917
+  },
+  {
+    "tenses": [
+      "fight",
+      "fought"
+    ],
+    "sentence": "He would rather stay and fight the bureaucracy than to give in.",
+    "id": 918
+  },
+  {
+    "tenses": [
+      "figure",
+      "figured"
+    ],
+    "sentence": "I have figured out that everyone will have a chance to attend the play.",
+    "id": 919
+  },
+  {
+    "tenses": [
+      "film",
+      "filmed"
+    ],
+    "sentence": "If you would have filmed the movie in Hawaii, do you think it would be more authentic?",
+    "id": 920
+  },
+  {
+    "tenses": [
+      "finally"
+    ],
+    "sentence": "I can finally say that I have finished my taxes.",
+    "id": 921
+  },
+  {
+    "tenses": [
+      "finance"
+    ],
+    "sentence": "If we could just get a bank to finance our loan then we could continue making progress.",
+    "id": 922
+  },
+  {
+    "tenses": [
+      "financial"
+    ],
+    "sentence": "Hong Kong is currently considered a financial capital of the world.",
+    "id": 923
+  },
+  {
+    "tenses": [
+      "find",
+      "found",
+      "finding"
+    ],
+    "sentence": "I cannot find my glasses. Have you seen them?",
+    "id": 924
+  },
+  {
+    "tenses": [
+      "finger"
+    ],
+    "sentence": "Put your finger over this hole and then blow on the flute mouthpiece.",
+    "id": 925
+  },
+  {
+    "tenses": [
+      "finish"
+    ],
+    "sentence": "I cannot seem to finish this product but I suppose I eventually will.",
+    "id": 926
+  },
+  {
+    "tenses": [
+      "fire"
+    ],
+    "sentence": "Evidence indicates that ancient humans discovered fire first in Africa.",
+    "id": 927
+  },
+  {
+    "tenses": [
+      "firm"
+    ],
+    "sentence": "Don't take the bowl out of the refrigerator until the consistency of the pudding is firm.",
+    "id": 928
+  },
+  {
+    "tenses": [
+      "fish",
+      "fishing"
+    ],
+    "sentence": "I would love to go catch fish with you whenever you go.",
+    "id": 929
+  },
+  {
+    "tenses": [
+      "fix"
+    ],
+    "sentence": "Tony could fix that flat tire for you if you want.",
+    "id": 930
+  },
+  {
+    "tenses": [
+      "fixture"
+    ],
+    "sentence": "Have you ever seen such a lovely light fixture?",
+    "id": 931
+  },
+  {
+    "tenses": [
+      "flannel"
+    ],
+    "sentence": "I have lots of flannel shirts so I stay warm in the winter.",
+    "id": 932
+  },
+  {
+    "tenses": [
+      "flatter"
+    ],
+    "sentence": "I am not trying to flatter you, only tell the truth as I understand it.",
+    "id": 933
+  },
+  {
+    "tenses": [
+      "flavor"
+    ],
+    "sentence": "What flavor of ice cream would you like, chocolate or vanilla?",
+    "id": 934
+  },
+  {
+    "tenses": [
+      "flight"
+    ],
+    "sentence": "If you tell me which flight you will be taking, I will meet you at the airport.",
+    "id": 935
+  },
+  {
+    "tenses": [
+      "floor"
+    ],
+    "sentence": "My office is on the eighteenth floor.",
+    "id": 936
+  },
+  {
+    "tenses": [
+      "florist"
+    ],
+    "sentence": "Don't get flowers at that florist; they're too expensive.",
+    "id": 937
+  },
+  {
+    "tenses": [
+      "flourish"
+    ],
+    "sentence": "I would like your ideas to flourish so I'm allotting you plenty of time to speak to the group.",
+    "id": 938
+  },
+  {
+    "tenses": [
+      "flower"
+    ],
+    "sentence": "Which flower do you like the best, rose or daisy?",
+    "id": 939
+  },
+  {
+    "tenses": [
+      "fluid"
+    ],
+    "sentence": "The doctor said my son needs to drink plenty of fluids and get lots of bed rest.",
+    "id": 940
+  },
+  {
+    "tenses": [
+      "flutter"
+    ],
+    "sentence": "The wings of hummingbirds flutter faster than all other birds.",
+    "id": 941
+  },
+  {
+    "tenses": [
+      "following"
+    ],
+    "sentence": "Following the lecture we will have a coffee get-together.",
+    "id": 942
+  },
+  {
+    "tenses": [
+      "food"
+    ],
+    "sentence": "I guess you know that there will be lots of good food at the carnival.",
+    "id": 943
+  },
+  {
+    "tenses": [
+      "foot",
+      "feet"
+    ],
+    "sentence": "My right foot is swollen from walking so far.",
+    "id": 944
+  },
+  {
+    "tenses": [
+      "forcible",
+      "force",
+      "forcibly"
+    ],
+    "sentence": "How much force will it take to push the cart over the terrain?",
+    "id": 945
+  },
+  {
+    "tenses": [
+      "forehead"
+    ],
+    "sentence": "If you put a cold compress on your forehead it should relieve the tension you feel.",
+    "id": 946
+  },
+  {
+    "tenses": [
+      "foreign",
+      "foreigner"
+    ],
+    "sentence": "Their customs were foreign to me yet we were able to communicate somewhat.",
+    "id": 947
+  },
+  {
+    "tenses": [
+      "foreman"
+    ],
+    "sentence": "Who is the foreman on this project, the one in charge?",
+    "id": 948
+  },
+  {
+    "tenses": [
+      "foremost"
+    ],
+    "sentence": "The foremost issue to resolve is how we will get the necessary signatures to get on the ballot.",
+    "id": 949
+  },
+  {
+    "tenses": [
+      "forest"
+    ],
+    "sentence": "You can't see the forest for the trees; you are too close to the issue to see the big picture.",
+    "id": 950
+  },
+  {
+    "tenses": [
+      "forge"
+    ],
+    "sentence": "We know we must forge ahead even though the weather is ominous.",
+    "id": 951
+  },
+  {
+    "tenses": [
+      "forger"
+    ],
+    "sentence": "He was an expert forger of signatures and got caught.",
+    "id": 952
+  },
+  {
+    "tenses": [
+      "forgive",
+      "forgave",
+      "forgiven"
+    ],
+    "sentence": "I would like to forgive you for your despicable act but are you sorry you did it?",
+    "id": 953
+  },
+  {
+    "tenses": [
+      "form",
+      "formed",
+      "forming"
+    ],
+    "sentence": "We would have formed a new chapter of the organization but we didn't have the necessary information to do so.",
+    "id": 954
+  },
+  {
+    "tenses": [
+      "forsake",
+      "forsaken",
+      "forsook"
+    ],
+    "sentence": "Why have you forsaken me? Have I not followed all your wishes?",
+    "id": 955
+  },
+  {
+    "tenses": [
+      "forth"
+    ],
+    "sentence": "Then he said, go forth and do harm no more.",
+    "id": 956
+  },
+  {
+    "tenses": [
+      "fortunate"
+    ],
+    "sentence": "It is certainly fortunate that you weren't in the car when it got hit.",
+    "id": 957
+  },
+  {
+    "tenses": [
+      "fortunately"
+    ],
+    "sentence": "Fortunately we never had bad weather during the beach parties.",
+    "id": 958
+  },
+  {
+    "tenses": [
+      "fortune"
+    ],
+    "sentence": "He made a fortune in real estate; that's the only place to make real money.",
+    "id": 959
+  },
+  {
+    "tenses": [
+      "forty"
+    ],
+    "sentence": "When I turned forty I was actually in the prime of my life.",
+    "id": 960
+  },
+  {
+    "tenses": [
+      "forward"
+    ],
+    "sentence": "I look forward to your moving to Chicago; we'll have a lot of fun.",
+    "id": 961
+  },
+  {
+    "tenses": [
+      "fought",
+      "fight"
+    ],
+    "sentence": "They fought a good battle, but couldn't win the war.",
+    "id": 962
+  },
+  {
+    "tenses": [
+      "found",
+      "find"
+    ],
+    "sentence": "I have found that if you talk to the right people, you can make a difference in any organization.",
+    "id": 963
+  },
+  {
+    "tenses": [
+      "foundation"
+    ],
+    "sentence": "It was a charitable foundation so they couldn't be involved in politics.",
+    "id": 964
+  },
+  {
+    "tenses": [
+      "fountain"
+    ],
+    "sentence": "We would like to have a fountain whose water could be fed by the pond.",
+    "id": 965
+  },
+  {
+    "tenses": [
+      "fourteen"
+    ],
+    "sentence": "We have ten over here, but if we create four more, we'll have fourteen, and that should be enough.",
+    "id": 966
+  },
+  {
+    "tenses": [
+      "fourth"
+    ],
+    "sentence": "I am the fourth and youngest kid, so I was always considered the baby of the family.",
+    "id": 967
+  },
+  {
+    "tenses": [
+      "freedom"
+    ],
+    "sentence": "I need the freedom to create the art of my heart.",
+    "id": 968
+  },
+  {
+    "tenses": [
+      "freeze",
+      "freezing",
+      "frozen"
+    ],
+    "sentence": "I believe the water won't freeze in that freezer because the temperatures aren't low enough.",
+    "id": 969
+  },
+  {
+    "tenses": [
+      "freight"
+    ],
+    "sentence": "How much freight do you have to carry across state lines?",
+    "id": 970
+  },
+  {
+    "tenses": [
+      "frequent",
+      "frequently",
+      "frequented"
+    ],
+    "sentence": "I receive frequent calls from solicitors so I now have an unlisted phone number.",
+    "id": 971
+  },
+  {
+    "tenses": [
+      "Friday"
+    ],
+    "sentence": "We will be having a fish fry this Friday. Can you come?",
+    "id": 972
+  },
+  {
+    "tenses": [
+      "fried"
+    ],
+    "sentence": "I love fried chicken but I don't know how to cook it.",
+    "id": 973
+  },
+  {
+    "tenses": [
+      "friend"
+    ],
+    "sentence": "My very best friend is visiting the city today.",
+    "id": 974
+  },
+  {
+    "tenses": [
+      "friendly"
+    ],
+    "sentence": "She was very friendly but had a hard time talking with Sarah.",
+    "id": 975
+  },
+  {
+    "tenses": [
+      "frighten",
+      "frightening"
+    ],
+    "sentence": "The monster costume could frighten the younger children. Maybe you shouldn't wear it.",
+    "id": 976
+  },
+  {
+    "tenses": [
+      "frivolous"
+    ],
+    "sentence": "I don't consider my efforts on the computer to be frivolous, but very necessary.",
+    "id": 977
+  },
+  {
+    "tenses": [
+      "front"
+    ],
+    "sentence": "Am I supposed to wear this buckle in the front of my dress or the back?",
+    "id": 978
+  },
+  {
+    "tenses": [
+      "frown"
+    ],
+    "sentence": "When you frown, you frown alone; when you smile, the world smiles with you.",
+    "id": 979
+  },
+  {
+    "tenses": [
+      "frozen",
+      "freeze"
+    ],
+    "sentence": "If the popcycles are frozen we can serve them to the kids.",
+    "id": 980
+  },
+  {
+    "tenses": [
+      "fruit"
+    ],
+    "sentence": "I love fruit, especially bananas, apricots, and pears.",
+    "id": 981
+  },
+  {
+    "tenses": [
+      "fuel"
+    ],
+    "sentence": "How much fuel will this lawn mower take to mow my lawn for one month?",
+    "id": 982
+  },
+  {
+    "tenses": [
+      "fulfill",
+      "fulfills",
+      "fulfilled"
+    ],
+    "sentence": "My family fulfills my life, unlike some of my friends.",
+    "id": 983
+  },
+  {
+    "tenses": [
+      "fully"
+    ],
+    "sentence": "If you have fully understood the directions, then you shouldn't be asking me these questions.",
+    "id": 984
+  },
+  {
+    "tenses": [
+      "funeral"
+    ],
+    "sentence": "We attended the funeral of my husband's grandmother yesterday.",
+    "id": 985
+  },
+  {
+    "tenses": [
+      "funny"
+    ],
+    "sentence": "A funny thing happened on the way to the store; let me tell you about it.",
+    "id": 986
+  },
+  {
+    "tenses": [
+      "furious"
+    ],
+    "sentence": "My mother was furious that I didn't return for four hours.",
+    "id": 987
+  },
+  {
+    "tenses": [
+      "furnace"
+    ],
+    "sentence": "If the furnace had been turned on at 8:00, then it would already be nice and warm in here.",
+    "id": 988
+  },
+  {
+    "tenses": [
+      "furnish"
+    ],
+    "sentence": "I can furnish you with a list of names of the people who attended my high school.",
+    "id": 989
+  },
+  {
+    "tenses": [
+      "furniture"
+    ],
+    "sentence": "We would like to buy brand-new furniture for our den when we can afford it.",
+    "id": 990
+  },
+  {
+    "tenses": [
+      "furrier"
+    ],
+    "sentence": "If your dog is not furrier than mine, why does your house have more dog hair all around?",
+    "id": 991
+  },
+  {
+    "tenses": [
+      "further"
+    ],
+    "sentence": "The further you go down the street, the more blue houses you'll see.",
+    "id": 992
+  },
+  {
+    "tenses": [
+      "furry",
+      "fur"
+    ],
+    "sentence": "I like a long coat that's furry inside.",
+    "id": 993
+  },
+  {
+    "tenses": [
+      "futility"
+    ],
+    "sentence": "The futility of your speaking approach has been clear to all of us for some time.",
+    "id": 994
+  },
+  {
+    "tenses": [
+      "future"
+    ],
+    "sentence": "What do you see as the future of plastics?",
+    "id": 995
   }
 ]

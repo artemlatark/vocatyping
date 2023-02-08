@@ -1,8 +1,9 @@
-import React, {FC} from 'react';
+import React, {FC, memo, useRef} from 'react';
+import classNames from 'classnames';
 import Drawer from '@mui/material/Drawer';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import {FixedSizeList, ListChildComponentProps} from 'react-window';
+import {FixedSizeList as List, ListChildComponentProps, areEqual} from 'react-window';
 import ListItemButton from '@mui/material/ListItemButton';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import {WordState} from '../../models/IWord';
@@ -11,13 +12,20 @@ import {checkTextSlice} from '../../store/reducers/CheckTextSlice';
 import styles from './index.module.css';
 import {useAppDispatch} from '../../hooks/redux';
 
+const itemKey = (index: number, data: any) => data[index].id;
+
 interface WordItemProps {
+  currentWordId: number;
   onOpenSidebar: () => void;
 }
 
-const WordItem = ({onOpenSidebar, data, index, style}: WordItemProps & ListChildComponentProps) => {
+const WordItem = memo(({currentWordId, onOpenSidebar, data, index, style}: WordItemProps & ListChildComponentProps) => {
   const dispatch = useAppDispatch();
   const word = data[index];
+
+  const wordItemClassNames = classNames({
+    [styles.itemCurrent]: index + 1 === currentWordId,
+  });
 
   const onChangeWord = () => {
     onOpenSidebar();
@@ -26,13 +34,16 @@ const WordItem = ({onOpenSidebar, data, index, style}: WordItemProps & ListChild
   return (
     <ListItem style={style} key={word.id} component="div" disablePadding>
       <ListItemButton onClick={() => onChangeWord()}>
-        <ListItemText>{word.tenses.join(', ')}</ListItemText>
+        <ListItemText>
+          <span className={wordItemClassNames}>{word.tenses.join(', ')}</span>
+        </ListItemText>
       </ListItemButton>
     </ListItem>
   );
-};
+}, areEqual);
 
 interface SidebarProps {
+  currentWordId: number;
   onOpenSidebar: () => void;
   sidebarWidth: number;
   sidebarOpen: boolean;
@@ -40,12 +51,21 @@ interface SidebarProps {
 
 type WordStatePick = Pick<WordState, 'words'>;
 
-const Sidebar: FC<SidebarProps & WordStatePick> = ({onOpenSidebar, sidebarWidth, sidebarOpen, words}) => {
+const Sidebar: FC<SidebarProps & WordStatePick> = ({
+  currentWordId,
+  onOpenSidebar,
+  sidebarOpen,
+  sidebarWidth,
+  words,
+}) => {
+  const listRef = useRef(null);
   // const wordsByLetter = useMemo(() => {
   //   const letters = englishAlphabet;
   //
   //   return words;
   // }, [words]);
+
+  console.log(1);
 
   return (
     <AutoSizer className={styles.sidebar}>
@@ -55,20 +75,28 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({onOpenSidebar, sidebarWidth,
           variant="temporary"
           anchor="left"
           open={sidebarOpen}
-          ModalProps={{
-            onClose: () => onOpenSidebar(),
+          onClose={onOpenSidebar}
+          SlideProps={{
+            addEndListener: () => {
+              if (listRef.current) {
+                // @ts-ignore
+                listRef.current.scrollToItem(currentWordId - 1, 'center');
+              }
+            },
           }}
         >
-          <FixedSizeList
+          <List
+            ref={listRef}
             height={height}
             width={sidebarWidth}
             itemSize={48}
             itemData={words}
+            itemKey={itemKey}
             itemCount={words.length}
             overscanCount={5}
           >
-            {(props) => <WordItem onOpenSidebar={onOpenSidebar} {...props} />}
-          </FixedSizeList>
+            {(props) => <WordItem currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} {...props} />}
+          </List>
         </Drawer>
       )}
       {/*<List subheader={<li />}>*/}
@@ -82,4 +110,4 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({onOpenSidebar, sidebarWidth,
   );
 };
 
-export default Sidebar;
+export default memo(Sidebar);
