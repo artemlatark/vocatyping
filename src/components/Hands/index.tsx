@@ -12,7 +12,7 @@ interface HandsProps {
 const Hands: FC<HandsProps> = memo(({nextTypeKey}) => {
   const [translateCoords, setTranslateCoords] = useState<number[]>([0, 0]);
   const translateOffset = {
-    left: /[1-4]/.test(nextTypeKey.finger.toString()) ? 46 : 60,
+    left: nextTypeKey.finger ? (/[1-4]/.test(nextTypeKey.finger.toString()) ? 46 : 60) : 0,
     top: 42,
   };
 

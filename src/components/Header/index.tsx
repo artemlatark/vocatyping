@@ -8,15 +8,15 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 
 import {useAppDispatch} from '../../hooks/redux';
+import {useKeyPress} from '../../hooks/useKeyPress';
 import {checkTextSlice} from '../../store/reducers/CheckTextSlice';
 import {CheckText} from '../../models/CheckText';
 
 import styles from './index.module.css';
 import {AppBarCustom} from './styles';
-import {useKeyPress} from '../../hooks/useKeyPress';
 
 interface HeaderProps {
-  onOpenSidebar: () => void;
+  onOpenSidebar: (value?: boolean) => void;
   wordNumbers: number;
 }
 type CheckTextPick = Pick<CheckText, 'currentWordId'>;
@@ -34,9 +34,11 @@ const Header: FC<HeaderProps & CheckTextPick> = memo(({onOpenSidebar, wordNumber
   useEffect(() => {
     if (pressedAlt && pressedArrowLeft) {
       dispatch(checkTextSlice.actions.onChangeWord({handlerType: 'prev', wordNumbers}));
+      onOpenSidebar(false);
     }
     if (pressedAlt && pressedArrowRight) {
       dispatch(checkTextSlice.actions.onChangeWord({handlerType: 'next', wordNumbers}));
+      onOpenSidebar(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);

@@ -8,6 +8,15 @@ export enum keyboardLayout {
   QWERTY = 'qwerty',
 }
 
+export type IKey = {
+  key?: string;
+  supKey?: string;
+  finger?: number;
+  code?: string;
+  isSystemKey?: boolean;
+  isSpace?: boolean;
+};
+
 interface NextTypeKeyCoords {
   left: number;
   top: number;
@@ -15,6 +24,6 @@ interface NextTypeKeyCoords {
 }
 
 export interface NextTypeKey {
-  finger: number;
+  finger?: number;
   coords: NextTypeKeyCoords;
 }
