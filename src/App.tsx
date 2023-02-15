@@ -43,7 +43,13 @@ function App() {
         />
       }
     >
-      <Header onOpenSidebar={onOpenSidebar} wordNumbers={wordNumbers} currentWordId={currentWordId} />
+      <Header
+        onOpenSidebar={onOpenSidebar}
+        wordNumbers={wordNumbers}
+        currentWordId={currentWordId}
+        currentWord={currentWord}
+        currentWordTense={currentWordTense}
+      />
       <WordAndSentence
         currentWordTense={currentWordTense}
         wordVariants={wordVariants}
