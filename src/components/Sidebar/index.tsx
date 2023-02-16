@@ -8,9 +8,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import {WordState} from '../../models/IWord';
 import {checkTextSlice} from '../../store/reducers/CheckTextSlice';
+import {useAppDispatch} from '../../hooks/redux';
 
 import styles from './index.module.css';
-import {useAppDispatch} from '../../hooks/redux';
 
 const itemKey = (index: number, data: any) => data[index].id;
 
@@ -58,12 +58,13 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({
   sidebarWidth,
   words,
 }) => {
-  const listRef = useRef(null);
-  // const wordsByLetter = useMemo(() => {
-  //   const letters = englishAlphabet;
-  //
-  //   return words;
-  // }, [words]);
+  const listRef = useRef<any>(null);
+
+  const scrollToItem = () => {
+    if (listRef.current && sidebarOpen) {
+      listRef.current.scrollToItem(currentWordId - 1, 'smart');
+    }
+  };
 
   return (
     <AutoSizer className={styles.sidebar}>
@@ -75,12 +76,7 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({
           open={sidebarOpen}
           onClose={() => onOpenSidebar()}
           SlideProps={{
-            addEndListener: () => {
-              if (listRef.current && sidebarOpen) {
-                // @ts-ignore
-                listRef.current.scrollToItem(currentWordId - 1, 'smart');
-              }
-            },
+            addEndListener: scrollToItem,
           }}
         >
           <List
@@ -97,13 +93,6 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({
           </List>
         </Drawer>
       )}
-      {/*<List subheader={<li />}>*/}
-      {/*  {words.map((item) => (*/}
-      {/*    <ListItem key={`item-${item.letter}-${item.tenses.join(', ')}`}>*/}
-      {/*      <ListItemText primary={`${item.tenses.join(', ')}`} />*/}
-      {/*    </ListItem>*/}
-      {/*  ))}*/}
-      {/*</List>*/}
     </AutoSizer>
   );
 };
