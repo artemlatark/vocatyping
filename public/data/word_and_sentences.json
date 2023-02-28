@@ -451,7 +451,7 @@
     "tenses": [
       "afterward"
     ],
-    "sentence": "He told me, afterward, that he didn’t like my proposal in the first place."
+    "sentence": "He told me, afterward, that he didn't like my proposal in the first place."
   },
   {
     "id": 63,
@@ -465,7 +465,7 @@
     "tenses": [
       "again"
     ],
-    "sentence": "I keep seeing him again and again. Didn’t I tell him, “Come again, please?”"
+    "sentence": "I keep seeing him again and again. Didn't I tell him, “Come again, please?”"
   },
   {
     "id": 65,
@@ -566,7 +566,7 @@
     "tenses": [
       "alien"
     ],
-    "sentence": "INS doesn’t like aliens and nobody knows why. When the unidentified flying object (UFO) landed, two hundred aliens stepped out."
+    "sentence": "INS doesn't like aliens and nobody knows why. When the unidentified flying object (UFO) landed, two hundred aliens stepped out."
   },
   {
     "id": 79,
@@ -802,7 +802,7 @@
     "tenses": [
       "answer"
     ],
-    "sentence": "What will the answer be? Hey, you didn’t answer my question."
+    "sentence": "What will the answer be? Hey, you didn't answer my question."
   },
   {
     "id": 112,
@@ -915,7 +915,7 @@
     "tenses": [
       "applicant"
     ],
-    "sentence": "I don’t like that applicant; he is very irritating. If they weren’t present tonight, I wouldn’t be able to submit my application on time."
+    "sentence": "I don’t like that applicant; he is very irritating. If they weren't present tonight, I wouldn't be able to submit my application on time."
   },
   {
     "id": 128,
@@ -1068,7 +1068,7 @@
     "tenses": [
       "arrangement"
     ],
-    "sentence": "I made all the necessary arrangements. Everybody will die unnecessarily. It doesn’t necessarily mean that I cannot come tonight."
+    "sentence": "I made all the necessary arrangements. Everybody will die unnecessarily. It doesn't necessarily mean that I cannot come tonight."
   },
   {
     "id": 149,
@@ -1152,7 +1152,7 @@
     "tenses": [
       "assist"
     ],
-    "sentence": "If I asist you in doing the dishes, will you then take a nap?"
+    "sentence": "If I assist you in doing the dishes, will you then take a nap?"
   },
   {
     "id": 160,
@@ -8648,5 +8648,2463 @@
     ],
     "sentense": "This is the industrial part of town; next we'll visit the residential part.",
     "id": 1196
+  },
+  {
+    "tenses": [
+      "industrious"
+    ],
+    "sentence": "Mary is very industrious when on the job but lethargic at home.",
+    "id": 1197
+  },
+  {
+    "tenses": [
+      "industry"
+    ],
+    "sentence": "Today, class, we are going to study the coal industry and all its transformations.",
+    "id": 1198
+  },
+  {
+    "tenses": [
+      "inferior"
+    ],
+    "sentence": "I feel inferior when I'm around him even though I know he's not always right.",
+    "id": 1199
+  },
+  {
+    "tenses": [
+      "infinite"
+    ],
+    "sentence": "The universe is seemingly infinite but what if we found out it were actually finite?",
+    "id": 1200
+  },
+  {
+    "tenses": [
+      "influence"
+    ],
+    "sentence": "Do you have any influence over Professor Jones? We would like him to participate in this project.",
+    "id": 1201
+  },
+  {
+    "tenses": [
+      "information"
+    ],
+    "sentence": "Are you sure your information is correct or do you need to double-check it?",
+    "id": 1202
+  },
+  {
+    "tenses": [
+      "inhabitant"
+    ],
+    "sentence": "If the inhabitants of that small country are happy, why mess around with their cultural traditions?",
+    "id": 1203
+  },
+  {
+    "tenses": [
+      "inherit"
+    ],
+    "sentence": "She stands to inherit a lot of money from her grandfather.",
+    "id": 1204
+  },
+  {
+    "tenses": [
+      "initial",
+      " initially"
+    ],
+    "sentence": "What was the initial value of that variable? Let's compare it to the value in the new formula.",
+    "id": 1205
+  },
+  {
+    "tenses": [
+      "injure"
+    ],
+    "sentence": "Don't play with that machine as it could injure you.",
+    "id": 1206
+  },
+  {
+    "tenses": [
+      "injury",
+      " injuries",
+      " injured"
+    ],
+    "sentence": "I got a serious injury in the war so couldn't continue my military service.",
+    "id": 1207
+  },
+  {
+    "tenses": [
+      "innocence",
+      " innocent"
+    ],
+    "sentence": "He looks like he has so much innocence but in reality he's very sly.",
+    "id": 1208
+  },
+  {
+    "tenses": [
+      "innuendo"
+    ],
+    "sentence": "His words sounded pleasant but underneath them there was some kind of innuendo about Paul.",
+    "id": 1209
+  },
+  {
+    "tenses": [
+      "inquire"
+    ],
+    "sentence": "I would like to inquire whether you repair printers or not?",
+    "id": 1210
+  },
+  {
+    "tenses": [
+      "inquiry"
+    ],
+    "sentence": "You can perform an inquiry using that database to find out if the book is available at the library or not.",
+    "id": 1211
+  },
+  {
+    "tenses": [
+      "insane"
+    ],
+    "sentence": "Working with uninterested people makes me insane.",
+    "id": 1212
+  },
+  {
+    "tenses": [
+      "insect"
+    ],
+    "sentence": "All insects have three parts: head, thorax, and abdomen.",
+    "id": 1213
+  },
+  {
+    "tenses": [
+      "inspector"
+    ],
+    "sentence": "When is the inspector due to arrive to verify that you've met all city requirements?",
+    "id": 1214
+  },
+  {
+    "tenses": [
+      "inspire",
+      " inspired",
+      " inspires"
+    ],
+    "sentence": "Listening to poetry inspires me to write my own poetry.",
+    "id": 1215
+  },
+  {
+    "tenses": [
+      "installment"
+    ],
+    "sentence": "I would like to pay one installment and then spread the rest of the cost over one year.",
+    "id": 1216
+  },
+  {
+    "tenses": [
+      "instance"
+    ],
+    "sentence": "In this instance, there is no response necessary, but usually people do respond.",
+    "id": 1217
+  },
+  {
+    "tenses": [
+      "instant"
+    ],
+    "sentence": "Let me know the instant she arrives because I need to talk to her.",
+    "id": 1218
+  },
+  {
+    "tenses": [
+      "instead"
+    ],
+    "sentence": "Instead of constantly complaining, why don't you go out and do something yourself?",
+    "id": 1219
+  },
+  {
+    "tenses": [
+      "institution"
+    ],
+    "sentence": "My mother is unfortunately in a mental institution but she seems to like living there.",
+    "id": 1220
+  },
+  {
+    "tenses": [
+      "instruction",
+      " instructions"
+    ],
+    "sentence": "Please give me instructions on how to put this toy together.",
+    "id": 1221
+  },
+  {
+    "tenses": [
+      "instrument"
+    ],
+    "sentence": "Do you play a musical instrument?",
+    "id": 1222
+  },
+  {
+    "tenses": [
+      "insurance"
+    ],
+    "sentence": "I have life insurance in case I pass away before my spouse.",
+    "id": 1223
+  },
+  {
+    "tenses": [
+      "intelligence"
+    ],
+    "sentence": "I'm sorry but your son shows little intelligence when it comes to mathematics.",
+    "id": 1224
+  },
+  {
+    "tenses": [
+      "intention"
+    ],
+    "sentence": "What is your intention surrounding the campaign?",
+    "id": 1225
+  },
+  {
+    "tenses": [
+      "intercede"
+    ],
+    "sentence": "If the whale engineer doesn't determine the calf's problem soon, I may need to intercede.",
+    "id": 1226
+  },
+  {
+    "tenses": [
+      "interest",
+      " interested",
+      " interesting"
+    ],
+    "sentence": "Do you have any interest in joining our group?",
+    "id": 1227
+  },
+  {
+    "tenses": [
+      "interior"
+    ],
+    "sentence": "She wants to re-decorate the entire interior of her home but the cost will be astronomical.",
+    "id": 1228
+  },
+  {
+    "tenses": [
+      "internal",
+      " internally"
+    ],
+    "sentence": "The internal problems of the group keep them from making any headway in problems external to it.",
+    "id": 1229
+  },
+  {
+    "tenses": [
+      "interpret",
+      " interpreted"
+    ],
+    "sentence": "If you could interpret her words for me I would be most obliged.",
+    "id": 1230
+  },
+  {
+    "tenses": [
+      "interrupt",
+      " interruption"
+    ],
+    "sentence": "I hate to interrupt you but when will you be finished?",
+    "id": 1231
+  },
+  {
+    "tenses": [
+      "interview"
+    ],
+    "sentence": "I'd like to interview you for my newspaper if you would be willing.",
+    "id": 1232
+  },
+  {
+    "tenses": [
+      "intimate"
+    ],
+    "sentence": "Are they intimate friends or just acquaintances?",
+    "id": 1233
+  },
+  {
+    "tenses": [
+      "introduce"
+    ],
+    "sentence": "Please let me introduce my sister, Polly, to you.",
+    "id": 1234
+  },
+  {
+    "tenses": [
+      "invention"
+    ],
+    "sentence": "I have a great idea for an invention but I don't know how to get it patented.",
+    "id": 1235
+  },
+  {
+    "tenses": [
+      "investigate"
+    ],
+    "sentence": "I think if we investigate further, we will find that no one has owned that house for decades.",
+    "id": 1236
+  },
+  {
+    "tenses": [
+      "invisible"
+    ],
+    "sentence": "Sometimes I feel like I'm invisible to you. Do you even know what I think about this place?",
+    "id": 1237
+  },
+  {
+    "tenses": [
+      "invitation"
+    ],
+    "sentence": "At my invitation, a vice president of the corporation will be our speaker.",
+    "id": 1238
+  },
+  {
+    "tenses": [
+      "invoice"
+    ],
+    "sentence": "Print me an invoice and I'll pay whatever I owe.",
+    "id": 1239
+  },
+  {
+    "tenses": [
+      "iodine"
+    ],
+    "sentence": "You should put iodine on the cut if you want it to heal.",
+    "id": 1240
+  },
+  {
+    "tenses": [
+      "iron"
+    ],
+    "sentence": "Is it made of iron or some other kind of metal?",
+    "id": 1241
+  },
+  {
+    "tenses": [
+      "irregular"
+    ],
+    "sentence": "There is something irregular about your outfit but I can't put my finger on what it is.",
+    "id": 1242
+  },
+  {
+    "tenses": [
+      "irrelevant"
+    ],
+    "sentence": "Your questions are irrelevant. Let's get serious about the subject at hand.",
+    "id": 1243
+  },
+  {
+    "tenses": [
+      "irresistible"
+    ],
+    "sentence": "I have an irresistible urge to play a joke on him but maybe he won't be able to take it.",
+    "id": 1244
+  },
+  {
+    "tenses": [
+      "is",
+      " are"
+    ],
+    "sentence": "What is 45 times 87?",
+    "id": 1245
+  },
+  {
+    "tenses": [
+      "island"
+    ],
+    "sentence": "I think I could be very happy living on a deserted island.",
+    "id": 1246
+  },
+  {
+    "tenses": [
+      "issue",
+      " issues"
+    ],
+    "sentence": "We have a number of issues that need to be dealt with before we can take a coffee break.",
+    "id": 1247
+  },
+  {
+    "tenses": [
+      "isthmus"
+    ],
+    "sentence": "Manhattan would be an isthmus if the southern part were connected with a bigger body of land.",
+    "id": 1248
+  },
+  {
+    "tenses": [
+      "ivory"
+    ],
+    "sentence": "Ivory comes from elephant tusks and is a great medium for jewelry.",
+    "id": 1249
+  },
+  {
+    "tenses": [
+      "janitor"
+    ],
+    "sentence": "We should hire a full-time janitor so our building can always be kept clean.",
+    "id": 1250
+  },
+  {
+    "tenses": [
+      "January"
+    ],
+    "sentence": "January is the first month of the year but it's not the most important.",
+    "id": 1251
+  },
+  {
+    "tenses": [
+      "jealousy",
+      " jealous"
+    ],
+    "sentence": "Jealousy is a bad characteristic because it harms the person who feels it.",
+    "id": 1252
+  },
+  {
+    "tenses": [
+      "jewel"
+    ],
+    "sentence": "What kind of jewel is that in her ring? It looks expensive.",
+    "id": 1253
+  },
+  {
+    "tenses": [
+      "jeweler"
+    ],
+    "sentence": "Take your watch to a jeweler to see if it is repairable.",
+    "id": 1254
+  },
+  {
+    "tenses": [
+      "jewelry"
+    ],
+    "sentence": "I don't often wear jewelry but when I do I get compliments.",
+    "id": 1255
+  },
+  {
+    "tenses": [
+      "job"
+    ],
+    "sentence": "If you do a good job on this, I'll hire you for future projects.",
+    "id": 1256
+  },
+  {
+    "tenses": [
+      "jockey"
+    ],
+    "sentence": "Are you a horse racing jockey or a music playing disk jockey?",
+    "id": 1257
+  },
+  {
+    "tenses": [
+      "journey"
+    ],
+    "sentence": "Their journey would have been even more tedious had they not sat in first class.",
+    "id": 1258
+  },
+  {
+    "tenses": [
+      "judge"
+    ],
+    "sentence": "Do you judge my actions? Why don't you pay attention to your own!",
+    "id": 1259
+  },
+  {
+    "tenses": [
+      "judgment"
+    ],
+    "sentence": "In my judgment, you are not skillful enough to take on that job.",
+    "id": 1260
+  },
+  {
+    "tenses": [
+      "judicial"
+    ],
+    "sentence": "The judicial branch must be balanced with the powers of the executive and legislative branches of government.",
+    "id": 1261
+  },
+  {
+    "tenses": [
+      "juice"
+    ],
+    "sentence": "Would you like some fresh squeezed orange juice?",
+    "id": 1262
+  },
+  {
+    "tenses": [
+      "July"
+    ],
+    "sentence": "July is certainly a hot month so people go to the beach more often.",
+    "id": 1263
+  },
+  {
+    "tenses": [
+      "June"
+    ],
+    "sentence": "June seems to be the month when more people get married.",
+    "id": 1264
+  },
+  {
+    "tenses": [
+      "jurisdiction"
+    ],
+    "sentence": "Does your police outfit have jurisdiction over this area?",
+    "id": 1265
+  },
+  {
+    "tenses": [
+      "just"
+    ],
+    "sentence": "Just in case you were wondering, I'm not the owner of this place.",
+    "id": 1266
+  },
+  {
+    "tenses": [
+      "justice"
+    ],
+    "sentence": "We show justice with suspected criminals because it could turn out that they are innocent.",
+    "id": 1267
+  },
+  {
+    "tenses": [
+      "justify"
+    ],
+    "sentence": "How do you justify your actions?",
+    "id": 1268
+  },
+  {
+    "tenses": [
+      "keep"
+    ],
+    "sentence": "Keep in touch after you move to California.",
+    "id": 1269
+  },
+  {
+    "tenses": [
+      "kept",
+      " keep"
+    ],
+    "sentence": "I have kept a diary since I was a little girl, so you could say I've documented history.",
+    "id": 1270
+  },
+  {
+    "tenses": [
+      "kerosene"
+    ],
+    "sentence": "This lantern uses kerosene as fuel so we better buy some before going camping.",
+    "id": 1271
+  },
+  {
+    "tenses": [
+      "kettle"
+    ],
+    "sentence": "Don't put the kettle on for tea yet. I first need to bake some cookies.",
+    "id": 1272
+  },
+  {
+    "tenses": [
+      "key"
+    ],
+    "sentence": "Is this the key to your house or Denise's house?",
+    "id": 1273
+  },
+  {
+    "tenses": [
+      "kindergarten"
+    ],
+    "sentence": "Do you all go to kindergarten or straight to first grade?",
+    "id": 1274
+  },
+  {
+    "tenses": [
+      "kindle"
+    ],
+    "sentence": "This stack of newspapers and little twigs are called kindle and are used to start a fire.",
+    "id": 1275
+  },
+  {
+    "tenses": [
+      "kingdom"
+    ],
+    "sentence": "His kingdom was vast and included thousands of people.",
+    "id": 1276
+  },
+  {
+    "tenses": [
+      "kitchen"
+    ],
+    "sentence": "I hate others to be in the kitchen when I'm cooking.",
+    "id": 1277
+  },
+  {
+    "tenses": [
+      "kite",
+      " kites"
+    ],
+    "sentence": "The boys want to go fly their kites because the wind is perfect.",
+    "id": 1278
+  },
+  {
+    "tenses": [
+      "kitten",
+      " kittens"
+    ],
+    "sentence": "But one day, kittens grow into cats, of course.",
+    "id": 1279
+  },
+  {
+    "tenses": [
+      "knew",
+      " know"
+    ],
+    "sentence": "I once knew a barber I could trust with my hair but not any more.",
+    "id": 1280
+  },
+  {
+    "tenses": [
+      "knife",
+      " knives"
+    ],
+    "sentence": "This knife needs to be sharpened before I can cut the turkey.",
+    "id": 1281
+  },
+  {
+    "tenses": [
+      "knight",
+      " knights"
+    ],
+    "sentence": "Back in the days of knights and fair maidens, people didn't bathe much.",
+    "id": 1282
+  },
+  {
+    "tenses": [
+      "knit"
+    ],
+    "sentence": "My grandmother could knit you some baby shoes for little Megan.",
+    "id": 1283
+  },
+  {
+    "tenses": [
+      "knob"
+    ],
+    "sentence": "This door knob gets stuck and won't turn sometimes.",
+    "id": 1284
+  },
+  {
+    "tenses": [
+      "knock"
+    ],
+    "sentence": "Just knock on the door to see if they're home.",
+    "id": 1285
+  },
+  {
+    "tenses": [
+      "knot",
+      " knots"
+    ],
+    "sentence": "In scouts we learned how to tie all kinds of knots in ropes.",
+    "id": 1286
+  },
+  {
+    "tenses": [
+      "know",
+      " knew",
+      " knowing"
+    ],
+    "sentence": "If you know the answer to the question, go ahead and tell me.",
+    "id": 1287
+  },
+  {
+    "tenses": [
+      "knowledge"
+    ],
+    "sentence": "I have little knowledge in the area of cybernetics but maybe you could teach me.",
+    "id": 1288
+  },
+  {
+    "tenses": [
+      "known",
+      " know"
+    ],
+    "sentence": "We have known each other for twenty years but only became friends this past year.",
+    "id": 1289
+  },
+  {
+    "tenses": [
+      "knuckle"
+    ],
+    "sentence": "My knuckle is so big that I can't get the ring on my finger.",
+    "id": 1290
+  },
+  {
+    "tenses": [
+      "label"
+    ],
+    "sentence": "I liked your last version of a label with our company’s logo on it.",
+    "id": 1291
+  },
+  {
+    "tenses": [
+      "labeled"
+    ],
+    "sentence": "I want it labeled with my name everywhere.",
+    "id": 1292
+  },
+  {
+    "tenses": [
+      "labor"
+    ],
+    "sentence": "It’s pretty hard to understand the relationship between capital and labor.",
+    "id": 1293
+  },
+  {
+    "tenses": [
+      "laboratory"
+    ],
+    "sentence": "I met him at the laboratory mixing up some chemicals or something.",
+    "id": 1294
+  },
+  {
+    "tenses": [
+      "laid",
+      " lay"
+    ],
+    "sentence": "That goose finally laid a couple of eggs.",
+    "id": 1295
+  },
+  {
+    "tenses": [
+      "lake"
+    ],
+    "sentence": "Do you have any lakes near your country house?",
+    "id": 1296
+  },
+  {
+    "tenses": [
+      "land"
+    ],
+    "sentence": "Land should belong to all people not just a few.",
+    "id": 1297
+  },
+  {
+    "tenses": [
+      "language"
+    ],
+    "sentence": "How many languages have you mastered?",
+    "id": 1298
+  },
+  {
+    "tenses": [
+      "lantern"
+    ],
+    "sentence": "I’ve never learnt how to repair lanterns.",
+    "id": 1299
+  },
+  {
+    "tenses": [
+      "late"
+    ],
+    "sentence": "How late may I stay out tonight?",
+    "id": 1300
+  },
+  {
+    "tenses": [
+      "lately"
+    ],
+    "sentence": "Have you seen her lately?",
+    "id": 1301
+  },
+  {
+    "tenses": [
+      "later"
+    ],
+    "sentence": "See you later, alligator! In a while, crocodile!",
+    "id": 1302
+  },
+  {
+    "tenses": [
+      "laugh",
+      " laughing",
+      " laughter"
+    ],
+    "sentence": "One of his statements has generated a couple of laughs. Would you please quit that laughing?",
+    "id": 1303
+  },
+  {
+    "tenses": [
+      "laughter"
+    ],
+    "sentence": "I heard laughter coming from the other side of the room.",
+    "id": 1304
+  },
+  {
+    "tenses": [
+      "laundress"
+    ],
+    "sentence": "I haven’t seen a full-time laundress working lately. What a pity!",
+    "id": 1305
+  },
+  {
+    "tenses": [
+      "laundry"
+    ],
+    "sentence": "I need to do my laundry before I run out of socks.",
+    "id": 1306
+  },
+  {
+    "tenses": [
+      "law",
+      " laws"
+    ],
+    "sentence": "I’m trying to abide by all the laws.",
+    "id": 1307
+  },
+  {
+    "tenses": [
+      "lawn"
+    ],
+    "sentence": "I want my lawn trimmed with your lawnmower.",
+    "id": 1308
+  },
+  {
+    "tenses": [
+      "leader",
+      " lead"
+    ],
+    "sentence": "That guy met a bunch of world leaders.",
+    "id": 1309
+  },
+  {
+    "tenses": [
+      "league"
+    ],
+    "sentence": "Is he a member of the National Basketball League?",
+    "id": 1310
+  },
+  {
+    "tenses": [
+      "learn",
+      " learning"
+    ],
+    "sentence": "Do you like my learning materials?",
+    "id": 1311
+  },
+  {
+    "tenses": [
+      "learnt",
+      " learn"
+    ],
+    "sentence": "I’ve never learnt English.",
+    "id": 1312
+  },
+  {
+    "tenses": [
+      "lease",
+      " leasing"
+    ],
+    "sentence": "Are you leasing your car or does it belong to you?",
+    "id": 1313
+  },
+  {
+    "tenses": [
+      "leather"
+    ],
+    "sentence": "Do you have any genuine leather jackets?",
+    "id": 1314
+  },
+  {
+    "tenses": [
+      "leave"
+    ],
+    "sentence": "When are you going to leave? Our troops were pressed to leave the city.",
+    "id": 1315
+  },
+  {
+    "tenses": [
+      "lecture",
+      " lecturer",
+      " lecturing"
+    ],
+    "sentence": "Quit lecturing me on each and every occasion!",
+    "id": 1316
+  },
+  {
+    "tenses": [
+      "left"
+    ],
+    "sentence": "She left him for another man.",
+    "id": 1317
+  },
+  {
+    "tenses": [
+      "leg"
+    ],
+    "sentence": "Quite recently I met an invalid person, who had two wooden legs.",
+    "id": 1318
+  },
+  {
+    "tenses": [
+      "legion"
+    ],
+    "sentence": "I’m not a member of the American Legion organization.",
+    "id": 1319
+  },
+  {
+    "tenses": [
+      "legislation",
+      " legislator"
+    ],
+    "sentence": "Did you like the last bill passed by our legislators?",
+    "id": 1320
+  },
+  {
+    "tenses": [
+      "legislature"
+    ],
+    "sentence": "When will the next in turn legislature meeting take place?",
+    "id": 1321
+  },
+  {
+    "tenses": [
+      "leisure"
+    ],
+    "sentence": "What are you used to doing during your leisure time?",
+    "id": 1322
+  },
+  {
+    "tenses": [
+      "lingerie"
+    ],
+    "sentence": "Do you like my new lingerie? Certainly, ma’am.",
+    "id": 1323
+  },
+  {
+    "tenses": [
+      "lemonade"
+    ],
+    "sentence": "I don’t recall drinking any lemonade lately.",
+    "id": 1324
+  },
+  {
+    "tenses": [
+      "length",
+      " lengthen"
+    ],
+    "sentence": "Could you please measure the length of that tablecloth?",
+    "id": 1325
+  },
+  {
+    "tenses": [
+      "lesson"
+    ],
+    "sentence": "The mother gave her son guitar lessons.",
+    "id": 1326
+  },
+  {
+    "tenses": [
+      "let"
+    ],
+    "sentence": "Let it be! Let’s go home! Let’s do it! Let it go!",
+    "id": 1327
+  },
+  {
+    "tenses": [
+      "letter"
+    ],
+    "sentence": "Is that letter in one of the following languages: Greek, Chinese, Russian, Mongolian, Italian?",
+    "id": 1328
+  },
+  {
+    "tenses": [
+      "lettuce"
+    ],
+    "sentence": "Would you go to the grocery store and get us some lettuce and tomatoes?",
+    "id": 1329
+  },
+  {
+    "tenses": [
+      "liable",
+      " liability"
+    ],
+    "sentence": "Who is liable to replace that bad cheese?",
+    "id": 1330
+  },
+  {
+    "tenses": [
+      "liar",
+      " lie"
+    ],
+    "sentence": "It is not a lie! Don’t tell me your lies. They’re liars.",
+    "id": 1331
+  },
+  {
+    "tenses": [
+      "liberty"
+    ],
+    "sentence": "Have you ever been to Liberty Island?",
+    "id": 1332
+  },
+  {
+    "tenses": [
+      "librarian"
+    ],
+    "sentence": "Do you know the librarian’s name? No, not really.",
+    "id": 1333
+  },
+  {
+    "tenses": [
+      "library"
+    ],
+    "sentence": "Can you get permission to browse the Internet in the Mid-Manhattan Public Library?",
+    "id": 1334
+  },
+  {
+    "tenses": [
+      "license"
+    ],
+    "sentence": "Do you have a license to be doing that, sir?",
+    "id": 1335
+  },
+  {
+    "tenses": [
+      "lieutenant"
+    ],
+    "sentence": "I started to hate our lieutenant at first sight.",
+    "id": 1336
+  },
+  {
+    "tenses": [
+      "life"
+    ],
+    "sentence": "Get a life! Go out and have some fun for a change.",
+    "id": 1337
+  },
+  {
+    "tenses": [
+      "light"
+    ],
+    "sentence": "I wish you would shed some light on the subject for me. I want to light a cigarette.",
+    "id": 1338
+  },
+  {
+    "tenses": [
+      "lighten"
+    ],
+    "sentence": "Let's lighten up this room by painting the walls a bright yellow.",
+    "id": 1339
+  },
+  {
+    "tenses": [
+      "lightning"
+    ],
+    "sentence": "How many times have you seen lightning?",
+    "id": 1340
+  },
+  {
+    "tenses": [
+      "like"
+    ],
+    "sentence": "How is the food? I like it a lot. It seemed like a good car to me.",
+    "id": 1341
+  },
+  {
+    "tenses": [
+      "likewise"
+    ],
+    "sentence": "I liked dealing with you. Likewise, I'm sure.",
+    "id": 1342
+  },
+  {
+    "tenses": [
+      "line",
+      " lines"
+    ],
+    "sentence": "I adore drawing straight lines.",
+    "id": 1343
+  },
+  {
+    "tenses": [
+      "liquid"
+    ],
+    "sentence": "At what temperature does that liquid freeze?",
+    "id": 1344
+  },
+  {
+    "tenses": [
+      "liter"
+    ],
+    "sentence": "Buy 3 liters of cola, please.",
+    "id": 1345
+  },
+  {
+    "tenses": [
+      "liquor"
+    ],
+    "sentence": "There’s a huge liquor store nearby.",
+    "id": 1346
+  },
+  {
+    "tenses": [
+      "list"
+    ],
+    "sentence": "Don’t forget to put it on the list! Would you please list for me all your immediate needs?",
+    "id": 1347
+  },
+  {
+    "tenses": [
+      "listen"
+    ],
+    "sentence": "Listen more attentively! Stand at attention!",
+    "id": 1348
+  },
+  {
+    "tenses": [
+      "literacy",
+      " illiteracy"
+    ],
+    "sentence": "Illiteracy is certainly a big problem in that country.",
+    "id": 1349
+  },
+  {
+    "tenses": [
+      "literate",
+      " illiterate"
+    ],
+    "sentence": "Was she literate or could she not read?",
+    "id": 1350
+  },
+  {
+    "tenses": [
+      "literature"
+    ],
+    "sentence": "They are obsessed with reading science-fiction literature.",
+    "id": 1351
+  },
+  {
+    "tenses": [
+      "little"
+    ],
+    "sentence": "What word in Russian means “little boy.”",
+    "id": 1352
+  },
+  {
+    "tenses": [
+      "live"
+    ],
+    "sentence": "I live in the southern part of the city.",
+    "id": 1353
+  },
+  {
+    "tenses": [
+      "lively"
+    ],
+    "sentence": "Look lively! Quit slumping and frowning.",
+    "id": 1354
+  },
+  {
+    "tenses": [
+      "loaf",
+      " loaves"
+    ],
+    "sentence": "How many loaves of bread do they eat daily?",
+    "id": 1355
+  },
+  {
+    "tenses": [
+      "location",
+      " locate",
+      " located"
+    ],
+    "sentence": "Where is that firm located?",
+    "id": 1356
+  },
+  {
+    "tenses": [
+      "locomotive"
+    ],
+    "sentence": "I like watching locomotives in motion.",
+    "id": 1357
+  },
+  {
+    "tenses": [
+      "lodge"
+    ],
+    "sentence": "There is a very nice lodge we can stay in up in the mountains.",
+    "id": 1358
+  },
+  {
+    "tenses": [
+      "loiter"
+    ],
+    "sentence": "No loitering is allowed. You are not allowed to eat in the classroom.",
+    "id": 1359
+  },
+  {
+    "tenses": [
+      "lonely"
+    ],
+    "sentence": "That man is so lonely! He needs a friend or maybe a pet.",
+    "id": 1360
+  },
+  {
+    "tenses": [
+      "lonesome"
+    ],
+    "sentence": "I feel lonesome today but the feeling will go away.",
+    "id": 1361
+  },
+  {
+    "tenses": [
+      "longshoreman"
+    ],
+    "sentence": "The longshoreman knew he had a long day ahead of him.",
+    "id": 1362
+  },
+  {
+    "tenses": [
+      "look",
+      " looking"
+    ],
+    "sentence": "I like looking at her. She is so cute.",
+    "id": 1363
+  },
+  {
+    "tenses": [
+      "loose"
+    ],
+    "sentence": "Yesterday I saw a loose dog running around the neighborhood. My shoes are getting loose. Could you tie the laces for me?",
+    "id": 1364
+  },
+  {
+    "tenses": [
+      "lose",
+      " lost"
+    ],
+    "sentence": "I’ve lost my way. I have lost my wallet a couple of times already.",
+    "id": 1365
+  },
+  {
+    "tenses": [
+      "love",
+      " loving"
+    ],
+    "sentence": "You are so loving and caring! I’m finally telling you to your face: I don’t love you any more.",
+    "id": 1366
+  },
+  {
+    "tenses": [
+      "lovely"
+    ],
+    "sentence": "That child is so lovely. Isn’t she lovely?",
+    "id": 1367
+  },
+  {
+    "tenses": [
+      "luck"
+    ],
+    "sentence": "I wish you good luck with everything!",
+    "id": 1368
+  },
+  {
+    "tenses": [
+      "lunatic"
+    ],
+    "sentence": "I was never put into a lunatic asylum.",
+    "id": 1369
+  },
+  {
+    "tenses": [
+      "lunch"
+    ],
+    "sentence": "I’m used to having lunch at 12 p.m. on the dot.",
+    "id": 1370
+  },
+  {
+    "tenses": [
+      "luxury",
+      " luxurious"
+    ],
+    "sentence": "Last week I happened to see a couple of luxurious apartments in the area.",
+    "id": 1371
+  },
+  {
+    "tenses": [
+      "macadam",
+      " macadamize",
+      " macadamized"
+    ],
+    "sentence": "Is that a macadamized road or was it made a different way?",
+    "id": 1372
+  },
+  {
+    "tenses": [
+      "machine"
+    ],
+    "sentence": "I’ve worked with bunches of different kinds of machines.",
+    "id": 1373
+  },
+  {
+    "tenses": [
+      "machinery"
+    ],
+    "sentence": "The machinery must be maintained or people could get hurt.",
+    "id": 1374
+  },
+  {
+    "tenses": [
+      "madam",
+      " ma’am"
+    ],
+    "sentence": "Excuse me, ma’am, may I ask you for directions?",
+    "id": 1375
+  },
+  {
+    "tenses": [
+      "made",
+      " make"
+    ],
+    "sentence": "All these products were made in the U.S.A.",
+    "id": 1376
+  },
+  {
+    "tenses": [
+      "magazine"
+    ],
+    "sentence": "I like reading certain magazine articles but not all.",
+    "id": 1377
+  },
+  {
+    "tenses": [
+      "magistrate"
+    ],
+    "sentence": "Let's give the report to the magistrate to see what he says.",
+    "id": 1378
+  },
+  {
+    "tenses": [
+      "magnificent"
+    ],
+    "sentence": "What a magnificent view! How nice.",
+    "id": 1379
+  },
+  {
+    "tenses": [
+      "maiden"
+    ],
+    "sentence": "What is your mother’s maiden name?",
+    "id": 1380
+  },
+  {
+    "tenses": [
+      "mail"
+    ],
+    "sentence": "I need to pick up my mail. My mail needs to be picked up. I need to pick my mail up.",
+    "id": 1381
+  },
+  {
+    "tenses": [
+      "maintain"
+    ],
+    "sentence": "He is trying to maintain the status-quo.",
+    "id": 1382
+  },
+  {
+    "tenses": [
+      "maintenance"
+    ],
+    "sentence": "Do you want me to continue providing the same high level of maintenance?",
+    "id": 1383
+  },
+  {
+    "tenses": [
+      "majestic"
+    ],
+    "sentence": "The opera house was as majestic as could be.",
+    "id": 1384
+  },
+  {
+    "tenses": [
+      "majesty"
+    ],
+    "sentence": "Your Majesty, may a present the Duke of Dornby?",
+    "id": 1385
+  },
+  {
+    "tenses": [
+      "majority",
+      " majorities"
+    ],
+    "sentence": "We have gotten a majority to adopt the measure, so what's next?",
+    "id": 1386
+  },
+  {
+    "tenses": [
+      "minority",
+      " minorities"
+    ],
+    "sentence": "I’m in a minority here but I want to be heard.",
+    "id": 1387
+  },
+  {
+    "tenses": [
+      "make",
+      " makes",
+      " made"
+    ],
+    "sentence": "It makes me sick and tired. It drives me crazy.",
+    "id": 1388
+  },
+  {
+    "tenses": [
+      "making",
+      " make"
+    ],
+    "sentence": "I like making curtains.",
+    "id": 1389
+  },
+  {
+    "tenses": [
+      "What are they doing?"
+    ],
+    "sentence": "They are trying to learn how to make bread.",
+    "id": 1390
+  },
+  {
+    "tenses": [
+      "mama"
+    ],
+    "sentence": "Will I eventually meet your mama?",
+    "id": 1391
+  },
+  {
+    "tenses": [
+      "man"
+    ],
+    "sentence": "You are my man! And I am your woman!",
+    "id": 1392
+  },
+  {
+    "tenses": [
+      "manage",
+      " managed"
+    ],
+    "sentence": "I managed to catch the bus on time.",
+    "id": 1393
+  },
+  {
+    "tenses": [
+      "manicure",
+      " manicured"
+    ],
+    "sentence": "That lady had her fingernails manicured.",
+    "id": 1394
+  },
+  {
+    "tenses": [
+      "manifest",
+      " manifested"
+    ],
+    "sentence": "It has manifested itself by always being on top.",
+    "id": 1395
+  },
+  {
+    "tenses": [
+      "manners"
+    ],
+    "sentence": "Did you like his manners? You liked his manners? A lot.",
+    "id": 1396
+  },
+  {
+    "tenses": [
+      "mansion"
+    ],
+    "sentence": "While driving around I noticed a couple of even nicer mansions.",
+    "id": 1397
+  },
+  {
+    "tenses": [
+      "mantel"
+    ],
+    "sentence": "Does your fireplace have a mantel over it?",
+    "id": 1398
+  },
+  {
+    "tenses": [
+      "manual"
+    ],
+    "sentence": "I got two manuals explaining how to create furniture manually.",
+    "id": 1399
+  },
+  {
+    "tenses": [
+      "manufacture",
+      " manufactured",
+      " manufacturer"
+    ],
+    "sentence": "Those cars were manufactured by that manufacturer.",
+    "id": 1400
+  },
+  {
+    "tenses": [
+      "many"
+    ],
+    "sentence": "How many times must I ask you to stop?",
+    "id": 1401
+  },
+  {
+    "tenses": [
+      "marble"
+    ],
+    "sentence": "That kind of marble is very rare but is great for making tables.",
+    "id": 1402
+  },
+  {
+    "tenses": [
+      "maple"
+    ],
+    "sentence": "I adore maple syrup!",
+    "id": 1403
+  },
+  {
+    "tenses": [
+      "March"
+    ],
+    "sentence": "They weren’t born in March, but learned how to march anyway.",
+    "id": 1404
+  },
+  {
+    "tenses": [
+      "market",
+      " marketing",
+      " market-place"
+    ],
+    "sentence": "Specialists in marketing tried to market their products on the Chinese market.",
+    "id": 1405
+  },
+  {
+    "tenses": [
+      "marriage"
+    ],
+    "sentence": "How long has your marriage lasted? They are unhappy with their marriage.",
+    "id": 1406
+  },
+  {
+    "tenses": [
+      "marry",
+      " married"
+    ],
+    "sentence": "Many people marry in June.",
+    "id": 1407
+  },
+  {
+    "tenses": [
+      "masculine"
+    ],
+    "sentence": "He is not very masculine looking.",
+    "id": 1408
+  },
+  {
+    "tenses": [
+      "match",
+      " matches"
+    ],
+    "sentence": "That shirt doesn’t match that suit. The football match attracted a lot of fans.",
+    "id": 1409
+  },
+  {
+    "tenses": [
+      "material",
+      " materialize",
+      " materialized"
+    ],
+    "sentence": "The material witness didn’t show up. My plans didn’t get materialized.",
+    "id": 1410
+  },
+  {
+    "tenses": [
+      "mathematics"
+    ],
+    "sentence": "Mathematics can only be understood by very smart people.",
+    "id": 1411
+  },
+  {
+    "tenses": [
+      "matter",
+      " matters"
+    ],
+    "sentence": "It’s a public matter. It matters not. It doesn’t matter. I don’t care. I could care less.",
+    "id": 1412
+  },
+  {
+    "tenses": [
+      "mattress"
+    ],
+    "sentence": "I need a very hard mattress to not get a backache.",
+    "id": 1413
+  },
+  {
+    "tenses": [
+      "mature",
+      " matured"
+    ],
+    "sentence": "He is not very mature for his age. When will he grow up?",
+    "id": 1414
+  },
+  {
+    "tenses": [
+      "mausoleum"
+    ],
+    "sentence": "We were expecting a regular building, but it was a mausoleum!",
+    "id": 1415
+  },
+  {
+    "tenses": [
+      "maybe"
+    ],
+    "sentence": "Is he listening? Maybe! It may be!",
+    "id": 1416
+  },
+  {
+    "tenses": [
+      "meadow"
+    ],
+    "sentence": "My cows were peacefully eating grass on his meadow.",
+    "id": 1417
+  },
+  {
+    "tenses": [
+      "meaning"
+    ],
+    "sentence": "Meaning what? What does '...' mean? What does the word “meadow” mean? What was the meaning of that word?",
+    "id": 1418
+  },
+  {
+    "tenses": [
+      "meant",
+      " mean"
+    ],
+    "sentence": "What did you mean by that? I meant that I liked you a lot.",
+    "id": 1419
+  },
+  {
+    "tenses": [
+      "meantime"
+    ],
+    "sentence": "I’ll continue working on my project. In the meantime I advise you to continue sitting and relaxing while you can.",
+    "id": 1420
+  },
+  {
+    "tenses": [
+      "meanwhile"
+    ],
+    "sentence": "I went for a walk with my dog; meanwhile my wife sat at home and read.",
+    "id": 1421
+  },
+  {
+    "tenses": [
+      "measles"
+    ],
+    "sentence": "Did you have the measles when you were young?",
+    "id": 1422
+  },
+  {
+    "tenses": [
+      "measure"
+    ],
+    "sentence": "Did you measure your new cabinet?",
+    "id": 1423
+  },
+  {
+    "tenses": [
+      "meat"
+    ],
+    "sentence": "She doesn’t like meat that much but eats mostly vegetables.",
+    "id": 1424
+  },
+  {
+    "tenses": [
+      "mechanic",
+      " mechanically"
+    ],
+    "sentence": "I know personally a couple of mechanics who have good reputations.",
+    "id": 1425
+  },
+  {
+    "tenses": [
+      "medicine",
+      " medical",
+      " medically"
+    ],
+    "sentence": "Did you take your medicine? You should have medical attention as soon as possible.",
+    "id": 1426
+  },
+  {
+    "tenses": [
+      "medium",
+      " media"
+    ],
+    "sentence": "I would like a medium-sized hat to go with that dress.",
+    "id": 1427
+  },
+  {
+    "tenses": [
+      "meet"
+    ],
+    "sentence": "Meet Olga. Olga, meet Joe.",
+    "id": 1428
+  },
+  {
+    "tenses": [
+      "melody"
+    ],
+    "sentence": "They liked the melody of the last song.",
+    "id": 1429
+  },
+  {
+    "tenses": [
+      "melon"
+    ],
+    "sentence": "Don’t you like melons? Yes. I do.",
+    "id": 1430
+  },
+  {
+    "tenses": [
+      "member",
+      " membership"
+    ],
+    "sentence": "I’m not a member of that society, because I haven’t renewed my membership.",
+    "id": 1431
+  },
+  {
+    "tenses": [
+      "memorandum"
+    ],
+    "sentence": "They tried to read and comprehend his memorandum.",
+    "id": 1432
+  },
+  {
+    "tenses": [
+      "memorial"
+    ],
+    "sentence": "She’s visited the F.D.Roosevelt memorial.",
+    "id": 1433
+  },
+  {
+    "tenses": [
+      "memorabilia"
+    ],
+    "sentence": "I like collecting memorabilia from that time period.",
+    "id": 1434
+  },
+  {
+    "tenses": [
+      "memory"
+    ],
+    "sentence": "Did he try to enhance his memory at all?",
+    "id": 1435
+  },
+  {
+    "tenses": [
+      "merchandise"
+    ],
+    "sentence": "How much did you pay for all that merchandise?",
+    "id": 1436
+  },
+  {
+    "tenses": [
+      "merchant"
+    ],
+    "sentence": "I knew personally a couple of good merchants and liked their merchandise.",
+    "id": 1437
+  },
+  {
+    "tenses": [
+      "mere"
+    ],
+    "sentence": "It costs a mere $27.95 and you receive all this!",
+    "id": 1438
+  },
+  {
+    "tenses": [
+      "mesmerize",
+      " mesmerized"
+    ],
+    "sentence": "The audience was mesmerized by his charm.",
+    "id": 1439
+  },
+  {
+    "tenses": [
+      "message"
+    ],
+    "sentence": "I got the message. Did you get the message? Are you getting my message?",
+    "id": 1440
+  },
+  {
+    "tenses": [
+      "messenger"
+    ],
+    "sentence": "Would you like me to hire you as our messenger to deliver packages?",
+    "id": 1441
+  },
+  {
+    "tenses": [
+      "met",
+      " meet"
+    ],
+    "sentence": "Have you ever met that guy before?",
+    "id": 1442
+  },
+  {
+    "tenses": [
+      "meter"
+    ],
+    "sentence": "A city person comes every month to check my gas meter.",
+    "id": 1443
+  },
+  {
+    "tenses": [
+      "methodically"
+    ],
+    "sentence": "She methodically took the toaster apart. I have been trying to study his files methodically.",
+    "id": 1444
+  },
+  {
+    "tenses": [
+      "Methodist"
+    ],
+    "sentence": "He has been converted to the Methodist religion.",
+    "id": 1445
+  },
+  {
+    "tenses": [
+      "Mexico"
+    ],
+    "sentence": "Have you been to Mexico? Sure.",
+    "id": 1446
+  },
+  {
+    "tenses": [
+      "middle"
+    ],
+    "sentence": "I found myself in the middle of the crowd.",
+    "id": 1447
+  },
+  {
+    "tenses": [
+      "midnight"
+    ],
+    "sentence": "Let’s meet at midnight by the ferry.",
+    "id": 1448
+  },
+  {
+    "tenses": [
+      "midst"
+    ],
+    "sentence": "He is always in the midst of events.",
+    "id": 1449
+  },
+  {
+    "tenses": [
+      "midwife",
+      " midwives"
+    ],
+    "sentence": "Back then, midwives delivered babies.",
+    "id": 1450
+  },
+  {
+    "tenses": [
+      "might"
+    ],
+    "sentence": "Please, do not demonstrate to us your might. I might be willing to go if you are nice.",
+    "id": 1451
+  },
+  {
+    "tenses": [
+      "mighty"
+    ],
+    "sentence": "I like the animated series called “The Mighty Duck.”",
+    "id": 1452
+  },
+  {
+    "tenses": [
+      "mile",
+      " miles"
+    ],
+    "sentence": "How many miles have you put on your car?",
+    "id": 1453
+  },
+  {
+    "tenses": [
+      "mileage"
+    ],
+    "sentence": "What was the actual mileage?",
+    "id": 1454
+  },
+  {
+    "tenses": [
+      "military"
+    ],
+    "sentence": "I’m not happy with our military spendings.",
+    "id": 1455
+  },
+  {
+    "tenses": [
+      "milk",
+      " milking"
+    ],
+    "sentence": "I adore milking cows.",
+    "id": 1456
+  },
+  {
+    "tenses": [
+      "miller"
+    ],
+    "sentence": "I have no idea what that miller’s specific duties are.",
+    "id": 1457
+  },
+  {
+    "tenses": [
+      "millinery"
+    ],
+    "sentence": "If he sells women's hats he's in the millinery business.",
+    "id": 1458
+  },
+  {
+    "tenses": [
+      "million"
+    ],
+    "sentence": "Thanks a million! I am so hungry I feel like I could eat a million chicken fingers!",
+    "id": 1459
+  },
+  {
+    "tenses": [
+      "mind"
+    ],
+    "sentence": "Mind your own business! Nevermind!",
+    "id": 1460
+  },
+  {
+    "tenses": [
+      "mineral"
+    ],
+    "sentence": "The U.S. has a lot of mineral resources.",
+    "id": 1461
+  },
+  {
+    "tenses": [
+      "mingle",
+      " mingled"
+    ],
+    "sentence": "The smell of roses mingled with the smell of other flowers.",
+    "id": 1462
+  },
+  {
+    "tenses": [
+      "minimum"
+    ],
+    "sentence": "All she wants is to earn a minimum of $2,000 per month.",
+    "id": 1463
+  },
+  {
+    "tenses": [
+      "minister"
+    ],
+    "sentence": "I personally know at least three Ministers of Music.",
+    "id": 1464
+  },
+  {
+    "tenses": [
+      "minus"
+    ],
+    "sentence": "He is a decent citizen, but he has certain minuses.",
+    "id": 1465
+  },
+  {
+    "tenses": [
+      "minute"
+    ],
+    "sentence": "Wait a minute! Just a minute. Give me a minute to fix my hair.",
+    "id": 1466
+  },
+  {
+    "tenses": [
+      "miracle"
+    ],
+    "sentence": "That remedy works miracles.",
+    "id": 1467
+  },
+  {
+    "tenses": [
+      "mirror"
+    ],
+    "sentence": "I have never liked my reflection in the mirror.",
+    "id": 1468
+  },
+  {
+    "tenses": [
+      "mirth"
+    ],
+    "sentence": "The feeling of mirth was in the air everywhere.",
+    "id": 1469
+  },
+  {
+    "tenses": [
+      "mischief",
+      " mischievous"
+    ],
+    "sentence": "Where is that mischievous boy?",
+    "id": 1470
+  },
+  {
+    "tenses": [
+      "misery",
+      " miserable",
+      " miserably"
+    ],
+    "sentence": "That person is living a miserable life, talks miserably, and will die in misery.",
+    "id": 1471
+  },
+  {
+    "tenses": [
+      "misfortune"
+    ],
+    "sentence": "Was that a misfortune or was it planned that way?",
+    "id": 1472
+  },
+  {
+    "tenses": [
+      "mistake",
+      " mistaken",
+      " mistaking",
+      " mistook"
+    ],
+    "sentence": "You are mistaken that I was there that night. You made a mistake. You mistook me for Harry. You have been mistaken before. Did I make a mistake? You have been mistaken. He might have been mistaken.",
+    "id": 1473
+  },
+  {
+    "tenses": [
+      "mistress"
+    ],
+    "sentence": "That lady is his mistress.",
+    "id": 1474
+  },
+  {
+    "tenses": [
+      "mixture"
+    ],
+    "sentence": "I have mixed feelings about mixing the mixture like that.",
+    "id": 1475
+  },
+  {
+    "tenses": [
+      "mode"
+    ],
+    "sentence": "In what mode are you going to operate the computer?",
+    "id": 1476
+  },
+  {
+    "tenses": [
+      "model"
+    ],
+    "sentence": "When I grow up I want to be a super model on the cover of magazines. Professor Smith is a model speaker.",
+    "id": 1477
+  },
+  {
+    "tenses": [
+      "moderate",
+      " moderator"
+    ],
+    "sentence": "It’s a very moderate request.",
+    "id": 1478
+  },
+  {
+    "tenses": [
+      "modern"
+    ],
+    "sentence": "Have you purchased any modern-looking clothes lately?",
+    "id": 1479
+  },
+  {
+    "tenses": [
+      "modest"
+    ],
+    "sentence": "His behavior has demonstrated that he had only modest desires. Here are your mushrooms, cooked as desired.",
+    "id": 1480
+  },
+  {
+    "tenses": [
+      "moist",
+      " moisture",
+      " moisturize"
+    ],
+    "sentence": "The cake was nice and moist, not dry at all.",
+    "id": 1481
+  },
+  {
+    "tenses": [
+      "molasses"
+    ],
+    "sentence": "Do you have any molasses for my pancakes?",
+    "id": 1482
+  },
+  {
+    "tenses": [
+      "mold"
+    ],
+    "sentence": "Let's use a gelatin mold and make a pretty dessert.",
+    "id": 1483
+  },
+  {
+    "tenses": [
+      "molder"
+    ],
+    "sentence": "After years, that beautiful column will simply molder away to nothing.",
+    "id": 1484
+  },
+  {
+    "tenses": [
+      "monarch"
+    ],
+    "sentence": "Queen Isabelle was the monarch at that time.",
+    "id": 1485
+  },
+  {
+    "tenses": [
+      "monarchy"
+    ],
+    "sentence": "The monarchy in Russia was abolished in 1917. The servants were shot before the Revolution.",
+    "id": 1486
+  },
+  {
+    "tenses": [
+      "Monday"
+    ],
+    "sentence": "See you at the beginning of the week, probably on Monday.",
+    "id": 1487
+  },
+  {
+    "tenses": [
+      "money"
+    ],
+    "sentence": "How much money does she have? Nobody knows.",
+    "id": 1488
+  },
+  {
+    "tenses": [
+      "monkeys"
+    ],
+    "sentence": "In some cases monkeys are smarter than humans.",
+    "id": 1489
+  },
+  {
+    "tenses": [
+      "monster"
+    ],
+    "sentence": "We were on our way to terrorize villagers, when my monster stood up and died. If it weren't for you we would still be stuck here.",
+    "id": 1490
+  },
+  {
+    "tenses": [
+      "month",
+      " monthly"
+    ],
+    "sentence": "I pay all my monthly bills on time.",
+    "id": 1491
+  },
+  {
+    "tenses": [
+      "monument",
+      " monumental"
+    ],
+    "sentence": "I saw a huge monument of the captain.",
+    "id": 1492
+  },
+  {
+    "tenses": [
+      "moon"
+    ],
+    "sentence": "This country can send people to the moon. Why wouldn't we be able to send them to the North Pole?",
+    "id": 1493
+  },
+  {
+    "tenses": [
+      "moral"
+    ],
+    "sentence": "Your action was moral but maybe not ethical.",
+    "id": 1494
+  },
+  {
+    "tenses": [
+      "morale"
+    ],
+    "sentence": "The morale of the entire group was beginning to be lowered.",
+    "id": 1495
+  },
+  {
+    "tenses": [
+      "moreover"
+    ],
+    "sentence": "I read your letter and liked it a lot. And, moreover, I am going to continue helping you.",
+    "id": 1496
+  },
+  {
+    "tenses": [
+      "morning"
+    ],
+    "sentence": "That morning it started raining pretty early.",
+    "id": 1497
+  },
+  {
+    "tenses": [
+      "mortal",
+      " immortal"
+    ],
+    "sentence": "Mere mortals would not be able to understand.",
+    "id": 1498
+  },
+  {
+    "tenses": [
+      "mortgage"
+    ],
+    "sentence": "Many people in America pay some kind of mortgage on a house or car or boat.",
+    "id": 1499
+  },
+  {
+    "tenses": [
+      "mosquito",
+      " mosquitoes"
+    ],
+    "sentence": "She hates listening to mosquitoes buzzing around.",
+    "id": 1500
+  },
+  {
+    "tenses": [
+      "mother"
+    ],
+    "sentence": "Listen to your mother! She knows best.",
+    "id": 1501
+  },
+  {
+    "tenses": [
+      "motive"
+    ],
+    "sentence": "I have no idea what his motive is for wanting to go with you.",
+    "id": 1502
+  },
+  {
+    "tenses": [
+      "motor"
+    ],
+    "sentence": "How many different motor vehicles do you own?",
+    "id": 1503
+  },
+  {
+    "tenses": [
+      "motorcycle"
+    ],
+    "sentence": "Have you ever driven a motorcycle?",
+    "id": 1504
+  },
+  {
+    "tenses": [
+      "mountain"
+    ],
+    "sentence": "What is the elevation of that mountain?",
+    "id": 1505
+  },
+  {
+    "tenses": [
+      "mouth"
+    ],
+    "sentence": "The mouth of the river could fit three ships side by side. My mouth is not big enough to eat the sandwich.",
+    "id": 1506
+  },
+  {
+    "tenses": [
+      "move"
+    ],
+    "sentence": "Your move! Play!",
+    "id": 1507
+  },
+  {
+    "tenses": [
+      "movement",
+      " movements"
+    ],
+    "sentence": "You need to make only correct movements.",
+    "id": 1508
+  },
+  {
+    "tenses": [
+      "movie",
+      " moving picture"
+    ],
+    "sentence": "Let’s go to the movies.",
+    "id": 1509
+  },
+  {
+    "tenses": [
+      "much"
+    ],
+    "sentence": "I like sugar too much to give it up!",
+    "id": 1510
+  },
+  {
+    "tenses": [
+      "multiply"
+    ],
+    "sentence": "Can you now multiply it by 8?",
+    "id": 1511
+  },
+  {
+    "tenses": [
+      "multitude"
+    ],
+    "sentence": "Then a multitude of angels appeared to Moses.",
+    "id": 1512
+  },
+  {
+    "tenses": [
+      "municipal"
+    ],
+    "sentence": "Are you hooked up to municipal utilities?",
+    "id": 1513
+  },
+  {
+    "tenses": [
+      "murder"
+    ],
+    "sentence": "The detective finally solved the mystery of the murder.",
+    "id": 1514
+  },
+  {
+    "tenses": [
+      "murmur"
+    ],
+    "sentence": "There was a low murmur in the room as soon as Mrs. Blansky walked in.",
+    "id": 1515
+  },
+  {
+    "tenses": [
+      "muscle"
+    ],
+    "sentence": "I like to lift weights to strengthen my muscles.",
+    "id": 1516
+  },
+  {
+    "tenses": [
+      "museum"
+    ],
+    "sentence": "I love going to museums. Are there many in this town?",
+    "id": 1517
+  },
+  {
+    "tenses": [
+      "music"
+    ],
+    "sentence": "Please turn the music down!",
+    "id": 1518
+  },
+  {
+    "tenses": [
+      "musical"
+    ],
+    "sentence": "Her voice almost had a musical quality to it.",
+    "id": 1519
+  },
+  {
+    "tenses": [
+      "mustache"
+    ],
+    "sentence": "Do you like handlebar mustaches?",
+    "id": 1520
+  },
+  {
+    "tenses": [
+      "mustard"
+    ],
+    "sentence": "I don't want mustard on my hotdog, only ketchup.",
+    "id": 1521
+  },
+  {
+    "tenses": [
+      "mute"
+    ],
+    "sentence": "Push the mute button on the phone so I can talk without being overheard.",
+    "id": 1522
+  },
+  {
+    "tenses": [
+      "mutton"
+    ],
+    "sentence": "Grilled mutton with green jelly is my kind of meal.",
+    "id": 1523
+  },
+  {
+    "tenses": [
+      "mutual"
+    ],
+    "sentence": "Making an agreement is to our mutual benefit.",
+    "id": 1524
+  },
+  {
+    "tenses": [
+      "mysterious"
+    ],
+    "sentence": "There is something mysterious about his demeanor.",
+    "id": 1525
+  },
+  {
+    "tenses": [
+      "mystery"
+    ],
+    "sentence": "It is certainly a mystery to me why they couldn't come.",
+    "id": 1526
+  },
+  {
+    "tenses": [
+      "nail",
+      " nailed"
+    ],
+    "sentence": "I would suggest your putting at least three nails in that board to make sure it holds.",
+    "id": 1527
+  },
+  {
+    "tenses": [
+      "name"
+    ],
+    "sentence": "What was our teacher's name? I can't remember.",
+    "id": 1528
+  },
+  {
+    "tenses": [
+      "napkin"
+    ],
+    "sentence": "Please put your napkin in your lap.",
+    "id": 1529
+  },
+  {
+    "tenses": [
+      "narrative"
+    ],
+    "sentence": "You may now read the narrative from Agatha Christie's book if you'd like.",
+    "id": 1530
+  },
+  {
+    "tenses": [
+      "narrow"
+    ],
+    "sentence": "Let's cut a very narrow passageway through this rock.",
+    "id": 1531
+  },
+  {
+    "tenses": [
+      "nation"
+    ],
+    "sentence": "The nation has many problems, but not having a king and queen is not one of them.",
+    "id": 1532
+  },
+  {
+    "tenses": [
+      "nationality"
+    ],
+    "sentence": "Would you know what his nationality is? From what country does he come?",
+    "id": 1533
   }
 ]

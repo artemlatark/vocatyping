@@ -31,6 +31,7 @@ const WordItem = memo(({currentWordId, onOpenSidebar, data, index, style}: WordI
     onOpenSidebar();
     dispatch(checkTextSlice.actions.onChangeWord({wordId: word.id}));
   };
+
   return (
     <ListItem style={style} key={word.id} component="div" disablePadding>
       <ListItemButton onClick={() => onChangeWord()}>
