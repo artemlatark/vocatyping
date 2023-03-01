@@ -10055,29 +10055,22 @@
       "making",
       "make"
     ],
-    "sentence": "I like making curtains.",
+    "sentence": "I like making curtains. What are they doing? They are trying to learn how to make bread.",
     "id": 1389
-  },
-  {
-    "tenses": [
-      "What are they doing?"
-    ],
-    "sentence": "They are trying to learn how to make bread.",
-    "id": 1390
   },
   {
     "tenses": [
       "mama"
     ],
     "sentence": "Will I eventually meet your mama?",
-    "id": 1391
+    "id": 1390
   },
   {
     "tenses": [
       "man"
     ],
     "sentence": "You are my man! And I am your woman!",
-    "id": 1392
+    "id": 1391
   },
   {
     "tenses": [
@@ -10085,7 +10078,7 @@
       "managed"
     ],
     "sentence": "I managed to catch the bus on time.",
-    "id": 1393
+    "id": 1392
   },
   {
     "tenses": [
@@ -10093,7 +10086,7 @@
       "manicured"
     ],
     "sentence": "That lady had her fingernails manicured.",
-    "id": 1394
+    "id": 1393
   },
   {
     "tenses": [
@@ -10101,35 +10094,35 @@
       "manifested"
     ],
     "sentence": "It has manifested itself by always being on top.",
-    "id": 1395
+    "id": 1394
   },
   {
     "tenses": [
       "manners"
     ],
     "sentence": "Did you like his manners? You liked his manners? A lot.",
-    "id": 1396
+    "id": 1395
   },
   {
     "tenses": [
       "mansion"
     ],
     "sentence": "While driving around I noticed a couple of even nicer mansions.",
-    "id": 1397
+    "id": 1396
   },
   {
     "tenses": [
       "mantel"
     ],
     "sentence": "Does your fireplace have a mantel over it?",
-    "id": 1398
+    "id": 1397
   },
   {
     "tenses": [
       "manual"
     ],
     "sentence": "I got two manuals explaining how to create furniture manually.",
-    "id": 1399
+    "id": 1398
   },
   {
     "tenses": [
@@ -10138,35 +10131,35 @@
       "manufacturer"
     ],
     "sentence": "Those cars were manufactured by that manufacturer.",
-    "id": 1400
+    "id": 1399
   },
   {
     "tenses": [
       "many"
     ],
     "sentence": "How many times must I ask you to stop?",
-    "id": 1401
+    "id": 1400
   },
   {
     "tenses": [
       "marble"
     ],
     "sentence": "That kind of marble is very rare but is great for making tables.",
-    "id": 1402
+    "id": 1401
   },
   {
     "tenses": [
       "maple"
     ],
     "sentence": "I adore maple syrup!",
-    "id": 1403
+    "id": 1402
   },
   {
     "tenses": [
       "March"
     ],
     "sentence": "They weren’t born in March, but learned how to march anyway.",
-    "id": 1404
+    "id": 1403
   },
   {
     "tenses": [
@@ -10175,14 +10168,14 @@
       "market-place"
     ],
     "sentence": "Specialists in marketing tried to market their products on the Chinese market.",
-    "id": 1405
+    "id": 1404
   },
   {
     "tenses": [
       "marriage"
     ],
     "sentence": "How long has your marriage lasted? They are unhappy with their marriage.",
-    "id": 1406
+    "id": 1405
   },
   {
     "tenses": [
@@ -10190,14 +10183,14 @@
       "married"
     ],
     "sentence": "Many people marry in June.",
-    "id": 1407
+    "id": 1406
   },
   {
     "tenses": [
       "masculine"
     ],
     "sentence": "He is not very masculine looking.",
-    "id": 1408
+    "id": 1407
   },
   {
     "tenses": [
@@ -10205,7 +10198,7 @@
       "matches"
     ],
     "sentence": "That shirt doesn’t match that suit. The football match attracted a lot of fans.",
-    "id": 1409
+    "id": 1408
   },
   {
     "tenses": [
@@ -10214,14 +10207,14 @@
       "materialized"
     ],
     "sentence": "The material witness didn’t show up. My plans didn’t get materialized.",
-    "id": 1410
+    "id": 1409
   },
   {
     "tenses": [
       "mathematics"
     ],
     "sentence": "Mathematics can only be understood by very smart people.",
-    "id": 1411
+    "id": 1410
   },
   {
     "tenses": [
@@ -10229,14 +10222,14 @@
       "matters"
     ],
     "sentence": "It’s a public matter. It matters not. It doesn’t matter. I don’t care. I could care less.",
-    "id": 1412
+    "id": 1411
   },
   {
     "tenses": [
       "mattress"
     ],
     "sentence": "I need a very hard mattress to not get a backache.",
-    "id": 1413
+    "id": 1412
   },
   {
     "tenses": [
@@ -10244,35 +10237,35 @@
       "matured"
     ],
     "sentence": "He is not very mature for his age. When will he grow up?",
-    "id": 1414
+    "id": 1413
   },
   {
     "tenses": [
       "mausoleum"
     ],
     "sentence": "We were expecting a regular building, but it was a mausoleum!",
-    "id": 1415
+    "id": 1414
   },
   {
     "tenses": [
       "maybe"
     ],
     "sentence": "Is he listening? Maybe! It may be!",
-    "id": 1416
+    "id": 1415
   },
   {
     "tenses": [
       "meadow"
     ],
     "sentence": "My cows were peacefully eating grass on his meadow.",
-    "id": 1417
+    "id": 1416
   },
   {
     "tenses": [
       "meaning"
     ],
     "sentence": "Meaning what? What does '...' mean? What does the word “meadow” mean? What was the meaning of that word?",
-    "id": 1418
+    "id": 1417
   },
   {
     "tenses": [
@@ -10280,42 +10273,42 @@
       "mean"
     ],
     "sentence": "What did you mean by that? I meant that I liked you a lot.",
-    "id": 1419
+    "id": 1418
   },
   {
     "tenses": [
       "meantime"
     ],
     "sentence": "I’ll continue working on my project. In the meantime I advise you to continue sitting and relaxing while you can.",
-    "id": 1420
+    "id": 1419
   },
   {
     "tenses": [
       "meanwhile"
     ],
     "sentence": "I went for a walk with my dog; meanwhile my wife sat at home and read.",
-    "id": 1421
+    "id": 1420
   },
   {
     "tenses": [
       "measles"
     ],
     "sentence": "Did you have the measles when you were young?",
-    "id": 1422
+    "id": 1421
   },
   {
     "tenses": [
       "measure"
     ],
     "sentence": "Did you measure your new cabinet?",
-    "id": 1423
+    "id": 1422
   },
   {
     "tenses": [
       "meat"
     ],
     "sentence": "She doesn’t like meat that much but eats mostly vegetables.",
-    "id": 1424
+    "id": 1423
   },
   {
     "tenses": [
@@ -10323,7 +10316,7 @@
       "mechanically"
     ],
     "sentence": "I know personally a couple of mechanics who have good reputations.",
-    "id": 1425
+    "id": 1424
   },
   {
     "tenses": [
@@ -10332,7 +10325,7 @@
       "medically"
     ],
     "sentence": "Did you take your medicine? You should have medical attention as soon as possible.",
-    "id": 1426
+    "id": 1425
   },
   {
     "tenses": [
@@ -10340,28 +10333,28 @@
       "media"
     ],
     "sentence": "I would like a medium-sized hat to go with that dress.",
-    "id": 1427
+    "id": 1426
   },
   {
     "tenses": [
       "meet"
     ],
     "sentence": "Meet Olga. Olga, meet Joe.",
-    "id": 1428
+    "id": 1427
   },
   {
     "tenses": [
       "melody"
     ],
     "sentence": "They liked the melody of the last song.",
-    "id": 1429
+    "id": 1428
   },
   {
     "tenses": [
       "melon"
     ],
     "sentence": "Don’t you like melons? Yes. I do.",
-    "id": 1430
+    "id": 1429
   },
   {
     "tenses": [
@@ -10369,56 +10362,56 @@
       "membership"
     ],
     "sentence": "I’m not a member of that society, because I haven’t renewed my membership.",
-    "id": 1431
+    "id": 1430
   },
   {
     "tenses": [
       "memorandum"
     ],
     "sentence": "They tried to read and comprehend his memorandum.",
-    "id": 1432
+    "id": 1431
   },
   {
     "tenses": [
       "memorial"
     ],
     "sentence": "She’s visited the F.D.Roosevelt memorial.",
-    "id": 1433
+    "id": 1432
   },
   {
     "tenses": [
       "memorabilia"
     ],
     "sentence": "I like collecting memorabilia from that time period.",
-    "id": 1434
+    "id": 1433
   },
   {
     "tenses": [
       "memory"
     ],
     "sentence": "Did he try to enhance his memory at all?",
-    "id": 1435
+    "id": 1434
   },
   {
     "tenses": [
       "merchandise"
     ],
     "sentence": "How much did you pay for all that merchandise?",
-    "id": 1436
+    "id": 1435
   },
   {
     "tenses": [
       "merchant"
     ],
     "sentence": "I knew personally a couple of good merchants and liked their merchandise.",
-    "id": 1437
+    "id": 1436
   },
   {
     "tenses": [
       "mere"
     ],
     "sentence": "It costs a mere $27.95 and you receive all this!",
-    "id": 1438
+    "id": 1437
   },
   {
     "tenses": [
@@ -10426,21 +10419,21 @@
       "mesmerized"
     ],
     "sentence": "The audience was mesmerized by his charm.",
-    "id": 1439
+    "id": 1438
   },
   {
     "tenses": [
       "message"
     ],
     "sentence": "I got the message. Did you get the message? Are you getting my message?",
-    "id": 1440
+    "id": 1439
   },
   {
     "tenses": [
       "messenger"
     ],
     "sentence": "Would you like me to hire you as our messenger to deliver packages?",
-    "id": 1441
+    "id": 1440
   },
   {
     "tenses": [
@@ -10448,56 +10441,56 @@
       "meet"
     ],
     "sentence": "Have you ever met that guy before?",
-    "id": 1442
+    "id": 1441
   },
   {
     "tenses": [
       "meter"
     ],
     "sentence": "A city person comes every month to check my gas meter.",
-    "id": 1443
+    "id": 1442
   },
   {
     "tenses": [
       "methodically"
     ],
     "sentence": "She methodically took the toaster apart. I have been trying to study his files methodically.",
-    "id": 1444
+    "id": 1443
   },
   {
     "tenses": [
       "Methodist"
     ],
     "sentence": "He has been converted to the Methodist religion.",
-    "id": 1445
+    "id": 1444
   },
   {
     "tenses": [
       "Mexico"
     ],
     "sentence": "Have you been to Mexico? Sure.",
-    "id": 1446
+    "id": 1445
   },
   {
     "tenses": [
       "middle"
     ],
     "sentence": "I found myself in the middle of the crowd.",
-    "id": 1447
+    "id": 1446
   },
   {
     "tenses": [
       "midnight"
     ],
     "sentence": "Let’s meet at midnight by the ferry.",
-    "id": 1448
+    "id": 1447
   },
   {
     "tenses": [
       "midst"
     ],
     "sentence": "He is always in the midst of events.",
-    "id": 1449
+    "id": 1448
   },
   {
     "tenses": [
@@ -10505,21 +10498,21 @@
       "midwives"
     ],
     "sentence": "Back then, midwives delivered babies.",
-    "id": 1450
+    "id": 1449
   },
   {
     "tenses": [
       "might"
     ],
     "sentence": "Please, do not demonstrate to us your might. I might be willing to go if you are nice.",
-    "id": 1451
+    "id": 1450
   },
   {
     "tenses": [
       "mighty"
     ],
     "sentence": "I like the animated series called “The Mighty Duck.”",
-    "id": 1452
+    "id": 1451
   },
   {
     "tenses": [
@@ -10527,21 +10520,21 @@
       "miles"
     ],
     "sentence": "How many miles have you put on your car?",
-    "id": 1453
+    "id": 1452
   },
   {
     "tenses": [
       "mileage"
     ],
     "sentence": "What was the actual mileage?",
-    "id": 1454
+    "id": 1453
   },
   {
     "tenses": [
       "military"
     ],
     "sentence": "I’m not happy with our military spendings.",
-    "id": 1455
+    "id": 1454
   },
   {
     "tenses": [
@@ -10549,42 +10542,42 @@
       "milking"
     ],
     "sentence": "I adore milking cows.",
-    "id": 1456
+    "id": 1455
   },
   {
     "tenses": [
       "miller"
     ],
     "sentence": "I have no idea what that miller’s specific duties are.",
-    "id": 1457
+    "id": 1456
   },
   {
     "tenses": [
       "millinery"
     ],
     "sentence": "If he sells women's hats he's in the millinery business.",
-    "id": 1458
+    "id": 1457
   },
   {
     "tenses": [
       "million"
     ],
     "sentence": "Thanks a million! I am so hungry I feel like I could eat a million chicken fingers!",
-    "id": 1459
+    "id": 1458
   },
   {
     "tenses": [
       "mind"
     ],
     "sentence": "Mind your own business! Nevermind!",
-    "id": 1460
+    "id": 1459
   },
   {
     "tenses": [
       "mineral"
     ],
     "sentence": "The U.S. has a lot of mineral resources.",
-    "id": 1461
+    "id": 1460
   },
   {
     "tenses": [
@@ -10592,56 +10585,56 @@
       "mingled"
     ],
     "sentence": "The smell of roses mingled with the smell of other flowers.",
-    "id": 1462
+    "id": 1461
   },
   {
     "tenses": [
       "minimum"
     ],
     "sentence": "All she wants is to earn a minimum of $2,000 per month.",
-    "id": 1463
+    "id": 1462
   },
   {
     "tenses": [
       "minister"
     ],
     "sentence": "I personally know at least three Ministers of Music.",
-    "id": 1464
+    "id": 1463
   },
   {
     "tenses": [
       "minus"
     ],
     "sentence": "He is a decent citizen, but he has certain minuses.",
-    "id": 1465
+    "id": 1464
   },
   {
     "tenses": [
       "minute"
     ],
     "sentence": "Wait a minute! Just a minute. Give me a minute to fix my hair.",
-    "id": 1466
+    "id": 1465
   },
   {
     "tenses": [
       "miracle"
     ],
     "sentence": "That remedy works miracles.",
-    "id": 1467
+    "id": 1466
   },
   {
     "tenses": [
       "mirror"
     ],
     "sentence": "I have never liked my reflection in the mirror.",
-    "id": 1468
+    "id": 1467
   },
   {
     "tenses": [
       "mirth"
     ],
     "sentence": "The feeling of mirth was in the air everywhere.",
-    "id": 1469
+    "id": 1468
   },
   {
     "tenses": [
@@ -10649,7 +10642,7 @@
       "mischievous"
     ],
     "sentence": "Where is that mischievous boy?",
-    "id": 1470
+    "id": 1469
   },
   {
     "tenses": [
@@ -10658,14 +10651,14 @@
       "miserably"
     ],
     "sentence": "That person is living a miserable life, talks miserably, and will die in misery.",
-    "id": 1471
+    "id": 1470
   },
   {
     "tenses": [
       "misfortune"
     ],
     "sentence": "Was that a misfortune or was it planned that way?",
-    "id": 1472
+    "id": 1471
   },
   {
     "tenses": [
@@ -10675,35 +10668,35 @@
       "mistook"
     ],
     "sentence": "You are mistaken that I was there that night. You made a mistake. You mistook me for Harry. You have been mistaken before. Did I make a mistake? You have been mistaken. He might have been mistaken.",
-    "id": 1473
+    "id": 1472
   },
   {
     "tenses": [
       "mistress"
     ],
     "sentence": "That lady is his mistress.",
-    "id": 1474
+    "id": 1473
   },
   {
     "tenses": [
       "mixture"
     ],
     "sentence": "I have mixed feelings about mixing the mixture like that.",
-    "id": 1475
+    "id": 1474
   },
   {
     "tenses": [
       "mode"
     ],
     "sentence": "In what mode are you going to operate the computer?",
-    "id": 1476
+    "id": 1475
   },
   {
     "tenses": [
       "model"
     ],
     "sentence": "When I grow up I want to be a super model on the cover of magazines. Professor Smith is a model speaker.",
-    "id": 1477
+    "id": 1476
   },
   {
     "tenses": [
@@ -10711,21 +10704,21 @@
       "moderator"
     ],
     "sentence": "It’s a very moderate request.",
-    "id": 1478
+    "id": 1477
   },
   {
     "tenses": [
       "modern"
     ],
     "sentence": "Have you purchased any modern-looking clothes lately?",
-    "id": 1479
+    "id": 1478
   },
   {
     "tenses": [
       "modest"
     ],
     "sentence": "His behavior has demonstrated that he had only modest desires. Here are your mushrooms, cooked as desired.",
-    "id": 1480
+    "id": 1479
   },
   {
     "tenses": [
@@ -10734,70 +10727,70 @@
       "moisturize"
     ],
     "sentence": "The cake was nice and moist, not dry at all.",
-    "id": 1481
+    "id": 1480
   },
   {
     "tenses": [
       "molasses"
     ],
     "sentence": "Do you have any molasses for my pancakes?",
-    "id": 1482
+    "id": 1481
   },
   {
     "tenses": [
       "mold"
     ],
     "sentence": "Let's use a gelatin mold and make a pretty dessert.",
-    "id": 1483
+    "id": 1482
   },
   {
     "tenses": [
       "molder"
     ],
     "sentence": "After years, that beautiful column will simply molder away to nothing.",
-    "id": 1484
+    "id": 1483
   },
   {
     "tenses": [
       "monarch"
     ],
     "sentence": "Queen Isabelle was the monarch at that time.",
-    "id": 1485
+    "id": 1484
   },
   {
     "tenses": [
       "monarchy"
     ],
     "sentence": "The monarchy in Russia was abolished in 1917. The servants were shot before the Revolution.",
-    "id": 1486
+    "id": 1485
   },
   {
     "tenses": [
       "Monday"
     ],
     "sentence": "See you at the beginning of the week, probably on Monday.",
-    "id": 1487
+    "id": 1486
   },
   {
     "tenses": [
       "money"
     ],
     "sentence": "How much money does she have? Nobody knows.",
-    "id": 1488
+    "id": 1487
   },
   {
     "tenses": [
       "monkeys"
     ],
     "sentence": "In some cases monkeys are smarter than humans.",
-    "id": 1489
+    "id": 1488
   },
   {
     "tenses": [
       "monster"
     ],
     "sentence": "We were on our way to terrorize villagers, when my monster stood up and died. If it weren't for you we would still be stuck here.",
-    "id": 1490
+    "id": 1489
   },
   {
     "tenses": [
@@ -10805,7 +10798,7 @@
       "monthly"
     ],
     "sentence": "I pay all my monthly bills on time.",
-    "id": 1491
+    "id": 1490
   },
   {
     "tenses": [
@@ -10813,42 +10806,42 @@
       "monumental"
     ],
     "sentence": "I saw a huge monument of the captain.",
-    "id": 1492
+    "id": 1491
   },
   {
     "tenses": [
       "moon"
     ],
     "sentence": "This country can send people to the moon. Why wouldn't we be able to send them to the North Pole?",
-    "id": 1493
+    "id": 1492
   },
   {
     "tenses": [
       "moral"
     ],
     "sentence": "Your action was moral but maybe not ethical.",
-    "id": 1494
+    "id": 1493
   },
   {
     "tenses": [
       "morale"
     ],
     "sentence": "The morale of the entire group was beginning to be lowered.",
-    "id": 1495
+    "id": 1494
   },
   {
     "tenses": [
       "moreover"
     ],
     "sentence": "I read your letter and liked it a lot. And, moreover, I am going to continue helping you.",
-    "id": 1496
+    "id": 1495
   },
   {
     "tenses": [
       "morning"
     ],
     "sentence": "That morning it started raining pretty early.",
-    "id": 1497
+    "id": 1496
   },
   {
     "tenses": [
@@ -10856,14 +10849,14 @@
       "immortal"
     ],
     "sentence": "Mere mortals would not be able to understand.",
-    "id": 1498
+    "id": 1497
   },
   {
     "tenses": [
       "mortgage"
     ],
     "sentence": "Many people in America pay some kind of mortgage on a house or car or boat.",
-    "id": 1499
+    "id": 1498
   },
   {
     "tenses": [
@@ -10871,56 +10864,56 @@
       "mosquitoes"
     ],
     "sentence": "She hates listening to mosquitoes buzzing around.",
-    "id": 1500
+    "id": 1499
   },
   {
     "tenses": [
       "mother"
     ],
     "sentence": "Listen to your mother! She knows best.",
-    "id": 1501
+    "id": 1500
   },
   {
     "tenses": [
       "motive"
     ],
     "sentence": "I have no idea what his motive is for wanting to go with you.",
-    "id": 1502
+    "id": 1501
   },
   {
     "tenses": [
       "motor"
     ],
     "sentence": "How many different motor vehicles do you own?",
-    "id": 1503
+    "id": 1502
   },
   {
     "tenses": [
       "motorcycle"
     ],
     "sentence": "Have you ever driven a motorcycle?",
-    "id": 1504
+    "id": 1503
   },
   {
     "tenses": [
       "mountain"
     ],
     "sentence": "What is the elevation of that mountain?",
-    "id": 1505
+    "id": 1504
   },
   {
     "tenses": [
       "mouth"
     ],
     "sentence": "The mouth of the river could fit three ships side by side. My mouth is not big enough to eat the sandwich.",
-    "id": 1506
+    "id": 1505
   },
   {
     "tenses": [
       "move"
     ],
     "sentence": "Your move! Play!",
-    "id": 1507
+    "id": 1506
   },
   {
     "tenses": [
@@ -10928,7 +10921,7 @@
       "movements"
     ],
     "sentence": "You need to make only correct movements.",
-    "id": 1508
+    "id": 1507
   },
   {
     "tenses": [
@@ -10936,126 +10929,126 @@
       "moving picture"
     ],
     "sentence": "Let’s go to the movies.",
-    "id": 1509
+    "id": 1508
   },
   {
     "tenses": [
       "much"
     ],
     "sentence": "I like sugar too much to give it up!",
-    "id": 1510
+    "id": 1509
   },
   {
     "tenses": [
       "multiply"
     ],
     "sentence": "Can you now multiply it by 8?",
-    "id": 1511
+    "id": 1510
   },
   {
     "tenses": [
       "multitude"
     ],
     "sentence": "Then a multitude of angels appeared to Moses.",
-    "id": 1512
+    "id": 1511
   },
   {
     "tenses": [
       "municipal"
     ],
     "sentence": "Are you hooked up to municipal utilities?",
-    "id": 1513
+    "id": 1512
   },
   {
     "tenses": [
       "murder"
     ],
     "sentence": "The detective finally solved the mystery of the murder.",
-    "id": 1514
+    "id": 1513
   },
   {
     "tenses": [
       "murmur"
     ],
     "sentence": "There was a low murmur in the room as soon as Mrs. Blansky walked in.",
-    "id": 1515
+    "id": 1514
   },
   {
     "tenses": [
       "muscle"
     ],
     "sentence": "I like to lift weights to strengthen my muscles.",
-    "id": 1516
+    "id": 1515
   },
   {
     "tenses": [
       "museum"
     ],
     "sentence": "I love going to museums. Are there many in this town?",
-    "id": 1517
+    "id": 1516
   },
   {
     "tenses": [
       "music"
     ],
     "sentence": "Please turn the music down!",
-    "id": 1518
+    "id": 1517
   },
   {
     "tenses": [
       "musical"
     ],
     "sentence": "Her voice almost had a musical quality to it.",
-    "id": 1519
+    "id": 1518
   },
   {
     "tenses": [
       "mustache"
     ],
     "sentence": "Do you like handlebar mustaches?",
-    "id": 1520
+    "id": 1519
   },
   {
     "tenses": [
       "mustard"
     ],
     "sentence": "I don't want mustard on my hotdog, only ketchup.",
-    "id": 1521
+    "id": 1520
   },
   {
     "tenses": [
       "mute"
     ],
     "sentence": "Push the mute button on the phone so I can talk without being overheard.",
-    "id": 1522
+    "id": 1521
   },
   {
     "tenses": [
       "mutton"
     ],
     "sentence": "Grilled mutton with green jelly is my kind of meal.",
-    "id": 1523
+    "id": 1522
   },
   {
     "tenses": [
       "mutual"
     ],
     "sentence": "Making an agreement is to our mutual benefit.",
-    "id": 1524
+    "id": 1523
   },
   {
     "tenses": [
       "mysterious"
     ],
     "sentence": "There is something mysterious about his demeanor.",
-    "id": 1525
+    "id": 1524
   },
   {
     "tenses": [
       "mystery"
     ],
     "sentence": "It is certainly a mystery to me why they couldn't come.",
-    "id": 1526
+    "id": 1525
   },
   {
     "tenses": [
@@ -11063,56 +11056,56 @@
       "nailed"
     ],
     "sentence": "I would suggest your putting at least three nails in that board to make sure it holds.",
-    "id": 1527
+    "id": 1526
   },
   {
     "tenses": [
       "name"
     ],
     "sentence": "What was our teacher's name? I can't remember.",
-    "id": 1528
+    "id": 1527
   },
   {
     "tenses": [
       "napkin"
     ],
     "sentence": "Please put your napkin in your lap.",
-    "id": 1529
+    "id": 1528
   },
   {
     "tenses": [
       "narrative"
     ],
     "sentence": "You may now read the narrative from Agatha Christie's book if you'd like.",
-    "id": 1530
+    "id": 1529
   },
   {
     "tenses": [
       "narrow"
     ],
     "sentence": "Let's cut a very narrow passageway through this rock.",
-    "id": 1531
+    "id": 1530
   },
   {
     "tenses": [
       "nation"
     ],
     "sentence": "The nation has many problems, but not having a king and queen is not one of them.",
-    "id": 1532
+    "id": 1531
   },
   {
     "tenses": [
       "nationality"
     ],
     "sentence": "Would you know what his nationality is? From what country does he come?",
-    "id": 1533
+    "id": 1532
   },
   {
     "tenses": [
       "native"
     ],
     "sentence": "I am a native of New Hampshire so if I would run for office it would probably be there.",
-    "id": 1534
+    "id": 1533
   },
   {
     "tenses": [
@@ -11120,42 +11113,42 @@
       "naturally"
     ],
     "sentence": "The ingredients in this cake mix are all natural so the cake should be good for you.",
-    "id": 1535
+    "id": 1534
   },
   {
     "tenses": [
       "naturalization"
     ],
     "sentence": "If she doesn't have her naturalization papers I don't think we can allow her to come in.",
-    "id": 1536
+    "id": 1535
   },
   {
     "tenses": [
       "nature"
     ],
     "sentence": "What nature produces is an amazing thing.",
-    "id": 1537
+    "id": 1536
   },
   {
     "tenses": [
       "naughty"
     ],
     "sentence": "Depending on whether you are naughty or nice, you may receive presents from Santa Claus.",
-    "id": 1538
+    "id": 1537
   },
   {
     "tenses": [
       "near"
     ],
     "sentence": "Is your apartment near any kind of bicycle repair shop?",
-    "id": 1539
+    "id": 1538
   },
   {
     "tenses": [
       "nearly"
     ],
     "sentence": "It's nearly 8:00! Where are the children?",
-    "id": 1540
+    "id": 1539
   },
   {
     "tenses": [
@@ -11163,21 +11156,21 @@
       "necessarily"
     ],
     "sentence": "It is not necessary to use all my titles when referring to me.",
-    "id": 1541
+    "id": 1540
   },
   {
     "tenses": [
       "neck"
     ],
     "sentence": "Don't expose your neck or a vampire might bite you.",
-    "id": 1542
+    "id": 1541
   },
   {
     "tenses": [
       "necktie"
     ],
     "sentence": "Do you wear boring neckties all the time or do you have any colorful ones?",
-    "id": 1543
+    "id": 1542
   },
   {
     "tenses": [
@@ -11186,21 +11179,21 @@
       "needless"
     ],
     "sentence": "I am in need of forty dollars. Can you help me out?",
-    "id": 1544
+    "id": 1543
   },
   {
     "tenses": [
       "needed"
     ],
     "sentence": "This new community building has been needed for a long time now.",
-    "id": 1545
+    "id": 1544
   },
   {
     "tenses": [
       "needle"
     ],
     "sentence": "I'm scared of needles but not of doctors.",
-    "id": 1546
+    "id": 1545
   },
   {
     "tenses": [
@@ -11209,42 +11202,42 @@
       "neglectful"
     ],
     "sentence": "Don't neglect to rinse the sink after you use it.",
-    "id": 1547
+    "id": 1546
   },
   {
     "tenses": [
       "Negro"
     ],
     "sentence": "We have not used the term 'Negro' in many decades; we use, 'people of color.'",
-    "id": 1548
+    "id": 1547
   },
   {
     "tenses": [
       "neighbor"
     ],
     "sentence": "I have met most of my neighbors, but none of them have ever complained about the noise.",
-    "id": 1549
+    "id": 1548
   },
   {
     "tenses": [
       "neighborhood"
     ],
     "sentence": "I have never seen a neighborhood as friendly as yours.",
-    "id": 1550
+    "id": 1549
   },
   {
     "tenses": [
       "neither"
     ],
     "sentence": "Neither of us have ever given blood at the bloodbank, but maybe we should.",
-    "id": 1551
+    "id": 1550
   },
   {
     "tenses": [
       "nephew"
     ],
     "sentence": "If Henry is your nephew then that means he is Sam's cousin.",
-    "id": 1552
+    "id": 1551
   },
   {
     "tenses": [
@@ -11252,182 +11245,182 @@
       "nervously"
     ],
     "sentence": "I have never been so nervous before going on stage.",
-    "id": 1553
+    "id": 1552
   },
   {
     "tenses": [
       "neuter"
     ],
     "sentence": "You should neuter your cat so you don't end up with kittens by mistake.",
-    "id": 1554
+    "id": 1553
   },
   {
     "tenses": [
       "neutral"
     ],
     "sentence": "I'm sorry but I'm going to be staying neutral on this issue. You state your opinion alone.",
-    "id": 1555
+    "id": 1554
   },
   {
     "tenses": [
       "never"
     ],
     "sentence": "I have never said that I didn't want to join you. I just said I couldn't come quite that early.",
-    "id": 1556
+    "id": 1555
   },
   {
     "tenses": [
       "nevertheless"
     ],
     "sentence": "She said she was happy, but nevertheless made an angry scowl.",
-    "id": 1557
+    "id": 1556
   },
   {
     "tenses": [
       "newspaper"
     ],
     "sentence": "Is that a daily newspaper or weekly?",
-    "id": 1558
+    "id": 1557
   },
   {
     "tenses": [
       "next"
     ],
     "sentence": "May I sit next to you or is this seat being saved?",
-    "id": 1559
+    "id": 1558
   },
   {
     "tenses": [
       "nickel"
     ],
     "sentence": "A nickel is five pennies but a dime is two nickels.",
-    "id": 1560
+    "id": 1559
   },
   {
     "tenses": [
       "nicotine"
     ],
     "sentence": "If they took the nicotine out of cigarettes everyone would stop smoking.",
-    "id": 1561
+    "id": 1560
   },
   {
     "tenses": [
       "niece"
     ],
     "sentence": "I have two very beautiful nieces, daughters of my sister.",
-    "id": 1562
+    "id": 1561
   },
   {
     "tenses": [
       "night"
     ],
     "sentence": "Last night we didn't eat dinner until 11:00!",
-    "id": 1563
+    "id": 1562
   },
   {
     "tenses": [
       "nineteen"
     ],
     "sentence": "I've tried to call that place nineteen times. I guess I should try a twentieth time.",
-    "id": 1564
+    "id": 1563
   },
   {
     "tenses": [
       "ninety"
     ],
     "sentence": "My grandpa will turn ninety next month. We're going to give him a big birthday party.",
-    "id": 1565
+    "id": 1564
   },
   {
     "tenses": [
       "ninth"
     ],
     "sentence": "I'm ninth in line to get tickets. I hope they're not gone by the time I get up there.",
-    "id": 1566
+    "id": 1565
   },
   {
     "tenses": [
       "nobody"
     ],
     "sentence": "Nobody could ever say that I didn't try to explain the facts to you.",
-    "id": 1567
+    "id": 1566
   },
   {
     "tenses": [
       "noise"
     ],
     "sentence": "If you didn't make so much noise in the mornings, I wouldn't wake up so angry.",
-    "id": 1568
+    "id": 1567
   },
   {
     "tenses": [
       "nomination"
     ],
     "sentence": "Are there any more nominations for the office of president?",
-    "id": 1569
+    "id": 1568
   },
   {
     "tenses": [
       "none"
     ],
     "sentence": "None of the non-members have ever attempted to enter without asking permission.",
-    "id": 1570
+    "id": 1569
   },
   {
     "tenses": [
       "noon"
     ],
     "sentence": "I always take my lunch break at noon.",
-    "id": 1571
+    "id": 1570
   },
   {
     "tenses": [
       "northern"
     ],
     "sentence": "If it's a northern city then you know, of course, that they'll be more used to the bad weather.",
-    "id": 1572
+    "id": 1571
   },
   {
     "tenses": [
       "nose"
     ],
     "sentence": "My nose was broken when I as a little boy and fell out of a tree.",
-    "id": 1573
+    "id": 1572
   },
   {
     "tenses": [
       "nostril"
     ],
     "sentence": "Don't stick anything up your nostrils, for it might get stuck.",
-    "id": 1574
+    "id": 1573
   },
   {
     "tenses": [
       "notary"
     ],
     "sentence": "We will have to find a notary public to sign this document and make it official.",
-    "id": 1575
+    "id": 1574
   },
   {
     "tenses": [
       "notebook"
     ],
     "sentence": "May I carry your notebooks to school for you?",
-    "id": 1576
+    "id": 1575
   },
   {
     "tenses": [
       "nothing"
     ],
     "sentence": "There is nothing more irritating than someone always complaining.",
-    "id": 1577
+    "id": 1576
   },
   {
     "tenses": [
       "notify"
     ],
     "sentence": "Please notify all the tenants that their rents are going up next month.",
-    "id": 1578
+    "id": 1577
   },
   {
     "tenses": [
@@ -11437,98 +11430,98 @@
       "malnourishment"
     ],
     "sentence": "We must do something about the problem of malnourishment in our country. How can we get food to the people who really need it?",
-    "id": 1579
+    "id": 1578
   },
   {
     "tenses": [
       "novelty"
     ],
     "sentence": "Once the novelty of having a new bike wears out, she'll go back to playing with other kids.",
-    "id": 1580
+    "id": 1579
   },
   {
     "tenses": [
       "November"
     ],
     "sentence": "If I recall, people with November birthdays are Scorpios.",
-    "id": 1581
+    "id": 1580
   },
   {
     "tenses": [
       "now"
     ],
     "sentence": "Now and then I like to smoke a pipe even though I know it's bad for me.",
-    "id": 1582
+    "id": 1581
   },
   {
     "tenses": [
       "nuisance"
     ],
     "sentence": "Don't be such a nuisance! Calm down and just listen.",
-    "id": 1583
+    "id": 1582
   },
   {
     "tenses": [
       "number"
     ],
     "sentence": "There are a number of things I'd like you to do for me when you have a chance.",
-    "id": 1584
+    "id": 1583
   },
   {
     "tenses": [
       "numerous"
     ],
     "sentence": "The mountain ranges are too numerous to count.",
-    "id": 1585
+    "id": 1584
   },
   {
     "tenses": [
       "nurse"
     ],
     "sentence": "I will have the nurse call you to help you determine your medical problem.",
-    "id": 1586
+    "id": 1585
   },
   {
     "tenses": [
       "o'clock"
     ],
     "sentence": "Is it seven o'clock in the morning or the evening?",
-    "id": 1587
+    "id": 1586
   },
   {
     "tenses": [
       "oar"
     ],
     "sentence": "Take an oar and start paddling the canoe.",
-    "id": 1588
+    "id": 1587
   },
   {
     "tenses": [
       "oath"
     ],
     "sentence": "He took a solemn oath to never commit a crime again.",
-    "id": 1589
+    "id": 1588
   },
   {
     "tenses": [
       "oatmeal"
     ],
     "sentence": "Would you like oatmeal or eggs and bacon for breakfast?",
-    "id": 1590
+    "id": 1589
   },
   {
     "tenses": [
       "obedience"
     ],
     "sentence": "I expect complete obedience from all dogs entering our contest.",
-    "id": 1591
+    "id": 1590
   },
   {
     "tenses": [
       "obedient"
     ],
     "sentence": "I have been nothing but your obedient servant the last ten years.",
-    "id": 1592
+    "id": 1591
   },
   {
     "tenses": [
@@ -11537,7 +11530,7 @@
       "obeyed"
     ],
     "sentence": "She refused to pledge to obey her husband, only to honor him.",
-    "id": 1593
+    "id": 1592
   },
   {
     "tenses": [
@@ -11546,35 +11539,35 @@
       "objected"
     ],
     "sentence": "I object to your calling me by that name. Give the baby an object to play with and maybe he'll quit crying.",
-    "id": 1594
+    "id": 1593
   },
   {
     "tenses": [
       "objection"
     ],
     "sentence": "They have an objection against taxation of property even though I think they're wrong.",
-    "id": 1595
+    "id": 1594
   },
   {
     "tenses": [
       "obligation"
     ],
     "sentence": "We have an obligation to our children to find a solution to bad education.",
-    "id": 1596
+    "id": 1595
   },
   {
     "tenses": [
       "oblige"
     ],
     "sentence": "If you could oblige me for a moment, I'd like to digress a bit on my talk.",
-    "id": 1597
+    "id": 1596
   },
   {
     "tenses": [
       "observation"
     ],
     "sentence": "It has been my observation that no one cares much for this item on the menu.",
-    "id": 1598
+    "id": 1597
   },
   {
     "tenses": [
@@ -11583,42 +11576,42 @@
       "observing"
     ],
     "sentence": "Why don't you observe the baboons from afar and document their movements?",
-    "id": 1599
+    "id": 1598
   },
   {
     "tenses": [
       "obviously"
     ],
     "sentence": "We obviously have a traitor in our midst so we better develop a plan to find them.",
-    "id": 1600
+    "id": 1599
   },
   {
     "tenses": [
       "occasion"
     ],
     "sentence": "On occasion I go to the movies but not that often.",
-    "id": 1601
+    "id": 1600
   },
   {
     "tenses": [
       "occasional"
     ],
     "sentence": "There are occasional passersby who jog but most just stroll.",
-    "id": 1602
+    "id": 1601
   },
   {
     "tenses": [
       "occasionally"
     ],
     "sentence": "Would you occasionally check on my cat to make sure she is okay?",
-    "id": 1603
+    "id": 1602
   },
   {
     "tenses": [
       "occupation"
     ],
     "sentence": "Sir, what is your occupation, if I may ask?",
-    "id": 1604
+    "id": 1603
   },
   {
     "tenses": [
@@ -11627,42 +11620,42 @@
       "occupied"
     ],
     "sentence": "It is a fact of natural law that no two things can occupy the same space.",
-    "id": 1605
+    "id": 1604
   },
   {
     "tenses": [
       "occur"
     ],
     "sentence": "Did it ever occur to you that I might be interested in joining your group?",
-    "id": 1606
+    "id": 1605
   },
   {
     "tenses": [
       "occurrence"
     ],
     "sentence": "We have had one occurrence of dishonesty but nothing worth mentioning.",
-    "id": 1607
+    "id": 1606
   },
   {
     "tenses": [
       "ocean"
     ],
     "sentence": "I love to visit the ocean, if only to sit and watch the rolling waves.",
-    "id": 1608
+    "id": 1607
   },
   {
     "tenses": [
       "October"
     ],
     "sentence": "October can be the most beautiful month of the year because all the leaves are changing colors.",
-    "id": 1609
+    "id": 1608
   },
   {
     "tenses": [
       "oculist"
     ],
     "sentence": "Maybe you should go to an oculist to see if there's a problem with your eyes.",
-    "id": 1610
+    "id": 1609
   },
   {
     "tenses": [
@@ -11670,7 +11663,7 @@
       "odorous"
     ],
     "sentence": "The word 'odor' is usually associated with a bad smell, whereas the word 'fragrance' is usually thought of as a good smell.",
-    "id": 1611
+    "id": 1610
   },
   {
     "tenses": [
@@ -11678,7 +11671,7 @@
       "offended"
     ],
     "sentence": "I am offended that you would even ask me such a question!",
-    "id": 1612
+    "id": 1611
   },
   {
     "tenses": [
@@ -11686,7 +11679,7 @@
       "offensive"
     ],
     "sentence": "I take no offense from your statement. Please don't sound so offensive when you address the committee tomorrow.",
-    "id": 1613
+    "id": 1612
   },
   {
     "tenses": [
@@ -11695,14 +11688,14 @@
       "offered"
     ],
     "sentence": "I have been offered a new position with the police department so I'm contemplating accepting it.",
-    "id": 1614
+    "id": 1613
   },
   {
     "tenses": [
       "office"
     ],
     "sentence": "She works in a brand-new office on 54th Street.",
-    "id": 1615
+    "id": 1614
   },
   {
     "tenses": [
@@ -11710,35 +11703,35 @@
       "officially"
     ],
     "sentence": "Officially, you are in no position to be telling me what to do.",
-    "id": 1616
+    "id": 1615
   },
   {
     "tenses": [
       "often"
     ],
     "sentence": "I have often wondered whether the universe is expanding or not.",
-    "id": 1617
+    "id": 1616
   },
   {
     "tenses": [
       "olive"
     ],
     "sentence": "Usually one puts an olive in a martini, right?",
-    "id": 1618
+    "id": 1617
   },
   {
     "tenses": [
       "once"
     ],
     "sentence": "Ants have only been a problem with our annual picnics once.",
-    "id": 1619
+    "id": 1618
   },
   {
     "tenses": [
       "onion"
     ],
     "sentence": "Why are you crying? I'm cutting onions.",
-    "id": 1620
+    "id": 1619
   },
   {
     "tenses": [
@@ -11747,14 +11740,14 @@
       "openness"
     ],
     "sentence": "The package had been opened by someone before it arrived on my desk.",
-    "id": 1621
+    "id": 1620
   },
   {
     "tenses": [
       "opera"
     ],
     "sentence": "Have you ever talked to a professional opera singer in person?",
-    "id": 1622
+    "id": 1621
   },
   {
     "tenses": [
@@ -11763,21 +11756,21 @@
       "operation"
     ],
     "sentence": "If you'll show me how to operate this machine, I'll get to work using it.",
-    "id": 1623
+    "id": 1622
   },
   {
     "tenses": [
       "opinion"
     ],
     "sentence": "Is it your opinion that all who want to enter must first take off their shoes?",
-    "id": 1624
+    "id": 1623
   },
   {
     "tenses": [
       "opportunity"
     ],
     "sentence": "If you'll just give me an opportunity to work with you, you'll see how efficient I can be.",
-    "id": 1625
+    "id": 1624
   },
   {
     "tenses": [
@@ -11785,21 +11778,21 @@
       "opposing"
     ],
     "sentence": "I do not oppose your new look, but you sure will get some looks!",
-    "id": 1626
+    "id": 1625
   },
   {
     "tenses": [
       "opposite"
     ],
     "sentence": "What is the opposite of everything? Nothing.",
-    "id": 1627
+    "id": 1626
   },
   {
     "tenses": [
       "opposition"
     ],
     "sentence": "Our group is in opposition to all of the strategies that have been proposed so far.",
-    "id": 1628
+    "id": 1627
   },
   {
     "tenses": [
@@ -11808,28 +11801,28 @@
       "oppressive"
     ],
     "sentence": "Do you come from a race that has felt oppressed in the past?",
-    "id": 1629
+    "id": 1628
   },
   {
     "tenses": [
       "orange"
     ],
     "sentence": "You might say that the sun is orange.",
-    "id": 1630
+    "id": 1629
   },
   {
     "tenses": [
       "orchard"
     ],
     "sentence": "My grandfather oversaw an apple orchard the size of a football field.",
-    "id": 1631
+    "id": 1630
   },
   {
     "tenses": [
       "orchestra"
     ],
     "sentence": "I played French horn in the city orchestra for fifteen years.",
-    "id": 1632
+    "id": 1631
   },
   {
     "tenses": [
@@ -11837,14 +11830,14 @@
       "ordained"
     ],
     "sentence": "Is he an ordained minister or does he just act like he knows what's going on?",
-    "id": 1633
+    "id": 1632
   },
   {
     "tenses": [
       "ordinance"
     ],
     "sentence": "The county has now passed two new ordinances concerning agricultural land.",
-    "id": 1634
+    "id": 1633
   },
   {
     "tenses": [
@@ -11852,14 +11845,14 @@
       "ordinarily"
     ],
     "sentence": "Ordinarily I wouldn't want to drive my car, but since the weather is so bad, I think I will.",
-    "id": 1635
+    "id": 1634
   },
   {
     "tenses": [
       "organ"
     ],
     "sentence": "If you can play the piano, does that mean you can play the organ too? No it doesn't. Your feet must play a bigger role with an organ.",
-    "id": 1636
+    "id": 1635
   },
   {
     "tenses": [
@@ -11867,21 +11860,21 @@
       "organizational"
     ],
     "sentence": "To what organization do you belong?",
-    "id": 1637
+    "id": 1636
   },
   {
     "tenses": [
       "original"
     ],
     "sentence": "Would you like to order the original formula fried chicken or the extra crispy fried chicken?",
-    "id": 1638
+    "id": 1637
   },
   {
     "tenses": [
       "originally"
     ],
     "sentence": "Originally I had wanted to go to a movie, but now I think I want to stay home.",
-    "id": 1639
+    "id": 1638
   },
   {
     "tenses": [
@@ -11889,42 +11882,42 @@
       "ornamental"
     ],
     "sentence": "We could put ornaments on the tree to liven things up around here.",
-    "id": 1640
+    "id": 1639
   },
   {
     "tenses": [
       "orphan"
     ],
     "sentence": "Oliver was an orphan because he didn't have a mother and a father.",
-    "id": 1641
+    "id": 1640
   },
   {
     "tenses": [
       "otherwise"
     ],
     "sentence": "You could take me to the doctor's office; otherwise you could stay home with the kids.",
-    "id": 1642
+    "id": 1641
   },
   {
     "tenses": [
       "ought"
     ],
     "sentence": "We really ought to see if we can collect some firewood for a campfire later before it gets too dark.",
-    "id": 1643
+    "id": 1642
   },
   {
     "tenses": [
       "ounce"
     ],
     "sentence": "One cup consists of 8 fluid ounces.",
-    "id": 1644
+    "id": 1643
   },
   {
     "tenses": [
       "ours"
     ],
     "sentence": "Whose candy is the best tasting? Ours is the best.",
-    "id": 1645
+    "id": 1644
   },
   {
     "tenses": [
@@ -11932,21 +11925,21 @@
       "outrageously"
     ],
     "sentence": "Your outfit is so outrageous, you'll probably be the hit of the party.",
-    "id": 1646
+    "id": 1645
   },
   {
     "tenses": [
       "overalls"
     ],
     "sentence": "Farmers wear overalls but you can too.",
-    "id": 1647
+    "id": 1646
   },
   {
     "tenses": [
       "overcoat"
     ],
     "sentence": "May I help you put on your overcoat? It's awfully cold out there.",
-    "id": 1648
+    "id": 1647
   },
   {
     "tenses": [
@@ -11955,7 +11948,7 @@
       "overtaken"
     ],
     "sentence": "If we hurry we can overtake them by car.",
-    "id": 1649
+    "id": 1648
   },
   {
     "tenses": [
@@ -11964,14 +11957,14 @@
       "ownership"
     ],
     "sentence": "Who is the owner of this parcel or land?",
-    "id": 1650
+    "id": 1649
   },
   {
     "tenses": [
       "oyster"
     ],
     "sentence": "You would not believe what I found in my oyster. A pearl!",
-    "id": 1651
+    "id": 1650
   },
   {
     "tenses": [
@@ -11979,28 +11972,28 @@
       "pacing"
     ],
     "sentence": "I can't keep pace with you. You move too fast.",
-    "id": 1652
+    "id": 1651
   },
   {
     "tenses": [
       "package"
     ],
     "sentence": "How much will it cost me to send this package that weighs about fifteen pounds?",
-    "id": 1653
+    "id": 1652
   },
   {
     "tenses": [
       "page"
     ],
     "sentence": "How many pages have you written on your book so far?",
-    "id": 1654
+    "id": 1653
   },
   {
     "tenses": [
       "pageant"
     ],
     "sentence": "The pageant includes women representing most countries of the world.",
-    "id": 1655
+    "id": 1654
   },
   {
     "tenses": [
@@ -12008,14 +12001,14 @@
       "pay"
     ],
     "sentence": "If you've paid the bill, why don't we get going?",
-    "id": 1656
+    "id": 1655
   },
   {
     "tenses": [
       "pail"
     ],
     "sentence": "Fetch me that pail of water over there, would you?",
-    "id": 1657
+    "id": 1656
   },
   {
     "tenses": [
@@ -12023,7 +12016,7 @@
       "painful"
     ],
     "sentence": "It's too painful for me to talk about the night of the bombing.",
-    "id": 1658
+    "id": 1657
   },
   {
     "tenses": [
@@ -12032,42 +12025,42 @@
       "painting"
     ],
     "sentence": "Why don't we put a fresh coat of paint on these dreary walls?",
-    "id": 1659
+    "id": 1658
   },
   {
     "tenses": [
       "pair"
     ],
     "sentence": "How many pairs of shoes do you have? More than you can count.",
-    "id": 1660
+    "id": 1659
   },
   {
     "tenses": [
       "palace"
     ],
     "sentence": "I would love to live in a palace and be treated like a queen.",
-    "id": 1661
+    "id": 1660
   },
   {
     "tenses": [
       "pale"
     ],
     "sentence": "Her face was very pale when she found out that she'd lost her job.",
-    "id": 1662
+    "id": 1661
   },
   {
     "tenses": [
       "palm"
     ],
     "sentence": "Let's move to Florida where palm trees are more in abundance.",
-    "id": 1663
+    "id": 1662
   },
   {
     "tenses": [
       "pandemonium"
     ],
     "sentence": "As soon as the sirens went off, the place turned to pandemonium.",
-    "id": 1664
+    "id": 1663
   },
   {
     "tenses": [
@@ -12075,84 +12068,84 @@
       "pantry"
     ],
     "sentence": "My next house will have lots of pantry space in the kitchen.",
-    "id": 1665
+    "id": 1664
   },
   {
     "tenses": [
       "pants"
     ],
     "sentence": "Should I wear pants or a dress?",
-    "id": 1666
+    "id": 1665
   },
   {
     "tenses": [
       "papa"
     ],
     "sentence": "If your papa is always so cranky, why do you ask him anything?",
-    "id": 1667
+    "id": 1666
   },
   {
     "tenses": [
       "paper"
     ],
     "sentence": "That check is not worth the paper that it's written on!",
-    "id": 1668
+    "id": 1667
   },
   {
     "tenses": [
       "parachute"
     ],
     "sentence": "If we ride in that plane will we be wearing parachutes?",
-    "id": 1669
+    "id": 1668
   },
   {
     "tenses": [
       "parade"
     ],
     "sentence": "When I was in the band we always marched in the Thanksgiving Day Parade.",
-    "id": 1670
+    "id": 1669
   },
   {
     "tenses": [
       "paradise"
     ],
     "sentence": "Visiting you is like going to paradise; you are so hospitable.",
-    "id": 1671
+    "id": 1670
   },
   {
     "tenses": [
       "paragraph"
     ],
     "sentence": "I need to write a couple more paragraphs and then I should be finished with the chapter.",
-    "id": 1672
+    "id": 1671
   },
   {
     "tenses": [
       "parallel"
     ],
     "sentence": "If two lines never touch in space, they might be parallel, but not necessarily. If two lines never touch on a plane, then they are parallel.",
-    "id": 1673
+    "id": 1672
   },
   {
     "tenses": [
       "parcel"
     ],
     "sentence": "Why don't I help you carry your parcels and then we can walk much faster.",
-    "id": 1674
+    "id": 1673
   },
   {
     "tenses": [
       "pardon"
     ],
     "sentence": "Pardon me sir; did you notice that your coat is in the mud?",
-    "id": 1675
+    "id": 1674
   },
   {
     "tenses": [
       "parent"
     ],
     "sentence": "Are your parents nice to your friends?",
-    "id": 1676
+    "id": 1675
   },
   {
     "tenses": [
@@ -12160,21 +12153,21 @@
       "parking"
     ],
     "sentence": "Don't even think of parking your car on the grass.",
-    "id": 1677
+    "id": 1676
   },
   {
     "tenses": [
       "parliament"
     ],
     "sentence": "Is the parliament in Great Britain in session these days?",
-    "id": 1678
+    "id": 1677
   },
   {
     "tenses": [
       "parlor"
     ],
     "sentence": "Let us proceed from the parlor to the dining room, if you please.",
-    "id": 1679
+    "id": 1678
   },
   {
     "tenses": [
@@ -12183,7 +12176,7 @@
       "parted"
     ],
     "sentence": "Do you like your hair parted in the middle, on the left, or on the right?",
-    "id": 1680
+    "id": 1679
   },
   {
     "tenses": [
@@ -12191,7 +12184,7 @@
       "partially"
     ],
     "sentence": "I feel partially responsible for your having to do it over again. May I help you?",
-    "id": 1681
+    "id": 1680
   },
   {
     "tenses": [
@@ -12199,21 +12192,21 @@
       "particularly"
     ],
     "sentence": "He is extremely particular about what he eats -- even more so than most vegetarians I know.",
-    "id": 1682
+    "id": 1681
   },
   {
     "tenses": [
       "partner"
     ],
     "sentence": "Would you like to be my partner for the next dance?",
-    "id": 1683
+    "id": 1682
   },
   {
     "tenses": [
       "party"
     ],
     "sentence": "Let's have a big party to celebrate the ending of the war.",
-    "id": 1684
+    "id": 1683
   },
   {
     "tenses": [
@@ -12221,14 +12214,14 @@
       "passageway"
     ],
     "sentence": "There are two passageways leading from this subway tunnel to the next.",
-    "id": 1685
+    "id": 1684
   },
   {
     "tenses": [
       "passenger"
     ],
     "sentence": "How many passengers can the bus handle?",
-    "id": 1686
+    "id": 1685
   },
   {
     "tenses": [
@@ -12236,35 +12229,35 @@
       "passionate"
     ],
     "sentence": "He was passionate with the woman until he found out she was a man.",
-    "id": 1687
+    "id": 1686
   },
   {
     "tenses": [
       "passport"
     ],
     "sentence": "Does one have to have a passport to go the Canada?",
-    "id": 1688
+    "id": 1687
   },
   {
     "tenses": [
       "past"
     ],
     "sentence": "Tell me all about your past. Are there any skeletons in the closet?",
-    "id": 1689
+    "id": 1688
   },
   {
     "tenses": [
       "pastry"
     ],
     "sentence": "My weakness is French pastry. I can't pass it up.",
-    "id": 1690
+    "id": 1689
   },
   {
     "tenses": [
       "pasture"
     ],
     "sentence": "The farmer's pasture only had cows grazing on it. What happened to the goats?",
-    "id": 1691
+    "id": 1690
   },
   {
     "tenses": [
@@ -12272,21 +12265,21 @@
       "patently"
     ],
     "sentence": "What you have said is patently false. Would you be interested in knowing the truth?",
-    "id": 1692
+    "id": 1691
   },
   {
     "tenses": [
       "patience"
     ],
     "sentence": "I am fast losing patience with your childish ways of dealing with things.",
-    "id": 1693
+    "id": 1692
   },
   {
     "tenses": [
       "patient"
     ],
     "sentence": "You can't be my patient because that would be a conflict of interest.",
-    "id": 1694
+    "id": 1693
   },
   {
     "tenses": [
@@ -12294,7 +12287,7 @@
       "patriotic"
     ],
     "sentence": "Would you call him a patriot just because he went and fought for his country?",
-    "id": 1695
+    "id": 1694
   },
   {
     "tenses": [
@@ -12302,21 +12295,21 @@
       "patronage"
     ],
     "sentence": "I have been a patron of that establishment for 17 years. You'd think they'd treat me better.",
-    "id": 1696
+    "id": 1695
   },
   {
     "tenses": [
       "pattern"
     ],
     "sentence": "She has a pattern of bad behavior; this is not the first time.",
-    "id": 1697
+    "id": 1696
   },
   {
     "tenses": [
       "pavement"
     ],
     "sentence": "Would you like to walk on the pavement or is it too hot?",
-    "id": 1698
+    "id": 1697
   },
   {
     "tenses": [
@@ -12324,21 +12317,21 @@
       "paid"
     ],
     "sentence": "I have paid the price for my mistakes and now I want to move on.",
-    "id": 1699
+    "id": 1698
   },
   {
     "tenses": [
       "payment"
     ],
     "sentence": "I can make one payment right now but that will have to suffice.",
-    "id": 1700
+    "id": 1699
   },
   {
     "tenses": [
       "peace"
     ],
     "sentence": "Peace, brother!",
-    "id": 1701
+    "id": 1700
   },
   {
     "tenses": [
@@ -12346,42 +12339,42 @@
       "peacefully"
     ],
     "sentence": "Don't you imagine that we can settle this issue in a peaceful way?",
-    "id": 1702
+    "id": 1701
   },
   {
     "tenses": [
       "peach"
     ],
     "sentence": "I'd like to order a peach schnapps.",
-    "id": 1703
+    "id": 1702
   },
   {
     "tenses": [
       "peanut"
     ],
     "sentence": "I've made us some hot boiled peanuts to take to the football game.",
-    "id": 1704
+    "id": 1703
   },
   {
     "tenses": [
       "pear"
     ],
     "sentence": "I only eat fresh pears, never canned pears.",
-    "id": 1705
+    "id": 1704
   },
   {
     "tenses": [
       "pearl"
     ],
     "sentence": "Jackie's pearl necklace was absolutely amazing.",
-    "id": 1706
+    "id": 1705
   },
   {
     "tenses": [
       "peasant"
     ],
     "sentence": "You dress like a peasant and talk like a peasant yet you say that you are not a peasant.",
-    "id": 1707
+    "id": 1706
   },
   {
     "tenses": [
@@ -12389,7 +12382,7 @@
       "peculiarly"
     ],
     "sentence": "He was quite peculiar about the food that he could be served.",
-    "id": 1708
+    "id": 1707
   },
   {
     "tenses": [
@@ -12397,14 +12390,14 @@
       "peddle"
     ],
     "sentence": "My dad used to be a peddler in the old days.",
-    "id": 1709
+    "id": 1708
   },
   {
     "tenses": [
       "pen"
     ],
     "sentence": "You must sign it with a felt tip pen.",
-    "id": 1710
+    "id": 1709
   },
   {
     "tenses": [
@@ -12412,21 +12405,21 @@
       "penalties"
     ],
     "sentence": "Does one get a penalty for answering the question wrong?",
-    "id": 1711
+    "id": 1710
   },
   {
     "tenses": [
       "pencil"
     ],
     "sentence": "You must use a number 2 pencil if you want the computer to pick up your answers.",
-    "id": 1712
+    "id": 1711
   },
   {
     "tenses": [
       "penicillin"
     ],
     "sentence": "Who discovered penicillin? They sure were important.",
-    "id": 1713
+    "id": 1712
   },
   {
     "tenses": [
@@ -12434,28 +12427,28 @@
       "pennies"
     ],
     "sentence": "I have a piggy bank so full of pennies that no one person would be able to lift it.",
-    "id": 1714
+    "id": 1713
   },
   {
     "tenses": [
       "pension"
     ],
     "sentence": "I have a very small pension to look forward to but it sure won't be enough to live on.",
-    "id": 1715
+    "id": 1714
   },
   {
     "tenses": [
       "people"
     ],
     "sentence": "The people are so friendly in these parts of Nebraska.",
-    "id": 1716
+    "id": 1715
   },
   {
     "tenses": [
       "pepper"
     ],
     "sentence": "Are you sneezing from the pepper or from your sinuses?",
-    "id": 1717
+    "id": 1716
   },
   {
     "tenses": [
@@ -12464,21 +12457,21 @@
       "perceived"
     ],
     "sentence": "Is it possible that he could not perceive what was going on?",
-    "id": 1718
+    "id": 1717
   },
   {
     "tenses": [
       "percent"
     ],
     "sentence": "What percent of 459 is 32.13? 7 percent.",
-    "id": 1719
+    "id": 1718
   },
   {
     "tenses": [
       "percentage"
     ],
     "sentence": "A small percentage of the population is actually looking for the truth.",
-    "id": 1720
+    "id": 1719
   },
   {
     "tenses": [
@@ -12486,7 +12479,7 @@
       "perched"
     ],
     "sentence": "Do you see that little bird perched up there on the tree?",
-    "id": 1721
+    "id": 1720
   },
   {
     "tenses": [
@@ -12495,7 +12488,7 @@
       "perfectly"
     ],
     "sentence": "How are you? I feel perfectly fine, thank you.",
-    "id": 1722
+    "id": 1721
   },
   {
     "tenses": [
@@ -12503,7 +12496,7 @@
       "perfectionist"
     ],
     "sentence": "Does everything really have to be done to perfection for you?",
-    "id": 1723
+    "id": 1722
   },
   {
     "tenses": [
@@ -12511,21 +12504,21 @@
       "performance"
     ],
     "sentence": "I can't imagine a more breath-taking performance.",
-    "id": 1724
+    "id": 1723
   },
   {
     "tenses": [
       "perfume"
     ],
     "sentence": "Perfume sometimes helps you get a date.",
-    "id": 1725
+    "id": 1724
   },
   {
     "tenses": [
       "perhaps"
     ],
     "sentence": "Perhaps we will go to Canada and perhaps not.",
-    "id": 1726
+    "id": 1725
   },
   {
     "tenses": [
@@ -12533,21 +12526,21 @@
       "perilous"
     ],
     "sentence": "The only thing we heard all day was the perils of Pauline. I can't take it anymore!",
-    "id": 1727
+    "id": 1726
   },
   {
     "tenses": [
       "period"
     ],
     "sentence": "Should a period go here or a semi-colon?",
-    "id": 1728
+    "id": 1727
   },
   {
     "tenses": [
       "perish"
     ],
     "sentence": "I have to eat something or I shall perish, for sure.",
-    "id": 1729
+    "id": 1728
   },
   {
     "tenses": [
@@ -12555,49 +12548,49 @@
       "permanently"
     ],
     "sentence": "Is that permanent ink you're using or will it rub off?",
-    "id": 1730
+    "id": 1729
   },
   {
     "tenses": [
       "permissible"
     ],
     "sentence": "Is it permissible to include controversial concepts in this newsletter?",
-    "id": 1731
+    "id": 1730
   },
   {
     "tenses": [
       "permission"
     ],
     "sentence": "I will never give you permission to live on my land until you show some responsibility.",
-    "id": 1732
+    "id": 1731
   },
   {
     "tenses": [
       "perpetual"
     ],
     "sentence": "People are always trying to create perpetual motion machines but have so far been unsuccessful.",
-    "id": 1733
+    "id": 1732
   },
   {
     "tenses": [
       "persistence"
     ],
     "sentence": "Persistence is the key! Keep trying until you succeed.",
-    "id": 1734
+    "id": 1733
   },
   {
     "tenses": [
       "person"
     ],
     "sentence": "I'd like to make a person-to-person call, please, operator.",
-    "id": 1735
+    "id": 1734
   },
   {
     "tenses": [
       "personally"
     ],
     "sentence": "Personally, I could never stand her, but I suppose there are some people who like her.",
-    "id": 1736
+    "id": 1735
   },
   {
     "tenses": [
@@ -12605,7 +12598,7 @@
       "perspire"
     ],
     "sentence": "Perspiration completely soaked his shirt during the volleyball game.",
-    "id": 1737
+    "id": 1736
   },
   {
     "tenses": [
@@ -12613,14 +12606,14 @@
       "persuasion"
     ],
     "sentence": "Would it be possible for me to persuade you to move to another area -- one, where you'd be more comfortable?",
-    "id": 1738
+    "id": 1737
   },
   {
     "tenses": [
       "petition"
     ],
     "sentence": "Please sign my petition to get this bill on the ballot for the upcoming election.",
-    "id": 1739
+    "id": 1738
   },
   {
     "tenses": [
@@ -12629,7 +12622,7 @@
       "phenomenally"
     ],
     "sentence": "Do you believe in the phenomenon of aliens or not?",
-    "id": 1740
+    "id": 1739
   },
   {
     "tenses": [
@@ -12638,161 +12631,161 @@
       "philosophically"
     ],
     "sentence": "Philosophy includes studying knowledge and humans.",
-    "id": 1741
+    "id": 1740
   },
   {
     "tenses": [
       "phonograph"
     ],
     "sentence": "Nobody says 'phonograph' anymore. Few say 'record player' also. People sometimes say 'turntable.'",
-    "id": 1742
+    "id": 1741
   },
   {
     "tenses": [
       "phrase"
     ],
     "sentence": "Give me a couple phrases that don't sound so mocking.",
-    "id": 1743
+    "id": 1742
   },
   {
     "tenses": [
       "physician"
     ],
     "sentence": "Is she a physician or a doctor of philosophy?",
-    "id": 1744
+    "id": 1743
   },
   {
     "tenses": [
       "piano"
     ],
     "sentence": "He took many years of piano lessons but still doesn't play that well.",
-    "id": 1745
+    "id": 1744
   },
   {
     "tenses": [
       "piazza"
     ],
     "sentence": "We met in a piazza in Rome and it was so romantic.",
-    "id": 1746
+    "id": 1745
   },
   {
     "tenses": [
       "pickle"
     ],
     "sentence": "Where do pickles come from? Cucumbers, of course.",
-    "id": 1747
+    "id": 1746
   },
   {
     "tenses": [
       "picnic"
     ],
     "sentence": "Why don't we make a nice picnic lunch to take to the park?",
-    "id": 1748
+    "id": 1747
   },
   {
     "tenses": [
       "picnicking"
     ],
     "sentence": "It may seem like we're always picnicking on weekends but we also go fishing.",
-    "id": 1749
+    "id": 1748
   },
   {
     "tenses": [
       "picture"
     ],
     "sentence": "Can you picture your books being published?",
-    "id": 1750
+    "id": 1749
   },
   {
     "tenses": [
       "piece"
     ],
     "sentence": "I have a mind to give you a piece of my mind but maybe I should refrain from it. Yes, my mind's made up.",
-    "id": 1751
+    "id": 1750
   },
   {
     "tenses": [
       "pierced"
     ],
     "sentence": "Does she have pierced ears? I'll say! She has about 8 holes!",
-    "id": 1752
+    "id": 1751
   },
   {
     "tenses": [
       "pigeon"
     ],
     "sentence": "We just sat on the park bench and watched the pigeons eat crumbs.",
-    "id": 1753
+    "id": 1752
   },
   {
     "tenses": [
       "pilgrim"
     ],
     "sentence": "Pilgrims in America had a big feast with the native Americans so now we celebrate Thanksgiving.",
-    "id": 1754
+    "id": 1753
   },
   {
     "tenses": [
       "pillar"
     ],
     "sentence": "The pillars in the fronts of buildings are usually painted white, white, white.",
-    "id": 1755
+    "id": 1754
   },
   {
     "tenses": [
       "pillow"
     ],
     "sentence": "I can't sleep with a pillow; it gives me a neck ache.",
-    "id": 1756
+    "id": 1755
   },
   {
     "tenses": [
       "pineapple"
     ],
     "sentence": "My grandmom used to make a pineapple upside-down cake and it was very tasty.",
-    "id": 1757
+    "id": 1756
   },
   {
     "tenses": [
       "pioneer"
     ],
     "sentence": "Do you feel like a pioneer of new technology?",
-    "id": 1758
+    "id": 1757
   },
   {
     "tenses": [
       "pistol"
     ],
     "sentence": "I have excellent aim with a pistol, but you can forget about my shooting a rifle.",
-    "id": 1759
+    "id": 1758
   },
   {
     "tenses": [
       "pitch"
     ],
     "sentence": "The President threw out the first pitch to mark the start of the new baseball season.",
-    "id": 1760
+    "id": 1759
   },
   {
     "tenses": [
       "pitcher"
     ],
     "sentence": "A couple glasses of water won't be enough; we need a pitcher of water.",
-    "id": 1761
+    "id": 1760
   },
   {
     "tenses": [
       "pitiful"
     ],
     "sentence": "The little girl looked lost and pitiful and wore tattered old rags.",
-    "id": 1762
+    "id": 1761
   },
   {
     "tenses": [
       "pitiless"
     ],
     "sentence": "How can you be so pitiless? Don't you have any mercy?",
-    "id": 1763
+    "id": 1762
   },
   {
     "tenses": [
@@ -12800,28 +12793,28 @@
       "pity"
     ],
     "sentence": "Are you telling me you are going to pityingly enter his office in order to ask for a raise?",
-    "id": 1764
+    "id": 1763
   },
   {
     "tenses": [
       "place"
     ],
     "sentence": "It is not my place to fire her but I can talk to the department manager about the possibility.",
-    "id": 1765
+    "id": 1764
   },
   {
     "tenses": [
       "plague"
     ],
     "sentence": "The next year, a terrible plague spread through the little town and killed everyone.",
-    "id": 1766
+    "id": 1765
   },
   {
     "tenses": [
       "plain"
     ],
     "sentence": "It's as plain as the nose on your face; the sky is blue.",
-    "id": 1767
+    "id": 1766
   },
   {
     "tenses": [
@@ -12830,105 +12823,105 @@
       "planning"
     ],
     "sentence": "Give me one more day to make plans for the excavation.",
-    "id": 1768
+    "id": 1767
   },
   {
     "tenses": [
       "planned"
     ],
     "sentence": "Have you planned the birthday party for Lucy yet? I can help you.",
-    "id": 1769
+    "id": 1768
   },
   {
     "tenses": [
       "plant"
     ],
     "sentence": "I used to maintain a nice window box with a few plants but I just don't have the desire anymore.",
-    "id": 1770
+    "id": 1769
   },
   {
     "tenses": [
       "plaster"
     ],
     "sentence": "What about making a plaster head of the martyr so we can display it at upcoming special services?",
-    "id": 1771
+    "id": 1770
   },
   {
     "tenses": [
       "platform"
     ],
     "sentence": "From which platform would you like to see if we can catch a glimpse of her going by?",
-    "id": 1772
+    "id": 1771
   },
   {
     "tenses": [
       "pleasant"
     ],
     "sentence": "He was pleasant enough that day, but he isn't most days.",
-    "id": 1773
+    "id": 1772
   },
   {
     "tenses": [
       "please"
     ],
     "sentence": "If you please, could you play that song one more time?",
-    "id": 1774
+    "id": 1773
   },
   {
     "tenses": [
       "pleasure"
     ],
     "sentence": "It has been my pleasure serving you. Please come again.",
-    "id": 1775
+    "id": 1774
   },
   {
     "tenses": [
       "pledge"
     ],
     "sentence": "Luke made a solemn pledge that he would never take another drink again.",
-    "id": 1776
+    "id": 1775
   },
   {
     "tenses": [
       "plumber"
     ],
     "sentence": "The sink's stopped up. Call a plumber.",
-    "id": 1777
+    "id": 1776
   },
   {
     "tenses": [
       "plunge"
     ],
     "sentence": "Take the plunge. Buy a cellular phone.",
-    "id": 1778
+    "id": 1777
   },
   {
     "tenses": [
       "pneumonia"
     ],
     "sentence": "When I caught pneumonia I thought I was going to die, but unfortunately I didn't.",
-    "id": 1779
+    "id": 1778
   },
   {
     "tenses": [
       "pocket"
     ],
     "sentence": "Get your hands out of your pockets young man! Stand up straight!",
-    "id": 1780
+    "id": 1779
   },
   {
     "tenses": [
       "poem"
     ],
     "sentence": "She wrote a romantic love poem for him but he crumpled it up and threw it on the ground.",
-    "id": 1781
+    "id": 1780
   },
   {
     "tenses": [
       "poetry"
     ],
     "sentence": "I used to go to poetry readings but there aren't any good local poets around these parts anymore.",
-    "id": 1782
+    "id": 1781
   },
   {
     "tenses": [
@@ -12936,105 +12929,105 @@
       "poisoned"
     ],
     "sentence": "Poirot then discovered that the cat had actually been poisoned.",
-    "id": 1783
+    "id": 1782
   },
   {
     "tenses": [
       "police"
     ],
     "sentence": "Don't even think about calling the police. The kidnappers demanded it.",
-    "id": 1784
+    "id": 1783
   },
   {
     "tenses": [
       "policeman"
     ],
     "sentence": "As a policeman, you get yourself into all kinds of violent situations, don't you?",
-    "id": 1785
+    "id": 1784
   },
   {
     "tenses": [
       "policy"
     ],
     "sentence": "It's the policy of this company to treat everyone equally.",
-    "id": 1786
+    "id": 1785
   },
   {
     "tenses": [
       "polite"
     ],
     "sentence": "He was so polite that I knew you must have taught him some manners.",
-    "id": 1787
+    "id": 1786
   },
   {
     "tenses": [
       "political"
     ],
     "sentence": "We cannot discuss our political opinions here because it's a non-partisan organization.",
-    "id": 1788
+    "id": 1787
   },
   {
     "tenses": [
       "politician"
     ],
     "sentence": "The speaker says he's a businessman and not a politician, but his rhetoric sure sounds like a politician's.",
-    "id": 1789
+    "id": 1788
   },
   {
     "tenses": [
       "politics"
     ],
     "sentence": "They say that politics, along with religion, is one of those subjects that you shouldn't discuss in polite company.",
-    "id": 1790
+    "id": 1789
   },
   {
     "tenses": [
       "poll"
     ],
     "sentence": "Let's take a poll to see how many people want to leave this place and how many want to stay.",
-    "id": 1791
+    "id": 1790
   },
   {
     "tenses": [
       "polygamist"
     ],
     "sentence": "If you have one wife here and one wife back in your country then you are a polygamist.",
-    "id": 1792
+    "id": 1791
   },
   {
     "tenses": [
       "popular"
     ],
     "sentence": "That song is very popular with the kids these days.",
-    "id": 1793
+    "id": 1792
   },
   {
     "tenses": [
       "porch"
     ],
     "sentence": "My great-grandparents used to sit on their front porch every evening and talk to whatever neighbors would walk by on their evening strolls.",
-    "id": 1794
+    "id": 1793
   },
   {
     "tenses": [
       "porter"
     ],
     "sentence": "Could you please ask the porter to carry my bags into the next room?",
-    "id": 1795
+    "id": 1794
   },
   {
     "tenses": [
       "portion"
     ],
     "sentence": "I'll take the smaller portion of this cake and you take the larger.",
-    "id": 1796
+    "id": 1795
   },
   {
     "tenses": [
       "position"
     ],
     "sentence": "Have you ever been in a position to talk to the managing editor about this story?",
-    "id": 1797
+    "id": 1796
   },
   {
     "tenses": [
@@ -13042,56 +13035,56 @@
       "possess"
     ],
     "sentence": "After three days you may take possession of your new condo.",
-    "id": 1798
+    "id": 1797
   },
   {
     "tenses": [
       "possibility"
     ],
     "sentence": "What is the possibility of my getting a good hot meal around this place?",
-    "id": 1799
+    "id": 1798
   },
   {
     "tenses": [
       "possible"
     ],
     "sentence": "It is not possible for both things to be true.",
-    "id": 1800
+    "id": 1799
   },
   {
     "tenses": [
       "post"
     ],
     "sentence": "The telephone posts on my street are rotting something awful.",
-    "id": 1801
+    "id": 1800
   },
   {
     "tenses": [
       "postage"
     ],
     "sentence": "What's the postage due on that package?",
-    "id": 1802
+    "id": 1801
   },
   {
     "tenses": [
       "postal"
     ],
     "sentence": "'To go postal' is an idiom that means to go somewhat crazy, especially if it involves kidnapping or harming postal workers.",
-    "id": 1803
+    "id": 1802
   },
   {
     "tenses": [
       "posterity"
     ],
     "sentence": "For posterity's sake, let's not argue tonight.",
-    "id": 1804
+    "id": 1803
   },
   {
     "tenses": [
       "postman"
     ],
     "sentence": "Do you ever speak to your postman when he delivers letters?",
-    "id": 1805
+    "id": 1804
   },
   {
     "tenses": [
@@ -13099,6 +13092,6 @@
       "potatoes"
     ],
     "sentence": "One potato, two potato, three potato, four, five potato, six potato, seven potato, more!",
-    "id": 1806
+    "id": 1805
   }
 ]
