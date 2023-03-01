@@ -1,15 +1,16 @@
-import {IWord, WordState} from '../../models/IWord';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {fetchWords} from './ActionCreators';
+import {Word} from '../../models/Word';
+import {State} from './types';
+import {fetchWords} from './actions';
 
-const initialState: WordState = {
+const initialState: State = {
   words: [],
   isLoading: false,
   error: '',
 };
 
-export const wordSlice = createSlice({
-  name: 'word',
+export const wordsSlice = createSlice({
+  name: 'words',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -17,7 +18,7 @@ export const wordSlice = createSlice({
       .addCase(fetchWords.pending.type, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchWords.fulfilled.type, (state, action: PayloadAction<IWord[]>) => {
+      .addCase(fetchWords.fulfilled.type, (state, action: PayloadAction<Word[]>) => {
         state.isLoading = false;
         state.error = '';
         state.words = action.payload;
@@ -29,4 +30,4 @@ export const wordSlice = createSlice({
   },
 });
 
-export default wordSlice.reducer;
+export default wordsSlice.reducer;

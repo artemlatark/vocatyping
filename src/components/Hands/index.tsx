@@ -1,22 +1,18 @@
-import React, {FC, useEffect, useState, memo} from 'react';
-import classNames from 'classnames';
+import React, {useEffect, useState, memo} from 'react';
+import cx from 'classnames';
 
-import {NextTypeKey} from '../../models/IKeyboard';
+import {HandsProps} from './types';
 
 import styles from './index.module.css';
 
-interface HandsProps {
-  nextTypeKey: NextTypeKey;
-}
-
-const Hands: FC<HandsProps> = memo(({nextTypeKey}) => {
+const Hands: React.FC<HandsProps> = memo(({nextTypeKey}) => {
   const [translateCoords, setTranslateCoords] = useState<number[]>([0, 0]);
   const translateOffset = {
     left: nextTypeKey.finger ? (/[1-4]/.test(nextTypeKey.finger.toString()) ? 46 : 60) : 0,
     top: 42,
   };
 
-  const handClassNames = classNames(styles.hand, styles[`hand-${nextTypeKey.finger}`]);
+  const handClassNames = cx(styles.hand, styles[`hand-${nextTypeKey.finger}`]);
   const handInlineStyles: React.CSSProperties = {
     transform: `translate(${translateCoords[0]}px, ${translateCoords[1]}px)`,
   };

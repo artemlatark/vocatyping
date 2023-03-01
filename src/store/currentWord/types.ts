@@ -1,17 +1,14 @@
-export interface WordVariant {
-  correct: boolean;
-  variant: string;
-}
+import {WordVariant} from '../../models/WordVariant';
 
-export interface CheckText {
-  currentWordId: number;
+export interface State {
   writtenText: string;
+  currentWordId: number;
   currentWordTense: number;
   wordVariants: WordVariant[];
   currentVariantIndex: number;
 }
 
-export interface ChangeWordAction {
+export interface ChangeWordPayloadAction {
   handlerType?: string;
   wordId?: number;
   wordNumbers?: number;

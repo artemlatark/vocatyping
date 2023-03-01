@@ -1,13 +1,10 @@
-import React, {FC} from 'react';
+import React from 'react';
+
+import {LayoutProps} from './types';
 
 import styles from './index.module.css';
 
-interface LayoutProps {
-  children: React.ReactNode;
-  sidebar: React.ReactNode;
-}
-
-const Layout: FC<LayoutProps> = ({children, sidebar}) => (
+const Layout: React.FC<LayoutProps> = ({children, sidebar}) => (
   <div className={styles.layout}>
     {sidebar}
     <div className={styles.content}>{children}</div>

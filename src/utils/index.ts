@@ -1,7 +1,4 @@
 // convert object to string and store in localStorage
-
-import {WordVariant} from '../models/CheckText';
-
 export const saveToLocalStorage = (key: string, data: any): void => {
   try {
     const serialisedState = JSON.stringify(data);
@@ -22,11 +19,4 @@ export const getFromLocalStorage = (key: string): any | undefined => {
     console.warn(e);
     return undefined;
   }
-};
-
-export const splitWordIntoLetters = (word: string): WordVariant[] => {
-  return word.split('').map((letter, index, thisArg) => ({
-    correct: false,
-    variant: thisArg.slice(0, index + 1).join(''),
-  }));
 };

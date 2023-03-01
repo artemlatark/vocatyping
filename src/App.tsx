@@ -1,8 +1,8 @@
-import React, {useCallback, useEffect, useMemo, useState} from 'react';
+import {useCallback, useEffect, useMemo, useState} from 'react';
 
 import TypeForm from './components/TypeForm';
 import {useAppDispatch, useAppSelector} from './hooks/redux';
-import {fetchWords} from './store/reducers/ActionCreators';
+import {fetchWords} from './store/words/actions';
 import Layout from './components/Layout';
 import WordAndSentence from './components/WordAndSentence';
 import Keyboard from './components/Keyboard';
@@ -13,9 +13,9 @@ const sidebarWidth = 360;
 
 function App() {
   const dispatch = useAppDispatch();
-  const {words, isLoading} = useAppSelector((state) => state.wordReducer);
+  const {words, isLoading} = useAppSelector((state) => state.wordsReducer);
   const {currentWordId, writtenText, currentWordTense, wordVariants, currentVariantIndex} = useAppSelector(
-    (state) => state.writtenTextCheckReducer
+    (state) => state.currentWordReducer
   );
   const currentWord = useMemo(() => words.find((item) => item.id === currentWordId), [words, currentWordId]);
   const wordNumbers = words.length;

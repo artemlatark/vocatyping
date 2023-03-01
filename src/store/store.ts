@@ -1,10 +1,10 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
-import wordReducer from './reducers/WordSlice';
-import writtenTextCheckReducer from './reducers/CheckTextSlice';
+import wordsReducer from './words/slice';
+import currentWordReducer from './currentWord/slice';
 
 const rootReducer = combineReducers({
-  wordReducer,
-  writtenTextCheckReducer,
+  wordsReducer,
+  currentWordReducer,
 });
 
 export const setupStore = () => {
