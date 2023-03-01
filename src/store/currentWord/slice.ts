@@ -1,8 +1,8 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {getFromLocalStorage, saveToLocalStorage, splitWordIntoLetters} from '../../shared/utils';
-import {ChangeWordAction, CheckText} from '../../models/CheckText';
+import {getFromLocalStorage, saveToLocalStorage} from '../../utils';
+import {State, ChangeWordPayloadAction} from './types';
 
-const initialState: CheckText = {
+const initialState: State = {
   currentWordId: getFromLocalStorage('currentWord') || 1,
   writtenText: '',
   currentWordTense: 0,
@@ -10,12 +10,17 @@ const initialState: CheckText = {
   currentVariantIndex: 0,
 };
 
-export const checkTextSlice = createSlice({
-  name: 'writtenTextCheck',
+export const currentWordSlice = createSlice({
+  name: 'currentWord',
   initialState,
   reducers: {
     initWord(state, action: PayloadAction<string>) {
-      state.wordVariants = splitWordIntoLetters(action.payload);
+      const word = action.payload;
+
+      state.wordVariants = word.split('').map((letter, index, thisArg) => ({
+        correct: false,
+        variant: thisArg.slice(0, index + 1).join(''),
+      }));
     },
     onWriteText(state, action: PayloadAction<string>) {
       state.writtenText = action.payload;
@@ -42,7 +47,7 @@ export const checkTextSlice = createSlice({
       state.currentVariantIndex = 0;
       state.currentWordTense++;
     },
-    onChangeWord(state, action: PayloadAction<ChangeWordAction>) {
+    onChangeWord(state, action: PayloadAction<ChangeWordPayloadAction>) {
       state.writtenText = '';
       state.currentVariantIndex = 0;
       state.currentWordTense = 0;
@@ -67,4 +72,4 @@ export const checkTextSlice = createSlice({
   },
 });
 
-export default checkTextSlice.reducer;
+export default currentWordSlice.reducer;

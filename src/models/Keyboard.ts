@@ -1,14 +1,9 @@
-export enum KeyboardLayoutKey {
-  WORD = 'word',
-  SENTENCE = 'sentence',
-}
-
 export enum keyboardLayout {
   MAC = 'mac',
   QWERTY = 'qwerty',
 }
 
-export type IKey = {
+export type Key = {
   key?: string;
   supKey?: string;
   finger?: number;
@@ -17,13 +12,13 @@ export type IKey = {
   isSpace?: boolean;
 };
 
+export interface NextTypeKey {
+  finger?: number;
+  coords: NextTypeKeyCoords;
+}
+
 interface NextTypeKeyCoords {
   left: number;
   top: number;
   width: number;
-}
-
-export interface NextTypeKey {
-  finger?: number;
-  coords: NextTypeKeyCoords;
 }

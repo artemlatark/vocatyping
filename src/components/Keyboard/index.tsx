@@ -1,16 +1,17 @@
-import {useState, useCallback, useMemo, memo, FC} from 'react';
+import React, {useState, useCallback, useMemo, memo} from 'react';
 
-import keyboards from '../../data/keyboards.json';
-import {keyboardLayout, NextTypeKey} from '../../models/IKeyboard';
-import {CheckText} from '../../models/CheckText';
 import KeyboardKey from '../KeyboardKey';
 import Hands from '../Hands';
+import {keyboardLayout, NextTypeKey} from '../../models/Keyboard';
+import {State as CurrentWordState} from '../../store/currentWord/types';
 
 import styles from './index.module.css';
 
-type CheckTextPick = Pick<CheckText, 'currentWordId' | 'writtenText' | 'wordVariants' | 'currentVariantIndex'>;
+import keyboards from '../../data/keyboards.json';
 
-const Keyboard: FC<CheckTextPick> = memo(({currentWordId, writtenText, wordVariants, currentVariantIndex}) => {
+type Props = Pick<CurrentWordState, 'writtenText' | 'currentWordId' | 'wordVariants' | 'currentVariantIndex'>;
+
+const Keyboard: React.FC<Props> = memo(({writtenText, currentWordId, wordVariants, currentVariantIndex}) => {
   const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | null>(null);
   const currentLayout: keyboardLayout = keyboardLayout.MAC;
   const keyboard = useMemo(() => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout), [currentLayout]);

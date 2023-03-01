@@ -1,63 +1,16 @@
-import React, {FC, memo, useRef} from 'react';
-import classNames from 'classnames';
-import Drawer from '@mui/material/Drawer';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import {FixedSizeList as List, ListChildComponentProps, areEqual} from 'react-window';
-import ListItemButton from '@mui/material/ListItemButton';
+import React, {memo, useRef} from 'react';
+import {FixedSizeList as List} from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import {WordState} from '../../models/IWord';
-import {checkTextSlice} from '../../store/reducers/CheckTextSlice';
-import {useAppDispatch} from '../../hooks/redux';
+import Drawer from '@mui/material/Drawer';
+
+import {Props as SidebarProps} from './types';
+import ItemList from './ItemList';
 
 import styles from './index.module.css';
 
 const itemKey = (index: number, data: any) => data[index].id;
 
-interface WordItemProps {
-  currentWordId: number;
-  onOpenSidebar: (value?: boolean) => void;
-}
-
-const WordItem = memo(({currentWordId, onOpenSidebar, data, index, style}: WordItemProps & ListChildComponentProps) => {
-  const dispatch = useAppDispatch();
-  const word = data[index];
-
-  const wordItemClassNames = classNames({
-    [styles.itemCurrent]: index + 1 === currentWordId,
-  });
-
-  const onChangeWord = () => {
-    onOpenSidebar();
-    dispatch(checkTextSlice.actions.onChangeWord({wordId: word.id}));
-  };
-  return (
-    <ListItem style={style} key={word.id} component="div" disablePadding>
-      <ListItemButton onClick={() => onChangeWord()}>
-        <ListItemText>
-          <span className={wordItemClassNames}>{word.tenses.join(', ')}</span>
-        </ListItemText>
-      </ListItemButton>
-    </ListItem>
-  );
-}, areEqual);
-
-interface SidebarProps {
-  currentWordId: number;
-  onOpenSidebar: (value?: boolean) => void;
-  sidebarWidth: number;
-  sidebarOpen: boolean;
-}
-
-type WordStatePick = Pick<WordState, 'words'>;
-
-const Sidebar: FC<SidebarProps & WordStatePick> = ({
-  currentWordId,
-  onOpenSidebar,
-  sidebarOpen,
-  sidebarWidth,
-  words,
-}) => {
+const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, sidebarWidth, words}) => {
   const listRef = useRef<any>(null);
 
   const scrollToItem = () => {
@@ -89,7 +42,7 @@ const Sidebar: FC<SidebarProps & WordStatePick> = ({
             itemCount={words.length}
             overscanCount={5}
           >
-            {(props) => <WordItem currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} {...props} />}
+            {(props) => <ItemList currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} {...props} />}
           </List>
         </Drawer>
       )}
