@@ -1,6 +1,4 @@
 import React, {memo, useMemo, useRef} from 'react';
-// import {FixedSizeList as List} from 'react-window';
-// import AutoSizer from 'react-virtualized-auto-sizer';
 import Drawer from '@mui/material/Drawer';
 
 import {Props as SidebarProps} from './types';
