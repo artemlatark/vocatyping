@@ -26,7 +26,7 @@
     "tenses": [
       "abbreviation"
     ],
-    "sentence": "Is `prog` an abbreviation for `program` or `progress`?"
+    "sentence": "Is 'prog' an abbreviation for 'program' or 'progress'?"
   },
   {
     "id": 5,
@@ -2088,7 +2088,7 @@
     "tenses": [
       "brought"
     ],
-    "sentence": "Mary brought her little lamb to school one day for `Show and Tell.`",
+    "sentence": "Mary brought her little lamb to school one day for 'Show and Tell.'",
     "id": 288
   },
   {
@@ -2297,7 +2297,7 @@
       "called",
       "calling"
     ],
-    "sentence": "If you call him `Anthony` he will answer, but if you call him `Tony` he won't.",
+    "sentence": "If you call him 'Anthony' he will answer, but if you call him 'Tony' he won't.",
     "id": 317
   },
   {
@@ -3809,7 +3809,7 @@
     "tenses": [
       "cotton"
     ],
-    "sentence": "Clothes made of cotton `breathe` much better than others.",
+    "sentence": "Clothes made of cotton 'breathe' much better than others.",
     "id": 527
   },
   {
@@ -3917,7 +3917,7 @@
     "tenses": [
       "cracker"
     ],
-    "sentence": "The parrot keeps saying, `Polly wants a cracker.`",
+    "sentence": "The parrot keeps saying, 'Polly wants a cracker.'",
     "id": 542
   },
   {
@@ -5979,7 +5979,7 @@
     "tenses": [
       "everything"
     ],
-    "sentence": "I leave everything up to you; it's your `show`.",
+    "sentence": "I leave everything up to you; it's your 'show'.",
     "id": 827
   },
   {
@@ -6392,7 +6392,7 @@
     "tenses": [
       "famous"
     ],
-    "sentence": "His famous last words were, `Give me liberty or give me death.`",
+    "sentence": "His famous last words were, 'Give me liberty or give me death.'",
     "id": 885
   },
   {
@@ -7205,70 +7205,70 @@
     "tenses": [
       "gallery"
     ],
-    "sentense": "We visited the cutest art gallery in the village, the day before yesterday.",
+    "sentence": "We visited the cutest art gallery in the village, the day before yesterday.",
     "id": 996
   },
   {
     "tenses": [
       "gallon"
     ],
-    "sentense": "How many quarts make up a gallon? Four, of course.",
+    "sentence": "How many quarts make up a gallon? Four, of course.",
     "id": 997
   },
   {
     "tenses": [
       "gallop"
     ],
-    "sentense": "My horse can gallop at a pretty fast pace but he gets tired very fast.",
+    "sentence": "My horse can gallop at a pretty fast pace but he gets tired very fast.",
     "id": 998
   },
   {
     "tenses": [
       "game"
     ],
-    "sentense": "My children play a game called Go Fish all day long.",
+    "sentence": "My children play a game called Go Fish all day long.",
     "id": 999
   },
   {
     "tenses": [
       "garage"
     ],
-    "sentense": "We would like a house with a two-car garage if that's possible.",
+    "sentence": "We would like a house with a two-car garage if that's possible.",
     "id": 1000
   },
   {
     "tenses": [
       "garbage"
     ],
-    "sentense": "Honey, take out the garbage, please.",
+    "sentence": "Honey, take out the garbage, please.",
     "id": 1001
   },
   {
     "tenses": [
       "garden"
     ],
-    "sentense": "I've planted lots of vegetables in my garden this year so I hope the weather is good.",
+    "sentence": "I've planted lots of vegetables in my garden this year so I hope the weather is good.",
     "id": 1002
   },
   {
     "tenses": [
       "gardener"
     ],
-    "sentense": "I knew a gardener once who also taught a class on growing flowers on terraces.",
+    "sentence": "I knew a gardener once who also taught a class on growing flowers on terraces.",
     "id": 1003
   },
   {
     "tenses": [
       "garment"
     ],
-    "sentense": "The garment industry does very well in China. You could say they clothe my country!",
+    "sentence": "The garment industry does very well in China. You could say they clothe my country!",
     "id": 1004
   },
   {
     "tenses": [
       "gasoline"
     ],
-    "sentense": "Do they add taxes to gasoline to raise revenue or to lessen the desire to buy gas?",
+    "sentence": "Do they add taxes to gasoline to raise revenue or to lessen the desire to buy gas?",
     "id": 1005
   },
   {
@@ -7277,70 +7277,70 @@
       "give",
       "giving"
     ],
-    "sentense": "I gave a donation to the environmental organization yesterday.",
+    "sentence": "I gave a donation to the environmental organization yesterday.",
     "id": 1006
   },
   {
     "tenses": [
       "general"
     ],
-    "sentense": "The general discussion has been economics but the specific topic has been monopolies.",
+    "sentence": "The general discussion has been economics but the specific topic has been monopolies.",
     "id": 1007
   },
   {
     "tenses": [
       "generally"
     ],
-    "sentense": "Generally I don't swim, but I sure did today at the beach.",
+    "sentence": "Generally I don't swim, but I sure did today at the beach.",
     "id": 1008
   },
   {
     "tenses": [
       "generation"
     ],
-    "sentense": "Your generation is too conservative to understand the youth's ideas.",
+    "sentence": "Your generation is too conservative to understand the youth's ideas.",
     "id": 1009
   },
   {
     "tenses": [
       "generous"
     ],
-    "sentense": "Your mother was very generous to make all the costumes for the play.",
+    "sentence": "Your mother was very generous to make all the costumes for the play.",
     "id": 1010
   },
   {
     "tenses": [
       "genius"
     ],
-    "sentense": "You are a genius to figure out the answer to that problem!",
+    "sentence": "You are a genius to figure out the answer to that problem!",
     "id": 1011
   },
   {
     "tenses": [
       "gentle"
     ],
-    "sentense": "The boy was very gentle when playing with the kitten.",
+    "sentence": "The boy was very gentle when playing with the kitten.",
     "id": 1012
   },
   {
     "tenses": [
       "gentleman"
     ],
-    "sentense": "Frankly, I do not consider you to be a gentleman for talking of such subjects!",
+    "sentence": "Frankly, I do not consider you to be a gentleman for talking of such subjects!",
     "id": 1013
   },
   {
     "tenses": [
       "genuine"
     ],
-    "sentense": "She had a genuine interest in learning to sew but it just wasn't her forte.",
+    "sentence": "She had a genuine interest in learning to sew but it just wasn't her forte.",
     "id": 1014
   },
   {
     "tenses": [
       "geography"
     ],
-    "sentense": "When you studied geography, did you learn the capitals of all the states?",
+    "sentence": "When you studied geography, did you learn the capitals of all the states?",
     "id": 1015
   },
   {
@@ -7349,42 +7349,42 @@
       "got",
       "getting"
     ],
-    "sentense": "Did you get the letter I mailed last week?",
+    "sentence": "Did you get the letter I mailed last week?",
     "id": 1016
   },
   {
     "tenses": [
       "ghost"
     ],
-    "sentense": "I thought I saw a ghost but it was just Leroy with a sheet over his head.",
+    "sentence": "I thought I saw a ghost but it was just Leroy with a sheet over his head.",
     "id": 1017
   },
   {
     "tenses": [
       "girl"
     ],
-    "sentense": "Was the baby a girl or a boy?",
+    "sentence": "Was the baby a girl or a boy?",
     "id": 1018
   },
   {
     "tenses": [
       "give"
     ],
-    "sentense": "I should give you my opinion on the subject of how to fund a new political party.",
+    "sentence": "I should give you my opinion on the subject of how to fund a new political party.",
     "id": 1019
   },
   {
     "tenses": [
       "given"
     ],
-    "sentense": "She has given you every opportunity to prove your innocence but you have not done so.",
+    "sentence": "She has given you every opportunity to prove your innocence but you have not done so.",
     "id": 1020
   },
   {
     "tenses": [
       "glass"
     ],
-    "sentense": "I would like a glass of water, please.",
+    "sentence": "I would like a glass of water, please.",
     "id": 1021
   },
   {
@@ -7392,35 +7392,35 @@
       "glazier",
       "glaziers"
     ],
-    "sentense": "Do you think the glaziers will melt from global warming?",
+    "sentence": "Do you think the glaziers will melt from global warming?",
     "id": 1022
   },
   {
     "tenses": [
       "glitter"
     ],
-    "sentense": "Margaret put glitter all over the hat she made in school.",
+    "sentence": "Margaret put glitter all over the hat she made in school.",
     "id": 1023
   },
   {
     "tenses": [
       "glorious"
     ],
-    "sentense": "Today has been a glorious day, what with the visits from family and all.",
+    "sentence": "Today has been a glorious day, what with the visits from family and all.",
     "id": 1024
   },
   {
     "tenses": [
       "go"
     ],
-    "sentense": "Then he said, go and sin no more.",
+    "sentence": "Then he said, go and sin no more.",
     "id": 1025
   },
   {
     "tenses": [
       "goddess"
     ],
-    "sentense": "She was so arrogant you would think she was a goddess or something.",
+    "sentence": "She was so arrogant you would think she was a goddess or something.",
     "id": 1026
   },
   {
@@ -7430,28 +7430,28 @@
       "went",
       "going"
     ],
-    "sentense": "There he goes again making that awful noise.",
+    "sentence": "There he goes again making that awful noise.",
     "id": 1027
   },
   {
     "tenses": [
       "goggles"
     ],
-    "sentense": "I would have thought all airplane pilots wore goggles in those days.",
+    "sentence": "I would have thought all airplane pilots wore goggles in those days.",
     "id": 1028
   },
   {
     "tenses": [
       "gold"
     ],
-    "sentense": "Do you have any idea what the price of gold is today?",
+    "sentence": "Do you have any idea what the price of gold is today?",
     "id": 1029
   },
   {
     "tenses": [
       "gone"
     ],
-    "sentense": "I could have gone to the party with him but I wasn't feeling very well.",
+    "sentence": "I could have gone to the party with him but I wasn't feeling very well.",
     "id": 1030
   },
   {
@@ -7459,63 +7459,63 @@
       "goose",
       "geese"
     ],
-    "sentense": "Geese can be used on farms just like dogs because they make a lot of noise when strangers arrive.",
+    "sentence": "Geese can be used on farms just like dogs because they make a lot of noise when strangers arrive.",
     "id": 1031
   },
   {
     "tenses": [
       "gorgeous"
     ],
-    "sentense": "Your new house is gorgeous. Did you make all the curtains yourself?",
+    "sentence": "Your new house is gorgeous. Did you make all the curtains yourself?",
     "id": 1032
   },
   {
     "tenses": [
       "gospel"
     ],
-    "sentense": "The gospel according to Maximillian has been documented in this book.",
+    "sentence": "The gospel according to Maximillian has been documented in this book.",
     "id": 1033
   },
   {
     "tenses": [
       "got"
     ],
-    "sentense": "They got angry when I walked in the meeting 45 minutes late.",
+    "sentence": "They got angry when I walked in the meeting 45 minutes late.",
     "id": 1034
   },
   {
     "tenses": [
       "government"
     ],
-    "sentense": "Do you think the government should enact a law to disallow swimming in this lake?",
+    "sentence": "Do you think the government should enact a law to disallow swimming in this lake?",
     "id": 1035
   },
   {
     "tenses": [
       "governor"
     ],
-    "sentense": "He was a newly elected governor so he hadn't yet formed an official opinion on the bill.",
+    "sentence": "He was a newly elected governor so he hadn't yet formed an official opinion on the bill.",
     "id": 1036
   },
   {
     "tenses": [
       "gown"
     ],
-    "sentense": "Her gown was a lovely teal color for the spring ball.",
+    "sentence": "Her gown was a lovely teal color for the spring ball.",
     "id": 1037
   },
   {
     "tenses": [
       "graceful"
     ],
-    "sentense": "She moves so gracefully that I wonder if she has studied modeling.",
+    "sentence": "She moves so gracefully that I wonder if she has studied modeling.",
     "id": 1038
   },
   {
     "tenses": [
       "gracious"
     ],
-    "sentense": "You have been a gracious host. Thank you for inviting me.",
+    "sentence": "You have been a gracious host. Thank you for inviting me.",
     "id": 1039
   },
   {
@@ -7523,63 +7523,63 @@
       "gradual",
       "gradually"
     ],
-    "sentense": "The incline to the museum was gradual so we walked.",
+    "sentence": "The incline to the museum was gradual so we walked.",
     "id": 1040
   },
   {
     "tenses": [
       "graduate"
     ],
-    "sentense": "I plan to graduate from college as soon as I finish my last year in my major field of study.",
+    "sentence": "I plan to graduate from college as soon as I finish my last year in my major field of study.",
     "id": 1041
   },
   {
     "tenses": [
       "grammar"
     ],
-    "sentense": "I understand the grammar of the French language but I'm not very good at pronunciation.",
+    "sentence": "I understand the grammar of the French language but I'm not very good at pronunciation.",
     "id": 1042
   },
   {
     "tenses": [
       "grass"
     ],
-    "sentense": "Everyone thinks the grass is greener on the other side of the fence.",
+    "sentence": "Everyone thinks the grass is greener on the other side of the fence.",
     "id": 1043
   },
   {
     "tenses": [
       "grasshopper"
     ],
-    "sentense": "There was a huge grasshopper in my house today.",
+    "sentence": "There was a huge grasshopper in my house today.",
     "id": 1044
   },
   {
     "tenses": [
       "grateful"
     ],
-    "sentense": "He was very grateful that I had helped him study for his final exams.",
+    "sentence": "He was very grateful that I had helped him study for his final exams.",
     "id": 1045
   },
   {
     "tenses": [
       "gratitude"
     ],
-    "sentense": "Her gratitude was only surpassed by her elation of being there.",
+    "sentence": "Her gratitude was only surpassed by her elation of being there.",
     "id": 1046
   },
   {
     "tenses": [
       "grease"
     ],
-    "sentense": "I only cook in vegetable grease but that's probably not good for me either.",
+    "sentence": "I only cook in vegetable grease but that's probably not good for me either.",
     "id": 1047
   },
   {
     "tenses": [
       "great"
     ],
-    "sentense": "The acting was great but the script was not very well written.",
+    "sentence": "The acting was great but the script was not very well written.",
     "id": 1048
   },
   {
@@ -7587,14 +7587,14 @@
       "greedy",
       "greed"
     ],
-    "sentense": "Would you say that she was greedy for not wanting to share her cookies?",
+    "sentence": "Would you say that she was greedy for not wanting to share her cookies?",
     "id": 1049
   },
   {
     "tenses": [
       "greet"
     ],
-    "sentense": "I greet you, dear people, with sincere appreciation for your coming.",
+    "sentence": "I greet you, dear people, with sincere appreciation for your coming.",
     "id": 1050
   },
   {
@@ -7603,35 +7603,35 @@
       "grow",
       "grown"
     ],
-    "sentense": "The plant grew and grew until one day it was taller than me!",
+    "sentence": "The plant grew and grew until one day it was taller than me!",
     "id": 1051
   },
   {
     "tenses": [
       "grief"
     ],
-    "sentense": "People show their grief in many different ways; not all cry.",
+    "sentence": "People show their grief in many different ways; not all cry.",
     "id": 1052
   },
   {
     "tenses": [
       "grievance"
     ],
-    "sentense": "If you have a grievance with our company you will need to take it up with a customer service representative.",
+    "sentence": "If you have a grievance with our company you will need to take it up with a customer service representative.",
     "id": 1053
   },
   {
     "tenses": [
       "grieve"
     ],
-    "sentense": "She does not grieve like others; she must be totally alone to get over a tragedy.",
+    "sentence": "She does not grieve like others; she must be totally alone to get over a tragedy.",
     "id": 1054
   },
   {
     "tenses": [
       "groan"
     ],
-    "sentense": "I groan every time I see homeless person; I want a solution to this problem.",
+    "sentence": "I groan every time I see homeless person; I want a solution to this problem.",
     "id": 1055
   },
   {
@@ -7639,105 +7639,105 @@
       "grocery",
       "groceries"
     ],
-    "sentense": "Would you like me to go to the grocery store for you?",
+    "sentence": "Would you like me to go to the grocery store for you?",
     "id": 1056
   },
   {
     "tenses": [
       "group"
     ],
-    "sentense": "I started a group that meets to discuss environmental problems.",
+    "sentence": "I started a group that meets to discuss environmental problems.",
     "id": 1057
   },
   {
     "tenses": [
       "grow"
     ],
-    "sentense": "I have tried to grow tomatoes before but I can't seem to get the hang of it.",
+    "sentence": "I have tried to grow tomatoes before but I can't seem to get the hang of it.",
     "id": 1058
   },
   {
     "tenses": [
       "grown"
     ],
-    "sentense": "She has grown into a lovely young woman.",
+    "sentence": "She has grown into a lovely young woman.",
     "id": 1059
   },
   {
     "tenses": [
       "growth"
     ],
-    "sentense": "The growth of the automobile industry has been due in part to cheaper metals.",
+    "sentence": "The growth of the automobile industry has been due in part to cheaper metals.",
     "id": 1060
   },
   {
     "tenses": [
       "guarantee"
     ],
-    "sentense": "I cannot guarantee that you will understand everything but you will learn a lot.",
+    "sentence": "I cannot guarantee that you will understand everything but you will learn a lot.",
     "id": 1061
   },
   {
     "tenses": [
       "guard"
     ],
-    "sentense": "I stay on my guard in case someone tries to break in.",
+    "sentence": "I stay on my guard in case someone tries to break in.",
     "id": 1062
   },
   {
     "tenses": [
       "guardian"
     ],
-    "sentense": "The child's guardian did not allow her to attend public school.",
+    "sentence": "The child's guardian did not allow her to attend public school.",
     "id": 1063
   },
   {
     "tenses": [
       "guess"
     ],
-    "sentense": "It is my guess that no one will try to ask you questions but one never knows.",
+    "sentence": "It is my guess that no one will try to ask you questions but one never knows.",
     "id": 1064
   },
   {
     "tenses": [
       "guest"
     ],
-    "sentense": "If I invite you to the resort as my special guest will you come?",
+    "sentence": "If I invite you to the resort as my special guest will you come?",
     "id": 1065
   },
   {
     "tenses": [
       "guide"
     ],
-    "sentense": "I would like to hire a guide to take us to the best fishing areas.",
+    "sentence": "I would like to hire a guide to take us to the best fishing areas.",
     "id": 1066
   },
   {
     "tenses": [
       "guilt"
     ],
-    "sentense": "I have figured out how to live a guilt-free life.",
+    "sentence": "I have figured out how to live a guilt-free life.",
     "id": 1067
   },
   {
     "tenses": [
       "guilty"
     ],
-    "sentense": "Was the accused found innocent or guilty?",
+    "sentence": "Was the accused found innocent or guilty?",
     "id": 1068
   },
   {
     "tenses": [
       "gutter"
     ],
-    "sentense": "I have asked him to install a new gutter across the front so the rain will be dispersed.",
+    "sentence": "I have asked him to install a new gutter across the front so the rain will be dispersed.",
     "id": 1069
   },
   {
     "tenses": [
       "gymnasium"
     ],
-    "sentense": "They had a big room that served as both gymnasium and cafeteria.",
+    "sentence": "They had a big room that served as both gymnasium and cafeteria.",
     "id": 1070
   },
   {
@@ -7745,70 +7745,70 @@
       "had",
       "have"
     ],
-    "sentense": "I have had it with you. Don't call me any more!",
+    "sentence": "I have had it with you. Don't call me any more!",
     "id": 1071
   },
   {
     "tenses": [
       "hair"
     ],
-    "sentense": "I would like to get my hair done at the new beauty shop.",
+    "sentence": "I would like to get my hair done at the new beauty shop.",
     "id": 1072
   },
   {
     "tenses": [
       "half"
     ],
-    "sentense": "If you'll cut the sandwiches in half I'll get the drinks ready to serve.",
+    "sentence": "If you'll cut the sandwiches in half I'll get the drinks ready to serve.",
     "id": 1073
   },
   {
     "tenses": [
       "hall"
     ],
-    "sentense": "If you don't ever go down that hall, how do you know it's crowded?",
+    "sentence": "If you don't ever go down that hall, how do you know it's crowded?",
     "id": 1074
   },
   {
     "tenses": [
       "hammer"
     ],
-    "sentense": "I need to return that hammer to my neighbor after I use it on this birdhouse.",
+    "sentence": "I need to return that hammer to my neighbor after I use it on this birdhouse.",
     "id": 1075
   },
   {
     "tenses": [
       "hand"
     ],
-    "sentense": "Your hand is huge compared to mine yet you are able to type faster.",
+    "sentence": "Your hand is huge compared to mine yet you are able to type faster.",
     "id": 1076
   },
   {
     "tenses": [
       "handkerchief"
     ],
-    "sentense": "She had a beautiful handkerchief in her purse that looked hand stitched.",
+    "sentence": "She had a beautiful handkerchief in her purse that looked hand stitched.",
     "id": 1077
   },
   {
     "tenses": [
       "handle"
     ],
-    "sentense": "I can't seem to push the handle down on this machine.",
+    "sentence": "I can't seem to push the handle down on this machine.",
     "id": 1078
   },
   {
     "tenses": [
       "handling"
     ],
-    "sentense": "They have been handling the book binding duties while I handle the administration.",
+    "sentence": "They have been handling the book binding duties while I handle the administration.",
     "id": 1079
   },
   {
     "tenses": [
       "handsome"
     ],
-    "sentense": "He was very handsome but had no wife.",
+    "sentence": "He was very handsome but had no wife.",
     "id": 1080
   },
   {
@@ -7816,56 +7816,56 @@
       "happen",
       "happens"
     ],
-    "sentense": "I happen to have stumbled upon the records explaining your involvement with the group.",
+    "sentence": "I happen to have stumbled upon the records explaining your involvement with the group.",
     "id": 1081
   },
   {
     "tenses": [
       "happiness"
     ],
-    "sentense": "Happiness is the most important thing in life.",
+    "sentence": "Happiness is the most important thing in life.",
     "id": 1082
   },
   {
     "tenses": [
       "happy"
     ],
-    "sentense": "If you are happy and you know it, then it shows.",
+    "sentence": "If you are happy and you know it, then it shows.",
     "id": 1083
   },
   {
     "tenses": [
       "hard"
     ],
-    "sentense": "It is so hard to find decent employees these days.",
+    "sentence": "It is so hard to find decent employees these days.",
     "id": 1084
   },
   {
     "tenses": [
       "hardly"
     ],
-    "sentense": "He hardly touched his dinner; is he sick?",
+    "sentence": "He hardly touched his dinner; is he sick?",
     "id": 1085
   },
   {
     "tenses": [
       "hardware"
     ],
-    "sentense": "My grandfather owned a hardware store and sold all kinds of farm supplies too.",
+    "sentence": "My grandfather owned a hardware store and sold all kinds of farm supplies too.",
     "id": 1086
   },
   {
     "tenses": [
       "harmony"
     ],
-    "sentense": "We need harmony in the community and I think it's possible to achieve.",
+    "sentence": "We need harmony in the community and I think it's possible to achieve.",
     "id": 1087
   },
   {
     "tenses": [
       "harness"
     ],
-    "sentense": "Harness the wagon and we'll get moving on to the next town.",
+    "sentence": "Harness the wagon and we'll get moving on to the next town.",
     "id": 1088
   },
   {
@@ -7873,77 +7873,77 @@
       "harvest",
       "harvested"
     ],
-    "sentense": "We had such a terrible harvest last year but it should be better this year.",
+    "sentence": "We had such a terrible harvest last year but it should be better this year.",
     "id": 1089
   },
   {
     "tenses": [
       "hasten"
     ],
-    "sentense": "I hasten to add that you should never talk to him when he's in a bad mood.",
+    "sentence": "I hasten to add that you should never talk to him when he's in a bad mood.",
     "id": 1090
   },
   {
     "tenses": [
       "hat"
     ],
-    "sentense": "I must wear a hat in the sun or I get sunburnt.",
+    "sentence": "I must wear a hat in the sun or I get sunburnt.",
     "id": 1091
   },
   {
     "tenses": [
       "hatred"
     ],
-    "sentense": "The hatred between the families was obvious but what could we do?",
+    "sentence": "The hatred between the families was obvious but what could we do?",
     "id": 1092
   },
   {
     "tenses": [
       "haughty"
     ],
-    "sentense": "Your brother is so haughty that I have a difficult time talking to him.",
+    "sentence": "Your brother is so haughty that I have a difficult time talking to him.",
     "id": 1093
   },
   {
     "tenses": [
       "have"
     ],
-    "sentense": "We have three courses to offer you.",
+    "sentence": "We have three courses to offer you.",
     "id": 1094
   },
   {
     "tenses": [
       "having"
     ],
-    "sentense": "You seem to be having a good day. Are you feeling better?",
+    "sentence": "You seem to be having a good day. Are you feeling better?",
     "id": 1095
   },
   {
     "tenses": [
       "head"
     ],
-    "sentense": "Put the bow on the dog's head just before she goes on stage.",
+    "sentence": "Put the bow on the dog's head just before she goes on stage.",
     "id": 1096
   },
   {
     "tenses": [
       "heading"
     ],
-    "sentense": "You will be heading down the road to disaster if you don't stop your bad habits.",
+    "sentence": "You will be heading down the road to disaster if you don't stop your bad habits.",
     "id": 1097
   },
   {
     "tenses": [
       "health"
     ],
-    "sentense": "Health is so important but everyone needs to decide what plan is best for themselves.",
+    "sentence": "Health is so important but everyone needs to decide what plan is best for themselves.",
     "id": 1098
   },
   {
     "tenses": [
       "healthy"
     ],
-    "sentense": "She had a healthy baby boy yesterday.",
+    "sentence": "She had a healthy baby boy yesterday.",
     "id": 1099
   },
   {
@@ -7951,70 +7951,70 @@
       "hear",
       "heard"
     ],
-    "sentense": "We hear that you aren't interested in our school. Why is that?",
+    "sentence": "We hear that you aren't interested in our school. Why is that?",
     "id": 1100
   },
   {
     "tenses": [
       "heard"
     ],
-    "sentense": "I have heard that you want the position to be offered to you. Is that true?",
+    "sentence": "I have heard that you want the position to be offered to you. Is that true?",
     "id": 1101
   },
   {
     "tenses": [
       "heart"
     ],
-    "sentense": "Have a heart; don't litter in my yard.",
+    "sentence": "Have a heart; don't litter in my yard.",
     "id": 1102
   },
   {
     "tenses": [
       "heartily"
     ],
-    "sentense": "We heartily offer to finish the project for you.",
+    "sentence": "We heartily offer to finish the project for you.",
     "id": 1103
   },
   {
     "tenses": [
       "heat"
     ],
-    "sentense": "You could have a heat stroke with these high temperatures.",
+    "sentence": "You could have a heat stroke with these high temperatures.",
     "id": 1104
   },
   {
     "tenses": [
       "heaven"
     ],
-    "sentense": "Some people believe that heaven is where the angels live.",
+    "sentence": "Some people believe that heaven is where the angels live.",
     "id": 1105
   },
   {
     "tenses": [
       "heavy"
     ],
-    "sentense": "I need a heavy cream with which to make ice cream.",
+    "sentence": "I need a heavy cream with which to make ice cream.",
     "id": 1106
   },
   {
     "tenses": [
       "hedge"
     ],
-    "sentense": "There was a long hedge between our yards so I couldn't see what they were doing over there.",
+    "sentence": "There was a long hedge between our yards so I couldn't see what they were doing over there.",
     "id": 1107
   },
   {
     "tenses": [
       "height"
     ],
-    "sentense": "What is your height. About six foot?",
+    "sentence": "What is your height. About six foot?",
     "id": 1108
   },
   {
     "tenses": [
       "heir"
     ],
-    "sentense": "I will name an intellectual heir this year, someone who believes as strongly as I in the same causes.",
+    "sentence": "I will name an intellectual heir this year, someone who believes as strongly as I in the same causes.",
     "id": 1109
   },
   {
@@ -8022,126 +8022,126 @@
       "held",
       "hold"
     ],
-    "sentense": "We have held meetings here for the past ten years.",
+    "sentence": "We have held meetings here for the past ten years.",
     "id": 1110
   },
   {
     "tenses": [
       "hello"
     ],
-    "sentense": "Tell Louie hello for me when you see him.",
+    "sentence": "Tell Louie hello for me when you see him.",
     "id": 1111
   },
   {
     "tenses": [
       "help"
     ],
-    "sentense": "I can't help you with your campaign but I could edit your materials.",
+    "sentence": "I can't help you with your campaign but I could edit your materials.",
     "id": 1112
   },
   {
     "tenses": [
       "henceforth"
     ],
-    "sentense": "Henceforth we will not allow people to jog on the grass.",
+    "sentence": "Henceforth we will not allow people to jog on the grass.",
     "id": 1113
   },
   {
     "tenses": [
       "here"
     ],
-    "sentense": "Here, let me help you with your homework.",
+    "sentence": "Here, let me help you with your homework.",
     "id": 1114
   },
   {
     "tenses": [
       "hereafter"
     ],
-    "sentense": "Hereafter I plan to at least use my spell-checker on all papers.",
+    "sentence": "Hereafter I plan to at least use my spell-checker on all papers.",
     "id": 1115
   },
   {
     "tenses": [
       "hereby"
     ],
-    "sentense": "I hereby declare you to be the new president of our charitable foundation.",
+    "sentence": "I hereby declare you to be the new president of our charitable foundation.",
     "id": 1116
   },
   {
     "tenses": [
       "heretofore"
     ],
-    "sentense": "Heretofore we have never allowed newcomers to voice an opinion.",
+    "sentence": "Heretofore we have never allowed newcomers to voice an opinion.",
     "id": 1117
   },
   {
     "tenses": [
       "herewith"
     ],
-    "sentense": "The tabulations, herewith the original pieces of data, will be given to the statistician.",
+    "sentence": "The tabulations, herewith the original pieces of data, will be given to the statistician.",
     "id": 1118
   },
   {
     "tenses": [
       "heroic"
     ],
-    "sentense": "That was very heroic of you to admit you were wrong.",
+    "sentence": "That was very heroic of you to admit you were wrong.",
     "id": 1119
   },
   {
     "tenses": [
       "highway"
     ],
-    "sentense": "Will you take the highway because it's faster or the back roads because they're closer?",
+    "sentence": "Will you take the highway because it's faster or the back roads because they're closer?",
     "id": 1120
   },
   {
     "tenses": [
       "hill"
     ],
-    "sentense": "Jack went up the hill to fetch a pail of water.",
+    "sentence": "Jack went up the hill to fetch a pail of water.",
     "id": 1121
   },
   {
     "tenses": [
       "hindrance"
     ],
-    "sentense": "The continual interruptions have been a hindrance but I understand why they are necessary.",
+    "sentence": "The continual interruptions have been a hindrance but I understand why they are necessary.",
     "id": 1122
   },
   {
     "tenses": [
       "hippopotamus"
     ],
-    "sentense": "If you can train that hippopotamus to allow the monkey to hold his leash, it will be the best circus act.",
+    "sentence": "If you can train that hippopotamus to allow the monkey to hold his leash, it will be the best circus act.",
     "id": 1123
   },
   {
     "tenses": [
       "history"
     ],
-    "sentense": "We can learn many things from history, but mainly that we don't learn from history.",
+    "sentence": "We can learn many things from history, but mainly that we don't learn from history.",
     "id": 1124
   },
   {
     "tenses": [
       "hither"
     ],
-    "sentense": "We could go hither and yon distributing our pamphlets.",
+    "sentence": "We could go hither and yon distributing our pamphlets.",
     "id": 1125
   },
   {
     "tenses": [
       "hoarse"
     ],
-    "sentense": "I am a bit hoarse; I hope I'm not getting laryngitis.",
+    "sentence": "I am a bit hoarse; I hope I'm not getting laryngitis.",
     "id": 1126
   },
   {
     "tenses": [
       "hoe"
     ],
-    "sentense": "You must have a hoe if you're a gardener.",
+    "sentence": "You must have a hoe if you're a gardener.",
     "id": 1127
   },
   {
@@ -8150,63 +8150,63 @@
       "held",
       "holding"
     ],
-    "sentense": "I could hold the baby for you if you want to take a swim.",
+    "sentence": "I could hold the baby for you if you want to take a swim.",
     "id": 1128
   },
   {
     "tenses": [
       "hole"
     ],
-    "sentense": "The snake came out of the hole and we all screamed.",
+    "sentence": "The snake came out of the hole and we all screamed.",
     "id": 1129
   },
   {
     "tenses": [
       "holiday"
     ],
-    "sentense": "What will you do special for the upcoming holiday?",
+    "sentence": "What will you do special for the upcoming holiday?",
     "id": 1130
   },
   {
     "tenses": [
       "hollow"
     ],
-    "sentense": "The chocolate bunny was hollow so it wasn't as fattening as you might think.",
+    "sentence": "The chocolate bunny was hollow so it wasn't as fattening as you might think.",
     "id": 1131
   },
   {
     "tenses": [
       "home"
     ],
-    "sentense": "I am so tired that I just want to go home and go to sleep.",
+    "sentence": "I am so tired that I just want to go home and go to sleep.",
     "id": 1132
   },
   {
     "tenses": [
       "homework"
     ],
-    "sentense": "We were assigned a bunch of homework but I haven't even started on it yet.",
+    "sentence": "We were assigned a bunch of homework but I haven't even started on it yet.",
     "id": 1133
   },
   {
     "tenses": [
       "hominy"
     ],
-    "sentense": "Hominy is made from corn but what are grits made from?",
+    "sentence": "Hominy is made from corn but what are grits made from?",
     "id": 1134
   },
   {
     "tenses": [
       "honest"
     ],
-    "sentense": "Do not be so honest or they'll always expect it of you.",
+    "sentence": "Do not be so honest or they'll always expect it of you.",
     "id": 1135
   },
   {
     "tenses": [
       "honey"
     ],
-    "sentense": "I like to use honey in cooking sometimes instead of sugar.",
+    "sentence": "I like to use honey in cooking sometimes instead of sugar.",
     "id": 1136
   },
   {
@@ -8214,56 +8214,56 @@
       "honor",
       "honored"
     ],
-    "sentense": "The soldier had received all kinds of metals indicating the way he honored his country.",
+    "sentence": "The soldier had received all kinds of metals indicating the way he honored his country.",
     "id": 1137
   },
   {
     "tenses": [
       "hope"
     ],
-    "sentense": "I hope you are not thinking of going out with him.",
+    "sentence": "I hope you are not thinking of going out with him.",
     "id": 1138
   },
   {
     "tenses": [
       "horizon"
     ],
-    "sentense": "Just on the horizon I thought I could see land.",
+    "sentence": "Just on the horizon I thought I could see land.",
     "id": 1139
   },
   {
     "tenses": [
       "horrible"
     ],
-    "sentense": "The movie was so horrible that I had to walk out before the first half ended.",
+    "sentence": "The movie was so horrible that I had to walk out before the first half ended.",
     "id": 1140
   },
   {
     "tenses": [
       "horror"
     ],
-    "sentense": "In horror, her mother picked up the clothes that had been dirtied by our playing in the mud.",
+    "sentence": "In horror, her mother picked up the clothes that had been dirtied by our playing in the mud.",
     "id": 1141
   },
   {
     "tenses": [
       "horse"
     ],
-    "sentense": "I used to own a white horse but unfortunately I had to sell her.",
+    "sentence": "I used to own a white horse but unfortunately I had to sell her.",
     "id": 1142
   },
   {
     "tenses": [
       "hospital"
     ],
-    "sentense": "How many doctors does that hospital employ?",
+    "sentence": "How many doctors does that hospital employ?",
     "id": 1143
   },
   {
     "tenses": [
       "hotel"
     ],
-    "sentense": "Why don't we stay at that nice hotel next to the river?",
+    "sentence": "Why don't we stay at that nice hotel next to the river?",
     "id": 1144
   },
   {
@@ -8272,28 +8272,28 @@
       "hours",
       "hourly"
     ],
-    "sentense": "The train runs on the hour, every hour.",
+    "sentence": "The train runs on the hour, every hour.",
     "id": 1145
   },
   {
     "tenses": [
       "house"
     ],
-    "sentense": "I wish I could move out of this apartment into a house with a yard.",
+    "sentence": "I wish I could move out of this apartment into a house with a yard.",
     "id": 1146
   },
   {
     "tenses": [
       "household"
     ],
-    "sentense": "Does anyone in your household play the piano?",
+    "sentence": "Does anyone in your household play the piano?",
     "id": 1147
   },
   {
     "tenses": [
       "however"
     ],
-    "sentense": "He finished writing the paper, however, he still needs to type it in.",
+    "sentence": "He finished writing the paper, however, he still needs to type it in.",
     "id": 1148
   },
   {
@@ -8302,70 +8302,70 @@
       "howled",
       "howling"
     ],
-    "sentense": "Just then I heard the howl of a wolf and I started running.",
+    "sentence": "Just then I heard the howl of a wolf and I started running.",
     "id": 1149
   },
   {
     "tenses": [
       "human"
     ],
-    "sentense": "When did the first human evolve on this earth?",
+    "sentence": "When did the first human evolve on this earth?",
     "id": 1150
   },
   {
     "tenses": [
       "humble"
     ],
-    "sentense": "All your important sounding titles make me feel very humble.",
+    "sentence": "All your important sounding titles make me feel very humble.",
     "id": 1151
   },
   {
     "tenses": [
       "hundred"
     ],
-    "sentense": "I have two hundred mouths to feed on this ship three times every day.",
+    "sentence": "I have two hundred mouths to feed on this ship three times every day.",
     "id": 1152
   },
   {
     "tenses": [
       "hungry"
     ],
-    "sentense": "I wouldn't let you go hungry; come and eat something.",
+    "sentence": "I wouldn't let you go hungry; come and eat something.",
     "id": 1153
   },
   {
     "tenses": [
       "hurrah"
     ],
-    "sentense": "Hurrah for you; I never thought you could actually graduate.",
+    "sentence": "Hurrah for you; I never thought you could actually graduate.",
     "id": 1154
   },
   {
     "tenses": [
       "hurry"
     ],
-    "sentense": "Please don't hurry; we have plenty of time to see the entire museum.",
+    "sentence": "Please don't hurry; we have plenty of time to see the entire museum.",
     "id": 1155
   },
   {
     "tenses": [
       "hurt"
     ],
-    "sentense": "Baby, don't hurt me; it wouldn't be nice.",
+    "sentence": "Baby, don't hurt me; it wouldn't be nice.",
     "id": 1156
   },
   {
     "tenses": [
       "husband"
     ],
-    "sentense": "Her husband was a general in the army.",
+    "sentence": "Her husband was a general in the army.",
     "id": 1157
   },
   {
     "tenses": [
       "hygiene"
     ],
-    "sentense": "Personal hygiene is very important for the health of our community.",
+    "sentence": "Personal hygiene is very important for the health of our community.",
     "id": 1158
   },
   {
@@ -8373,7 +8373,7 @@
       "hymn",
       "hymns"
     ],
-    "sentense": "Our church services always include the singing of at least three hymns.",
+    "sentence": "Our church services always include the singing of at least three hymns.",
     "id": 1159
   },
   {
@@ -8382,21 +8382,21 @@
       "hypocrite",
       "hypocritical"
     ],
-    "sentense": "I have never seen so much hypocrisy in a so-called spiritual leader.",
+    "sentence": "I have never seen so much hypocrisy in a so-called spiritual leader.",
     "id": 1160
   },
   {
     "tenses": [
       "ice"
     ],
-    "sentense": "I love to go ice skating but I always have to rent my ice skates.",
+    "sentence": "I love to go ice skating but I always have to rent my ice skates.",
     "id": 1161
   },
   {
     "tenses": [
       "idea"
     ],
-    "sentense": "Your idea to bring along a picnic lunch was wonderful.",
+    "sentence": "Your idea to bring along a picnic lunch was wonderful.",
     "id": 1162
   },
   {
@@ -8404,7 +8404,7 @@
       "idol",
       "idolize"
     ],
-    "sentense": "Thomas Jefferson is an idol of mine; I admire the concepts he promoted.",
+    "sentence": "Thomas Jefferson is an idol of mine; I admire the concepts he promoted.",
     "id": 1163
   },
   {
@@ -8412,35 +8412,35 @@
       "ignorance",
       "ignore"
     ],
-    "sentense": "You can tell there's a lot of ignorance in this crowd. When will people learn the subject?",
+    "sentence": "You can tell there's a lot of ignorance in this crowd. When will people learn the subject?",
     "id": 1164
   },
   {
     "tenses": [
       "ignorant"
     ],
-    "sentense": "I feel totally ignorant in the subject of computers.",
+    "sentence": "I feel totally ignorant in the subject of computers.",
     "id": 1165
   },
   {
     "tenses": [
       "illiterate"
     ],
-    "sentense": "What is the percentage of people who are illiterate and what percentage can read?",
+    "sentence": "What is the percentage of people who are illiterate and what percentage can read?",
     "id": 1166
   },
   {
     "tenses": [
       "illustrate"
     ],
-    "sentense": "I would like to illustrate my point by drawing a picture.",
+    "sentence": "I would like to illustrate my point by drawing a picture.",
     "id": 1167
   },
   {
     "tenses": [
       "imagination"
     ],
-    "sentense": "Use your imagination to picture how this room will look with all the new furniture.",
+    "sentence": "Use your imagination to picture how this room will look with all the new furniture.",
     "id": 1168
   },
   {
@@ -8448,7 +8448,7 @@
       "imitate",
       "imitation"
     ],
-    "sentense": "The little girl was so funny because she could imitate her mother.",
+    "sentence": "The little girl was so funny because she could imitate her mother.",
     "id": 1169
   },
   {
@@ -8456,14 +8456,14 @@
       "immediately",
       "immediate"
     ],
-    "sentense": "After you've given your speech, immediately get off the stage so we can hurry this evening along.",
+    "sentence": "After you've given your speech, immediately get off the stage so we can hurry this evening along.",
     "id": 1170
   },
   {
     "tenses": [
       "immense"
     ],
-    "sentense": "She has displayed immense commitment to our project so far.",
+    "sentence": "She has displayed immense commitment to our project so far.",
     "id": 1171
   },
   {
@@ -8471,84 +8471,84 @@
       "immigrant",
       "immigrate"
     ],
-    "sentense": "When were most immigrants sworn in as citizens?",
+    "sentence": "When were most immigrants sworn in as citizens?",
     "id": 1172
   },
   {
     "tenses": [
       "immortal"
     ],
-    "sentense": "Sometimes he acts as if he is immortal, doing all kinds of daredevil acts.",
+    "sentence": "Sometimes he acts as if he is immortal, doing all kinds of daredevil acts.",
     "id": 1173
   },
   {
     "tenses": [
       "immunity"
     ],
-    "sentense": "The witness has immunity from being convicted so is testifying against the mobster.",
+    "sentence": "The witness has immunity from being convicted so is testifying against the mobster.",
     "id": 1174
   },
   {
     "tenses": [
       "impatient"
     ],
-    "sentense": "Don't be impatient; everything will be done in due time.",
+    "sentence": "Don't be impatient; everything will be done in due time.",
     "id": 1175
   },
   {
     "tenses": [
       "imperial"
     ],
-    "sentense": "Is that an imperial tradition or does everyone do that?",
+    "sentence": "Is that an imperial tradition or does everyone do that?",
     "id": 1176
   },
   {
     "tenses": [
       "importance"
     ],
-    "sentense": "What is the importance of our being present at the discussion?",
+    "sentence": "What is the importance of our being present at the discussion?",
     "id": 1177
   },
   {
     "tenses": [
       "important"
     ],
-    "sentense": "I have many important goals, but none as important as catching up on my reading.",
+    "sentence": "I have many important goals, but none as important as catching up on my reading.",
     "id": 1178
   },
   {
     "tenses": [
       "impose"
     ],
-    "sentense": "We could impose a tax on wages but that would be counter-productive.",
+    "sentence": "We could impose a tax on wages but that would be counter-productive.",
     "id": 1179
   },
   {
     "tenses": [
       "impossible"
     ],
-    "sentense": "Are you saying it's impossible to determine whose signature that is?",
+    "sentence": "Are you saying it's impossible to determine whose signature that is?",
     "id": 1180
   },
   {
     "tenses": [
       "impression"
     ],
-    "sentense": "What are your first impressions of our new teacher?",
+    "sentence": "What are your first impressions of our new teacher?",
     "id": 1181
   },
   {
     "tenses": [
       "improvement"
     ],
-    "sentense": "The new coat of paint is a drastic improvement to this room.",
+    "sentence": "The new coat of paint is a drastic improvement to this room.",
     "id": 1182
   },
   {
     "tenses": [
       "inauguration"
     ],
-    "sentense": "I would like to attend the inauguration ceremony of the president in Washington.",
+    "sentence": "I would like to attend the inauguration ceremony of the president in Washington.",
     "id": 1183
   },
   {
@@ -8556,7 +8556,7 @@
       "incline",
       "inclined"
     ],
-    "sentense": "To get these heavy pieces of furniture up there we will need some kind of gradual incline rather than just steps.",
+    "sentence": "To get these heavy pieces of furniture up there we will need some kind of gradual incline rather than just steps.",
     "id": 1184
   },
   {
@@ -8564,7 +8564,7 @@
       "include",
       "included"
     ],
-    "sentense": "He would have included your article in the last edition but it hadn't been edited yet.",
+    "sentence": "He would have included your article in the last edition but it hadn't been edited yet.",
     "id": 1185
   },
   {
@@ -8572,7 +8572,7 @@
       "inconvenience",
       "inconvenient"
     ],
-    "sentense": "It has been a great inconvenience for us to attend every meeting because they were always the same day as our workouts.",
+    "sentence": "It has been a great inconvenience for us to attend every meeting because they were always the same day as our workouts.",
     "id": 1186
   },
   {
@@ -8581,42 +8581,42 @@
       "increasing",
       "increased"
     ],
-    "sentense": "I could increase your salary but what have you done to deserve it?",
+    "sentence": "I could increase your salary but what have you done to deserve it?",
     "id": 1187
   },
   {
     "tenses": [
       "independence"
     ],
-    "sentense": "Doesn't every country celebrate some kind of independence day?",
+    "sentence": "Doesn't every country celebrate some kind of independence day?",
     "id": 1188
   },
   {
     "tenses": [
       "independent"
     ],
-    "sentense": "My niece is very independent even though she is only seven years old.",
+    "sentence": "My niece is very independent even though she is only seven years old.",
     "id": 1189
   },
   {
     "tenses": [
       "indicate"
     ],
-    "sentense": "How do we indicate that these marks are the block numbers and not the lot numbers?",
+    "sentence": "How do we indicate that these marks are the block numbers and not the lot numbers?",
     "id": 1190
   },
   {
     "tenses": [
       "indigestion"
     ],
-    "sentense": "That kind of ethnic food gives me indigestion so I try to avoid it.",
+    "sentence": "That kind of ethnic food gives me indigestion so I try to avoid it.",
     "id": 1191
   },
   {
     "tenses": [
       "indignation"
     ],
-    "sentense": "They all showed much indignation after finding out that presenters were changed.",
+    "sentence": "They all showed much indignation after finding out that presenters were changed.",
     "id": 1192
   },
   {
@@ -8624,14 +8624,14 @@
       "individual",
       "individually"
     ],
-    "sentense": "Do you file taxes as an individual or as a married couple?",
+    "sentence": "Do you file taxes as an individual or as a married couple?",
     "id": 1193
   },
   {
     "tenses": [
       "indivisible"
     ],
-    "sentense": "The atom at one time seemed indivisible, but science is continually discovering what parts make up substances.",
+    "sentence": "The atom at one time seemed indivisible, but science is continually discovering what parts make up substances.",
     "id": 1194
   },
   {
@@ -8639,14 +8639,14 @@
       "induce",
       "induced"
     ],
-    "sentense": "The doctor may induce labor if the baby doesn't come on its own within a couple days.",
+    "sentence": "The doctor may induce labor if the baby doesn't come on its own within a couple days.",
     "id": 1195
   },
   {
     "tenses": [
       "industrial"
     ],
-    "sentense": "This is the industrial part of town; next we'll visit the residential part.",
+    "sentence": "This is the industrial part of town; next we'll visit the residential part.",
     "id": 1196
   },
   {
@@ -10158,7 +10158,7 @@
     "tenses": [
       "March"
     ],
-    "sentence": "They weren’t born in March, but learned how to march anyway.",
+    "sentence": "They weren't born in March, but learned how to march anyway.",
     "id": 1403
   },
   {
@@ -10197,7 +10197,7 @@
       "match",
       "matches"
     ],
-    "sentence": "That shirt doesn’t match that suit. The football match attracted a lot of fans.",
+    "sentence": "That shirt doesn't match that suit. The football match attracted a lot of fans.",
     "id": 1408
   },
   {
@@ -10206,7 +10206,7 @@
       "materialize",
       "materialized"
     ],
-    "sentence": "The material witness didn’t show up. My plans didn’t get materialized.",
+    "sentence": "The material witness didn't show up. My plans didn't get materialized.",
     "id": 1409
   },
   {
@@ -10221,7 +10221,7 @@
       "matter",
       "matters"
     ],
-    "sentence": "It’s a public matter. It matters not. It doesn’t matter. I don’t care. I could care less.",
+    "sentence": "It’s a public matter. It matters not. It doesn't matter. I don’t care. I could care less.",
     "id": 1411
   },
   {
@@ -10307,7 +10307,7 @@
     "tenses": [
       "meat"
     ],
-    "sentence": "She doesn’t like meat that much but eats mostly vegetables.",
+    "sentence": "She doesn't like meat that much but eats mostly vegetables.",
     "id": 1423
   },
   {
