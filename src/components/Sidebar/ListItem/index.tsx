@@ -5,11 +5,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 
 import {useAppDispatch} from '../../../hooks/redux';
 import {currentWordSlice} from '../../../store/currentWord/slice';
-import {Props as WordItemProps} from './types';
+import {Props} from './types';
 
 import styles from '../index.module.css';
 
-const SidebarListItem: React.FC<WordItemProps> = ({word, index, currentWordId, onOpenSidebar}) => {
+const ListItem: React.FC<Props> = ({word, index, currentWordId, onOpenSidebar}) => {
   const dispatch = useAppDispatch();
 
   const wordItemClassNames = cx({
@@ -22,14 +22,12 @@ const SidebarListItem: React.FC<WordItemProps> = ({word, index, currentWordId, o
   };
 
   return (
-    <>
-      <ListItemButton onClick={() => onChangeWord()}>
-        <ListItemText>
-          <span className={wordItemClassNames}>{word.tenses.join(', ')}</span>
-        </ListItemText>
-      </ListItemButton>
-    </>
+    <ListItemButton onClick={() => onChangeWord()}>
+      <ListItemText>
+        <span className={wordItemClassNames}>{word.tenses.join(', ')}</span>
+      </ListItemText>
+    </ListItemButton>
   );
 };
 
-export default SidebarListItem;
+export default ListItem;

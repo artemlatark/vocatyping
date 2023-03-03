@@ -9,8 +9,6 @@ import Keyboard from './components/Keyboard';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
-const sidebarWidth = 360;
-
 function App() {
   const dispatch = useAppDispatch();
   const {words, isLoading} = useAppSelector((state) => state.wordsReducer);
@@ -34,13 +32,7 @@ function App() {
   return (
     <Layout
       sidebar={
-        <Sidebar
-          currentWordId={currentWordId}
-          onOpenSidebar={onOpenSidebar}
-          sidebarOpen={sidebarOpen}
-          sidebarWidth={sidebarWidth}
-          words={words}
-        />
+        <Sidebar currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} sidebarOpen={sidebarOpen} words={words} />
       }
     >
       <Header

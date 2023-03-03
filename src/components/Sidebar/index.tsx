@@ -1,95 +1,67 @@
 import React, {memo, useMemo, useRef} from 'react';
+import {groupBy} from 'lodash';
+import {GroupedVirtuoso} from 'react-virtuoso';
+
 import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
 
 import {Props as SidebarProps} from './types';
-import SidebarListItem from './SidebarListItem';
+import SidebarListItem from './ListItem';
 
 import styles from './index.module.css';
-import {GroupedVirtuoso, Virtuoso} from 'react-virtuoso';
-import ListItem from '@mui/material/ListItem';
-import ListSubheader from '@mui/material/ListSubheader';
-import List from '@mui/material/List';
-import {WordGroup} from '../../models/wordGroup';
+import {ListItemCustom, ListSubheaderCustom} from './styles';
 
-import {groupBy} from 'lodash';
-
-const MUIComponents: any = {
-  List: React.forwardRef(({style, children}: any, listRef: any) => {
-    return (
-      <List style={{padding: 0, ...style, margin: 0}} component="div" ref={listRef}>
-        {children}`
-      </List>
-    );
-  }),
-
-  Item: ({children, ...props}: any) => {
-    return (
-      <ListItem component="div" {...props} style={{margin: 0}}>
-        {children}
-      </ListItem>
-    );
-  },
-
-  Group: ({children, style, ...props}: any) => {
-    return (
-      <ListSubheader
-        component="div"
-        {...props}
-        style={{
-          ...style,
-          backgroundColor: 'white',
-          margin: 0,
-        }}
-      >
-        {children}
-      </ListSubheader>
-    );
-  },
-};
-
-const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, sidebarWidth, words}) => {
+const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
   const listRef = useRef<any>(null);
-  const {groupCounts, groups} = useMemo(() => {
+  const {groupCounts, wordGroups} = useMemo(() => {
     const groupedWords = groupBy(words, (word) => word.tenses[0][0]);
     const groupCounts = Object.values(groupedWords).map((words) => words.length);
-    const groups = Object.keys(groupedWords);
+    const wordGroups = Object.keys(groupedWords);
 
-    return {groupCounts, groups};
+    return {groupCounts, wordGroups};
   }, [words]);
 
-  const scrollToItem = () => {
-    if (listRef.current && sidebarOpen) {
-      listRef.current.scrollToItem(currentWordId - 1, 'smart');
-    }
-  };
-
   return (
-    <Drawer
-      className={styles.sidebarWrapper}
-      variant="temporary"
-      anchor="left"
-      open={sidebarOpen}
-      onClose={() => onOpenSidebar()}
-      SlideProps={{
-        addEndListener: scrollToItem,
-      }}
-    >
+    <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
       <GroupedVirtuoso
-        style={{height: '100%', width: 300}}
+        className={styles.sidebarContent}
+        ref={listRef}
+        initialTopMostItemIndex={{
+          index: currentWordId - 1,
+          align: 'center',
+        }}
         groupCounts={groupCounts}
         components={MUIComponents}
-        groupContent={(index) => {
-          return <div>{groups[index]}</div>;
-        }}
-        itemContent={(index) => {
-          const word = words[index];
-          return (
-            <SidebarListItem word={word} index={index} currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} />
-          );
-        }}
+        groupContent={(index) => wordGroups[index]}
+        itemContent={(index) => (
+          <SidebarListItem
+            word={words[index]}
+            index={index}
+            currentWordId={currentWordId}
+            onOpenSidebar={onOpenSidebar}
+          />
+        )}
       />
     </Drawer>
   );
+};
+
+const MUIComponents: any = {
+  List: React.forwardRef(({style, children}: any, listRef: any) => (
+    <List style={{padding: 0, ...style}} component="div" ref={listRef}>
+      {children}
+    </List>
+  )),
+  Item: ({children, ...props}: any) => (
+    <ListItemCustom component="div" {...props}>
+      {children}
+    </ListItemCustom>
+  ),
+  Group: ({children, ...props}: any) => (
+    <ListSubheaderCustom component="div" {...props}>
+      {children}
+    </ListSubheaderCustom>
+  ),
 };
 
 export default memo(Sidebar);
