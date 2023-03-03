@@ -2,7 +2,7 @@ import React, {memo, useMemo, useRef} from 'react';
 import Drawer from '@mui/material/Drawer';
 
 import {Props as SidebarProps} from './types';
-import ItemList from './ItemList';
+import SidebarListItem from './SidebarListItem';
 
 import styles from './index.module.css';
 import {GroupedVirtuoso, Virtuoso} from 'react-virtuoso';
@@ -49,7 +49,6 @@ const MUIComponents: any = {
 
 const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, sidebarWidth, words}) => {
   const listRef = useRef<any>(null);
-  // : WordGroup[]
   const {groupCounts, groups} = useMemo(() => {
     const groupedWords = groupBy(words, (word) => word.tenses[0][0]);
     const groupCounts = Object.values(groupedWords).map((words) => words.length);
@@ -76,14 +75,17 @@ const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarO
       }}
     >
       <GroupedVirtuoso
-        style={{height: '100%'}}
+        style={{height: '100%', width: 300}}
         groupCounts={groupCounts}
         components={MUIComponents}
         groupContent={(index) => {
           return <div>{groups[index]}</div>;
         }}
         itemContent={(index) => {
-          return <>123</>;
+          const word = words[index];
+          return (
+            <SidebarListItem word={word} index={index} currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} />
+          );
         }}
       />
     </Drawer>
