@@ -1,53 +1,67 @@
-import React, {memo, useRef} from 'react';
-import {FixedSizeList as List} from 'react-window';
-import AutoSizer from 'react-virtualized-auto-sizer';
+import React, {memo, useMemo, useRef} from 'react';
+import {groupBy} from 'lodash';
+import {GroupedVirtuoso} from 'react-virtuoso';
+
 import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
 
 import {Props as SidebarProps} from './types';
-import ItemList from './ItemList';
+import SidebarListItem from './ListItem';
 
 import styles from './index.module.css';
+import {ListItemCustom, ListSubheaderCustom} from './styles';
 
-const itemKey = (index: number, data: any) => data[index].id;
-
-const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, sidebarWidth, words}) => {
+const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
   const listRef = useRef<any>(null);
+  const {groupCounts, wordGroups} = useMemo(() => {
+    const groupedWords = groupBy(words, (word) => word.tenses[0][0]);
+    const groupCounts = Object.values(groupedWords).map((words) => words.length);
+    const wordGroups = Object.keys(groupedWords);
 
-  const scrollToItem = () => {
-    if (listRef.current && sidebarOpen) {
-      listRef.current.scrollToItem(currentWordId - 1, 'smart');
-    }
-  };
+    return {groupCounts, wordGroups};
+  }, [words]);
 
   return (
-    <AutoSizer className={styles.sidebar}>
-      {({height}) => (
-        <Drawer
-          className={styles.sidebarWrapper}
-          variant="temporary"
-          anchor="left"
-          open={sidebarOpen}
-          onClose={() => onOpenSidebar()}
-          SlideProps={{
-            addEndListener: scrollToItem,
-          }}
-        >
-          <List
-            ref={listRef}
-            height={height}
-            width={sidebarWidth}
-            itemSize={48}
-            itemData={words}
-            itemKey={itemKey}
-            itemCount={words.length}
-            overscanCount={5}
-          >
-            {(props) => <ItemList currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} {...props} />}
-          </List>
-        </Drawer>
-      )}
-    </AutoSizer>
+    <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
+      <GroupedVirtuoso
+        className={styles.sidebarContent}
+        ref={listRef}
+        initialTopMostItemIndex={{
+          index: currentWordId - 1,
+          align: 'center',
+        }}
+        groupCounts={groupCounts}
+        components={MUIComponents}
+        groupContent={(index) => wordGroups[index]}
+        itemContent={(index) => (
+          <SidebarListItem
+            word={words[index]}
+            index={index}
+            currentWordId={currentWordId}
+            onOpenSidebar={onOpenSidebar}
+          />
+        )}
+      />
+    </Drawer>
   );
+};
+
+const MUIComponents: any = {
+  List: React.forwardRef(({style, children}: any, listRef: any) => (
+    <List style={{padding: 0, ...style}} component="div" ref={listRef}>
+      {children}
+    </List>
+  )),
+  Item: ({children, ...props}: any) => (
+    <ListItemCustom component="div" {...props}>
+      {children}
+    </ListItemCustom>
+  ),
+  Group: ({children, ...props}: any) => (
+    <ListSubheaderCustom component="div" {...props}>
+      {children}
+    </ListSubheaderCustom>
+  ),
 };
 
 export default memo(Sidebar);

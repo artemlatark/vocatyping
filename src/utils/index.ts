@@ -8,7 +8,7 @@ export const saveToLocalStorage = (key: string, data: any): void => {
   }
 };
 
-// load string from localStarage and convert into an Object
+// load string from localStorage and convert into an Object
 // invalid output must be undefined
 export const getFromLocalStorage = (key: string): any | undefined => {
   try {
