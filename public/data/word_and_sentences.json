@@ -16167,5 +16167,1579 @@
     ],
     "sentence": "You seem to have a slight limp. Did you hurt your leg?",
     "id": 2212
+  },
+  {
+    "tenses": [
+      "slipper"
+    ],
+    "sentence": "Cinderella lost her golden slipper so took the other one off and ran home bare-footed.",
+    "id": 2213
+  },
+  {
+    "tenses": [
+      "slippery"
+    ],
+    "sentence": "Watch out! The sidewalk is slippery. We don't want you to fall.",
+    "id": 2214
+  },
+  {
+    "tenses": [
+      "smile",
+      "smiled",
+      "smiling"
+    ],
+    "sentence": "You have a beautiful smile. May I take your picture?",
+    "id": 2215
+  },
+  {
+    "tenses": [
+      "smoke"
+    ],
+    "sentence": "This is a smoke-free building so take your cigarette outside please.",
+    "id": 2216
+  },
+  {
+    "tenses": [
+      "smooth",
+      "smoothly"
+    ],
+    "sentence": "Her skin was as smooth as a baby's.",
+    "id": 2217
+  },
+  {
+    "tenses": [
+      "snatch",
+      "snatching",
+      "snatched"
+    ],
+    "sentence": "I feel like running up and snatching that microphone out of his hand.",
+    "id": 2218
+  },
+  {
+    "tenses": [
+      "sneeze",
+      "sneezing",
+      "sneezed"
+    ],
+    "sentence": "Just a minute! I think I'm going to sneeze.",
+    "id": 2219
+  },
+  {
+    "tenses": [
+      "snow",
+      "snowing",
+      "snowed"
+    ],
+    "sentence": "The snow is so dirty. You can tell it isn't fresh.",
+    "id": 2220
+  },
+  {
+    "tenses": [
+      "soap"
+    ],
+    "sentence": "Take some soap and water and clean your own coat.",
+    "id": 2221
+  },
+  {
+    "tenses": [
+      "sober",
+      "sobering"
+    ],
+    "sentence": "You couldn't say he was sober because he was acting drunk.",
+    "id": 2222
+  },
+  {
+    "tenses": [
+      "social"
+    ],
+    "sentence": "I love these social gatherings. I wish we had them more often.",
+    "id": 2223
+  },
+  {
+    "tenses": [
+      "socialist"
+    ],
+    "sentence": "Did they have a socialist, communist, or capitalist government?",
+    "id": 2224
+  },
+  {
+    "tenses": [
+      "society"
+    ],
+    "sentence": "Society is really just made up of individuals but people forget that sometimes.",
+    "id": 2225
+  },
+  {
+    "tenses": [
+      "soda"
+    ],
+    "sentence": "May I offer you a soda? How about tea or coffee?",
+    "id": 2226
+  },
+  {
+    "tenses": [
+      "sofa"
+    ],
+    "sentence": "May I lay down on your sofa and take a ten-minute nap?",
+    "id": 2227
+  },
+  {
+    "tenses": [
+      "soldier"
+    ],
+    "sentence": "He was a great soldier but not a good leader.",
+    "id": 2228
+  },
+  {
+    "tenses": [
+      "solemn"
+    ],
+    "sentence": "This is a solemn place so please take your hat off.",
+    "id": 2229
+  },
+  {
+    "tenses": [
+      "solitary"
+    ],
+    "sentence": "The prisoner was put into solitary confinement for 3 days.",
+    "id": 2230
+  },
+  {
+    "tenses": [
+      "solitude"
+    ],
+    "sentence": "I like the solitude of the mountains.",
+    "id": 2231
+  },
+  {
+    "tenses": [
+      "solve",
+      "solving",
+      "solved"
+    ],
+    "sentence": "I can't seem to solve this math problem. Will you help?",
+    "id": 2232
+  },
+  {
+    "tenses": [
+      "some"
+    ],
+    "sentence": "I would very much like some more potatoes please.",
+    "id": 2233
+  },
+  {
+    "tenses": [
+      "somebody"
+    ],
+    "sentence": "Somebody told me that you weren't happy working here. Did I hear correctly?",
+    "id": 2234
+  },
+  {
+    "tenses": [
+      "something"
+    ],
+    "sentence": "There is definitely something wrong with my grandfather but it's hard to tell exactly what.",
+    "id": 2235
+  },
+  {
+    "tenses": [
+      "sometimes"
+    ],
+    "sentence": "Sometimes it gets to be very annoying to hear you speak.",
+    "id": 2236
+  },
+  {
+    "tenses": [
+      "somewhat"
+    ],
+    "sentence": "He is somewhat retired, meaning he doesn't have a regular job but he does work.",
+    "id": 2237
+  },
+  {
+    "tenses": [
+      "somewhere"
+    ],
+    "sentence": "You want me to live somewhere in the middle of nowhere? I don't think so!",
+    "id": 2238
+  },
+  {
+    "tenses": [
+      "son"
+    ],
+    "sentence": "My sons are very important to me but my daughter is much more like myself.",
+    "id": 2239
+  },
+  {
+    "tenses": [
+      "song"
+    ],
+    "sentence": "If I sing you a song will you let me leave?",
+    "id": 2240
+  },
+  {
+    "tenses": [
+      "soprano"
+    ],
+    "sentence": "She sings soprano in choir so is used to hitting the high notes.",
+    "id": 2241
+  },
+  {
+    "tenses": [
+      "sorrow"
+    ],
+    "sentence": "To my sorrow, Mr. Blakely died last year.",
+    "id": 2242
+  },
+  {
+    "tenses": [
+      "soul"
+    ],
+    "sentence": "Oh my gosh! I don't know a single soul at this party.",
+    "id": 2243
+  },
+  {
+    "tenses": [
+      "sound",
+      "sounded",
+      "sounding"
+    ],
+    "sentence": "It sounds like you don't like to use computers. But typewriters are so slow.",
+    "id": 2244
+  },
+  {
+    "tenses": [
+      "soup"
+    ],
+    "sentence": "Let's have a quick soup and salad and run on to our meeting.",
+    "id": 2245
+  },
+  {
+    "tenses": [
+      "source"
+    ],
+    "sentence": "What is the source of your information?",
+    "id": 2246
+  },
+  {
+    "tenses": [
+      "south"
+    ],
+    "sentence": "I live south of Illinois but north of Mississippi.",
+    "id": 2247
+  },
+  {
+    "tenses": [
+      "southern"
+    ],
+    "sentence": "If you look at the sky in a southern direction you can see that constellation.",
+    "id": 2248
+  },
+  {
+    "tenses": [
+      "sovereign"
+    ],
+    "sentence": "Is that a sovereign state?",
+    "id": 2249
+  },
+  {
+    "tenses": [
+      "space"
+    ],
+    "sentence": "Things are traveling in space all the time, some from humans, some not.",
+    "id": 2250
+  },
+  {
+    "tenses": [
+      "spangle"
+    ],
+    "sentence": "She was wearing some kind of dress with spangles and sequins.",
+    "id": 2251
+  },
+  {
+    "tenses": [
+      "spare"
+    ],
+    "sentence": "Spare me the excuses. You're late because you want to be late.",
+    "id": 2252
+  },
+  {
+    "tenses": [
+      "sparkle",
+      "sparkled"
+    ],
+    "sentence": "As soon as he realized that there were presents there for him, his eyes sparkled.",
+    "id": 2253
+  },
+  {
+    "tenses": [
+      "sparrow"
+    ],
+    "sentence": "I saw a sparrow on the windowsill yesterday. Are they common around here?",
+    "id": 2254
+  },
+  {
+    "tenses": [
+      "speak",
+      "speaking",
+      "spoke",
+      "spoken"
+    ],
+    "sentence": "May we speak with you a moment?",
+    "id": 2255
+  },
+  {
+    "tenses": [
+      "speaker"
+    ],
+    "sentence": "The speaker had excellent style but the topic was boring.",
+    "id": 2256
+  },
+  {
+    "tenses": [
+      "special",
+      "specially"
+    ],
+    "sentence": "I have a very special present for you. Come here.",
+    "id": 2257
+  },
+  {
+    "tenses": [
+      "specify. specified"
+    ],
+    "sentence": "I need to specify the colors that I want the new kitchen to have.",
+    "id": 2258
+  },
+  {
+    "tenses": [
+      "spectacle"
+    ],
+    "sentence": "You are making a spectacle of yourself. Don't be so obvious.",
+    "id": 2259
+  },
+  {
+    "tenses": [
+      "speech"
+    ],
+    "sentence": "I wrote speeches for that president while he was in office.",
+    "id": 2260
+  },
+  {
+    "tenses": [
+      "spelling"
+    ],
+    "sentence": "I need to know the spelling of that word so I can send in a perfect paper.",
+    "id": 2261
+  },
+  {
+    "tenses": [
+      "sphere"
+    ],
+    "sentence": "An orange is a sphere while a plate is more like a plane.",
+    "id": 2262
+  },
+  {
+    "tenses": [
+      "spice"
+    ],
+    "sentence": "What kind of spices have you been putting in this sort of dish?",
+    "id": 2263
+  },
+  {
+    "tenses": [
+      "spinach"
+    ],
+    "sentence": "Spinach supposedly makes you strong, but is that really true?",
+    "id": 2264
+  },
+  {
+    "tenses": [
+      "spinner"
+    ],
+    "sentence": "I usually like using spinners when I fish but occasionally I'll use another kind of lure.",
+    "id": 2265
+  },
+  {
+    "tenses": [
+      "spirit"
+    ],
+    "sentence": "After you visit that old abandoned house, you'll believe in spirits. You may even, then, want to consume some spirits.",
+    "id": 2266
+  },
+  {
+    "tenses": [
+      "splendid",
+      "splendidly"
+    ],
+    "sentence": "What a splendid establishment you have here. How did you make all these renovations?",
+    "id": 2267
+  },
+  {
+    "tenses": [
+      "splendor"
+    ],
+    "sentence": "Even with all the splendor of the cathedral on 27th, we didn't want to get married there.",
+    "id": 2268
+  },
+  {
+    "tenses": [
+      "splinter"
+    ],
+    "sentence": "You must have gotten a splinter from handling that wooden pole.",
+    "id": 2269
+  },
+  {
+    "tenses": [
+      "sponge"
+    ],
+    "sentence": "Hand me a sponge, will you? I want to clean up this mess.",
+    "id": 2270
+  },
+  {
+    "tenses": [
+      "spread",
+      "spreading"
+    ],
+    "sentence": "How long have they been spreading rumors about me?",
+    "id": 2271
+  },
+  {
+    "tenses": [
+      "spring",
+      "sprang",
+      "sprung"
+    ],
+    "sentence": "To make this toy work, you must install a spring right here. Then it will spring up quite high when this crank is turned.",
+    "id": 2272
+  },
+  {
+    "tenses": [
+      "sprinkle"
+    ],
+    "sentence": "Let's sprinkle some little candies on top of the cupcakes.",
+    "id": 2273
+  },
+  {
+    "tenses": [
+      "square"
+    ],
+    "sentence": "Put your chairs in the shape of a square with everybody facing out.",
+    "id": 2274
+  },
+  {
+    "tenses": [
+      "squash"
+    ],
+    "sentence": "I love cooking squash -- all kinds of squash.",
+    "id": 2275
+  },
+  {
+    "tenses": [
+      "squirrel"
+    ],
+    "sentence": "What a cute little squirrel. He's sitting and eating an acorn.",
+    "id": 2276
+  },
+  {
+    "tenses": [
+      "stable"
+    ],
+    "sentence": "I keep my horse in a stable down the road since I don't have the land to keep her, myself.",
+    "id": 2277
+  },
+  {
+    "tenses": [
+      "stage"
+    ],
+    "sentence": "I would like for you to perform on stage. When will be your next show?",
+    "id": 2278
+  },
+  {
+    "tenses": [
+      "stagger",
+      "staggering"
+    ],
+    "sentence": "The difference in the looks of you two is staggering. How could you be related?",
+    "id": 2279
+  },
+  {
+    "tenses": [
+      "stake"
+    ],
+    "sentence": "To kill a vampire, they say you must drive a wooden stake through its heart.",
+    "id": 2280
+  },
+  {
+    "tenses": [
+      "stale"
+    ],
+    "sentence": "This bread is stale. Get me a fresh loaf.",
+    "id": 2281
+  },
+  {
+    "tenses": [
+      "stalk",
+      "stalked",
+      "stalking"
+    ],
+    "sentence": "He stalked me for weeks but I finally got the police to make him stop following me.",
+    "id": 2282
+  },
+  {
+    "tenses": [
+      "stamp",
+      "stamped",
+      "stamping"
+    ],
+    "sentence": "I would like to buy a stamp with our company's name and address so I don't have to keep writing it by hand.",
+    "id": 2283
+  },
+  {
+    "tenses": [
+      "stand",
+      "stood",
+      "standing"
+    ],
+    "sentence": "I am standing here waiting for you to finish.",
+    "id": 2284
+  },
+  {
+    "tenses": [
+      "standard"
+    ],
+    "sentence": "There is the standard way to say it and about 20 dialectic ways of saying it.",
+    "id": 2285
+  },
+  {
+    "tenses": [
+      "star"
+    ],
+    "sentence": "You are always a star to me even if you aren't a movie star.",
+    "id": 2286
+  },
+  {
+    "tenses": [
+      "starch",
+      "starched"
+    ],
+    "sentence": "I need my shirts starched so they'll look crisp and professional.",
+    "id": 2287
+  },
+  {
+    "tenses": [
+      "stare",
+      "staring",
+      "stared"
+    ],
+    "sentence": "He could not stop staring at her.",
+    "id": 2288
+  },
+  {
+    "tenses": [
+      "start",
+      "started",
+      "starting"
+    ],
+    "sentence": "We want to start our own business. Will you help?",
+    "id": 2289
+  },
+  {
+    "tenses": [
+      "stately"
+    ],
+    "sentence": "She looked very stately in her new business suit.",
+    "id": 2290
+  },
+  {
+    "tenses": [
+      "statement"
+    ],
+    "sentence": "The police officer took a statement from the witness.",
+    "id": 2291
+  },
+  {
+    "tenses": [
+      "statesman"
+    ],
+    "sentence": "He is some kind of statesman, one who is very high up in the political hierarchy.",
+    "id": 2292
+  },
+  {
+    "tenses": [
+      "station"
+    ],
+    "sentence": "Would you mind taking me to the train station on your way into town?",
+    "id": 2293
+  },
+  {
+    "tenses": [
+      "stationary"
+    ],
+    "sentence": "If you stand stationary, the tiger may not notice you.",
+    "id": 2294
+  },
+  {
+    "tenses": [
+      "stationery"
+    ],
+    "sentence": "I'm going to stop by a stationary store while I'm out. Do you need anything?",
+    "id": 2295
+  },
+  {
+    "tenses": [
+      "statute"
+    ],
+    "sentence": "The statute of limitations just ran out so we will not be able to sue.",
+    "id": 2296
+  },
+  {
+    "tenses": [
+      "stay",
+      "stayed",
+      "staying"
+    ],
+    "sentence": "May I stay with you while I'm visiting Cincinnati?",
+    "id": 2297
+  },
+  {
+    "tenses": [
+      "steady"
+    ],
+    "sentence": "Steady the boat before attempting to put up the sail.",
+    "id": 2298
+  },
+  {
+    "tenses": [
+      "steak"
+    ],
+    "sentence": "Let's go to a fancy restaurant and order steaks and champagne.",
+    "id": 2299
+  },
+  {
+    "tenses": [
+      "steal",
+      "stole",
+      "stealing"
+    ],
+    "sentence": "Taking pens from your office is stealing. Don't you see that?",
+    "id": 2300
+  },
+  {
+    "tenses": [
+      "steam"
+    ],
+    "sentence": "Steam can burn just like boiling water so be careful.",
+    "id": 2301
+  },
+  {
+    "tenses": [
+      "steel"
+    ],
+    "sentence": "These rails are made of steel so won't easily be broken.",
+    "id": 2302
+  },
+  {
+    "tenses": [
+      "steeple"
+    ],
+    "sentence": "Look for the steeple at the end of the road and walk towards it. I'll then see you.",
+    "id": 2303
+  },
+  {
+    "tenses": [
+      "steer",
+      "steering"
+    ],
+    "sentence": "Could you steer me in the right direction to get to 49th?",
+    "id": 2304
+  },
+  {
+    "tenses": [
+      "steerage"
+    ],
+    "sentence": "He's staying in the steerage of the ship but I wanted a nicer room.",
+    "id": 2305
+  },
+  {
+    "tenses": [
+      "stenographer"
+    ],
+    "sentence": "I am a stenographer so I'm in court all day every day typing people's words.",
+    "id": 2306
+  },
+  {
+    "tenses": [
+      "stern"
+    ],
+    "sentence": "She had a very stern look on her face. I was scared of what she was going to say.",
+    "id": 2307
+  },
+  {
+    "tenses": [
+      "still"
+    ],
+    "sentence": "Be still, my child. We'll be there soon.",
+    "id": 2308
+  },
+  {
+    "tenses": [
+      "stir",
+      "stirred",
+      "stirring"
+    ],
+    "sentence": "Stir in the melted butter and then take the pot off the hot burner.",
+    "id": 2309
+  },
+  {
+    "tenses": [
+      "stitch"
+    ],
+    "sentence": "Let me stitch up that hole in your shirt for you.",
+    "id": 2310
+  },
+  {
+    "tenses": [
+      "stockings"
+    ],
+    "sentence": "Put on your yellow stockings because they go so well with your new school dress.",
+    "id": 2311
+  },
+  {
+    "tenses": [
+      "stomach"
+    ],
+    "sentence": "I feel sick in my stomach. I better go lie down.",
+    "id": 2312
+  },
+  {
+    "tenses": [
+      "stop",
+      "stopped",
+      "stopping"
+    ],
+    "sentence": "Stop playing that saxophone. It's distracting.",
+    "id": 2313
+  },
+  {
+    "tenses": [
+      "store",
+      "stored",
+      "storing"
+    ],
+    "sentence": "We better put our winter coats in storage so the moths won't get to them.",
+    "id": 2314
+  },
+  {
+    "tenses": [
+      "storm"
+    ],
+    "sentence": "A terrible storm is coming this way. We better prepare.",
+    "id": 2315
+  },
+  {
+    "tenses": [
+      "stowaway"
+    ],
+    "sentence": "The kid was a stowaway and snuck onto the boat when at harbor.",
+    "id": 2316
+  },
+  {
+    "tenses": [
+      "straight"
+    ],
+    "sentence": "Is my dress hem straight in back?",
+    "id": 2317
+  },
+  {
+    "tenses": [
+      "strait"
+    ],
+    "sentence": "The strait between the two lands was very narrow.",
+    "id": 2318
+  },
+  {
+    "tenses": [
+      "strange"
+    ],
+    "sentence": "She looks pretty strange to me with that new hairdo. Don't you think so too?",
+    "id": 2319
+  },
+  {
+    "tenses": [
+      "strawberry",
+      "strawberries"
+    ],
+    "sentence": "I like the aroma of strawberries but I don't like to eat them.",
+    "id": 2320
+  },
+  {
+    "tenses": [
+      "stream"
+    ],
+    "sentence": "She had a stream of tears coming down her cheeks.",
+    "id": 2321
+  },
+  {
+    "tenses": [
+      "street"
+    ],
+    "sentence": "Your street has so many streetlights that I feel very safe coming to your house.",
+    "id": 2322
+  },
+  {
+    "tenses": [
+      "strength"
+    ],
+    "sentence": "The cat doesn't have much strength because she's getting very old.",
+    "id": 2323
+  },
+  {
+    "tenses": [
+      "strengthen"
+    ],
+    "sentence": "You should strengthen your leg muscles so you won't get so tired of walking.",
+    "id": 2324
+  },
+  {
+    "tenses": [
+      "stretch",
+      "stretched",
+      "stretching"
+    ],
+    "sentence": "One must stretch all muscles well before doing any kind of exercise.",
+    "id": 2325
+  },
+  {
+    "tenses": [
+      "strict",
+      "strictly"
+    ],
+    "sentence": "Strictly speaking, you are not formally part of this group.",
+    "id": 2326
+  },
+  {
+    "tenses": [
+      "strife"
+    ],
+    "sentence": "My wife gives me a lot of strife and I don't know how to stop it. Get a life!",
+    "id": 2327
+  },
+  {
+    "tenses": [
+      "stripe",
+      "striped"
+    ],
+    "sentence": "She has blue stripes on her dress.",
+    "id": 2328
+  },
+  {
+    "tenses": [
+      "stroke",
+      "stroked",
+      "stroking"
+    ],
+    "sentence": "Stroke the pig's belly and he'll fall over with pleasure.",
+    "id": 2329
+  },
+  {
+    "tenses": [
+      "strong"
+    ],
+    "sentence": "You may be very strong physically, but she is very strong mentally.",
+    "id": 2330
+  },
+  {
+    "tenses": [
+      "struggle",
+      "struggled",
+      "struggling"
+    ],
+    "sentence": "These patients have been struggling against alcoholism for years.",
+    "id": 2331
+  },
+  {
+    "tenses": [
+      "stubborn"
+    ],
+    "sentence": "My son is very stubborn when it comes to his sons.",
+    "id": 2332
+  },
+  {
+    "tenses": [
+      "student"
+    ],
+    "sentence": "Yes, I am a student at the university.",
+    "id": 2333
+  },
+  {
+    "tenses": [
+      "studio"
+    ],
+    "sentence": "She has a studio apartment in Manhattan yet pays more than you do for three bedrooms.",
+    "id": 2334
+  },
+  {
+    "tenses": [
+      "study",
+      "studied",
+      "studying"
+    ],
+    "sentence": "May we study in your study hall or is that only for your school's students?",
+    "id": 2335
+  },
+  {
+    "tenses": [
+      "stumble",
+      "stumbled"
+    ],
+    "sentence": "By mistake, I stumbled across a file I had made on you years back and it contained some very interesting information.",
+    "id": 2336
+  },
+  {
+    "tenses": [
+      "stupid"
+    ],
+    "sentence": "I'm sorry, but if you continue to act stupid, I will continue to call you, 'stupid'.",
+    "id": 2337
+  },
+  {
+    "tenses": [
+      "style"
+    ],
+    "sentence": "I like his style. It's fresh and energetic.",
+    "id": 2338
+  },
+  {
+    "tenses": [
+      "subdue",
+      "subdued"
+    ],
+    "sentence": "First we need to subdue the patient, then we can administer the medicine.",
+    "id": 2339
+  },
+  {
+    "tenses": [
+      "subject"
+    ],
+    "sentence": "Every sentence should have a subject and a predicate.",
+    "id": 2340
+  },
+  {
+    "tenses": [
+      "submit",
+      "submitted",
+      "submitting"
+    ],
+    "sentence": "I will be submitting an article for your review next month.",
+    "id": 2341
+  },
+  {
+    "tenses": [
+      "substance"
+    ],
+    "sentence": "Of what substance is that table made?",
+    "id": 2342
+  },
+  {
+    "tenses": [
+      "substitute"
+    ],
+    "sentence": "There is no substitute for love.",
+    "id": 2343
+  },
+  {
+    "tenses": [
+      "subtle",
+      "subtly"
+    ],
+    "sentence": "Her answer was subtle but clearly understandable if you think about it.",
+    "id": 2344
+  },
+  {
+    "tenses": [
+      "subtract",
+      "subtracting",
+      "subtracted"
+    ],
+    "sentence": "We must subtract this number from that number to produce the correct results.",
+    "id": 2345
+  },
+  {
+    "tenses": [
+      "succeed",
+      "succeeding",
+      "succeeded"
+    ],
+    "sentence": "You will succeed in convincing people of your ideas if they are accurate and you speak well.",
+    "id": 2346
+  },
+  {
+    "tenses": [
+      "success",
+      "successful"
+    ],
+    "sentence": "Success is not dependent on your attendance but it sure would be nice.",
+    "id": 2347
+  },
+  {
+    "tenses": [
+      "sudden",
+      "suddenly"
+    ],
+    "sentence": "All of a sudden, I realized that you wouldn't be there and I was going to have to defend our proposals alone.",
+    "id": 2348
+  },
+  {
+    "tenses": [
+      "suffer",
+      "suffered",
+      "suffering"
+    ],
+    "sentence": "I am suffering from a lack of sleep.",
+    "id": 2349
+  },
+  {
+    "tenses": [
+      "sufficient",
+      "sufficiently"
+    ],
+    "sentence": "Does that department have sufficient resources to finish the contract?",
+    "id": 2350
+  },
+  {
+    "tenses": [
+      "sugar"
+    ],
+    "sentence": "May I serve you cream or sugar with your coffee?",
+    "id": 2351
+  },
+  {
+    "tenses": [
+      "suggest",
+      "suggesting",
+      "suggested"
+    ],
+    "sentence": "Mrs. Applethorpe suggested that we close the branch in Wilmington so that we can concentrate on the branches that are making more profits.",
+    "id": 2352
+  },
+  {
+    "tenses": [
+      "suggestion"
+    ],
+    "sentence": "Your suggestion may be a good one but its timing is awful.",
+    "id": 2353
+  },
+  {
+    "tenses": [
+      "suit"
+    ],
+    "sentence": "He will need to buy a few new business suits for the trip.",
+    "id": 2354
+  },
+  {
+    "tenses": [
+      "suitable"
+    ],
+    "sentence": "Would this report have been suitable if they hadn't have employed so many people?",
+    "id": 2355
+  },
+  {
+    "tenses": [
+      "sullen"
+    ],
+    "sentence": "She was in a sullen mood after I made fun of her skit.",
+    "id": 2356
+  },
+  {
+    "tenses": [
+      "sulphur",
+      "sulphuric"
+    ],
+    "sentence": "I suppose you could call this color sulphur but I'd prefer to say it's mustard.",
+    "id": 2357
+  },
+  {
+    "tenses": [
+      "summer"
+    ],
+    "sentence": "What did you children do this past summer?",
+    "id": 2358
+  },
+  {
+    "tenses": [
+      "summon",
+      "summoned",
+      "summoning"
+    ],
+    "sentence": "We sat around a circle and attempted to summon the demon who was haunting the house.",
+    "id": 2359
+  },
+  {
+    "tenses": [
+      "sun"
+    ],
+    "sentence": "Would you say it's true that the sun will come up tomorrow?",
+    "id": 2360
+  },
+  {
+    "tenses": [
+      "Sunday"
+    ],
+    "sentence": "Let's go for a Sunday brunch.",
+    "id": 2361
+  },
+  {
+    "tenses": [
+      "superintendent"
+    ],
+    "sentence": "He is superintendent of the building so he should know when the place is locked up at night.",
+    "id": 2362
+  },
+  {
+    "tenses": [
+      "superior"
+    ],
+    "sentence": "You act as if you are superior to me but I believe I am smarter than you.",
+    "id": 2363
+  },
+  {
+    "tenses": [
+      "supervisor"
+    ],
+    "sentence": "May I introduce you to my supervisor, Mr. Jones?",
+    "id": 2364
+  },
+  {
+    "tenses": [
+      "supper"
+    ],
+    "sentence": "Let's get some supper at the diner down the road. Then we'll talk business.",
+    "id": 2365
+  },
+  {
+    "tenses": [
+      "supply",
+      "supplied",
+      "supplying"
+    ],
+    "sentence": "My supply of suntan lotion is getting low so would you supply me with more?",
+    "id": 2366
+  },
+  {
+    "tenses": [
+      "support",
+      "supporting",
+      "supported"
+    ],
+    "sentence": "I supported your candidacy because I believed in the issues you believed, not because I like you.",
+    "id": 2367
+  },
+  {
+    "tenses": [
+      "suppose",
+      "supposed",
+      "supposing",
+      "supposedly"
+    ],
+    "sentence": "I suppose you can go with me but you must be on your best behavior.",
+    "id": 2368
+  },
+  {
+    "tenses": [
+      "supreme"
+    ],
+    "sentence": "There is no doubt that that restaurant is supreme to the other one.",
+    "id": 2369
+  },
+  {
+    "tenses": [
+      "sure",
+      "surely"
+    ],
+    "sentence": "I am not sure whether I will be able to go or not. I'll have to tell you tomorrow.",
+    "id": 2370
+  },
+  {
+    "tenses": [
+      "surface"
+    ],
+    "sentence": "The surface of the water is smooth but there's no telling what's going on underneath.",
+    "id": 2371
+  },
+  {
+    "tenses": [
+      "surgeon"
+    ],
+    "sentence": "The surgeon will scrub and then go into surgery.",
+    "id": 2372
+  },
+  {
+    "tenses": [
+      "surprise"
+    ],
+    "sentence": "I have a surprise for you. Close your eyes and count to ten.",
+    "id": 2373
+  },
+  {
+    "tenses": [
+      "surrender",
+      "surrendered",
+      "surrendering"
+    ],
+    "sentence": "I have surrendered unto the king what is due the king.",
+    "id": 2374
+  },
+  {
+    "tenses": [
+      "surrogate"
+    ],
+    "sentence": "I can be your surrogate mother while your real mother is on her trip.",
+    "id": 2375
+  },
+  {
+    "tenses": [
+      "surround",
+      "surrounded",
+      "surrounding"
+    ],
+    "sentence": "We will surround the building with police and then infiltrate.",
+    "id": 2376
+  },
+  {
+    "tenses": [
+      "survey",
+      "surveyed",
+      "surveying"
+    ],
+    "sentence": "The surveyor surveyed the new location for the house.",
+    "id": 2377
+  },
+  {
+    "tenses": [
+      "suspect",
+      "suspected",
+      "suspecting"
+    ],
+    "sentence": "I suspect that you are not being totally honest with me.",
+    "id": 2378
+  },
+  {
+    "tenses": [
+      "suspenders"
+    ],
+    "sentence": "My grandpa always wears suspenders to keep his pants up instead of a belt.",
+    "id": 2379
+  },
+  {
+    "tenses": [
+      "sustain",
+      "sustained",
+      "sustaining"
+    ],
+    "sentence": "Will you be able to sustain this level of expertise if we add the new technology?",
+    "id": 2380
+  },
+  {
+    "tenses": [
+      "swallow",
+      "swallowing",
+      "swallowed"
+    ],
+    "sentence": "I am having trouble swallowing, doctor. Give me some medicine.",
+    "id": 2381
+  },
+  {
+    "tenses": [
+      "swamp"
+    ],
+    "sentence": "The swamp was filled with alligators so I didn't want to wade out in the water.",
+    "id": 2382
+  },
+  {
+    "tenses": [
+      "swarm",
+      "swarming"
+    ],
+    "sentence": "The mosquitoes are swarming tonight.",
+    "id": 2383
+  },
+  {
+    "tenses": [
+      "swear",
+      "swore",
+      "swearing"
+    ],
+    "sentence": "He swears that he never had heard before that we were going camping.",
+    "id": 2384
+  },
+  {
+    "tenses": [
+      "sweat"
+    ],
+    "sentence": "Dogs sweat differently from humans. Pigs sweat like humans.",
+    "id": 2385
+  },
+  {
+    "tenses": [
+      "sweater"
+    ],
+    "sentence": "That is a beautiful sweater but it doesn't keep you warm does it?",
+    "id": 2386
+  },
+  {
+    "tenses": [
+      "sweep",
+      "swept",
+      "sweeping"
+    ],
+    "sentence": "I'll sweep the floor while you straighten up.",
+    "id": 2387
+  },
+  {
+    "tenses": [
+      "sweet",
+      "sweeten"
+    ],
+    "sentence": "That dessert is too sweet for me.",
+    "id": 2388
+  },
+  {
+    "tenses": [
+      "switchman"
+    ],
+    "sentence": "I suppose switchmen are still needed on trains these days.",
+    "id": 2389
+  },
+  {
+    "tenses": [
+      "sword"
+    ],
+    "sentence": "The Japanese sword is worth over $1000.",
+    "id": 2390
+  },
+  {
+    "tenses": [
+      "symbol",
+      "symbolic"
+    ],
+    "sentence": "We use symbols to represent concepts so that we can communicate faster.",
+    "id": 2391
+  },
+  {
+    "tenses": [
+      "symmetry",
+      "symmetric"
+    ],
+    "sentence": "There is a lot of symmetry in nature. Maybe that's why people like human-made symmetric constructs.",
+    "id": 2392
+  },
+  {
+    "tenses": [
+      "sympathy",
+      "sympathetic"
+    ],
+    "sentence": "I have little sympathy for someone who lies.",
+    "id": 2393
+  },
+  {
+    "tenses": [
+      "syrup"
+    ],
+    "sentence": "May I get some maple syrup to put on my pancakes?",
+    "id": 2394
+  },
+  {
+    "tenses": [
+      "system"
+    ],
+    "sentence": "This system is hard to understand but easy to use.",
+    "id": 2395
+  },
+  {
+    "tenses": [
+      "table"
+    ],
+    "sentence": "Let's sit down at our table now and maybe others will follow suit.",
+    "id": 2396
+  },
+  {
+    "tenses": [
+      "tablet"
+    ],
+    "sentence": "I usually make notes on a tablet but sometimes I use a plain piece of paper.",
+    "id": 2397
+  },
+  {
+    "tenses": [
+      "tail"
+    ],
+    "sentence": "You can tell that a baby pig is a miniature breed if the tail is straight rather than curved.",
+    "id": 2398
+  },
+  {
+    "tenses": [
+      "tailor"
+    ],
+    "sentence": "I will use the tailor you use to change the length of my coat.",
+    "id": 2399
+  },
+  {
+    "tenses": [
+      "take",
+      "taking",
+      "taken",
+      "took"
+    ],
+    "sentence": "I will be taking the third level of calculus next semester.",
+    "id": 2400
+  },
+  {
+    "tenses": [
+      "talent"
+    ],
+    "sentence": "What talent she has! She can sing, dance, play piano, and speak intelligently.",
+    "id": 2401
+  },
+  {
+    "tenses": [
+      "talk",
+      "talked",
+      "talking"
+    ],
+    "sentence": "Let's talk this over before concluding that it's a sound proposal.",
+    "id": 2402
+  },
+  {
+    "tenses": [
+      "tannery"
+    ],
+    "sentence": "He got a job in a tannery working with the animal hides.",
+    "id": 2403
+  },
+  {
+    "tenses": [
+      "tavern"
+    ],
+    "sentence": "Let's get a couple beers in this English tavern.",
+    "id": 2404
+  },
+  {
+    "tenses": [
+      "teach",
+      "taught",
+      "teaching"
+    ],
+    "sentence": "I love teaching younger children but not teenagers.",
+    "id": 2405
+  },
+  {
+    "tenses": [
+      "teacher"
+    ],
+    "sentence": "She is a wonderful teacher but a terrible wife.",
+    "id": 2406
+  },
+  {
+    "tenses": [
+      "teamster"
+    ],
+    "sentence": "I'm a teamster by trade and this is the truck I drive.",
+    "id": 2407
+  },
+  {
+    "tenses": [
+      "tear",
+      "tore",
+      "tearing"
+    ],
+    "sentence": "He tore my shirt by mistake so I will need to go change clothes.",
+    "id": 2408
+  },
+  {
+    "tenses": [
+      "tease",
+      "teasing",
+      "teased"
+    ],
+    "sentence": "Stop teasing me and telling jokes.",
+    "id": 2409
+  },
+  {
+    "tenses": [
+      "telegram"
+    ],
+    "sentence": "We sent a telegram to the winner of the contest so that they would know the results immediately.",
+    "id": 2410
+  },
+  {
+    "tenses": [
+      "telegraph"
+    ],
+    "sentence": "Do you know how to use a telegraph machine?",
+    "id": 2411
+  },
+  {
+    "tenses": [
+      "telephone"
+    ],
+    "sentence": "Let me first make a telephone call and then we'll go to the movie.",
+    "id": 2412
+  },
+  {
+    "tenses": [
+      "tell",
+      "told",
+      "telling"
+    ],
+    "sentence": "I cannot tell a lie; you are ugly.",
+    "id": 2413
+  },
+  {
+    "tenses": [
+      "teller"
+    ],
+    "sentence": "The teller at the bank told me that I have an overdrawn balance.",
+    "id": 2414
+  },
+  {
+    "tenses": [
+      "temper"
+    ],
+    "sentence": "Tempers raged when the news that the journalist had been killed was conveyed.",
+    "id": 2415
+  },
+  {
+    "tenses": [
+      "temperate"
+    ],
+    "sentence": "His answers are usually temperate but occasionally he'll lose his temper.",
+    "id": 2416
+  },
+  {
+    "tenses": [
+      "temperature"
+    ],
+    "sentence": "Temperatures have been unusually high this year.",
+    "id": 2417
+  },
+  {
+    "tenses": [
+      "tempest"
+    ],
+    "sentence": "A tempest wind blew down all my newly installed poles.",
+    "id": 2418
+  },
+  {
+    "tenses": [
+      "temple"
+    ],
+    "sentence": "This is the temple where we pray.",
+    "id": 2419
+  },
+  {
+    "tenses": [
+      "temporary"
+    ],
+    "sentence": "This rain is only temporary so don't put the badminton set away just yet.",
+    "id": 2420
   }
 ]
