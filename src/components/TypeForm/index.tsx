@@ -36,7 +36,7 @@ const TypeForm: React.FC<Props> = ({
 
     if (
       writtenText.length === wordVariants[currentVariantIndex].variant.length &&
-      wordVariants[currentVariantIndex].variant === writtenText
+      writtenText === wordVariants[currentVariantIndex].variant.toLowerCase()
     ) {
       dispatch(currentWordSlice.actions.onCheckEnteredWord());
 

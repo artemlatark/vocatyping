@@ -51,8 +51,6 @@ const Header: React.FC<Props> = React.memo(
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
 
-    console.log(1);
-
     return (
       <AppBarCustom position="fixed" sx={{alignItems: 'center'}}>
         <Toolbar sx={{maxWidth: 990, width: '100%'}}>

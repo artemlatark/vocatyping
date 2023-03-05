@@ -14,7 +14,7 @@ import {ListItemCustom, ListSubheaderCustom} from './styles';
 const Sidebar: React.FC<SidebarProps> = React.memo(({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
   const listRef = useRef<any>(null);
   const {groupCounts, wordGroups} = useMemo(() => {
-    const groupedWords = groupBy(words, (word) => word.tenses[0][0]);
+    const groupedWords = groupBy(words, (word) => word.tenses[0][0].toLowerCase());
     const groupCounts = Object.values(groupedWords).map((words) => words.length);
     const wordGroups = Object.keys(groupedWords);
 

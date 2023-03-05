@@ -1,4 +1,4 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction, current} from '@reduxjs/toolkit';
 import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 import {State, ChangeWordPayloadAction} from './types';
 
@@ -29,7 +29,10 @@ export const currentWordSlice = createSlice({
       const index = action.payload.length - 1;
       const letter = action.payload.at(-1);
 
-      if (letter !== state.wordVariants[state.currentVariantIndex].variant[index]) {
+      if (
+        state.wordVariants[state.currentVariantIndex].variant[index] === undefined ||
+        letter !== state.wordVariants[state.currentVariantIndex].variant[index].toLowerCase()
+      ) {
         state.wordVariants.map((item) => (item.correct = false));
 
         state.writtenText = '';
