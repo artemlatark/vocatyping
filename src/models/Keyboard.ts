@@ -3,14 +3,14 @@ export enum keyboardLayout {
   QWERTY = 'qwerty',
 }
 
-export type Key = {
+export interface Key {
   key?: string;
   supKey?: string;
   finger?: number;
   code?: string;
   isSystemKey?: boolean;
   isSpace?: boolean;
-};
+}
 
 export interface NextTypeKey {
   finger?: number;

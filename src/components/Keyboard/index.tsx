@@ -3,13 +3,11 @@ import React, {useState, useCallback, useMemo} from 'react';
 import KeyboardKey from 'components/KeyboardKey';
 import Hands from 'components/Hands';
 import {keyboardLayout, NextTypeKey} from 'models/Keyboard';
-import {State as CurrentWordState} from 'store/currentWord/types';
+import {Props} from './types';
 
 import styles from './index.module.css';
 
 import keyboards from 'data/keyboards.json';
-
-type Props = Pick<CurrentWordState, 'writtenText' | 'currentWordId' | 'wordVariants' | 'currentVariantIndex'>;
 
 const Keyboard: React.FC<Props> = React.memo(({writtenText, currentWordId, wordVariants, currentVariantIndex}) => {
   const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | null>(null);
