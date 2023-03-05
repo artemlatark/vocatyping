@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {getFromLocalStorage, saveToLocalStorage} from '../../utils';
+import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 import {State, ChangeWordPayloadAction} from './types';
 
 const initialState: State = {

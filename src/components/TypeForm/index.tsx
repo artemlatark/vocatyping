@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 
-import {useAppDispatch} from '../../hooks/redux';
-import {currentWordSlice} from '../../store/currentWord/slice';
+import {useAppDispatch} from 'hooks/redux';
+import {currentWordSlice} from 'store/currentWord/slice';
 import {Props} from './types';
 
 import styles from './index.module.css';

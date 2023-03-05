@@ -1,4 +1,4 @@
-import React, {memo, useMemo, useRef} from 'react';
+import React, {useMemo, useRef} from 'react';
 import {groupBy} from 'lodash';
 import {GroupedVirtuoso} from 'react-virtuoso';
 
@@ -11,7 +11,7 @@ import SidebarListItem from './ListItem';
 import styles from './index.module.css';
 import {ListItemCustom, ListSubheaderCustom} from './styles';
 
-const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
+const Sidebar: React.FC<SidebarProps> = React.memo(({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
   const listRef = useRef<any>(null);
   const {groupCounts, wordGroups} = useMemo(() => {
     const groupedWords = groupBy(words, (word) => word.tenses[0][0]);
@@ -44,7 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({currentWordId, onOpenSidebar, sidebarO
       />
     </Drawer>
   );
-};
+});
 
 const MUIComponents: any = {
   List: React.forwardRef(({style, children}: any, listRef: any) => (
@@ -64,4 +64,4 @@ const MUIComponents: any = {
   ),
 };
 
-export default memo(Sidebar);
+export default Sidebar;

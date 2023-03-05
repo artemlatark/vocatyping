@@ -1,11 +1,11 @@
-import React, {memo} from 'react';
+import React from 'react';
 import cx from 'classnames';
 
 import {Props} from './types';
 
 import styles from '../index.module.css';
 
-const SpreadOutWordItem: React.FC<Props> = memo(({item}) => {
+const SpreadOutWordItem: React.FC<Props> = React.memo(({item}) => {
   const variantCheckedClassNames = cx({
     [styles.checked]: item.correct,
   });

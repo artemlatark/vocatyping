@@ -1,12 +1,12 @@
-import React, {useEffect, useRef, memo} from 'react';
+import React, {useEffect, useRef} from 'react';
 import cx from 'classnames';
 
-import {useWindowSize} from '../../hooks/useWindowSize';
+import {useWindowSize} from 'hooks/useWindowSize';
 import {Props} from './types';
 
 import styles from './index.module.css';
 
-const KeyboardKey: React.FC<Props> = memo(({keyboardKey, nextKey, onChangeNextTypeKey, currentWordId}) => {
+const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChangeNextTypeKey, currentWordId}) => {
   const windowSizes = useWindowSize();
   const isNextKey = keyboardKey.key?.toLowerCase() === nextKey;
   const keyRef = useRef<HTMLDivElement>(null);

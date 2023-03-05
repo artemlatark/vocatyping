@@ -3,8 +3,8 @@ import cx from 'classnames';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
 
-import {useAppDispatch} from '../../../hooks/redux';
-import {currentWordSlice} from '../../../store/currentWord/slice';
+import {useAppDispatch} from 'hooks/redux';
+import {currentWordSlice} from 'store/currentWord/slice';
 import {Props} from './types';
 
 import styles from '../index.module.css';

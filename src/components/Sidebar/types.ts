@@ -1,4 +1,4 @@
-import {State} from '../../store/words/types';
+import {State} from 'store/words/types';
 
 export interface Props extends Pick<State, 'words'> {
   currentWordId: number;

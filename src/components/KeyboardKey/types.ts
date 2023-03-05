@@ -1,5 +1,5 @@
-import {Key, NextTypeKey} from '../../models/Keyboard';
-import {State} from '../../store/currentWord/types';
+import {Key, NextTypeKey} from 'models/Keyboard';
+import {State} from 'store/currentWord/types';
 
 export type Props = {
   keyboardKey: Key;

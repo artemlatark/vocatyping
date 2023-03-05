@@ -1,6 +1,6 @@
-import axios from 'axios';
 import {createAsyncThunk} from '@reduxjs/toolkit';
-import {Word} from '../../models/Word';
+import axios from 'axios';
+import {Word} from 'models/Word';
 
 export const fetchWords = createAsyncThunk('words/fetchAll', async (_, thunkAPI) => {
   try {

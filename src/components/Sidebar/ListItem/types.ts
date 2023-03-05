@@ -1,4 +1,4 @@
-import {Word} from '../../../models/Word';
+import {Word} from 'models/Word';
 
 export type Props = {
   word: Word;

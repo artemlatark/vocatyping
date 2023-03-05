@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {Word} from '../../models/Word';
+import {Word} from 'models/Word';
 import {State} from './types';
 import {fetchWords} from './actions';
 
