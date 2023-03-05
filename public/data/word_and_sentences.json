@@ -705,7 +705,7 @@
   {
     "id": 98,
     "tenses": [
-      "american"
+      "American"
     ],
     "sentence": "Americans have a lot of idiosyncrasies."
   },
@@ -980,7 +980,7 @@
   {
     "id": 136,
     "tenses": [
-      "april"
+      "April"
     ],
     "sentence": "I like the month of April because it rarely rains."
   },
@@ -1282,7 +1282,7 @@
   {
     "id": 176,
     "tenses": [
-      "august"
+      "August"
     ],
     "sentence": "It was a hot day in the month of August, when I suddenly realized I was too old to ride a bike."
   },
@@ -1734,7 +1734,7 @@
   {
     "id": 239,
     "tenses": [
-      "bible"
+      "Bible"
     ],
     "sentence": "The books of the Bible were written by many different people."
   },
@@ -2897,14 +2897,14 @@
   },
   {
     "tenses": [
-      "christian"
+      "Christian"
     ],
     "sentence": "Christians have some beliefs in common with Jews.",
     "id": 401
   },
   {
     "tenses": [
-      "christmas"
+      "Christmas"
     ],
     "sentence": "Christmas is the time of year when everyone wants to give presents.",
     "id": 402
@@ -3004,7 +3004,7 @@
   },
   {
     "tenses": [
-      "claus"
+      "Claus"
     ],
     "sentence": "Santa Claus is the fictitious American character that gives presents to children at Christmas time.",
     "id": 416
@@ -3475,7 +3475,7 @@
   },
   {
     "tenses": [
-      "congress"
+      "Congress"
     ],
     "sentence": "Congress is made up of the House of Representatives and the Senate.",
     "id": 481
@@ -3568,7 +3568,7 @@
   },
   {
     "tenses": [
-      "constitution"
+      "Constitution"
     ],
     "sentence": "If we simply followed the Constitution of the United States, we wouldn't need all these extra laws.",
     "id": 494
@@ -4243,7 +4243,7 @@
   },
   {
     "tenses": [
-      "december"
+      "December"
     ],
     "sentence": "December is not usually that cold here; it's January when the snows and cold temperatures begin.",
     "id": 588
@@ -5761,7 +5761,7 @@
   },
   {
     "tenses": [
-      "english"
+      "English"
     ],
     "sentence": "The English language comes in many varieties including American and British.",
     "id": 797
@@ -5942,7 +5942,7 @@
   },
   {
     "tenses": [
-      "europe"
+      "Europe"
     ],
     "sentence": "I'd love us to visit all of Europe, or at least Italy and France.",
     "id": 822
@@ -6507,7 +6507,7 @@
   },
   {
     "tenses": [
-      "february"
+      "February"
     ],
     "sentence": "It's the month of February that is so cold.",
     "id": 901
@@ -7030,7 +7030,7 @@
   },
   {
     "tenses": [
-      "friday"
+      "Friday"
     ],
     "sentence": "We will be having a fish fry this Friday. Can you come?",
     "id": 972
@@ -19209,5 +19209,1418 @@
     ],
     "sentence": "I would venture to say that Tom is ready to join our ranks.",
     "id": 2620
+  },
+  {
+    "tenses": [
+      "verify",
+      "verified",
+      "verifying"
+    ],
+    "sentence": "I will verify that you actually worked at these places and then give you a call.",
+    "id": 2621
+  },
+  {
+    "tenses": [
+      "verse"
+    ],
+    "sentence": "Please read the verse at the bottom of the page.",
+    "id": 2622
+  },
+  {
+    "tenses": [
+      "very"
+    ],
+    "sentence": "We are very pleased that you have made such good grades at school.",
+    "id": 2623
+  },
+  {
+    "tenses": [
+      "vessel"
+    ],
+    "sentence": "Why don't we build a vessel and sail our cargo to Mexico?",
+    "id": 2624
+  },
+  {
+    "tenses": [
+      "veto",
+      "vetoed"
+    ],
+    "sentence": "The president vetoed the bill as soon as it hit his desk. You knew he was against it right?",
+    "id": 2625
+  },
+  {
+    "tenses": [
+      "vex",
+      "vexed",
+      "vexing"
+    ],
+    "sentence": "You are so vexing! I'd take anyone who doesn't irritate me like you do.",
+    "id": 2626
+  },
+  {
+    "tenses": [
+      "vice"
+    ],
+    "sentence": "What kind of vices do you have: smoking, drinking, gallivanting around town?",
+    "id": 2627
+  },
+  {
+    "tenses": [
+      "victim"
+    ],
+    "sentence": "The elderly woman was the victim in a shooting crime.",
+    "id": 2628
+  },
+  {
+    "tenses": [
+      "victor"
+    ],
+    "sentence": "To the victor go the spoils; to the loser go the toils.",
+    "id": 2629
+  },
+  {
+    "tenses": [
+      "victorious"
+    ],
+    "sentence": "Our team was victorious so we celebrated for days.",
+    "id": 2630
+  },
+  {
+    "tenses": [
+      "victory"
+    ],
+    "sentence": "Victory was in the air for us that day and, sure enough, we won all the competitions we entered.",
+    "id": 2631
+  },
+  {
+    "tenses": [
+      "view",
+      "viewing",
+      "viewed"
+    ],
+    "sentence": "You should view the city from the circling restaurant on top of this building. It's some view!",
+    "id": 2632
+  },
+  {
+    "tenses": [
+      "vigor",
+      "vigorous"
+    ],
+    "sentence": "What vigor and vitality they had. Compare that to the others' weak and depressing approach.",
+    "id": 2633
+  },
+  {
+    "tenses": [
+      "vile"
+    ],
+    "sentence": "That old milk is vile; throw it out!",
+    "id": 2634
+  },
+  {
+    "tenses": [
+      "village"
+    ],
+    "sentence": "Overlooking the little village was a look-out where you could see everything.",
+    "id": 2635
+  },
+  {
+    "tenses": [
+      "villain"
+    ],
+    "sentence": "Do you play the villain in the film or the hero?",
+    "id": 2636
+  },
+  {
+    "tenses": [
+      "vinegar"
+    ],
+    "sentence": "I like a salad dressing of just plain vinegar and oil.",
+    "id": 2637
+  },
+  {
+    "tenses": [
+      "violation"
+    ],
+    "sentence": "You have committed a violation of the state's traffic code.",
+    "id": 2638
+  },
+  {
+    "tenses": [
+      "violence"
+    ],
+    "sentence": "I hate violence in movies and on television but it sells for some reason.",
+    "id": 2639
+  },
+  {
+    "tenses": [
+      "violet"
+    ],
+    "sentence": "Violet is a nice color but it is also the name of a flower.",
+    "id": 2640
+  },
+  {
+    "tenses": [
+      "violin"
+    ],
+    "sentence": "I learned to play violin in my younger days and was even in the school orchestra.",
+    "id": 2641
+  },
+  {
+    "tenses": [
+      "virgin"
+    ],
+    "sentence": "If she is a virgin then she must be innocent.",
+    "id": 2642
+  },
+  {
+    "tenses": [
+      "virtue",
+      "virtuous"
+    ],
+    "sentence": "Paul has many virtues but keeping his mouth shut is not one of them.",
+    "id": 2643
+  },
+  {
+    "tenses": [
+      "visible",
+      "visibility"
+    ],
+    "sentence": "Is the lake visible in this fog?",
+    "id": 2644
+  },
+  {
+    "tenses": [
+      "vision"
+    ],
+    "sentence": "My vision has been getting steadily worse throughout the last ten years. One day I guess I won't be able to see at all.",
+    "id": 2645
+  },
+  {
+    "tenses": [
+      "visit",
+      "visited",
+      "visiting"
+    ],
+    "sentence": "May we visit your store when we're in town for the holidays? Yes, please do.",
+    "id": 2646
+  },
+  {
+    "tenses": [
+      "visitor"
+    ],
+    "sentence": "I had a strange visitor last night, someone who you used to know.",
+    "id": 2647
+  },
+  {
+    "tenses": [
+      "vocabulary"
+    ],
+    "sentence": "Your vocabulary needs a lot of work. Did you never go to school and learn about words?",
+    "id": 2648
+  },
+  {
+    "tenses": [
+      "vocation"
+    ],
+    "sentence": "What is your vocation? Are you a plumber or a carpenter, by chance?",
+    "id": 2649
+  },
+  {
+    "tenses": [
+      "voice"
+    ],
+    "sentence": "She had a voice like a angel -- whatever an angel sounds like!",
+    "id": 2650
+  },
+  {
+    "tenses": [
+      "void",
+      "voided",
+      "voiding"
+    ],
+    "sentence": "I voided my check because it was written to the wrong establishment.",
+    "id": 2651
+  },
+  {
+    "tenses": [
+      "volume"
+    ],
+    "sentence": "Should we order a larger volume of albums than last time since they sold so well before?",
+    "id": 2652
+  },
+  {
+    "tenses": [
+      "voluntary",
+      "voluntarily"
+    ],
+    "sentence": "If you do something voluntarily then you haven't been coerced.",
+    "id": 2653
+  },
+  {
+    "tenses": [
+      "vomit",
+      "vomited",
+      "vomiting"
+    ],
+    "sentence": "Vomit makes me sick and when I'm sick I vomit.",
+    "id": 2654
+  },
+  {
+    "tenses": [
+      "vote",
+      "voted",
+      "voting"
+    ],
+    "sentence": "If you vote for me in the next election, I promise to cut taxes by one half.",
+    "id": 2655
+  },
+  {
+    "tenses": [
+      "voyage"
+    ],
+    "sentence": "It was a long voyage. Nevertheless, we didn't run out of food.",
+    "id": 2656
+  },
+  {
+    "tenses": [
+      "vulcanize"
+    ],
+    "sentence": "We should vulcanize the rubber footstool feet so that they harden before we're ready to cover the cushion.",
+    "id": 2657
+  },
+  {
+    "tenses": [
+      "vulgar"
+    ],
+    "sentence": "What vulgar language! You are uncivilized.",
+    "id": 2658
+  },
+  {
+    "tenses": [
+      "wage"
+    ],
+    "sentence": "All I want is a fair wage for a fair day's work.",
+    "id": 2659
+  },
+  {
+    "tenses": [
+      "wagon"
+    ],
+    "sentence": "Get in the wagon and I'll have the horse pull us to the fair.",
+    "id": 2660
+  },
+  {
+    "tenses": [
+      "wail",
+      "wailed",
+      "wailing"
+    ],
+    "sentence": "You could hear the wails of the villagers in the distance. Their god had forsaken them.",
+    "id": 2661
+  },
+  {
+    "tenses": [
+      "waist"
+    ],
+    "sentence": "Do you think I've taken a few inches off my waist?",
+    "id": 2662
+  },
+  {
+    "tenses": [
+      "wait",
+      "waited",
+      "waiting"
+    ],
+    "sentence": "I have been waiting for you for two hours. Where in the world have you been?",
+    "id": 2663
+  },
+  {
+    "tenses": [
+      "waiter"
+    ],
+    "sentence": "The waiter was terrible so I'm not leaving a tip.",
+    "id": 2664
+  },
+  {
+    "tenses": [
+      "wake",
+      "woke",
+      "waking"
+    ],
+    "sentence": "Ronnie, go wake up Uncle Ron so we can get going to church.",
+    "id": 2665
+  },
+  {
+    "tenses": [
+      "walk",
+      "walked",
+      "walking"
+    ],
+    "sentence": "Every morning the vice president takes a walk to get his heart pumping.",
+    "id": 2666
+  },
+  {
+    "tenses": [
+      "wall"
+    ],
+    "sentence": "Over here we will build a brick wall to keep our privacy.",
+    "id": 2667
+  },
+  {
+    "tenses": [
+      "wander",
+      "wandering",
+      "wandered"
+    ],
+    "sentence": "She wandered all over the city until she felt she'd seen everything.",
+    "id": 2668
+  },
+  {
+    "tenses": [
+      "want",
+      "wanted",
+      "wanting"
+    ],
+    "sentence": "I want to go with you to the movies. May I?",
+    "id": 2669
+  },
+  {
+    "tenses": [
+      "warden"
+    ],
+    "sentence": "The prison warden was not a very nice man. I guess he's used to dealing with prisoners.",
+    "id": 2670
+  },
+  {
+    "tenses": [
+      "warm",
+      "warming",
+      "warmed"
+    ],
+    "sentence": "May we warm our hands by your fire before we continue on with our hike?",
+    "id": 2671
+  },
+  {
+    "tenses": [
+      "warning"
+    ],
+    "sentence": "Let me give you a very strong warning: drugs can kill.",
+    "id": 2672
+  },
+  {
+    "tenses": [
+      "warrant"
+    ],
+    "sentence": "Put your hands up. I have a warrant for your arrest.",
+    "id": 2673
+  },
+  {
+    "tenses": [
+      "warrior"
+    ],
+    "sentence": "The warriors never let their shields down and defended themselves very well.",
+    "id": 2674
+  },
+  {
+    "tenses": [
+      "wash",
+      "washed",
+      "washing"
+    ],
+    "sentence": "Why don't we wash the dishes together?",
+    "id": 2675
+  },
+  {
+    "tenses": [
+      "Washington"
+    ],
+    "sentence": "George Washington was the first president of the United States.",
+    "id": 2676
+  },
+  {
+    "tenses": [
+      "wasp"
+    ],
+    "sentence": "Be careful or a wasp may sting you.",
+    "id": 2677
+  },
+  {
+    "tenses": [
+      "waste",
+      "wasted",
+      "wasting"
+    ],
+    "sentence": "You are wasting your life away. Figure out what you can contribute and then do it.",
+    "id": 2678
+  },
+  {
+    "tenses": [
+      "watch",
+      "watched",
+      "watching"
+    ],
+    "sentence": "I was watching your watch as its second hand swept around.",
+    "id": 2679
+  },
+  {
+    "tenses": [
+      "watchman"
+    ],
+    "sentence": "I am a night watchman so must keep the place as secure as possible.",
+    "id": 2680
+  },
+  {
+    "tenses": [
+      "water"
+    ],
+    "sentence": "Water is one of the most important elements of the universe.",
+    "id": 2681
+  },
+  {
+    "tenses": [
+      "way"
+    ],
+    "sentence": "This is the way we need to go to Sicily.",
+    "id": 2682
+  },
+  {
+    "tenses": [
+      "weak"
+    ],
+    "sentence": "I feel weak from lack of food. Can we stop for a lunch break?",
+    "id": 2683
+  },
+  {
+    "tenses": [
+      "weakness"
+    ],
+    "sentence": "The weakness of the tribe was clear when they were not able to defend their livestock herd as they'd always done before.",
+    "id": 2684
+  },
+  {
+    "tenses": [
+      "wealth"
+    ],
+    "sentence": "What are the factors that go into producing wealth? Land, labor, and capital.",
+    "id": 2685
+  },
+  {
+    "tenses": [
+      "wealthy"
+    ],
+    "sentence": "If you have good health does that make you wealthy?",
+    "id": 2686
+  },
+  {
+    "tenses": [
+      "weapon"
+    ],
+    "sentence": "Throw down your weapons and surrender! No, we won't.",
+    "id": 2687
+  },
+  {
+    "tenses": [
+      "wear",
+      "wore",
+      "wearing"
+    ],
+    "sentence": "He was wearing a blue jacket so was easily found.",
+    "id": 2688
+  },
+  {
+    "tenses": [
+      "weary"
+    ],
+    "sentence": "I am feeling weary. Maybe I should slow down.",
+    "id": 2689
+  },
+  {
+    "tenses": [
+      "weather"
+    ],
+    "sentence": "The weather has been very nice this weekend. No rain and little wind.",
+    "id": 2690
+  },
+  {
+    "tenses": [
+      "weave",
+      "weaving",
+      "wove"
+    ],
+    "sentence": "I could weave you a basket and put your name on it.",
+    "id": 2691
+  },
+  {
+    "tenses": [
+      "wedding"
+    ],
+    "sentence": "Did you have a very big wedding? No, only the minister and witness were there besides my husband.",
+    "id": 2692
+  },
+  {
+    "tenses": [
+      "Wednesday"
+    ],
+    "sentence": "We usually are not very busy on Wednesdays but Thursdays and Fridays are always busy.",
+    "id": 2693
+  },
+  {
+    "tenses": [
+      "week"
+    ],
+    "sentence": "May we set up a meeting for next week?",
+    "id": 2694
+  },
+  {
+    "tenses": [
+      "weep",
+      "wept",
+      "weeping"
+    ],
+    "sentence": "She wept after hearing the bad news. I felt sorry for her.",
+    "id": 2695
+  },
+  {
+    "tenses": [
+      "weigh",
+      "weighed",
+      "weighing"
+    ],
+    "sentence": "How much do you weigh? I weigh 87 pounds.",
+    "id": 2696
+  },
+  {
+    "tenses": [
+      "weight"
+    ],
+    "sentence": "The weight of the gold is 2 ounces.",
+    "id": 2697
+  },
+  {
+    "tenses": [
+      "welcome",
+      "welcoming",
+      "welcomed"
+    ],
+    "sentence": "You are always welcome to visit me whenever you're in town.",
+    "id": 2698
+  },
+  {
+    "tenses": [
+      "welfare"
+    ],
+    "sentence": "It's for your own welfare that I'm forcing you to save a portion of your money.",
+    "id": 2699
+  },
+  {
+    "tenses": [
+      "well"
+    ],
+    "sentence": "Very well, we will all go to the funeral together then.",
+    "id": 2700
+  },
+  {
+    "tenses": [
+      "western"
+    ],
+    "sentence": "You should wear a western hat to the rodeo so you'll fit in.",
+    "id": 2701
+  },
+  {
+    "tenses": [
+      "whatever"
+    ],
+    "sentence": "I would like you to go to the concert with me but whatever you want to do is fine.",
+    "id": 2702
+  },
+  {
+    "tenses": [
+      "wheat"
+    ],
+    "sentence": "May I order wheat toast instead of white?",
+    "id": 2703
+  },
+  {
+    "tenses": [
+      "wheel"
+    ],
+    "sentence": "A tricycle has three wheels and a bicycle has two wheels so a unicycle must have only one wheel. Correct.",
+    "id": 2704
+  },
+  {
+    "tenses": [
+      "wheelbarrow"
+    ],
+    "sentence": "My grandfather used to put us kids in the wheelbarrow and ride us around on the farm for fun.",
+    "id": 2705
+  },
+  {
+    "tenses": [
+      "whence"
+    ],
+    "sentence": "Whence have you come? From the town on the other side of the river.",
+    "id": 2706
+  },
+  {
+    "tenses": [
+      "whenever"
+    ],
+    "sentence": "Whenever he makes that sound I just want to punch him.",
+    "id": 2707
+  },
+  {
+    "tenses": [
+      "where"
+    ],
+    "sentence": "Where should we go for dinner tonight?",
+    "id": 2708
+  },
+  {
+    "tenses": [
+      "whereby"
+    ],
+    "sentence": "I gave her the addresses of those clients whereby she would use them to send follow-up notices.",
+    "id": 2709
+  },
+  {
+    "tenses": [
+      "wherefore"
+    ],
+    "sentence": "We could possibly understand the wherefores if you would inform us of who was involved.",
+    "id": 2710
+  },
+  {
+    "tenses": [
+      "wherein"
+    ],
+    "sentence": "The contract wherein the statement about capital ownership exists is what I'd like to revisit.",
+    "id": 2711
+  },
+  {
+    "tenses": [
+      "wherever"
+    ],
+    "sentence": "Wherever you go I shall follow. Wherever I go, Timmy will follow.",
+    "id": 2712
+  },
+  {
+    "tenses": [
+      "whether"
+    ],
+    "sentence": "We are going to make this presentation whether you are involved or not.",
+    "id": 2713
+  },
+  {
+    "tenses": [
+      "whey"
+    ],
+    "sentence": "Making whey the way my mother used to do is not very efficient.",
+    "id": 2714
+  },
+  {
+    "tenses": [
+      "which"
+    ],
+    "sentence": "The car, which was broken, was never sold.",
+    "id": 2715
+  },
+  {
+    "tenses": [
+      "while"
+    ],
+    "sentence": "While I am away, would you be so kind as to take in my mail?",
+    "id": 2716
+  },
+  {
+    "tenses": [
+      "whip",
+      "whipping",
+      "whipped"
+    ],
+    "sentence": "We could whip this place into shape if we all pitched in and helped.",
+    "id": 2717
+  },
+  {
+    "tenses": [
+      "whirl",
+      "whirling",
+      "whirled"
+    ],
+    "sentence": "The clothes were whirling around so fast so I couldn't see whether mine were in there or not.",
+    "id": 2718
+  },
+  {
+    "tenses": [
+      "whisper"
+    ],
+    "sentence": "Let's whisper. After all, this is a library.",
+    "id": 2719
+  },
+  {
+    "tenses": [
+      "whistle"
+    ],
+    "sentence": "You can tell if he's in a good mood because he whistles a gay tune.",
+    "id": 2720
+  },
+  {
+    "tenses": [
+      "white"
+    ],
+    "sentence": "If you want to get your clothes white, use our bleach.",
+    "id": 2721
+  },
+  {
+    "tenses": [
+      "whither"
+    ],
+    "sentence": "Whither shall we go? To my place or yours?",
+    "id": 2722
+  },
+  {
+    "tenses": [
+      "whoever"
+    ],
+    "sentence": "Whoever has been making those nerve-racking sounds has got to be stopped.",
+    "id": 2723
+  },
+  {
+    "tenses": [
+      "whole"
+    ],
+    "sentence": "Would you like a whole flounder or the filet of flounder?",
+    "id": 2724
+  },
+  {
+    "tenses": [
+      "wholesale"
+    ],
+    "sentence": "We always buy our spices wholesale, repackage them, and then sell them retail.",
+    "id": 2725
+  },
+  {
+    "tenses": [
+      "wholesome"
+    ],
+    "sentence": "The cereal is wholesome, delicious, and contains all the vitamins a growing child needs.",
+    "id": 2726
+  },
+  {
+    "tenses": [
+      "whose"
+    ],
+    "sentence": "Whose shoes are these?",
+    "id": 2727
+  },
+  {
+    "tenses": [
+      "wicked"
+    ],
+    "sentence": "She could be a wicked lady at times but always very smart.",
+    "id": 2728
+  },
+  {
+    "tenses": [
+      "widow"
+    ],
+    "sentence": "Mrs. Blumstead is a widow so she makes her own living.",
+    "id": 2729
+  },
+  {
+    "tenses": [
+      "width"
+    ],
+    "sentence": "Could you please measure the width of the bureau so I'll know whether it'll fit in my bedroom?",
+    "id": 2730
+  },
+  {
+    "tenses": [
+      "wife",
+      "wives"
+    ],
+    "sentence": "Your wife has asked me to inform you that she no longer needs you to wait for her. She'll see you at home.",
+    "id": 2731
+  },
+  {
+    "tenses": [
+      "wilderness"
+    ],
+    "sentence": "Out in the wilderness, you'll often see wild animals worthy of study.",
+    "id": 2732
+  },
+  {
+    "tenses": [
+      "willing"
+    ],
+    "sentence": "He is willing to spend two hours each week tutoring you if you'll pay for his travel expenses.",
+    "id": 2733
+  },
+  {
+    "tenses": [
+      "willow"
+    ],
+    "sentence": "That must be a willow tree because it has long hanging leaves.",
+    "id": 2734
+  },
+  {
+    "tenses": [
+      "window"
+    ],
+    "sentence": "Can you see the city lights outside your window?",
+    "id": 2735
+  },
+  {
+    "tenses": [
+      "wine"
+    ],
+    "sentence": "I'd like to order a good bottle of red wine to go with dinner.",
+    "id": 2736
+  },
+  {
+    "tenses": [
+      "winter"
+    ],
+    "sentence": "This winter we will surely get some snow.",
+    "id": 2737
+  },
+  {
+    "tenses": [
+      "wipe",
+      "wiped",
+      "wiping"
+    ],
+    "sentence": "Wipe the table off and then put the center flowers back on.",
+    "id": 2738
+  },
+  {
+    "tenses": [
+      "wisdom"
+    ],
+    "sentence": "In your wisdom, do people tend to like to know the truth about themselves?",
+    "id": 2739
+  },
+  {
+    "tenses": [
+      "witch"
+    ],
+    "sentence": "If she is a witch then maybe she likes to perform rituals out in the forest. I'd assume so.",
+    "id": 2740
+  },
+  {
+    "tenses": [
+      "withdraw",
+      "withdrew",
+      "withdrawing"
+    ],
+    "sentence": "I withdraw my offer to read to you. You'll have to find somebody else.",
+    "id": 2741
+  },
+  {
+    "tenses": [
+      "wither",
+      "withering",
+      "withered"
+    ],
+    "sentence": "Plants that aren't watered properly will just wither and die.",
+    "id": 2742
+  },
+  {
+    "tenses": [
+      "without"
+    ],
+    "sentence": "I am not without my friends, even though I am old and ugly.",
+    "id": 2743
+  },
+  {
+    "tenses": [
+      "witness"
+    ],
+    "sentence": "Do you have a witness who saw you the night of the eleventh?",
+    "id": 2744
+  },
+  {
+    "tenses": [
+      "woe"
+    ],
+    "sentence": "He seems to be full of woes and is rarely optimistic.",
+    "id": 2745
+  },
+  {
+    "tenses": [
+      "woman",
+      "women"
+    ],
+    "sentence": "How many women are on your team and how many have been on all the teams you have coached?",
+    "id": 2746
+  },
+  {
+    "tenses": [
+      "womenfolk"
+    ],
+    "sentence": "Womenfolk may not like the way you wear short dresses but the menfolk probably do.",
+    "id": 2747
+  },
+  {
+    "tenses": [
+      "won't"
+    ],
+    "sentence": "I won't go with you but I'll send my assistant if that'll please you.",
+    "id": 2748
+  },
+  {
+    "tenses": [
+      "wonder",
+      "wondered",
+      "wondering"
+    ],
+    "sentence": "I have been wondering whether you want to join our cause or not.",
+    "id": 2749
+  },
+  {
+    "tenses": [
+      "wonderful"
+    ],
+    "sentence": "It was a wonderful performance but I wouldn't want to go again.",
+    "id": 2750
+  },
+  {
+    "tenses": [
+      "wooden"
+    ],
+    "sentence": "If he had a wooden tooth then it would have decayed long ago.",
+    "id": 2751
+  },
+  {
+    "tenses": [
+      "woolen"
+    ],
+    "sentence": "They gave me a woolen bag to hold the groceries, which seemed odd.",
+    "id": 2752
+  },
+  {
+    "tenses": [
+      "word"
+    ],
+    "sentence": "I have had no word from Aunt Susie. I hope she's okay.",
+    "id": 2753
+  },
+  {
+    "tenses": [
+      "work",
+      "worked",
+      "working"
+    ],
+    "sentence": "Let me work with you. I know how to paint tables faster than anyone else.",
+    "id": 2754
+  },
+  {
+    "tenses": [
+      "worker"
+    ],
+    "sentence": "Marcy is a good worker but is usually late showing up to work.",
+    "id": 2755
+  },
+  {
+    "tenses": [
+      "world"
+    ],
+    "sentence": "The world doesn't need another Dennis but having one is just fine.",
+    "id": 2756
+  },
+  {
+    "tenses": [
+      "worm"
+    ],
+    "sentence": "Let's catch a few worms for bait and then go fishing.",
+    "id": 2757
+  },
+  {
+    "tenses": [
+      "worry",
+      "worries",
+      "worried",
+      "worrying"
+    ],
+    "sentence": "You worry too much. Brad is a grown man and can take care of himself.",
+    "id": 2758
+  },
+  {
+    "tenses": [
+      "worse"
+    ],
+    "sentence": "Which is worse, to pay more for a better quality ham or to pay less for one that's good, but not quite as good?",
+    "id": 2759
+  },
+  {
+    "tenses": [
+      "worship",
+      "worshipped",
+      "worshipping"
+    ],
+    "sentence": "I worship the ground you walk on but I can't commit a crime for you.",
+    "id": 2760
+  },
+  {
+    "tenses": [
+      "worst"
+    ],
+    "sentence": "What is the worst thing that has ever happened to you?",
+    "id": 2761
+  },
+  {
+    "tenses": [
+      "worsted"
+    ],
+    "sentence": "The yarn is worsted and ready to be turned into sweaters.",
+    "id": 2762
+  },
+  {
+    "tenses": [
+      "worth"
+    ],
+    "sentence": "Will it be worth your while to come even though you will be an hour late?",
+    "id": 2763
+  },
+  {
+    "tenses": [
+      "worthy"
+    ],
+    "sentence": "I think this book is worthy of your attention.",
+    "id": 2764
+  },
+  {
+    "tenses": [
+      "would"
+    ],
+    "sentence": "Why would you insist on carrying that bag for me when you know it's very light?",
+    "id": 2765
+  },
+  {
+    "tenses": [
+      "wound"
+    ],
+    "sentence": "She wound the ribbon around the package but it fell off.",
+    "id": 2766
+  },
+  {
+    "tenses": [
+      "wrap",
+      "wrapping",
+      "wrapped"
+    ],
+    "sentence": "Let me wrap the package for you. I'm a professional.",
+    "id": 2767
+  },
+  {
+    "tenses": [
+      "wrath"
+    ],
+    "sentence": "I would not want to incur her wrath upon myself so I follow all her instructions.",
+    "id": 2768
+  },
+  {
+    "tenses": [
+      "wreath"
+    ],
+    "sentence": "The school placed a huge wreath on the front door today.",
+    "id": 2769
+  },
+  {
+    "tenses": [
+      "wreck"
+    ],
+    "sentence": "Her apartment is a wreck because she's never there to clean it up.",
+    "id": 2770
+  },
+  {
+    "tenses": [
+      "wrench"
+    ],
+    "sentence": "Hand me a wrench and I'll fix your faucet for you.",
+    "id": 2771
+  },
+  {
+    "tenses": [
+      "wretch"
+    ],
+    "sentence": "He looked like a wretch when he first walked in but after a bath and putting on fresh clothes he looked fine.",
+    "id": 2772
+  },
+  {
+    "tenses": [
+      "wretched"
+    ],
+    "sentence": "What a wretched way to spend a summer. I hope you don't have so much bad luck next time.",
+    "id": 2773
+  },
+  {
+    "tenses": [
+      "wrinkle"
+    ],
+    "sentence": "She doesn't have many wrinkles because she doesn't get out in the sun much.",
+    "id": 2774
+  },
+  {
+    "tenses": [
+      "wrist"
+    ],
+    "sentence": "Let me see your wrists. I can tell that you usually wear a watch.",
+    "id": 2775
+  },
+  {
+    "tenses": [
+      "write",
+      "wrote",
+      "writing",
+      "written"
+    ],
+    "sentence": "Let me write a poem for your next issue.",
+    "id": 2776
+  },
+  {
+    "tenses": [
+      "wrong"
+    ],
+    "sentence": "Am I wrong in assuming that you offered to take me to the dance?",
+    "id": 2777
+  },
+  {
+    "tenses": [
+      "xylophone"
+    ],
+    "sentence": "When I was a child I could play the xylophone. Does that count as a musical instrument? Sure.",
+    "id": 2778
+  },
+  {
+    "tenses": [
+      "yawn",
+      "yawning",
+      "yawned"
+    ],
+    "sentence": "When I get in these boring lectures I can't help but yawn.",
+    "id": 2779
+  },
+  {
+    "tenses": [
+      "year"
+    ],
+    "sentence": "This is the year when we will follow all our New Year's resolutions.",
+    "id": 2780
+  },
+  {
+    "tenses": [
+      "yellow"
+    ],
+    "sentence": "Yellow is my favorite color because it is the color of the middle of egg yolks.",
+    "id": 2781
+  },
+  {
+    "tenses": [
+      "yesterday"
+    ],
+    "sentence": "Did you see them Saturday or yesterday?",
+    "id": 2782
+  },
+  {
+    "tenses": [
+      "yet"
+    ],
+    "sentence": "I have as yet not been able to play cards with him.",
+    "id": 2783
+  },
+  {
+    "tenses": [
+      "yield",
+      "yielded",
+      "yielding"
+    ],
+    "sentence": "Don't yield the right of way when it is yours to have.",
+    "id": 2784
+  },
+  {
+    "tenses": [
+      "yoke"
+    ],
+    "sentence": "Do you like omelets made with yokes or only egg whites?",
+    "id": 2785
+  },
+  {
+    "tenses": [
+      "yonder"
+    ],
+    "sentence": "Over yonder we used to romp around as kids.",
+    "id": 2786
+  },
+  {
+    "tenses": [
+      "young"
+    ],
+    "sentence": "You look very young. You couldn't be sixteen yet, could you?",
+    "id": 2787
+  },
+  {
+    "tenses": [
+      "your"
+    ],
+    "sentence": "Give me your tired and your wretched and I will give you a hopeful group of people.",
+    "id": 2788
+  },
+  {
+    "tenses": [
+      "yours"
+    ],
+    "sentence": "My cake looks the prettiest but yours is the most tasty.",
+    "id": 2789
+  },
+  {
+    "tenses": [
+      "youth"
+    ],
+    "sentence": "The youth of today don't care about morals. Oh really? How does that compare to the youth of your day?",
+    "id": 2790
+  },
+  {
+    "tenses": [
+      "zeal"
+    ],
+    "sentence": "He had a curious zeal for solving everyone else's problems.",
+    "id": 2791
+  },
+  {
+    "tenses": [
+      "zebra"
+    ],
+    "sentence": "Zebras look like small horses with striped pajamas.",
+    "id": 2792
+  },
+  {
+    "tenses": [
+      "zenith"
+    ],
+    "sentence": "Should we travel to the zenith of the mountain together?",
+    "id": 2793
+  },
+  {
+    "tenses": [
+      "zephyr"
+    ],
+    "sentence": "A zephyr from the west lightly blew the petals away until they were all gone.",
+    "id": 2794
+  },
+  {
+    "tenses": [
+      "zero"
+    ],
+    "sentence": "If you subtract fourteen from eight plus six, what do you get? Zero.",
+    "id": 2795
+  },
+  {
+    "tenses": [
+      "zest"
+    ],
+    "sentence": "Mrs. Mack had a zest for life like I've never seen in someone her age.",
+    "id": 2796
+  },
+  {
+    "tenses": [
+      "zigzag"
+    ],
+    "sentence": "We will put a zigzag design on your dress and then it won't be plain anymore.",
+    "id": 2797
+  },
+  {
+    "tenses": [
+      "zinc"
+    ],
+    "sentence": "You can't make galvanized iron without zinc. How do you think he transported it here?",
+    "id": 2798
+  },
+  {
+    "tenses": [
+      "zinnia"
+    ],
+    "sentence": "Zinnia plants are colorful. Could you check the make-up of these stains?",
+    "id": 2799
+  },
+  {
+    "tenses": [
+      "Zion"
+    ],
+    "sentence": "We will travel to Zion on foot and then rest for a bit.",
+    "id": 2800
+  },
+  {
+    "tenses": [
+      "zipper"
+    ],
+    "sentence": "What do you think they did before zippers were invented? I guess they used buttons.",
+    "id": 2801
+  },
+  {
+    "tenses": [
+      "zither"
+    ],
+    "sentence": "I can play the zither but I'm not very good at it. You should ask Mr. Leaky to play.",
+    "id": 2802
+  },
+  {
+    "tenses": [
+      "zodiac"
+    ],
+    "sentence": "What is your zodiac sign? Maybe a Taurus or a Pisces?",
+    "id": 2803
+  },
+  {
+    "tenses": [
+      "zone",
+      "zoning",
+      "zoned"
+    ],
+    "sentence": "This neighborhood is not zoned for businesses so you can't put an advertising sign out in front of your house.",
+    "id": 2804
+  },
+  {
+    "tenses": [
+      "zoo"
+    ],
+    "sentence": "Let's all go to the zoo and see the animals.",
+    "id": 2805
+  },
+  {
+    "tenses": [
+      "zoological"
+    ],
+    "sentence": "He wrote some kind of zoological book but I haven't been able to obtain a copy.",
+    "id": 2806
+  },
+  {
+    "tenses": [
+      "zoology"
+    ],
+    "sentence": "If you want to study animals then zoology seems to be your major.",
+    "id": 2807
+  },
+  {
+    "tenses": [
+      "zoom",
+      "zoomed",
+      "zooming"
+    ],
+    "sentence": "Let's zoom down to the chicken place, get some lunch to go, and head on to the zoo.",
+    "id": 2808
+  },
+  {
+    "tenses": [
+      "Zulu"
+    ],
+    "sentence": "Do you have ancestors from the Zulu African tribe?",
+    "id": 2809
+  },
+  {
+    "tenses": [
+      "zwieback"
+    ],
+    "sentence": "I used to always order zwieback bread here because it was better than anywhere else.",
+    "id": 2810
   }
 ]
