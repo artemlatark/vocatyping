@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/7656b1358b23f86ae4a7/maintainability)](https://codeclimate.com/github/artemkrynkin/typerighting/maintainability)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
