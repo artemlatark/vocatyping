@@ -2,6 +2,10 @@
     width: 300px;
 }
 
+.sidebarContainer {
+    height: 100%;
+}
+
 .itemCurrent {
     color: var(--color-blue-600);
     font-weight: 600;

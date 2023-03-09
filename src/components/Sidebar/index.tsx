@@ -10,6 +10,8 @@ import SidebarListItem from './ListItem';
 
 import styles from './index.module.css';
 import {ListItemCustom, ListSubheaderCustom} from './styles';
+import WordGroupsList from './WordGroupsList';
+import Grid from '@mui/material/Grid';
 
 const Sidebar: React.FC<SidebarProps> = React.memo(({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
   const listRef = useRef<any>(null);
@@ -23,45 +25,38 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({currentWordId, onOpenSideba
 
   return (
     <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
-      <GroupedVirtuoso
-        className={styles.sidebarContent}
-        ref={listRef}
-        initialTopMostItemIndex={{
-          index: currentWordId - 1,
-          align: 'center',
-        }}
-        groupCounts={groupCounts}
-        components={MUIComponents}
-        groupContent={(index) => wordGroups[index]}
-        itemContent={(index) => (
-          <SidebarListItem
-            word={words[index]}
-            index={index}
-            currentWordId={currentWordId}
-            onOpenSidebar={onOpenSidebar}
-          />
-        )}
-      />
+      <Grid className={styles.sidebarContainer} container>
+        <WordGroupsList wordGroups={wordGroups} groupCounts={groupCounts} listRef={listRef} />
+        <GroupedVirtuoso
+          className={styles.sidebarContent}
+          ref={listRef}
+          initialTopMostItemIndex={{
+            index: currentWordId - 1,
+            align: 'center',
+          }}
+          groupCounts={groupCounts}
+          components={MUIComponents}
+          groupContent={(index) => wordGroups[index]}
+          itemContent={(index) => (
+            <SidebarListItem
+              word={words[index]}
+              index={index}
+              currentWordId={currentWordId}
+              onOpenSidebar={onOpenSidebar}
+            />
+          )}
+        />
+      </Grid>
     </Drawer>
   );
 });
 
 const MUIComponents: any = {
   List: React.forwardRef(({style, children}: any, listRef: any) => (
-    <List style={{padding: 0, ...style}} component="div" ref={listRef}>
-      {children}
-    </List>
+    <List style={{padding: 0, ...style}} component="div" ref={listRef} children={children} />
   )),
-  Item: ({children, ...props}: any) => (
-    <ListItemCustom component="div" {...props}>
-      {children}
-    </ListItemCustom>
-  ),
-  Group: ({children, ...props}: any) => (
-    <ListSubheaderCustom component="div" {...props}>
-      {children}
-    </ListSubheaderCustom>
-  ),
+  Item: ({children, ...props}: any) => <ListItemCustom component="div" {...props} children={children} />,
+  Group: ({children, ...props}: any) => <ListSubheaderCustom component="div" {...props} children={children} />,
 };
 
 export default Sidebar;
