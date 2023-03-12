@@ -1,8 +1,6 @@
 import {useCallback, useState} from 'react';
 
 import {useAppSelector} from 'hooks/redux';
-import Sidebar from 'components/Sidebar';
-import Header from 'components/Header';
 import WordAndSentence from 'components/WordAndSentence';
 import TypeForm from 'components/TypeForm';
 import Keyboard from 'components/Keyboard';
@@ -17,30 +15,22 @@ const Main = () => {
   const currentWord = words[currentWordId - 1];
   const wordNumbers = words.length;
 
-  const onOpenSidebar = useCallback(
-    (value?: boolean) => setSidebarOpen((prevState) => (value !== undefined ? value : !prevState)),
-    []
-  );
+  const onOpenSidebar = useCallback((value?: boolean) => {
+    setSidebarOpen((prevState) => {
+      return value !== undefined ? value : !prevState;
+    });
+  }, []);
 
   return (
     <Layout
-      sidebar={
-        <Sidebar
-          onOpenSidebar={onOpenSidebar}
-          sidebarOpen={sidebarOpen}
-          currentWord={currentWord}
-          currentWordId={currentWordId}
-          words={words}
-        />
-      }
+      onOpenSidebar={onOpenSidebar}
+      sidebarOpen={sidebarOpen}
+      words={words}
+      wordNumbers={wordNumbers}
+      currentWord={currentWord}
+      currentWordId={currentWordId}
+      currentWordTense={currentWordTense}
     >
-      <Header
-        onOpenSidebar={onOpenSidebar}
-        wordNumbers={wordNumbers}
-        currentWordId={currentWordId}
-        currentWord={currentWord}
-        currentWordTense={currentWordTense}
-      />
       <WordAndSentence
         currentWordTense={currentWordTense}
         wordVariants={wordVariants}
