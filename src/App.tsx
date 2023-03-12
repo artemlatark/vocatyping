@@ -1,4 +1,4 @@
-import {useCallback, useEffect, useMemo, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 
 import TypeForm from './components/TypeForm';
 import {useAppDispatch, useAppSelector} from './hooks/redux';
@@ -15,9 +15,9 @@ function App() {
   const {currentWordId, writtenText, currentWordTense, wordVariants, currentVariantIndex} = useAppSelector(
     (state) => state.currentWordReducer
   );
-  const currentWord = useMemo(() => words.find((item) => item.id === currentWordId), [words, currentWordId]);
+  const currentWord = words[currentWordId - 1];
   const wordNumbers = words.length;
-  const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const onOpenSidebar = useCallback(
     (value?: boolean) => setSidebarOpen((prevState) => (value !== undefined ? value : !prevState)),
@@ -32,7 +32,13 @@ function App() {
   return (
     <Layout
       sidebar={
-        <Sidebar currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} sidebarOpen={sidebarOpen} words={words} />
+        <Sidebar
+          onOpenSidebar={onOpenSidebar}
+          sidebarOpen={sidebarOpen}
+          currentWord={currentWord}
+          currentWordId={currentWordId}
+          words={words}
+        />
       }
     >
       <Header

@@ -13,7 +13,7 @@ const ListItem: React.FC<Props> = ({word, index, currentWordId, onOpenSidebar}) 
   const dispatch = useAppDispatch();
 
   const wordItemClassNames = cx({
-    [styles.itemCurrent]: index + 1 === currentWordId,
+    [styles.itemCurrent]: index === currentWordId - 1,
   });
 
   const onChangeWord = () => {

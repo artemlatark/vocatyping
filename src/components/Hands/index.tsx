@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import cx from 'classnames';
 
-import {HandsProps} from './types';
+import {Props} from './types';
 
 import styles from './index.module.css';
 
-const Hands: React.FC<HandsProps> = React.memo(({nextTypeKey}) => {
+const Hands: React.FC<Props> = React.memo(({nextTypeKey}) => {
   const [translateCoords, setTranslateCoords] = useState<number[]>([0, 0]);
   const translateOffset = {
     left: nextTypeKey.finger ? (/[1-4]/.test(nextTypeKey.finger.toString()) ? 46 : 60) : 0,

@@ -1,4 +1,8 @@
-.sidebarContent {
+.sidebarContainer {
+    height: 100%;
+}
+
+.wordList {
     width: 300px;
 }
 
