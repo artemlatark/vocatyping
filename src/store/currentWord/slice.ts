@@ -28,11 +28,9 @@ export const currentWordSlice = createSlice({
     onCheckInputLetter(state, action: PayloadAction<string>) {
       const index = action.payload.length - 1;
       const letter = action.payload.at(-1);
+      const currentWordVariant = state.wordVariants[state.currentVariantIndex].variant[index];
 
-      if (
-        state.wordVariants[state.currentVariantIndex].variant[index] === undefined ||
-        letter !== state.wordVariants[state.currentVariantIndex].variant[index].toLowerCase()
-      ) {
+      if (currentWordVariant === undefined || letter !== currentWordVariant.toLowerCase()) {
         state.wordVariants.map((item) => (item.correct = false));
 
         state.writtenText = '';

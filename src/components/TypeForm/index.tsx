@@ -32,21 +32,20 @@ const TypeForm: React.FC<Props> = ({
   };
 
   const onKeyUpInput = (): void => {
+    const currentWordVariant = wordVariants[currentVariantIndex].variant;
+
     dispatch(currentWordSlice.actions.onCheckInputLetter(writtenText));
 
-    if (
-      writtenText.length === wordVariants[currentVariantIndex].variant.length &&
-      writtenText === wordVariants[currentVariantIndex].variant.toLowerCase()
-    ) {
-      dispatch(currentWordSlice.actions.onCheckEnteredWord());
+    if (writtenText.length !== currentWordVariant.length || writtenText !== currentWordVariant.toLowerCase()) return;
 
-      if (currentWord && currentVariantIndex === wordVariants.length - 1) {
-        if (currentWordTense !== currentWord.tenses.length - 1) {
-          dispatch(currentWordSlice.actions.onNextTense());
-        } else {
-          dispatch(currentWordSlice.actions.onChangeWord({handlerType: 'next', wordNumbers}));
-        }
-      }
+    dispatch(currentWordSlice.actions.onCheckEnteredWord());
+
+    if (!currentWord || currentVariantIndex !== wordVariants.length - 1) return;
+
+    if (currentWordTense !== currentWord.tenses.length - 1) {
+      dispatch(currentWordSlice.actions.onNextTense());
+    } else {
+      dispatch(currentWordSlice.actions.onChangeWord({handlerType: 'next', wordNumbers}));
     }
   };
 

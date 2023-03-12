@@ -10,32 +10,23 @@ interface UseSpeechSynthesisProps {
 }
 
 export const useSpeechSynthesis = ({onEnd}: UseSpeechSynthesisProps = {}) => {
-  const [voices, setVoices] = useState([]);
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [speaking, setSpeaking] = useState(false);
   const [supported, setSupported] = useState(false);
-
-  const processVoices = (voiceOptions: any) => {
-    setVoices(voiceOptions);
-  };
 
   const getVoices = () => {
     // Firefox seems to have voices upfront and never calls the voiceschanged event
     let voiceOptions = window.speechSynthesis.getVoices();
 
     if (voiceOptions.length > 0) {
-      processVoices(voiceOptions);
+      setVoices(voiceOptions);
       return;
     }
 
     window.speechSynthesis.onvoiceschanged = (event: any) => {
       voiceOptions = event.target.getVoices();
-      processVoices(voiceOptions);
+      setVoices(voiceOptions);
     };
-  };
-
-  const handleEnd = () => {
-    setSpeaking(false);
-    if (onEnd) onEnd();
   };
 
   useEffect(() => {
@@ -67,7 +58,10 @@ export const useSpeechSynthesis = ({onEnd}: UseSpeechSynthesisProps = {}) => {
     utterance.text = text;
     utterance.voice = voice;
     utterance.volume = volume;
-    utterance.onend = handleEnd;
+    utterance.onend = () => {
+      setSpeaking(false);
+      if (onEnd) onEnd();
+    };
 
     window.speechSynthesis.speak(utterance);
   };

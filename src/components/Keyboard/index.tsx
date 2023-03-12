@@ -12,7 +12,10 @@ import keyboards from 'data/keyboards.json';
 const Keyboard: React.FC<Props> = React.memo(({writtenText, currentWordId, wordVariants, currentVariantIndex}) => {
   const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | null>(null);
   const currentLayout: keyboardLayout = keyboardLayout.MAC;
-  const keyboard = useMemo(() => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout), [currentLayout]);
+  const keyboardObj = useMemo(
+    () => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout),
+    [currentLayout]
+  );
   const currentWordVariant = useMemo(
     () => wordVariants.find((item, index) => index === currentVariantIndex),
     [currentVariantIndex, wordVariants]
@@ -25,11 +28,11 @@ const Keyboard: React.FC<Props> = React.memo(({writtenText, currentWordId, wordV
     <div className={styles.keyboard}>
       {nextTypeKey ? <Hands nextTypeKey={nextTypeKey} /> : null}
       <div>
-        {keyboard?.keys.map((line, index) => (
-          <div key={index} className={styles.keyLine}>
-            {line.map((key, index) => (
+        {keyboardObj?.keys.map((line, lineIndex) => (
+          <div key={`line-${lineIndex}`} className={styles.keyLine}>
+            {line.map((key, keyIndex) => (
               <KeyboardKey
-                key={index}
+                key={`key-${key}-${keyIndex}`}
                 keyboardKey={key}
                 nextKey={nextKey}
                 onChangeNextTypeKey={onChangeNextTypeKey}

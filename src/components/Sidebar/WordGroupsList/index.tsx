@@ -19,8 +19,6 @@ const WordGroupsList: React.FC<Props> = ({listRef, wordGroupsCounts, wordGroups,
         index: itemIndex,
         align: 'center',
       });
-
-      console.log(itemIndex);
     }
   };
 
