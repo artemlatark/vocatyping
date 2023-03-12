@@ -1,40 +1,53 @@
 import React, {useMemo, useRef} from 'react';
 import {groupBy} from 'lodash';
-import {GroupedVirtuoso} from 'react-virtuoso';
+import {Components, GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
 
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
+import Grid from '@mui/material/Grid';
 
-import {Props as SidebarProps} from './types';
+import {Props, WordGroups} from './types';
 import SidebarListItem from './ListItem';
+import WordGroupsList from './WordGroupsList';
 
 import styles from './index.module.css';
 import {ListItemCustom, ListSubheaderCustom} from './styles';
-import WordGroupsList from './WordGroupsList';
-import Grid from '@mui/material/Grid';
 
-const Sidebar: React.FC<SidebarProps> = React.memo(({currentWordId, onOpenSidebar, sidebarOpen, words}) => {
-  const listRef = useRef<any>(null);
-  const {groupCounts, wordGroups} = useMemo(() => {
+const MUIComponents: Components = {
+  List: React.forwardRef(({style, children}: any, listRef: any) => (
+    <List style={{padding: 0, ...style}} component="div" ref={listRef} children={children} />
+  )),
+  Item: ({children, ...props}: any) => <ListItemCustom component="div" children={children} {...props} />,
+  Group: ({children, ...props}: any) => <ListSubheaderCustom component="div" children={children} {...props} />,
+};
+
+const Sidebar: React.FC<Props> = React.memo(({sidebarOpen, onOpenSidebar, currentWord, currentWordId, words}) => {
+  const listRef = useRef<GroupedVirtuosoHandle>(null);
+  const {wordGroupsCounts, wordGroups}: WordGroups = useMemo(() => {
     const groupedWords = groupBy(words, (word) => word.tenses[0][0].toLowerCase());
-    const groupCounts = Object.values(groupedWords).map((words) => words.length);
+    const wordGroupsCounts = Object.values(groupedWords).map((words) => words.length);
     const wordGroups = Object.keys(groupedWords);
 
-    return {groupCounts, wordGroups};
+    return {wordGroupsCounts, wordGroups};
   }, [words]);
 
   return (
     <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
       <Grid className={styles.sidebarContainer} container>
-        <WordGroupsList wordGroups={wordGroups} groupCounts={groupCounts} listRef={listRef} />
+        <WordGroupsList
+          listRef={listRef}
+          wordGroupsCounts={wordGroupsCounts}
+          wordGroups={wordGroups}
+          currentWord={currentWord}
+        />
         <GroupedVirtuoso
-          className={styles.sidebarContent}
+          className={styles.wordList}
           ref={listRef}
           initialTopMostItemIndex={{
             index: currentWordId - 1,
             align: 'center',
           }}
-          groupCounts={groupCounts}
+          groupCounts={wordGroupsCounts}
           components={MUIComponents}
           groupContent={(index) => wordGroups[index]}
           itemContent={(index) => (
@@ -50,13 +63,5 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({currentWordId, onOpenSideba
     </Drawer>
   );
 });
-
-const MUIComponents: any = {
-  List: React.forwardRef(({style, children}: any, listRef: any) => (
-    <List style={{padding: 0, ...style}} component="div" ref={listRef} children={children} />
-  )),
-  Item: ({children, ...props}: any) => <ListItemCustom component="div" {...props} children={children} />,
-  Group: ({children, ...props}: any) => <ListSubheaderCustom component="div" {...props} children={children} />,
-};
 
 export default Sidebar;

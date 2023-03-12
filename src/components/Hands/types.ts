@@ -1,5 +1,5 @@
 import {NextTypeKey} from 'models/Keyboard';
 
-export interface HandsProps {
+export interface Props {
   nextTypeKey: NextTypeKey;
 }

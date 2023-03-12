@@ -1,9 +1,9 @@
-.sidebarContent {
-    width: 300px;
-}
-
 .sidebarContainer {
     height: 100%;
+}
+
+.wordList {
+    width: 300px;
 }
 
 .itemCurrent {
