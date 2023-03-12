@@ -1,0 +1,9 @@
+engines:
+  # ... CONFIG CONTENT ...
+  tslint:
+    enabled: true
+    # ... CONFIG CONTENT ...
+    checks:
+      quotemark:
+        enabled: false
+# ... CONFIG CONTENT ...

@@ -58,19 +58,17 @@ const TypeForm: React.FC<Props> = ({
   }, [isLoading, currentWordId, currentWordTense]);
 
   return (
-    <>
-      <form className={styles.typeForm}>
-        <TypeFormTextField
-          onChange={onChangeInput}
-          onKeyDown={onKeyDownInput}
-          onKeyUp={onKeyUpInput}
-          value={writtenText}
-          autoFocus
-          fullWidth
-        />
-        <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
-      </form>
-    </>
+    <div className={styles.typeForm}>
+      <TypeFormTextField
+        onChange={onChangeInput}
+        onKeyDown={onKeyDownInput}
+        onKeyUp={onKeyUpInput}
+        value={writtenText}
+        autoFocus
+        fullWidth
+      />
+      <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
+    </div>
   );
 };
 
