@@ -7,7 +7,7 @@ export interface Props {
   voice: SpeechSynthesisVoice | undefined;
 }
 
-export interface contextMenu {
+export interface ContextMenu {
   mouseX: number;
   mouseY: number;
 }
