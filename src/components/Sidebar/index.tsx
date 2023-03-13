@@ -6,7 +6,7 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Grid from '@mui/material/Grid';
 
-import {Props, WordGroups} from './types';
+import {SidebarProps, WordGroups} from './types';
 import SidebarListItem from './ListItem';
 import WordGroupsList from './WordGroupsList';
 
@@ -21,47 +21,49 @@ const MUIComponents: Components = {
   Group: ({children, ...props}: any) => <ListSubheaderCustom component="div" children={children} {...props} />,
 };
 
-const Sidebar: React.FC<Props> = React.memo(({sidebarOpen, onOpenSidebar, currentWord, currentWordId, words}) => {
-  const listRef = useRef<GroupedVirtuosoHandle>(null);
-  const {wordGroupsCounts, wordGroups}: WordGroups = useMemo(() => {
-    const wordsByGroup = groupBy(words, (word) => word.tenses[0][0].toLowerCase());
-    const wordGroupsCountsSrc = Object.values(wordsByGroup).map((groupedWords) => groupedWords.length);
-    const wordGroupsSrc = Object.keys(wordsByGroup);
+const Sidebar: React.FC<SidebarProps> = React.memo(
+  ({sidebarOpen, onOpenSidebar, currentWord, currentWordId, words}) => {
+    const listRef = useRef<GroupedVirtuosoHandle>(null);
+    const {wordGroupsCounts, wordGroups}: WordGroups = useMemo(() => {
+      const wordsByGroup = groupBy(words, (word) => word.tenses[0][0].toLowerCase());
+      const wordGroupsCountsSrc = Object.values(wordsByGroup).map((groupedWords) => groupedWords.length);
+      const wordGroupsSrc = Object.keys(wordsByGroup);
 
-    return {wordGroupsCounts: wordGroupsCountsSrc, wordGroups: wordGroupsSrc};
-  }, [words]);
+      return {wordGroupsCounts: wordGroupsCountsSrc, wordGroups: wordGroupsSrc};
+    }, [words]);
 
-  return (
-    <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
-      <Grid className={styles.sidebarContainer} container>
-        <WordGroupsList
-          listRef={listRef}
-          wordGroupsCounts={wordGroupsCounts}
-          wordGroups={wordGroups}
-          currentWord={currentWord}
-        />
-        <GroupedVirtuoso
-          className={styles.wordList}
-          ref={listRef}
-          initialTopMostItemIndex={{
-            index: currentWordId - 1,
-            align: 'center',
-          }}
-          groupCounts={wordGroupsCounts}
-          components={MUIComponents}
-          groupContent={(index) => wordGroups[index]}
-          itemContent={(index) => (
-            <SidebarListItem
-              word={words[index]}
-              index={index}
-              currentWordId={currentWordId}
-              onOpenSidebar={onOpenSidebar}
-            />
-          )}
-        />
-      </Grid>
-    </Drawer>
-  );
-});
+    return (
+      <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
+        <Grid className={styles.sidebarContainer} container>
+          <WordGroupsList
+            listRef={listRef}
+            wordGroupsCounts={wordGroupsCounts}
+            wordGroups={wordGroups}
+            currentWord={currentWord}
+          />
+          <GroupedVirtuoso
+            className={styles.wordList}
+            ref={listRef}
+            initialTopMostItemIndex={{
+              index: currentWordId - 1,
+              align: 'center',
+            }}
+            groupCounts={wordGroupsCounts}
+            components={MUIComponents}
+            groupContent={(index) => wordGroups[index]}
+            itemContent={(index) => (
+              <SidebarListItem
+                word={words[index]}
+                index={index}
+                currentWordId={currentWordId}
+                onOpenSidebar={onOpenSidebar}
+              />
+            )}
+          />
+        </Grid>
+      </Drawer>
+    );
+  }
+);
 
 export default Sidebar;

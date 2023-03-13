@@ -5,10 +5,10 @@ import {useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
 import TensesOfWord from './TensesOfWord';
 import SentenceOfWord from './SentenceOfWord';
 import SpreadOutWord from './SpreadOutWord';
-import {Props} from './types';
+import {WordAndSentenceProps} from './types';
 import styles from './index.module.css';
 
-const WordAndSentence: React.FC<Props> = React.memo(
+const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(
   ({currentWord, currentWordTense, wordVariants, currentVariantIndex}) => {
     const {speak, voices} = useSpeechSynthesis();
     const voice = useMemo(() => voices.find((item: any) => item.name === 'Google US English'), [voices]);

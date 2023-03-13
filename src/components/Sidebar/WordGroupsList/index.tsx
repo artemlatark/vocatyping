@@ -1,10 +1,10 @@
 import React, {useEffect, useMemo} from 'react';
-import {Props} from './types';
 
+import {WordGroupsListProps} from '../types';
 import styles from './index.module.css';
 import {TabCustom, TabsCustom} from './styles';
 
-const WordGroupsList: React.FC<Props> = ({listRef, wordGroupsCounts, wordGroups, currentWord}) => {
+const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCounts, wordGroups, currentWord}) => {
   const currentWordGroup: number = useMemo(
     () => wordGroups.findIndex((letter) => letter === currentWord?.tenses[0][0]),
     [currentWord, wordGroups]

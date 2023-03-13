@@ -1,10 +1,11 @@
-import styles from '../index.module.css';
 import React, {useRef} from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import {ContextMenu, Props} from './types';
 
-const SentenceOfWord: React.FC<Props> = ({currentWord, speak, voice}) => {
+import {SentenceOfWordProps, ContextMenu} from '../types';
+import styles from '../index.module.css';
+
+const SentenceOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speak, voice}) => {
   const [contextMenu, setContextMenu] = React.useState<ContextMenu | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
