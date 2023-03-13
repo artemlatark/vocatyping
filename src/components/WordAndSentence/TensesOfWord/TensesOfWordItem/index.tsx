@@ -3,7 +3,7 @@ import cx from 'classnames';
 
 import {Props} from './types';
 
-import styles from '../index.module.css';
+import styles from '../../index.module.css';
 
 const TensesOfWordItem: React.FC<Props> = memo(({tense, index, thisArg, currentWordTense}) => {
   const currentWordClassNames = cx({

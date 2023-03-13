@@ -15,7 +15,6 @@ const Layout: React.FC<Props> = ({
   wordNumbers,
   currentWord,
   currentWordId,
-  currentWordTense,
 }) => (
   <div className={styles.layout}>
     <Sidebar
@@ -26,13 +25,7 @@ const Layout: React.FC<Props> = ({
       words={words}
     />
     <div className={styles.content}>
-      <Header
-        onOpenSidebar={onOpenSidebar}
-        wordNumbers={wordNumbers}
-        currentWordId={currentWordId}
-        currentWord={currentWord}
-        currentWordTense={currentWordTense}
-      />
+      <Header onOpenSidebar={onOpenSidebar} wordNumbers={wordNumbers} currentWordId={currentWordId} />
       {children}
     </div>
   </div>

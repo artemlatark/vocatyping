@@ -1,26 +1,26 @@
 import {useEffect, useState} from 'react';
 
-type SpeechSynthesisUtteranceProps = Pick<
-  SpeechSynthesisUtterance,
-  'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'
->;
+export interface SpeechSynthesisUtteranceProps
+  extends Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>> {}
 
-interface UseSpeechSynthesisProps {
+interface Props {
   onEnd?: () => void;
 }
 
-export const useSpeechSynthesis = ({onEnd}: UseSpeechSynthesisProps = {}) => {
+export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [speaking, setSpeaking] = useState(false);
   const [supported, setSupported] = useState(false);
 
-  const getVoices = () => {
+  const getVoices = (): void => {
     // Firefox seems to have voices upfront and never calls the voiceschanged event
     let voiceOptions = window.speechSynthesis.getVoices();
 
     if (voiceOptions.length > 0) {
       setVoices(voiceOptions);
       return;
+    } else {
+      setTimeout(() => getVoices(), 50);
     }
 
     window.speechSynthesis.onvoiceschanged = (event: any) => {
@@ -44,7 +44,7 @@ export const useSpeechSynthesis = ({onEnd}: UseSpeechSynthesisProps = {}) => {
     text = '',
     voice = null,
     volume = 1,
-  }: Partial<SpeechSynthesisUtteranceProps> = {}) => {
+  }: SpeechSynthesisUtteranceProps = {}): void => {
     if (!supported) return;
 
     setSpeaking(true);
@@ -66,7 +66,7 @@ export const useSpeechSynthesis = ({onEnd}: UseSpeechSynthesisProps = {}) => {
     window.speechSynthesis.speak(utterance);
   };
 
-  const cancel = () => {
+  const cancel = (): void => {
     if (!supported) return;
     setSpeaking(false);
     window.speechSynthesis.cancel();

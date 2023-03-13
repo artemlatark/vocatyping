@@ -1,35 +1,23 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 
-import {WordVariant} from 'models/WordVariant';
+import {useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
+
+import TensesOfWord from './TensesOfWord';
+import SentenceOfWord from './SentenceOfWord';
+import SpreadOutWord from './SpreadOutWord';
 import {Props} from './types';
-import TensesOfWordItem from './TensesOfWordItem';
-import SpreadOutWordItem from './SpreadOutWordItem';
-
 import styles from './index.module.css';
 
 const WordAndSentence: React.FC<Props> = React.memo(
   ({currentWord, currentWordTense, wordVariants, currentVariantIndex}) => {
+    const {speak, voices} = useSpeechSynthesis();
+    const voice = useMemo(() => voices.find((item: any) => item.name === 'Google US English'), [voices]);
+
     return (
       <div className={styles.wordAndSentence}>
-        <div className={styles.tensesOfWord}>
-          {currentWord?.tenses.map((tense, index, thisArg) => (
-            <TensesOfWordItem
-              key={tense}
-              tense={tense}
-              index={index}
-              thisArg={thisArg}
-              currentWordTense={currentWordTense}
-            />
-          ))}
-        </div>
-        <div className={styles.sentenceOfWord}>{currentWord?.sentence}</div>
-        <div className={styles.wordAndSentenceContent}>
-          <div className={styles.spreadOutWord}>
-            {wordVariants.map((item: WordVariant, index) =>
-              currentVariantIndex >= index ? <SpreadOutWordItem key={item.variant} item={item} /> : null
-            )}
-          </div>
-        </div>
+        <TensesOfWord currentWord={currentWord} currentWordTense={currentWordTense} speak={speak} voice={voice} />
+        <SentenceOfWord currentWord={currentWord} speak={speak} voice={voice} />
+        <SpreadOutWord wordVariants={wordVariants} currentVariantIndex={currentVariantIndex} />
       </div>
     );
   }
