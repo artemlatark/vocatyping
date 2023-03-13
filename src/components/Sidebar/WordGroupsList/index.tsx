@@ -11,7 +11,7 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
   );
   const [tabIndex, setTabIndex] = React.useState(0);
 
-  const handlerChangeTab = (newTabIndex: number, itemIndex: number) => {
+  const handlerChangeTab = (itemIndex: number, newTabIndex: number) => {
     if (listRef.current) {
       setTabIndex(newTabIndex);
 
@@ -35,19 +35,19 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
     >
       {wordGroupsCounts
         .reduce(
-          ({firstItemsIndexes, offset}: any, count: any) => ({
+          ({firstItemsIndexes, offset}: any, count: number) => ({
             firstItemsIndexes: [...firstItemsIndexes, offset],
             offset: offset + count,
           }),
           {firstItemsIndexes: [], offset: 0}
         )
-        .firstItemsIndexes.map((itemIndex: any, index: number) => (
+        .firstItemsIndexes.map((itemIndex: number, index: number) => (
           <TabCustom
             key={`vertical-tab-${index}`}
             id={`vertical-tab-${index}`}
             aria-controls={`vertical-tabpanel-${index}`}
             label={
-              <div className={styles.wordGroupsListItem} onClick={() => handlerChangeTab(index, itemIndex)}>
+              <div className={styles.wordGroupsListItem} onClick={() => handlerChangeTab(itemIndex, index)}>
                 {wordGroups[index]}
               </div>
             }

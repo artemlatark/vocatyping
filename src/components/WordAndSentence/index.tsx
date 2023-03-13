@@ -11,7 +11,7 @@ import styles from './index.module.css';
 const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(
   ({currentWord, currentWordTense, wordVariants, currentVariantIndex}) => {
     const {speak, voices} = useSpeechSynthesis();
-    const voice = useMemo(() => voices.find((item: any) => item.name === 'Google US English'), [voices]);
+    const voice = useMemo(() => voices.find((item) => item.name === 'Google US English'), [voices]);
 
     return (
       <div className={styles.wordAndSentence}>
