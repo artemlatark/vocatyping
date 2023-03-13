@@ -29,7 +29,6 @@ const Main = () => {
       wordNumbers={wordNumbers}
       currentWord={currentWord}
       currentWordId={currentWordId}
-      currentWordTense={currentWordTense}
     >
       <WordAndSentence
         currentWordTense={currentWordTense}
