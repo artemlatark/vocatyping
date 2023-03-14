@@ -1,11 +1,11 @@
-import {Word} from 'models/Word';
+import {CurrentWord} from 'models/Word';
 import {WordVariant} from 'models/WordVariant';
 import {State} from 'store/currentWord/types';
 import {SpeechSynthesisUtteranceProps} from 'hooks/useSpeechSynthesis';
 
-export interface WordAndSentenceProps extends Pick<State, 'currentWordTense' | 'wordVariants' | 'currentVariantIndex'> {
-  currentWord: Word | undefined;
-}
+export interface WordAndSentenceProps
+  extends CurrentWord,
+    Pick<State, 'currentWordTense' | 'wordVariants' | 'currentVariantIndex'> {}
 
 export interface SentenceOfWordProps extends Pick<WordAndSentenceProps, 'currentWord'> {
   speak: ({lang, pitch, rate, text, voice, volume}: SpeechSynthesisUtteranceProps) => void;
