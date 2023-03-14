@@ -4,8 +4,8 @@ import IconButton from '@mui/material/IconButton';
 
 import TensesOfWordItem from './TensesOfWordItem';
 
-import styles from '../index.module.css';
 import {TensesOfWordProps} from '../types';
+import styles from '../index.module.css';
 
 const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, currentWordTense, speak, voice}) => {
   const onSpeechWord = (): void => {

@@ -1,8 +1,8 @@
 import React, {Fragment, memo} from 'react';
 import cx from 'classnames';
 
-import styles from '../../index.module.css';
-import {TensesOfWordItemProps} from '../../types';
+import {TensesOfWordItemProps} from '../types';
+import styles from '../index.module.css';
 
 const TensesOfWordItem: React.FC<TensesOfWordItemProps> = memo(({tense, index, thisArg, currentWordTense}) => {
   const currentWordClassNames = cx({

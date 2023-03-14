@@ -5,8 +5,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 
 import {useAppDispatch} from 'hooks/redux';
 import {currentWordSlice} from 'store/currentWord/slice';
-import {ListItemProps} from '../types';
 
+import {ListItemProps} from '../types';
 import styles from '../index.module.css';
 
 const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, onOpenSidebar}) => {

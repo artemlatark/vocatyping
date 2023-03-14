@@ -6,10 +6,10 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Grid from '@mui/material/Grid';
 
-import {SidebarProps, WordGroups} from './types';
-import SidebarListItem from './ListItem';
-import WordGroupsList from './WordGroupsList';
+import SidebarListItem from './components/ListItem';
+import WordGroupsList from './components/WordGroupsList';
 
+import {SidebarProps, WordGroups} from './types';
 import styles from './index.module.css';
 import {ListItemCustom, ListSubheaderCustom} from './styles';
 

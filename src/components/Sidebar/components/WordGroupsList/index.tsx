@@ -1,6 +1,6 @@
 import React, {useEffect, useMemo} from 'react';
 
-import {WordGroupsListProps} from '../types';
+import {WordGroupsListProps} from '../../types';
 import styles from './index.module.css';
 import {TabCustom, TabsCustom} from './styles';
 

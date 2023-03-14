@@ -2,9 +2,9 @@ import React, {useMemo} from 'react';
 
 import {useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
 
-import TensesOfWord from './TensesOfWord';
-import SentenceOfWord from './SentenceOfWord';
-import SpreadOutWord from './SpreadOutWord';
+import TensesOfWord from './components/TensesOfWord';
+import SentenceOfWord from './components/SentenceOfWord';
+import SpreadOutWord from './components/SpreadOutWord';
 import {WordAndSentenceProps} from './types';
 import styles from './index.module.css';
 
