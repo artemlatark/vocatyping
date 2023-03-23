@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {useSignInWithGoogle, useAuthState} from 'react-firebase-hooks/auth';
 
 import Chip from '@mui/material/Chip';
 import IconButton from '@mui/material/IconButton';
@@ -9,6 +10,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Grid from '@mui/material/Grid';
 
+import {auth} from 'config/firebase';
 import {useAppDispatch} from 'hooks/redux';
 import {useKeyPress} from 'hooks/useKeyPress';
 import {currentWordSlice} from 'store/currentWord/slice';
@@ -19,6 +21,8 @@ import {AppBarCustom} from './styles';
 
 const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, currentWordId}) => {
   const dispatch = useAppDispatch();
+  const [signInWithGoogle] = useSignInWithGoogle(auth);
+  const [user, loading, error] = useAuthState(auth);
   const pressedAlt = useKeyPress('Alt');
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');
@@ -26,6 +30,8 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
   const onChangeWord = (handlerType: string): void => {
     dispatch(currentWordSlice.actions.onChangeWord({handlerType, wordNumbers}));
   };
+
+  console.log(user, loading, error);
 
   useEffect(() => {
     if (pressedAlt && pressedArrowLeft) {
@@ -46,6 +52,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
           <IconButton onClick={() => onOpenSidebar()} aria-label="menu" color="primary">
             <MenuIcon />
           </IconButton>
+          <button onClick={() => signInWithGoogle()}>login</button>
         </Grid>
         <Box sx={{flexGrow: 1}} />
         <IconButton onClick={() => onChangeWord('prev')} aria-label="left" color="primary">
