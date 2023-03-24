@@ -1,0 +1,12 @@
+.avatar {
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.arrow {
+    color: var(--color-blue-700)
+}

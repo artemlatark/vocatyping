@@ -1,7 +1,7 @@
 import {useEffect} from 'react';
 
 import {useAppDispatch} from './hooks/redux';
-import {fetchWords} from './store/words/actions';
+import {fetchWords} from './store/words/actionCreators';
 import Main from './pages/Main';
 
 function App() {

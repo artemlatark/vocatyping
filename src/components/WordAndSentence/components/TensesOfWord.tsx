@@ -23,7 +23,7 @@ const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, currentWor
           currentWordTense={currentWordTense}
         />
       ))}
-      <IconButton onClick={() => onSpeechWord()} aria-label="menu" color="primary" size="small" sx={{mt: -1, ml: 1}}>
+      <IconButton onClick={() => onSpeechWord()} color="primary" size="small" sx={{mt: -1, ml: 1}}>
         <VolumeUpIcon />
       </IconButton>
     </div>
