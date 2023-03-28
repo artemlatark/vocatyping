@@ -42,6 +42,14 @@ const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
         anchorEl={anchorUserProfileMenu}
         open={isOpenUserProfileMenu}
         onClose={handleCloseUserProfileMenu}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
       >
         <MenuItem onClick={handleSignOut}>Sign out</MenuItem>
       </Menu>

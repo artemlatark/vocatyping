@@ -76,7 +76,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
           </Grid>
         </Toolbar>
       </AppBarCustom>
-      {!user && <SignInDialog handleClose={handleToggleSignInDialog} isOpen={isOpenSignInDialog} />}
+      <SignInDialog handleClose={handleToggleSignInDialog} isOpen={isOpenSignInDialog} />
     </>
   );
 });
