@@ -5,6 +5,7 @@
     "dependencies": {
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
+        "@hookform/resolvers": "^3.0.0",
         "@mui/icons-material": "^5.11.0",
         "@mui/material": "^5.11.5",
         "@reduxjs/toolkit": "^1.9.1",
@@ -25,11 +26,13 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-firebase-hooks": "^5.1.1",
+        "react-hook-form": "^7.43.8",
         "react-redux": "^8.0.5",
         "react-scripts": "5.0.1",
         "react-virtuoso": "^4.1.0",
         "typescript": "^4.9.4",
-        "web-vitals": "^2.1.4"
+        "web-vitals": "^2.1.4",
+        "yup": "^1.0.2"
     },
     "scripts": {
         "start": "react-scripts start",

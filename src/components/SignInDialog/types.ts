@@ -1,4 +1,4 @@
 export interface Props {
-  handleClose: (value?: boolean) => void;
+  handleOpen: (value?: boolean) => void;
   isOpen: boolean;
 }
