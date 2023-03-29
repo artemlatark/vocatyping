@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {useForm, Controller, SubmitHandler} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
+import {useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -10,10 +11,12 @@ import IconButton from '@mui/material/IconButton';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
-import {FormData} from './types';
+import {auth} from 'config/firebase';
+
+import {Props, FormData} from './types';
 import {defaultValues, schema} from './formSchema';
 
-const EmailPasswordProvider = () => {
+const EmailPasswordProvider: React.FC<Props> = ({stateDialog}) => {
   const {
     control,
     handleSubmit,
@@ -22,16 +25,28 @@ const EmailPasswordProvider = () => {
     defaultValues,
     resolver: yupResolver(schema),
   });
+  const [createUserWithEmailAndPassword, createUserUser, createUserLoading, createUserError] =
+    useCreateUserWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, signInUser, signInLoading, signInError] = useSignInWithEmailAndPassword(auth);
   const [showPassword, setShowPassword] = useState(false);
+  const isStateDialogSignIn = stateDialog === 'signIn';
 
-  const handleShowPassword = () => setShowPassword((show) => !show);
+  const handleShowPassword = (): void => {
+    setShowPassword((show) => !show);
+  };
 
-  const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>): void => {
     event.preventDefault();
   };
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async ({email, password}): Promise<void> => {
+    if (isStateDialogSignIn) {
+      await signInWithEmailAndPassword(email, password);
+    } else {
+      await createUserWithEmailAndPassword(email, password);
+    }
+
+    console.log(signInError);
   };
 
   return (
@@ -84,7 +99,7 @@ const EmailPasswordProvider = () => {
         )}
       />
       <Button type="submit" variant="contained" size="large">
-        Log in
+        {isStateDialogSignIn ? 'Log in' : 'Create account'}
       </Button>
     </Box>
   );

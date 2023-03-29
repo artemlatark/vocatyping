@@ -45,6 +45,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
     }
 
     onOpenSidebar(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
 
   return (
@@ -68,9 +69,11 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
               {user ? (
                 <UserProfileHeader user={user} signOut={async () => await signOut()} />
               ) : (
-                <Button onClick={() => handleOpenSignInDialog()} variant="outlined">
-                  Sign In
-                </Button>
+                <>
+                  <Button onClick={() => handleOpenSignInDialog()} variant="outlined">
+                    Sign In
+                  </Button>
+                </>
               )}
             </Grid>
           </Grid>
