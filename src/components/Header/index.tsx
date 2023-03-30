@@ -67,7 +67,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
             </Grid>
             <Grid justifyContent="end" container item>
               {user ? (
-                <UserProfileHeader user={user} signOut={async () => await signOut()} />
+                <UserProfileHeader user={user} signOut={signOut} />
               ) : (
                 <>
                   <Button onClick={() => handleOpenCloseSignInDialog()} variant="outlined">

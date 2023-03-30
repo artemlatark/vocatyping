@@ -14,15 +14,16 @@ const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
   const [anchorUserProfileMenu, setAnchorUserProfileMenu] = React.useState<null | HTMLElement>(null);
   const isOpenUserProfileMenu = Boolean(anchorUserProfileMenu);
 
-  const handleOpenUserProfileMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleOpenUserProfileMenu = (event: React.MouseEvent<HTMLButtonElement>): void => {
     setAnchorUserProfileMenu(event.currentTarget);
   };
-  const handleCloseUserProfileMenu = () => {
+
+  const handleCloseUserProfileMenu = (): void => {
     setAnchorUserProfileMenu(null);
   };
 
-  const handleSignOut = () => {
-    signOut();
+  const handleSignOut = async (): Promise<void> => {
+    await signOut();
     handleCloseUserProfileMenu();
   };
 

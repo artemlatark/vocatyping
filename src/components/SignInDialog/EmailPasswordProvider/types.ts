@@ -1,8 +1,7 @@
 import {InferType} from 'yup';
 
-import {StateDialog} from '../types';
 import {schema} from './formSchema';
-import {Props as SignInDialogProps} from '../types';
+import {Props as SignInDialogProps, StateDialog} from '../types';
 
 export interface Props extends Pick<SignInDialogProps, 'handleOpenClose'> {
   stateDialog: StateDialog;
