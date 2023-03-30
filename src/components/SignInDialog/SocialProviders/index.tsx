@@ -1,29 +1,35 @@
 import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
 
+import LoadingButton from '@mui/lab/LoadingButton';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 
 import {auth} from 'config/firebase';
 
+import GoogleIconSvg from './GoogleIconSvg';
 import {Props} from '../types';
-import styles from './index.module.css';
 
-const SocialProviders = ({handleOpen}: Pick<Props, 'handleOpen'>) => {
-  const [signInWithGoogle] = useSignInWithGoogle(auth);
+const SocialProviders = ({handleOpenClose}: Pick<Props, 'handleOpenClose'>) => {
+  const [signInWithGoogle, , loading] = useSignInWithGoogle(auth);
 
   const handleSignInWithGoogle = async (): Promise<void> => {
     const isSuccessfullySignedIn = await signInWithGoogle();
 
-    if (isSuccessfullySignedIn) handleOpen(false);
+    if (isSuccessfullySignedIn) handleOpenClose(false);
   };
 
   return (
     <Grid alignItems="center" direction="column" container>
       <Grid container item>
-        <Button onClick={() => handleSignInWithGoogle()} variant="outlined" size="large" sx={{width: '100%'}}>
-          <span className={styles.googleLogo} />
-          Continue with Google
-        </Button>
+        <LoadingButton
+          loading={loading}
+          onClick={() => handleSignInWithGoogle()}
+          startIcon={<GoogleIconSvg viewBox="0 0 20 20" />}
+          variant="outlined"
+          size="large"
+          sx={{width: '100%', '.MuiLoadingButton-startIconLoadingCenter': {opacity: 0}}}
+        >
+          <span>Continue with Google</span>
+        </LoadingButton>
       </Grid>
     </Grid>
   );

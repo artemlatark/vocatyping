@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -11,7 +11,7 @@ import SocialProviders from './SocialProviders';
 import EmailPasswordProvider from './EmailPasswordProvider';
 import {Props, StateDialog} from './types';
 
-const SignInDialog: React.FC<Props> = ({handleOpen, isOpen}) => {
+const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
   const [stateDialog, setStateDialog] = useState<StateDialog>('signIn');
   const isStateDialogSignIn = stateDialog === 'signIn';
 
@@ -19,13 +19,17 @@ const SignInDialog: React.FC<Props> = ({handleOpen, isOpen}) => {
     setStateDialog(value);
   };
 
+  useEffect(() => {
+    if (isOpen) setStateDialog('signIn');
+  }, [isOpen]);
+
   return (
-    <Dialog onClose={() => handleOpen()} open={isOpen} maxWidth="xs" fullWidth>
+    <Dialog onClose={() => handleOpenClose()} open={isOpen} maxWidth="xs" fullWidth>
       <DialogTitle sx={{textAlign: 'center'}}>{isStateDialogSignIn ? 'Sign In' : 'Sign Up'}</DialogTitle>
       <DialogContent>
-        <SocialProviders handleOpen={handleOpen} />
+        <SocialProviders handleOpenClose={handleOpenClose} />
         <Divider sx={{mt: 3, mb: 3}}>or</Divider>
-        <EmailPasswordProvider stateDialog={stateDialog} />
+        <EmailPasswordProvider stateDialog={stateDialog} handleOpenClose={handleOpenClose} />
         <Typography align="center">
           {isStateDialogSignIn ? 'No account?' : 'Already have an account?'}{' '}
           <Link

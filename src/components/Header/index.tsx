@@ -28,7 +28,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
   const pressedArrowRight = useKeyPress('ArrowRight');
   const [isOpenSignInDialog, setOpenSignInDialog] = React.useState(false);
 
-  const handleOpenSignInDialog = (value?: boolean) => {
+  const handleOpenCloseSignInDialog = (value?: boolean) => {
     setOpenSignInDialog((prevState) => (value === undefined ? !prevState : value));
   };
 
@@ -70,7 +70,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
                 <UserProfileHeader user={user} signOut={async () => await signOut()} />
               ) : (
                 <>
-                  <Button onClick={() => handleOpenSignInDialog()} variant="outlined">
+                  <Button onClick={() => handleOpenCloseSignInDialog()} variant="outlined">
                     Sign In
                   </Button>
                 </>
@@ -79,7 +79,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
           </Grid>
         </Toolbar>
       </AppBarCustom>
-      <SignInDialog handleOpen={handleOpenSignInDialog} isOpen={isOpenSignInDialog} />
+      <SignInDialog handleOpenClose={handleOpenCloseSignInDialog} isOpen={isOpenSignInDialog} />
     </>
   );
 });

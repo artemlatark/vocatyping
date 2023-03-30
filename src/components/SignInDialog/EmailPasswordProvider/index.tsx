@@ -3,11 +3,12 @@ import {useForm, Controller, SubmitHandler} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth';
 
+import LoadingButton from '@mui/lab/LoadingButton';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import IconButton from '@mui/material/IconButton';
+import Alert from '@mui/material/Alert';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
@@ -16,7 +17,7 @@ import {auth} from 'config/firebase';
 import {Props, FormData} from './types';
 import {defaultValues, schema} from './formSchema';
 
-const EmailPasswordProvider: React.FC<Props> = ({stateDialog}) => {
+const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) => {
   const {
     control,
     handleSubmit,
@@ -25,11 +26,14 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog}) => {
     defaultValues,
     resolver: yupResolver(schema),
   });
-  const [createUserWithEmailAndPassword, createUserUser, createUserLoading, createUserError] =
-    useCreateUserWithEmailAndPassword(auth);
-  const [signInWithEmailAndPassword, signInUser, signInLoading, signInError] = useSignInWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, , createLoading, createError] = useCreateUserWithEmailAndPassword(auth, {
+    sendEmailVerification: true,
+  });
+  const [signInWithEmailAndPassword, , signInLoading, signInError] = useSignInWithEmailAndPassword(auth);
   const [showPassword, setShowPassword] = useState(false);
   const isStateDialogSignIn = stateDialog === 'signIn';
+  const loading = isStateDialogSignIn ? signInLoading : createLoading;
+  const error = isStateDialogSignIn ? signInError : createError;
 
   const handleShowPassword = (): void => {
     setShowPassword((show) => !show);
@@ -40,13 +44,13 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog}) => {
   };
 
   const onSubmit: SubmitHandler<FormData> = async ({email, password}): Promise<void> => {
-    if (isStateDialogSignIn) {
-      await signInWithEmailAndPassword(email, password);
-    } else {
-      await createUserWithEmailAndPassword(email, password);
-    }
+    const userResponse = isStateDialogSignIn
+      ? await signInWithEmailAndPassword(email, password)
+      : await createUserWithEmailAndPassword(email, password);
 
-    console.log(signInError);
+    if (userResponse) {
+      handleOpenClose();
+    }
   };
 
   return (
@@ -98,9 +102,14 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog}) => {
           />
         )}
       />
-      <Button type="submit" variant="contained" size="large">
+      {error && error?.code && (
+        <Alert severity="error" sx={{boxSizing: 'border-box'}}>
+          {error?.code}
+        </Alert>
+      )}
+      <LoadingButton loading={loading} type="submit" variant="contained" size="large">
         {isStateDialogSignIn ? 'Log in' : 'Create account'}
-      </Button>
+      </LoadingButton>
     </Box>
   );
 };
