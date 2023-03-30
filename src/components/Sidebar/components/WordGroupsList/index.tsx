@@ -45,7 +45,6 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
           <TabCustom
             key={`vertical-tab-${index}`}
             id={`vertical-tab-${index}`}
-            aria-controls={`vertical-tabpanel-${index}`}
             label={
               <div className={styles.wordGroupsListItem} onClick={() => handlerChangeTab(itemIndex, index)}>
                 {wordGroups[index]}

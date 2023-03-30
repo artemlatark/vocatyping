@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {Word} from 'models/Word';
 import {State} from './types';
-import {fetchWords} from './actions';
+import {fetchWords} from './actionCreators';
 
 const initialState: State = {
   words: [],
