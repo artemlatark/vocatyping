@@ -44,11 +44,11 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
   };
 
   const onSubmit: SubmitHandler<FormData> = async ({email, password}): Promise<void> => {
-    const userResponse = isStateDialogSignIn
+    const user = isStateDialogSignIn
       ? await signInWithEmailAndPassword(email, password)
       : await createUserWithEmailAndPassword(email, password);
 
-    if (userResponse) {
+    if (user) {
       handleOpenClose();
     }
   };
@@ -102,9 +102,9 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
           />
         )}
       />
-      {error && error?.code && (
+      {error && error?.message && (
         <Alert severity="error" sx={{boxSizing: 'border-box'}}>
-          {error?.code}
+          {error?.message}
         </Alert>
       )}
       <LoadingButton loading={loading} type="submit" variant="contained" size="large">
