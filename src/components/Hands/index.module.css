@@ -1,44 +1,44 @@
 .hand {
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    height: 66px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 50px;
-    z-index: 1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  z-index: 1;
 }
 
 .hand-1 {
-    background-image: url("/public/images/hands/hand-1.png");
+  background-image: url('/public/images/hands/hand-1.png');
 }
 
 .hand-2 {
-    background-image: url("/public/images/hands/hand-2.png");
+  background-image: url('/public/images/hands/hand-2.png');
 }
 
 .hand-3 {
-    background-image: url("/public/images/hands/hand-3.png");
+  background-image: url('/public/images/hands/hand-3.png');
 }
 
 .hand-4 {
-    background-image: url("/public/images/hands/hand-4.png");
+  background-image: url('/public/images/hands/hand-4.png');
 }
 
 .hand-7 {
-    background-image: url("/public/images/hands/hand-7.png");
+  background-image: url('/public/images/hands/hand-7.png');
 }
 
 .hand-8 {
-    background-image: url("/public/images/hands/hand-8.png");
+  background-image: url('/public/images/hands/hand-8.png');
 }
 
 .hand-9 {
-    background-image: url("/public/images/hands/hand-9.png");
+  background-image: url('/public/images/hands/hand-9.png');
 }
 
 .hand-10 {
-    background-image: url("/public/images/hands/hand-10.png");
+  background-image: url('/public/images/hands/hand-10.png');
 }

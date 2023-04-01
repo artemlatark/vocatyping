@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react';
 
-export interface SpeechSynthesisUtteranceProps
-  extends Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>> {}
+export interface SpeechSynthesisUtteranceProps extends Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>> {}
 
 interface Props {
   onEnd?: () => void;
@@ -37,14 +36,7 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const speak = ({
-    lang = 'en-US',
-    pitch = 1,
-    rate = 1,
-    text = '',
-    voice = null,
-    volume = 1,
-  }: SpeechSynthesisUtteranceProps = {}): void => {
+  const speak = ({lang = 'en-US', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtteranceProps = {}): void => {
     if (!supported) return;
 
     setSpeaking(true);

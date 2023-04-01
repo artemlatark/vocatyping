@@ -1,12 +1,12 @@
 .sidebarContainer {
-    height: 100%;
+  height: 100%;
 }
 
 .wordList {
-    width: 300px;
+  width: 300px;
 }
 
 .itemCurrent {
-    color: var(--color-blue-600);
-    font-weight: 600;
+  color: var(--color-blue-600);
+  font-weight: 600;
 }
