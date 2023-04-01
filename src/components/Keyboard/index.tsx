@@ -9,13 +9,13 @@ import styles from './index.module.css';
 import {Props} from './types';
 
 const Keyboard: React.FC<Props> = React.memo(({writtenText, currentWordId, wordVariants, currentVariantIndex}) => {
-  const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | null>(null);
-  const currentLayout: keyboardLayout = keyboardLayout.MAC;
+  const [currentLayout] = useState<keyboardLayout>(keyboardLayout.MAC);
   const keyboardObj = useMemo(() => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout), [currentLayout]);
-  const currentWordVariant = useMemo(() => wordVariants.find((item, index) => index === currentVariantIndex), [currentVariantIndex, wordVariants]);
+  const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | undefined>(undefined);
+  const currentWordVariant = wordVariants[currentVariantIndex];
   const nextKey = currentWordVariant?.variant[writtenText.length];
 
-  const onChangeNextTypeKey = useCallback((obj: NextTypeKey | null) => setNextTypeKey(obj), []);
+  const onChangeNextTypeKey = useCallback((key?: NextTypeKey) => setNextTypeKey(key), []);
 
   return (
     <div className={styles.keyboard}>
