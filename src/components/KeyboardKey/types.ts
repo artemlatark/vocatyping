@@ -4,5 +4,5 @@ import {State} from 'store/currentWord/types';
 export interface Props extends Pick<State, 'currentWordId'> {
   keyboardKey: Key;
   nextKey: string | undefined;
-  onChangeNextTypeKey: (obj: NextTypeKey | null) => void;
+  onChangeNextTypeKey: (obj?: NextTypeKey) => void;
 }

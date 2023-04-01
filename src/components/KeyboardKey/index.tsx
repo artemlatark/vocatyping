@@ -9,8 +9,8 @@ import {Props} from './types';
 
 const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChangeNextTypeKey, currentWordId}) => {
   const windowSizes = useWindowSize();
-  const isNextKey = keyboardKey.key?.toLowerCase() === nextKey;
-  const keyRef = useRef<HTMLDivElement>(null);
+  const keyRef = useRef<HTMLDivElement | null>(null);
+  const isNextKey = keyboardKey.key?.toLowerCase() === nextKey?.toLowerCase();
 
   const keyClassNames = cx(styles.key, {
     [styles[`${keyboardKey.code?.toLowerCase()}`]]: keyboardKey.code,
@@ -33,7 +33,7 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChange
     }
 
     if (nextKey === undefined) {
-      onChangeNextTypeKey(null);
+      onChangeNextTypeKey(undefined);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isNextKey, windowSizes.width, currentWordId]);
