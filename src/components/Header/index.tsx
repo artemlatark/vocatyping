@@ -1,23 +1,24 @@
 import React, {useEffect} from 'react';
+
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
+import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
-import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
-import MenuIcon from '@mui/icons-material/Menu';
 
+import Pagination from 'components/Pagination';
+import SignInDialog from 'components/SignInDialog';
+import UserProfileHeader from 'components/UserProfileHeader';
 import {auth} from 'config/firebase';
 import {useAppDispatch} from 'hooks/redux';
 import {useKeyPress} from 'hooks/useKeyPress';
 import {currentWordSlice} from 'store/currentWord/slice';
-import SignInDialog from 'components/SignInDialog';
-import Pagination from 'components/Pagination';
-import UserProfileHeader from 'components/UserProfileHeader';
 
-import {Props} from './types';
 import {AppBarCustom} from './styles';
+import {Props} from './types';
 
 const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, currentWordId}) => {
   const dispatch = useAppDispatch();
@@ -58,12 +59,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
                 <MenuIcon />
               </IconButton>
               <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />
-              <Pagination
-                handlePrev={() => onChangeWord('prev')}
-                handleNext={() => onChangeWord('next')}
-                currentNumber={currentWordId}
-                allNumbers={wordNumbers}
-              />
+              <Pagination handlePrev={() => onChangeWord('prev')} handleNext={() => onChangeWord('next')} currentNumber={currentWordId} allNumbers={wordNumbers} />
             </Grid>
             <Grid justifyContent="end" container item>
               {user ? (

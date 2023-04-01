@@ -1,25 +1,18 @@
 import React, {useState, useCallback, useMemo} from 'react';
 
-import KeyboardKey from 'components/KeyboardKey';
 import Hands from 'components/Hands';
+import KeyboardKey from 'components/KeyboardKey';
+import keyboards from 'data/keyboards.json';
 import {keyboardLayout, NextTypeKey} from 'models/Keyboard';
-import {Props} from './types';
 
 import styles from './index.module.css';
-
-import keyboards from 'data/keyboards.json';
+import {Props} from './types';
 
 const Keyboard: React.FC<Props> = React.memo(({writtenText, currentWordId, wordVariants, currentVariantIndex}) => {
   const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | null>(null);
   const currentLayout: keyboardLayout = keyboardLayout.MAC;
-  const keyboardObj = useMemo(
-    () => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout),
-    [currentLayout]
-  );
-  const currentWordVariant = useMemo(
-    () => wordVariants.find((item, index) => index === currentVariantIndex),
-    [currentVariantIndex, wordVariants]
-  );
+  const keyboardObj = useMemo(() => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout), [currentLayout]);
+  const currentWordVariant = useMemo(() => wordVariants.find((item, index) => index === currentVariantIndex), [currentVariantIndex, wordVariants]);
   const nextKey = currentWordVariant?.variant[writtenText.length];
 
   const onChangeNextTypeKey = useCallback((obj: NextTypeKey | null) => setNextTypeKey(obj), []);
@@ -31,13 +24,7 @@ const Keyboard: React.FC<Props> = React.memo(({writtenText, currentWordId, wordV
         {keyboardObj?.keys.map((line, lineIndex) => (
           <div key={`line-${lineIndex}`} className={styles.keyLine}>
             {line.map((key, keyIndex) => (
-              <KeyboardKey
-                key={`key-${key}-${keyIndex}`}
-                keyboardKey={key}
-                nextKey={nextKey}
-                onChangeNextTypeKey={onChangeNextTypeKey}
-                currentWordId={currentWordId}
-              />
+              <KeyboardKey key={`key-${key}-${keyIndex}`} keyboardKey={key} nextKey={nextKey} onChangeNextTypeKey={onChangeNextTypeKey} currentWordId={currentWordId} />
             ))}
           </div>
         ))}

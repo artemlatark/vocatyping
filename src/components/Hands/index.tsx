@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
+
 import cx from 'classnames';
 
-import {Props} from './types';
-
 import styles from './index.module.css';
+import {Props} from './types';
 
 const Hands: React.FC<Props> = React.memo(({nextTypeKey}) => {
   const [translateCoords, setTranslateCoords] = useState<number[]>([0, 0]);

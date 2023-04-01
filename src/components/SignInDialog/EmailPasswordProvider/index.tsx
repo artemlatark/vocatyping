@@ -1,21 +1,23 @@
 import React, {useState} from 'react';
+
 import {useForm, Controller, SubmitHandler} from 'react-hook-form';
+
 import {yupResolver} from '@hookform/resolvers/yup';
 import {useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth';
 
-import LoadingButton from '@mui/lab/LoadingButton';
-import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-import TextField from '@mui/material/TextField';
-import InputAdornment from '@mui/material/InputAdornment';
-import Alert from '@mui/material/Alert';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import LoadingButton from '@mui/lab/LoadingButton';
+import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import InputAdornment from '@mui/material/InputAdornment';
+import TextField from '@mui/material/TextField';
 
 import {auth} from 'config/firebase';
 
-import {Props, FormData} from './types';
 import {defaultValues, schema} from './formSchema';
+import {Props, FormData} from './types';
 
 const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) => {
   const {
@@ -44,9 +46,7 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
   };
 
   const onSubmit: SubmitHandler<FormData> = async ({email, password}): Promise<void> => {
-    const user = isStateDialogSignIn
-      ? await signInWithEmailAndPassword(email, password)
-      : await createUserWithEmailAndPassword(email, password);
+    const user = isStateDialogSignIn ? await signInWithEmailAndPassword(email, password) : await createUserWithEmailAndPassword(email, password);
 
     if (user) {
       handleOpenClose();

@@ -46,7 +46,19 @@
             "position": "after"
           },
           {
+            "pattern": "hooks/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "store/**/*",
+            "group": "internal"
+          },
+          {
             "pattern": "components/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "pages/**/*",
             "group": "internal"
           },
           {
@@ -58,23 +70,11 @@
             "group": "internal"
           },
           {
-            "pattern": "hooks/**/*",
+            "pattern": "utils/**/*",
             "group": "internal"
           },
           {
             "pattern": "models/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "pages/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "store/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "utils/**/*",
             "group": "internal"
           }
         ],
@@ -85,8 +85,7 @@
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
-        },
-        "warnOnUnassignedImports": true
+        }
       }
     ]
   }

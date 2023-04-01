@@ -1,8 +1,8 @@
 import {useEffect} from 'react';
 
 import {useAppDispatch} from './hooks/redux';
-import {fetchWords} from './store/words/actionCreators';
 import Main from './pages/Main';
+import {fetchWords} from './store/words/actionCreators';
 
 function App() {
   const dispatch = useAppDispatch();

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import IconButton from '@mui/material/IconButton';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Chip from '@mui/material/Chip';
+import IconButton from '@mui/material/IconButton';
 
 import {Props} from './types';
 

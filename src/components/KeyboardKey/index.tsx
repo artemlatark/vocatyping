@@ -1,10 +1,11 @@
 import React, {useEffect, useRef} from 'react';
+
 import cx from 'classnames';
 
 import {useWindowSize} from 'hooks/useWindowSize';
-import {Props} from './types';
 
 import styles from './index.module.css';
+import {Props} from './types';
 
 const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChangeNextTypeKey, currentWordId}) => {
   const windowSizes = useWindowSize();

@@ -2,21 +2,12 @@ import React, {useEffect} from 'react';
 
 import {useAppDispatch} from 'hooks/redux';
 import {currentWordSlice} from 'store/currentWord/slice';
-import {Props} from './types';
 
 import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
+import {Props} from './types';
 
-const TypeForm: React.FC<Props> = ({
-  currentWord,
-  wordNumbers,
-  isLoading,
-  currentWordId,
-  writtenText,
-  currentWordTense,
-  wordVariants,
-  currentVariantIndex,
-}) => {
+const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, isLoading, currentWordId, writtenText, currentWordTense, wordVariants, currentVariantIndex}) => {
   const dispatch = useAppDispatch();
 
   const onChangeInput: React.ChangeEventHandler<HTMLInputElement> = (event): void => {
@@ -58,14 +49,7 @@ const TypeForm: React.FC<Props> = ({
 
   return (
     <div className={styles.typeForm}>
-      <TypeFormTextField
-        onChange={onChangeInput}
-        onKeyDown={onKeyDownInput}
-        onKeyUp={onKeyUpInput}
-        value={writtenText}
-        autoFocus
-        fullWidth
-      />
+      <TypeFormTextField onChange={onChangeInput} onKeyDown={onKeyDownInput} onKeyUp={onKeyUpInput} value={writtenText} autoFocus fullWidth />
       <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
     </div>
   );

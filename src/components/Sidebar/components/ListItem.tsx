@@ -1,13 +1,15 @@
 import React from 'react';
+
 import cx from 'classnames';
-import ListItemText from '@mui/material/ListItemText';
+
 import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 
 import {useAppDispatch} from 'hooks/redux';
 import {currentWordSlice} from 'store/currentWord/slice';
 
-import {ListItemProps} from '../types';
 import styles from '../index.module.css';
+import {ListItemProps} from '../types';
 
 const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, onOpenSidebar}) => {
   const dispatch = useAppDispatch();

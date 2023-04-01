@@ -1,13 +1,13 @@
 import React from 'react';
 
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-import {Props} from './types';
 import styles from './index.module.css';
+import {Props} from './types';
 
 const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
   const {displayName, photoURL} = user;
@@ -31,11 +31,7 @@ const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
     <>
       <button className={styles.avatar} onClick={handleOpenUserProfileMenu}>
         <Avatar alt={displayName || undefined} src={photoURL || undefined} />
-        {isOpenUserProfileMenu ? (
-          <ArrowDropUpIcon className={styles.arrow} />
-        ) : (
-          <ArrowDropDownIcon className={styles.arrow} />
-        )}
+        {isOpenUserProfileMenu ? <ArrowDropUpIcon className={styles.arrow} /> : <ArrowDropDownIcon className={styles.arrow} />}
       </button>
 
       <Menu

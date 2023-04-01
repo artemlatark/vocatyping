@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+
 import {Provider} from 'react-redux';
+
+import ReactDOM from 'react-dom/client';
+
 import App from './App';
 import {setupStore} from './store/store';
-
 import './index.css';
 
 const store = setupStore();
