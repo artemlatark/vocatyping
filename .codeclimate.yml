@@ -1,9 +1,19 @@
-engines:
-  # ... CONFIG CONTENT ...
-  tslint:
+plugins:
+  eslint:
     enabled: true
-    # ... CONFIG CONTENT ...
-    checks:
-      quotemark:
-        enabled: false
-# ... CONFIG CONTENT ...
+  stylelint:
+    enabled: true
+exclude_patterns:
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "**/node_modules/"
+  - "script/"
+  - "**/spec/"
+  - "**/test/"
+  - "**/tests/"
+  - "Tests/"
+  - "**/vendor/"
+  - "**/*_test.go"
+  - "**/*.d.ts"

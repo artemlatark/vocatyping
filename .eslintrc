@@ -1,0 +1,93 @@
+{
+  "root": true,
+  "plugins": [
+    "import"
+  ],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:react-hooks/recommended",
+    "plugin:json/recommended"
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "builtin"
+          ],
+          "external",
+          ["internal"],
+          [
+            "parent",
+            "sibling"
+          ],
+          [
+            "index",
+            "object",
+            "type"
+          ]
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@mui/**/*",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "components/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "config/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "data/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "hooks/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "models/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "pages/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "store/**/*",
+            "group": "internal"
+          },
+          {
+            "pattern": "utils/**/*",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "warnOnUnassignedImports": true
+      }
+    ]
+  }
+}

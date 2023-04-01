@@ -1,17 +1,19 @@
 import React, {useEffect, useState} from 'react';
+
 import {Controller, SubmitHandler, useForm} from 'react-hook-form';
+
 import {yupResolver} from '@hookform/resolvers/yup';
 import {useSendPasswordResetEmail} from 'react-firebase-hooks/auth';
 
 import LoadingButton from '@mui/lab/LoadingButton';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import Typography from '@mui/material/Typography';
-import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
 import Link from '@mui/material/Link';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 
 import {auth} from 'config/firebase';
 
@@ -83,8 +85,7 @@ const ResetPasswordDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
           </Box>
         ) : (
           <Typography align="center" gutterBottom>
-            If an account exists for {getValues('email')}, you will get an email with instructions on resetting your
-            password. If it doesn't arrive, be sure to check your spam folder.
+            If an account exists for {getValues('email')}, you will get an email with instructions on resetting your password. If it doesn't arrive, be sure to check your spam folder.
           </Typography>
         )}
         <Typography align="center">

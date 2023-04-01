@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 
 import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
 import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 
 import ResetPasswordDialog from 'components/ResetPasswordDialog';
 
-import SocialProviders from './SocialProviders';
 import EmailPasswordProvider from './EmailPasswordProvider';
+import SocialProviders from './SocialProviders';
 import {Props, StateDialog} from './types';
 
 const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
@@ -56,12 +56,7 @@ const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
               </>
             )}
             {isStateDialogSignIn ? 'No account?' : 'Already have an account?'}{' '}
-            <Link
-              onClick={() => handleChangeStateDialog(isStateDialogSignIn ? 'signUp' : 'signIn')}
-              component="button"
-              type="button"
-              variant="body1"
-            >
+            <Link onClick={() => handleChangeStateDialog(isStateDialogSignIn ? 'signUp' : 'signIn')} component="button" type="button" variant="body1">
               {isStateDialogSignIn ? 'Create' : 'Sign In'}
             </Link>
           </Typography>

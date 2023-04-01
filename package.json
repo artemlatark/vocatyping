@@ -1,11 +1,23 @@
 {
   "name": "typerighting",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "homepage": "https://typerighting-5d448.web.app/about",
+  "author": {
+    "name": "Artem Krynkin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artemkrynkin/typerighting"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write '*/**/*.{ts,tsx,js,jsx,css,scss,json}'",
+    "prepare": "husky install"
+  },
   "dependencies": {
-    "prettier": "^2.8.7",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@hookform/resolvers": "^3.0.0",
@@ -24,9 +36,15 @@
     "@types/react-redux": "^7.1.25",
     "axios": "^1.2.2",
     "classnames": "^2.3.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "firebase": "^9.18.0",
     "firebaseui": "^6.0.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "lodash": "^4.17.21",
+    "prettier": "^2.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
@@ -38,40 +56,5 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.0.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prettier": "prettier --write '*/**/*.{ts,tsx,js,jsx,css,scss,json}'"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
-      "eslint --fix --quiet"
-    ]
-  }
+  "private": true
 }
