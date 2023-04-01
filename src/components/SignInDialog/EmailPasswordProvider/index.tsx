@@ -49,7 +49,7 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
     const user = isStateDialogSignIn ? await signInWithEmailAndPassword(email, password) : await createUserWithEmailAndPassword(email, password);
 
     if (user) {
-      handleOpenClose();
+      handleOpenClose(false);
     }
   };
 

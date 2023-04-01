@@ -47,7 +47,7 @@ const ResetPasswordDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
   }, [isOpen, isDirty, reset]);
 
   return (
-    <Dialog onClose={() => handleOpenClose()} open={isOpen} maxWidth="xs" fullWidth>
+    <Dialog onClose={() => handleOpenClose(false)} open={isOpen} maxWidth="xs" fullWidth>
       <DialogTitle sx={{textAlign: 'center'}}>Enter your email to reset password</DialogTitle>
       <DialogContent sx={{'.MuiDialogTitle-root+&': {pt: 2.5}}}>
         {!isSuccessfullyEmailSend ? (
@@ -85,11 +85,12 @@ const ResetPasswordDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
           </Box>
         ) : (
           <Typography align="center" gutterBottom>
-            If an account exists for {getValues('email')}, you will get an email with instructions on resetting your password. If it doesn't arrive, be sure to check your spam folder.
+            If an account exists for {getValues('email')}, you will get an email with instructions on resetting your password. If it doesn't arrive, be sure to check your spam
+            folder.
           </Typography>
         )}
         <Typography align="center">
-          <Link onClick={() => handleOpenClose()} component="button" type="button" variant="body1">
+          <Link onClick={() => handleOpenClose(false)} component="button" type="button" variant="body1">
             Cancel
           </Link>
         </Typography>

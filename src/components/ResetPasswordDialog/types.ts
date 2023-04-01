@@ -3,7 +3,7 @@ import {InferType} from 'yup';
 import {schema} from './formSchema';
 
 export interface Props {
-  handleOpenClose: (value?: boolean) => void;
+  handleOpenClose: (value: boolean) => void;
   isOpen: boolean;
 }
 

@@ -18,8 +18,8 @@ const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
   const isStateDialogSignIn = stateDialog === 'signIn';
   const [isOpenResetPasswordDialog, setOpenResetPasswordDialog] = React.useState(false);
 
-  const handleOpenCloseResetPasswordDialog = (value?: boolean) => {
-    setOpenResetPasswordDialog((prevState) => (value === undefined ? !prevState : value));
+  const handleOpenCloseResetPasswordDialog = (value: boolean): void => {
+    setOpenResetPasswordDialog(value);
   };
 
   const handleChangeStateDialog = (value: StateDialog): void => {
@@ -32,7 +32,7 @@ const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
 
   return (
     <>
-      <Dialog onClose={() => handleOpenClose()} open={isOpen} maxWidth="xs" fullWidth>
+      <Dialog onClose={() => handleOpenClose(false)} open={isOpen} maxWidth="xs" fullWidth>
         <DialogTitle sx={{textAlign: 'center'}}>{isStateDialogSignIn ? 'Sign In' : 'Sign Up'}</DialogTitle>
         <DialogContent>
           <SocialProviders handleOpenClose={handleOpenClose} />
@@ -43,8 +43,8 @@ const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
               <>
                 <Link
                   onClick={() => {
-                    handleOpenClose();
-                    handleOpenCloseResetPasswordDialog();
+                    handleOpenClose(false);
+                    handleOpenCloseResetPasswordDialog(true);
                   }}
                   component="button"
                   type="button"
