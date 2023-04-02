@@ -14,7 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write '*/**/*.{ts,tsx,js,jsx,css,scss,json}'",
+    "eslint": "eslint './src/**/*.{js,jsx,ts,tsx,json,md}'",
+    "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,md,css,scss}'",
     "prepare": "husky install"
   },
   "dependencies": {
