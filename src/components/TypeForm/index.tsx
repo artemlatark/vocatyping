@@ -49,6 +49,8 @@ const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, isLoading, current
 
   return (
     <div className={styles.typeForm}>
+      {/* we should stay `autofocus` on the field, because we need faster access to the field */}
+      {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
       <TypeFormTextField onChange={onChangeInput} onKeyDown={onKeyDownInput} onKeyUp={onKeyUpInput} value={writtenText} autoFocus fullWidth />
       <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
     </div>

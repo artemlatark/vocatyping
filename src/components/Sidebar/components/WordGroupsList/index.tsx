@@ -35,13 +35,11 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
         )
         .firstItemsIndexes.map((itemIndex: number, index: number) => (
           <TabCustom
+            onClick={() => handlerChangeTab(itemIndex, index)}
             key={`vertical-tab-${index}`}
             id={`vertical-tab-${index}`}
-            label={
-              <div className={styles.wordGroupsListItem} onClick={() => handlerChangeTab(itemIndex, index)}>
-                {wordGroups[index]}
-              </div>
-            }
+            className={styles.wordGroupsListItem}
+            label={wordGroups[index]}
           />
         ))}
     </TabsCustom>
