@@ -1,12 +1,38 @@
 {
   "root": true,
-  "plugins": ["import"],
-  "extends": ["react-app", "react-app/jest", "plugin:react-hooks/recommended", "plugin:json/recommended"],
+  "plugins": [
+    "import",
+    "jsx-a11y"
+  ],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:json/recommended"
+  ],
   "rules": {
     "import/order": [
       "error",
       {
-        "groups": [["builtin"], "external", ["internal"], ["parent", "sibling"], ["index", "object", "type"]],
+        "groups": [
+          [
+            "builtin"
+          ],
+          "external",
+          [
+            "internal"
+          ],
+          [
+            "parent",
+            "sibling"
+          ],
+          [
+            "index",
+            "object",
+            "type"
+          ]
+        ],
         "pathGroups": [
           {
             "pattern": "react",
@@ -56,7 +82,9 @@
             "group": "internal"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react"],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
