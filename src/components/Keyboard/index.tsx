@@ -1,9 +1,11 @@
 import React, {useState, useCallback, useMemo} from 'react';
 
+import keyboards from 'data/keyboards.json';
+
+import {keyboardLayout, NextTypeKey} from 'models/Keyboard';
+
 import Hands from 'components/Hands';
 import KeyboardKey from 'components/KeyboardKey';
-import keyboards from 'data/keyboards.json';
-import {keyboardLayout, NextTypeKey} from 'models/Keyboard';
 
 import styles from './index.module.css';
 import {Props} from './types';

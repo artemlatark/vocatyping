@@ -9,13 +9,16 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 
+import {auth} from 'config/firebase';
+
+import {useAppDispatch} from 'hooks/redux';
+import {useKeyPress} from 'hooks/useKeyPress';
+
+import {currentWordSlice} from 'store/currentWord/slice';
+
 import Pagination from 'components/Pagination';
 import SignInDialog from 'components/SignInDialog';
 import UserProfileHeader from 'components/UserProfileHeader';
-import {auth} from 'config/firebase';
-import {useAppDispatch} from 'hooks/redux';
-import {useKeyPress} from 'hooks/useKeyPress';
-import {currentWordSlice} from 'store/currentWord/slice';
 
 import {AppBarCustom} from './styles';
 import {Props} from './types';

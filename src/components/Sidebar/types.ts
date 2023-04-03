@@ -2,9 +2,10 @@ import React from 'react';
 
 import {GroupedVirtuosoHandle} from 'react-virtuoso';
 
-import {CurrentWord, Word} from 'models/Word';
 import {State as CurrentWordState} from 'store/currentWord/types';
 import {State as WordsState} from 'store/words/types';
+
+import {CurrentWord, Word} from 'models/Word';
 
 export interface SidebarProps extends CurrentWord, Pick<WordsState, 'words'>, Pick<CurrentWordState, 'currentWordId'> {
   onOpenSidebar: (value?: boolean) => void;

@@ -1,7 +1,9 @@
 import {SpeechSynthesisUtteranceProps} from 'hooks/useSpeechSynthesis';
+
+import {State} from 'store/currentWord/types';
+
 import {CurrentWord} from 'models/Word';
 import {WordVariant} from 'models/WordVariant';
-import {State} from 'store/currentWord/types';
 
 export interface WordAndSentenceProps extends CurrentWord, Pick<State, 'currentWordTense' | 'wordVariants' | 'currentVariantIndex'> {}
 

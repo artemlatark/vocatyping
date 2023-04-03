@@ -6,6 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
 import {useAppDispatch} from 'hooks/redux';
+
 import {currentWordSlice} from 'store/currentWord/slice';
 
 import styles from '../index.module.css';
