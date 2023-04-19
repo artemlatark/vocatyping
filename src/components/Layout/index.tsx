@@ -10,7 +10,7 @@ const Layout: React.FC<Props> = ({children, onOpenSidebar, sidebarOpen, words, w
   <div className={styles.layout}>
     <Sidebar onOpenSidebar={onOpenSidebar} sidebarOpen={sidebarOpen} currentWord={currentWord} currentWordId={currentWordId} words={words} />
     <div className={styles.content}>
-      <Header onOpenSidebar={onOpenSidebar} wordNumbers={wordNumbers} currentWordId={currentWordId} />
+      <Header onOpenSidebar={onOpenSidebar} wordNumbers={wordNumbers} currentWordId={currentWordId} words={words} />
       {children}
     </div>
   </div>

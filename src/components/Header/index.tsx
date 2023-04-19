@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useMemo} from 'react';
 
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
@@ -23,7 +23,7 @@ import UserProfileHeader from 'components/UserProfileHeader';
 import {AppBarCustom} from './styles';
 import {Props} from './types';
 
-const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, currentWordId}) => {
+const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, currentWordId, words}) => {
   const dispatch = useAppDispatch();
   const [user] = useAuthState(auth);
   const [signOut] = useSignOut(auth);
@@ -31,21 +31,25 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');
   const [isOpenSignInDialog, setOpenSignInDialog] = React.useState(false);
+  const currentWordIndex = useMemo(() => (currentWordId ? words.findIndex((word) => word.id === currentWordId) : 0), [words, currentWordId]);
 
   const handleOpenCloseSignInDialog = (value: boolean): void => {
     setOpenSignInDialog(value);
   };
 
   const onChangeWord = (handlerType: string): void => {
-    dispatch(currentWordSlice.actions.onChangeWord({handlerType, wordNumbers}));
+    const wordId = (handlerType === 'prev' ? words[currentWordIndex - 1] : words[currentWordIndex + 1])?.id;
+    if (wordId) dispatch(currentWordSlice.actions.onChangeWord(wordId));
   };
 
   useEffect(() => {
     if (pressedAlt && pressedArrowLeft) {
-      dispatch(currentWordSlice.actions.onChangeWord({handlerType: 'prev', wordNumbers}));
+      const prevWordId = words[currentWordIndex - 1]?.id;
+      if (prevWordId) dispatch(currentWordSlice.actions.onChangeWord(prevWordId));
     }
     if (pressedAlt && pressedArrowRight) {
-      dispatch(currentWordSlice.actions.onChangeWord({handlerType: 'next', wordNumbers}));
+      const nextWordId = words[currentWordIndex + 1]?.id;
+      if (nextWordId) dispatch(currentWordSlice.actions.onChangeWord(nextWordId));
     }
 
     onOpenSidebar(false);
@@ -62,7 +66,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
                 <MenuIcon />
               </IconButton>
               <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />
-              <Pagination handlePrev={() => onChangeWord('prev')} handleNext={() => onChangeWord('next')} currentNumber={currentWordId} allNumbers={wordNumbers} />
+              <Pagination handlePrev={() => onChangeWord('prev')} handleNext={() => onChangeWord('next')} currentNumber={currentWordIndex + 1} allNumbers={wordNumbers} />
             </Grid>
             <Grid justifyContent="end" container item>
               {user ? (

@@ -14,15 +14,14 @@ import {ListItemProps} from '../types';
 
 const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, onOpenSidebar}) => {
   const dispatch = useAppDispatch();
-  console.log(index);
 
   const wordItemClassNames = cx({
-    [styles.itemCurrent]: index === currentWordId - 1,
+    [styles.itemCurrent]: currentWordId ? word.id === currentWordId : index === 0,
   });
 
   const onChangeWord = () => {
     onOpenSidebar();
-    dispatch(currentWordSlice.actions.onChangeWord({wordId: index + 1}));
+    dispatch(currentWordSlice.actions.onChangeWord(word.id));
   };
 
   return (

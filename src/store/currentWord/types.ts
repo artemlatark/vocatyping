@@ -1,15 +1,9 @@
-import {WordVariant} from 'models/WordVariant';
+import {TenseVariant} from 'models/Word';
 
 export interface State {
   writtenText: string;
-  currentWordId: number;
-  currentWordTense: number;
-  wordVariants: WordVariant[];
-  currentVariantIndex: number;
-}
-
-export interface ChangeWordPayloadAction {
-  handlerType?: string;
-  wordId?: number;
-  wordNumbers?: number;
+  currentWordId: string | undefined;
+  tenseIndex: number;
+  tenseVariants: TenseVariant[];
+  tenseVariantIndex: number;
 }

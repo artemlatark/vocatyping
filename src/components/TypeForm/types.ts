@@ -5,4 +5,5 @@ import {CurrentWord} from 'models/Word';
 
 export interface Props extends CurrentWord, Pick<WordsState, 'isLoading'>, CurrentWordState {
   wordNumbers: number;
+  nextWordId: string;
 }

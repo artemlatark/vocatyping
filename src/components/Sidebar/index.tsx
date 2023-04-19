@@ -28,6 +28,7 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, onOpenSidebar,
 
     return {wordGroupsCounts: wordGroupsCountsSrc, wordGroups: wordGroupsSrc};
   }, [words]);
+  const currentWordIndex = useMemo(() => (currentWordId ? words.findIndex((word) => word.id === currentWordId) : 0), [words, currentWordId]);
 
   return (
     <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
@@ -37,7 +38,7 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, onOpenSidebar,
           className={styles.wordList}
           ref={listRef}
           initialTopMostItemIndex={{
-            index: currentWordId - 1,
+            index: currentWordIndex,
             align: 'center',
           }}
           groupCounts={wordGroupsCounts}

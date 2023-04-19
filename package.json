@@ -37,6 +37,7 @@
     "@types/react-redux": "^7.1.25",
     "axios": "^1.2.2",
     "classnames": "^2.3.2",
+    "csvtojson": "^2.0.10",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",

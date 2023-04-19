@@ -20,7 +20,7 @@ export interface WordGroups {
 export interface ListItemProps {
   word: Word;
   index: number;
-  currentWordId: number;
+  currentWordId: CurrentWordState['currentWordId'];
   onOpenSidebar: (value?: boolean) => void;
 }
 

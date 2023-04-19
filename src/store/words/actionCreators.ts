@@ -1,19 +1,23 @@
+import axios from 'axios';
+import csv from 'csvtojson';
+
 import {createAsyncThunk} from '@reduxjs/toolkit';
-import {collection, getDocs, orderBy, query} from 'firebase/firestore';
 
-import {db} from 'config/firebase';
+import {Word} from 'models/Word';
 
-const collectionRef = collection(db, '/dictionaries/wmHSUtOX4Ar50I6uOsXi/words');
-
+// Get a non-default Storage bucket
 export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async (_, thunkAPI) => {
   try {
-    const querySnapshot = query(collectionRef, orderBy('word', 'asc'));
-    // const response = await axios.get<Word[]>('/data/word_and_sentences.json');
+    const response = await axios.get('/data/shestov_dictionary.csv');
 
-    const response = await getDocs(querySnapshot);
-    const entities: any = response.docs.map((doc) => ({id: doc.id, ...doc.data(), createdAt: '1'}));
+    const dictionary: Word[] = await csv({
+      ignoreEmpty: true,
+      colParser: {
+        id: 'number',
+      },
+    }).fromString(response.data);
 
-    return entities;
+    return dictionary;
   } catch (error) {
     return thunkAPI.rejectWithValue('Failed to load data');
   }
