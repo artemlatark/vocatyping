@@ -1,15 +1,23 @@
 import {useEffect, useState} from 'react';
 
-export interface SpeechSynthesisUtteranceProps extends Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>> {}
+export interface SpeechSynthesisUtterancePicked extends Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>> {}
 
 interface Props {
   onEnd?: () => void;
 }
 
+export interface Speech {
+  voices: SpeechSynthesisVoice[];
+  isSupported: boolean;
+  isSpeaking: boolean;
+  speak: (options: SpeechSynthesisUtterancePicked) => void;
+  cancelSpeaking: () => void;
+}
+
 export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
-  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
-  const [speaking, setSpeaking] = useState(false);
-  const [supported, setSupported] = useState(false);
+  const [voices, setVoices] = useState<Speech['voices']>([]);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [isSupported, setIsSupported] = useState(false);
 
   const getVoices = (): void => {
     // Firefox seems to have voices upfront and never calls the voiceschanged event
@@ -30,16 +38,16 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window.speechSynthesis) {
-      setSupported(true);
+      setIsSupported(true);
       getVoices();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const speak = ({lang = 'en-US', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtteranceProps = {}): void => {
-    if (!supported) return;
+  const speak = ({lang = 'en-US', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
+    if (!isSupported) return;
 
-    setSpeaking(true);
+    setIsSpeaking(true);
 
     // Firefox won't repeat an utterance that has been spoken, so we need to create a new instance each time
     const utterance = new window.SpeechSynthesisUtterance();
@@ -51,24 +59,24 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     utterance.voice = voice;
     utterance.volume = volume;
     utterance.onend = () => {
-      setSpeaking(false);
+      setIsSpeaking(false);
       if (onEnd) onEnd();
     };
 
     window.speechSynthesis.speak(utterance);
   };
 
-  const cancel = (): void => {
-    if (!supported) return;
-    setSpeaking(false);
+  const cancelSpeaking = (): void => {
+    if (!isSupported) return;
+    setIsSpeaking(false);
     window.speechSynthesis.cancel();
   };
 
   return {
-    supported,
-    speak,
-    speaking,
-    cancel,
     voices,
+    isSupported,
+    isSpeaking,
+    speak,
+    cancelSpeaking,
   };
 };
