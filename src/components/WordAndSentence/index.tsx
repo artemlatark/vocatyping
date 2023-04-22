@@ -8,15 +8,15 @@ import TensesOfWord from './components/TensesOfWord';
 import styles from './index.module.css';
 import {WordAndSentenceProps} from './types';
 
-const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(({currentWord, currentWordTense, wordVariants, currentVariantIndex}) => {
+const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(({currentWord, tenseIndex, tenseVariants, tenseVariantIndex}) => {
   const {speak, voices} = useSpeechSynthesis();
   const voice = useMemo(() => voices.find((item) => item.name === 'Google US English'), [voices]);
 
   return (
     <div className={styles.wordAndSentence}>
-      <TensesOfWord currentWord={currentWord} currentWordTense={currentWordTense} speak={speak} voice={voice} />
+      <TensesOfWord currentWord={currentWord} tenseIndex={tenseIndex} speak={speak} voice={voice} />
       <SentenceOfWord currentWord={currentWord} speak={speak} voice={voice} />
-      <SpreadOutWord wordVariants={wordVariants} currentVariantIndex={currentVariantIndex} />
+      <SpreadOutWord tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} />
     </div>
   );
 });

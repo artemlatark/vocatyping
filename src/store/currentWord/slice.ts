@@ -2,14 +2,14 @@ import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
-import {State, ChangeWordPayloadAction} from './types';
+import {State} from './types';
 
 const initialState: State = {
-  currentWordId: getFromLocalStorage('currentWord') || 1,
   writtenText: '',
-  currentWordTense: 0,
-  wordVariants: [],
-  currentVariantIndex: 0,
+  currentWordId: getFromLocalStorage('currentWord'),
+  tenseIndex: 0,
+  tenseVariants: [],
+  tenseVariantIndex: 0,
 };
 
 export const currentWordSlice = createSlice({
@@ -19,7 +19,7 @@ export const currentWordSlice = createSlice({
     initWord(state, action: PayloadAction<string>) {
       const word = action.payload;
 
-      state.wordVariants = word.split('').map((letter, index, thisArg) => ({
+      state.tenseVariants = word.split('').map((letter, index, thisArg) => ({
         correct: false,
         variant: thisArg.slice(0, index + 1).join(''),
       }));
@@ -30,47 +30,33 @@ export const currentWordSlice = createSlice({
     onCheckInputLetter(state, action: PayloadAction<string>) {
       const index = action.payload.length - 1;
       const letter = action.payload.at(-1);
-      const currentWordVariant = state.wordVariants[state.currentVariantIndex].variant[index];
+      const currentWordVariant = state.tenseVariants[state.tenseVariantIndex].variant[index];
 
       if (currentWordVariant === undefined || letter !== currentWordVariant.toLowerCase()) {
-        state.wordVariants.map((item) => (item.correct = false));
+        state.tenseVariants.map((item) => (item.correct = false));
 
         state.writtenText = '';
-        state.currentVariantIndex = 0;
+        state.tenseVariantIndex = 0;
       }
     },
     onCheckEnteredWord(state) {
-      state.wordVariants[state.currentVariantIndex].correct = true;
+      state.tenseVariants[state.tenseVariantIndex].correct = true;
 
       state.writtenText = '';
-      state.currentVariantIndex++;
+      state.tenseVariantIndex++;
     },
     onNextTense(state) {
       state.writtenText = '';
-      state.currentVariantIndex = 0;
-      state.currentWordTense++;
+      state.tenseVariantIndex = 0;
+      state.tenseIndex++;
     },
-    onChangeWord(state, action: PayloadAction<ChangeWordPayloadAction>) {
+    onChangeWord(state, action: PayloadAction<string>) {
       state.writtenText = '';
-      state.currentVariantIndex = 0;
-      state.currentWordTense = 0;
+      state.tenseVariantIndex = 0;
+      state.tenseIndex = 0;
 
-      switch (action.payload.handlerType) {
-        case 'prev':
-          if (state.currentWordId === 1) break;
-
-          state.currentWordId--;
-          break;
-        case 'next':
-          if (state.currentWordId === action.payload.wordNumbers) break;
-
-          state.currentWordId++;
-          break;
-        default:
-          state.currentWordId = action.payload.wordId || 1;
-      }
-
-      saveToLocalStorage('currentWord', state.currentWordId);
+      state.currentWordId = action.payload;
+      saveToLocalStorage('currentWord', action.payload);
     },
   },
 });

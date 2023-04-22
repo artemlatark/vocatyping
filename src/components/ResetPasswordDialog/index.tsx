@@ -15,7 +15,7 @@ import Link from '@mui/material/Link';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-import {auth} from 'config/firebase';
+import {firebaseAuth} from 'config/firebase';
 
 import {defaultValues, schema} from './formSchema';
 import {Props, FormData} from './types';
@@ -31,7 +31,7 @@ const ResetPasswordDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
     defaultValues,
     resolver: yupResolver(schema),
   });
-  const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
+  const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(firebaseAuth);
   const [isSuccessfullyEmailSend, setSuccessfullyEmailSend] = useState(false);
 
   const onSubmit: SubmitHandler<FormData> = async ({email}): Promise<void> => {

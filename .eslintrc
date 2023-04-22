@@ -50,36 +50,39 @@
             "position": "after"
           },
           {
+            "pattern": "config/**/*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "hooks/**/*",
-            "group": "internal"
+            "group": "internal",
+            "position": "before"
           },
           {
             "pattern": "store/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "components/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "pages/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "config/**/*",
-            "group": "internal"
-          },
-          {
-            "pattern": "data/**/*",
-            "group": "internal"
+            "group": "internal",
+            "position": "before"
           },
           {
             "pattern": "utils/**/*",
-            "group": "internal"
+            "group": "internal",
+            "position": "before"
           },
           {
             "pattern": "models/**/*",
-            "group": "internal"
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "components/**/*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "pages/**/*",
+            "group": "internal",
+            "position": "before"
           }
         ],
         "pathGroupsExcludedImportTypes": [

@@ -1,9 +1,10 @@
 import {SpeechSynthesisUtteranceProps} from 'hooks/useSpeechSynthesis';
-import {CurrentWord} from 'models/Word';
-import {WordVariant} from 'models/WordVariant';
+
 import {State} from 'store/currentWord/types';
 
-export interface WordAndSentenceProps extends CurrentWord, Pick<State, 'currentWordTense' | 'wordVariants' | 'currentVariantIndex'> {}
+import {CurrentWord, TenseVariant} from 'models/Word';
+
+export interface WordAndSentenceProps extends CurrentWord, Pick<State, 'tenseIndex' | 'tenseVariants' | 'tenseVariantIndex'> {}
 
 export interface SentenceOfWordProps extends Pick<WordAndSentenceProps, 'currentWord'> {
   speak: ({lang, pitch, rate, text, voice, volume}: SpeechSynthesisUtteranceProps) => void;
@@ -15,17 +16,17 @@ export interface ContextMenu {
   mouseY: number;
 }
 
-export interface SpreadOutWordProps extends Pick<State, 'wordVariants' | 'currentVariantIndex'> {}
+export interface SpreadOutWordProps extends Pick<State, 'tenseVariants' | 'tenseVariantIndex'> {}
 
 export interface SpreadOutWordItemProps {
-  item: WordVariant;
+  item: TenseVariant;
 }
 
-export interface TensesOfWordProps extends SentenceOfWordProps, Pick<State, 'currentWordTense'> {}
+export interface TensesOfWordProps extends SentenceOfWordProps, Pick<State, 'tenseIndex'> {}
 
 export interface TensesOfWordItemProps {
   tense: string;
   index: number;
   thisArg: string[];
-  currentWordTense: number;
+  tenseIndex: number;
 }

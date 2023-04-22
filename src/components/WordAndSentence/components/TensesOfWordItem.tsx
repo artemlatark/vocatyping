@@ -5,9 +5,9 @@ import cx from 'classnames';
 import styles from '../index.module.css';
 import {TensesOfWordItemProps} from '../types';
 
-const TensesOfWordItem: React.FC<TensesOfWordItemProps> = memo(({tense, index, thisArg, currentWordTense}) => {
+const TensesOfWordItem: React.FC<TensesOfWordItemProps> = memo(({tense, index, thisArg, tenseIndex}) => {
   const currentWordClassNames = cx({
-    [styles.current]: index === currentWordTense,
+    [styles.current]: index === tenseIndex,
   });
 
   return (

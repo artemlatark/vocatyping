@@ -1,14 +1,38 @@
 import axios from 'axios';
+import csv from 'csvtojson';
 
 import {createAsyncThunk} from '@reduxjs/toolkit';
+import {ref, getDownloadURL} from 'firebase/storage';
+
+import {firebaseStorage} from 'config/firebase';
 
 import {Word} from 'models/Word';
 
-export const fetchWords = createAsyncThunk('words/fetchAll', async (_, thunkAPI) => {
+export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async (_, thunkAPI) => {
   try {
-    const response = await axios.get<Word[]>('/data/word_and_sentences.json');
-    return response.data;
+    const dictionaryRef = ref(firebaseStorage, 'dictionaries/shestov.csv');
+
+    const dictionaryDownloadURL = await getDownloadURL(dictionaryRef);
+
+    const response = await axios.get(dictionaryDownloadURL);
+
+    const dictionary: Word[] = await csv({
+      ignoreEmpty: true,
+      colParser: {
+        id: 'number',
+      },
+    }).fromString(response.data);
+
+    return dictionary;
   } catch (error) {
-    return thunkAPI.rejectWithValue('Failed to load data');
+    const responseError: Error =
+      error instanceof Error
+        ? error
+        : {
+            name: 'unknown error',
+            message: 'An unknown error occurred. Failed to load data.',
+          };
+
+    return thunkAPI.rejectWithValue(responseError);
   }
 });

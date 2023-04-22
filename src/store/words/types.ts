@@ -3,5 +3,5 @@ import {Word} from 'models/Word';
 export interface State {
   words: Word[];
   isLoading: boolean;
-  error: string;
+  error: Error | null;
 }

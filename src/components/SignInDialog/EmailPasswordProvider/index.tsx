@@ -14,7 +14,7 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 
-import {auth} from 'config/firebase';
+import {firebaseAuth} from 'config/firebase';
 
 import {defaultValues, schema} from './formSchema';
 import {Props, FormData} from './types';
@@ -28,10 +28,10 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
     defaultValues,
     resolver: yupResolver(schema),
   });
-  const [createUserWithEmailAndPassword, , createLoading, createError] = useCreateUserWithEmailAndPassword(auth, {
+  const [createUserWithEmailAndPassword, , createLoading, createError] = useCreateUserWithEmailAndPassword(firebaseAuth, {
     sendEmailVerification: true,
   });
-  const [signInWithEmailAndPassword, , signInLoading, signInError] = useSignInWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, , signInLoading, signInError] = useSignInWithEmailAndPassword(firebaseAuth);
   const [showPassword, setShowPassword] = useState(false);
   const isStateDialogSignIn = stateDialog === 'signIn';
   const loading = isStateDialogSignIn ? signInLoading : createLoading;

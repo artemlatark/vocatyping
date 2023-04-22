@@ -2,13 +2,13 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 import {Word} from 'models/Word';
 
-import {fetchWords} from './actionCreators';
+import {fetchWordsInDictionary} from './actionCreators';
 import {State} from './types';
 
 const initialState: State = {
   words: [],
   isLoading: false,
-  error: '',
+  error: null,
 };
 
 export const wordsSlice = createSlice({
@@ -17,15 +17,15 @@ export const wordsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchWords.pending.type, (state) => {
+      .addCase(fetchWordsInDictionary.pending.type, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchWords.fulfilled.type, (state, action: PayloadAction<Word[]>) => {
+      .addCase(fetchWordsInDictionary.fulfilled.type, (state, action: PayloadAction<Word[]>) => {
         state.isLoading = false;
-        state.error = '';
+        state.error = null;
         state.words = action.payload;
       })
-      .addCase(fetchWords.rejected.type, (state, action: PayloadAction<string>) => {
+      .addCase(fetchWordsInDictionary.rejected.type, (state, action: PayloadAction<Error>) => {
         state.isLoading = false;
         state.error = action.payload;
       });

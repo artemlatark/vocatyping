@@ -6,6 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
 import {useAppDispatch} from 'hooks/redux';
+
 import {currentWordSlice} from 'store/currentWord/slice';
 
 import styles from '../index.module.css';
@@ -15,12 +16,12 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, onOpenSi
   const dispatch = useAppDispatch();
 
   const wordItemClassNames = cx({
-    [styles.itemCurrent]: index === currentWordId - 1,
+    [styles.itemCurrent]: currentWordId ? word.id === currentWordId : index === 0,
   });
 
   const onChangeWord = () => {
     onOpenSidebar();
-    dispatch(currentWordSlice.actions.onChangeWord({wordId: word.id}));
+    dispatch(currentWordSlice.actions.onChangeWord(word.id));
   };
 
   return (
