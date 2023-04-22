@@ -9,13 +9,13 @@ import styles from './index.module.css';
 import {WordAndSentenceProps} from './types';
 
 const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(({currentWord, tenseIndex, tenseVariants, tenseVariantIndex}) => {
-  const {speak, voices} = useSpeechSynthesis();
+  const {isSpeaking, speak, cancelSpeaking, voices} = useSpeechSynthesis();
   const voice = useMemo(() => voices.find((item) => item.name === 'Google US English'), [voices]);
 
   return (
     <div className={styles.wordAndSentence}>
-      <TensesOfWord currentWord={currentWord} tenseIndex={tenseIndex} speak={speak} voice={voice} />
-      <SentenceOfWord currentWord={currentWord} speak={speak} voice={voice} />
+      <TensesOfWord currentWord={currentWord} tenseIndex={tenseIndex} speech={{isSpeaking, speak, cancelSpeaking}} voice={voice} />
+      <SentenceOfWord currentWord={currentWord} speech={{isSpeaking, speak, cancelSpeaking}} voice={voice} />
       <SpreadOutWord tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} />
     </div>
   );
