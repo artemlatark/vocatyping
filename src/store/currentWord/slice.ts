@@ -21,7 +21,10 @@ export const currentWordSlice = createSlice({
 
       state.tenseVariants = word.split('').map((letter, index, thisArg) => ({
         correct: false,
-        variant: thisArg.slice(0, index + 1).join(''),
+        variant: thisArg
+          .slice(0, index + 1)
+          .join('')
+          .toLowerCase(),
       }));
     },
     onWriteText(state, action: PayloadAction<string>) {
