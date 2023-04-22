@@ -6,7 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import styles from '../index.module.css';
 import {SentenceOfWordProps, ContextMenu} from '../types';
 
-const SentenceOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speak, voice}) => {
+const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speak, voice}) => {
   const [contextMenu, setContextMenu] = React.useState<ContextMenu | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
@@ -52,4 +52,4 @@ const SentenceOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speak, voic
   );
 };
 
-export default SentenceOfWord;
+export default SentencesOfWord;

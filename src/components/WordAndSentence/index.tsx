@@ -2,7 +2,7 @@ import React, {useMemo} from 'react';
 
 import {useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
 
-import SentenceOfWord from './components/SentenceOfWord';
+import SentencesOfWord from './components/SentencesOfWord';
 import SpreadOutWord from './components/SpreadOutWord';
 import TensesOfWord from './components/TensesOfWord';
 import styles from './index.module.css';
@@ -15,7 +15,7 @@ const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(({currentWord
   return (
     <div className={styles.wordAndSentence}>
       <TensesOfWord currentWord={currentWord} tenseIndex={tenseIndex} speak={speak} voice={voice} />
-      <SentenceOfWord currentWord={currentWord} speak={speak} voice={voice} />
+      <SentencesOfWord currentWord={currentWord} speak={speak} voice={voice} />
       <SpreadOutWord tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} />
     </div>
   );
