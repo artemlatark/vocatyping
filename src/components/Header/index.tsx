@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 
-import {auth} from 'config/firebase';
+import {firebaseAuth} from 'config/firebase';
 
 import {useAppDispatch} from 'hooks/redux';
 import {useKeyPress} from 'hooks/useKeyPress';
@@ -25,8 +25,8 @@ import {Props} from './types';
 
 const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, currentWordId, words}) => {
   const dispatch = useAppDispatch();
-  const [user] = useAuthState(auth);
-  const [signOut] = useSignOut(auth);
+  const [user] = useAuthState(firebaseAuth);
+  const [signOut] = useSignOut(firebaseAuth);
   const pressedAlt = useKeyPress('Alt');
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');

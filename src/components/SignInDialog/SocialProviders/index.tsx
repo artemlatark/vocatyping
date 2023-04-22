@@ -3,13 +3,13 @@ import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import LoadingButton from '@mui/lab/LoadingButton';
 import Grid from '@mui/material/Grid';
 
-import {auth} from 'config/firebase';
+import {firebaseAuth} from 'config/firebase';
 
 import GoogleIconSvg from './GoogleIconSvg';
 import {Props} from '../types';
 
 const SocialProviders = ({handleOpenClose}: Pick<Props, 'handleOpenClose'>) => {
-  const [signInWithGoogle, , loading] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, , loading] = useSignInWithGoogle(firebaseAuth);
 
   const handleSignInWithGoogle = async (): Promise<void> => {
     const isSuccessfullySignedIn = await signInWithGoogle();

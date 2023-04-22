@@ -8,7 +8,7 @@ import {State} from './types';
 const initialState: State = {
   words: [],
   isLoading: false,
-  error: '',
+  error: null,
 };
 
 export const wordsSlice = createSlice({
@@ -22,10 +22,10 @@ export const wordsSlice = createSlice({
       })
       .addCase(fetchWordsInDictionary.fulfilled.type, (state, action: PayloadAction<Word[]>) => {
         state.isLoading = false;
-        state.error = '';
+        state.error = null;
         state.words = action.payload;
       })
-      .addCase(fetchWordsInDictionary.rejected.type, (state, action: PayloadAction<string>) => {
+      .addCase(fetchWordsInDictionary.rejected.type, (state, action: PayloadAction<Error>) => {
         state.isLoading = false;
         state.error = action.payload;
       });
