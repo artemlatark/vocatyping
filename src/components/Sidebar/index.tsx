@@ -7,7 +7,9 @@ import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
 
-import SidebarListItem from './components/ListItem';
+import {useAppSelector} from 'hooks/redux';
+
+import ListItem from './components/ListItem';
 import WordGroupsList from './components/WordGroupsList';
 import styles from './index.module.css';
 import {ListItemCustom, ListSubheaderCustom} from './styles';
@@ -19,8 +21,12 @@ const MUIComponents: Components = {
   Group: ({children, ...props}: any) => <ListSubheaderCustom component="div" children={children} {...props} />,
 };
 
-const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, onOpenSidebar, currentWord, currentWordId, words}) => {
+const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
+  const {words} = useAppSelector((state) => state.wordsReducer);
+  const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
+
   const listRef = useRef<GroupedVirtuosoHandle>(null);
+
   const {wordGroupsCounts, wordGroups}: WordGroups = useMemo(() => {
     const wordsByGroup = groupBy(words, (word) => word.tenses[0][0].toLowerCase());
     const wordGroupsCountsSrc = Object.values(wordsByGroup).map((groupedWords) => groupedWords.length);
@@ -28,10 +34,9 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, onOpenSidebar,
 
     return {wordGroupsCounts: wordGroupsCountsSrc, wordGroups: wordGroupsSrc};
   }, [words]);
-  const currentWordIndex = useMemo(() => (currentWordId ? words.findIndex((word) => word.id === currentWordId) : 0), [words, currentWordId]);
 
   return (
-    <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => onOpenSidebar()}>
+    <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => handleOpenSidebar()}>
       <Grid className={styles.sidebarContainer} container>
         <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentWord={currentWord} />
         <GroupedVirtuoso
@@ -44,7 +49,7 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, onOpenSidebar,
           groupCounts={wordGroupsCounts}
           components={MUIComponents}
           groupContent={(index) => wordGroups[index]}
-          itemContent={(index) => <SidebarListItem word={words[index]} index={index} currentWordId={currentWordId} onOpenSidebar={onOpenSidebar} />}
+          itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
         />
       </Grid>
     </Drawer>

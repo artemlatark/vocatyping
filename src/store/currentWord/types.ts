@@ -1,8 +1,10 @@
-import {TenseVariant} from 'models/Word';
+import {CurrentWord, TenseVariant} from 'models/Word';
 
 export interface State {
   writtenText: string;
-  currentWordId: string | undefined;
+  currentWord: CurrentWord['currentWord'];
+  currentWordId: number;
+  currentWordIndex: number;
   tenseIndex: number;
   tenseVariants: TenseVariant[];
   tenseVariantIndex: number;

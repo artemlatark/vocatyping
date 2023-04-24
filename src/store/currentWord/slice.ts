@@ -2,11 +2,17 @@ import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
+import {Word} from 'models/Word';
+
 import {State} from './types';
+
+const currentWordId_LS: State['currentWordIndex'] = getFromLocalStorage('currentWordId');
 
 const initialState: State = {
   writtenText: '',
-  currentWordId: getFromLocalStorage('currentWord'),
+  currentWord: undefined,
+  currentWordId: currentWordId_LS ?? 0,
+  currentWordIndex: currentWordId_LS ? currentWordId_LS - 1 : 0,
   tenseIndex: 0,
   tenseVariants: [],
   tenseVariantIndex: 0,
@@ -16,6 +22,9 @@ export const currentWordSlice = createSlice({
   name: 'currentWord',
   initialState,
   reducers: {
+    setCurrentWord(state, action: PayloadAction<Word>) {
+      state.currentWord = action.payload;
+    },
     initWord(state, action: PayloadAction<string>) {
       const word = action.payload;
 
@@ -38,28 +47,29 @@ export const currentWordSlice = createSlice({
       if (currentWordVariant === undefined || letter !== currentWordVariant.toLowerCase()) {
         state.tenseVariants.map((item) => (item.correct = false));
 
-        state.writtenText = '';
-        state.tenseVariantIndex = 0;
+        state.writtenText = initialState.writtenText;
+        state.tenseVariantIndex = initialState.tenseVariantIndex;
       }
     },
     onCheckEnteredWord(state) {
       state.tenseVariants[state.tenseVariantIndex].correct = true;
 
-      state.writtenText = '';
+      state.writtenText = initialState.writtenText;
       state.tenseVariantIndex++;
     },
     onNextTense(state) {
-      state.writtenText = '';
-      state.tenseVariantIndex = 0;
+      state.writtenText = initialState.writtenText;
+      state.tenseVariantIndex = initialState.tenseVariantIndex;
       state.tenseIndex++;
     },
-    onChangeWord(state, action: PayloadAction<string>) {
-      state.writtenText = '';
-      state.tenseVariantIndex = 0;
-      state.tenseIndex = 0;
+    onChangeWord(state, action: PayloadAction<number>) {
+      state.writtenText = initialState.writtenText;
+      state.tenseVariantIndex = initialState.tenseVariantIndex;
+      state.tenseIndex = initialState.tenseIndex;
 
       state.currentWordId = action.payload;
-      saveToLocalStorage('currentWord', action.payload);
+      state.currentWordIndex = action.payload - 1;
+      saveToLocalStorage('currentWordId', action.payload);
     },
   },
 });

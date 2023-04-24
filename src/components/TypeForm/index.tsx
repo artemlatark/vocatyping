@@ -8,7 +8,7 @@ import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 import {Props} from './types';
 
-const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, isLoading, currentWordId, writtenText, tenseIndex, tenseVariants, tenseVariantIndex, nextWordId}) => {
+const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, loading, currentWordId, writtenText, tenseIndex, tenseVariants, tenseVariantIndex, nextWordId}) => {
   const dispatch = useAppDispatch();
 
   const onChangeInput: React.ChangeEventHandler<HTMLInputElement> = (event): void => {
@@ -46,7 +46,7 @@ const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, isLoading, current
       dispatch(currentWordSlice.actions.initWord(currentWord.tenses[tenseIndex]));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isLoading, currentWordId, tenseIndex]);
+  }, [loading, currentWordId, tenseIndex]);
 
   return (
     <div className={styles.typeForm}>

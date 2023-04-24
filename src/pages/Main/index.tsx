@@ -1,8 +1,11 @@
-import {useCallback, useEffect, useMemo, useState} from 'react';
+import {useEffect, useMemo} from 'react';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
+import {currentWordSlice} from 'store/currentWord/slice';
 import {fetchWordsInDictionary} from 'store/words/actionCreators';
+
+import {LoadingStatus} from 'models/LoadingStatus';
 
 import Keyboard from 'components/Keyboard';
 import Layout from 'components/Layout';
@@ -11,32 +14,35 @@ import WordAndSentence from 'components/WordAndSentence';
 
 const Main = () => {
   const dispatch = useAppDispatch();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const {words, isLoading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordId, writtenText, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
-  const currentWord = words.find((word) => word.id === currentWordId) || words[0];
-  const wordNumbers = words.length;
-  const currentWordIndex = useMemo(() => (currentWordId ? words.findIndex((word) => word.id === currentWordId) : 0), [words, currentWordId]);
-  const nextWordId = words[currentWordIndex + 1]?.id;
+  const {words, loading} = useAppSelector((state) => state.wordsReducer);
+  const {currentWord, currentWordId, currentWordIndex, writtenText, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
 
-  const onOpenSidebar = useCallback((value?: boolean) => {
-    setSidebarOpen((prevState) => {
-      return value !== undefined ? value : !prevState;
-    });
-  }, []);
+  const wordNumbers = words.length;
+  const nextWordId = words[currentWordIndex]?.id;
+
+  /**
+   * Set Initial Current Word
+   */
+  useEffect(() => {
+    if (loading === LoadingStatus.succeeded) {
+      const currentWord = words[currentWordId ? currentWordId - 1 : 0];
+
+      dispatch(currentWordSlice.actions.setCurrentWord(currentWord));
+    }
+  }, [words, loading, currentWordId, dispatch]);
 
   useEffect(() => {
     dispatch(fetchWordsInDictionary());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch]);
 
   return (
-    <Layout onOpenSidebar={onOpenSidebar} sidebarOpen={sidebarOpen} words={words} wordNumbers={wordNumbers} currentWord={currentWord} currentWordId={currentWordId}>
+    <Layout>
       <WordAndSentence tenseIndex={tenseIndex} tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} currentWord={currentWord} />
       <TypeForm
         wordNumbers={wordNumbers}
-        isLoading={isLoading}
+        loading={loading}
         currentWordId={currentWordId}
+        currentWordIndex={currentWordIndex}
         writtenText={writtenText}
         tenseIndex={tenseIndex}
         tenseVariants={tenseVariants}

@@ -3,7 +3,7 @@ import {State as WordsState} from 'store/words/types';
 
 import {CurrentWord} from 'models/Word';
 
-export interface Props extends CurrentWord, Pick<WordsState, 'isLoading'>, CurrentWordState {
+export interface Props extends CurrentWord, Pick<WordsState, 'loading'>, CurrentWordState {
   wordNumbers: number;
-  nextWordId: string;
+  nextWordId: number;
 }
