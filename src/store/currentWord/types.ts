@@ -8,4 +8,5 @@ export interface State {
   tenseIndex: number;
   tenseVariants: TenseVariant[];
   tenseVariantIndex: number;
+  isTenseVariantsCorrectlyTyped: boolean;
 }

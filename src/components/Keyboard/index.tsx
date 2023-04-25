@@ -20,8 +20,6 @@ const Keyboard = React.memo(() => {
 
   const handleChangeNextTypeKey = useCallback((key?: NextTypeKey) => setNextTypeKey(key), []);
 
-  console.log(nextTypeKey);
-
   return (
     <div className={styles.keyboard}>
       {nextTypeKey && <Hands nextTypeKey={nextTypeKey} />}
