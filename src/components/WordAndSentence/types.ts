@@ -4,9 +4,7 @@ import {State} from 'store/currentWord/types';
 
 import {CurrentWord, TenseVariant} from 'models/Word';
 
-export interface WordAndSentenceProps extends CurrentWord, Pick<State, 'tenseIndex' | 'tenseVariants' | 'tenseVariantIndex'> {}
-
-interface SentenceAndTensesOfWord extends Pick<WordAndSentenceProps, 'currentWord'> {
+interface SentenceAndTensesOfWord extends CurrentWord {
   speech: Pick<Speech, 'isSpeaking' | 'speak' | 'cancelSpeaking'>;
   voice: SpeechSynthesisVoice | undefined;
 }

@@ -1,58 +1,54 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
-import {useAppDispatch} from 'hooks/redux';
+import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {currentWordSlice} from 'store/currentWord/slice';
 
 import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
-import {Props} from './types';
 
-const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, loading, currentWordId, writtenText, tenseIndex, tenseVariants, tenseVariantIndex, nextWordId}) => {
+const TypeForm = () => {
   const dispatch = useAppDispatch();
+  const {words} = useAppSelector((state) => state.wordsReducer);
+  const {currentWord, currentWordIndex, writtenText, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
 
-  const onChangeInput: React.ChangeEventHandler<HTMLInputElement> = (event): void => {
+  const handleChangeInput: React.ChangeEventHandler<HTMLInputElement> = (event): void => {
     const inputValue = event.currentTarget.value;
 
-    dispatch(currentWordSlice.actions.onWriteText(inputValue));
+    dispatch(currentWordSlice.actions.writeText(inputValue));
   };
 
-  const onKeyDownInput: React.KeyboardEventHandler<HTMLInputElement> = (event): void => {
+  const handleKeyDownInput: React.KeyboardEventHandler<HTMLInputElement> = (event): void => {
     if (/^[а-яА-ЯёЁ)]+$/.test(event.key) || /Enter|Backspace|Space/.test(event.code)) {
       event.preventDefault();
     }
   };
 
-  const onKeyUpInput = (): void => {
+  const handleKeyUpInput = (): void => {
     const currentWordVariant = tenseVariants[tenseVariantIndex].variant;
 
-    dispatch(currentWordSlice.actions.onCheckInputLetter(writtenText));
+    dispatch(currentWordSlice.actions.checkEnteredTenseVariant(writtenText));
 
     if (writtenText.length !== currentWordVariant.length || writtenText !== currentWordVariant.toLowerCase()) return;
 
-    dispatch(currentWordSlice.actions.onCheckEnteredWord());
+    dispatch(currentWordSlice.actions.setTenseEnteredAsChecked());
 
     if (!currentWord || tenseVariantIndex !== tenseVariants.length - 1) return;
 
     if (tenseIndex !== currentWord.tenses.length - 1) {
-      dispatch(currentWordSlice.actions.onNextTense());
+      dispatch(currentWordSlice.actions.nextTense());
     } else {
-      if (nextWordId) dispatch(currentWordSlice.actions.onChangeWord(nextWordId));
+      const nextWordId = words[currentWordIndex]?.id;
+
+      if (nextWordId) dispatch(currentWordSlice.actions.changeWord(nextWordId));
     }
   };
-
-  useEffect(() => {
-    if (currentWord) {
-      dispatch(currentWordSlice.actions.initWord(currentWord.tenses[tenseIndex]));
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loading, currentWordId, tenseIndex]);
 
   return (
     <div className={styles.typeForm}>
       {/* we should stay `autofocus` on the field, because we need faster access to the field */}
       {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-      <TypeFormTextField onChange={onChangeInput} onKeyDown={onKeyDownInput} onKeyUp={onKeyUpInput} value={writtenText} autoFocus fullWidth />
+      <TypeFormTextField onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} autoFocus fullWidth />
       <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
     </div>
   );

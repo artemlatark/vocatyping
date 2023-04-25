@@ -45,17 +45,17 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
 
   const onChangeWord = (handlerType: string): void => {
     const wordId = (handlerType === 'prev' ? words[currentWordIndex - 1] : words[currentWordIndex + 1])?.id;
-    if (wordId) dispatch(currentWordSlice.actions.onChangeWord(wordId));
+    if (wordId) dispatch(currentWordSlice.actions.changeWord(wordId));
   };
 
   useEffect(() => {
     if (pressedAlt && pressedArrowLeft) {
       const prevWordId = words[currentWordIndex - 1]?.id;
-      if (prevWordId) dispatch(currentWordSlice.actions.onChangeWord(prevWordId));
+      if (prevWordId) dispatch(currentWordSlice.actions.changeWord(prevWordId));
     }
     if (pressedAlt && pressedArrowRight) {
       const nextWordId = words[currentWordIndex + 1]?.id;
-      if (nextWordId) dispatch(currentWordSlice.actions.onChangeWord(nextWordId));
+      if (nextWordId) dispatch(currentWordSlice.actions.changeWord(nextWordId));
     }
 
     handleOpenSidebar(false);

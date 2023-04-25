@@ -25,7 +25,7 @@ export const currentWordSlice = createSlice({
     setCurrentWord(state, action: PayloadAction<Word>) {
       state.currentWord = action.payload;
     },
-    initWord(state, action: PayloadAction<string>) {
+    initTenseVariants(state, action: PayloadAction<string>) {
       const word = action.payload;
 
       state.tenseVariants = word.split('').map((letter, index, thisArg) => ({
@@ -36,10 +36,10 @@ export const currentWordSlice = createSlice({
           .toLowerCase(),
       }));
     },
-    onWriteText(state, action: PayloadAction<string>) {
+    writeText(state, action: PayloadAction<string>) {
       state.writtenText = action.payload;
     },
-    onCheckInputLetter(state, action: PayloadAction<string>) {
+    checkEnteredTenseVariant(state, action: PayloadAction<string>) {
       const index = action.payload.length - 1;
       const letter = action.payload.at(-1);
       const currentWordVariant = state.tenseVariants[state.tenseVariantIndex].variant[index];
@@ -51,18 +51,18 @@ export const currentWordSlice = createSlice({
         state.tenseVariantIndex = initialState.tenseVariantIndex;
       }
     },
-    onCheckEnteredWord(state) {
+    setTenseEnteredAsChecked(state) {
       state.tenseVariants[state.tenseVariantIndex].correct = true;
 
       state.writtenText = initialState.writtenText;
       state.tenseVariantIndex++;
     },
-    onNextTense(state) {
+    nextTense(state) {
       state.writtenText = initialState.writtenText;
       state.tenseVariantIndex = initialState.tenseVariantIndex;
       state.tenseIndex++;
     },
-    onChangeWord(state, action: PayloadAction<number>) {
+    changeWord(state, action: PayloadAction<number>) {
       state.writtenText = initialState.writtenText;
       state.tenseVariantIndex = initialState.tenseVariantIndex;
       state.tenseIndex = initialState.tenseIndex;

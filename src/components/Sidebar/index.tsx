@@ -1,25 +1,18 @@
 import React, {useMemo, useRef} from 'react';
 
 import {groupBy} from 'lodash';
-import {Components, GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
+import {GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
 
 import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
-import List from '@mui/material/List';
 
 import {useAppSelector} from 'hooks/redux';
 
 import ListItem from './components/ListItem';
+import MUIComponents from './components/MuiComponents';
 import WordGroupsList from './components/WordGroupsList';
 import styles from './index.module.css';
-import {ListItemCustom, ListSubheaderCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
-
-const MUIComponents: Components = {
-  List: React.forwardRef(({style, children}: any, listRef: any) => <List style={{padding: 0, ...style}} component="div" ref={listRef} children={children} />),
-  Item: ({children, ...props}: any) => <ListItemCustom component="div" children={children} {...props} />,
-  Group: ({children, ...props}: any) => <ListSubheaderCustom component="div" children={children} {...props} />,
-};
 
 const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
   const {words} = useAppSelector((state) => state.wordsReducer);

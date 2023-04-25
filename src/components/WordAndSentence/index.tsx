@@ -1,14 +1,15 @@
 import React, {useMemo} from 'react';
 
+import {useAppSelector} from 'hooks/redux';
 import {useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
 
 import SentencesOfWord from './components/SentencesOfWord';
 import SpreadOutWord from './components/SpreadOutWord';
 import TensesOfWord from './components/TensesOfWord';
 import styles from './index.module.css';
-import {WordAndSentenceProps} from './types';
 
-const WordAndSentence: React.FC<WordAndSentenceProps> = React.memo(({currentWord, tenseIndex, tenseVariants, tenseVariantIndex}) => {
+const WordAndSentence = React.memo(() => {
+  const {currentWord, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
   const {isSpeaking, speak, cancelSpeaking, voices} = useSpeechSynthesis();
   const voice = useMemo(() => voices.find((item) => item.name === 'Google US English'), [voices]);
 

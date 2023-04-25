@@ -1,4 +1,4 @@
-import {useEffect, useMemo} from 'react';
+import {useEffect} from 'react';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
@@ -15,21 +15,19 @@ import WordAndSentence from 'components/WordAndSentence';
 const Main = () => {
   const dispatch = useAppDispatch();
   const {words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWord, currentWordId, currentWordIndex, writtenText, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
-
-  const wordNumbers = words.length;
-  const nextWordId = words[currentWordIndex]?.id;
+  const {currentWord, currentWordId, tenseIndex} = useAppSelector((state) => state.currentWordReducer);
 
   /**
-   * Set Initial Current Word
+   * Fetch Dictionary and Set Initial Current Word
    */
   useEffect(() => {
     if (loading === LoadingStatus.succeeded) {
-      const currentWord = words[currentWordId ? currentWordId - 1 : 0];
+      const currentWordSettable = words[currentWordId ? currentWordId - 1 : 0];
 
-      dispatch(currentWordSlice.actions.setCurrentWord(currentWord));
+      dispatch(currentWordSlice.actions.setCurrentWord(currentWordSettable));
+      dispatch(currentWordSlice.actions.initTenseVariants(currentWordSettable.tenses[tenseIndex]));
     }
-  }, [words, loading, currentWordId, dispatch]);
+  }, [words, loading, currentWord, currentWordId, tenseIndex, dispatch]);
 
   useEffect(() => {
     dispatch(fetchWordsInDictionary());
@@ -37,20 +35,9 @@ const Main = () => {
 
   return (
     <Layout>
-      <WordAndSentence tenseIndex={tenseIndex} tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} currentWord={currentWord} />
-      <TypeForm
-        wordNumbers={wordNumbers}
-        loading={loading}
-        currentWordId={currentWordId}
-        currentWordIndex={currentWordIndex}
-        writtenText={writtenText}
-        tenseIndex={tenseIndex}
-        tenseVariants={tenseVariants}
-        currentWord={currentWord}
-        tenseVariantIndex={tenseVariantIndex}
-        nextWordId={nextWordId}
-      />
-      <Keyboard currentWordId={currentWordId} writtenText={writtenText} tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} />
+      <WordAndSentence />
+      <TypeForm />
+      <Keyboard />
     </Layout>
   );
 };

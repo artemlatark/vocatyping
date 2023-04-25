@@ -15,6 +15,7 @@ export interface Key {
 export interface NextTypeKey {
   finger?: number;
   coords: NextTypeKeyCoords;
+  qwerty: any;
 }
 
 interface NextTypeKeyCoords {
