@@ -23,13 +23,41 @@ export const currentWordSlice = createSlice({
   name: 'currentWord',
   initialState,
   reducers: {
-    setCurrentWord(state, action: PayloadAction<Word>) {
-      state.currentWord = action.payload;
-    },
-    initTenseVariants(state, action: PayloadAction<string>) {
-      const word = action.payload;
+    initWord(state, action: PayloadAction<Word>) {
+      const currentWord = action.payload;
 
-      state.tenseVariants = word.split('').map((letter, index, thisArg) => ({
+      // Spreading sentences into object with words
+      const sentencesByWords = currentWord.sentences.map((sentence) => {
+        // convert to lowercase for case-insensitive search
+        return sentence
+          .toLowerCase()
+          .replace(/[^a-zA-Z ]/g, '')
+          .split(' ')
+          .reduce(
+            (previousValue: any, word) => ({
+              ...previousValue,
+              [word]: true,
+            }),
+            {}
+          );
+      });
+
+      // Array with indexes of sentences in which the first match of each tense was found
+      const indexesSentences = currentWord.tenses.reduce((previousValue: any, tense) => {
+        // convert to lowercase for case-insensitive search
+        const tenseToLowerCase = tense.toLowerCase();
+
+        const firstMatchIndex = sentencesByWords.findIndex((sentence) => sentence[tenseToLowerCase]);
+
+        return !!~firstMatchIndex ? [...previousValue, firstMatchIndex] : [...previousValue, null];
+      }, []);
+      const minIndexSentence = indexesSentences.indexOf(Math.min(...indexesSentences));
+
+      const tenseIndex = !!~minIndexSentence ? minIndexSentence : 0;
+
+      state.currentWord = action.payload;
+      state.tenseIndex = tenseIndex;
+      state.tenseVariants = currentWord.tenses[tenseIndex].split('').map((letter, index, thisArg) => ({
         correct: false,
         variant: thisArg
           .slice(0, index + 1)
@@ -47,11 +75,12 @@ export const currentWordSlice = createSlice({
       const currentTenseVariantLetter = currentTenseVariant[variantLetterIndex];
 
       if (currentTenseVariantLetter === undefined || variantLetter !== currentTenseVariantLetter.toLowerCase()) {
-        state.tenseVariants.map((item) => (item.correct = false));
+        // state.tenseVariants.map((item) => (item.correct = false));
+        state.tenseVariants[state.tenseVariantIndex].correct = false;
 
         state.writtenText = initialState.writtenText;
-        state.tenseVariantIndex = initialState.tenseVariantIndex;
-        state.isTenseVariantsCorrectlyTyped = initialState.isTenseVariantsCorrectlyTyped;
+        // state.tenseVariantIndex = initialState.tenseVariantIndex;
+        // state.isTenseVariantsCorrectlyTyped = initialState.isTenseVariantsCorrectlyTyped;
       }
 
       if (state.writtenText.length === currentTenseVariant.length && state.writtenText === currentTenseVariant.toLowerCase()) {

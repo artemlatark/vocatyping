@@ -26,7 +26,7 @@ import {Props} from './types';
 const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
 
-  const {words} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words} = useAppSelector((state) => state.wordsReducer);
   const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
   const [user] = useAuthState(firebaseAuth);

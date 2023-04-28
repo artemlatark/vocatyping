@@ -7,7 +7,7 @@ import {fetchWordsInDictionary} from './actionCreators';
 import {State} from './types';
 
 const initialState: State = {
-  words: [],
+  entities: [],
   loading: LoadingStatus.idle,
   error: null,
 };
@@ -22,7 +22,7 @@ export const wordsSlice = createSlice({
         state.loading = LoadingStatus.pending;
       })
       .addCase(fetchWordsInDictionary.fulfilled.type, (state, action: PayloadAction<Word[]>) => {
-        state.words = action.payload;
+        state.entities = action.payload;
         state.loading = LoadingStatus.succeeded;
         state.error = initialState.error;
       })

@@ -14,24 +14,23 @@ import WordAndSentence from 'components/WordAndSentence';
 
 const Main = () => {
   const dispatch = useAppDispatch();
-  const {words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWord, currentWordId, tenseIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
+  const {currentWordId} = useAppSelector((state) => state.currentWordReducer);
 
   /**
-   * Fetch Dictionary and Set Initial Current Word
+   * Fetch dictionary, Set initial current word, Init tense variants
    */
   useEffect(() => {
-    if (loading === LoadingStatus.succeeded) {
-      const currentWordSettable = words[currentWordId ? currentWordId - 1 : 0];
-
-      dispatch(currentWordSlice.actions.setCurrentWord(currentWordSettable));
-      dispatch(currentWordSlice.actions.initTenseVariants(currentWordSettable.tenses[tenseIndex]));
+    if (loading === LoadingStatus.idle) {
+      dispatch(fetchWordsInDictionary());
     }
-  }, [words, loading, currentWord, currentWordId, tenseIndex, dispatch]);
 
-  useEffect(() => {
-    dispatch(fetchWordsInDictionary());
-  }, [dispatch]);
+    if (loading === LoadingStatus.succeeded) {
+      const word = words[currentWordId - 1];
+
+      dispatch(currentWordSlice.actions.initWord(word));
+    }
+  }, [words, loading, currentWordId, dispatch]);
 
   return (
     <Layout>

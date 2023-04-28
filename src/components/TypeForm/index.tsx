@@ -12,7 +12,7 @@ import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 
 const TypeForm = () => {
   const dispatch = useAppDispatch();
-  const {words} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordIndex, writtenText, tenseIndex, tenseVariants, tenseVariantIndex, isTenseVariantsCorrectlyTyped} = useAppSelector(
     (state) => state.currentWordReducer
   );
@@ -62,7 +62,7 @@ const TypeForm = () => {
         <>
           {/* we should stay `autofocus` on the button, because we need faster access to the field */}
           {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-          <Button onClick={() => handleNextWord()} autoFocus>
+          <Button onClick={() => handleNextWord()} variant="contained" size="large" autoFocus fullWidth>
             Next word
           </Button>
         </>

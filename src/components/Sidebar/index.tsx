@@ -15,7 +15,7 @@ import styles from './index.module.css';
 import {SidebarProps, WordGroups} from './types';
 
 const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
-  const {words} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
   const listRef = useRef<GroupedVirtuosoHandle>(null);
