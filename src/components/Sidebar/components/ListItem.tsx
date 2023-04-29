@@ -12,7 +12,7 @@ import {currentWordSlice} from 'store/currentWord/slice';
 import styles from '../index.module.css';
 import {ListItemProps} from '../types';
 
-const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, onOpenSidebar}) => {
+const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
 
   const wordItemClassNames = cx({
@@ -20,8 +20,8 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, onOpenSi
   });
 
   const onChangeWord = () => {
-    onOpenSidebar();
-    dispatch(currentWordSlice.actions.onChangeWord(word.id));
+    handleOpenSidebar();
+    dispatch(currentWordSlice.actions.changeWord(word.id));
   };
 
   return (

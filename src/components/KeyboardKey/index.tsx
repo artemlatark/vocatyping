@@ -7,7 +7,7 @@ import {useWindowSize} from 'hooks/useWindowSize';
 import styles from './index.module.css';
 import {Props} from './types';
 
-const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChangeNextTypeKey, currentWordId}) => {
+const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, handleChangeNextTypeKey, currentWordId}) => {
   const windowSizes = useWindowSize();
   const keyRef = useRef<HTMLDivElement | null>(null);
   const isNextKey = keyboardKey.key?.toLowerCase() === nextKey?.toLowerCase();
@@ -22,7 +22,7 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChange
 
   useEffect(() => {
     if (isNextKey && keyRef.current) {
-      onChangeNextTypeKey({
+      handleChangeNextTypeKey({
         finger: keyboardKey.finger,
         coords: {
           left: keyRef.current.offsetLeft,
@@ -33,7 +33,7 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChange
     }
 
     if (nextKey === undefined) {
-      onChangeNextTypeKey(undefined);
+      handleChangeNextTypeKey(undefined);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isNextKey, windowSizes.width, currentWordId]);
@@ -41,7 +41,7 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, onChange
   return (
     <div className={keyClassNames} ref={keyRef}>
       {keyboardKey.key}
-      {keyboardKey.supKey ? <span>{keyboardKey.supKey}</span> : null}
+      {keyboardKey.supKey && <span>{keyboardKey.supKey}</span>}
     </div>
   );
 });

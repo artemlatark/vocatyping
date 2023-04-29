@@ -1,8 +1,11 @@
-import {useCallback, useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
+import {currentWordSlice} from 'store/currentWord/slice';
 import {fetchWordsInDictionary} from 'store/words/actionCreators';
+
+import {LoadingStatus} from 'models/LoadingStatus';
 
 import Keyboard from 'components/Keyboard';
 import Layout from 'components/Layout';
@@ -11,40 +14,30 @@ import WordAndSentence from 'components/WordAndSentence';
 
 const Main = () => {
   const dispatch = useAppDispatch();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const {words, isLoading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordId, writtenText, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
-  const currentWord = words.find((word) => word.id === currentWordId) || words[0];
-  const wordNumbers = words.length;
-  const currentWordIndex = useMemo(() => (currentWordId ? words.findIndex((word) => word.id === currentWordId) : 0), [words, currentWordId]);
-  const nextWordId = words[currentWordIndex + 1]?.id;
+  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
+  const {currentWordId} = useAppSelector((state) => state.currentWordReducer);
+  const typeFormInputRef = useRef<HTMLInputElement | null>(null);
 
-  const onOpenSidebar = useCallback((value?: boolean) => {
-    setSidebarOpen((prevState) => {
-      return value !== undefined ? value : !prevState;
-    });
-  }, []);
-
+  /**
+   * Fetch dictionary, Init Word
+   */
   useEffect(() => {
-    dispatch(fetchWordsInDictionary());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    if (loading === LoadingStatus.idle) {
+      dispatch(fetchWordsInDictionary());
+    }
+
+    if (loading === LoadingStatus.succeeded) {
+      const word = words[currentWordId - 1];
+
+      dispatch(currentWordSlice.actions.initWord(word));
+    }
+  }, [words, loading, currentWordId, dispatch]);
 
   return (
-    <Layout onOpenSidebar={onOpenSidebar} sidebarOpen={sidebarOpen} words={words} wordNumbers={wordNumbers} currentWord={currentWord} currentWordId={currentWordId}>
-      <WordAndSentence tenseIndex={tenseIndex} tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} currentWord={currentWord} />
-      <TypeForm
-        wordNumbers={wordNumbers}
-        isLoading={isLoading}
-        currentWordId={currentWordId}
-        writtenText={writtenText}
-        tenseIndex={tenseIndex}
-        tenseVariants={tenseVariants}
-        currentWord={currentWord}
-        tenseVariantIndex={tenseVariantIndex}
-        nextWordId={nextWordId}
-      />
-      <Keyboard currentWordId={currentWordId} writtenText={writtenText} tenseVariants={tenseVariants} tenseVariantIndex={tenseVariantIndex} />
+    <Layout>
+      <WordAndSentence typeFormInputRef={typeFormInputRef} />
+      <TypeForm typeFormInputRef={typeFormInputRef} />
+      <Keyboard />
     </Layout>
   );
 };

@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo} from 'react';
+import React, {useEffect} from 'react';
 
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
@@ -11,7 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 
 import {firebaseAuth} from 'config/firebase';
 
-import {useAppDispatch} from 'hooks/redux';
+import {useAppDispatch, useAppSelector} from 'hooks/redux';
 import {useKeyPress} from 'hooks/useKeyPress';
 
 import {currentWordSlice} from 'store/currentWord/slice';
@@ -23,15 +23,21 @@ import UserProfileHeader from 'components/UserProfileHeader';
 import {AppBarCustom} from './styles';
 import {Props} from './types';
 
-const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, currentWordId, words}) => {
+const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
+
+  const {entities: words} = useAppSelector((state) => state.wordsReducer);
+  const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
+
   const [user] = useAuthState(firebaseAuth);
   const [signOut] = useSignOut(firebaseAuth);
   const pressedAlt = useKeyPress('Alt');
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');
+
   const [isOpenSignInDialog, setOpenSignInDialog] = React.useState(false);
-  const currentWordIndex = useMemo(() => (currentWordId ? words.findIndex((word) => word.id === currentWordId) : 0), [words, currentWordId]);
+
+  const wordNumbers = words.length;
 
   const handleOpenCloseSignInDialog = (value: boolean): void => {
     setOpenSignInDialog(value);
@@ -39,20 +45,20 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
 
   const onChangeWord = (handlerType: string): void => {
     const wordId = (handlerType === 'prev' ? words[currentWordIndex - 1] : words[currentWordIndex + 1])?.id;
-    if (wordId) dispatch(currentWordSlice.actions.onChangeWord(wordId));
+    if (wordId) dispatch(currentWordSlice.actions.changeWord(wordId));
   };
 
   useEffect(() => {
     if (pressedAlt && pressedArrowLeft) {
       const prevWordId = words[currentWordIndex - 1]?.id;
-      if (prevWordId) dispatch(currentWordSlice.actions.onChangeWord(prevWordId));
+      if (prevWordId) dispatch(currentWordSlice.actions.changeWord(prevWordId));
     }
     if (pressedAlt && pressedArrowRight) {
       const nextWordId = words[currentWordIndex + 1]?.id;
-      if (nextWordId) dispatch(currentWordSlice.actions.onChangeWord(nextWordId));
+      if (nextWordId) dispatch(currentWordSlice.actions.changeWord(nextWordId));
     }
 
-    onOpenSidebar(false);
+    handleOpenSidebar(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
 
@@ -62,7 +68,7 @@ const Header: React.FC<Props> = React.memo(({onOpenSidebar, wordNumbers, current
         <Toolbar sx={{maxWidth: 990, width: '100%'}}>
           <Grid wrap="nowrap" container>
             <Grid alignItems="center" container item>
-              <IconButton onClick={() => onOpenSidebar()} color="primary">
+              <IconButton onClick={() => handleOpenSidebar()} color="primary">
                 <MenuIcon />
               </IconButton>
               <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />

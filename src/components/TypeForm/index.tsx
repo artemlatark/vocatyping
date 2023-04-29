@@ -1,6 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
-import {useAppDispatch} from 'hooks/redux';
+import Button from '@mui/material/Button';
+
+import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {currentWordSlice} from 'store/currentWord/slice';
 
@@ -8,52 +10,52 @@ import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 import {Props} from './types';
 
-const TypeForm: React.FC<Props> = ({currentWord, wordNumbers, isLoading, currentWordId, writtenText, tenseIndex, tenseVariants, tenseVariantIndex, nextWordId}) => {
+const TypeForm: React.FC<Props> = ({typeFormInputRef}) => {
   const dispatch = useAppDispatch();
+  const {entities: words} = useAppSelector((state) => state.wordsReducer);
+  const {currentWordIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
 
-  const onChangeInput: React.ChangeEventHandler<HTMLInputElement> = (event): void => {
+  const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const inputValue = event.currentTarget.value;
 
-    dispatch(currentWordSlice.actions.onWriteText(inputValue));
+    dispatch(currentWordSlice.actions.writeText(inputValue));
   };
 
-  const onKeyDownInput: React.KeyboardEventHandler<HTMLInputElement> = (event): void => {
-    if (/^[а-яА-ЯёЁ)]+$/.test(event.key) || /Enter|Backspace|Space/.test(event.code)) {
+  const handleKeyDownInput = (event: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (!/^[a-zA-Z)]+$/.test(event.key)) {
       event.preventDefault();
     }
   };
 
-  const onKeyUpInput = (): void => {
-    const currentWordVariant = tenseVariants[tenseVariantIndex].variant;
-
-    dispatch(currentWordSlice.actions.onCheckInputLetter(writtenText));
-
-    if (writtenText.length !== currentWordVariant.length || writtenText !== currentWordVariant.toLowerCase()) return;
-
-    dispatch(currentWordSlice.actions.onCheckEnteredWord());
-
-    if (!currentWord || tenseVariantIndex !== tenseVariants.length - 1) return;
-
-    if (tenseIndex !== currentWord.tenses.length - 1) {
-      dispatch(currentWordSlice.actions.onNextTense());
-    } else {
-      if (nextWordId) dispatch(currentWordSlice.actions.onChangeWord(nextWordId));
+  const handleKeyUpInput = (event: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (/^[a-zA-Z)]+$/.test(event.key) && event.key.length === 1) {
+      dispatch(currentWordSlice.actions.checkTenseVariant(writtenText));
     }
   };
 
-  useEffect(() => {
-    if (currentWord) {
-      dispatch(currentWordSlice.actions.initWord(currentWord.tenses[tenseIndex]));
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isLoading, currentWordId, tenseIndex]);
+  const handleNextWord = (): void => {
+    const nextWordId = words[currentWordIndex + 1]?.id;
+
+    dispatch(currentWordSlice.actions.changeWord(nextWordId));
+  };
 
   return (
     <div className={styles.typeForm}>
-      {/* we should stay `autofocus` on the field, because we need faster access to the field */}
-      {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-      <TypeFormTextField onChange={onChangeInput} onKeyDown={onKeyDownInput} onKeyUp={onKeyUpInput} value={writtenText} autoFocus fullWidth />
-      <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
+      {!isTenseVariantCorrectlyTyped ? (
+        <>
+          {/* we should stay `autofocus` on the field, because we need faster access to the field */}
+          <TypeFormTextField inputRef={typeFormInputRef} onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} fullWidth />
+          <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
+        </>
+      ) : (
+        <>
+          {/* we should stay `autofocus` on the button, because we need faster access to the field */}
+          {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
+          <Button onClick={() => handleNextWord()} variant="contained" size="large" autoFocus fullWidth>
+            Next word
+          </Button>
+        </>
+      )}
     </div>
   );
 };

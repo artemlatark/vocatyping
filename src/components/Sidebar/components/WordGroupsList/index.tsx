@@ -5,8 +5,9 @@ import {TabCustom, TabsCustom} from './styles';
 import {WordGroupsListProps} from '../../types';
 
 const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCounts, wordGroups, currentWord}) => {
-  const currentWordGroup: number = useMemo(() => wordGroups.findIndex((letter) => letter === currentWord?.tenses[0][0]), [currentWord, wordGroups]);
   const [tabIndex, setTabIndex] = React.useState(0);
+
+  const currentWordGroup: number = useMemo(() => wordGroups.findIndex((letter) => letter === currentWord?.tenses[0][0]), [currentWord, wordGroups]);
 
   const handlerChangeTab = (itemIndex: number, newTabIndex: number) => {
     if (listRef.current) {

@@ -5,5 +5,5 @@ import {Key, NextTypeKey} from 'models/Keyboard';
 export interface Props extends Pick<State, 'currentWordId'> {
   keyboardKey: Key;
   nextKey: string | undefined;
-  onChangeNextTypeKey: (obj?: NextTypeKey) => void;
+  handleChangeNextTypeKey: (obj?: NextTypeKey) => void;
 }
