@@ -4,7 +4,7 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 import {Word} from 'models/Word';
 
-import {State} from './types';
+import {SentenceByWords, State} from './types';
 
 const currentWordId_LS: State['currentWordIndex'] = getFromLocalStorage('currentWordId');
 
@@ -16,7 +16,7 @@ const initialState: State = {
   tenseIndex: 0,
   tenseVariants: [],
   tenseVariantIndex: 0,
-  isTenseVariantsCorrectlyTyped: false,
+  isTenseVariantCorrectlyTyped: false,
 };
 
 export const currentWordSlice = createSlice({
@@ -27,14 +27,14 @@ export const currentWordSlice = createSlice({
       const currentWord = action.payload;
 
       // Spreading sentences into object with words
-      const sentencesByWords = currentWord.sentences.map((sentence) => {
-        // convert to lowercase for case-insensitive search
+      const sentencesByWords: SentenceByWords[] = currentWord.sentences.map((sentence) => {
+        // Convert to lowercase for case-insensitive search
         return sentence
           .toLowerCase()
           .replace(/[^a-zA-Z ]/g, '')
           .split(' ')
           .reduce(
-            (previousValue: any, word) => ({
+            (previousValue: SentenceByWords, word) => ({
               ...previousValue,
               [word]: true,
             }),
@@ -43,13 +43,13 @@ export const currentWordSlice = createSlice({
       });
 
       // Array with indexes of sentences in which the first match of each tense was found
-      const indexesSentences = currentWord.tenses.reduce((previousValue: any, tense) => {
-        // convert to lowercase for case-insensitive search
+      const indexesSentences = currentWord.tenses.reduce((previousValue: number[], tense) => {
+        // Convert to lowercase for case-insensitive search
         const tenseToLowerCase = tense.toLowerCase();
 
         const firstMatchIndex = sentencesByWords.findIndex((sentence) => sentence[tenseToLowerCase]);
 
-        return !!~firstMatchIndex ? [...previousValue, firstMatchIndex] : [...previousValue, null];
+        return !!~firstMatchIndex ? [...previousValue, firstMatchIndex] : [...previousValue, Infinity];
       }, []);
       const minIndexSentence = indexesSentences.indexOf(Math.min(...indexesSentences));
 
@@ -71,19 +71,20 @@ export const currentWordSlice = createSlice({
     checkTenseVariant(state, action: PayloadAction<string>) {
       const variantLetter = action.payload.at(-1);
       const variantLetterIndex = action.payload.length - 1;
-      const currentTenseVariant = state.tenseVariants[state.tenseVariantIndex].variant;
+      const currentTenseVariant = state.tenseVariants[state.tenseVariantIndex].variant.toLowerCase();
       const currentTenseVariantLetter = currentTenseVariant[variantLetterIndex];
 
-      if (currentTenseVariantLetter === undefined || variantLetter !== currentTenseVariantLetter.toLowerCase()) {
+      // Commented lines are needed to break the `correct` parameter in all tense variants if at least once tense variant was typed incorrectly
+      if (currentTenseVariantLetter === undefined || variantLetter !== currentTenseVariantLetter) {
         // state.tenseVariants.map((item) => (item.correct = false));
         state.tenseVariants[state.tenseVariantIndex].correct = false;
 
         state.writtenText = initialState.writtenText;
         // state.tenseVariantIndex = initialState.tenseVariantIndex;
-        // state.isTenseVariantsCorrectlyTyped = initialState.isTenseVariantsCorrectlyTyped;
+        // state.isTenseVariantCorrectlyTyped = initialState.isTenseVariantCorrectlyTyped;
       }
 
-      if (state.writtenText.length === currentTenseVariant.length && state.writtenText === currentTenseVariant.toLowerCase()) {
+      if (state.writtenText.length === currentTenseVariant.length && state.writtenText === currentTenseVariant) {
         state.tenseVariants[state.tenseVariantIndex].correct = true;
         state.tenseVariantIndex++;
 
@@ -91,15 +92,15 @@ export const currentWordSlice = createSlice({
       }
 
       if (state.tenseVariants[state.tenseVariants.length - 1].correct) {
-        state.isTenseVariantsCorrectlyTyped = true;
+        state.isTenseVariantCorrectlyTyped = true;
       }
     },
-    nextTense(state) {
-      state.tenseIndex++;
+    changeSelectedTense(state, action: PayloadAction<number>) {
+      state.tenseIndex = action.payload;
 
       state.writtenText = initialState.writtenText;
       state.tenseVariantIndex = initialState.tenseVariantIndex;
-      state.isTenseVariantsCorrectlyTyped = initialState.isTenseVariantsCorrectlyTyped;
+      state.isTenseVariantCorrectlyTyped = initialState.isTenseVariantCorrectlyTyped;
     },
     changeWord(state, action: PayloadAction<number>) {
       state.currentWordId = action.payload;
@@ -109,7 +110,7 @@ export const currentWordSlice = createSlice({
       state.writtenText = initialState.writtenText;
       state.tenseIndex = initialState.tenseIndex;
       state.tenseVariantIndex = initialState.tenseVariantIndex;
-      state.isTenseVariantsCorrectlyTyped = initialState.isTenseVariantsCorrectlyTyped;
+      state.isTenseVariantCorrectlyTyped = initialState.isTenseVariantCorrectlyTyped;
     },
   },
 });

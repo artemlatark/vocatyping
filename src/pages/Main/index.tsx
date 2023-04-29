@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
@@ -16,9 +16,10 @@ const Main = () => {
   const dispatch = useAppDispatch();
   const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWordId} = useAppSelector((state) => state.currentWordReducer);
+  const typeFormInputRef = useRef<HTMLInputElement | null>(null);
 
   /**
-   * Fetch dictionary, Set initial current word, Init tense variants
+   * Fetch dictionary, Init Word
    */
   useEffect(() => {
     if (loading === LoadingStatus.idle) {
@@ -34,8 +35,8 @@ const Main = () => {
 
   return (
     <Layout>
-      <WordAndSentence />
-      <TypeForm />
+      <WordAndSentence typeFormInputRef={typeFormInputRef} />
+      <TypeForm typeFormInputRef={typeFormInputRef} />
       <Keyboard />
     </Layout>
   );

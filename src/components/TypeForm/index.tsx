@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
@@ -9,13 +8,12 @@ import {currentWordSlice} from 'store/currentWord/slice';
 
 import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
+import {Props} from './types';
 
-const TypeForm = () => {
+const TypeForm: React.FC<Props> = ({typeFormInputRef}) => {
   const dispatch = useAppDispatch();
   const {entities: words} = useAppSelector((state) => state.wordsReducer);
-  const {currentWord, currentWordIndex, writtenText, tenseIndex, tenseVariants, tenseVariantIndex, isTenseVariantsCorrectlyTyped} = useAppSelector(
-    (state) => state.currentWordReducer
-  );
+  const {currentWordIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const inputValue = event.currentTarget.value;
@@ -24,23 +22,15 @@ const TypeForm = () => {
   };
 
   const handleKeyDownInput = (event: React.KeyboardEvent<HTMLInputElement>): void => {
-    if (/^[а-яА-ЯёЁ)]+$/.test(event.key) || /Enter|Backspace|Space/.test(event.code)) {
+    if (!/^[a-zA-Z)]+$/.test(event.key)) {
       event.preventDefault();
     }
   };
 
-  const handleKeyUpInput = (): void => {
-    dispatch(currentWordSlice.actions.checkTenseVariant(writtenText));
-
-    // if (!currentWord || tenseVariantIndex !== tenseVariants.length - 1) return;
-    //
-    // if (tenseIndex !== currentWord.tenses.length - 1) {
-    //   dispatch(currentWordSlice.actions.nextTense());
-    // } else {
-    //   const nextWordId = words[currentWordIndex]?.id;
-    //
-    //   if (nextWordId) dispatch(currentWordSlice.actions.changeWord(nextWordId));
-    // }
+  const handleKeyUpInput = (event: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (/^[a-zA-Z)]+$/.test(event.key) && event.key.length === 1) {
+      dispatch(currentWordSlice.actions.checkTenseVariant(writtenText));
+    }
   };
 
   const handleNextWord = (): void => {
@@ -51,11 +41,10 @@ const TypeForm = () => {
 
   return (
     <div className={styles.typeForm}>
-      {!isTenseVariantsCorrectlyTyped ? (
+      {!isTenseVariantCorrectlyTyped ? (
         <>
           {/* we should stay `autofocus` on the field, because we need faster access to the field */}
-          {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-          <TypeFormTextField onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} autoFocus fullWidth />
+          <TypeFormTextField inputRef={typeFormInputRef} onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} fullWidth />
           <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
         </>
       ) : (

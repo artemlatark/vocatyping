@@ -2,31 +2,27 @@ import {Speech} from 'hooks/useSpeechSynthesis';
 
 import {State} from 'store/currentWord/types';
 
-import {CurrentWord, TenseVariant} from 'models/Word';
+import {CurrentWord} from 'models/Word';
 
-interface SentenceAndTensesOfWord extends CurrentWord {
+import {Props as TypeFormProps} from 'components/TypeForm/types';
+
+export interface WordAndSentenceProps extends Pick<TensesOfWordProps, 'typeFormInputRef'> {}
+
+export interface SentenceOfWordProps extends SentenceAndTensesOfWord {}
+
+export interface SpreadOutWordProps extends Pick<State, 'tenseVariants' | 'tenseVariantIndex'> {}
+
+export interface TensesOfWordProps extends SentenceAndTensesOfWord, Pick<State, 'tenseIndex'> {
+  typeFormInputRef: TypeFormProps['typeFormInputRef'];
+}
+
+interface SentenceAndTensesOfWord {
+  currentWord: CurrentWord['currentWord'];
   speech: Pick<Speech, 'isSpeaking' | 'speak' | 'cancelSpeaking'>;
   voice: SpeechSynthesisVoice | undefined;
 }
 
-export interface SentenceOfWordProps extends SentenceAndTensesOfWord {}
-
 export interface ContextMenuPosition {
   top: number;
   left: number;
-}
-
-export interface SpreadOutWordProps extends Pick<State, 'tenseVariants' | 'tenseVariantIndex'> {}
-
-export interface SpreadOutWordItemProps {
-  item: TenseVariant;
-}
-
-export interface TensesOfWordProps extends SentenceAndTensesOfWord, Pick<State, 'tenseIndex'> {}
-
-export interface TensesOfWordItemProps {
-  tense: string;
-  index: number;
-  thisArg: string[];
-  tenseIndex: number;
 }

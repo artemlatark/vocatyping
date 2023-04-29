@@ -23,7 +23,6 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, handleCh
   useEffect(() => {
     if (isNextKey && keyRef.current) {
       handleChangeNextTypeKey({
-        qwerty: currentWordId,
         finger: keyboardKey.finger,
         coords: {
           left: keyRef.current.offsetLeft,
