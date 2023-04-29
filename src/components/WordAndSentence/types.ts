@@ -1,6 +1,6 @@
 import {Speech} from 'hooks/useSpeechSynthesis';
 
-import {State} from 'store/currentWord/types';
+import {State as CurrentWordState} from 'store/currentWord/types';
 
 import {CurrentWord} from 'models/Word';
 
@@ -10,9 +10,9 @@ export interface WordAndSentenceProps extends Pick<TensesOfWordProps, 'typeFormI
 
 export interface SentenceOfWordProps extends SentenceAndTensesOfWord {}
 
-export interface SpreadOutWordProps extends Pick<State, 'tenseVariants' | 'tenseVariantIndex'> {}
+export interface SpreadOutWordProps extends Pick<CurrentWordState, 'tenseVariants' | 'tenseVariantIndex'> {}
 
-export interface TensesOfWordProps extends SentenceAndTensesOfWord, Pick<State, 'tenseIndex'> {
+export interface TensesOfWordProps extends SentenceAndTensesOfWord, Pick<CurrentWordState, 'tenseIndex'> {
   typeFormInputRef: TypeFormProps['typeFormInputRef'];
 }
 
