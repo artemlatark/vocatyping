@@ -4,6 +4,7 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 import {Word} from 'models/Word';
 
+import {makeTenseVariants} from './helpers';
 import {SentenceByWords, State} from './types';
 
 const currentWordId_LS: State['currentWordIndex'] = getFromLocalStorage('currentWordId');
@@ -53,17 +54,9 @@ export const currentWordSlice = createSlice({
       const minIndexSentence = indexesSentences.indexOf(Math.min(...indexesSentences));
       const tenseIndex = !!~minIndexSentence ? minIndexSentence : 0;
 
-      const tenseVariants = currentWord.tenses[tenseIndex]
-        .toLowerCase()
-        .split('')
-        .map((letter, index, thisArg) => ({
-          correct: false,
-          variant: thisArg.slice(0, index + 1).join(''),
-        }));
-
       state.currentWord = action.payload;
       state.tenseIndex = tenseIndex;
-      state.tenseVariants = tenseVariants;
+      state.tenseVariants = makeTenseVariants(currentWord.tenses, tenseIndex);
     },
     writeText(state, action: PayloadAction<string>) {
       state.writtenText = action.payload;
@@ -96,7 +89,10 @@ export const currentWordSlice = createSlice({
       }
     },
     changeSelectedTense(state, action: PayloadAction<number>) {
-      state.tenseIndex = action.payload;
+      if (state.currentWord) {
+        state.tenseIndex = action.payload;
+        state.tenseVariants = makeTenseVariants(state.currentWord.tenses, action.payload);
+      }
 
       state.writtenText = initialState.writtenText;
       state.tenseVariantIndex = initialState.tenseVariantIndex;
