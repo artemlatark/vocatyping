@@ -11,7 +11,7 @@ const currentWordId_LS: State['currentWordIndex'] = getFromLocalStorage('current
 const initialState: State = {
   writtenText: '',
   currentWord: undefined,
-  currentWordId: currentWordId_LS ?? 0,
+  currentWordId: currentWordId_LS ?? 1,
   currentWordIndex: currentWordId_LS ? currentWordId_LS - 1 : 0,
   tenseIndex: 0,
   tenseVariants: [],
@@ -27,9 +27,9 @@ export const currentWordSlice = createSlice({
       const currentWord = action.payload;
 
       // Spreading sentences into object with words
-      const sentencesByWords: SentenceByWords[] = currentWord.sentences.map((sentence) => {
-        // Convert to lowercase for case-insensitive search
-        return sentence
+      const sentencesByWords: SentenceByWords[] = currentWord.sentences.map((sentence) =>
+        sentence
+          // Convert to lowercase for case-insensitive search
           .toLowerCase()
           .replace(/[^a-zA-Z ]/g, '')
           .split(' ')
@@ -39,31 +39,31 @@ export const currentWordSlice = createSlice({
               [word]: true,
             }),
             {}
-          );
-      });
+          )
+      );
 
       // Array with indexes of sentences in which the first match of each tense was found
       const indexesSentences = currentWord.tenses.reduce((previousValue: number[], tense) => {
         // Convert to lowercase for case-insensitive search
         const tenseToLowerCase = tense.toLowerCase();
-
         const firstMatchIndex = sentencesByWords.findIndex((sentence) => sentence[tenseToLowerCase]);
 
         return !!~firstMatchIndex ? [...previousValue, firstMatchIndex] : [...previousValue, Infinity];
       }, []);
       const minIndexSentence = indexesSentences.indexOf(Math.min(...indexesSentences));
-
       const tenseIndex = !!~minIndexSentence ? minIndexSentence : 0;
+
+      const tenseVariants = currentWord.tenses[tenseIndex]
+        .toLowerCase()
+        .split('')
+        .map((letter, index, thisArg) => ({
+          correct: false,
+          variant: thisArg.slice(0, index + 1).join(''),
+        }));
 
       state.currentWord = action.payload;
       state.tenseIndex = tenseIndex;
-      state.tenseVariants = currentWord.tenses[tenseIndex].split('').map((letter, index, thisArg) => ({
-        correct: false,
-        variant: thisArg
-          .slice(0, index + 1)
-          .join('')
-          .toLowerCase(),
-      }));
+      state.tenseVariants = tenseVariants;
     },
     writeText(state, action: PayloadAction<string>) {
       state.writtenText = action.payload;
