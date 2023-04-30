@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {useForm, Controller, SubmitHandler} from 'react-hook-form';
 
 import {yupResolver} from '@hookform/resolvers/yup';
+import {logEvent} from 'firebase/analytics';
 import {useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth';
 
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
@@ -14,7 +15,7 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 
-import {firebaseAuth} from 'config/firebase';
+import {firebaseAnalytics, firebaseAuth} from 'config/firebase';
 
 import {defaultValues, schema} from './formSchema';
 import {Props, FormData} from './types';
@@ -50,6 +51,12 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
 
     if (user) {
       handleOpenClose(false);
+
+      if (isStateDialogSignIn) {
+        logEvent(firebaseAnalytics, 'login', {method: 'Email/Password'});
+      } else {
+        logEvent(firebaseAnalytics, 'sign_up', {method: 'Email/Password'});
+      }
     }
   };
 

@@ -23,5 +23,3 @@ export const firestoreDB = getFirestore(app);
 export const firebaseStorage = getStorage(app);
 
 export const firebaseAnalytics = getAnalytics(app);
-
-console.log(process.env.NODE_ENV);
