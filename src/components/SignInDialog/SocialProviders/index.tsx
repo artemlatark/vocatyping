@@ -1,9 +1,10 @@
+import {logEvent} from 'firebase/analytics';
 import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
 
 import LoadingButton from '@mui/lab/LoadingButton';
 import Grid from '@mui/material/Grid';
 
-import {firebaseAuth} from 'config/firebase';
+import {firebaseAuth, firebaseAnalytics} from 'config/firebase';
 
 import GoogleIconSvg from './GoogleIconSvg';
 import {Props} from '../types';
@@ -14,7 +15,11 @@ const SocialProviders = ({handleOpenClose}: Pick<Props, 'handleOpenClose'>) => {
   const handleSignInWithGoogle = async (): Promise<void> => {
     const isSuccessfullySignedIn = await signInWithGoogle();
 
-    if (isSuccessfullySignedIn) handleOpenClose(false);
+    if (isSuccessfullySignedIn) {
+      handleOpenClose(false);
+
+      logEvent(firebaseAnalytics, 'login', {method: 'Google'});
+    }
   };
 
   return (
