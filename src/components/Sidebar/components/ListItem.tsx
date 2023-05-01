@@ -19,7 +19,7 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOp
     [styles.itemCurrent]: currentWordId ? word.id === currentWordId : index === 0,
   });
 
-  const onChangeWord = () => {
+  const onChangeWord = (): void => {
     handleOpenSidebar();
 
     dispatch(currentWordSlice.actions.changeWord(word.id));

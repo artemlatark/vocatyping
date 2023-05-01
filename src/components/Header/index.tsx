@@ -43,7 +43,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     setOpenSignInDialog(value);
   };
 
-  const handleSwitchToPrevOrNextWord = (isPrev: boolean) => {
+  const handleSwitchToPrevOrNextWord = (isPrev: boolean): void => {
     const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
 
     dispatch(currentWordSlice.actions.changeWord(word.id));

@@ -9,7 +9,7 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
 
   const currentWordGroup: number = useMemo(() => wordGroups.findIndex((letter) => letter === currentWord?.tenses[0][0]), [currentWord, wordGroups]);
 
-  const handlerChangeTab = (itemIndex: number, newTabIndex: number) => {
+  const handlerChangeTab = (itemIndex: number, newTabIndex: number): void => {
     if (listRef.current) {
       setTabIndex(newTabIndex);
 
