@@ -22,16 +22,14 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speech: {i
      * Other native context menus might behave different.
      * With this behavior we prevent contextmenu from the backdrop to re-locale existing context menus.
      */
-    if (window.getSelection()?.toString()) {
-      setContextMenuPosition(
-        contextMenuPosition === null
-          ? {
-              top: event.clientY - 6,
-              left: event.clientX + 2,
-            }
-          : null
-      );
-    }
+    if (!window.getSelection()?.toString()) return;
+
+    const contextMenuNewPosition = {
+      top: event.clientY - 6,
+      left: event.clientX + 2,
+    };
+
+    setContextMenuPosition(contextMenuPosition === null ? contextMenuNewPosition : null);
   };
 
   const listenSelectionPhraseInSentence = (): void => {
