@@ -4,19 +4,7 @@ checks:
     enabled: true
     config:
       threshold: 8
-  method-count:
-    enabled: true
-    config:
-      threshold: 20
   method-lines:
     enabled: true
     config:
       threshold: 50
-  nested-control-flow:
-    enabled: true
-    config:
-      threshold: 4
-  return-statements:
-    enabled: true
-    config:
-      threshold: 4
