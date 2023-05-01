@@ -4,17 +4,11 @@ import {State as CurrentWordState} from 'store/currentWord/types';
 
 import {CurrentWord} from 'models/Word';
 
-import {Props as TypeFormProps} from 'components/TypeForm/types';
-
-export interface WordAndSentenceProps extends Pick<TensesOfWordProps, 'typeFormInputRef'> {}
-
 export interface SentenceOfWordProps extends SentenceAndTensesOfWord {}
 
 export interface SpreadOutWordProps extends Pick<CurrentWordState, 'tenseVariants' | 'tenseVariantIndex'> {}
 
-export interface TensesOfWordProps extends SentenceAndTensesOfWord, Pick<CurrentWordState, 'tenseIndex'> {
-  typeFormInputRef: TypeFormProps['typeFormInputRef'];
-}
+export interface TensesOfWordProps extends SentenceAndTensesOfWord, Pick<CurrentWordState, 'tenseIndex'> {}
 
 interface SentenceAndTensesOfWord {
   currentWord: CurrentWord['currentWord'];

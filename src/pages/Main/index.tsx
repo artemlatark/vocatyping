@@ -1,8 +1,7 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
-import {currentWordSlice} from 'store/currentWord/slice';
 import {fetchWordsInDictionary} from 'store/words/actionCreators';
 
 import {LoadingStatus} from 'models/LoadingStatus';
@@ -15,28 +14,21 @@ import WordAndSentence from 'components/WordAndSentence';
 const Main = () => {
   const dispatch = useAppDispatch();
   const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordId} = useAppSelector((state) => state.currentWordReducer);
-  const typeFormInputRef = useRef<HTMLInputElement | null>(null);
+  const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
   /**
    * Fetch dictionary, Init Word
    */
   useEffect(() => {
     if (loading === LoadingStatus.idle) {
-      dispatch(fetchWordsInDictionary());
+      dispatch(fetchWordsInDictionary({initialWordId: currentWordIndex}));
     }
-
-    if (loading === LoadingStatus.succeeded) {
-      const word = words[currentWordId - 1];
-
-      dispatch(currentWordSlice.actions.initWord(word));
-    }
-  }, [words, loading, currentWordId, dispatch]);
+  }, [words, loading, currentWordIndex, dispatch]);
 
   return (
     <Layout>
-      <WordAndSentence typeFormInputRef={typeFormInputRef} />
-      <TypeForm typeFormInputRef={typeFormInputRef} />
+      <WordAndSentence />
+      <TypeForm />
       <Keyboard />
     </Layout>
   );

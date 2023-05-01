@@ -21,7 +21,9 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOp
 
   const onChangeWord = () => {
     handleOpenSidebar();
+
     dispatch(currentWordSlice.actions.changeWord(word.id));
+    dispatch(currentWordSlice.actions.initWord(word));
   };
 
   return (

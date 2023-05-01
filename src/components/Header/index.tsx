@@ -43,22 +43,23 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     setOpenSignInDialog(value);
   };
 
-  const onChangeWord = (handlerType: string): void => {
-    const wordId = (handlerType === 'prev' ? words[currentWordIndex - 1] : words[currentWordIndex + 1])?.id;
-    if (wordId) dispatch(currentWordSlice.actions.changeWord(wordId));
+  const handleSwitchToPrevOrNextWord = (isPrev: boolean) => {
+    const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
+
+    dispatch(currentWordSlice.actions.changeWord(word.id));
+    dispatch(currentWordSlice.actions.initWord(word));
+  };
+
+  const handleChangeWord = (handlerType: 'prev' | 'next'): void => {
+    handleSwitchToPrevOrNextWord(handlerType === 'prev');
   };
 
   useEffect(() => {
-    if (pressedAlt && pressedArrowLeft) {
-      const prevWordId = words[currentWordIndex - 1]?.id;
-      if (prevWordId) dispatch(currentWordSlice.actions.changeWord(prevWordId));
-    }
-    if (pressedAlt && pressedArrowRight) {
-      const nextWordId = words[currentWordIndex + 1]?.id;
-      if (nextWordId) dispatch(currentWordSlice.actions.changeWord(nextWordId));
-    }
+    if (pressedAlt && (pressedArrowLeft || pressedArrowRight)) {
+      handleSwitchToPrevOrNextWord(pressedArrowLeft);
 
-    handleOpenSidebar(false);
+      handleOpenSidebar(false);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
 
@@ -72,17 +73,15 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
                 <MenuIcon />
               </IconButton>
               <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />
-              <Pagination handlePrev={() => onChangeWord('prev')} handleNext={() => onChangeWord('next')} currentNumber={currentWordIndex + 1} allNumbers={wordNumbers} />
+              <Pagination handlePrev={() => handleChangeWord('prev')} handleNext={() => handleChangeWord('next')} currentNumber={currentWordIndex + 1} allNumbers={wordNumbers} />
             </Grid>
             <Grid justifyContent="end" container item>
               {user ? (
                 <UserProfileHeader user={user} signOut={signOut} />
               ) : (
-                <>
-                  <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
-                    Sign In
-                  </Button>
-                </>
+                <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
+                  Sign In
+                </Button>
               )}
             </Grid>
           </Grid>

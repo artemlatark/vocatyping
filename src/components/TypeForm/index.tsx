@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import Button from '@mui/material/Button';
 
@@ -8,12 +8,13 @@ import {currentWordSlice} from 'store/currentWord/slice';
 
 import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
-import {Props} from './types';
 
-const TypeForm: React.FC<Props> = ({typeFormInputRef}) => {
+const TypeForm = () => {
   const dispatch = useAppDispatch();
   const {entities: words} = useAppSelector((state) => state.wordsReducer);
   const {currentWordIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
+  const textFieldTypeWordRef = useRef<HTMLInputElement | null>(null);
+  const buttonNextWordRef = useRef<HTMLButtonElement | null>(null);
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const inputValue = event.currentTarget.value;
@@ -34,27 +35,31 @@ const TypeForm: React.FC<Props> = ({typeFormInputRef}) => {
   };
 
   const handleNextWord = (): void => {
-    const nextWordId = words[currentWordIndex + 1]?.id;
+    const word = words[currentWordIndex + 1];
 
-    dispatch(currentWordSlice.actions.changeWord(nextWordId));
+    dispatch(currentWordSlice.actions.changeWord(word.id));
+    dispatch(currentWordSlice.actions.initWord(word));
   };
+
+  useEffect(() => {
+    if (!isTenseVariantCorrectlyTyped) {
+      textFieldTypeWordRef.current?.focus();
+    } else {
+      buttonNextWordRef.current?.focus();
+    }
+  }, [currentWordIndex, isTenseVariantCorrectlyTyped]);
 
   return (
     <div className={styles.typeForm}>
       {!isTenseVariantCorrectlyTyped ? (
         <>
-          {/* we should stay `autofocus` on the field, because we need faster access to the field */}
-          <TypeFormTextField inputRef={typeFormInputRef} onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} fullWidth />
+          <TypeFormTextField inputRef={textFieldTypeWordRef} onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} fullWidth />
           <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
         </>
       ) : (
-        <>
-          {/* we should stay `autofocus` on the button, because we need faster access to the field */}
-          {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-          <Button onClick={() => handleNextWord()} variant="contained" size="large" autoFocus fullWidth>
-            Next word
-          </Button>
-        </>
+        <Button ref={buttonNextWordRef} onClick={() => handleNextWord()} variant="contained" size="large" fullWidth>
+          Next word
+        </Button>
       )}
     </div>
   );

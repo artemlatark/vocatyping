@@ -6,9 +6,11 @@ import {ref, getDownloadURL} from 'firebase/storage';
 
 import {firebaseStorage} from 'config/firebase';
 
+import {currentWordSlice} from 'store/currentWord/slice';
+
 import {Word} from 'models/Word';
 
-export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async (arg, {rejectWithValue}) => {
+export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async ({initialWordId}: {initialWordId: number}, {dispatch, rejectWithValue}) => {
   try {
     const dictionaryRef = ref(firebaseStorage, 'dictionaries/shestov.csv');
 
@@ -22,6 +24,8 @@ export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async (
         id: 'number',
       },
     }).fromString(response.data);
+
+    dispatch(currentWordSlice.actions.initWord(dictionary[initialWordId]));
 
     return dictionary;
   } catch (error) {

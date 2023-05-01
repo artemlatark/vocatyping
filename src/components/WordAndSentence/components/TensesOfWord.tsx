@@ -12,7 +12,7 @@ import {currentWordSlice} from 'store/currentWord/slice';
 import styles from '../index.module.css';
 import {TensesOfWordProps} from '../types';
 
-const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, tenseIndex, speech: {isSpeaking, speak, cancelSpeaking}, voice, typeFormInputRef}) => {
+const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, tenseIndex, speech: {isSpeaking, speak, cancelSpeaking}, voice}) => {
   const dispatch = useAppDispatch();
   const onSpeechWord = (): void => {
     if (isSpeaking) cancelSpeaking();
@@ -22,7 +22,6 @@ const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, tenseIndex
   const handleSelectTenseVariant = (tenseIndex: number): void => {
     dispatch(currentWordSlice.actions.changeSelectedTense(tenseIndex));
     dispatch(currentWordSlice.actions.checkTenseVariant(''));
-    typeFormInputRef?.current?.focus();
   };
 
   return (
