@@ -14,7 +14,7 @@ import {firebaseAuth} from 'config/firebase';
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 import {useKeyPress} from 'hooks/useKeyPress';
 
-import {currentWordSlice} from 'store/currentWord/slice';
+import {initWord, changeWord} from 'store/currentWord/slice';
 
 import Pagination from 'components/Pagination';
 import SignInDialog from 'components/SignInDialog';
@@ -46,8 +46,8 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const handleSwitchToPrevOrNextWord = (isPrev: boolean): void => {
     const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
 
-    dispatch(currentWordSlice.actions.changeWord(word.id));
-    dispatch(currentWordSlice.actions.initWord(word));
+    dispatch(changeWord(word.id));
+    dispatch(initWord(word));
   };
 
   const handleChangeWord = (handlerType: 'prev' | 'next'): void => {

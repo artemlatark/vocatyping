@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 
 import {useAppDispatch} from 'hooks/redux';
 
-import {currentWordSlice} from 'store/currentWord/slice';
+import {changeTense, checkTenseVariant} from 'store/currentWord/slice';
 
 import styles from '../index.module.css';
 import {TensesOfWordProps} from '../types';
@@ -20,8 +20,8 @@ const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, tenseIndex
   };
 
   const handleSelectTenseVariant = (tenseIndex: number): void => {
-    dispatch(currentWordSlice.actions.changeSelectedTense(tenseIndex));
-    dispatch(currentWordSlice.actions.checkTenseVariant(''));
+    dispatch(changeTense(tenseIndex));
+    dispatch(checkTenseVariant(''));
   };
 
   return (
