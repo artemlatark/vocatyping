@@ -7,7 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 import {useAppDispatch} from 'hooks/redux';
 
-import {currentWordSlice} from 'store/currentWord/slice';
+import {changeWord, initWord} from 'store/currentWord/slice';
 
 import styles from '../index.module.css';
 import {ListItemProps} from '../types';
@@ -22,8 +22,8 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOp
   const onChangeWord = (): void => {
     handleOpenSidebar();
 
-    dispatch(currentWordSlice.actions.changeWord(word.id));
-    dispatch(currentWordSlice.actions.initWord(word));
+    dispatch(changeWord(word.id));
+    dispatch(initWord(word));
   };
 
   return (

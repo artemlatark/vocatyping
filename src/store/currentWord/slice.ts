@@ -4,12 +4,12 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 import {Word} from 'models/Word';
 
-import {makeTenseVariants} from './helpers';
-import {SentenceByWords, State} from './types';
+import {getTenseIndex, makeTenseVariants, spreadSentencesByWords} from './helpers';
+import {State} from './types';
 
 const currentWordId_LS: State['currentWordIndex'] = getFromLocalStorage('currentWordId');
 
-const initialState: State = {
+export const initialState: State = {
   writtenText: '',
   currentWord: undefined,
   currentWordId: currentWordId_LS ?? 1,
@@ -28,31 +28,9 @@ export const currentWordSlice = createSlice({
       const currentWord = action.payload;
 
       // Spreading sentences into object with words
-      const sentencesByWords: SentenceByWords[] = currentWord.sentences.map((sentence) =>
-        sentence
-          // Convert to lowercase for case-insensitive search
-          .toLowerCase()
-          .replace(/[^a-zA-Z ]/g, '')
-          .split(' ')
-          .reduce(
-            (previousValue: SentenceByWords, word) => ({
-              ...previousValue,
-              [word]: true,
-            }),
-            {}
-          )
-      );
-
+      const sentencesByWords = spreadSentencesByWords(currentWord.sentences);
       // Array with indexes of sentences in which the first match of each tense was found
-      const indexesSentences = currentWord.tenses.reduce((previousValue: number[], tense) => {
-        // Convert to lowercase for case-insensitive search
-        const tenseToLowerCase = tense.toLowerCase();
-        const firstMatchIndex = sentencesByWords.findIndex((sentence) => sentence[tenseToLowerCase]);
-
-        return !!~firstMatchIndex ? [...previousValue, firstMatchIndex] : [...previousValue, Infinity];
-      }, []);
-      const minIndexSentence = indexesSentences.indexOf(Math.min(...indexesSentences));
-      const tenseIndex = !!~minIndexSentence ? minIndexSentence : 0;
+      const tenseIndex = getTenseIndex(currentWord.tenses, sentencesByWords);
 
       state.currentWord = action.payload;
       state.tenseIndex = tenseIndex;
@@ -88,7 +66,7 @@ export const currentWordSlice = createSlice({
         state.isTenseVariantCorrectlyTyped = true;
       }
     },
-    changeSelectedTense(state, action: PayloadAction<number>) {
+    changeTense(state, action: PayloadAction<number>) {
       if (state.currentWord) {
         state.tenseIndex = action.payload;
         state.tenseVariants = makeTenseVariants(state.currentWord.tenses, action.payload);
@@ -110,5 +88,7 @@ export const currentWordSlice = createSlice({
     },
   },
 });
+
+export const {initWord, writeText, checkTenseVariant, changeTense, changeWord} = currentWordSlice.actions;
 
 export default currentWordSlice.reducer;

@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
-import {currentWordSlice} from 'store/currentWord/slice';
+import {changeWord, checkTenseVariant, initWord, writeText} from 'store/currentWord/slice';
 
 import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
@@ -19,7 +19,7 @@ const TypeForm = () => {
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const inputValue = event.currentTarget.value;
 
-    dispatch(currentWordSlice.actions.writeText(inputValue));
+    dispatch(writeText(inputValue));
   };
 
   const handleKeyDownInput = (event: React.KeyboardEvent<HTMLInputElement>): void => {
@@ -30,15 +30,15 @@ const TypeForm = () => {
 
   const handleKeyUpInput = (event: React.KeyboardEvent<HTMLInputElement>): void => {
     if (/^[a-zA-Z)]+$/.test(event.key) && event.key.length === 1) {
-      dispatch(currentWordSlice.actions.checkTenseVariant(writtenText));
+      dispatch(checkTenseVariant(writtenText));
     }
   };
 
   const handleNextWord = (): void => {
     const word = words[currentWordIndex + 1];
 
-    dispatch(currentWordSlice.actions.changeWord(word.id));
-    dispatch(currentWordSlice.actions.initWord(word));
+    dispatch(changeWord(word.id));
+    dispatch(initWord(word));
   };
 
   useEffect(() => {

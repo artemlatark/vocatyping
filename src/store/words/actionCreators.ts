@@ -6,7 +6,7 @@ import {ref, getDownloadURL} from 'firebase/storage';
 
 import {firebaseStorage} from 'config/firebase';
 
-import {currentWordSlice} from 'store/currentWord/slice';
+import {initWord} from 'store/currentWord/slice';
 
 import {Word} from 'models/Word';
 
@@ -25,7 +25,7 @@ export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async (
       },
     }).fromString(response.data);
 
-    dispatch(currentWordSlice.actions.initWord(dictionary[initialWordId]));
+    dispatch(initWord(dictionary[initialWordId]));
 
     return dictionary;
   } catch (error) {
