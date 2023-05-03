@@ -19,15 +19,18 @@ export const spreadSentencesByWords = (sentences: Word['sentences']): SentenceBy
       )
   );
 
-// Array with indexes of sentences in which the first match of each tense was found
-export const getTenseIndex = (tenses: Word['tenses'], sentencesByWords: SentenceByWords[]): number => {
-  const indexesSentences = tenses.reduce((previousValue: number[], tense) => {
+export const getIndexesSentences = (tenses: Word['tenses'], sentencesByWords: SentenceByWords[]): number[] =>
+  tenses.reduce((previousValue: number[], tense) => {
     // Convert to lowercase for case-insensitive search
     const tenseToLowerCase = tense.toLowerCase();
     const firstMatchIndex = sentencesByWords.findIndex((sentence) => sentence[tenseToLowerCase]);
 
     return !!~firstMatchIndex ? [...previousValue, firstMatchIndex] : [...previousValue, Infinity];
   }, []);
+
+// Array with indexes of sentences in which the first match of each tense was found
+export const getTenseIndex = (tenses: Word['tenses'], sentencesByWords: SentenceByWords[]): number => {
+  const indexesSentences = getIndexesSentences(tenses, sentencesByWords);
   const minIndexSentence = indexesSentences.indexOf(Math.min(...indexesSentences));
 
   return !!~minIndexSentence ? minIndexSentence : 0;
