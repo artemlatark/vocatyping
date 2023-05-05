@@ -1,4 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/7656b1358b23f86ae4a7/maintainability)](https://codeclimate.com/github/artemkrynkin/typerighting/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7656b1358b23f86ae4a7/test_coverage)](https://codeclimate.com/github/artemkrynkin/typerighting/test_coverage)
 
 # Getting Started with Create React App
 

@@ -1,5 +1,6 @@
 {
   "./src/**/*.{js,jsx,ts,tsx,json,md}": [
+    "npm test",
     "prettier --write",
     "eslint --fix"
   ],

@@ -12,12 +12,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test",
+    "coverage":  "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "eslint": "eslint './src/**/*.{js,jsx,ts,tsx,json,md}'",
     "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,md,css,scss}'",
-    "prepare": "husky install",
-    "coverage":  "react-scripts test --coverage --watchAll=false"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

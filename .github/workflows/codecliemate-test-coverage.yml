@@ -11,15 +11,23 @@ jobs:
   Coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
-      - name: Test Coverage Frontend
-        run: npm install && npm coverage
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Test Coverage
+        run: |
+          npm install
+          npm run coverage
 
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.2.0
         env:
-          CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+          CC_TEST_REPORTER_ID: '${{secrets.CC_TEST_REPORTER_ID}}'
         with:
           coverageLocations: |
             ${{github.workspace}}/coverage/lcov.info:lcov
