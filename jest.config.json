@@ -1,0 +1,12 @@
+{
+  "coverageReporters": [
+    "lcov"
+  ],
+  "transformIgnorePatterns": [
+    "node_modules\/(?!axios)"
+  ],
+  "collectCoverageFrom": [
+    "./src/**/*.{js,jsx,ts,tsx,json,md}",
+    "!**/node_modules/**"
+  ]
+}
