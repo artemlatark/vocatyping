@@ -4,6 +4,8 @@ import {getAuth} from 'firebase/auth';
 import {getFirestore} from 'firebase/firestore';
 import {getStorage} from 'firebase/storage';
 
+import {ENV} from './config';
+
 const FIREBASE_CONFIG = {
   apiKey: 'AIzaSyBo4lHsXmrSAu4Y9hm0rgpGipwtkNX5cbE',
   authDomain: 'typerighting-5d448.firebaseapp.com',
@@ -22,4 +24,4 @@ export const firestoreDB = getFirestore(app);
 
 export const firebaseStorage = getStorage(app);
 
-export const firebaseAnalytics = getAnalytics(app);
+export const firebaseAnalytics = ENV === 'production' ? getAnalytics(app) : null;

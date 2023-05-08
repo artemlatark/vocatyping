@@ -4,6 +4,7 @@ import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import LoadingButton from '@mui/lab/LoadingButton';
 import Grid from '@mui/material/Grid';
 
+import {ENV} from 'config/config';
 import {firebaseAuth, firebaseAnalytics} from 'config/firebase';
 
 import GoogleIconSvg from './GoogleIconSvg';
@@ -18,7 +19,9 @@ const SocialProviders = ({handleOpenClose}: Pick<Props, 'handleOpenClose'>) => {
     if (isSuccessfullySignedIn) {
       handleOpenClose(false);
 
-      logEvent(firebaseAnalytics, 'login', {method: 'Google'});
+      if (ENV === 'production' && firebaseAnalytics) {
+        logEvent(firebaseAnalytics, 'login', {method: 'Google'});
+      }
     }
   };
 

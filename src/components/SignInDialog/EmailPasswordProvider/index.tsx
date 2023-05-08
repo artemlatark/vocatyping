@@ -15,6 +15,7 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 
+import {ENV} from 'config/config';
 import {firebaseAnalytics, firebaseAuth} from 'config/firebase';
 
 import {defaultValues, schema} from './formSchema';
@@ -52,10 +53,12 @@ const EmailPasswordProvider: React.FC<Props> = ({stateDialog, handleOpenClose}) 
     if (user) {
       handleOpenClose(false);
 
-      if (isStateDialogSignIn) {
-        logEvent(firebaseAnalytics, 'login', {method: 'Email/Password'});
-      } else {
-        logEvent(firebaseAnalytics, 'sign_up', {method: 'Email/Password'});
+      if (ENV === 'production' && firebaseAnalytics) {
+        if (isStateDialogSignIn) {
+          logEvent(firebaseAnalytics, 'login', {method: 'Email/Password'});
+        } else {
+          logEvent(firebaseAnalytics, 'sign_up', {method: 'Email/Password'});
+        }
       }
     }
   };

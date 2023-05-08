@@ -1,9 +1,0 @@
-{
-  "coverageReporters": [
-    "lcov"
-  ],
-  "collectCoverageFrom": [
-    "./src/**/*.{js,jsx,ts,tsx,json,md}",
-    "!**/node_modules/**"
-  ]
-}
