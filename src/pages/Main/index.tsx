@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
-import {fetchWordsInDictionary} from 'store/words/actionCreators';
+import {fetchDictionary} from 'store/words/actionCreators';
 
 import {LoadingStatus} from 'models/LoadingStatus';
 
@@ -21,7 +21,7 @@ const Main = () => {
    */
   useEffect(() => {
     if (loading === LoadingStatus.idle) {
-      dispatch(fetchWordsInDictionary({initialWordId: currentWordIndex}));
+      dispatch(fetchDictionary({initialWordId: currentWordIndex}));
     }
   }, [words, loading, currentWordIndex, dispatch]);
 

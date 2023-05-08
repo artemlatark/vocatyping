@@ -10,7 +10,11 @@ import {initWord} from 'store/currentWord/slice';
 
 import {Word} from 'models/Word';
 
-export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async ({initialWordId}: {initialWordId: number}, {dispatch, rejectWithValue}) => {
+interface FetchDictionaryArgs {
+  initialWordId: number;
+}
+
+export const fetchDictionary = createAsyncThunk('words/fetchDictionary', async ({initialWordId}: FetchDictionaryArgs, {dispatch, rejectWithValue}) => {
   try {
     const dictionaryRef = ref(firebaseStorage, 'dictionaries/shestov.csv');
 
@@ -29,14 +33,13 @@ export const fetchWordsInDictionary = createAsyncThunk('words/fetchAll', async (
 
     return dictionary;
   } catch (error) {
-    const rejectValue: Error =
-      error instanceof Error
-        ? error
-        : {
-            name: 'unknown error',
-            message: 'An unknown error occurred. Failed to load data.',
-          };
+    const rejectError: Error = {name: 'unknown error', message: 'An unknown error occurred. Failed to load data.'};
 
-    return rejectWithValue(rejectValue);
+    if (error instanceof Error) {
+      rejectError.name = error.name;
+      rejectError.message = error.message;
+    }
+
+    return rejectWithValue(rejectError);
   }
 });

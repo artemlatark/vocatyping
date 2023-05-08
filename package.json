@@ -13,7 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test",
-    "coverage":  "react-scripts test --coverage --watchAll=false",
+    "coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "eslint": "eslint './src/**/*.{js,jsx,ts,tsx,json,md}'",
     "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,md,css,scss}'",
@@ -62,6 +62,19 @@
   },
   "private": true,
   "devDependencies": {
+    "axios-mock-adapter": "^1.21.4",
     "nyc": "^15.1.0"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "./src/**/*.{js,jsx,ts,tsx,json,md}",
+      "!**/node_modules/**"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios)"
+    ]
   }
 }
