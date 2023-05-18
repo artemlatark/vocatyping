@@ -36,14 +36,6 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     };
   };
 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.speechSynthesis) {
-      setIsSupported(true);
-      getVoices();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   const speak = ({lang = 'en-US', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
     if (!isSupported) return;
 
@@ -71,6 +63,14 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     setIsSpeaking(false);
     window.speechSynthesis.cancel();
   };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+      setIsSupported(true);
+      getVoices();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return {
     voices,
