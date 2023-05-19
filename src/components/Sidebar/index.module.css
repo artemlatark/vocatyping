@@ -1,8 +1,14 @@
-.sidebarContainer {
+.wrapper {
+  height: 100%;
+  width: 370px;
+}
+
+.groupedContainer {
   height: 100%;
 }
 
 .wordList {
+  height: 100%;
   width: 300px;
 }
 
