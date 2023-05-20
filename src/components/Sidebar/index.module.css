@@ -1,5 +1,5 @@
 .wrapper {
-  height: 100%;
+  height: calc(100% - 56px);
   width: 370px;
 }
 
@@ -9,7 +9,7 @@
 
 .wordList {
   height: 100%;
-  width: 300px;
+  flex: 1 0 auto;
 }
 
 .itemCurrent {

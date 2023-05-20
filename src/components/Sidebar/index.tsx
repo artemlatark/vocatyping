@@ -1,4 +1,4 @@
-import React, {useMemo, useRef, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 
 import {groupBy} from 'lodash';
 import {Virtuoso, GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
@@ -6,7 +6,6 @@ import {Virtuoso, GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
 import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 
 import {useAppSelector} from 'hooks/redux';
 
@@ -16,6 +15,7 @@ import ListItem from './components/ListItem';
 import MUIComponents from './components/MuiComponents';
 import WordGroupsList from './components/WordGroupsList';
 import styles from './index.module.css';
+import {TypographyCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
 
 const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
@@ -33,8 +33,10 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
     return {wordGroupsCounts: wordGroupsCountsSrc, wordGroups: wordGroupsSrc};
   }, [words]);
 
-  const handleChangeSearchWord = (e: any) => {
-    const searchWord = e.target.value;
+  const currentTabIndex = useMemo(() => (currentWord ? wordGroups.indexOf(currentWord?.tenses[0][0]) : 0), [currentWord, wordGroups]);
+
+  const handleChangeSearchWord = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const searchWord = event.target.value;
 
     const letterIndex = wordGroups.indexOf(searchWord[0]);
     let startIndex = 0;
@@ -64,9 +66,16 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
     setFilteredWords(newFilteredWords);
   };
 
+  useEffect(() => {
+    if (sidebarOpen) {
+      setSearchWord('');
+      setFilteredWords([]);
+    }
+  }, [sidebarOpen]);
+
   return (
     <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => handleOpenSidebar()}>
-      <TextField placeholder="Start typing any word for search" onChange={handleChangeSearchWord} />
+      <TextField name="search" placeholder="Start typing any word for search" onChange={handleChangeSearchWord} />
       <div className={styles.wrapper}>
         {searchWord ? (
           <>
@@ -77,12 +86,12 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
                 itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
               />
             ) : (
-              <Typography>Nothing was found</Typography>
+              <TypographyCustom>Nothing was found</TypographyCustom>
             )}
           </>
         ) : (
           <Grid className={styles.groupedContainer} container>
-            <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentWord={currentWord} />
+            <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentTabIndex={currentTabIndex} />
             <GroupedVirtuoso
               className={styles.wordList}
               ref={listRef}

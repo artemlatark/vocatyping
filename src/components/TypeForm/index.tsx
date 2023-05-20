@@ -53,7 +53,15 @@ const TypeForm = () => {
     <div className={styles.typeForm}>
       {!isTenseVariantCorrectlyTyped ? (
         <>
-          <TypeFormTextField inputRef={textFieldTypeWordRef} onChange={handleChangeInput} onKeyDown={handleKeyDownInput} onKeyUp={handleKeyUpInput} value={writtenText} fullWidth />
+          <TypeFormTextField
+            name="typingText"
+            inputRef={textFieldTypeWordRef}
+            onChange={handleChangeInput}
+            onKeyDown={handleKeyDownInput}
+            onKeyUp={handleKeyUpInput}
+            value={writtenText}
+            fullWidth
+          />
           <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
         </>
       ) : (

@@ -1,4 +1,11 @@
-import {styled, ListItem, ListSubheader} from '@mui/material';
+import {styled, ListItem, ListSubheader, Typography} from '@mui/material';
+
+export const TypographyCustom = styled(Typography)({
+  alignItems: 'center',
+  display: 'flex',
+  height: '100%',
+  justifyContent: 'center',
+});
 
 export const ListItemCustom = styled(ListItem)({
   '&': {
