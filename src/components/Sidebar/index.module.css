@@ -1,9 +1,15 @@
-.sidebarContainer {
+.wrapper {
+  height: calc(100% - 56px);
+  width: 370px;
+}
+
+.groupedContainer {
   height: 100%;
 }
 
 .wordList {
-  width: 300px;
+  height: 100%;
+  flex: 1 0 auto;
 }
 
 .itemCurrent {

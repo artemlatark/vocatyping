@@ -10,9 +10,7 @@ const Layout: React.FC<Props> = ({children}) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleOpenSidebar = useCallback((value?: boolean) => {
-    setSidebarOpen((prevState) => {
-      return value !== undefined ? value : !prevState;
-    });
+    setSidebarOpen((prevState) => (value !== undefined ? value : !prevState));
   }, []);
 
   return (

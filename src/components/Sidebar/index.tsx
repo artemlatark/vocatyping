@@ -1,24 +1,29 @@
-import React, {useMemo, useRef} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 
 import {groupBy} from 'lodash';
-import {GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
+import {Virtuoso, GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
 
 import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
 
 import {useAppSelector} from 'hooks/redux';
+
+import {Word} from 'models/Word';
 
 import ListItem from './components/ListItem';
 import MUIComponents from './components/MuiComponents';
 import WordGroupsList from './components/WordGroupsList';
 import styles from './index.module.css';
+import {TypographyCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
 
 const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
   const {entities: words} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
-
   const listRef = useRef<GroupedVirtuosoHandle>(null);
+  const [searchWord, setSearchWord] = useState<string>('');
+  const [filteredWords, setFilteredWords] = useState<Word[]>([]);
 
   const {wordGroupsCounts, wordGroups}: WordGroups = useMemo(() => {
     const wordsByGroup = groupBy(words, (word) => word.tenses[0][0].toLowerCase());
@@ -28,23 +33,80 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
     return {wordGroupsCounts: wordGroupsCountsSrc, wordGroups: wordGroupsSrc};
   }, [words]);
 
+  const currentTabIndex = useMemo(() => (currentWord ? wordGroups.indexOf(currentWord?.tenses[0][0]) : 0), [currentWord, wordGroups]);
+
+  const handleChangeSearchWord = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const searchWord = event.target.value;
+
+    const letterIndex = wordGroups.indexOf(searchWord[0]);
+    let startIndex = 0;
+    let endIndex = wordGroupsCounts[letterIndex];
+
+    for (let i = 0; i < letterIndex; i++) {
+      startIndex += wordGroupsCounts[i];
+      endIndex += wordGroupsCounts[i];
+    }
+
+    const wordsSliced = words.slice(startIndex, endIndex);
+    let newFilteredWords: Word[];
+
+    if (searchWord.length > 1) {
+      newFilteredWords = wordsSliced.filter((word) => {
+        return word.tenses.some((tense) => {
+          return tense.toLowerCase().slice(0, searchWord.length) === searchWord;
+        });
+      });
+    } else if (searchWord.length === 1) {
+      newFilteredWords = wordsSliced;
+    } else {
+      newFilteredWords = [];
+    }
+
+    setSearchWord(searchWord);
+    setFilteredWords(newFilteredWords);
+  };
+
+  useEffect(() => {
+    if (sidebarOpen) {
+      setSearchWord('');
+      setFilteredWords([]);
+    }
+  }, [sidebarOpen]);
+
   return (
     <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => handleOpenSidebar()}>
-      <Grid className={styles.sidebarContainer} container>
-        <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentWord={currentWord} />
-        <GroupedVirtuoso
-          className={styles.wordList}
-          ref={listRef}
-          initialTopMostItemIndex={{
-            index: currentWordIndex,
-            align: 'center',
-          }}
-          groupCounts={wordGroupsCounts}
-          components={MUIComponents}
-          groupContent={(index) => wordGroups[index]}
-          itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
-        />
-      </Grid>
+      <TextField name="search" placeholder="Start typing any word for search" onChange={handleChangeSearchWord} />
+      <div className={styles.wrapper}>
+        {searchWord ? (
+          <>
+            {filteredWords.length ? (
+              <Virtuoso
+                className={styles.wordList}
+                data={filteredWords}
+                itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+              />
+            ) : (
+              <TypographyCustom>Nothing was found</TypographyCustom>
+            )}
+          </>
+        ) : (
+          <Grid className={styles.groupedContainer} container>
+            <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentTabIndex={currentTabIndex} />
+            <GroupedVirtuoso
+              className={styles.wordList}
+              ref={listRef}
+              initialTopMostItemIndex={{
+                index: currentWordIndex,
+                align: 'center',
+              }}
+              groupCounts={wordGroupsCounts}
+              components={MUIComponents}
+              groupContent={(index) => wordGroups[index]}
+              itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+            />
+          </Grid>
+        )}
+      </div>
     </Drawer>
   );
 });
