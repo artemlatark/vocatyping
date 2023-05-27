@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
@@ -11,7 +11,7 @@ import {Props} from './types';
 
 const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
   const {displayName, photoURL} = user;
-  const [anchorUserProfileMenu, setAnchorUserProfileMenu] = React.useState<null | HTMLElement>(null);
+  const [anchorUserProfileMenu, setAnchorUserProfileMenu] = useState<null | HTMLElement>(null);
   const isOpenUserProfileMenu = Boolean(anchorUserProfileMenu);
 
   const handleOpenUserProfileMenu = (event: React.MouseEvent<HTMLButtonElement>): void => {

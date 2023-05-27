@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import styles from './index.module.css';
 import {TabCustom, TabsCustom} from './styles';
 import {WordGroupsListProps} from '../../types';
 
 const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCounts, wordGroups, currentTabIndex}) => {
-  const [tabIndex, setTabIndex] = React.useState<number>(currentTabIndex);
+  const [tabIndex, setTabIndex] = useState<number>(currentTabIndex);
 
   const handlerChangeTab = (itemIndex: number, newTabIndex: number): void => {
     if (listRef.current) {
