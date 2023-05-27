@@ -46,7 +46,8 @@ const TypeForm = () => {
   useEffect(() => {
     if (!isTenseVariantCorrectlyTyped || loading === LoadingStatus.succeeded) {
       textFieldTypeWordRef.current?.focus();
-    } else {
+    }
+    if (isTenseVariantCorrectlyTyped) {
       buttonNextWordRef.current?.focus();
     }
   }, [currentWordIndex, isTenseVariantCorrectlyTyped, loading]);
@@ -63,6 +64,7 @@ const TypeForm = () => {
             onKeyUp={handleKeyUpInput}
             value={writtenText}
             disabled={loading !== LoadingStatus.succeeded}
+            autoComplete="off"
             fullWidth
           />
           <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
