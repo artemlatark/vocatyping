@@ -1,4 +1,4 @@
-import React, {useRef, Fragment} from 'react';
+import React, {useRef, Fragment, useState} from 'react';
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -7,7 +7,7 @@ import styles from '../index.module.css';
 import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
 const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speech: {isSpeaking, speak, cancelSpeaking}, voice}) => {
-  const [contextMenuPosition, setContextMenuPosition] = React.useState<ContextMenuPosition | null>(null);
+  const [contextMenuPosition, setContextMenuPosition] = useState<ContextMenuPosition | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
   const closeContextMenu = (): void => {

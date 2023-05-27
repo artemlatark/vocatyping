@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
+import Skeleton from '@mui/material/Skeleton';
 import Toolbar from '@mui/material/Toolbar';
 
 import {firebaseAuth} from 'config/firebase';
@@ -16,27 +17,27 @@ import {useKeyPress} from 'hooks/useKeyPress';
 
 import {initWord, changeWord} from 'store/currentWord/slice';
 
+import {LoadingStatus} from 'models/LoadingStatus';
+
 import Pagination from 'components/Pagination';
 import SignInDialog from 'components/SignInDialog';
 import UserProfileHeader from 'components/UserProfileHeader';
 
 import {AppBarCustom} from './styles';
 import {Props} from './types';
-import {LoadingStatus} from '../../models/LoadingStatus';
 
 const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
-
-  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words, loading: loadingWords} = useAppSelector((state) => state.wordsReducer);
   const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
-  const [user] = useAuthState(firebaseAuth);
+  const [user, loadingUser] = useAuthState(firebaseAuth);
   const [signOut] = useSignOut(firebaseAuth);
   const pressedAlt = useKeyPress('Alt');
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');
 
-  const [isOpenSignInDialog, setOpenSignInDialog] = React.useState(false);
+  const [isOpenSignInDialog, setOpenSignInDialog] = useState(false);
 
   const wordNumbers = words.length;
 
@@ -79,16 +80,22 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
                 handleNext={() => handleChangeWord('next')}
                 currentNumber={currentWordIndex + 1}
                 allNumbers={wordNumbers}
-                loading={loading !== LoadingStatus.succeeded}
+                loading={loadingWords !== LoadingStatus.succeeded}
               />
             </Grid>
             <Grid justifyContent="end" container item>
-              {user ? (
-                <UserProfileHeader user={user} signOut={signOut} />
+              {!loadingUser ? (
+                <>
+                  {user ? (
+                    <UserProfileHeader user={user} signOut={signOut} />
+                  ) : (
+                    <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
+                      Sign In
+                    </Button>
+                  )}
+                </>
               ) : (
-                <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
-                  Sign In
-                </Button>
+                <Skeleton variant="circular" width={40} height={40} sx={{mr: 3}} />
               )}
             </Grid>
           </Grid>
