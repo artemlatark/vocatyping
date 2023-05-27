@@ -6,12 +6,14 @@ import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {changeWord, checkTenseVariant, initWord, writeText} from 'store/currentWord/slice';
 
+import {LoadingStatus} from 'models/LoadingStatus';
+
 import styles from './index.module.css';
 import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 
 const TypeForm = () => {
   const dispatch = useAppDispatch();
-  const {entities: words} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWordIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
   const textFieldTypeWordRef = useRef<HTMLInputElement | null>(null);
   const buttonNextWordRef = useRef<HTMLButtonElement | null>(null);
@@ -42,12 +44,12 @@ const TypeForm = () => {
   };
 
   useEffect(() => {
-    if (!isTenseVariantCorrectlyTyped) {
+    if (!isTenseVariantCorrectlyTyped || loading === LoadingStatus.succeeded) {
       textFieldTypeWordRef.current?.focus();
     } else {
       buttonNextWordRef.current?.focus();
     }
-  }, [currentWordIndex, isTenseVariantCorrectlyTyped]);
+  }, [currentWordIndex, isTenseVariantCorrectlyTyped, loading]);
 
   return (
     <div className={styles.typeForm}>
@@ -60,6 +62,7 @@ const TypeForm = () => {
             onKeyDown={handleKeyDownInput}
             onKeyUp={handleKeyUpInput}
             value={writtenText}
+            disabled={loading !== LoadingStatus.succeeded}
             fullWidth
           />
           <TypeFormFormHelperText className={styles.helperText}>Type the word by letters</TypeFormFormHelperText>
