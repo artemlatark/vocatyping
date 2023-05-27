@@ -3,4 +3,5 @@ export interface Props {
   handleNext: () => void;
   currentNumber: number;
   allNumbers: number;
+  loading: boolean;
 }

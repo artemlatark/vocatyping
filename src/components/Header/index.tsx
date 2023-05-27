@@ -22,11 +22,12 @@ import UserProfileHeader from 'components/UserProfileHeader';
 
 import {AppBarCustom} from './styles';
 import {Props} from './types';
+import {LoadingStatus} from '../../models/LoadingStatus';
 
 const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
 
-  const {entities: words} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
   const [user] = useAuthState(firebaseAuth);
@@ -73,7 +74,13 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
                 <MenuIcon />
               </IconButton>
               <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />
-              <Pagination handlePrev={() => handleChangeWord('prev')} handleNext={() => handleChangeWord('next')} currentNumber={currentWordIndex + 1} allNumbers={wordNumbers} />
+              <Pagination
+                handlePrev={() => handleChangeWord('prev')}
+                handleNext={() => handleChangeWord('next')}
+                currentNumber={currentWordIndex + 1}
+                allNumbers={wordNumbers}
+                loading={loading !== LoadingStatus.succeeded}
+              />
             </Grid>
             <Grid justifyContent="end" container item>
               {user ? (
