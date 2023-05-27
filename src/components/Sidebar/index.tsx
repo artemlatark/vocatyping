@@ -3,12 +3,14 @@ import React, {useEffect, useMemo, useRef, useState} from 'react';
 import {groupBy} from 'lodash';
 import {Virtuoso, GroupedVirtuoso, GroupedVirtuosoHandle} from 'react-virtuoso';
 
+import CircularProgress from '@mui/material/CircularProgress';
 import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 
 import {useAppSelector} from 'hooks/redux';
 
+import {LoadingStatus} from 'models/LoadingStatus';
 import {Word} from 'models/Word';
 
 import ListItem from './components/ListItem';
@@ -19,7 +21,7 @@ import {TypographyCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
 
 const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
-  const {entities: words} = useAppSelector((state) => state.wordsReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
   const listRef = useRef<GroupedVirtuosoHandle>(null);
   const [searchWord, setSearchWord] = useState<string>('');
@@ -75,35 +77,43 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
 
   return (
     <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => handleOpenSidebar()}>
-      <TextField name="search" placeholder="Start typing any word for search" onChange={handleChangeSearchWord} />
       <div className={styles.wrapper}>
-        {searchWord ? (
+        {loading === LoadingStatus.succeeded ? (
           <>
-            {filteredWords.length ? (
-              <Virtuoso
-                className={styles.wordList}
-                data={filteredWords}
-                itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
-              />
+            <TextField name="search" placeholder="Start typing any word for search" onChange={handleChangeSearchWord} fullWidth />
+            {searchWord ? (
+              <Grid className={styles.groupedContainer}>
+                {filteredWords.length ? (
+                  <Virtuoso
+                    className={styles.wordList}
+                    data={filteredWords}
+                    itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+                  />
+                ) : (
+                  <TypographyCustom>Nothing was found</TypographyCustom>
+                )}
+              </Grid>
             ) : (
-              <TypographyCustom>Nothing was found</TypographyCustom>
+              <Grid className={styles.groupedContainer} container>
+                <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentTabIndex={currentTabIndex} />
+                <GroupedVirtuoso
+                  className={styles.wordList}
+                  ref={listRef}
+                  initialTopMostItemIndex={{
+                    index: currentWordIndex,
+                    align: 'center',
+                  }}
+                  groupCounts={wordGroupsCounts}
+                  components={MUIComponents}
+                  groupContent={(index) => wordGroups[index]}
+                  itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+                />
+              </Grid>
             )}
           </>
         ) : (
-          <Grid className={styles.groupedContainer} container>
-            <WordGroupsList listRef={listRef} wordGroupsCounts={wordGroupsCounts} wordGroups={wordGroups} currentTabIndex={currentTabIndex} />
-            <GroupedVirtuoso
-              className={styles.wordList}
-              ref={listRef}
-              initialTopMostItemIndex={{
-                index: currentWordIndex,
-                align: 'center',
-              }}
-              groupCounts={wordGroupsCounts}
-              components={MUIComponents}
-              groupContent={(index) => wordGroups[index]}
-              itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
-            />
+          <Grid alignItems="center" justifyContent="center" container sx={{height: '100%'}}>
+            <CircularProgress />
           </Grid>
         )}
       </div>
