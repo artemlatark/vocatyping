@@ -6,7 +6,7 @@ import {State as CurrentWordState} from 'store/currentWord/types';
 
 import {Word} from 'models/Word';
 
-export interface SidebarProps {
+export interface SidebarDictionaryProps {
   sidebarOpen: boolean;
   handleOpenSidebar: (value?: boolean) => void;
 }

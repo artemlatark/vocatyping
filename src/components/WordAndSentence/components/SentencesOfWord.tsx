@@ -1,4 +1,4 @@
-import React, {useRef, Fragment, useState} from 'react';
+import React, {useRef, useState} from 'react';
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -42,10 +42,10 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speech: {i
     <>
       <div className={styles.sentenceOfWord} ref={sentenceRef} onMouseUp={openContextMenu} role="button" tabIndex={0}>
         {currentWord?.sentences.map((sentence, index) => (
-          <Fragment key={`${sentence}-${currentWord.id}-${index}`}>
+          <React.Fragment key={`${sentence}-${currentWord.id}-${index}`}>
             {index !== 0 && <br />}
             {sentence}
-          </Fragment>
+          </React.Fragment>
         ))}
       </div>
       <Menu
