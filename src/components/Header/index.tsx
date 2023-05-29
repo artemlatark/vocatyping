@@ -1,13 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
 import MenuIcon from '@mui/icons-material/Menu';
+/*
+ TODO: #69 return when one of the functions for tune the app will be implemented
+ import SettingsIcon from '@mui/icons-material/Settings';
+*/
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
-import Skeleton from '@mui/material/Skeleton';
 import Toolbar from '@mui/material/Toolbar';
 
 import {firebaseAuth} from 'config/firebase';
@@ -18,6 +21,7 @@ import {useKeyPress} from 'hooks/useKeyPress';
 import {initWord, changeWord} from 'store/currentWord/slice';
 
 import {LoadingStatus} from 'models/LoadingStatus';
+import {Word} from 'models/Word';
 
 import Pagination from 'components/Pagination';
 import SignInDialog from 'components/SignInDialog';
@@ -29,9 +33,9 @@ import {Props} from './types';
 const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
   const {entities: words, loading: loadingWords} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
-  const [user, loadingUser] = useAuthState(firebaseAuth);
+  const [user] = useAuthState(firebaseAuth);
   const [signOut] = useSignOut(firebaseAuth);
   const pressedAlt = useKeyPress('Alt');
   const pressedArrowLeft = useKeyPress('ArrowLeft');
@@ -45,63 +49,76 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     setOpenSignInDialog(value);
   };
 
-  const handleSwitchToPrevOrNextWord = (isPrev: boolean): void => {
-    const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
+  const handleSwitchToPrevOrNextWord = useCallback(
+    (currentWordIndex: number, words: Word[], isPrev: boolean): void => {
+      const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
 
-    dispatch(changeWord(word.id));
-    dispatch(initWord(word));
-  };
+      dispatch(changeWord(word.id));
+      dispatch(initWord(word));
+
+      handleOpenSidebar('dictionary', false);
+    },
+    [dispatch, handleOpenSidebar]
+  );
 
   const handleChangeWord = (handlerType: 'prev' | 'next'): void => {
-    handleSwitchToPrevOrNextWord(handlerType === 'prev');
+    handleSwitchToPrevOrNextWord(currentWordIndex, words, handlerType === 'prev');
   };
 
   useEffect(() => {
     if (pressedAlt && (pressedArrowLeft || pressedArrowRight)) {
-      handleSwitchToPrevOrNextWord(pressedArrowLeft);
-
-      handleOpenSidebar(false);
+      handleSwitchToPrevOrNextWord(currentWordIndex, words, pressedArrowLeft);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
+  }, [pressedAlt, pressedArrowLeft, pressedArrowRight, currentWordIndex, words, handleSwitchToPrevOrNextWord]);
 
   return (
     <>
       <AppBarCustom position="fixed" sx={{alignItems: 'center'}}>
         <Toolbar sx={{maxWidth: 990, width: '100%'}}>
-          <Grid wrap="nowrap" container>
-            <Grid alignItems="center" container item>
-              <IconButton onClick={() => handleOpenSidebar()} color="primary">
+          <Grid container item>
+            <Grid item>
+              <IconButton onClick={() => handleOpenSidebar('dictionary')} color="primary">
                 <MenuIcon />
               </IconButton>
-              <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />
+            </Grid>
+            <Grid item sx={{ml: 1, mr: 1}}>
+              <Divider orientation="vertical" />
+            </Grid>
+            <Grid item>
               <Pagination
                 handlePrev={() => handleChangeWord('prev')}
                 handleNext={() => handleChangeWord('next')}
-                currentNumber={currentWordIndex + 1}
+                currentNumber={currentWordId}
                 allNumbers={wordNumbers}
                 loading={loadingWords !== LoadingStatus.succeeded}
               />
             </Grid>
-            <Grid justifyContent="end" container item>
-              {!loadingUser ? (
-                <>
-                  {user ? (
-                    <UserProfileHeader user={user} signOut={signOut} />
-                  ) : (
-                    <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
-                      Sign In
-                    </Button>
-                  )}
-                </>
+          </Grid>
+          <Grid justifyContent="end" container item>
+            {/*
+              TODO: #69 return when one of the functions for tune the app will be implemented
+              <Grid item>
+                <IconButton onClick={() => handleOpenSidebar('options')}>
+                  <SettingsIcon />
+                </IconButton>
+              </Grid>
+              <Grid item sx={{ml: 1, mr: 1}}>
+                <Divider orientation="vertical" />
+              </Grid>
+            */}
+            <Grid item sx={{ml: 1}}>
+              {user ? (
+                <UserProfileHeader user={user} signOut={signOut} />
               ) : (
-                <Skeleton variant="circular" width={40} height={40} sx={{mr: 3}} />
+                <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
+                  Sign In
+                </Button>
               )}
             </Grid>
           </Grid>
         </Toolbar>
       </AppBarCustom>
-      <SignInDialog handleOpenClose={handleOpenCloseSignInDialog} isOpen={isOpenSignInDialog} />
+      <SignInDialog isOpen={isOpenSignInDialog} handleOpenClose={handleOpenCloseSignInDialog} />
     </>
   );
 });

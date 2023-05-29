@@ -20,7 +20,7 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOp
   });
 
   const onChangeWord = (): void => {
-    handleOpenSidebar();
+    handleOpenSidebar('dictionary');
 
     dispatch(changeWord(word.id));
     dispatch(initWord(word));

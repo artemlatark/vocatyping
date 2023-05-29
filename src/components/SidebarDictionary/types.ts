@@ -6,9 +6,11 @@ import {State as CurrentWordState} from 'store/currentWord/types';
 
 import {Word} from 'models/Word';
 
-export interface SidebarDictionaryProps {
-  sidebarOpen: boolean;
-  handleOpenSidebar: (value?: boolean) => void;
+import {HandleOpenSidebar} from 'components/Layout/types';
+
+export interface SidebarProps {
+  isOpen: boolean;
+  handleOpen: HandleOpenSidebar;
 }
 
 export interface WordGroups {
@@ -20,7 +22,7 @@ export interface ListItemProps {
   word: Word;
   index: number;
   currentWordId: CurrentWordState['currentWordId'];
-  handleOpenSidebar: (value?: boolean) => void;
+  handleOpenSidebar: HandleOpenSidebar;
 }
 
 export interface WordGroupsListProps extends WordGroups {

@@ -18,9 +18,9 @@ import MUIComponents from './components/MuiComponents';
 import WordGroupsList from './components/WordGroupsList';
 import styles from './index.module.css';
 import {TypographyCustom} from './styles';
-import {SidebarDictionaryProps, WordGroups} from './types';
+import {SidebarProps, WordGroups} from './types';
 
-const SidebarDictionary: React.FC<SidebarDictionaryProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
+const SidebarDictionary: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen}) => {
   const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
   const listRef = useRef<GroupedVirtuosoHandle>(null);
@@ -69,14 +69,14 @@ const SidebarDictionary: React.FC<SidebarDictionaryProps> = React.memo(({sidebar
   };
 
   useEffect(() => {
-    if (sidebarOpen) {
+    if (isOpen) {
       setSearchWord('');
       setFilteredWords([]);
     }
-  }, [sidebarOpen]);
+  }, [isOpen]);
 
   return (
-    <Drawer open={sidebarOpen} onClose={() => handleOpenSidebar()}>
+    <Drawer onClose={() => handleOpen('dictionary')} open={isOpen}>
       <div className={styles.wrapper}>
         {loading === LoadingStatus.succeeded ? (
           <>
@@ -87,7 +87,7 @@ const SidebarDictionary: React.FC<SidebarDictionaryProps> = React.memo(({sidebar
                   <Virtuoso
                     className={styles.wordList}
                     data={filteredWords}
-                    itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+                    itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpen} />}
                   />
                 ) : (
                   <TypographyCustom>Nothing was found</TypographyCustom>
@@ -106,7 +106,7 @@ const SidebarDictionary: React.FC<SidebarDictionaryProps> = React.memo(({sidebar
                   components={MUIComponents}
                   groupCounts={wordGroupsCounts}
                   groupContent={(index) => wordGroups[index]}
-                  itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+                  itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpen} />}
                 />
               </Grid>
             )}
