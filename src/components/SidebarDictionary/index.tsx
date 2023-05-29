@@ -20,7 +20,7 @@ import styles from './index.module.css';
 import {TypographyCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
 
-const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSidebar}) => {
+const SidebarDictionary: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen}) => {
   const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
   const listRef = useRef<GroupedVirtuosoHandle>(null);
@@ -69,25 +69,25 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
   };
 
   useEffect(() => {
-    if (sidebarOpen) {
+    if (isOpen) {
       setSearchWord('');
       setFilteredWords([]);
     }
-  }, [sidebarOpen]);
+  }, [isOpen]);
 
   return (
-    <Drawer variant="temporary" anchor="left" open={sidebarOpen} onClose={() => handleOpenSidebar()}>
+    <Drawer onClose={() => handleOpen('dictionary')} open={isOpen}>
       <div className={styles.wrapper}>
         {loading === LoadingStatus.succeeded ? (
           <>
-            <TextField name="search" placeholder="Start typing any word for search" onChange={handleChangeSearchWord} fullWidth />
+            <TextField name="search" placeholder="Start typing any word for search" onChange={handleChangeSearchWord} autoComplete="off" fullWidth />
             {searchWord ? (
               <Grid className={styles.groupedContainer}>
                 {filteredWords.length ? (
                   <Virtuoso
                     className={styles.wordList}
                     data={filteredWords}
-                    itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+                    itemContent={(index, word) => <ListItem word={word} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpen} />}
                   />
                 ) : (
                   <TypographyCustom>Nothing was found</TypographyCustom>
@@ -103,10 +103,10 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
                     index: currentWordIndex,
                     align: 'center',
                   }}
-                  groupCounts={wordGroupsCounts}
                   components={MUIComponents}
+                  groupCounts={wordGroupsCounts}
                   groupContent={(index) => wordGroups[index]}
-                  itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpenSidebar} />}
+                  itemContent={(index) => <ListItem word={words[index]} index={index} currentWordId={currentWordId} handleOpenSidebar={handleOpen} />}
                 />
               </Grid>
             )}
@@ -121,4 +121,4 @@ const Sidebar: React.FC<SidebarProps> = React.memo(({sidebarOpen, handleOpenSide
   );
 });
 
-export default Sidebar;
+export default SidebarDictionary;

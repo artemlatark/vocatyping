@@ -1,4 +1,4 @@
-import React, {Fragment, memo} from 'react';
+import React from 'react';
 
 import cx from 'classnames';
 
@@ -12,7 +12,7 @@ import {changeTense, checkTenseVariant} from 'store/currentWord/slice';
 import styles from '../index.module.css';
 import {TensesOfWordProps} from '../types';
 
-const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, tenseIndex, speech: {isSpeaking, speak, cancelSpeaking}, voice}) => {
+const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tenseIndex, speech: {isSpeaking, speak, cancelSpeaking}, voice}) => {
   const dispatch = useAppDispatch();
   const onSpeechWord = (): void => {
     if (isSpeaking) cancelSpeaking();
@@ -27,12 +27,12 @@ const TensesOfWord: React.FC<TensesOfWordProps> = memo(({currentWord, tenseIndex
   return (
     <div className={styles.tensesOfWord}>
       {currentWord?.tenses.map((tense, index, thisArg) => (
-        <Fragment key={tense}>
+        <React.Fragment key={tense}>
           <button onClick={() => handleSelectTenseVariant(index)} className={cx(styles.tenseVariant, {[styles.currentTenseVariant]: index === tenseIndex})}>
             {tense}
           </button>
           {index !== thisArg.length - 1 ? ', ' : null}
-        </Fragment>
+        </React.Fragment>
       ))}
       <IconButton onClick={() => onSpeechWord()} color="primary" size="small" sx={{mt: -1, ml: 1}}>
         <VolumeUpIcon />
