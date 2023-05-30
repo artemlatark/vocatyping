@@ -3,10 +3,7 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
 import MenuIcon from '@mui/icons-material/Menu';
-/*
- TODO: #69 return when one of the functions for tune the app will be implemented
- import SettingsIcon from '@mui/icons-material/Settings';
-*/
+import SettingsIcon from '@mui/icons-material/Settings';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
@@ -95,17 +92,14 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
             </Grid>
           </Grid>
           <Grid justifyContent="end" container item>
-            {/*
-              TODO: #69 return when one of the functions for tune the app will be implemented
-              <Grid item>
-                <IconButton onClick={() => handleOpenSidebar('options')}>
-                  <SettingsIcon />
-                </IconButton>
-              </Grid>
-              <Grid item sx={{ml: 1, mr: 1}}>
-                <Divider orientation="vertical" />
-              </Grid>
-            */}
+            <Grid item>
+              <IconButton onClick={() => handleOpenSidebar('options')}>
+                <SettingsIcon />
+              </IconButton>
+            </Grid>
+            <Grid item sx={{ml: 1, mr: 1}}>
+              <Divider orientation="vertical" />
+            </Grid>
             <Grid item sx={{ml: 1}}>
               {user ? (
                 <UserProfileHeader user={user} signOut={signOut} />
