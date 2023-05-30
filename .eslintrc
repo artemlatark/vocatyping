@@ -75,6 +75,11 @@
             "position": "before"
           },
           {
+            "pattern": "context/**/*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "components/**/*",
             "group": "internal",
             "position": "before"

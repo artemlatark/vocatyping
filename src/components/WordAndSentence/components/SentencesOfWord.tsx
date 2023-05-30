@@ -3,10 +3,13 @@ import React, {useRef, useState} from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
+import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
+
 import styles from '../index.module.css';
 import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
-const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speech: {isSpeaking, speak, cancelSpeaking}, voice}) => {
+const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
+  const {speechSynthesisCtx} = useSpeechSynthesisContext();
   const [contextMenuPosition, setContextMenuPosition] = useState<ContextMenuPosition | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
@@ -33,8 +36,16 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord, speech: {i
   };
 
   const listenSelectionPhraseInSentence = (): void => {
-    if (isSpeaking) cancelSpeaking();
-    speak({text: window.getSelection()?.toString(), voice, rate: 0.8});
+    if (speechSynthesisCtx?.isSpeaking) {
+      speechSynthesisCtx?.cancelSpeaking();
+    }
+
+    speechSynthesisCtx?.speak({
+      text: window.getSelection()?.toString(),
+      voice: speechSynthesisCtx?.selectedVoice,
+      rate: 1,
+    });
+
     closeContextMenu();
   };
 

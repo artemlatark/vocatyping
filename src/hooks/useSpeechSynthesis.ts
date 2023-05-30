@@ -44,7 +44,7 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const speak = ({lang = 'en-US', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
+  const speak = ({lang = 'en', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
     if (!isSupported) return;
 
     setIsSpeaking(true);
