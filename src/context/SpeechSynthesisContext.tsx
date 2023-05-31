@@ -3,11 +3,11 @@ import React, {createContext, useContext, useMemo, useState} from 'react';
 import {Speech} from 'hooks/useSpeechSynthesis';
 
 export type SpeechSynthesisContextType = {
-  speechSynthesisCtx: SpeechSynthesisContextState;
-  setSpeechSynthesisCtx: React.Dispatch<React.SetStateAction<SpeechSynthesisContextState>>;
+  speechSynthesisCtx: SpeechSynthesisContextStateType;
+  setSpeechSynthesisCtx: React.Dispatch<React.SetStateAction<SpeechSynthesisContextStateType>>;
 };
 
-export type SpeechSynthesisContextState = (Speech & {selectedVoice: SpeechSynthesisVoice | undefined}) | null;
+export type SpeechSynthesisContextStateType = (Speech & {selectedVoice: SpeechSynthesisVoice | undefined}) | null;
 
 interface SpeechSynthesisContextProviderProps {
   children: React.ReactNode;
@@ -16,7 +16,7 @@ interface SpeechSynthesisContextProviderProps {
 export const SpeechSynthesisContext = createContext<SpeechSynthesisContextType | null>(null);
 
 export const SpeechSynthesisContextProvider = ({children}: SpeechSynthesisContextProviderProps) => {
-  const [speechSynthesisCtx, setSpeechSynthesisCtx] = useState<SpeechSynthesisContextState>(null);
+  const [speechSynthesisCtx, setSpeechSynthesisCtx] = useState<SpeechSynthesisContextStateType>(null);
 
   const memoizedContextValue = useMemo(
     () => ({

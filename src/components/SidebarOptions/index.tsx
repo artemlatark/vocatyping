@@ -12,7 +12,7 @@ import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {setVoice} from 'store/options/slice';
 
-import {SpeechSynthesisContextState, useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
+import {SpeechSynthesisContextStateType, useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
 import styles from './index.module.css';
 import {SidebarProps} from './types';
@@ -30,7 +30,7 @@ const SidebarOptions: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen})
 
     setVoiceForSpeech(selectedVoiceURI);
     dispatch(setVoice(selectedVoiceURI));
-    setSpeechSynthesisCtx((prevState) => ({...prevState, selectedVoice} as SpeechSynthesisContextState));
+    setSpeechSynthesisCtx((prevState) => ({...prevState, selectedVoice} as SpeechSynthesisContextStateType));
   };
 
   return (
