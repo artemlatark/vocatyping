@@ -24,19 +24,17 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     let voiceOptions = window.speechSynthesis.getVoices();
 
     if (voiceOptions.length > 0) {
-      setVoices(voiceOptions);
-      return;
-    } else {
-      setTimeout(() => getVoices(), 50);
+      return setVoices(voiceOptions);
     }
 
-    window.speechSynthesis.onvoiceschanged = (event: any) => {
-      voiceOptions = event.target.getVoices();
+    window.speechSynthesis.onvoiceschanged = (event) => {
+      const target = event.target as SpeechSynthesis;
+      voiceOptions = target.getVoices();
       setVoices(voiceOptions);
     };
   };
 
-  const speak = ({lang = 'en-US', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
+  const speak = ({lang = 'en', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
     if (!isSupported) return;
 
     setIsSpeaking(true);
@@ -67,10 +65,14 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
   useEffect(() => {
     if (typeof window !== 'undefined' && window.speechSynthesis) {
       setIsSupported(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isSupported) {
       getVoices();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [isSupported]);
 
   return {
     voices,

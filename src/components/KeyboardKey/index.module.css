@@ -10,6 +10,7 @@
   padding: 0 4px;
   line-height: 60px;
   text-align: center;
+  transition: background-color 250ms ease-out;
   user-select: none;
   width: 68px;
 }

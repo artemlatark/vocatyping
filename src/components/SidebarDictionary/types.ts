@@ -4,11 +4,13 @@ import {GroupedVirtuosoHandle} from 'react-virtuoso';
 
 import {State as CurrentWordState} from 'store/currentWord/types';
 
-import {CurrentWord, Word} from 'models/Word';
+import {Word} from 'models/Word';
+
+import {HandleOpenSidebar} from 'components/Layout/types';
 
 export interface SidebarProps {
-  sidebarOpen: boolean;
-  handleOpenSidebar: (value?: boolean) => void;
+  isOpen: boolean;
+  handleOpen: HandleOpenSidebar;
 }
 
 export interface WordGroups {
@@ -20,9 +22,10 @@ export interface ListItemProps {
   word: Word;
   index: number;
   currentWordId: CurrentWordState['currentWordId'];
-  handleOpenSidebar: (value?: boolean) => void;
+  handleOpenSidebar: HandleOpenSidebar;
 }
 
-export interface WordGroupsListProps extends WordGroups, CurrentWord {
+export interface WordGroupsListProps extends WordGroups {
   listRef: React.RefObject<GroupedVirtuosoHandle>;
+  currentTabIndex: number;
 }

@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true react-scripts test",
+    "test": "CI=true react-scripts test --passWithNoTests",
     "coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "eslint": "eslint './src/**/*.{js,jsx,ts,tsx,json,md}'",

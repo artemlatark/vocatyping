@@ -1,13 +1,11 @@
-import React, {useEffect, useMemo} from 'react';
+import React, {useState} from 'react';
 
 import styles from './index.module.css';
 import {TabCustom, TabsCustom} from './styles';
 import {WordGroupsListProps} from '../../types';
 
-const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCounts, wordGroups, currentWord}) => {
-  const [tabIndex, setTabIndex] = React.useState(0);
-
-  const currentWordGroup: number = useMemo(() => wordGroups.findIndex((letter) => letter === currentWord?.tenses[0][0]), [currentWord, wordGroups]);
+const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCounts, wordGroups, currentTabIndex}) => {
+  const [tabIndex, setTabIndex] = useState<number>(currentTabIndex);
 
   const handlerChangeTab = (itemIndex: number, newTabIndex: number): void => {
     if (listRef.current) {
@@ -19,10 +17,6 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
       });
     }
   };
-
-  useEffect(() => {
-    setTabIndex(currentWordGroup !== -1 ? currentWordGroup : 0);
-  }, [currentWordGroup]);
 
   return (
     <TabsCustom orientation="vertical" variant="scrollable" value={tabIndex} sx={{borderRight: 1, borderColor: 'divider'}}>

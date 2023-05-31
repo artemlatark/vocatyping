@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 
 import {useAuthState, useSignOut} from 'react-firebase-hooks/auth';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import SettingsIcon from '@mui/icons-material/Settings';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
@@ -16,6 +17,9 @@ import {useKeyPress} from 'hooks/useKeyPress';
 
 import {initWord, changeWord} from 'store/currentWord/slice';
 
+import {LoadingStatus} from 'models/LoadingStatus';
+import {Word} from 'models/Word';
+
 import Pagination from 'components/Pagination';
 import SignInDialog from 'components/SignInDialog';
 import UserProfileHeader from 'components/UserProfileHeader';
@@ -25,9 +29,8 @@ import {Props} from './types';
 
 const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
-
-  const {entities: words} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {entities: words, loading: loadingWords} = useAppSelector((state) => state.wordsReducer);
+  const {currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
 
   const [user] = useAuthState(firebaseAuth);
   const [signOut] = useSignOut(firebaseAuth);
@@ -35,7 +38,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');
 
-  const [isOpenSignInDialog, setOpenSignInDialog] = React.useState(false);
+  const [isOpenSignInDialog, setOpenSignInDialog] = useState(false);
 
   const wordNumbers = words.length;
 
@@ -43,39 +46,61 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     setOpenSignInDialog(value);
   };
 
-  const handleSwitchToPrevOrNextWord = (isPrev: boolean): void => {
-    const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
+  const handleSwitchToPrevOrNextWord = useCallback(
+    (currentWordIndex: number, words: Word[], isPrev: boolean): void => {
+      const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
 
-    dispatch(changeWord(word.id));
-    dispatch(initWord(word));
-  };
+      dispatch(changeWord(word.id));
+      dispatch(initWord(word));
+
+      handleOpenSidebar('dictionary', false);
+    },
+    [dispatch, handleOpenSidebar]
+  );
 
   const handleChangeWord = (handlerType: 'prev' | 'next'): void => {
-    handleSwitchToPrevOrNextWord(handlerType === 'prev');
+    handleSwitchToPrevOrNextWord(currentWordIndex, words, handlerType === 'prev');
   };
 
   useEffect(() => {
     if (pressedAlt && (pressedArrowLeft || pressedArrowRight)) {
-      handleSwitchToPrevOrNextWord(pressedArrowLeft);
-
-      handleOpenSidebar(false);
+      handleSwitchToPrevOrNextWord(currentWordIndex, words, pressedArrowLeft);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
+  }, [pressedAlt, pressedArrowLeft, pressedArrowRight, currentWordIndex, words, handleSwitchToPrevOrNextWord]);
 
   return (
     <>
       <AppBarCustom position="fixed" sx={{alignItems: 'center'}}>
         <Toolbar sx={{maxWidth: 990, width: '100%'}}>
-          <Grid wrap="nowrap" container>
-            <Grid alignItems="center" container item>
-              <IconButton onClick={() => handleOpenSidebar()} color="primary">
+          <Grid container item>
+            <Grid item>
+              <IconButton onClick={() => handleOpenSidebar('dictionary')} color="primary">
                 <MenuIcon />
               </IconButton>
-              <Divider orientation="vertical" flexItem sx={{ml: 1, mr: 1}} />
-              <Pagination handlePrev={() => handleChangeWord('prev')} handleNext={() => handleChangeWord('next')} currentNumber={currentWordIndex + 1} allNumbers={wordNumbers} />
             </Grid>
-            <Grid justifyContent="end" container item>
+            <Grid item sx={{ml: 1, mr: 1}}>
+              <Divider orientation="vertical" />
+            </Grid>
+            <Grid item>
+              <Pagination
+                handlePrev={() => handleChangeWord('prev')}
+                handleNext={() => handleChangeWord('next')}
+                currentNumber={currentWordId}
+                allNumbers={wordNumbers}
+                loading={loadingWords !== LoadingStatus.succeeded}
+              />
+            </Grid>
+          </Grid>
+          <Grid justifyContent="end" container item>
+            <Grid item>
+              <IconButton onClick={() => handleOpenSidebar('options')}>
+                <SettingsIcon />
+              </IconButton>
+            </Grid>
+            <Grid item sx={{ml: 1, mr: 1}}>
+              <Divider orientation="vertical" />
+            </Grid>
+            <Grid item sx={{ml: 1}}>
               {user ? (
                 <UserProfileHeader user={user} signOut={signOut} />
               ) : (
@@ -87,7 +112,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
           </Grid>
         </Toolbar>
       </AppBarCustom>
-      <SignInDialog handleOpenClose={handleOpenCloseSignInDialog} isOpen={isOpenSignInDialog} />
+      <SignInDialog isOpen={isOpenSignInDialog} handleOpenClose={handleOpenCloseSignInDialog} />
     </>
   );
 });
