@@ -1,4 +1,3 @@
-// Define general type for useWindowSize hook, which includes width and height
 import {useEffect, useState} from 'react';
 
 interface Size {
@@ -6,7 +5,6 @@ interface Size {
   height: number | undefined;
 }
 
-// Hook
 export function useWindowSize(): Size {
   const [windowSize, setWindowSize] = useState<Size>({
     width: undefined,
@@ -21,10 +19,11 @@ export function useWindowSize(): Size {
       });
     };
 
-    window.addEventListener('resize', handleResize);
-
     handleResize();
+
+    window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
   return windowSize;
 }
