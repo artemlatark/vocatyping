@@ -13,12 +13,11 @@ describe('Store Words Slice Action Creators', () => {
   });
 
   test('fetchDictionary rejected', async () => {
-    // @ts-ignore
-    const fetchDictionaryResult = await mockedStore.dispatch(fetchDictionary({initialWordId: '123123'}));
+    const fetchDictionaryResult = await mockedStore.dispatch(fetchDictionary({initialWordId: 0, dictionaryURL: 'sa213@#dw32D1'}));
     const expectedType = 'words/fetchDictionary/rejected';
     const expectedPayload = {
-      name: 'TypeError',
-      message: "Cannot read properties of undefined (reading 'sentences')",
+      name: 'FirebaseError',
+      message: "Firebase Storage: Object 'sa213@#dw32D1' does not exist. (storage/object-not-found)",
     };
 
     expect(fetchDictionaryResult.type).toBe(expectedType);
