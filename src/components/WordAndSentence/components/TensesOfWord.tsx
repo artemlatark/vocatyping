@@ -16,16 +16,16 @@ import {TensesOfWordProps} from '../types';
 
 const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tenseIndex}) => {
   const dispatch = useAppDispatch();
-  const {speechSynthesisCtx} = useSpeechSynthesisContext();
+  const {speechSynthesis} = useSpeechSynthesisContext();
 
   const onSpeechWord = (): void => {
-    if (speechSynthesisCtx?.isSpeaking) {
-      speechSynthesisCtx?.cancelSpeaking();
+    if (speechSynthesis?.isSpeaking) {
+      speechSynthesis?.cancelSpeaking();
     }
 
-    speechSynthesisCtx?.speak({
+    speechSynthesis?.speak({
       text: currentWord?.tenses[tenseIndex],
-      voice: speechSynthesisCtx?.selectedVoice,
+      voice: speechSynthesis?.selectedVoice,
       rate: 1,
     });
   };

@@ -9,7 +9,7 @@ import styles from '../index.module.css';
 import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
 const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
-  const {speechSynthesisCtx} = useSpeechSynthesisContext();
+  const {speechSynthesis} = useSpeechSynthesisContext();
   const [contextMenuPosition, setContextMenuPosition] = useState<ContextMenuPosition | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
@@ -36,13 +36,13 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
   };
 
   const listenSelectionPhraseInSentence = (): void => {
-    if (speechSynthesisCtx?.isSpeaking) {
-      speechSynthesisCtx?.cancelSpeaking();
+    if (speechSynthesis?.isSpeaking) {
+      speechSynthesis?.cancelSpeaking();
     }
 
-    speechSynthesisCtx?.speak({
+    speechSynthesis?.speak({
       text: window.getSelection()?.toString(),
-      voice: speechSynthesisCtx?.selectedVoice,
+      voice: speechSynthesis?.selectedVoice,
       rate: 1,
     });
 

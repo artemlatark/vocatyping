@@ -12,7 +12,7 @@ import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {setVoice} from 'store/options/slice';
 
-import {SpeechSynthesisContextStateType, useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
+import {SpeechSynthesisContextState, useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
 import styles from './index.module.css';
 import {SidebarProps} from './types';
@@ -20,17 +20,17 @@ import {SidebarProps} from './types';
 const SidebarOptions: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen}) => {
   const dispatch = useAppDispatch();
   const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
-  const {speechSynthesisCtx, setSpeechSynthesisCtx} = useSpeechSynthesisContext();
+  const {speechSynthesis, setSpeechSynthesis} = useSpeechSynthesisContext();
   const [voiceForSpeech, setVoiceForSpeech] = React.useState<string>(currentVoiceURI);
 
   const handleChange = ({target}: SelectChangeEvent) => {
     const selectedVoiceURI = target.value;
-    const voices = speechSynthesisCtx?.voices as SpeechSynthesisVoice[];
-    const selectedVoice = voices.find((voice) => voice.name === selectedVoiceURI);
+    const voices = speechSynthesis?.voices as SpeechSynthesisVoice[];
+    const selectedVoice = voices.find((voice) => voice.name === selectedVoiceURI) ?? voices[0];
 
     setVoiceForSpeech(selectedVoiceURI);
     dispatch(setVoice(selectedVoiceURI));
-    setSpeechSynthesisCtx((prevState) => ({...prevState, selectedVoice} as SpeechSynthesisContextStateType));
+    setSpeechSynthesis((prevState) => ({...prevState, selectedVoice} as SpeechSynthesisContextState));
   };
 
   return (
@@ -43,7 +43,7 @@ const SidebarOptions: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen})
           <FormControl fullWidth>
             <InputLabel>Voice for speech</InputLabel>
             <Select value={voiceForSpeech} label="Voice for speech" onChange={handleChange}>
-              {speechSynthesisCtx?.voices.map((voice) => (
+              {speechSynthesis?.voices.map((voice) => (
                 <MenuItem key={voice.voiceURI} value={voice.voiceURI} selected={voice.voiceURI === voiceForSpeech}>
                   {voice.name}
                 </MenuItem>

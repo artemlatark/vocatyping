@@ -11,21 +11,21 @@ import Main from './pages/Main';
 function App() {
   const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
   const speechSynthesis = useSpeechSynthesis();
-  const {setSpeechSynthesisCtx} = useSpeechSynthesisContext();
+  const {setSpeechSynthesis} = useSpeechSynthesisContext();
 
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
   console.log(prefersDarkMode);
 
   useEffect(() => {
-    setSpeechSynthesisCtx((prevState) => {
+    setSpeechSynthesis((prevState) => {
       const voices = speechSynthesis.voices.filter((voice) => favoriteLanguages.includes(voice.lang));
 
       if (!voices.length) return prevState;
 
       speechSynthesis.voices = voices;
 
-      let selectedVoice = voices.find((voice) => voice.name === currentVoiceURI);
+      const selectedVoice = voices.find((voice) => voice.name === currentVoiceURI) ?? voices[0];
 
       return {...prevState, ...speechSynthesis, selectedVoice};
     });
