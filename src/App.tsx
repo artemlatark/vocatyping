@@ -1,5 +1,7 @@
 import {useEffect} from 'react';
 
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 import {favoriteLanguages} from './config/options';
 import {useSpeechSynthesisContext} from './context/SpeechSynthesisContext';
 import {useAppSelector} from './hooks/redux';
@@ -10,6 +12,10 @@ function App() {
   const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
   const speechSynthesis = useSpeechSynthesis();
   const {setSpeechSynthesisCtx} = useSpeechSynthesisContext();
+
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  console.log(prefersDarkMode);
 
   useEffect(() => {
     setSpeechSynthesisCtx((prevState) => {
