@@ -7,12 +7,7 @@ import {useAppSelector} from 'hooks/redux';
 
 import {State as StateRreducerOptions} from 'store/options/types';
 
-interface ThemeContextValue {
-  themeColor: ThemeContextState;
-  setThemeColor: React.Dispatch<React.SetStateAction<ThemeContextState>>;
-}
-
-type ThemeContextState = PaletteMode;
+type ThemeContextValue = PaletteMode;
 
 interface ThemeContextProviderProps {
   children: React.ReactNode;
@@ -32,15 +27,9 @@ export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
   const {themeMode} = useAppSelector((state) => state.optionsReducer);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: light)');
   const currentThemeColor = useMemo(() => getCurrentThemeColor(themeMode, prefersDarkMode), [themeMode, prefersDarkMode]);
-  const [themeColor, setThemeColor] = useState<ThemeContextState>(currentThemeColor);
+  const [themeColor, setThemeColor] = useState<ThemeContextValue>(currentThemeColor);
 
-  const memoizedContextValue = useMemo(
-    () => ({
-      themeColor,
-      setThemeColor,
-    }),
-    [themeColor, setThemeColor]
-  );
+  const memoizedContextValue = useMemo(() => themeColor, [themeColor]);
 
   useEffect(() => {
     setThemeColor(currentThemeColor);

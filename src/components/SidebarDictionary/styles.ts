@@ -1,4 +1,4 @@
-import {styled, ListItem, ListSubheader, Typography} from '@mui/material';
+import {styled, ListItem, ListSubheader, Typography, ListSubheaderProps} from '@mui/material';
 
 export const TypographyCustom = styled(Typography)({
   alignItems: 'center',
@@ -13,13 +13,13 @@ export const ListItemCustom = styled(ListItem)({
   },
 });
 
-export const ListSubheaderCustom = styled(ListSubheader)({
+export const ListSubheaderCustom = styled(ListSubheader)<ListSubheaderProps>(({theme}) => ({
   '&': {
-    backgroundColor: 'white',
-    color: 'black',
+    backgroundColor: theme.palette.mode === 'light' ? 'white' : '#353535',
+    color: theme.palette.mode === 'light' ? 'black' : 'white',
     fontWeight: 600,
     fontSize: 20,
     paddingBottom: 10,
     paddingTop: 10,
   },
-});
+}));

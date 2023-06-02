@@ -9,8 +9,6 @@ import {State} from './types';
 const currentVoice_LS: State['currentVoiceURI'] = getFromLocalStorage('currentVoiceURI');
 const currentThemeMode_LS: State['themeMode'] = getFromLocalStorage('themeMode');
 
-console.log(currentThemeMode_LS);
-
 export const initialState: State = {
   currentVoiceURI: currentVoice_LS ?? defaultVoiceURI,
   themeMode: currentThemeMode_LS ?? defaultThemeMode,

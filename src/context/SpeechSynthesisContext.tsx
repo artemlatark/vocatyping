@@ -29,6 +29,7 @@ export const SpeechSynthesisContextProvider = ({children}: SpeechSynthesisContex
   return <SpeechSynthesisContext.Provider value={memoizedContextValue} children={children} />;
 };
 
+// TODO: see https://github.com/artemkrynkin/typerighting/issues/73
 export const useSpeechSynthesisContext = () => {
   const speechSynthesisContext = useContext(SpeechSynthesisContext);
 

@@ -31,6 +31,10 @@ const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tens
   };
 
   const handleSelectTenseVariant = (tenseIndex: number): void => {
+    if (speechSynthesis?.isSpeaking) {
+      speechSynthesis?.cancelSpeaking();
+    }
+
     dispatch(changeTense(tenseIndex));
     dispatch(checkTenseVariant(''));
   };

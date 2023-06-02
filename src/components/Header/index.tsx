@@ -46,6 +46,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     setOpenSignInDialog(value);
   };
 
+  // TODO: need to fix it
   const handleSwitchToPrevOrNextWord = useCallback(
     (currentWordIndex: number, words: Word[], isPrev: boolean): void => {
       const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];
@@ -58,15 +59,19 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     [dispatch, handleOpenSidebar]
   );
 
-  const handleChangeWord = (handlerType: 'prev' | 'next'): void => {
-    handleSwitchToPrevOrNextWord(currentWordIndex, words, handlerType === 'prev');
-  };
+  const handleChangeWord = useCallback(
+    (handlerType: 'prev' | 'next'): void => {
+      handleSwitchToPrevOrNextWord(currentWordIndex, words, handlerType === 'prev');
+    },
+    [currentWordIndex, handleSwitchToPrevOrNextWord, words]
+  );
 
   useEffect(() => {
     if (pressedAlt && (pressedArrowLeft || pressedArrowRight)) {
-      handleSwitchToPrevOrNextWord(currentWordIndex, words, pressedArrowLeft);
+      handleChangeWord(pressedArrowLeft ? 'prev' : 'next');
     }
-  }, [pressedAlt, pressedArrowLeft, pressedArrowRight, currentWordIndex, words, handleSwitchToPrevOrNextWord]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pressedAlt, pressedArrowLeft, pressedArrowRight]);
 
   return (
     <>

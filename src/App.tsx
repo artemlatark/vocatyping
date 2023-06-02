@@ -17,7 +17,7 @@ function App() {
   const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
   const speechSynthesis = useSpeechSynthesis();
   const {setSpeechSynthesis} = useSpeechSynthesisContext();
-  const {themeColor} = useThemeContext();
+  const themeColor = useThemeContext();
 
   useEffect(() => {
     setSpeechSynthesis((prevState) => {
