@@ -2,10 +2,10 @@ import React, {createContext, useContext, useMemo, useState} from 'react';
 
 import {Speech} from 'hooks/useSpeechSynthesis';
 
-export type SpeechSynthesisContextValue = {
+export interface SpeechSynthesisContextValue {
   speechSynthesis: SpeechSynthesisContextState;
   setSpeechSynthesis: React.Dispatch<React.SetStateAction<SpeechSynthesisContextState>>;
-};
+}
 
 export type SpeechSynthesisContextState = (Speech & {selectedVoice: SpeechSynthesisVoice}) | null;
 
