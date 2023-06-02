@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 
-export interface SpeechSynthesisUtterancePicked extends Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>> {}
+export type SpeechSynthesisUtterancePicked = Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>>;
 
 interface Props {
   onEnd?: () => void;

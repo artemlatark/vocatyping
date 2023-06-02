@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {setVoice} from 'store/options/slice';
+import {State as StateOptionsReducer} from 'store/options/types';
 
 import {SpeechSynthesisContextState, useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
@@ -21,7 +22,7 @@ const SidebarOptions: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen})
   const dispatch = useAppDispatch();
   const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
   const {speechSynthesis, setSpeechSynthesis} = useSpeechSynthesisContext();
-  const [voiceForSpeech, setVoiceForSpeech] = React.useState<string>(currentVoiceURI);
+  const [voiceForSpeech, setVoiceForSpeech] = useState<StateOptionsReducer['currentVoiceURI']>(currentVoiceURI);
 
   const handleChange = ({target}: SelectChangeEvent) => {
     const selectedVoiceURI = target.value;
@@ -29,8 +30,8 @@ const SidebarOptions: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen})
     const selectedVoice = voices.find((voice) => voice.name === selectedVoiceURI) ?? voices[0];
 
     setVoiceForSpeech(selectedVoiceURI);
-    dispatch(setVoice(selectedVoiceURI));
     setSpeechSynthesis((prevState) => ({...prevState, selectedVoice} as SpeechSynthesisContextState));
+    dispatch(setVoice(selectedVoiceURI));
   };
 
   return (

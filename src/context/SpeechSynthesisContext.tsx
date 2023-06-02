@@ -2,7 +2,7 @@ import React, {createContext, useContext, useMemo, useState} from 'react';
 
 import {Speech} from 'hooks/useSpeechSynthesis';
 
-export interface SpeechSynthesisContextValue {
+interface SpeechSynthesisContextValue {
   speechSynthesis: SpeechSynthesisContextState;
   setSpeechSynthesis: React.Dispatch<React.SetStateAction<SpeechSynthesisContextState>>;
 }

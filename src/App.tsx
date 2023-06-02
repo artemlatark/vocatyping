@@ -1,21 +1,23 @@
 import {useEffect} from 'react';
 
-import useMediaQuery from '@mui/material/useMediaQuery';
+import {ThemeProvider} from '@mui/material/styles';
 
-import {favoriteLanguages} from './config/options';
-import {useSpeechSynthesisContext} from './context/SpeechSynthesisContext';
-import {useAppSelector} from './hooks/redux';
-import {useSpeechSynthesis} from './hooks/useSpeechSynthesis';
-import Main from './pages/Main';
+import {favoriteLanguages} from 'config/options';
+import {theme} from 'config/theme';
+
+import {useAppSelector} from 'hooks/redux';
+import {useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
+
+import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
+import {useThemeContext} from 'context/ThemeContext';
+
+import Main from 'pages/Main';
 
 function App() {
   const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
   const speechSynthesis = useSpeechSynthesis();
   const {setSpeechSynthesis} = useSpeechSynthesisContext();
-
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-
-  console.log(prefersDarkMode);
+  const {themeColor} = useThemeContext();
 
   useEffect(() => {
     setSpeechSynthesis((prevState) => {
@@ -32,7 +34,11 @@ function App() {
     /* eslint-disable react-hooks/exhaustive-deps */
   }, [speechSynthesis.voices]);
 
-  return <Main />;
+  return (
+    <ThemeProvider theme={theme[themeColor]}>
+      <Main />
+    </ThemeProvider>
+  );
 }
 
 export default App;

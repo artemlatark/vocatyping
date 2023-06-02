@@ -16,7 +16,7 @@ import {Props, StateDialog} from './types';
 const SignInDialog: React.FC<Props> = ({handleOpenClose, isOpen}) => {
   const [stateDialog, setStateDialog] = useState<StateDialog>('signIn');
   const isStateDialogSignIn = stateDialog === 'signIn';
-  const [isOpenResetPasswordDialog, setOpenResetPasswordDialog] = React.useState(false);
+  const [isOpenResetPasswordDialog, setOpenResetPasswordDialog] = useState(false);
 
   const handleOpenCloseResetPasswordDialog = (value: boolean): void => {
     setOpenResetPasswordDialog(value);
