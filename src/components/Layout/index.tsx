@@ -1,9 +1,5 @@
 import React, {useCallback, useState} from 'react';
 
-import cx from 'classnames';
-
-import {useThemeContext} from 'context/ThemeContext';
-
 import Header from 'components/Header';
 import SidebarDictionary from 'components/SidebarDictionary';
 import SidebarOptions from 'components/SidebarOptions';
@@ -12,7 +8,6 @@ import styles from './index.module.css';
 import {HandleOpenSidebar, Props} from './types';
 
 const Layout: React.FC<Props> = ({children}) => {
-  const themeColor = useThemeContext();
   const [sidebarDictionaryOpen, setSidebarDictionaryOpen] = useState(false);
   const [sidebarOptionsOpen, setSidebarOptionsOpen] = useState(false);
 
@@ -23,12 +18,8 @@ const Layout: React.FC<Props> = ({children}) => {
     if (sidebarName === 'options') setSidebarOptionsOpen(setStateAction);
   }, []);
 
-  const layoutClassNames = cx(styles.layout, {
-    [styles.layoutDark]: themeColor === 'dark',
-  });
-
   return (
-    <div className={layoutClassNames}>
+    <div className={styles.layout}>
       <SidebarDictionary isOpen={sidebarDictionaryOpen} handleOpen={handleOpenSidebar} />
       <SidebarOptions isOpen={sidebarOptionsOpen} handleOpen={handleOpenSidebar} />
       <div className={styles.content}>

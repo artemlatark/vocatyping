@@ -10,14 +10,14 @@ import {LoadingStatus} from 'models/LoadingStatus';
 import SentencesOfWord from './components/SentencesOfWord';
 import SpreadOutWord from './components/SpreadOutWord';
 import TensesOfWord from './components/TensesOfWord';
-import styles from './index.module.css';
+import {WordAndSentenceConatiner} from './styles';
 
 const WordAndSentence = React.memo(() => {
   const {loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
 
   return (
-    <div className={styles.wordAndSentence}>
+    <WordAndSentenceConatiner>
       {loading === LoadingStatus.succeeded ? (
         <>
           <TensesOfWord currentWord={currentWord} tenseIndex={tenseIndex} />
@@ -27,11 +27,11 @@ const WordAndSentence = React.memo(() => {
       ) : (
         <Grid alignItems="center" direction="column" container>
           <Skeleton variant="rounded" animation="wave" width={200} height={36} />
-          <Skeleton variant="rounded" animation="wave" width={300} height={26} sx={{marginTop: '10px'}} />
-          <Skeleton variant="rounded" animation="wave" width={50} height={40} sx={{marginTop: '30px'}} />
+          <Skeleton variant="rounded" animation="wave" width={300} height={26} sx={{mt: 2}} />
+          <Skeleton variant="rounded" animation="wave" width={50} height={40} sx={{mt: 4}} />
         </Grid>
       )}
-    </div>
+    </WordAndSentenceConatiner>
   );
 });
 

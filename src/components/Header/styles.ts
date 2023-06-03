@@ -1,4 +1,5 @@
-import {styled, AppBar, AppBarProps} from '@mui/material';
+import {AppBar, AppBarProps} from '@mui/material';
+import {styled} from '@mui/material/styles';
 
 export const AppBarCustom = styled(AppBar)<AppBarProps>(({theme}) => ({
   '&': {

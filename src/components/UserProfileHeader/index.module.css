@@ -6,7 +6,3 @@
   display: flex;
   padding: 0;
 }
-
-.arrow {
-  color: var(--color-blue-700);
-}

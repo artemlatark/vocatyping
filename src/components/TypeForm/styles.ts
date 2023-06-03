@@ -1,4 +1,5 @@
-import {styled, Input, FormHelperText} from '@mui/material';
+import {Input, FormHelperText} from '@mui/material';
+import {styled} from '@mui/material/styles';
 
 export const TypeFormTextField = styled(Input)({
   '& .MuiInputBase-input': {

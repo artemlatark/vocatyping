@@ -1,23 +1,17 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 
-import cx from 'classnames';
-
-import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
 import {useAppDispatch} from 'hooks/redux';
 
 import {changeWord, initWord} from 'store/currentWord/slice';
 
-import styles from '../index.module.css';
+import {ListItemButtonCustom} from '../styles';
 import {ListItemProps} from '../types';
 
 const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
-
-  const wordItemClassNames = cx({
-    [styles.itemCurrent]: currentWordId ? word.id === currentWordId : index === 0,
-  });
+  const currentItem = useMemo(() => (currentWordId ? word.id === currentWordId : index === 0), [currentWordId, index, word.id]);
 
   const onChangeWord = (): void => {
     handleOpenSidebar('dictionary');
@@ -27,11 +21,9 @@ const ListItem: React.FC<ListItemProps> = ({word, index, currentWordId, handleOp
   };
 
   return (
-    <ListItemButton onClick={() => onChangeWord()}>
-      <ListItemText>
-        <span className={wordItemClassNames}>{word.tenses.join(', ')}</span>
-      </ListItemText>
-    </ListItemButton>
+    <ListItemButtonCustom onClick={() => onChangeWord()} role="button" selected={currentItem}>
+      <ListItemText primaryTypographyProps={{sx: {fontWeight: 'inherit'}}}>{word.tenses.join(', ')}</ListItemText>
+    </ListItemButtonCustom>
   );
 };
 

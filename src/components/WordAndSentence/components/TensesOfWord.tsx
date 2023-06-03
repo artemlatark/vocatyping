@@ -1,7 +1,5 @@
 import React from 'react';
 
-import cx from 'classnames';
-
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import IconButton from '@mui/material/IconButton';
 
@@ -11,7 +9,7 @@ import {changeTense, checkTenseVariant} from 'store/currentWord/slice';
 
 import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
-import styles from '../index.module.css';
+import {TensesOfWordContainer, TenseVariantButton} from '../styles';
 import {TensesOfWordProps} from '../types';
 
 const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tenseIndex}) => {
@@ -40,19 +38,19 @@ const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tens
   };
 
   return (
-    <div className={styles.tensesOfWord}>
+    <TensesOfWordContainer>
       {currentWord?.tenses.map((tense, index, thisArg) => (
         <React.Fragment key={tense}>
-          <button onClick={() => handleSelectTenseVariant(index)} className={cx(styles.tenseVariant, {[styles.currentTenseVariant]: index === tenseIndex})}>
+          <TenseVariantButton onClick={() => handleSelectTenseVariant(index)} selected={index === tenseIndex}>
             {tense}
-          </button>
+          </TenseVariantButton>
           {index !== thisArg.length - 1 ? ', ' : null}
         </React.Fragment>
       ))}
       <IconButton onClick={() => onSpeechWord()} color="primary" size="small" sx={{mt: -1, ml: 1}}>
         <VolumeUpIcon />
       </IconButton>
-    </div>
+    </TensesOfWordContainer>
   );
 });
 

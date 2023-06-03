@@ -46,7 +46,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
     setOpenSignInDialog(value);
   };
 
-  // TODO: need to fix it
+  // TODO: see https://github.com/artemkrynkin/typerighting/issues/74
   const handleSwitchToPrevOrNextWord = useCallback(
     (currentWordIndex: number, words: Word[], isPrev: boolean): void => {
       const word = isPrev ? words[currentWordIndex - 1] : words[currentWordIndex + 1];

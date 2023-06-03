@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
-import styles from '../index.module.css';
+import {SentencesOfWordContainer} from '../styles';
 import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
 const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
@@ -51,14 +51,14 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
 
   return (
     <>
-      <div className={styles.sentenceOfWord} ref={sentenceRef} onMouseUp={openContextMenu} role="button" tabIndex={0}>
+      <SentencesOfWordContainer ref={sentenceRef} onMouseUp={openContextMenu} role="button" tabIndex={0}>
         {currentWord?.sentences.map((sentence, index) => (
           <React.Fragment key={`${sentence}-${currentWord.id}-${index}`}>
             {index !== 0 && <br />}
             {sentence}
           </React.Fragment>
         ))}
-      </div>
+      </SentencesOfWordContainer>
       <Menu
         open={contextMenuPosition !== null}
         onClose={closeContextMenu}

@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useEffect, useMemo, useState} from 'react';
+import React, {createContext, useContext, useEffect, useLayoutEffect, useMemo, useState} from 'react';
 
 import {PaletteMode} from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -33,6 +33,15 @@ export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
 
   useEffect(() => {
     setThemeColor(currentThemeColor);
+  }, [currentThemeColor]);
+
+  useLayoutEffect(() => {
+    const bodyElement = document.querySelector('body');
+
+    if (!bodyElement) return;
+
+    bodyElement.classList.remove('mode-dark', 'mode-light');
+    bodyElement.classList.add(`mode-${currentThemeColor}`);
   }, [currentThemeColor]);
 
   return <ThemeContext.Provider value={memoizedContextValue} children={children} />;

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-import styles from './index.module.css';
 import {TabCustom, TabsCustom} from './styles';
 import {WordGroupsListProps} from '../../types';
 
@@ -29,13 +28,7 @@ const WordGroupsList: React.FC<WordGroupsListProps> = ({listRef, wordGroupsCount
           {firstItemsIndexes: [], offset: 0}
         )
         .firstItemsIndexes.map((itemIndex: number, index: number) => (
-          <TabCustom
-            onClick={() => handlerChangeTab(itemIndex, index)}
-            key={`vertical-tab-${index}`}
-            id={`vertical-tab-${index}`}
-            className={styles.wordGroupsListItem}
-            label={wordGroups[index]}
-          />
+          <TabCustom onClick={() => handlerChangeTab(itemIndex, index)} key={`vertical-tab-${index}`} id={`vertical-tab-${index}`} label={wordGroups[index]} />
         ))}
     </TabsCustom>
   );
