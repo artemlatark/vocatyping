@@ -1,24 +1,14 @@
 import React, {useEffect, useRef} from 'react';
 
-import cx from 'classnames';
-
 import {useWindowSize} from 'hooks/useWindowSize';
 
-import styles from './index.module.css';
+import {Key} from './styles';
 import {Props} from './types';
 
 const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, handleChangeNextTypeKey, currentWordId}) => {
   const windowSizes = useWindowSize();
   const keyRef = useRef<HTMLDivElement | null>(null);
   const isNextKey = keyboardKey.key?.toLowerCase() === nextKey?.toLowerCase();
-
-  const keyClassNames = cx(styles.key, {
-    [styles[`${keyboardKey.code?.toLowerCase()}`]]: keyboardKey.code,
-    [styles.supKey]: keyboardKey.supKey,
-    [styles.isSystemKey]: keyboardKey.isSystemKey,
-    [styles.isSpace]: keyboardKey.isSpace,
-    [styles.needType]: isNextKey,
-  });
 
   useEffect(() => {
     if (isNextKey && keyRef.current) {
@@ -39,10 +29,10 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, handleCh
   }, [isNextKey, windowSizes.width, currentWordId]);
 
   return (
-    <div className={keyClassNames} ref={keyRef}>
+    <Key ref={keyRef} isNextKey={isNextKey} code={keyboardKey.code} isSystemKey={keyboardKey.isSystemKey} isSpace={keyboardKey.isSpace}>
       {keyboardKey.key}
       {keyboardKey.supKey && <span>{keyboardKey.supKey}</span>}
-    </div>
+    </Key>
   );
 });
 

@@ -30,8 +30,8 @@ const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
   return (
     <>
       <button className={styles.avatar} onClick={handleOpenUserProfileMenu}>
-        <Avatar alt={displayName || undefined} src={photoURL || undefined} />
-        {isOpenUserProfileMenu ? <ArrowDropUpIcon className={styles.arrow} /> : <ArrowDropDownIcon className={styles.arrow} />}
+        <Avatar alt={displayName ?? undefined} src={photoURL ?? undefined} />
+        {isOpenUserProfileMenu ? <ArrowDropUpIcon color="primary" /> : <ArrowDropDownIcon color="primary" />}
       </button>
 
       <Menu

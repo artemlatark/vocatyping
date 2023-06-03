@@ -1,9 +1,8 @@
-import {styled, Tabs, Tab} from '@mui/material';
+import {Tabs, Tab} from '@mui/material';
+import {styled} from '@mui/material/styles';
 
 export const TabsCustom = styled(Tabs)({
-  '&': {
-    height: '100%',
-  },
+  height: '100%',
 });
 
 export const TabCustom = styled(Tab)({

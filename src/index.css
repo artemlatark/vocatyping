@@ -8,6 +8,10 @@ body {
   min-width: 990px;
 }
 
+body.mode-dark {
+  background-color: #252525;
+}
+
 html,
 body,
 #root {

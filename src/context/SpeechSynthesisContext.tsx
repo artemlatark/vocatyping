@@ -2,33 +2,34 @@ import React, {createContext, useContext, useMemo, useState} from 'react';
 
 import {Speech} from 'hooks/useSpeechSynthesis';
 
-export type SpeechSynthesisContextType = {
-  speechSynthesisCtx: SpeechSynthesisContextStateType;
-  setSpeechSynthesisCtx: React.Dispatch<React.SetStateAction<SpeechSynthesisContextStateType>>;
-};
+interface SpeechSynthesisContextValue {
+  speechSynthesis: SpeechSynthesisContextState;
+  setSpeechSynthesis: React.Dispatch<React.SetStateAction<SpeechSynthesisContextState>>;
+}
 
-export type SpeechSynthesisContextStateType = (Speech & {selectedVoice: SpeechSynthesisVoice | undefined}) | null;
+export type SpeechSynthesisContextState = (Speech & {selectedVoice: SpeechSynthesisVoice}) | null;
 
 interface SpeechSynthesisContextProviderProps {
   children: React.ReactNode;
 }
 
-export const SpeechSynthesisContext = createContext<SpeechSynthesisContextType | null>(null);
+export const SpeechSynthesisContext = createContext<SpeechSynthesisContextValue | null>(null);
 
 export const SpeechSynthesisContextProvider = ({children}: SpeechSynthesisContextProviderProps) => {
-  const [speechSynthesisCtx, setSpeechSynthesisCtx] = useState<SpeechSynthesisContextStateType>(null);
+  const [speechSynthesis, setSpeechSynthesis] = useState<SpeechSynthesisContextState>(null);
 
   const memoizedContextValue = useMemo(
     () => ({
-      speechSynthesisCtx,
-      setSpeechSynthesisCtx,
+      speechSynthesis,
+      setSpeechSynthesis,
     }),
-    [speechSynthesisCtx, setSpeechSynthesisCtx]
+    [speechSynthesis, setSpeechSynthesis]
   );
 
   return <SpeechSynthesisContext.Provider value={memoizedContextValue} children={children} />;
 };
 
+// TODO: see https://github.com/artemkrynkin/typerighting/issues/73
 export const useSpeechSynthesisContext = () => {
   const speechSynthesisContext = useContext(SpeechSynthesisContext);
 

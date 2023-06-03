@@ -5,11 +5,11 @@ import MenuItem from '@mui/material/MenuItem';
 
 import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
-import styles from '../index.module.css';
+import {SentencesOfWordContainer} from '../styles';
 import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
 const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
-  const {speechSynthesisCtx} = useSpeechSynthesisContext();
+  const {speechSynthesis} = useSpeechSynthesisContext();
   const [contextMenuPosition, setContextMenuPosition] = useState<ContextMenuPosition | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
@@ -36,13 +36,13 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
   };
 
   const listenSelectionPhraseInSentence = (): void => {
-    if (speechSynthesisCtx?.isSpeaking) {
-      speechSynthesisCtx?.cancelSpeaking();
+    if (speechSynthesis?.isSpeaking) {
+      speechSynthesis?.cancelSpeaking();
     }
 
-    speechSynthesisCtx?.speak({
+    speechSynthesis?.speak({
       text: window.getSelection()?.toString(),
-      voice: speechSynthesisCtx?.selectedVoice,
+      voice: speechSynthesis?.selectedVoice,
       rate: 1,
     });
 
@@ -51,14 +51,14 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
 
   return (
     <>
-      <div className={styles.sentenceOfWord} ref={sentenceRef} onMouseUp={openContextMenu} role="button" tabIndex={0}>
+      <SentencesOfWordContainer ref={sentenceRef} onMouseUp={openContextMenu} role="button" tabIndex={0}>
         {currentWord?.sentences.map((sentence, index) => (
           <React.Fragment key={`${sentence}-${currentWord.id}-${index}`}>
             {index !== 0 && <br />}
             {sentence}
           </React.Fragment>
         ))}
-      </div>
+      </SentencesOfWordContainer>
       <Menu
         open={contextMenuPosition !== null}
         onClose={closeContextMenu}
