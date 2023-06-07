@@ -98,7 +98,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
           </Grid>
           <Grid justifyContent="end" container item>
             <Grid item>
-              <IconButton onClick={() => handleOpenSidebar('options')}>
+              <IconButton onClick={() => handleOpenSidebar('settings')}>
                 <SettingsIcon />
               </IconButton>
             </Grid>

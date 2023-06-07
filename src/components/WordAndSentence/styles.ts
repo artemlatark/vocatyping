@@ -1,4 +1,4 @@
-import {blueGrey, teal} from '@mui/material/colors';
+import {grey, teal} from '@mui/material/colors';
 import {styled} from '@mui/material/styles';
 
 export const WordAndSentenceConatiner = styled('div')(({theme}) => ({
@@ -10,7 +10,7 @@ export const WordAndSentenceConatiner = styled('div')(({theme}) => ({
 }));
 
 export const TensesOfWordContainer = styled('div')(({theme}) => ({
-  color: theme.palette.mode === 'light' ? blueGrey[800] : blueGrey[200],
+  color: theme.palette.mode === 'light' ? grey[800] : grey[300],
   fontSize: 30,
   letterSpacing: 2,
 }));
@@ -19,7 +19,7 @@ export const TenseVariantButton = styled('button')<{selected: boolean}>(({theme,
   background: 'none',
   border: 'none',
   cursor: 'pointer',
-  color: !selected ? 'inherit' : theme.palette.mode === 'light' ? blueGrey[900] : '#fff',
+  color: !selected ? 'inherit' : theme.palette.mode === 'light' ? grey[900] : '#fff',
   fontSize: 'inherit',
   fontWeight: !selected ? 'inherit' : 600,
   letterSpacing: 'inherit',
@@ -27,15 +27,16 @@ export const TenseVariantButton = styled('button')<{selected: boolean}>(({theme,
 }));
 
 export const SentencesOfWordContainer = styled('div')(({theme}) => ({
-  color: theme.palette.mode === 'light' ? blueGrey[600] : blueGrey[400],
+  color: theme.palette.mode === 'light' ? grey[600] : grey[500],
   fontSize: 22,
   fontStyle: 'italic',
   marginTop: theme.spacing(2),
 }));
 
 export const WordVariant = styled('span')<{correct: boolean}>(({theme, correct}) => ({
-  color: !correct ? (theme.palette.mode === 'light' ? blueGrey[800] : blueGrey[100]) : theme.palette.mode === 'light' ? teal[500] : teal['A400'],
+  color: !correct ? (theme.palette.mode === 'light' ? grey[800] : grey[300]) : theme.palette.mode === 'light' ? teal[500] : teal['A400'],
   fontSize: !correct ? 34 : 24,
+  lineHeight: '34px',
   fontWeight: !correct ? 'inherit' : 600,
   textAlign: 'left',
   transition: theme.transitions.create(['font-size', 'font-weight'], {duration: 150}),

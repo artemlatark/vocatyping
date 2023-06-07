@@ -2,7 +2,7 @@ import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
-import {defaultThemeMode, defaultVoiceURI} from 'config/options';
+import {defaultThemeMode, defaultVoiceURI} from 'config/settings';
 
 import {State} from './types';
 
@@ -14,8 +14,8 @@ export const initialState: State = {
   themeMode: currentThemeMode_LS ?? defaultThemeMode,
 };
 
-export const optionsSlice = createSlice({
-  name: 'options',
+export const settingsSlice = createSlice({
+  name: 'settings',
   initialState,
   reducers: {
     setVoice(state, action: PayloadAction<State['currentVoiceURI']>) {
@@ -29,6 +29,6 @@ export const optionsSlice = createSlice({
   },
 });
 
-export const {setVoice, setThemeMode} = optionsSlice.actions;
+export const {setVoice, setThemeMode} = settingsSlice.actions;
 
-export default optionsSlice.reducer;
+export default settingsSlice.reducer;
