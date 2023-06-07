@@ -5,7 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import {useAppSelector} from 'hooks/redux';
 
-import {State as StateRreducerOptions} from 'store/options/types';
+import {State as StateReducerSettings} from 'store/settings/types';
 
 type ThemeContextValue = PaletteMode;
 
@@ -15,7 +15,7 @@ interface ThemeContextProviderProps {
 
 export const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-const getCurrentThemeColor = (themeMode: StateRreducerOptions['themeMode'], prefersDarkMode: boolean) => {
+const getCurrentThemeColor = (themeMode: StateReducerSettings['themeMode'], prefersDarkMode: boolean) => {
   if (!themeMode || themeMode === 'system') {
     return prefersDarkMode ? 'light' : 'dark';
   } else {
@@ -24,7 +24,7 @@ const getCurrentThemeColor = (themeMode: StateRreducerOptions['themeMode'], pref
 };
 
 export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
-  const {themeMode} = useAppSelector((state) => state.optionsReducer);
+  const {themeMode} = useAppSelector((state) => state.settingsReducer);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: light)');
   const currentThemeColor = useMemo(() => getCurrentThemeColor(themeMode, prefersDarkMode), [themeMode, prefersDarkMode]);
   const [themeColor, setThemeColor] = useState<ThemeContextValue>(currentThemeColor);

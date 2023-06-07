@@ -5,7 +5,7 @@ import {useWindowSize} from 'hooks/useWindowSize';
 import {Key} from './styles';
 import {Props} from './types';
 
-const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, handleChangeNextTypeKey, currentWordId}) => {
+const KeyboardKey: React.FC<Props> = ({keyboardKey, nextKey, handleChangeNextTypeKey, currentWordId}) => {
   const windowSizes = useWindowSize();
   const keyRef = useRef<HTMLDivElement | null>(null);
   const isNextKey = keyboardKey.key?.toLowerCase() === nextKey?.toLowerCase();
@@ -34,6 +34,6 @@ const KeyboardKey: React.FC<Props> = React.memo(({keyboardKey, nextKey, handleCh
       {keyboardKey.supKey && <span>{keyboardKey.supKey}</span>}
     </Key>
   );
-});
+};
 
-export default KeyboardKey;
+export default React.memo(KeyboardKey);

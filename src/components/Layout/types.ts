@@ -4,4 +4,4 @@ export interface Props {
   children: React.ReactNode;
 }
 
-export type HandleOpenSidebar = (sidebarName: 'dictionary' | 'options', value?: boolean) => void;
+export type HandleOpenSidebar = (sidebarName: 'dictionary' | 'settings', value?: boolean) => void;

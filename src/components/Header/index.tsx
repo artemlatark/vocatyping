@@ -27,7 +27,7 @@ import UserProfileHeader from 'components/UserProfileHeader';
 import {AppBarCustom} from './styles';
 import {Props} from './types';
 
-const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
+const Header: React.FC<Props> = ({handleOpenSidebar}) => {
   const dispatch = useAppDispatch();
   const {entities: words, loading: loadingWords} = useAppSelector((state) => state.wordsReducer);
   const {currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
@@ -98,7 +98,7 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
           </Grid>
           <Grid justifyContent="end" container item>
             <Grid item>
-              <IconButton onClick={() => handleOpenSidebar('options')}>
+              <IconButton onClick={() => handleOpenSidebar('settings')}>
                 <SettingsIcon />
               </IconButton>
             </Grid>
@@ -120,6 +120,6 @@ const Header: React.FC<Props> = React.memo(({handleOpenSidebar}) => {
       <SignInDialog isOpen={isOpenSignInDialog} handleOpenClose={handleOpenCloseSignInDialog} />
     </>
   );
-});
+};
 
-export default Header;
+export default React.memo(Header);

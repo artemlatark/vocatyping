@@ -3,7 +3,7 @@ import React from 'react';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import IconButton from '@mui/material/IconButton';
 
-import {useAppDispatch} from 'hooks/redux';
+import {useAppDispatch, useAppSelector} from 'hooks/redux';
 
 import {changeTense, checkTenseVariant} from 'store/currentWord/slice';
 
@@ -12,8 +12,9 @@ import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 import {TensesOfWordContainer, TenseVariantButton} from '../styles';
 import {TensesOfWordProps} from '../types';
 
-const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tenseIndex}) => {
+const TensesOfWord: React.FC<TensesOfWordProps> = ({currentWord, tenseIndex}) => {
   const dispatch = useAppDispatch();
+  const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
   const {speechSynthesis} = useSpeechSynthesisContext();
 
   const onSpeechWord = (): void => {
@@ -24,7 +25,7 @@ const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tens
     speechSynthesis?.speak({
       text: currentWord?.tenses[tenseIndex],
       voice: speechSynthesis?.selectedVoice,
-      rate: 1,
+      rate: pronunciationSpeed,
     });
   };
 
@@ -52,6 +53,6 @@ const TensesOfWord: React.FC<TensesOfWordProps> = React.memo(({currentWord, tens
       </IconButton>
     </TensesOfWordContainer>
   );
-});
+};
 
-export default TensesOfWord;
+export default React.memo(TensesOfWord);

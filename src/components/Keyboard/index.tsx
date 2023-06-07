@@ -11,7 +11,7 @@ import KeyboardKey from 'components/KeyboardKey';
 
 import styles from './index.module.css';
 
-const Keyboard = React.memo(() => {
+const Keyboard = () => {
   const {currentWordId, writtenText, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
   const [currentLayout] = useState<keyboardLayout>(keyboardLayout.MAC);
   const keyboardObj = useMemo(() => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout), [currentLayout]);
@@ -34,6 +34,6 @@ const Keyboard = React.memo(() => {
       </div>
     </div>
   );
-});
+};
 
-export default Keyboard;
+export default React.memo(Keyboard);

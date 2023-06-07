@@ -1,4 +1,5 @@
 export interface State {
-  currentVoiceURI: string;
+  voiceURI: string;
+  pronunciationSpeed: number;
   themeMode: 'system' | 'light' | 'dark';
 }

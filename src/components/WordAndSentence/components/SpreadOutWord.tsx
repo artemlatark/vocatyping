@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import {WordVariant} from '../styles';
 import {SpreadOutWordProps} from '../types';
 
-const SpreadOutWord: React.FC<SpreadOutWordProps> = React.memo(({tenseVariants, tenseVariantIndex}) => (
+const SpreadOutWord: React.FC<SpreadOutWordProps> = ({tenseVariants, tenseVariantIndex}) => (
   <Box sx={{height: 40, mt: 4}}>
     {tenseVariants.map(
       (item, index) =>
@@ -16,6 +16,6 @@ const SpreadOutWord: React.FC<SpreadOutWordProps> = React.memo(({tenseVariants, 
         )
     )}
   </Box>
-));
+);
 
-export default SpreadOutWord;
+export default React.memo(SpreadOutWord);

@@ -5,7 +5,7 @@ import cx from 'classnames';
 import styles from './index.module.css';
 import {Props} from './types';
 
-const Hands: React.FC<Props> = React.memo(({nextTypeKey}) => {
+const Hands: React.FC<Props> = ({nextTypeKey}) => {
   const [translateCoords, setTranslateCoords] = useState<number[]>([0, 0]);
   const translateOffset = {
     left: nextTypeKey.finger ? (/[1-4]/.test(nextTypeKey.finger.toString()) ? 46 : 60) : 0,
@@ -26,6 +26,6 @@ const Hands: React.FC<Props> = React.memo(({nextTypeKey}) => {
   }, [nextTypeKey]);
 
   return <div className={handClassNames} style={handInlineStyles} />;
-});
+};
 
-export default Hands;
+export default React.memo(Hands);

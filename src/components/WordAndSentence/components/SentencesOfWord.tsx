@@ -3,12 +3,15 @@ import React, {useRef, useState} from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
+import {useAppSelector} from 'hooks/redux';
+
 import {useSpeechSynthesisContext} from 'context/SpeechSynthesisContext';
 
 import {SentencesOfWordContainer} from '../styles';
 import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
 const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
+  const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
   const {speechSynthesis} = useSpeechSynthesisContext();
   const [contextMenuPosition, setContextMenuPosition] = useState<ContextMenuPosition | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
@@ -43,7 +46,7 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
     speechSynthesis?.speak({
       text: window.getSelection()?.toString(),
       voice: speechSynthesis?.selectedVoice,
-      rate: 1,
+      rate: pronunciationSpeed,
     });
 
     closeContextMenu();

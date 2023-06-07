@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 
 import {ThemeProvider} from '@mui/material/styles';
 
-import {favoriteLanguages} from 'config/options';
+import {favoriteLanguages} from 'config/settings';
 import {theme} from 'config/theme';
 
 import {useAppSelector} from 'hooks/redux';
@@ -14,7 +14,7 @@ import {useThemeContext} from 'context/ThemeContext';
 import Main from 'pages/Main';
 
 function App() {
-  const {currentVoiceURI} = useAppSelector((state) => state.optionsReducer);
+  const {voiceURI} = useAppSelector((state) => state.settingsReducer);
   const speechSynthesis = useSpeechSynthesis();
   const {setSpeechSynthesis} = useSpeechSynthesisContext();
   const themeColor = useThemeContext();
@@ -27,7 +27,7 @@ function App() {
 
       speechSynthesis.voices = voices;
 
-      const selectedVoice = voices.find((voice) => voice.name === currentVoiceURI) ?? voices[0];
+      const selectedVoice = voices.find((voice) => voice.name === voiceURI) ?? voices[0];
 
       return {...prevState, ...speechSynthesis, selectedVoice};
     });
