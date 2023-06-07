@@ -14,7 +14,7 @@ import {useThemeContext} from 'context/ThemeContext';
 import Main from 'pages/Main';
 
 function App() {
-  const {currentVoiceURI} = useAppSelector((state) => state.settingsReducer);
+  const {voiceURI} = useAppSelector((state) => state.settingsReducer);
   const speechSynthesis = useSpeechSynthesis();
   const {setSpeechSynthesis} = useSpeechSynthesisContext();
   const themeColor = useThemeContext();
@@ -27,7 +27,7 @@ function App() {
 
       speechSynthesis.voices = voices;
 
-      const selectedVoice = voices.find((voice) => voice.name === currentVoiceURI) ?? voices[0];
+      const selectedVoice = voices.find((voice) => voice.name === voiceURI) ?? voices[0];
 
       return {...prevState, ...speechSynthesis, selectedVoice};
     });

@@ -2,15 +2,17 @@ import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
-import {defaultThemeMode, defaultVoiceURI} from 'config/settings';
+import {defaultPronunciationSpeed, defaultThemeMode, defaultVoiceURI} from 'config/settings';
 
 import {State} from './types';
 
-const currentVoice_LS: State['currentVoiceURI'] = getFromLocalStorage('currentVoiceURI');
+const currentVoiceURI_LS: State['voiceURI'] = getFromLocalStorage('voiceURI');
+const currentPronunciationSpeed_LS: State['pronunciationSpeed'] = getFromLocalStorage('pronunciationSpeed');
 const currentThemeMode_LS: State['themeMode'] = getFromLocalStorage('themeMode');
 
 export const initialState: State = {
-  currentVoiceURI: currentVoice_LS ?? defaultVoiceURI,
+  voiceURI: currentVoiceURI_LS ?? defaultVoiceURI,
+  pronunciationSpeed: currentPronunciationSpeed_LS ?? defaultPronunciationSpeed,
   themeMode: currentThemeMode_LS ?? defaultThemeMode,
 };
 
@@ -18,9 +20,13 @@ export const settingsSlice = createSlice({
   name: 'settings',
   initialState,
   reducers: {
-    setVoice(state, action: PayloadAction<State['currentVoiceURI']>) {
-      state.currentVoiceURI = action.payload;
-      saveToLocalStorage('currentVoiceURI', action.payload);
+    setVoice(state, action: PayloadAction<State['voiceURI']>) {
+      state.voiceURI = action.payload;
+      saveToLocalStorage('voiceURI', action.payload);
+    },
+    setPronunciationSpeed(state, action: PayloadAction<State['pronunciationSpeed']>) {
+      state.pronunciationSpeed = action.payload;
+      saveToLocalStorage('pronunciationSpeed', action.payload);
     },
     setThemeMode(state, action: PayloadAction<State['themeMode']>) {
       state.themeMode = action.payload;
@@ -29,6 +35,6 @@ export const settingsSlice = createSlice({
   },
 });
 
-export const {setVoice, setThemeMode} = settingsSlice.actions;
+export const {setVoice, setPronunciationSpeed, setThemeMode} = settingsSlice.actions;
 
 export default settingsSlice.reducer;

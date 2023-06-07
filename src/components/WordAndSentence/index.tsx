@@ -12,7 +12,7 @@ import SpreadOutWord from './components/SpreadOutWord';
 import TensesOfWord from './components/TensesOfWord';
 import {WordAndSentenceConatiner} from './styles';
 
-const WordAndSentence = React.memo(() => {
+const WordAndSentence = () => {
   const {loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
 
@@ -33,6 +33,6 @@ const WordAndSentence = React.memo(() => {
       )}
     </WordAndSentenceConatiner>
   );
-});
+};
 
-export default WordAndSentence;
+export default React.memo(WordAndSentence);

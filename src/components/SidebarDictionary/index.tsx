@@ -20,7 +20,7 @@ import styles from './index.module.css';
 import {TypographyCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
 
-const SidebarDictionary: React.FC<SidebarProps> = React.memo(({isOpen, handleOpen}) => {
+const SidebarDictionary: React.FC<SidebarProps> = ({isOpen, handleOpen}) => {
   const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
   const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
   const listRef = useRef<GroupedVirtuosoHandle>(null);
@@ -119,6 +119,6 @@ const SidebarDictionary: React.FC<SidebarProps> = React.memo(({isOpen, handleOpe
       </div>
     </Drawer>
   );
-});
+};
 
-export default SidebarDictionary;
+export default React.memo(SidebarDictionary);
