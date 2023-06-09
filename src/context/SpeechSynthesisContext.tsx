@@ -1,13 +1,16 @@
-import React, {createContext, useContext, useMemo, useState} from 'react';
+import React, {createContext, useContext, useMemo} from 'react';
 
-import {Speech} from 'hooks/useSpeechSynthesis';
+import {favoriteLanguages} from 'config/settings';
+
+import {useAppSelector} from 'hooks/redux';
+import {Speech, useSpeechSynthesis} from 'hooks/useSpeechSynthesis';
 
 interface SpeechSynthesisContextValue {
-  speechSynthesis: SpeechSynthesisContextState;
-  setSpeechSynthesis: React.Dispatch<React.SetStateAction<SpeechSynthesisContextState>>;
+  speechSynthesis: Speech;
+  selectedVoice: SelectedVoice;
 }
 
-export type SpeechSynthesisContextState = (Speech & {selectedVoice: SpeechSynthesisVoice}) | null;
+export type SelectedVoice = SpeechSynthesisVoice | null;
 
 interface SpeechSynthesisContextProviderProps {
   children: React.ReactNode;
@@ -16,20 +19,23 @@ interface SpeechSynthesisContextProviderProps {
 export const SpeechSynthesisContext = createContext<SpeechSynthesisContextValue | null>(null);
 
 export const SpeechSynthesisContextProvider = ({children}: SpeechSynthesisContextProviderProps) => {
-  const [speechSynthesis, setSpeechSynthesis] = useState<SpeechSynthesisContextState>(null);
+  const {voiceURI} = useAppSelector((state) => state.settingsReducer);
+  const speechSynthesis = useSpeechSynthesis({favoriteLanguages});
+  const selectedVoice = useMemo(() => {
+    return speechSynthesis.voices.find((voice) => voice.name === voiceURI) ?? speechSynthesis.voices[0] ?? null;
+  }, [speechSynthesis.voices, voiceURI]);
 
   const memoizedContextValue = useMemo(
     () => ({
       speechSynthesis,
-      setSpeechSynthesis,
+      selectedVoice,
     }),
-    [speechSynthesis, setSpeechSynthesis]
+    [selectedVoice, speechSynthesis]
   );
 
   return <SpeechSynthesisContext.Provider value={memoizedContextValue} children={children} />;
 };
 
-// TODO: see https://github.com/artemkrynkin/typerighting/issues/73
 export const useSpeechSynthesisContext = () => {
   const speechSynthesisContext = useContext(SpeechSynthesisContext);
 

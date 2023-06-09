@@ -12,7 +12,7 @@ import {SentenceOfWordProps, ContextMenuPosition} from '../types';
 
 const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
   const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
-  const {speechSynthesis} = useSpeechSynthesisContext();
+  const {speechSynthesis, selectedVoice} = useSpeechSynthesisContext();
   const [contextMenuPosition, setContextMenuPosition] = useState<ContextMenuPosition | null>(null);
   const sentenceRef = useRef<HTMLDivElement | null>(null);
 
@@ -39,13 +39,13 @@ const SentencesOfWord: React.FC<SentenceOfWordProps> = ({currentWord}) => {
   };
 
   const listenSelectionPhraseInSentence = (): void => {
-    if (speechSynthesis?.isSpeaking) {
-      speechSynthesis?.cancelSpeaking();
+    if (speechSynthesis.isSpeaking) {
+      speechSynthesis.cancelSpeaking();
     }
 
-    speechSynthesis?.speak({
+    speechSynthesis.speak({
       text: window.getSelection()?.toString(),
-      voice: speechSynthesis?.selectedVoice,
+      voice: selectedVoice,
       rate: pronunciationSpeed,
     });
 

@@ -1,8 +1,9 @@
-import {useEffect, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 
 export type SpeechSynthesisUtterancePicked = Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>>;
 
 interface Props {
+  favoriteLanguages: string[];
   onEnd?: () => void;
 }
 
@@ -14,14 +15,18 @@ export interface Speech {
   cancelSpeaking: () => void;
 }
 
-export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
+const filterVoicesByLang = (voices: Speech['voices'], favoriteLanguages: Props['favoriteLanguages']) => {
+  return voices.filter((voice) => favoriteLanguages.includes(voice.lang));
+};
+
+export const useSpeechSynthesis = ({favoriteLanguages, onEnd}: Props = {favoriteLanguages: []}) => {
   const [voices, setVoices] = useState<Speech['voices']>([]);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isSupported, setIsSupported] = useState(false);
 
-  const getVoices = (): void => {
+  const getVoices = useCallback((): void => {
     // Firefox seems to have voices upfront and never calls the voiceschanged event
-    let voiceOptions = window.speechSynthesis.getVoices();
+    let voiceOptions = filterVoicesByLang(window.speechSynthesis.getVoices(), favoriteLanguages);
 
     if (voiceOptions.length > 0) {
       return setVoices(voiceOptions);
@@ -29,10 +34,10 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
 
     window.speechSynthesis.onvoiceschanged = (event) => {
       const target = event.target as SpeechSynthesis;
-      voiceOptions = target.getVoices();
+      voiceOptions = filterVoicesByLang(target.getVoices(), favoriteLanguages);
       setVoices(voiceOptions);
     };
-  };
+  }, [favoriteLanguages]);
 
   const speak = ({lang = 'en', pitch = 1, rate = 1, text = '', voice = null, volume = 1}: SpeechSynthesisUtterancePicked = {}): void => {
     if (!isSupported) return;
@@ -72,7 +77,7 @@ export const useSpeechSynthesis = ({onEnd}: Props = {}) => {
     if (isSupported) {
       getVoices();
     }
-  }, [isSupported]);
+  }, [isSupported, getVoices]);
 
   return {
     voices,

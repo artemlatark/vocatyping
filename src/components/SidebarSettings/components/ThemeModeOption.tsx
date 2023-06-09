@@ -19,10 +19,10 @@ const ThemeModeOption = () => {
   const [themeModeOption, setThemeModeOption] = React.useState<StateReducerSettings['themeMode']>(themeMode);
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, themeMode: StateReducerSettings['themeMode']) => {
-    if (themeMode) {
-      setThemeModeOption(themeMode);
-      dispatch(setThemeMode(themeMode));
-    }
+    if (!themeMode) return;
+
+    setThemeModeOption(themeMode);
+    dispatch(setThemeMode(themeMode));
   };
 
   return (
