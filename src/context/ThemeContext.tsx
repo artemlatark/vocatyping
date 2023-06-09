@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useEffect, useLayoutEffect, useMemo, useState} from 'react';
+import React, {createContext, useContext, useLayoutEffect, useMemo} from 'react';
 
 import {PaletteMode} from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -26,14 +26,9 @@ const getCurrentThemeColor = (themeMode: StateReducerSettings['themeMode'], pref
 export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
   const {themeMode} = useAppSelector((state) => state.settingsReducer);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: light)');
-  const currentThemeColor = useMemo(() => getCurrentThemeColor(themeMode, prefersDarkMode), [themeMode, prefersDarkMode]);
-  const [themeColor, setThemeColor] = useState<ThemeContextValue>(currentThemeColor);
+  const themeColor = useMemo(() => getCurrentThemeColor(themeMode, prefersDarkMode), [themeMode, prefersDarkMode]);
 
   const memoizedContextValue = useMemo(() => themeColor, [themeColor]);
-
-  useEffect(() => {
-    setThemeColor(currentThemeColor);
-  }, [currentThemeColor]);
 
   useLayoutEffect(() => {
     const bodyElement = document.querySelector('body');
@@ -41,8 +36,8 @@ export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
     if (!bodyElement) return;
 
     bodyElement.classList.remove('mode-dark', 'mode-light');
-    bodyElement.classList.add(`mode-${currentThemeColor}`);
-  }, [currentThemeColor]);
+    bodyElement.classList.add(`mode-${themeColor}`);
+  }, [themeColor]);
 
   return <ThemeContext.Provider value={memoizedContextValue} children={children} />;
 };

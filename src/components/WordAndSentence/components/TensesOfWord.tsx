@@ -15,23 +15,23 @@ import {TensesOfWordProps} from '../types';
 const TensesOfWord: React.FC<TensesOfWordProps> = ({currentWord, tenseIndex}) => {
   const dispatch = useAppDispatch();
   const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
-  const {speechSynthesis} = useSpeechSynthesisContext();
+  const {speechSynthesis, selectedVoice} = useSpeechSynthesisContext();
 
   const onSpeechWord = (): void => {
-    if (speechSynthesis?.isSpeaking) {
-      speechSynthesis?.cancelSpeaking();
+    if (speechSynthesis.isSpeaking) {
+      speechSynthesis.cancelSpeaking();
     }
 
-    speechSynthesis?.speak({
+    speechSynthesis.speak({
       text: currentWord?.tenses[tenseIndex],
-      voice: speechSynthesis?.selectedVoice,
+      voice: selectedVoice,
       rate: pronunciationSpeed,
     });
   };
 
   const handleSelectTenseVariant = (tenseIndex: number): void => {
-    if (speechSynthesis?.isSpeaking) {
-      speechSynthesis?.cancelSpeaking();
+    if (speechSynthesis.isSpeaking) {
+      speechSynthesis.cancelSpeaking();
     }
 
     dispatch(changeTense(tenseIndex));
