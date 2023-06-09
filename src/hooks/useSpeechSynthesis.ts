@@ -3,7 +3,7 @@ import {useCallback, useEffect, useState} from 'react';
 export type SpeechSynthesisUtterancePicked = Partial<Pick<SpeechSynthesisUtterance, 'lang' | 'pitch' | 'rate' | 'text' | 'voice' | 'volume'>>;
 
 interface Props {
-  favoriteLanguages: string[];
+  favoriteLanguages?: string[];
   onEnd?: () => void;
 }
 
@@ -16,6 +16,8 @@ export interface Speech {
 }
 
 const filterVoicesByLang = (voices: Speech['voices'], favoriteLanguages: Props['favoriteLanguages']) => {
+  if (!favoriteLanguages) return voices;
+
   return voices.filter((voice) => favoriteLanguages.includes(voice.lang));
 };
 
