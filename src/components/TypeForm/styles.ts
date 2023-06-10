@@ -1,7 +1,8 @@
-import {Input, FormHelperText} from '@mui/material';
+import FormHelperText, {FormHelperTextProps} from '@mui/material/FormHelperText';
+import Input, {InputProps} from '@mui/material/Input';
 import {styled} from '@mui/material/styles';
 
-export const TypeFormTextField = styled(Input)({
+export const TypeFormTextField = styled(Input)<InputProps>({
   '& .MuiInputBase-input': {
     fontSize: 24,
     height: 46,
@@ -9,7 +10,7 @@ export const TypeFormTextField = styled(Input)({
   },
 });
 
-export const TypeFormFormHelperText = styled(FormHelperText)({
+export const TypeFormFormHelperText = styled(FormHelperText)<FormHelperTextProps>({
   '&': {
     textAlign: 'center',
   },

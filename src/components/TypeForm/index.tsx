@@ -14,7 +14,7 @@ import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 const TypeForm = () => {
   const dispatch = useAppDispatch();
   const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
+  const {currentWordIndex, tenseIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
   const textFieldTypeWordRef = useRef<HTMLInputElement | null>(null);
   const buttonNextWordRef = useRef<HTMLButtonElement | null>(null);
 
@@ -50,7 +50,7 @@ const TypeForm = () => {
     if (isTenseVariantCorrectlyTyped) {
       buttonNextWordRef.current?.focus();
     }
-  }, [currentWordIndex, isTenseVariantCorrectlyTyped, loading]);
+  }, [currentWordIndex, tenseIndex, isTenseVariantCorrectlyTyped, loading]);
 
   return (
     <div className={styles.typeForm}>

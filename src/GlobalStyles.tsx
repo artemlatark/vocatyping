@@ -4,7 +4,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 export const inputGlobalStyles = (
   <GlobalStyles
     styles={{
-      'html, body': {
+      'html, body, #root': {
         height: '100%',
       },
       body: {

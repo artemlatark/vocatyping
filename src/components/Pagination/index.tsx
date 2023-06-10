@@ -3,14 +3,14 @@ import React from 'react';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Chip from '@mui/material/Chip';
-import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
 
 import {Props} from './types';
 
 const Pagination: React.FC<Props> = ({handlePrev, handleNext, currentNumber, allNumbers, loading}) => (
-  <Grid alignItems="center" container>
+  <Stack direction="row" alignItems="center" justifyContent="center" sx={{mt: 3}}>
     <IconButton onClick={handlePrev} color="primary" disabled={loading}>
       <ChevronLeftIcon />
     </IconButton>
@@ -22,7 +22,7 @@ const Pagination: React.FC<Props> = ({handlePrev, handleNext, currentNumber, all
     <IconButton onClick={handleNext} color="primary" disabled={loading}>
       <ChevronRightIcon />
     </IconButton>
-  </Grid>
+  </Stack>
 );
 
 export default Pagination;
