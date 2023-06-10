@@ -4,6 +4,8 @@ import {theme} from 'config/theme';
 
 import {useThemeContext} from 'context/ThemeContext';
 
+import Layout from 'components/Layout';
+
 import Main from 'pages/Main';
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme[themeColor]}>
-      <Main />
+      <Layout>{(props) => <Main {...props} />}</Layout>
     </ThemeProvider>
   );
 }

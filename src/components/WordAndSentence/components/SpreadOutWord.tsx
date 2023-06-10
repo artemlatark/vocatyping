@@ -6,7 +6,7 @@ import {WordVariant} from '../styles';
 import {SpreadOutWordProps} from '../types';
 
 const SpreadOutWord: React.FC<SpreadOutWordProps> = ({tenseVariants, tenseVariantIndex}) => (
-  <Box sx={{height: 40, mt: 4}}>
+  <Box sx={{minHeight: 40, mt: 4, wordBreak: 'break-word'}}>
     {tenseVariants.map(
       (item, index) =>
         tenseVariantIndex >= index && (

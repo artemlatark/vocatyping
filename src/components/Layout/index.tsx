@@ -1,15 +1,22 @@
-import React, {useCallback, useState} from 'react';
+import {FC, useCallback, useMemo, useState} from 'react';
 
 import Header from 'components/Header';
 import SidebarDictionary from 'components/SidebarDictionary';
 import SidebarSettings from 'components/SidebarSettings';
 
-import styles from './index.module.css';
-import {HandleOpenSidebar, Props} from './types';
+import {LayoutContainer} from './styles';
+import {HandleOpenSidebar, LayoutChildrenProps, Props} from './types';
 
-const Layout: React.FC<Props> = ({children}) => {
+const Layout: FC<Props> = ({children}) => {
   const [sidebarDictionaryOpen, setSidebarDictionaryOpen] = useState(false);
   const [sidebarSettingsOpen, setSidebarSettingsOpen] = useState(false);
+
+  const childrenProps: LayoutChildrenProps = useMemo(
+    () => ({
+      isOpenSidebar: sidebarDictionaryOpen || sidebarSettingsOpen,
+    }),
+    [sidebarDictionaryOpen, sidebarSettingsOpen]
+  );
 
   const handleOpenSidebar = useCallback<HandleOpenSidebar>((sidebarName, value) => {
     const setStateAction = (prevState: boolean | undefined) => (value !== undefined ? value : !prevState);
@@ -19,14 +26,12 @@ const Layout: React.FC<Props> = ({children}) => {
   }, []);
 
   return (
-    <div className={styles.layout}>
+    <>
+      <Header handleOpenSidebar={handleOpenSidebar} />
+      <LayoutContainer>{children(childrenProps)}</LayoutContainer>
       <SidebarDictionary isOpen={sidebarDictionaryOpen} handleOpen={handleOpenSidebar} />
       <SidebarSettings isOpen={sidebarSettingsOpen} handleOpen={handleOpenSidebar} />
-      <div className={styles.content}>
-        <Header handleOpenSidebar={handleOpenSidebar} />
-        {children}
-      </div>
-    </div>
+    </>
   );
 };
 export default Layout;
