@@ -13,8 +13,9 @@ import Stack from '@mui/material/Stack';
 import {firebaseAuth} from 'config/firebase';
 
 import SignInDialog from 'components/SignInDialog';
-import UserProfileHeader from 'components/UserProfileHeader';
 
+import TimerForStudy from './components/TimerForStudy';
+import UserProfile from './components/UserProfile';
 import {AppBarCustom, ToolbarCustom} from './styles';
 import {Props} from './types';
 
@@ -31,9 +32,13 @@ const Header: FC<Props> = ({handleOpenSidebar}) => {
     <>
       <AppBarCustom position="fixed" color="transparent">
         <ToolbarCustom>
-          <IconButton onClick={() => handleOpenSidebar('dictionary')} color="primary">
-            <MenuIcon />
-          </IconButton>
+          <Stack direction="row" spacing={1} alignItems="center">
+            <IconButton onClick={() => handleOpenSidebar('dictionary')} color="primary">
+              <MenuIcon />
+            </IconButton>
+            <Divider orientation="vertical" flexItem />
+            <TimerForStudy />
+          </Stack>
           <Box sx={{flex: '1 1 auto'}} />
           <Stack direction="row" spacing={1}>
             <IconButton onClick={() => handleOpenSidebar('settings')}>
@@ -42,7 +47,7 @@ const Header: FC<Props> = ({handleOpenSidebar}) => {
             <Divider orientation="vertical" flexItem />
             <Box sx={{marginLeft: '16px !important'}}>
               {user ? (
-                <UserProfileHeader user={user} signOut={signOut} />
+                <UserProfile user={user} signOut={signOut} />
               ) : (
                 <Button onClick={() => handleOpenCloseSignInDialog(true)} variant="outlined">
                   Sign In
