@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState, MouseEvent, memo} from 'react';
 
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -16,9 +16,9 @@ import {OptionsContainer, TitleContainer} from '../styles';
 const ThemeModeOption = () => {
   const dispatch = useAppDispatch();
   const {themeMode} = useAppSelector((state) => state.settingsReducer);
-  const [themeModeOption, setThemeModeOption] = React.useState<StateReducerSettings['themeMode']>(themeMode);
+  const [themeModeOption, setThemeModeOption] = useState<StateReducerSettings['themeMode']>(themeMode);
 
-  const handleChange = (event: React.MouseEvent<HTMLElement>, themeMode: StateReducerSettings['themeMode']) => {
+  const handleChange = (event: MouseEvent<HTMLElement>, themeMode: StateReducerSettings['themeMode']) => {
     if (!themeMode) return;
 
     setThemeModeOption(themeMode);
@@ -48,4 +48,4 @@ const ThemeModeOption = () => {
   );
 };
 
-export default React.memo(ThemeModeOption);
+export default memo(ThemeModeOption);

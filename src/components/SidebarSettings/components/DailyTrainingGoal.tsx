@@ -1,4 +1,4 @@
-import React from 'react';
+import {SyntheticEvent, useState} from 'react';
 
 import Slider from '@mui/material/Slider';
 import Stack from '@mui/material/Stack';
@@ -16,7 +16,7 @@ const DailyTrainingGoal = () => {
   const {
     dailyTrainingTime: {goal: dailyTrainingGoal},
   } = useAppSelector((state) => state.settingsReducer);
-  const [dailyTrainingGoalOption, setDailyTrainingGoalOption] = React.useState<StateReducerSettings['dailyTrainingTime']['goal']>(dailyTrainingGoal);
+  const [dailyTrainingGoalOption, setDailyTrainingGoalOption] = useState<StateReducerSettings['dailyTrainingTime']['goal']>(dailyTrainingGoal);
 
   const handleChange = (event: Event, value: number | number[]) => {
     if (Array.isArray(value)) return;
@@ -24,7 +24,7 @@ const DailyTrainingGoal = () => {
     setDailyTrainingGoalOption(value);
   };
 
-  const handleChangeCommitted = (event: React.SyntheticEvent | Event, value: number | number[]) => {
+  const handleChangeCommitted = (event: SyntheticEvent | Event, value: number | number[]) => {
     if (Array.isArray(value)) return;
 
     dispatch(setDailyTrainingGoal(value));

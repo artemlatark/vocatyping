@@ -1,4 +1,4 @@
-import React from 'react';
+import {SyntheticEvent, useState} from 'react';
 
 import Slider from '@mui/material/Slider';
 
@@ -12,7 +12,7 @@ import {OptionsContainer, TitleContainer} from '../styles';
 const PronunciationSpeedOption = () => {
   const dispatch = useAppDispatch();
   const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
-  const [pronunciationSpeedOption, setPronunciationSpeedOption] = React.useState<StateReducerSettings['pronunciationSpeed']>(pronunciationSpeed);
+  const [pronunciationSpeedOption, setPronunciationSpeedOption] = useState<StateReducerSettings['pronunciationSpeed']>(pronunciationSpeed);
 
   const handleChange = (event: Event, value: number | number[]) => {
     if (Array.isArray(value)) return;
@@ -20,7 +20,7 @@ const PronunciationSpeedOption = () => {
     setPronunciationSpeedOption(value);
   };
 
-  const handleChangeCommitted = (event: React.SyntheticEvent | Event, value: number | number[]) => {
+  const handleChangeCommitted = (event: SyntheticEvent | Event, value: number | number[]) => {
     if (Array.isArray(value)) return;
 
     dispatch(setPronunciationSpeed(value));

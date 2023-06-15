@@ -36,7 +36,6 @@ const Header: FC<Props> = ({handleOpenSidebar}) => {
             <IconButton onClick={() => handleOpenSidebar('dictionary')} color="primary">
               <MenuIcon />
             </IconButton>
-            <Divider orientation="vertical" flexItem />
             <DailyTrainingTimer />
           </Stack>
           <Box sx={{flex: '1 1 auto'}} />
