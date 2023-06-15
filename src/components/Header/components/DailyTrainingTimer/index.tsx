@@ -7,7 +7,7 @@ import Chip from '@mui/material/Chip';
 
 import {Progress, ProgressShell, GoalAchievedContainer, GoalAchievedProgressContainer, GoalAchievedText, GoalAchievedTextContainer, TimerForStudyCointainer} from './styles';
 
-const TimerForStudy = () => {
+const DailyTrainingTimer = () => {
   const [timerOn, setTimerOn] = useState(false);
 
   const handleToggleTimerOn = () => {
@@ -42,4 +42,4 @@ const TimerForStudy = () => {
   );
 };
 
-export default TimerForStudy;
+export default DailyTrainingTimer;

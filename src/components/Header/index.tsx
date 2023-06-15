@@ -14,7 +14,7 @@ import {firebaseAuth} from 'config/firebase';
 
 import SignInDialog from 'components/SignInDialog';
 
-import TimerForStudy from './components/TimerForStudy';
+import DailyTrainingTimer from './components/DailyTrainingTimer';
 import UserProfile from './components/UserProfile';
 import {AppBarCustom, ToolbarCustom} from './styles';
 import {Props} from './types';
@@ -37,7 +37,7 @@ const Header: FC<Props> = ({handleOpenSidebar}) => {
               <MenuIcon />
             </IconButton>
             <Divider orientation="vertical" flexItem />
-            <TimerForStudy />
+            <DailyTrainingTimer />
           </Stack>
           <Box sx={{flex: '1 1 auto'}} />
           <Stack direction="row" spacing={1}>
