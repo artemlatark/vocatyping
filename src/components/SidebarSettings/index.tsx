@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
+import DailyTrainingGoal from './components/DailyTrainingGoal';
 import PronunciationSpeedOption from './components/PronunciationSpeedOption';
 import ThemeModeOption from './components/ThemeModeOption';
 import VoiceForSpeechOption from './components/VoiceForSpeechOption';
@@ -26,6 +27,7 @@ const SidebarSettings: React.FC<SidebarProps> = ({isOpen, handleOpen}) => {
       <Box sx={{padding: 4}}>
         <VoiceForSpeechOption />
         <PronunciationSpeedOption />
+        <DailyTrainingGoal />
         <ThemeModeOption />
       </Box>
     </Drawer>

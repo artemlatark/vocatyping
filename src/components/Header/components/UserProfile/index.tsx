@@ -9,7 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import styles from './index.module.css';
 import {Props} from './types';
 
-const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
+const UserProfile: React.FC<Props> = ({user, signOut}) => {
   const {displayName, photoURL} = user;
   const [anchorUserProfileMenu, setAnchorUserProfileMenu] = useState<null | HTMLElement>(null);
   const isOpenUserProfileMenu = Boolean(anchorUserProfileMenu);
@@ -54,4 +54,4 @@ const UserProfileHeader: React.FC<Props> = ({user, signOut}) => {
   );
 };
 
-export default UserProfileHeader;
+export default UserProfile;

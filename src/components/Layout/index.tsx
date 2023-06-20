@@ -18,8 +18,8 @@ const Layout: FC<Props> = ({children}) => {
     [sidebarDictionaryOpen, sidebarSettingsOpen]
   );
 
-  const handleOpenSidebar = useCallback<HandleOpenSidebar>((sidebarName, value) => {
-    const setStateAction = (prevState: boolean | undefined) => (value !== undefined ? value : !prevState);
+  const handleOpenSidebar = useCallback<HandleOpenSidebar>((sidebarName, value): void => {
+    const setStateAction = (prevState: boolean) => (value !== undefined ? value : !prevState);
 
     if (sidebarName === 'dictionary') setSidebarDictionaryOpen(setStateAction);
     if (sidebarName === 'settings') setSidebarSettingsOpen(setStateAction);
