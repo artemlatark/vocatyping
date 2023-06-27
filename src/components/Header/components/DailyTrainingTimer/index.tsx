@@ -22,7 +22,7 @@ const DailyTrainingTimer = () => {
     setTimerOn(value);
 
     if (value) {
-      const newEndTime = Date.now() + (endTime ? timeLeft : goal * 60 * 1000) - 1000;
+      const newEndTime = Date.now() + (endTime ? timeLeft : goal * 60 * 1000);
 
       setEndTime(newEndTime);
       setTimeLeft(() => newEndTime - Date.now());
@@ -36,7 +36,7 @@ const DailyTrainingTimer = () => {
         } else {
           handleResetTimer();
         }
-      }, 1000);
+      }, 0);
     } else {
       if (timerRef.current) clearTimeout(timerRef.current);
     }
