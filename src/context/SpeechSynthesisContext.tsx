@@ -19,7 +19,7 @@ interface SpeechSynthesisContextProviderProps {
 export const SpeechSynthesisContext = createContext<SpeechSynthesisContextValue | null>(null);
 
 export const SpeechSynthesisContextProvider = ({children}: SpeechSynthesisContextProviderProps) => {
-  const {voiceURI} = useAppSelector((state) => state.settingsReducer);
+  const {voiceURI} = useAppSelector((state) => state.settings);
   const speechSynthesis = useSpeechSynthesis({favoriteLanguages});
   const selectedVoice = useMemo(() => {
     return speechSynthesis.voices.find((voice) => voice.name === voiceURI) ?? speechSynthesis.voices[0] ?? null;

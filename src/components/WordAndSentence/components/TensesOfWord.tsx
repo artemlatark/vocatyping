@@ -14,7 +14,7 @@ import {TensesOfWordProps} from '../types';
 
 const TensesOfWord: React.FC<TensesOfWordProps> = ({currentWord, tenseIndex}) => {
   const dispatch = useAppDispatch();
-  const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
+  const {pronunciationSpeed} = useAppSelector((state) => state.settings);
   const {speechSynthesis, selectedVoice} = useSpeechSynthesisContext();
 
   const onSpeechWord = (): void => {

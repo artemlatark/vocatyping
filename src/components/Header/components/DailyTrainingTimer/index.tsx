@@ -12,7 +12,7 @@ import {getTime} from './helper';
 import {TimerForStudyCointainer} from './styles';
 
 const DailyTrainingTimer = () => {
-  const {goal} = useAppSelector((state) => state.settingsReducer.dailyTrainingTime);
+  const {goal} = useAppSelector((state) => state.settings.dailyTrainingTime);
   const [timerOn, setTimerOn] = useState(false);
   const [endTime, setEndTime] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(goal * 60 * 1000);

@@ -13,8 +13,8 @@ import {TypeFormTextField, TypeFormFormHelperText} from './styles';
 
 const TypeForm = () => {
   const dispatch = useAppDispatch();
-  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordIndex, tenseIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWordReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.words);
+  const {currentWordIndex, tenseIndex, writtenText, isTenseVariantCorrectlyTyped} = useAppSelector((state) => state.currentWord);
   const textFieldTypeWordRef = useRef<HTMLInputElement | null>(null);
   const buttonNextWordRef = useRef<HTMLButtonElement | null>(null);
 

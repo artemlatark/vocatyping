@@ -11,7 +11,7 @@ import {OptionsContainer, TitleContainer} from '../styles';
 
 const PronunciationSpeedOption = () => {
   const dispatch = useAppDispatch();
-  const {pronunciationSpeed} = useAppSelector((state) => state.settingsReducer);
+  const {pronunciationSpeed} = useAppSelector((state) => state.settings);
   const [pronunciationSpeedOption, setPronunciationSpeedOption] = useState<StateReducerSettings['pronunciationSpeed']>(pronunciationSpeed);
 
   const handleChange = (event: Event, value: number | number[]) => {

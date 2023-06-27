@@ -15,7 +15,7 @@ import {OptionsContainer, TitleContainer} from '../styles';
 
 const VoiceForSpeechOption = () => {
   const dispatch = useAppDispatch();
-  const {voiceURI} = useAppSelector((state) => state.settingsReducer);
+  const {voiceURI} = useAppSelector((state) => state.settings);
   const {speechSynthesis} = useSpeechSynthesisContext();
   const [voiceForSpeech, setVoiceForSpeech] = useState<StateReducerSettings['voiceURI']>(voiceURI);
 

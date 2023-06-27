@@ -12,7 +12,7 @@ import KeyboardKey from 'components/KeyboardKey';
 import styles from './index.module.css';
 
 const Keyboard = () => {
-  const {currentWordId, writtenText, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {currentWordId, writtenText, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWord);
   const [currentLayout] = useState<keyboardLayout>(keyboardLayout.MAC);
   const keyboardObj = useMemo(() => keyboards.find((keyboard) => keyboard.layoutKey === currentLayout), [currentLayout]);
   const [nextTypeKey, setNextTypeKey] = useState<NextTypeKey | undefined>(undefined);

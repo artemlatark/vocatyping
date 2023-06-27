@@ -18,8 +18,8 @@ import {Props} from './types';
 
 const Main: FC<Props> = ({isOpenSidebar}) => {
   const dispatch = useAppDispatch();
-  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.words);
+  const {currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWord);
   const pressedAlt = useKeyPress('Alt');
   const pressedArrowLeft = useKeyPress('ArrowLeft');
   const pressedArrowRight = useKeyPress('ArrowRight');

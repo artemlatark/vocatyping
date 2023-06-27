@@ -15,7 +15,7 @@ const DailyTrainingGoal = () => {
   const dispatch = useAppDispatch();
   const {
     dailyTrainingTime: {goal: dailyTrainingGoal},
-  } = useAppSelector((state) => state.settingsReducer);
+  } = useAppSelector((state) => state.settings);
   const [dailyTrainingGoalOption, setDailyTrainingGoalOption] = useState<StateReducerSettings['dailyTrainingTime']['goal']>(dailyTrainingGoal);
 
   const handleChange = (event: Event, value: number | number[]) => {

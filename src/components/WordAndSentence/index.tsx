@@ -13,8 +13,8 @@ import TensesOfWord from './components/TensesOfWord';
 import {WordAndSentenceConatiner} from './styles';
 
 const WordAndSentence = () => {
-  const {loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWord, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {loading} = useAppSelector((state) => state.words);
+  const {currentWord, tenseIndex, tenseVariants, tenseVariantIndex} = useAppSelector((state) => state.currentWord);
 
   return (
     <WordAndSentenceConatiner>

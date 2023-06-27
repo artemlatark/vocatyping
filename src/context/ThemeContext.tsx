@@ -24,7 +24,7 @@ const getCurrentThemeColor = (themeMode: StateReducerSettings['themeMode'], pref
 };
 
 export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
-  const {themeMode} = useAppSelector((state) => state.settingsReducer);
+  const {themeMode} = useAppSelector((state) => state.settings);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: light)');
   const themeColor = useMemo(() => getCurrentThemeColor(themeMode, prefersDarkMode), [themeMode, prefersDarkMode]);
 

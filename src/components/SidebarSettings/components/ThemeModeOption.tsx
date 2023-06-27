@@ -15,7 +15,7 @@ import {OptionsContainer, TitleContainer} from '../styles';
 
 const ThemeModeOption = () => {
   const dispatch = useAppDispatch();
-  const {themeMode} = useAppSelector((state) => state.settingsReducer);
+  const {themeMode} = useAppSelector((state) => state.settings);
   const [themeModeOption, setThemeModeOption] = useState<StateReducerSettings['themeMode']>(themeMode);
 
   const handleChange = (event: MouseEvent<HTMLElement>, themeMode: StateReducerSettings['themeMode']) => {

@@ -21,8 +21,8 @@ import {TypographyCustom} from './styles';
 import {SidebarProps, WordGroups} from './types';
 
 const SidebarDictionary: React.FC<SidebarProps> = ({isOpen, handleOpen}) => {
-  const {entities: words, loading} = useAppSelector((state) => state.wordsReducer);
-  const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWordReducer);
+  const {entities: words, loading} = useAppSelector((state) => state.words);
+  const {currentWord, currentWordId, currentWordIndex} = useAppSelector((state) => state.currentWord);
   const listRef = useRef<GroupedVirtuosoHandle>(null);
   const [searchWord, setSearchWord] = useState<string>('');
   const [filteredWords, setFilteredWords] = useState<Word[]>([]);
