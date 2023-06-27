@@ -1,6 +1,6 @@
 import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction, current} from '@reduxjs/toolkit';
 
 import {Word} from 'models/Word';
 
@@ -40,13 +40,12 @@ export const currentWordSlice = createSlice({
       state.writtenText = action.payload;
     },
     checkTenseVariant(state, action: PayloadAction<string>) {
-      const variantLetter = action.payload.at(-1);
       const variantLetterIndex = action.payload.length - 1;
       const currentTenseVariant = state.tenseVariants[state.tenseVariantIndex].variant.toLowerCase();
       const currentTenseVariantLetter = currentTenseVariant[variantLetterIndex];
 
       // Commented lines are needed to break the `correct` parameter in all tense variants if at least once tense variant was typed incorrectly
-      if (currentTenseVariantLetter === undefined || variantLetter !== currentTenseVariantLetter) {
+      if (currentTenseVariantLetter === undefined || state.writtenText !== currentTenseVariant.slice(0, state.writtenText.length)) {
         // state.tenseVariants.map((item) => (item.correct = false));
         state.tenseVariants[state.tenseVariantIndex].correct = false;
 
@@ -55,14 +54,14 @@ export const currentWordSlice = createSlice({
         // state.isTenseVariantCorrectlyTyped = initialState.isTenseVariantCorrectlyTyped;
       }
 
-      if (state.writtenText.length === currentTenseVariant.length && state.writtenText === currentTenseVariant) {
+      if (state.writtenText === currentTenseVariant) {
         state.tenseVariants[state.tenseVariantIndex].correct = true;
         state.tenseVariantIndex++;
 
         state.writtenText = initialState.writtenText;
       }
 
-      if (state.tenseVariants[state.tenseVariants.length - 1].correct) {
+      if (state.tenseVariants.at(-1)?.correct) {
         state.isTenseVariantCorrectlyTyped = true;
       }
     },

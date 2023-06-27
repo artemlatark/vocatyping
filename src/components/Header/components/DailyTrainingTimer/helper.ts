@@ -5,7 +5,7 @@ const msToMinutes = (milliseconds: number) => {
 export const getTime = (type: 'hours' | 'minutes' | 'seconds', ms: number): string => {
   const hours = String(Math.floor(msToMinutes(ms) / 60));
   const minutes = String(Math.floor(msToMinutes(ms) - +hours * 60));
-  const seconds = String(Math.ceil(ms / 1000 - Math.floor(msToMinutes(ms)) * 60));
+  const seconds = String(Math.floor(ms / 1000 - Math.floor(msToMinutes(ms)) * 60));
 
   if (ms <= 0) return '00';
 
