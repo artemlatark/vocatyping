@@ -1,6 +1,6 @@
 import {getFromLocalStorage, saveToLocalStorage} from 'utils';
 
-import {createSlice, PayloadAction, current} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 import {Word} from 'models/Word';
 
