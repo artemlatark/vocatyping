@@ -1,13 +1,13 @@
 {
-  "name": "typerighting",
+  "name": "vocatyping",
   "version": "1.0.0",
-  "homepage": "https://typerighting-5d448.web.app",
+  "homepage": "https://vocatyping-1.web.app",
   "author": {
     "name": "Artem Krynkin"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artemkrynkin/typerighting"
+    "url": "https://github.com/artemkrynkin/vocatyping"
   },
   "scripts": {
     "start": "react-scripts start",
