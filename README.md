@@ -1,6 +1,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fd28eae3165b26dfe742/maintainability)](https://codeclimate.com/github/artemkrynkin/vocatyping/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fd28eae3165b26dfe742/test_coverage)](https://codeclimate.com/github/artemkrynkin/vocatyping/test_coverage)
 
+# Vocatyping
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
