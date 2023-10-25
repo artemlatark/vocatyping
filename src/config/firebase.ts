@@ -13,7 +13,7 @@ const FIREBASE_CONFIG = {
   storageBucket: 'vocatyping-1.appspot.com',
   messagingSenderId: '778945291244',
   appId: '1:778945291244:web:a2fc1500795519481556c9',
-  measurementId: 'G-96ETBV23S2',
+  measurementId: 'G-F8VHBBNTWE',
 };
 
 const app = initializeApp(FIREBASE_CONFIG);
